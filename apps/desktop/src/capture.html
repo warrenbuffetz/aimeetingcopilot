@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interview Copilot Capture</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        background: #0a0a0a;
+        color: #f4f4f5;
+        margin: 0;
+        padding: 16px;
+      }
+      button {
+        background: #10b981;
+        color: #042f1a;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-right: 8px;
+        margin-top: 8px;
+      }
+      button.secondary {
+        background: #27272a;
+        color: #fafafa;
+      }
+      .status {
+        margin-top: 16px;
+        padding: 12px;
+        border: 1px solid #3f3f46;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+      .meter {
+        height: 8px;
+        background: #27272a;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top: 8px;
+      }
+      .meter > div {
+        height: 100%;
+        width: 0%;
+        background: #10b981;
+        transition: width 0.1s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Windows capture</h1>
+    <p>User-initiated system audio capture for Teams, Zoom, and browser meetings.</p>
+    <button id="openWeb">Open web live session</button>
+    <button id="overlay" class="secondary">Toggle answer overlay</button>
+    <button id="start">Start loopback capture</button>
+    <button id="stop" class="secondary" disabled>Stop</button>
+    <div class="status" id="status">Idle — capture never starts automatically.</div>
+    <div class="meter"><div id="level"></div></div>
+    <script>
+      const status = document.getElementById("status");
+      const level = document.getElementById("level");
+      let stream = null;
+      let audioCtx = null;
+      let raf = null;
+
+      document.getElementById("openWeb").onclick = () => window.copilotDesktop.openLiveApp();
+      document.getElementById("overlay").onclick = () => window.copilotDesktop.toggleOverlay();
+
+      async function start() {
+        document.getElementById("stop").disabled = false;
+        status.textContent = "Requesting display media with loopback audio…";
+        try {
+          stream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: true });
+          stream.getVideoTracks().forEach((t) => (t.enabled = false));
+          const tracks = stream.getAudioTracks();
+          if (!tracks.length) {
+            status.textContent = "No audio track — select a source with system audio.";
+            return;
+          }
+          status.textContent = "Capturing: " + tracks.map((t) => t.label).join(", ");
+          audioCtx = new AudioContext();
+          const src = audioCtx.createMediaStreamSource(stream);
+          const analyser = audioCtx.createAnalyser();
+          src.connect(analyser);
+          const data = new Uint8Array(analyser.frequencyBinCount);
+          const tick = () => {
+            analyser.getByteFrequencyData(data);
+            const avg = data.reduce((a, b) => a + b, 0) / data.length / 255;
+            level.style.width = Math.min(100, avg * 400) + "%";
+            raf = requestAnimationFrame(tick);
+          };
+          tick();
+          const recorder = new MediaRecorder(stream, { mimeType: "audio/webm;codecs=opus" });
+          recorder.ondataavailable = (ev) => {
+            if (ev.data.size > 0 && window.copilotDesktop?.sendAudioChunk) {
+              ev.data.arrayBuffer().then((buf) => window.copilotDesktop.sendAudioChunk(buf));
+            }
+          };
+          recorder.start(3000);
+        } catch (e) {
+          status.textContent = "Denied or failed: " + e.message;
+        }
+      }
+
+      function stop() {
+        if (raf) cancelAnimationFrame(raf);
+        stream?.getTracks().forEach((t) => t.stop());
+        stream = null;
+        audioCtx?.close();
+        audioCtx = null;
+        level.style.width = "0%";
+        status.textContent = "Stopped.";
+        document.getElementById("stop").disabled = true;
+      }
+
+      document.getElementById("start").onclick = start;
+      document.getElementById("stop").onclick = stop;
+    </script>
+  </body>
+</html>

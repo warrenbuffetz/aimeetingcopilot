@@ -1,0 +1,19 @@
+{
+  "name": "interview-copilot",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "rm -f node_modules/@interview-copilot/web/.env.local node_modules/@interview-copilot/web/.env",
+    "dev": "npm run dev -w @interview-copilot/web",
+    "build": "npm run build -w @interview-copilot/web",
+    "lint": "npm run lint -w @interview-copilot/web",
+    "test": "npm run test -w @interview-copilot/web",
+    "typecheck": "npm run typecheck -w @interview-copilot/web && npm run typecheck -w @interview-copilot/shared",
+    "desktop:dev": "npm run dev -w @interview-copilot/desktop",
+    "desktop:build": "npm run build -w @interview-copilot/desktop"
+  }
+}
