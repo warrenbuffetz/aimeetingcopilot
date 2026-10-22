@@ -16,8 +16,10 @@ export default function HomePage() {
           control capture, consent, and what gets saved.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <Button size="lg" render={<Link href="/dashboard" />}>Open dashboard</Button>
-          <Button size="lg" variant="outline" render={<Link href="/login" />}>Sign in</Button>
+          <Button size="lg" nativeButton={false} render={<Link href="/live" />}>Start live session</Button>
+          <Button size="lg" variant="outline" nativeButton={false} render={<Link href="/library" />}>
+            Answer library
+          </Button>
         </div>
       </div>
     </div>

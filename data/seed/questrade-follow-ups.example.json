@@ -1,0 +1,26 @@
+{
+  "entries": [
+    {
+      "matchQuestion": "Tell me about yourself.",
+      "followUps": [
+        {
+          "question": "Why did you move from financial services to Arc'teryx?",
+          "answer": "Paste your scripted answer here."
+        },
+        {
+          "question": "What made you interested in coming back to banking at Questrade?",
+          "answer": "Paste your scripted answer here."
+        }
+      ]
+    },
+    {
+      "matchQuestion": "Why are you looking to leave Arc'teryx?",
+      "followUps": [
+        {
+          "question": "Is relocation to Vancouver a factor?",
+          "answer": "Paste your Vancouver/GTA answer here (only if asked)."
+        }
+      ]
+    }
+  ]
+}

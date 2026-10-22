@@ -1,0 +1,862 @@
+{
+  "status": "ready",
+  "doNotSeedUntilRevisions": false,
+  "profile": {
+    "name": "Questrade — Senior PM, Everyday Banking",
+    "employer": "Questrade",
+    "role_title": "Senior Product Manager"
+  },
+  "preparedQa": [
+    {
+      "question": "Why would someone switch their primary bank if their current bank works fine?",
+      "answer": "That's the hardest part of this opportunity. Most customers aren't actively looking to change banks, and that's a rational response if their existing account works. I'd avoid building a strategy around the assumption that people are unhappy. Instead, I'd find a specific reason to switch: materially easier money management, better economics, or a seamless connection between spending and investing that they can't get today. Then I'd make the transition feel safe. Customers need to know their paycheque will arrive, their bills won't be disrupted and they can recover if something goes wrong. I'd test the proposition with segments already engaged with Questrade before trying to win everyone. If we can't articulate a benefit that outweighs the hassle, an onboarding redesign won't solve the underlying problem.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Why change banks?",
+        "Incumbent bank good enough",
+        "Switching value proposition",
+        "Why us instead of Big Five?"
+      ]
+    },
+    {
+      "question": "Who would you target first for Questbank adoption?",
+      "answer": "I'd start with existing Questrade customers who already have recurring money movement into their investment accounts. They've demonstrated some level of trust and a repeat financial behaviour, so the step toward a broader banking relationship may be smaller. But I'd still validate that hypothesis. I'd compare segments by financial needs, existing product usage, willingness to switch, expected balances and cost to acquire. A frequent trader with high assets isn't necessarily the ideal everyday banking customer. Someone regularly moving a portion of each paycheque into investments might have a much stronger need for integrated cash flow. I'd choose the first segment based on both customer pain and realistic conversion potential, rather than just its current asset value.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "First customer segment",
+        "Target market",
+        "ICP",
+        "Early adopters",
+        "Which investors cross-sell?"
+      ]
+    },
+    {
+      "question": "What's the one feature you'd build first to win payroll?",
+      "answer": "Assuming the account, payment rails and reliability are ready, I'd start with a guided payroll-switching flow that makes the next action obvious. The customer should be able to find their account details, download or share the right deposit information, see what still needs to happen and understand when the change should take effect. I'd test that against a simple baseline and measure actual first payroll receipt, not just use of the guide. The reason I'd start there is that switching has a lot of operational and emotional friction, and we may be able to remove some of it without a massive platform build. I'd only add incentives after understanding where customers are getting stuck.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "First MVP",
+        "First direct deposit feature",
+        "Minimum viable switching flow",
+        "Where to start?"
+      ]
+    },
+    {
+      "question": "What if employers aren't supported by an automated payroll switching provider?",
+      "answer": "I wouldn't make employer integration a requirement for the whole experience. I'd support a clear manual path with the right account details, an employer-ready form where appropriate, and simple guidance for common payroll systems. I'd also be explicit that some changes are completed by the employer, not by us. Where automated switching is available, great, but the fallback needs to feel like a first-class flow rather than an error state. I'd measure adoption and failure rates separately for automated and manual paths, then use those data to decide which integrations are worth building. Broad coverage and trust matter more than an impressive demo that only works for a narrow set of employers.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Payroll provider coverage",
+        "Employer not integrated",
+        "Manual switch",
+        "Edge cases employer HR"
+      ]
+    },
+    {
+      "question": "How do you know a customer really switched their paycheque?",
+      "answer": "I wouldn't use a button click or a customer saying 'I've switched' as the success event. I'd work with the banking and data teams to define a qualifying recurring deposit using reliable transaction attributes, source information, amount patterns and cadence, while accepting that classification won't be perfect. I'd distinguish first observed payroll from sustained payroll over at least two or three pay cycles. We'd also need rules to avoid counting self-transfers as salary, along with a path to correct misclassification. The final definition should be rigorous enough for business reporting and transparent enough that customers aren't surprised by eligibility decisions.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Payroll recognition",
+        "Verify salary",
+        "Qualifying direct deposit",
+        "Recurring deposit classification"
+      ]
+    },
+    {
+      "question": "What if someone keeps two banks rather than moving everything to Questbank?",
+      "answer": "I wouldn't treat that as failure. Making a new bank your primary relationship is often a gradual change. Customers may start by sending part of their income, using the card for one spending category, or moving a recurring payment. I'd measure the depth and durability of that relationship and create sensible next steps rather than pressuring them to close their old account. At the same time, I'd avoid confusing partial adoption with a genuine primary relationship. We'd track milestones separately: funded, transacting, recurring deposit, recurring bill payments and sustained account activity. The strategy should make progressive adoption feel easy while being honest about where customers are in the journey.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Multi-banking",
+        "Split payroll",
+        "Secondary account",
+        "Not all-or-nothing",
+        "Partial switch"
+      ]
+    },
+    {
+      "question": "What if payroll bonuses bring in customers who leave immediately afterward?",
+      "answer": "I'd consider that an incentive design problem, not necessarily a marketing success. A spike in first deposits can look great while producing very little lasting value. I'd measure retained qualifying deposits across subsequent pay cycles, net balances, active transactions and the contribution after incentive costs. I'd compare incentivized customers to an appropriate control or baseline and look for signs of customers moving money out immediately. If the programme mainly attracts one-time switches, I'd adjust eligibility, reward timing or the underlying value proposition. The best incentive helps customers get over switching friction; it shouldn't be the only reason they remain.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Incentive hunters",
+        "Bonus abuse",
+        "Promo churn",
+        "Deposit campaign ROI"
+      ]
+    },
+    {
+      "question": "Why would customers choose Questrade over Wealthsimple or a traditional bank?",
+      "answer": "I wouldn't start by claiming Questrade is better across every dimension. I'd look at what each competitor actually does well and where customers still have unmet needs. Questrade has an existing investing relationship with many customers, and the broader opportunity is to make money management more connected across accounts. The differentiation has to be felt in real tasks, like understanding cash flow, funding an investment, or knowing what money is available after recurring expenses. I'd validate that against actual switching research, not just competitor feature grids. It would be a mistake to compete only by matching fees or launching every feature a competitor has. I'd want a focused proposition that customers can explain in one sentence.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Competitive differentiation",
+        "Wealthsimple",
+        "Big Five",
+        "Competitor strategy",
+        "Positioning"
+      ]
+    },
+    {
+      "question": "Isn't Balance Sheet just a dashboard? Where is the actual value?",
+      "answer": "A consolidated view can be useful, but I agree that visibility alone isn't enough. The value comes when it helps customers make a better decision or complete a task they couldn't do easily before. I'd look at specific use cases: understanding how much cash is committed to upcoming expenses, spotting duplicate subscriptions, or deciding when to move surplus cash to savings. I would also respect the limitation of the current read-only account connections; seeing another bank's balance doesn't mean we can initiate a transfer from it. I'd validate one high-frequency use case before building a long list of insights. That would help establish whether Balance Sheet is a destination people revisit or simply a feature they explore once.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Balance Sheet skepticism",
+        "Data aggregation",
+        "Insights to action",
+        "Financial hub value"
+      ]
+    },
+    {
+      "question": "What is the biggest risk in connecting external accounts?",
+      "answer": "My biggest product concern would be trust in the data. If the customer sees a stale balance or a disconnected account and treats the view as current, we could unintentionally encourage a bad decision. I'd make data freshness, connection status and source clear, and design graceful failure states when an institution isn't available. I'd also want strong consent and clear language about what access is being granted. With read-only aggregation, I'd make sure the experience doesn't imply we can control or move money from those connected accounts. The UX should make the limits of the information obvious without turning every screen into legal language.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Aggregation risks",
+        "Open banking risk",
+        "Flinks",
+        "Wealthica",
+        "Data stale",
+        "Privacy"
+      ]
+    },
+    {
+      "question": "How would you decide between better rates and better switching UX?",
+      "answer": "I'd treat them as different levers. A compelling rate can give customers a reason to consider us, while a good switching experience determines whether they can act on that motivation. I'd look at customer research and funnel data to understand the actual constraint. If people don't know why they'd switch, a smoother form won't be enough. If there's strong intent but a high drop-off during payroll setup, UX could be the better investment. I'd also evaluate the economics of a higher rate with Treasury and Finance rather than assuming a more generous offer is free growth. Ideally the value proposition is strong enough to attract the right customers and the experience is simple enough to retain them.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Rate versus experience",
+        "Savings APY",
+        "Financial incentive versus product",
+        "Product positioning"
+      ]
+    },
+    {
+      "question": "What if leadership wants to ship five banking features at once?",
+      "answer": "I'd ask which customer or business outcome those five features are meant to change. If they're all important, that doesn't necessarily mean they all need to ship together. I'd map the dependencies, identify which capabilities are foundational and estimate where we have the strongest evidence of impact. In banking, I'd also distinguish controls and operational readiness from discretionary enhancements. Then I'd put forward a sequence with clear trade-offs: what we can commit to, what we're deferring and what signal would justify changing the order. I'd rather be accountable for a smaller number of meaningful outcomes than deliver a broad roadmap where no single experience works particularly well.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Too many priorities",
+        "Stakeholder pressure",
+        "Roadmap overload",
+        "Scope discipline"
+      ]
+    },
+    {
+      "question": "How would you define 'share of wallet' for everyday banking?",
+      "answer": "It's an attractive concept but difficult to measure precisely, because we usually don't see every transaction and balance a customer holds elsewhere. I'd distinguish observable measures from estimates. Observable measures might include recurring inflows, transaction activity, retained deposits and product adoption inside Questbank. If customers permissionfully connect external accounts, we might be able to form a richer view, but only within the limitations of that data and with suitable consent. I wouldn't present an estimated share-of-wallet number as a fact. For operating decisions, I'd probably favour clear behaviours that indicate relationship depth and can be tracked consistently over time.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Share of wallet",
+        "Financial relationship depth",
+        "Primary account measurement",
+        "Deposit share"
+      ]
+    },
+    {
+      "question": "Should the financial hub automatically transfer extra cash into investments?",
+      "answer": "Potentially, but I wouldn't make that the first version. The product has to be exceptionally clear about what cash is actually available, what upcoming obligations exist and what permissions the customer is granting. A transfer that accidentally leaves someone short for rent would do enormous damage to trust. I'd begin with visibility and customer-controlled recommendations, then consider opt-in rules with explicit limits, confirmations and the ability to pause or reverse where applicable. I'd involve risk, compliance and investment specialists early because investing introduces suitability and account-specific considerations. I'd want evidence that customers understand the feature and benefit from it before introducing automation.",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Sweep",
+        "Auto invest",
+        "Cash flow optimization",
+        "Smart transfer",
+        "Investment suitability"
+      ]
+    },
+    {
+      "question": "Your idea sounds sensible. Why hasn't Questrade already done it?",
+      "answer": "\"That's a fair challenge, and I wouldn't assume the team has overlooked something. There could be a technical dependency, regulatory constraint, cost issue or research that points in another direction. I'd want to understand the history before advocating for the idea. In a case interview, I'm making a hypothesis from limited information, not claiming I know the internal roadmap better than the team. What I can demonstrate is how I'd frame the opportunity, what evidence I'd gather, and what trade-offs would cause me to change my recommendation. Being willing to update the plan when new information comes in is part of the job.\"\nB. Metrics, experiments and business economics",
+      "category": "Follow-up probes",
+      "part": 7,
+      "isPreferred": true,
+      "detect": [
+        "Challenge your proposal",
+        "Why hasn't it shipped?",
+        "Existing team smarter",
+        "Assumptions check"
+      ]
+    },
+    {
+      "question": "Give me an exact definition of a monthly active banking customer.",
+      "answer": "I'd avoid defining it simply as someone who opened the app. For operating purposes, I'd propose a monthly transacting customer: an eligible account holder with at least one qualifying financial transaction during the calendar month, with the qualifying actions agreed across Product, Finance and Data. We would need to decide whether transfers between a customer's own accounts count, and I'd probably track those separately from external payments or purchases. I'd exclude reversals and technical events from the numerator and make the denominator consistent. I would keep login MAU as a separate engagement signal. Clear definitions matter because it's very easy for two teams to report very different 'active customer' numbers.",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "Define MATU",
+        "MAU versus transacting",
+        "Active banking definition",
+        "Metric denominator"
+      ]
+    },
+    {
+      "question": "What would your primary-account north-star metric actually be?",
+      "answer": "I'd use something like retained primary banking customers, but I'd define it operationally. For example: an eligible customer who has received qualifying recurring income and completed a minimum amount of regular third-party spending or bill activity over a defined recent period. I'd validate the thresholds using real behaviour rather than inventing them in a meeting. I'd also report each component separately, because a composite can hide where growth is happening. And I would treat the designation as a product signal rather than claiming we know the customer has abandoned all other banks. It's useful when it reflects a durable habit, not just one transaction.",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "North star",
+        "Primary bank KPI",
+        "Qualified primary relationship",
+        "Metric definition"
+      ]
+    },
+    {
+      "question": "Your conversion improved from 10% to 12%. Is that 2% or 20%?",
+      "answer": "It's a two-percentage-point increase and a 20% relative improvement. I'd always state which one I mean. That's especially important for a resume or executive update, where writing '+20%' without context could sound much larger than the actual movement. I'd also want the sample size, period and eligible denominator before drawing conclusions. A percentage change is only useful if the underlying metric is well-defined and stable.",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "Relative versus absolute change",
+        "Percentage points",
+        "Conversion math"
+      ]
+    },
+    {
+      "question": "How do you prevent cohort analysis from becoming a misleading before-and-after story?",
+      "answer": "I'd check whether the cohorts were comparable before attributing the change to our initiative. Different acquisition channels, customer tenure, holiday periods or promotions can all change spending behaviour. Where possible I'd use randomized holdouts. If we can't, I'd look for a reasonable matched or difference-in-differences approach, and I'd explain the remaining uncertainty rather than presenting the lift as causal. I'd also measure per eligible customer, not just per active user, because an intervention can change who counts as active. Good analysis should help us make a decision and also show where the evidence is weaker.",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "Seasonality",
+        "Cohort bias",
+        "Attribution",
+        "Comparable groups"
+      ]
+    },
+    {
+      "question": "How would you select an experiment's primary metric and guardrails?",
+      "answer": "I'd start from the customer behaviour the experiment is meant to change and choose one primary metric that directly reflects it. For payroll switching, that might be receipt of a qualifying recurring deposit within a fixed window, rather than visits to the payroll setup page. I'd establish guardrails for payment failures, complaints, support contacts and incentive costs. Before starting, I'd agree on the population, assignment method, expected duration and what result would change the roadmap. Without that, teams can end up selecting whichever metric looks best afterward. I also wouldn't experiment with the correctness of core financial controls.",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "Experiment design",
+        "Primary KPI",
+        "Guardrail",
+        "A/B testing plan"
+      ]
+    },
+    {
+      "question": "What if an experiment looks positive after two days? Can we ship early?",
+      "answer": "I'd be cautious. Early results can be noisy, especially when banking behaviours follow weekly or payroll cycles. I'd look at the pre-agreed stopping rule, required sample size and whether there's enough time to observe the actual outcome. There are legitimate sequential-testing methods, but they need to be designed in advance rather than invented because the number looks good. I'd also check guardrails and segment performance. A strong early signal might justify preparing the rollout, but it wouldn't automatically justify declaring a win.",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "Peeking",
+        "Statistical significance",
+        "Stopping rules",
+        "Early launch"
+      ]
+    },
+    {
+      "question": "Why is spend per active cardholder a risky metric?",
+      "answer": "Because the intervention can change who enters the denominator. If an incentive activates a lot of occasional cardholders with smaller purchases, spend per active cardholder might actually fall even though total profitable activity rises. I'd pair it with active rate, spending per eligible cardholder, incremental spend versus a holdout, and contribution after incentive costs. I'd also look at distribution, not just the mean, because a few high spenders can distort the average. The point is to understand whether the portfolio became healthier, not to optimize a single ratio.",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "Selection bias",
+        "Spend per active",
+        "Denominator problem",
+        "Incentive gaming"
+      ]
+    },
+    {
+      "question": "Explain how you would model customer lifetime value in banking.",
+      "answer": "I'd model expected contribution over the customer relationship, not simply future revenue. The drivers would depend on the product, but could include net interest or fee contribution, card economics, retention, product adoption, servicing and fraud costs, and incentives. I'd make the time horizon and discounting assumptions explicit. I'd also separate what we've observed from what we're forecasting. If a promotional campaign temporarily increases spending, I wouldn't assume that higher level persists indefinitely. I'd build sensitivity scenarios for retention and behaviour, because those assumptions can dominate the result. A model is useful when it informs an investment decision, not when it produces a conveniently precise number.",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "LTV model",
+        "Bank unit economics",
+        "CLV drivers",
+        "Revenue model"
+      ]
+    },
+    {
+      "question": "Is a $100 million increase in deposits automatically a win?",
+      "answer": "Not automatically. Deposits can be valuable, but we need to understand their stability, what they cost to acquire and retain, and how the bank can use them within its funding and risk framework. I'd work with Treasury and Finance on the actual contribution economics, including interest expense, liquidity needs, servicing costs and any incentives. I'd also look at concentration and churn. A large inflow driven by a short-term rate promotion can be very different from stable recurring payroll deposits. I'd celebrate deposit growth when it builds a durable relationship and creates attractive risk-adjusted economics, not just because the balance is bigger.",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "Deposit balances versus profit",
+        "Cost of funds",
+        "Treasury",
+        "Net interest margin"
+      ]
+    },
+    {
+      "question": "Would you optimize account openings, funded accounts or payroll adoption?",
+      "answer": "I'd measure all three, but I wouldn't make account openings the ultimate success metric. Openings show acquisition. First funding shows the customer has taken a meaningful next step. Recurring payroll and transactional activity are stronger indicators that the relationship is becoming habitual. Which lever I'd prioritize depends on the bottleneck. If opening conversion is terrible, we may need to fix that first. But if we're opening lots of accounts that never get funded, acquiring even more accounts won't solve the core problem. I'd use a funnel to identify the constraint and tie the roadmap to durable downstream behaviour.",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "Metric hierarchy",
+        "Funnel priority",
+        "Opening versus activation",
+        "Growth KPI"
+      ]
+    },
+    {
+      "question": "How would you decide if a 5% incremental spending lift justified an incentive?",
+      "answer": "I'd first establish whether the 5% is truly incremental relative to comparable customers, and over what period. Then I'd translate that incremental spending into the actual economics attributable to the card programme, rather than assuming five cents of profit for every dollar of spend. I'd subtract incentive, communications and operational costs, and assess whether there are lasting effects on retention or purchase frequency. I'd also look at who benefited. If the result came mainly from customers who already spent heavily, we might be subsidizing behaviour. I'd want a decision framed around incremental contribution and the durability of the behaviour, not headline transaction volume.",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "Incentive ROI",
+        "Incrementality",
+        "Profitability",
+        "5% spend lift"
+      ]
+    },
+    {
+      "question": "You have only a dashboard, no user research. What do you do?",
+      "answer": "I'd use the dashboard to identify the highest-value uncertainty, not to pretend the numbers explain motivation. Then I'd find lightweight ways to hear from customers: short interviews with customers who dropped off, conversations with frontline support, usability tests or targeted feedback at the relevant step. I don't think discovery always requires a six-week research programme. The key is separating what people did from why they did it. I'd combine those insights with instrumentation and ship a small test where the risk is manageable.",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "Qual versus quant",
+        "No research budget",
+        "Data only",
+        "Discovery under constraints"
+      ]
+    },
+    {
+      "question": "How do you know an increase in DAU isn't just more balance checking?",
+      "answer": "\"I'd classify activity by user intent. Balance views, market content, deposits, payments, purchases and servicing are different behaviours. Then I'd look at whether increases in app engagement precede or correlate with sustained banking activity. A customer checking their balance can be a sign of useful engagement, but it isn't proof of a deeper financial relationship. I'd report the engagement metric alongside transaction and deposit outcomes by cohort. If the extra DAU comes mainly from non-transactional visits, I wouldn't count it as success against a primary-banking objective.\"\nC. Payments, technical architecture, reliability and controls",
+      "category": "Metrics & experiments",
+      "part": 8,
+      "isPreferred": true,
+      "detect": [
+        "Vanity metrics",
+        "DAU quality",
+        "Financial engagement",
+        "High DAU low deposits"
+      ]
+    },
+    {
+      "question": "What exactly did you own versus RBC's payments infrastructure team?",
+      "answer": "I owned the consumer cashback withdrawal experience and the product requirements that made an existing enterprise payment capability usable for non-RBC Avion members. That meant working through eligibility, payout limits, the customer journey, integration requirements and the dependencies with Risk, AML and Financial Operations. I didn't personally build Interac's rails or own the enterprise payments infrastructure. That's an important distinction. Our team was responsible for making sure the customer-facing product worked with those services and operational controls. The value of the work was connecting an existing bank capability to a new consumer use case in a reliable way.",
+      "category": "Payments & controls",
+      "part": 9,
+      "isPreferred": true,
+      "detect": [
+        "Your ownership",
+        "Did you build the rails?",
+        "Payments team versus product team",
+        "Who did what?"
+      ]
+    },
+    {
+      "question": "Why mention 5M+ settlement events when Avion payouts were only $1M+?",
+      "answer": "Those are deliberately two different numbers. The $1 million-plus figure refers to annualized cashback withdrawals enabled by the Avion consumer feature. The five million-plus annual events describe the scale of the broader enterprise payments service we integrated with; they weren't all Avion cashback withdrawals. I include it to show the operational environment and why integration and control requirements mattered. I wouldn't use it as a claim about Avion transaction adoption. If we were evaluating the product itself, I'd focus on its actual withdrawals, eligible users, payout completion and support or exception rates.",
+      "category": "Payments & controls",
+      "part": 9,
+      "isPreferred": true,
+      "detect": [
+        "5 million transactions?",
+        "Is volume inflated?",
+        "What's the scope of settlement?",
+        "Claim attribution"
+      ]
+    },
+    {
+      "question": "Why use Interac e-Transfer rather than EFT for cashback withdrawals?",
+      "answer": "The product problem was letting a non-RBC member receive cashback without needing an RBC bank account. Interac e-Transfer provided a familiar way for Canadian consumers to receive those payouts, and we were able to adapt an existing enterprise capability. I wouldn't suggest Interac is always the better rail. I'd compare available integrations, customer experience, limits, cost, timing, error handling and operational risk against the use case. For a recurring payroll deposit or certain high-volume account-to-account transfers, EFT may be more appropriate. The important PM decision is choosing the rail that serves the customer need within the bank's constraints, rather than using the same rail for everything.",
+      "category": "Payments & controls",
+      "part": 9,
+      "isPreferred": true,
+      "detect": [
+        "Rail selection",
+        "Why Interac",
+        "EFT versus e-transfer",
+        "Payments trade-offs"
+      ]
+    },
+    {
+      "question": "What happens if a payout API times out after the request was accepted?",
+      "answer": "I'd treat the outcome as unknown, not failed. Retrying blindly could send the money twice if the payment provider already accepted the request. The implementation needs a unique request or payout identifier, safe retry semantics and a way to query or reconcile the authoritative status. From the customer's perspective, we'd show a pending state rather than falsely claiming success or failure. Operationally, we'd alert on unresolved transactions and provide a reconciliation and recovery path. That's one of the important differences between a normal app interaction and moving money: uncertainty has to be handled explicitly, because the cost of getting it wrong is real.",
+      "category": "Payments & controls",
+      "part": 9,
+      "isPreferred": true,
+      "detect": [
+        "Timeout after acceptance",
+        "Duplicate payout",
+        "Idempotency",
+        "Unknown payment state"
+      ]
+    },
+    {
+      "question": "What is reconciliation, and why does a PM need to understand it?",
+      "answer": "Reconciliation is how we confirm that the payments we believe we initiated and completed match the records from the relevant payment systems and the financial books. You need it to identify missing, duplicate, reversed or otherwise inconsistent transactions. As a PM, I don't need to run the daily ledger close myself, but I do need to understand what events and identifiers our product must generate, how exceptions are handled and what the customer sees when something isn't resolved. It's not purely a back-office issue. If reconciliation is weak, customers may see incorrect statuses or balances, and Operations may not have a reliable way to investigate.",
+      "category": "Payments & controls",
+      "part": 9,
+      "isPreferred": true,
+      "detect": [
+        "Reconciliation meaning",
+        "Settlement mismatches",
+        "Finance operations",
+        "Reconcile payouts"
+      ]
+    },
+    {
+      "question": "How would you define payout success rate?",
+      "answer": "I'd start by defining the lifecycle and eligible population. For example, completed payouts divided by eligible payout attempts initiated during a period, with clear treatment of retries, customer cancellations and reversals. I'd probably report first-attempt completion separately from eventual completion, because those tell us different things about friction and reliability. I'd also separate business-rule rejections, provider failures and unresolved states rather than rolling them into one failure bucket. Finally I'd align the definitions with Financial Operations, so we're not calling a payment successful just because our API received an acknowledgement.",
+      "category": "Payments & controls",
+      "part": 9,
+      "isPreferred": true,
+      "detect": [
+        "Payment KPI",
+        "Successful payouts",
+        "First attempt success",
+        "Settlement success"
+      ]
+    },
+    {
+      "question": "What controls would you require before allowing a new transfer type?",
+      "answer": "I'd start with eligibility, account ownership where relevant, authentication, transaction limits and fraud or AML requirements defined with the accountable teams. Then I'd want a clear payment state model, duplicate-request protection, reconciliation, auditability and well-defined exceptions. There also needs to be operational readiness: monitoring, customer support guidance, incident response and a process for resolving failures. I'd separate controls required by law or policy from choices where Product can optimize the customer experience. I wouldn't treat sign-off as something to collect the day before launch. I'd bring those teams into the design early enough that the requirements shape the actual product.",
+      "category": "Payments & controls",
+      "part": 9,
+      "isPreferred": true,
+      "detect": [
+        "Controls launch checklist",
+        "Transfer launch readiness",
+        "Risk and AML",
+        "Banking compliance"
+      ]
+    },
+    {
+      "question": "What if Risk wants a step that cuts conversion by 20%?",
+      "answer": "I'd first understand whether the step is legally required, required by bank policy, or simply one implementation option. If it's a mandatory control, removing it isn't on the table. But we can still explore where it appears, how we explain it, how often customers need to complete it and whether the technology can make it less frustrating. I'd look at the funnel to see exactly where customers struggle and work with Risk and Design on alternatives that preserve the control. I'd also quantify the business impact so everyone understands the trade-off. The goal isn't to win an argument against Risk. It's to create the best compliant customer experience we can.",
+      "category": "Payments & controls",
+      "part": 9,
+      "isPreferred": true,
+      "detect": [
+        "Risk versus conversion",
+        "Compliance friction",
+        "Mandatory KYC step",
+        "Security trade-off"
+      ]
+    },
+    {
+      "question": "How do pending and posted card transactions differ?",
+      "answer": "A pending card transaction generally reflects an authorization or hold before the final posted transaction is available. The amount can change, and a pending authorization may expire or be reversed. A posted transaction represents a later processing state, although disputes or adjustments can still occur. From a product perspective, I want customers to understand why a pending amount may differ from the final charge and how it affects available funds. I'd work with the Card and ledger teams to make those states accurate and consistent. I wouldn't simplify them so aggressively that we mislead someone about their money.",
+      "category": "Payments & controls",
+      "part": 9,
+      "isPreferred": true,
+      "detect": [
+        "Pending versus settled",
+        "Transaction state",
+        "Authorization and clearing",
+        "Available balance"
+      ]
+    },
+    {
+      "question": "What if the ledger balance and customer-facing balance don't match?",
+      "answer": "I'd treat that as a high-priority integrity issue and first distinguish between a genuine ledger problem, a stale read model and a legitimate difference between ledger and available balance. I'd want Engineering and Operations to identify the authoritative records and affected accounts before making a customer-facing correction. If the issue could lead to customers spending funds they don't actually have, containment may be necessary. We should communicate carefully and avoid giving a precise resolution promise before we understand the issue. Then I'd focus on reconciliation, remediation and prevention. In a banking experience, customers must be able to trust the numbers they see.",
+      "category": "Payments & controls",
+      "part": 9,
+      "isPreferred": true,
+      "detect": [
+        "Balance mismatch",
+        "Ledger source of truth",
+        "Banking incident",
+        "Incorrect available balance"
+      ]
+    },
+    {
+      "question": "How would you roll out a critical payments integration?",
+      "answer": "I'd plan the rollout around risk, not just engineering completion. We need end-to-end test cases for success and failure states, reconciliation sign-off, monitoring, support playbooks, rollback or disablement options where feasible, and agreed incident ownership. I'd normally favour a limited launch with controlled eligibility or volume before expanding. During that period, I'd monitor completion, errors, latency, exceptions and customer contact rates closely with Operations and Engineering. If the signals deteriorate, we'd pause expansion rather than defending the planned date. Getting a critical financial feature to market matters, but not at the expense of trust.",
+      "category": "Payments & controls",
+      "part": 9,
+      "isPreferred": true,
+      "detect": [
+        "Phased launch",
+        "Payment feature rollout",
+        "Release safeguards",
+        "Integration readiness"
+      ]
+    },
+    {
+      "question": "How would you choose between building a payment service and buying one?",
+      "answer": "\"I'd start by identifying which part creates differentiation and which part is foundational infrastructure. Payments have complex operational, security and regulatory requirements, so rebuilding a mature capability needs a compelling reason. I'd compare time to market, total cost, flexibility, reliability, integration effort, contractual constraints and exit risk. I'd also look at who owns reconciliation, incidents and customer support when things go wrong. The cheapest vendor quote isn't necessarily the lowest-cost option over time. My experience at Arc'teryx reinforced that the important decision isn't build versus buy in the abstract. It's what we want to own strategically and what dependency we're willing to accept.\"\nD. Resume deep dives and skeptical follow-ups",
+      "category": "Payments & controls",
+      "part": 9,
+      "isPreferred": true,
+      "detect": [
+        "Build versus buy payments",
+        "Vendor or in-house",
+        "Technical strategy",
+        "Third-party processor"
+      ]
+    },
+    {
+      "question": "What does 'P&L ownership' at HBC actually mean?",
+      "answer": "In that role, I was accountable for the growth roadmap and the commercial performance of the HBC Mastercard programme, working with our financial-services partner and internal stakeholders. In practical terms, my product decisions were informed by cardholder acquisition, engagement, spending, incentive economics and customer lifetime value. I wouldn't claim that I personally owned every lending, underwriting or balance-sheet decision at the issuer. The distinction is that I owned the product growth decisions and business outcomes within our programme scope, while some financial and risk levers sat with the partner. I'd be happy to break down which levers we could directly change versus influence.",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": true,
+      "detect": [
+        "P&L detail",
+        "Revenue responsibility",
+        "HBC financial ownership",
+        "What did you control?"
+      ]
+    },
+    {
+      "question": "What was your most important HBC product decision?",
+      "answer": "One important decision was treating cardholder value as a lifecycle problem rather than just an acquisition problem. It's tempting to focus on how many applications or approvals a programme generates, but a card that isn't used regularly doesn't create much ongoing value. I focused on understanding different cardholder behaviours and using targeted engagement rather than broad, undifferentiated promotions. That informed the lifecycle roadmap and initiatives like Quests. The key commercial lesson was to consider repeat spending and the cost of incentives, not just whether a campaign generated activity. We tracked improvements in estimated LTV and incremental cardholder spending, while recognizing that not every portfolio outcome could be attributed to a single feature.",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": true,
+      "detect": [
+        "HBC best decision",
+        "Product judgment card",
+        "One decision",
+        "Prioritization examples"
+      ]
+    },
+    {
+      "question": "Tell me exactly how you defined HBC's 30-day activation and 90-day retention.",
+      "answer": "I'd define 30-day activation as the proportion of newly approved eligible accounts that make at least one qualifying purchase within 30 days of approval. For repeat-spend retention, I'd look at the share of an agreed starting cohort that makes another qualifying purchase in a later observation window, and I'd be explicit about the window and denominator. Those are sensible metric definitions, but I want to be clear that the exact 8-point and 6-point results discussed in some preparation drafts were hypothetical examples, not numbers I've validated from HBC reporting. In an actual performance discussion I'd use the definitions and results supported by the real dashboards or programme readouts.",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": false,
+      "detect": [
+        "HBC 8pp",
+        "HBC 6pp",
+        "Activation definition",
+        "Repeat-spend retention definition"
+      ],
+      "notes": "Evidence guardrail: Do not claim the 8 pp and 6 pp results as actual unless independently verified. This answer intentionally states that limitation."
+    },
+    {
+      "question": "Did you actually run randomized holdouts on the HBC Mastercard programme?",
+      "answer": "I can explain how I'd measure incremental lift, but I don't want to overstate the methods used in a specific programme. A randomized holdout is the clearest way to estimate the effect of an incentive, provided the groups are comparable and the test runs long enough. If the actual analysis was cohort-based rather than randomized, I'd describe it that way and acknowledge its limitations, including seasonality and selection bias. The 'versus holdout' phrasing in one resume draft came from an illustrative scenario and shouldn't be treated as a fact without the underlying study. I'd rather be precise about the evidence than claim a stronger methodology just because it sounds impressive.",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": false,
+      "detect": [
+        "HBC holdout",
+        "Controlled experiment evidence",
+        "RCT",
+        "Did you A/B test incentives?"
+      ],
+      "notes": "Evidence guardrail: This is a correction to the hypothetical resume language, not a substitute for a verified historical account."
+    },
+    {
+      "question": "Why did HBC modeled LTV rise 10%, and how certain are you?",
+      "answer": "The important distinction is that the result was an estimated improvement in lifetime value, not a realized increase in lifetime profit. The model depends on projected retention, spending behaviour, contribution economics and incentive costs. In an interview I'd want to refer to the actual model assumptions rather than invent a calculation from memory. More generally, I'd assess whether the observed behaviour appears durable and run sensitivity cases, because a short-term promotional lift shouldn't be extrapolated indefinitely. The business value is in using the model to prioritize investments, while staying clear about which inputs were observed and which were forecasts.",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": true,
+      "detect": [
+        "LTV increase provenance",
+        "LTV sensitivity",
+        "Explain modeled lift",
+        "HBC economics"
+      ]
+    },
+    {
+      "question": "Why mention 500K+ cardholders if you didn't control the credit book?",
+      "answer": "The 500,000-plus figure describes the scale of the cardholder portfolio whose growth and engagement roadmap I worked on. It doesn't mean I personally set underwriting policy or controlled the bank's entire credit book. I think it's useful context because product decisions about onboarding, offers and engagement need to work at that scale, and small percentage changes can have meaningful commercial effects. I'd always distinguish the levers I owned directly from decisions made by Neo Financial or other partners. The size of the portfolio explains scope; it shouldn't be used to overstate my authority.",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": true,
+      "detect": [
+        "Card portfolio ownership",
+        "Issuer controls",
+        "500k scope",
+        "Bank versus retailer P&L"
+      ]
+    },
+    {
+      "question": "What exactly did you change in the HBC application experience?",
+      "answer": "The product objective was to make a regulated credit card application easier to complete without compromising the required information or checks. We looked at the funnel and where customers were abandoning, then worked with the partner and design teams on the digital journey. I can confidently speak to the 15% improvement in application completions. For the precise screen-level changes, I'd want to refer to the release scope rather than invent individual form fields or tests. The important product decision was prioritizing friction reduction where the funnel showed the biggest opportunity, while leaving underwriting and risk decisions with the appropriate partner teams.",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": true,
+      "detect": [
+        "Funnel changes",
+        "Which UX screens",
+        "15% completion cause",
+        "High abandonment steps"
+      ]
+    },
+    {
+      "question": "Did your UX redesign cause approvals in under three minutes?",
+      "answer": "No, I wouldn't attribute the underwriting speed to my UX redesign. The digital application journey and the lending decisioning capability are related but distinct. My contribution was to improve how customers completed the application and how the experience came together with Neo Financial. The partner's credit-decisioning infrastructure supported decisions in under three minutes. The directly relevant product outcome from the journey work was the 15% increase in application completions. I think drawing that boundary clearly is important, particularly in financial services where multiple teams contribute to the customer experience.",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": true,
+      "detect": [
+        "Neo decision speed",
+        "Underwriting responsibility",
+        "Under three minutes",
+        "Confounded results"
+      ]
+    },
+    {
+      "question": "Did Quests reach six million active credit cardholders?",
+      "answer": "No. The six-million-plus number refers to eligible mobile users within the broader HBC digital ecosystem, not six million Mastercard cardholders. The cardholder portfolio was roughly 500,000-plus. Quests was a rules-based engagement capability that could surface targeted promotional journeys to eligible users, including card-related offers. I would keep audience scale separate from the incremental spend result and from the credit portfolio size. Those are three different numbers measuring different parts of the programme.",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": true,
+      "detect": [
+        "6M users",
+        "Quests audience",
+        "Cardholder versus mobile user",
+        "Scope challenge"
+      ]
+    },
+    {
+      "question": "How can you claim 427% acquisition growth when you only improved conversion by 40%?",
+      "answer": "I wouldn't claim the conversion improvement alone produced the entire 427% year-over-year increase. The 40% application conversion lift was a product-funnel result associated with the work we did. The 427% was a broader cardholder acquisition outcome, influenced by the programme, distribution, commercial partnerships and marketing as well as the product experience. I use 'contributed to' deliberately. My direct ownership was the digital acquisition experience and improving the funnel, not every lever in the acquisition business. I'd be very comfortable separating those two levels of impact.",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": true,
+      "detect": [
+        "Aeroplan attribution",
+        "427% versus 40%",
+        "Corporate growth",
+        "Did product cause growth?"
+      ]
+    },
+    {
+      "question": "How did you experiment when the bank owned the application form?",
+      "answer": "With a co-branded card journey, you have to be specific about where the airline's experience ends and the issuer's experience begins. Product work can include offer discovery, placement, messaging, eligibility guidance, handoff quality and the parts of the journey the partner allows you to influence. I'd track the funnel at those boundaries and work with the issuer on shared measurement where data is available. I wouldn't claim we had unrestricted ability to change underwriting or the bank's entire application form. A good PM can still create meaningful conversion improvements by focusing on the stages they can actually influence.",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": true,
+      "detect": [
+        "Issuer handoff",
+        "Partner-owned funnel",
+        "Aeroplan conversion test",
+        "What was controlled?"
+      ]
+    },
+    {
+      "question": "You secured $5.2M at Arc'teryx. Was the programme launched?",
+      "answer": "The $5.2 million refers to capital funding approved for the membership programme, not revenue generated and not proof that the complete platform had launched. My role covered strategy, business alignment, product scope and platform direction. During that period, we also worked on sequencing smaller benefits independently of the full membership build. I would distinguish what was approved, what was designed and what was actually released. I think that's important because a strong product investment decision is meaningful, but it isn't the same outcome as scaled post-launch adoption.",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": true,
+      "detect": [
+        "Arc membership launched?",
+        "Funding versus shipment",
+        "0-to-1 claim",
+        "Capital approval"
+      ]
+    },
+    {
+      "question": "How do you know the headless option saved two quarters?",
+      "answer": "\"That was a projected delivery reduction from our evaluation, not a statement that a completed launch beat schedule by six months. We compared implementation approaches, what capabilities would need to be built internally, and the integration and sequencing implications of different vendors. The headless direction gave us an opportunity to reuse underlying membership capabilities while retaining control of the customer experience. I'd describe the time saving as approximately two quarters in the planning model, because the actual realized benefit depends on execution and downstream dependencies. It's an important distinction between a planning estimate and a realized delivery metric.\"\nE. Senior PM judgment, difficult leadership questions, team dynamics",
+      "category": "Resume deep dive",
+      "part": 10,
+      "isPreferred": true,
+      "detect": [
+        "Vendor time savings",
+        "Two quarters projection",
+        "Actual versus forecast",
+        "Build buy calculation"
+      ]
+    },
+    {
+      "question": "What would you do if Engineering said your top feature was six months of work?",
+      "answer": "First I'd try to understand what's driving the estimate. Is it foundational architecture, data quality, dependency risk or simply the size of the proposed solution? Then I'd step back to the customer problem and ask what the smallest useful outcome would be. Sometimes we can change the scope, test a manual or rules-based approach, or sequence the foundational work. Other times the estimate is telling us the platform needs investment before the feature makes sense. I don't want Engineering to become an order-taking function, and I also don't want 'it's hard' to end the product discussion. The goal is to make the trade-off visible and choose intentionally.",
+      "category": "Senior PM judgment",
+      "part": 11,
+      "isPreferred": true,
+      "detect": [
+        "High engineering estimate",
+        "Team says no",
+        "Scope negotiation",
+        "Discovery spike"
+      ]
+    },
+    {
+      "question": "How do you challenge a VP who has already promised a launch date?",
+      "answer": "I'd avoid a vague message that 'the team is concerned.' I'd bring a clear assessment of what we know, the risks, the decisions still outstanding and the options. For example, we may be able to preserve the date by reducing scope, but not by skipping a critical reconciliation or security control. I'd recommend a path, explain what customer value we can still deliver and make the consequences of each trade-off explicit. I would raise it early rather than waiting until the deadline is obviously impossible. Senior stakeholders don't need a perfect plan; they need a credible explanation and someone willing to take ownership of the decision.",
+      "category": "Senior PM judgment",
+      "part": 11,
+      "isPreferred": true,
+      "detect": [
+        "Executive pushback",
+        "Committed date",
+        "Senior stakeholder conflict",
+        "Difficult conversation"
+      ]
+    },
+    {
+      "question": "Tell me about a time you said no to a stakeholder.",
+      "answer": "A useful example is the membership platform at Arc'teryx. There was a broad set of capabilities people wanted, but trying to make all of them part of the initial release created dependency and timing risk. My role was to help define what was essential to the customer proposition and what could reasonably be deferred. The difficult part wasn't saying that an idea lacked value; it was explaining why it shouldn't be part of the first version. I tried to make that a product decision with clear criteria rather than a personal disagreement. If the scope changes, everyone should understand what we're protecting and what trade-off we're accepting.",
+      "category": "Senior PM judgment",
+      "part": 11,
+      "isPreferred": true,
+      "detect": [
+        "Saying no",
+        "Scope cut",
+        "Difficult stakeholder",
+        "Pushback example"
+      ]
+    },
+    {
+      "question": "How do you handle an engineer who strongly disagrees with your roadmap?",
+      "answer": "I'd want to understand their reasoning before defending my plan. They may be seeing an architectural or reliability risk that isn't obvious in the product requirements. I'd ask them to explain the consequence, the alternatives and the cost of delaying the underlying work. Then I'd compare that against the customer and business outcome we're trying to achieve. Sometimes that will change the roadmap, and it should. If we still disagree, I'd make a recommendation with the trade-offs visible and align on a decision. I think good PM-engineering relationships depend on being able to disagree openly without making it adversarial.",
+      "category": "Senior PM judgment",
+      "part": 11,
+      "isPreferred": true,
+      "detect": [
+        "Engineering disagreement",
+        "Challenge PM",
+        "Technical pushback",
+        "Influence without authority"
+      ]
+    },
+    {
+      "question": "How do you know when to stop investing in a feature?",
+      "answer": "I'd go back to the original hypothesis and the evidence we committed to collecting. If the feature isn't changing the intended customer behaviour, I'd first establish whether the problem is awareness, usability or a weak underlying need. Sometimes a small iteration makes sense. But if we've tested the reasonable alternatives and the impact still doesn't justify the cost, I'd rather stop than keep shipping around it because we've already invested time. I'd also consider dependencies and any customers relying on the feature before removing it. Good ownership includes being willing to redirect resources when the evidence says something isn't working.",
+      "category": "Senior PM judgment",
+      "part": 11,
+      "isPreferred": true,
+      "detect": [
+        "Kill a feature",
+        "Sunk cost",
+        "Product underperforming",
+        "Sunset decisions"
+      ]
+    },
+    {
+      "question": "What is your biggest weakness as a product leader?",
+      "answer": "Earlier in my career I sometimes spent too much time trying to resolve every open question before taking a recommendation forward. I like understanding the data and technical implications, which is useful, but it can slow momentum if you treat every uncertainty as equally important. I've become better at separating decisions that need more evidence from those we can make reversibly and learn from. Now I try to be clear about the level of confidence we need, the cost of waiting and what we'd monitor after the decision. I still care about rigor; I'm just more deliberate about applying it where it matters.",
+      "category": "Senior PM judgment",
+      "part": 11,
+      "isPreferred": true,
+      "detect": [
+        "Weakness",
+        "Development area",
+        "Self-awareness",
+        "Improvement"
+      ]
+    },
+    {
+      "question": "How do you lead when you don't manage the engineers directly?",
+      "answer": "I see leadership as creating clarity and making it easier for the team to do good work. That starts with a clear customer problem and success measure, not just a prioritized ticket list. I want engineers and designers involved in shaping the solution because they often see options I don't. When we're blocked, my responsibility is to make decisions, resolve dependencies and explain trade-offs rather than asking everyone to work harder. I also try to give credit publicly and deal with disagreements directly. You don't need reporting authority to establish direction and accountability, but you do need trust and consistency.",
+      "category": "Senior PM judgment",
+      "part": 11,
+      "isPreferred": true,
+      "detect": [
+        "Influence without authority",
+        "Matrix organization",
+        "Cross-functional leadership",
+        "Squad leadership"
+      ]
+    },
+    {
+      "question": "What if your PM peers own Cards and Money Movement, but your metric depends on both?",
+      "answer": "I'd make the joint outcome explicit and separate what each team owns. If my goal is primary-account adoption, I can't succeed by optimizing an onboarding screen while payments fail or card transactions are confusing. I'd work with those PMs on a shared metric tree, dependencies and commitments, while being clear about where each team's decision rights sit. If a trade-off affects multiple roadmaps, I'd bring options and expected impact to the appropriate leadership forum rather than letting it become a series of one-off escalations. Cross-product ownership only works when there are clear interfaces and everyone understands the common customer outcome.",
+      "category": "Senior PM judgment",
+      "part": 11,
+      "isPreferred": true,
+      "detect": [
+        "Shared ownership",
+        "Cross-domain dependencies",
+        "Competing roadmaps",
+        "Banking operating model"
+      ]
+    },
+    {
+      "question": "Would you delay launch over a 0.5% payment failure rate?",
+      "answer": "I wouldn't decide based on that number in isolation. I'd want to know the baseline, the rail, the type of failures, who is affected, whether funds are at risk and whether customers can recover. A half-percent failure rate could be unacceptable for a critical flow, particularly if failures are silent or lead to duplicate payments. I'd also need to know the volume and severity of the incidents. We'd agree on launch criteria with Engineering, Risk and Operations ahead of time, rather than inventing the threshold during the go/no-go meeting. The decision should be grounded in customer harm and operational readiness, not just the aggregate percentage.",
+      "category": "Senior PM judgment",
+      "part": 11,
+      "isPreferred": true,
+      "detect": [
+        "Reliability threshold",
+        "Go/no-go",
+        "Failure rate acceptable",
+        "Launch risk"
+      ]
+    },
+    {
+      "question": "What would you do if a new AI feature gave customers incorrect financial advice?",
+      "answer": "I'd first assess whether customers were exposed to harmful or misleading recommendations and involve the appropriate product, risk and compliance teams. Depending on severity, I'd disable or constrain the feature while we investigate. Then I'd ask whether we allowed the model to make claims beyond what the underlying data could support, whether the interface made uncertainty clear and whether our evaluation covered realistic failure cases. I would prefer an assistant grounded in known account information and clear educational explanations over one that confidently tells customers what to do with their money. A financial product has to earn trust through accuracy and restraint, not just an impressive conversation.",
+      "category": "Senior PM judgment",
+      "part": 11,
+      "isPreferred": true,
+      "detect": [
+        "AI hallucination",
+        "Financial AI risk",
+        "Model safety",
+        "Financial wellness assistant"
+      ]
+    },
+    {
+      "question": "What's one product opinion you hold strongly that others might disagree with?",
+      "answer": "I think financial products sometimes overvalue engagement for its own sake. A customer opening an app more often isn't necessarily having a better experience. In some cases, the best product is one that makes an important task so dependable that the customer doesn't need to think about it. I still care about engagement metrics, but I'd rather optimize for successfully received paycheques, payments completed correctly and better financial decisions than extra sessions. The interesting part is finding a measurement system that recognizes that value even when it doesn't show up as more screen time.",
+      "category": "Senior PM judgment",
+      "part": 11,
+      "isPreferred": true,
+      "detect": [
+        "Contrarian view",
+        "Product philosophy",
+        "Strong opinion",
+        "Radical candor"
+      ]
+    },
+    {
+      "question": "Tell me about your first disagreement with a new team's established strategy.",
+      "answer": "I wouldn't assume I'm right based on an outside view. I'd start by understanding what the team has already learned, what constraints they're operating under and why the existing plan made sense when it was created. If I still saw a gap, I'd frame it as a hypothesis and bring evidence, not just an opinion. I'd ask what would need to be true for us to change course and whether a small test could resolve the disagreement. I think you have to earn credibility by understanding the environment, but that doesn't mean avoiding difficult questions. The right balance is curiosity first, then a clear recommendation once you have enough context.",
+      "category": "Senior PM judgment",
+      "part": 11,
+      "isPreferred": true,
+      "detect": [
+        "Join new team and disagree",
+        "First 90 days conflict",
+        "New PM challenges direction"
+      ]
+    }
+  ]
+}

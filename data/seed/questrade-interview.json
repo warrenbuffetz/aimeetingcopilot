@@ -1,0 +1,78 @@
+{
+  "profile": {
+    "name": "Questrade — Senior PM, Everyday Banking",
+    "employer": "Questrade",
+    "role_title": "Senior Product Manager"
+  },
+  "retireQuestions": [
+    "Why did you leave Arc'teryx?"
+  ],
+  "preparedQa": [
+    {
+      "question": "Tell me about yourself.",
+      "answer": "Sure. I've spent the last nine-plus years in product, mostly working on digital consumer experiences, financial products and the platforms that support them.\n\nI'm currently a Senior Product Manager at Arc'teryx, where I've been leading the strategy for a new membership platform. That involved securing $5.2 million in funding, evaluating different technology solutions and working across business and engineering teams to define how the platform and customer experience come together.\n\nBefore that, I was at RBC working on Avion Rewards. One of the more interesting projects was opening Avion to non-RBC customers, which meant rethinking how people signed up and accessed the platform. I also launched consumer cashback withdrawals through Interac e-Transfer, which gave me experience working with payment infrastructure, Risk and Financial Operations.\n\nEarlier in my career, I was at HBC managing growth for its Mastercard portfolio, and at Aeroplan working on credit card acquisition with TD, CIBC and American Express.\n\nSo I've had the opportunity to work across different parts of the financial customer journey, from acquisition and onboarding to payments, spending and ongoing engagement.\n\nWhat interests me about Questrade is the opportunity to bring those experiences together. You're not just trying to get someone to open another account. You're trying to become the place where they actually manage their everyday finances, and I think that's a really interesting product challenge.",
+      "category": "Intro",
+      "part": 1,
+      "isPreferred": true
+    },
+    {
+      "question": "Why Questrade? Why this role?",
+      "answer": "What caught my attention was the ambition behind everyday banking.\n\nQuestrade already has relationships with people who trust it with their investments, and now there's an opportunity to become a much bigger part of their financial lives.\n\nI find that particularly interesting because getting someone to open a banking account is one thing. Convincing them to move their paycheque, set up recurring payments and start using that account every day is a much harder problem.\n\nI've worked on different pieces of that challenge at RBC, HBC and Aeroplan, and personal finance is also something I genuinely enjoy outside of work.\n\nI also spent some time looking into Questrade's newer app experience, particularly Balance Sheet. I like the idea of giving customers a clearer view of their finances, but I think the really interesting question is what comes next. How do you turn that visibility into something that helps people make better decisions and actually changes their financial habits?\n\nThat's the type of problem I'd be excited to own.",
+      "category": "Motivation",
+      "part": 1,
+      "isPreferred": true
+    },
+    {
+      "question": "Why Questrade instead of continuing at Arc'teryx?",
+      "answer": "I think the two opportunities are interesting for different reasons.\n\nAt Arc'teryx, I've enjoyed the challenge of building a new membership platform, particularly thinking through the customer proposition, the underlying technology and how to bring multiple teams together around a common roadmap.\n\nBut financial services is an industry I have a lot of experience in and a genuine personal interest in.\n\nWhat makes Questrade particularly appealing is the ambition to become someone's primary financial relationship.\n\nI think there's a really interesting difference between getting someone to open a banking account and convincing them to move their paycheque, everyday spending and recurring payments.\n\nI've worked on different parts of that problem at RBC, HBC and Aeroplan, so this feels like a natural opportunity to bring those experiences together while continuing to grow as a product leader.",
+      "category": "Motivation",
+      "part": 1,
+      "isPreferred": false,
+      "notes": "Use when they explicitly compare staying at Arc'teryx vs joining Questrade."
+    },
+    {
+      "question": "Why move into everyday banking from rewards and loyalty?",
+      "answer": "I actually see everyday banking as a natural progression from the work I've been doing.\n\nAt Aeroplan, I focused on getting customers to adopt financial products. At HBC, the challenge was what happened after they became cardholders, particularly how to keep them engaged and increase the value of the relationship. At RBC, I worked on payments and the underlying platforms needed to support those experiences.\n\nEveryday banking brings those challenges together, but with a higher bar for trust and reliability.\n\nYou're dealing with money people rely on for their rent, groceries and everyday expenses. If the product isn't dependable, no amount of clever engagement features is going to make someone move their primary account.\n\nThat combination of customer behaviour, commercial outcomes and technical complexity is what appeals to me.",
+      "category": "Motivation",
+      "part": 1,
+      "isPreferred": false
+    },
+    {
+      "question": "You haven't owned a traditional chequing account. Why are you qualified?",
+      "answer": "That's fair. I haven't been the product owner for a core chequing account, so I wouldn't pretend that I have.\n\nWhat I do bring is experience across several of the problems that make everyday banking successful.\n\nAt RBC, I worked on consumer money movement and the integration of payment services with eligibility, risk and operational requirements. At HBC, I owned cardholder growth and portfolio economics, where the challenge was moving beyond acquisition and getting customers to actually use the product. And at Aeroplan, I worked on acquiring customers into financial products across multiple issuers.\n\nThe underlying principles are very transferable. You need to reduce friction, establish trust, understand what drives recurring behaviour and make sure the economics work.\n\nI would need to get up to speed on the specifics of Questbank's core banking architecture and operations, but I'm comfortable going deep into unfamiliar technical domains. I've had to do that throughout my career.\n\nI think the combination of that experience and an outside perspective could be valuable.",
+      "category": "Motivation",
+      "part": 1,
+      "isPreferred": true
+    },
+    {
+      "question": "Why are you looking to leave Arc'teryx?",
+      "answer": "I've enjoyed my time at Arc'teryx, particularly the opportunity to lead something from the ground up and get involved in some of the bigger strategic and technology investment decisions.\n\nI'm not necessarily looking to leave for just any opportunity. I've been fairly selective about roles that would be a meaningful next step.\n\nWhat caught my attention about Questrade is the opportunity to return to financial services, which is an industry I've always enjoyed working in. I have experience across payments, credit cards and financial product growth, and everyday banking brings a lot of those areas together.\n\nI also like that the challenge is bigger than launching a new product. You're trying to change how customers manage their money and build a relationship that becomes part of their everyday lives.\n\nThat combination of the industry, the product challenge and the opportunity to have a meaningful impact is what makes this role particularly interesting to me.",
+      "category": "Motivation",
+      "part": 1,
+      "isPreferred": true,
+      "notes": "If asked about Vancouver/GTA only: Arc'teryx has been moving toward more roles in Vancouver; you're planning to stay in the GTA long term. Do not lead with relocation unless asked."
+    },
+    {
+      "question": "What makes you different from other Senior PM candidates?",
+      "answer": "I think one of my strengths is that I can connect the customer experience to the underlying business and technical realities.\n\nI've worked on acquisition and growth, but I've also been involved in the less visible parts of financial products, like payment integrations, eligibility rules, reconciliation, risk requirements and platform architecture.\n\nI also have a fairly analytical foundation through my Master of Management Analytics, so I'm comfortable getting into the data and challenging whether a metric actually represents a better customer or business outcome.\n\nAnd I like being hands-on. I'll go from discussing an investment decision with leadership to working with engineering on a technical trade-off or building a small prototype myself.\n\nI wouldn't claim to be the deepest specialist in every area of banking, but I think that combination of commercial thinking, technical fluency and execution is valuable for a role that needs to connect multiple product domains.",
+      "category": "Intro",
+      "part": 1,
+      "isPreferred": true
+    },
+    {
+      "question": "What are your compensation expectations?",
+      "answer": "Based on the scope of the position, my experience and the published range, I'd be targeting somewhere around $175,000 to $185,000 in base salary.\n\nI'm also interested in understanding the overall compensation package, particularly the bonus structure.\n\nThe role and the opportunity to own a meaningful product outcome are important to me, so I'm open to discussing the right package if there's a strong mutual fit.",
+      "category": "Motivation",
+      "part": 1,
+      "isPreferred": false
+    },
+    {
+      "question": "What would it take for you to leave your current role?",
+      "answer": "For me, it's really about finding the right combination of product challenge, ownership and the people I'd be working with.\n\nI've enjoyed having the opportunity to influence product strategy and investment decisions at Arc'teryx, so I'd want to continue operating at that level.\n\nWhat's compelling about Questrade is that everyday banking is a meaningful business opportunity, but it's also a genuinely interesting customer problem. You're trying to change financial habits that people have built over many years.\n\nI'd want to understand the team's priorities, how much ownership this role has over the product direction and how success is measured.\n\nIf there's a strong fit on those things, it's definitely an opportunity I'd be excited about.",
+      "category": "Motivation",
+      "part": 1,
+      "isPreferred": true,
+      "notes": "Use when interviewing while still employed at Arc'teryx."
+    }
+  ]
+}

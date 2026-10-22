@@ -2,8 +2,6 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { requireUser } from "@/lib/auth";
-import { deleteEmbedding, upsertPreparedQaEmbedding } from "@/lib/embeddings";
-import { isOpenAIConfigured } from "@/lib/env";
 import { sanitizeUserContent } from "@/lib/sanitize";
 
 const patchSchema = z.object({
@@ -41,14 +39,6 @@ export async function PATCH(req: Request, ctx: { params: Promise<{ id: string }>
   const { data, error } = await supabase.from("prepared_qa").update(updates).eq("id", id).select().single();
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
 
-  if (isOpenAIConfigured()) {
-    try {
-      await upsertPreparedQaEmbedding(supabase, data);
-    } catch (e) {
-      console.error(e);
-    }
-  }
-
   return NextResponse.json(data);
 }
 
@@ -64,6 +54,5 @@ export async function DELETE(_req: Request, ctx: { params: Promise<{ id: string 
   const supabase = await createClient();
   const { error } = await supabase.from("prepared_qa").delete().eq("id", id);
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-  await deleteEmbedding(supabase, "prepared_qa", id);
   return NextResponse.json({ ok: true });
 }

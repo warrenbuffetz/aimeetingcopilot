@@ -19,7 +19,7 @@ export default async function DashboardPage() {
           <h1 className="text-2xl font-semibold tracking-tight">Dashboard</h1>
           <p className="text-muted-foreground">Build your library before going live.</p>
         </div>
-        <Button render={<Link href="/live" />}>Start live session</Button>
+        <Button nativeButton={false} render={<Link href="/live" />}>Start live session</Button>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-3">
@@ -59,8 +59,12 @@ export default async function DashboardPage() {
       </Card>
 
       <div className="flex flex-wrap gap-3">
-        <Button variant="outline" render={<Link href="/library" />}>Manage answer library</Button>
-        <Button variant="outline" render={<Link href="/profiles" />}>Interview profiles</Button>
+        <Button variant="outline" nativeButton={false} render={<Link href="/library" />}>
+          Manage answer library
+        </Button>
+        <Button variant="outline" nativeButton={false} render={<Link href="/profiles" />}>
+          Interview profiles
+        </Button>
       </div>
     </div>
   );

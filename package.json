@@ -9,11 +9,20 @@
   "scripts": {
     "postinstall": "rm -f node_modules/@interview-copilot/web/.env.local node_modules/@interview-copilot/web/.env",
     "dev": "npm run dev -w @interview-copilot/web",
+    "dev:clean": "node scripts/kill-dev-ports.mjs && sleep 1 && npm run dev:clean -w @interview-copilot/web",
     "build": "npm run build -w @interview-copilot/web",
     "lint": "npm run lint -w @interview-copilot/web",
     "test": "npm run test -w @interview-copilot/web",
     "typecheck": "npm run typecheck -w @interview-copilot/web && npm run typecheck -w @interview-copilot/shared",
     "desktop:dev": "npm run dev -w @interview-copilot/desktop",
-    "desktop:build": "npm run build -w @interview-copilot/desktop"
+    "desktop:build": "npm run build -w @interview-copilot/desktop",
+    "seed:questrade": "node scripts/seed-library.mjs data/seed/questrade-interview.json",
+    "seed:questrade:full": "node scripts/seed-library.mjs data/seed/questrade-interview-full.json",
+    "seed:questrade:q48": "node scripts/seed-library.mjs data/seed/questrade-q48-q112.json",
+    "seed:questrade:resume": "node scripts/seed-library.mjs data/seed/questrade-resume-deepdives.json",
+    "merge:questrade:full": "node scripts/merge-questrade-full.mjs",
+    "export:custom-gpt": "node scripts/export-custom-gpt-knowledge.mjs",
+    "import:follow-ups": "node scripts/import-follow-ups.mjs data/seed/questrade-follow-ups.json",
+    "whisper:server": ".venv-whisper/bin/python3 scripts/mac-whisper-server.py"
   }
 }

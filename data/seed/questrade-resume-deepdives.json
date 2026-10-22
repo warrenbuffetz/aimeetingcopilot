@@ -1,0 +1,404 @@
+{
+  "status": "ready",
+  "doNotSeedUntilRevisions": false,
+  "profile": {
+    "name": "Questrade — Senior PM, Everyday Banking",
+    "employer": "Questrade",
+    "role_title": "Senior Product Manager"
+  },
+  "preparedQa": [
+    {
+      "question": "Tell me about a customer problem you solved at RBC.",
+      "answer": "A good example is the cashback withdrawal experience at Avion. We were opening the program to people who didn't bank with RBC, but some members could earn cashback without having a practical way to withdraw it to the account they already used.\n\nWe looked at support conversations and the actual withdrawal journey. The problem wasn't that people couldn't understand their rewards balance. They could see the money; they couldn't easily get it out.\n\nI worked with engineering and our payments partners on the options, including direct account linking. We ultimately adapted an existing RBC Interac e-Transfer service. It was a faster route to a usable product, although our initial implementation was limited to members with Autodeposit on their email address.\n\nMy focus was making that limitation clear and getting the entire payout journey right: eligibility, transaction states, what happened when confirmation was delayed, and how support and finance could investigate a payment.\n\nWe enabled over $1 million in annualized cashback withdrawals. I think the important part was that non-RBC members could finally use the value they'd earned without opening another bank account.",
+      "category": "Resume deep dive — RBC",
+      "part": 12,
+      "detect": [
+        "Walk me through the Interac launch",
+        "What was your most relevant banking product",
+        "Describe an end-to-end product launch."
+      ],
+      "notes": "RBC-00. Hypothetical details requiring verification: 3,200 requests, 3,168 confirmations within 24 hours, $300K quarter, interviews and support-workflow specifics. RBC 5M+ settlement events = shared enterprise service, not Avion withdrawals. $1M+ = annualized payout run rate.",
+      "isPreferred": true
+    },
+    {
+      "question": "How did you know the Avion cashback withdrawal was a customer problem?",
+      "answer": "We started with support conversations from members who had cashback available but didn't have an RBC deposit account. The question kept coming back to how they could get it into the bank account they already used.\n\nI also walked through the existing experience. Members could earn cashback, see their balance and understand its value, but the withdrawal path didn't work for that segment. That made the problem fairly concrete.\n\nTo size the opportunity, I wanted two numbers separated: members currently affected who had a withdrawable balance, and the much larger audience we hoped to reach by opening Avion beyond RBC customers. I didn't want to treat the future addressable market as proof of current demand.\n\nSo the support evidence told us what was frustrating people, and the eligible-member data told us how large the immediate problem was.",
+      "category": "Resume deep dive — RBC",
+      "part": 12,
+      "detect": [
+        "How did you know this was a customer problem at RBC",
+        "What evidence did you have",
+        "How did you validate the need",
+        "Was this just a stakeholder request?"
+      ],
+      "notes": "RBC-01. Hypothetical details requiring verification: 3,200 requests, 3,168 confirmations within 24 hours, $300K quarter, interviews and support-workflow specifics. RBC 5M+ settlement events = shared enterprise service, not Avion withdrawals. $1M+ = annualized payout run rate.",
+      "isPreferred": true
+    },
+    {
+      "question": "Why did you prioritize it over other Avion improvements?",
+      "answer": "We were making Avion available to people who banked elsewhere. If those members could earn cashback but couldn't withdraw it, that undermined a basic part of the proposition.\n\nThere were other things we could have improved, like offer discovery and shopping engagement. Those mattered, but they would help people earn additional rewards before we'd solved how to use the rewards already sitting in their account.\n\nThe affected group was identifiable, the customer problem was understandable, and RBC already had a payment capability we could investigate rather than starting completely from scratch.\n\nThat made it a practical priority with a clear outcome: could an eligible non-RBC member successfully withdraw cashback to their own bank?",
+      "category": "Resume deep dive — RBC",
+      "part": 12,
+      "detect": [
+        "Why now",
+        "How did it rank on your roadmap",
+        "What did you deprioritize?"
+      ],
+      "notes": "RBC-02. Hypothetical details requiring verification: 3,200 requests, 3,168 confirmations within 24 hours, $300K quarter, interviews and support-workflow specifics. RBC 5M+ settlement events = shared enterprise service, not Avion withdrawals. $1M+ = annualized payout run rate.",
+      "isPreferred": true
+    },
+    {
+      "question": "Why Interac e-Transfer instead of direct bank-account linking?",
+      "answer": "We looked at both. Linking external bank accounts could have given us a broader funding and withdrawal experience eventually, but it brought additional account verification, data and integration dependencies.\n\nRBC already had an Interac-based business payout capability. By adapting it for consumer cashback, we could build on a service with an established operational model instead of creating a separate money-movement path.\n\nIt wasn't a perfect solution. Our first version relied on the member's email address and required Autodeposit. That narrowed eligibility, and we needed to make it obvious before a member tried to withdraw.\n\nI was comfortable with that trade-off for an initial release, as long as we didn't hide it, had a way to handle unsuccessful or delayed transfers, and could measure how many customers were excluded. We'd then have evidence to decide whether expanding the withdrawal options was worth the additional complexity.",
+      "category": "Resume deep dive — RBC",
+      "part": 12,
+      "detect": [
+        "What alternatives did you consider",
+        "Why reuse a business payment service",
+        "What trade-off did you accept?"
+      ],
+      "notes": "RBC-03. Hypothetical details requiring verification: 3,200 requests, 3,168 confirmations within 24 hours, $300K quarter, interviews and support-workflow specifics. RBC 5M+ settlement events = shared enterprise service, not Avion withdrawals. $1M+ = annualized payout run rate.",
+      "isPreferred": true
+    },
+    {
+      "question": "What did you personally decide on the Avion cashback withdrawal launch?",
+      "answer": "One decision I pushed on was that payment status and recovery had to be part of the MVP, not something we figured out after launch.\n\nIf a member requests a withdrawal and the confirmation is delayed, they need to know what's happening to both the transfer and their cashback balance. We needed to distinguish pending, completed and unsuccessful states, and avoid encouraging a retry that might create a duplicate payout.\n\nI also wanted support to have a withdrawal reference and a dependable investigation path, and Finance needed to be able to reconcile the payout. We didn't need a fully featured operations console on day one, but we did need a workable process.\n\nEngineering owned the implementation and the underlying payment logic. I owned the customer and operational requirements, the trade-offs in launch scope, and alignment with Risk and Financial Operations on readiness.",
+      "category": "Resume deep dive — RBC",
+      "part": 12,
+      "detect": [
+        "What did you personally decide on RBC Avion",
+        "What was your ownership versus engineering",
+        "What trade-off did you make",
+        "What went into the MVP?"
+      ],
+      "notes": "RBC-04. Hypothetical details requiring verification: 3,200 requests, 3,168 confirmations within 24 hours, $300K quarter, interviews and support-workflow specifics. RBC 5M+ settlement events = shared enterprise service, not Avion withdrawals. $1M+ = annualized payout run rate.",
+      "isPreferred": true
+    },
+    {
+      "question": "How did you measure success for the Avion cashback withdrawal launch?",
+      "answer": "The main measure was whether eligible members who submitted a withdrawal actually received their money, with a clear understanding of the payment status along the way.\n\nIn the illustrative first-quarter readout, we had 3,200 requests and 3,168 confirmed payouts inside a 24-hour delivery window. That's a 99% 24-hour confirmation rate, not necessarily a 99% lifetime success rate. The remaining requests still needed to be tracked to a final outcome.\n\nCompleted payouts in that quarter were roughly $300,000, so the annualized run rate was around $1.2 million. I would call it a run rate, not twelve months of observed volume.\n\nWe also needed to measure eligibility drop-off before submission, reconciliation exceptions and payout-related support contacts. And I would keep the 5M+ settlement events separate: that's the scale of the shared RBC payment service, not the number of Avion withdrawals.\n\nThose measures support adoption and reliability. They don't, by themselves, prove we improved member retention.",
+      "category": "Resume deep dive — RBC",
+      "part": 12,
+      "detect": [
+        "What were the KPIs",
+        "What do the 5M settlement events mean",
+        "How do you know the launch worked?"
+      ],
+      "notes": "RBC-05. Hypothetical details requiring verification: 3,200 requests, 3,168 confirmations within 24 hours, $300K quarter, interviews and support-workflow specifics. RBC 5M+ settlement events = shared enterprise service, not Avion withdrawals. $1M+ = annualized payout run rate. Answer uses illustrative first-quarter readout (3,200/3,168, $300K); treat as sample measurement design until confirmed.",
+      "isPreferred": true
+    },
+    {
+      "question": "What would you do differently on the Avion cashback withdrawal launch?",
+      "answer": "I'd bring a little more operational visibility into the first release.\n\nWe had an investigation process, but in the illustrative scenario, some questions still went through Production Support or required custom queries. That's workable at low volume, but it's not how I'd want to scale a consumer payment experience.\n\nI'd identify the handful of questions that came up repeatedly and give support a simple read-only lookup: withdrawal reference, current status, timestamps and next action. I wouldn't build an entire payment-management console until the need justified it.\n\nI'd measure whether that reduced investigation time and engineering escalations, as well as whether customers received clearer answers. Looking back, that's a small amount of product work that could make the operational experience much better without delaying the core launch significantly.",
+      "category": "Resume deep dive — RBC",
+      "part": 12,
+      "detect": [
+        "What did you learn",
+        "What was missing at launch",
+        "What would you improve in version two?"
+      ],
+      "notes": "RBC-06. Hypothetical details requiring verification: 3,200 requests, 3,168 confirmations within 24 hours, $300K quarter, interviews and support-workflow specifics. RBC 5M+ settlement events = shared enterprise service, not Avion withdrawals. $1M+ = annualized payout run rate. Answer references illustrative scenario for support/ops visibility.",
+      "isPreferred": true
+    },
+    {
+      "question": "Tell me about something you took from an idea into a product.",
+      "answer": "At Arc’teryx, I worked on developing a membership proposition around what happens after someone buys the product. A jacket might last for years, and over that time its owner may need care advice, repairs or trade-in services.\n\nSome of those services already existed, but they lived in separate journeys. Our hypothesis was that we could make them more useful if customers had one clear way to understand what applied to their gear and how to access it.\n\nI helped define the initial member journey, the MVP and the systems needed behind it. That included identity, benefit eligibility, customer profiles and the handoffs into service teams.\n\nWe evaluated five vendors and shaped a headless approach instead of building all of those membership capabilities internally. I also worked with the business and Finance on the investment case, and we secured $5.2 million in capital funding.\n\nThat was an important product strategy and delivery milestone. I wouldn't present it as proof of member adoption; the broader program still needed to demonstrate that after launch.",
+      "category": "Resume deep dive — Arc'teryx",
+      "part": 12,
+      "detect": [
+        "Tell me about a zero-to-one platform",
+        "How did you shape the Arc’teryx membership strategy",
+        "What did you own?"
+      ],
+      "notes": "ARC-00. Hypothetical details requiring verification: twelve-person prototype study with ten successful tasks, interview evidence or pilot details. $5.2M approval and planned scope are pre-launch progress, not proof of adoption.",
+      "isPreferred": true
+    },
+    {
+      "question": "How did you know membership was a customer problem at Arc'teryx?",
+      "answer": "We looked at how people actually found and used the services available after purchase. In the illustrative research, recent purchasers and long-time owners knew that repairs and care services existed, but weren't always sure what applied to their particular gear or where to begin.\n\nThat was consistent with questions going into Guest Services, like whether a product qualified for a benefit or how to start a request.\n\nI think it's important to separate two things here. We had evidence that access and eligibility were confusing. We did not yet have proof that putting everything into a membership would create more loyalty or retention.\n\nSo I treated that as a hypothesis to validate. The initial experience needed to make the existing services easier to understand and use before we could make broader claims about the program's long-term value.",
+      "category": "Resume deep dive — Arc'teryx",
+      "part": 12,
+      "detect": [
+        "How did you know this was a customer problem at Arc'teryx",
+        "What research informed the membership program",
+        "Why would customers want membership",
+        "How did you validate the proposition?"
+      ],
+      "notes": "ARC-01. Hypothetical details requiring verification: twelve-person prototype study with ten successful tasks, interview evidence or pilot details. $5.2M approval and planned scope are pre-launch progress, not proof of adoption. Distinguishes confusing access from unproven loyalty hypothesis.",
+      "isPreferred": true
+    },
+    {
+      "question": "Why prioritize a membership platform rather than improving service pages?",
+      "answer": "Improving the existing pages was a credible smaller option, and it could have helped people find information. But we were also considering benefits that required the business to recognize a member consistently and apply eligibility rules across different experiences.\n\nA customer shouldn't have to explain their identity and eligibility from scratch every time they move from the website into a repair or guest-service journey.\n\nThat made it more than a content or navigation problem. It raised questions about the underlying customer record, the benefit rules and how service teams would fulfil what we promised.\n\nI worked with the business on the potential value and with the service teams on capacity and cost. For the investment to make sense, we needed a credible first release and a way to test actual participation and fulfilment after launch. I didn't want the funding case to depend on assuming that everyone who enrolled would automatically become more loyal.",
+      "category": "Resume deep dive — Arc'teryx",
+      "part": 12,
+      "detect": [
+        "What business problem did it solve",
+        "Why invest $5.2M",
+        "Why was this worth doing?"
+      ],
+      "notes": "ARC-02. Hypothetical details requiring verification: twelve-person prototype study with ten successful tasks, interview evidence or pilot details. $5.2M approval and planned scope are pre-launch progress, not proof of adoption.",
+      "isPreferred": true
+    },
+    {
+      "question": "Why this solution and why start in North America?",
+      "answer": "We wanted one coherent member experience, but a lot of the value would still be delivered by existing services like repair, events and resale. The solution therefore needed to connect those services rather than replace them all.\n\nA configurable headless membership engine made sense for common member and benefit rules, while we kept control of the customer-facing experience and its integrations. We assessed five vendors, and that direction reduced the projected delivery timeline by about two quarters.\n\nI also recommended focusing the broader MVP on North America. Service availability and fulfilment differed by market, and we needed to make sure a benefit shown to a member could actually be honoured where they lived.\n\nThe trade-off was a narrower first release. I'd rather launch a useful, complete journey in a defined market than claim broad coverage with exceptions customers only discover when they try to use a benefit.",
+      "category": "Resume deep dive — Arc'teryx",
+      "part": 12,
+      "detect": [
+        "Why a headless membership engine",
+        "What alternatives did you consider",
+        "Why not launch globally?"
+      ],
+      "notes": "ARC-03. Hypothetical details requiring verification: twelve-person prototype study with ten successful tasks, interview evidence or pilot details. $5.2M approval and planned scope are pre-launch progress, not proof of adoption.",
+      "isPreferred": true
+    },
+    {
+      "question": "What did you personally decide or deprioritize?",
+      "answer": "One specific decision was not to build every membership journey natively into the mobile app for the first release.\n\nWe could support the initial enrollment and benefit journeys through responsive web while putting engineering effort into identity, eligibility and service fulfilment. It was a less integrated app experience at first, but it protected the part that mattered most: could the customer actually receive the benefit we'd promised?\n\nI recommended that sequencing, worked through the trade-off with channel and service teams, and reflected it in the capability roadmap and investment plan.\n\nTo me, that was a better MVP decision than spreading the team across more front-end surfaces while leaving the underlying service journey incomplete.",
+      "category": "Resume deep dive — Arc'teryx",
+      "part": 12,
+      "detect": [
+        "What was your key MVP trade-off",
+        "How did you challenge the roadmap",
+        "What did you say no to?"
+      ],
+      "notes": "ARC-04. Hypothetical details requiring verification: twelve-person prototype study with ten successful tasks, interview evidence or pilot details. $5.2M approval and planned scope are pre-launch progress, not proof of adoption.",
+      "isPreferred": true
+    },
+    {
+      "question": "How did you know it worked if the full membership platform hadn't launched?",
+      "answer": "I'd separate progress on the investment and product definition from proof of customer value.\n\nFor the phase I led, we secured $5.2 million in capital approval, aligned the first-release scope and made the major platform and integration decisions. Those are meaningful milestones, but they aren't adoption metrics.\n\nIn an illustrative usability study, twelve customers were asked to find a benefit relevant to their gear, understand eligibility and identify the next step; ten did it without prompting. That would be encouraging evidence that the journey was understandable, but twelve participants wouldn't establish demand or retention.\n\nAfter launch, I'd measure enrollment separately from successful benefit usage, with an appropriate observation window. I'd also track fulfilment rates, service costs, customer-support needs and, over time, whether the program changed behaviour compared with a meaningful comparison group.\n\nSo my claim would be that we established an investable, testable product direction, not that we had already proven the full membership economics.",
+      "category": "Resume deep dive — Arc'teryx",
+      "part": 12,
+      "detect": [
+        "What did the $5.2M prove",
+        "What were the leading indicators",
+        "How did you measure pre-launch success?"
+      ],
+      "notes": "ARC-05. Hypothetical details requiring verification: twelve-person prototype study with ten successful tasks, interview evidence or pilot details. $5.2M approval and planned scope are pre-launch progress, not proof of adoption. Illustrative usability study (12 participants, 10 successful).",
+      "isPreferred": true
+    },
+    {
+      "question": "What would you do differently on the ReBIRD membership platform?",
+      "answer": "I'd run a small assisted pilot of one benefit earlier, alongside the prototype work.\n\nA prototype can tell us whether someone understands a repair benefit and knows where to click. It doesn't fully tell us what happens when an item needs eligibility verification, a service team has to handle an exception or fulfilment takes longer than expected.\n\nI'd take a small group through the real journey with staff support and record completion, turnaround time, exceptions and the effort involved.\n\nThat would give us better evidence for the operating model before committing to more platform functionality. I still think the investment work was important, but I'd want us to learn more from the actual service process sooner.",
+      "category": "Resume deep dive — Arc'teryx",
+      "part": 12,
+      "detect": [
+        "What did you learn",
+        "What would you change in the MVP process",
+        "How would you de-risk the investment earlier?"
+      ],
+      "notes": "ARC-06. Hypothetical details requiring verification: twelve-person prototype study with ten successful tasks, interview evidence or pilot details. $5.2M approval and planned scope are pre-launch progress, not proof of adoption.",
+      "isPreferred": true
+    },
+    {
+      "question": "Tell me about a customer experience you improved at HBC.",
+      "answer": "At HBC, I worked with Neo Financial on the digital application journey for the HBC Mastercard. Customers were interested enough to start an application, but too many were leaving before finishing, particularly on mobile.\n\nIn the illustrative research, we learned that some customers paused to find information or went back to shopping. When they returned, it wasn't obvious how to pick up where they left off, and some assumed they needed to start again.\n\nInstead of just driving more traffic into the funnel, I focused on helping people complete an application they'd already chosen to begin.\n\nWe worked with Neo on a secure save-and-resume experience. Neo continued to own sensitive application data, authentication and underwriting. HBC owned the entry and return journey and made the next step clear.\n\nThe application completion rate improved by 15% relative to the original experience. The product also offered credit decisions in under three minutes through Neo's underlying capability. I'd keep that separate from the effect of our UX changes.",
+      "category": "Resume deep dive — HBC",
+      "part": 12,
+      "detect": [
+        "Walk me through the 15% application completion increase",
+        "Describe a financial services funnel you improved",
+        "What was your Neo Financial project?"
+      ],
+      "notes": "HBC-00. Hypothetical details requiring verification: save-and-resume implementation, random assignment, 4,000 starters per variant, 14-day window and detailed funnel findings. 15% = relative improvement in application completion; credit under three minutes depends on Neo underwriting. Illustrative research on pause/return behaviour.",
+      "isPreferred": true
+    },
+    {
+      "question": "How did you identify the application problem?",
+      "answer": "We started with step-level application data from Neo and looked at where people stopped progressing. Drop-off was more noticeable on mobile, but the data alone didn't explain why.\n\nIn the illustrative usability sessions, we saw people interrupt the application to look up information or return to shopping. When they came back, they couldn't always find the same application again. Some thought they had to start over.\n\nThat gave us a specific hypothesis: the problem wasn't just the length of the form. We were turning an interrupted application into an abandoned one.\n\nI wanted to test that before asking Neo to simplify or remove information that might be necessary for identity verification, eligibility or lending requirements.",
+      "category": "Resume deep dive — HBC",
+      "part": 12,
+      "detect": [
+        "How did you know the funnel was broken",
+        "What research did you run",
+        "Why did you focus on mobile?"
+      ],
+      "notes": "HBC-01. Hypothetical details requiring verification: save-and-resume implementation, random assignment, 4,000 starters per variant, 14-day window and detailed funnel findings. 15% = relative improvement in application completion; credit under three minutes depends on Neo underwriting. Illustrative usability sessions.",
+      "isPreferred": true
+    },
+    {
+      "question": "Why prioritize application continuation instead of more acquisition?",
+      "answer": "These were people who had already shown intent by starting an application. We knew where some of them were dropping out, and we had a plausible explanation for what was getting in their way.\n\nAdding more acquisition placements might have produced more starts, but it wouldn't address the experience those applicants were entering. Improving completion could generate more submitted applications from the same audience without needing to increase traffic.\n\nIt was also an opportunity we could test with existing demand. We could keep the product offer and underwriting requirements consistent, improve how people returned to an application, and measure whether more starters completed it.\n\nThat combination of customer benefit, commercial potential and a focused experiment made it a reasonable priority.",
+      "category": "Resume deep dive — HBC",
+      "part": 12,
+      "detect": [
+        "Why this problem",
+        "What did you deprioritize",
+        "How did you size the opportunity?"
+      ],
+      "notes": "HBC-02. Hypothetical details requiring verification: save-and-resume implementation, random assignment, 4,000 starters per variant, 14-day window and detailed funnel findings. 15% = relative improvement in application completion; credit under three minutes depends on Neo underwriting.",
+      "isPreferred": true
+    },
+    {
+      "question": "Why save-and-resume, and how did you split ownership with Neo?",
+      "answer": "We considered simpler form interactions and reminder messaging. Those could help, but the research suggested a more basic issue: customers needed a reliable way to continue an application after an interruption.\n\nThe proposed design was secure save-and-resume. Neo retained the application data and handled authentication. HBC provided a clear route back into the right application and told customers what to expect.\n\nThat boundary mattered. We didn't need to duplicate sensitive financial application data inside HBC systems just to solve a navigation problem.\n\nWe still had to define what happened when a link expired, the application had already been submitted or a partner status was temporarily unavailable. Those edge cases were important because a customer shouldn't be encouraged to create a duplicate application simply because the interface was unclear.",
+      "category": "Resume deep dive — HBC",
+      "part": 12,
+      "detect": [
+        "Why not shorten the form",
+        "What did your team build",
+        "How did the partner integration work?"
+      ],
+      "notes": "HBC-03. Hypothetical details requiring verification: save-and-resume implementation, random assignment, 4,000 starters per variant, 14-day window and detailed funnel findings. 15% = relative improvement in application completion; credit under three minutes depends on Neo underwriting.",
+      "isPreferred": true
+    },
+    {
+      "question": "What did you personally decide on the HBC Mastercard application journey?",
+      "answer": "I made continuation of the existing application the core requirement of the return journey.\n\nThat meant the customer shouldn't land back on a generic credit-card offer page and be encouraged to start a new application. We needed distinct experiences for an application in progress, one already submitted and a session that required the customer to authenticate again.\n\nI also worked with Neo on what limited status information we could safely display on the HBC side and which support team owned different issues.\n\nNeo owned the secure application flow, customer financial data and underwriting. My responsibility was the customer journey across the HBC-to-Neo boundary, the requirements and the trade-offs necessary to make it understandable and supportable.",
+      "category": "Resume deep dive — HBC",
+      "part": 12,
+      "detect": [
+        "What did you own versus Neo",
+        "What product trade-off mattered",
+        "Which requirements did you set?"
+      ],
+      "notes": "HBC-04. Hypothetical details requiring verification: save-and-resume implementation, random assignment, 4,000 starters per variant, 14-day window and detailed funnel findings. 15% = relative improvement in application completion; credit under three minutes depends on Neo underwriting.",
+      "isPreferred": true
+    },
+    {
+      "question": "How did you measure the 15% improvement?",
+      "answer": "In the illustrative test, we randomly assigned new application starters to the original or revised experience and kept that assignment stable if they returned. Each person had fourteen days to complete, and we waited for the final cohort's window to close.\n\nCompletion meant the application had been submitted to Neo for a decision, not that the customer was approved or had activated their card.\n\nIn the original group, 2,000 of 4,000 starters completed, or 50%. In the revised group, 2,300 of 4,000 did, or 57.5%.\n\nThat's a 7.5-percentage-point improvement, or a 15% relative lift. The denominator was application starters, so we weren't just counting more submissions caused by more advertising traffic.\n\nI'd also monitor duplicate starts, support contacts and any disruption to the shopping experience. Approval and card activation would be separate downstream outcomes that we'd want to understand before making broader profitability claims.",
+      "category": "Resume deep dive — HBC",
+      "part": 12,
+      "detect": [
+        "Was that 15 points or 15 percent",
+        "What was the experiment",
+        "What did application completion mean?"
+      ],
+      "notes": "HBC-05. Hypothetical details requiring verification: save-and-resume implementation, random assignment, 4,000 starters per variant, 14-day window and detailed funnel findings. 15% = relative improvement in application completion; credit under three minutes depends on Neo underwriting. Illustrative A/B test design and funnel numbers (50% vs 57.5%).",
+      "isPreferred": true
+    },
+    {
+      "question": "What would you do differently on the HBC application experiment?",
+      "answer": "I'd agree on downstream reporting with Neo earlier.\n\nApplication completion was the right initial metric because that was the customer problem we were fixing. But the business ultimately cares about approved, activated and profitable accounts, not just completed forms.\n\nI'd want to follow both experiment groups through approval and first card use, using the same original starters as the denominator. That would help us understand whether we created more active accounts from the same audience or mainly improved submission among applicants who were unlikely to be approved.\n\nI wouldn't have delayed the initial test just to build a perfect reporting system, but I'd make that downstream measurement a clearer part of the plan from the beginning.",
+      "category": "Resume deep dive — HBC",
+      "part": 12,
+      "detect": [
+        "What was missing from the experiment",
+        "How would you make the result more commercially meaningful",
+        "What did you learn?"
+      ],
+      "notes": "HBC-06. Hypothetical details requiring verification: save-and-resume implementation, random assignment, 4,000 starters per variant, 14-day window and detailed funnel findings. 15% = relative improvement in application completion; credit under three minutes depends on Neo underwriting.",
+      "isPreferred": true
+    },
+    {
+      "question": "Tell me about a data-driven product decision at Aeroplan.",
+      "answer": "At Aeroplan, I worked on digital acquisition journeys for co-branded cards with TD, CIBC and American Express. We could create interest in an offer, but we weren't always giving members enough information to decide whether it was right for them before handing them over to a bank application.\n\nIn the illustrative example, people understood the welcome-points headline but were less clear about the annual fee, bonus-spend conditions and what would happen after clicking Apply.\n\nI proposed testing a clearer offer summary rather than simply pushing the button higher on the page. There was a trade-off: more information could mean fewer clicks, but perhaps better-qualified applicants.\n\nIn the focused test, offer-page click-through actually fell slightly, while bank-side application starts per visitor rose from 10% to 14%, a 40% relative improvement. Completion among those who started held steady.\n\nThat convinced me we were improving real progression through the funnel rather than just generating clicks. The much broader 427% year-over-year acquisition growth had several contributors, so I keep that separate from what this experiment established.",
+      "category": "Resume deep dive — Aeroplan",
+      "part": 12,
+      "detect": [
+        "Walk me through the 40% conversion increase",
+        "What did you do for TD/CIBC/Amex card acquisition",
+        "Describe an experiment with an unexpected result."
+      ],
+      "notes": "AERO-00. Hypothetical details requiring verification: 8,000 visitors, one-offer experiment, bank-side test attribution, click-through, application starts and 70% completion rate. 40% = relative increase in application starts per offer-page visitor; 427% YoY is broader acquisition growth. Illustrative example; separates experiment from 427% YoY growth.",
+      "isPreferred": true
+    },
+    {
+      "question": "How did you identify the problem?",
+      "answer": "We noticed a gap between members clicking from an Aeroplan card offer and actually starting the bank's application.\n\nThe data showed where the journey was losing people, but it didn't tell us whether they were confused, reconsidering the offer or hitting a technical problem.\n\nIn the illustrative usability sessions, people could remember the welcome-points offer but weren't always clear about the annual fee, the spending required to earn the bonus or what the bank application would ask them to do.\n\nThat suggested we were getting people interested before helping them make an informed choice. The hypothesis was that clearer information before the handoff would reduce unproductive clicks and improve meaningful application progression.\n\nWe still needed an experiment to test that, rather than assuming the research explanation was correct.",
+      "category": "Resume deep dive — Aeroplan",
+      "part": 12,
+      "detect": [
+        "What did your analytics show",
+        "What did customer research add",
+        "Why wasn't click-through enough?"
+      ],
+      "notes": "AERO-01. Hypothetical details requiring verification: 8,000 visitors, one-offer experiment, bank-side test attribution, click-through, application starts and 70% completion rate. 40% = relative increase in application starts per offer-page visitor; 427% YoY is broader acquisition growth. Illustrative usability sessions.",
+      "isPreferred": true
+    },
+    {
+      "question": "Why was it worth prioritizing?",
+      "answer": "Card acquisition was a significant growth opportunity, and the offer experience was one of the parts of the journey we could actually change.\n\nWe had a reasonably well-defined problem and a test we could run without rebuilding the bank's application flow. That made it more practical than trying to solve every drop-off point across every issuer at once.\n\nI'd start with one issuer, one offer and logged-in mobile members so the audience and measurement were clear. We could agree on the reporting with the bank and then decide whether the evidence justified expanding it.\n\nI also liked that it tested something more meaningful than button design: whether helping people understand a financial product earlier produced better downstream behaviour.",
+      "category": "Resume deep dive — Aeroplan",
+      "part": 12,
+      "detect": [
+        "Why this funnel change",
+        "Why not drive more traffic",
+        "Why start with one issuer?"
+      ],
+      "notes": "AERO-02. Hypothetical details requiring verification: 8,000 visitors, one-offer experiment, bank-side test attribution, click-through, application starts and 70% completion rate. 40% = relative increase in application starts per offer-page visitor; 427% YoY is broader acquisition growth.",
+      "isPreferred": true
+    },
+    {
+      "question": "Why a clearer offer summary instead of a shorter page or bigger apply button?",
+      "answer": "A shorter page or a more prominent button might have increased click-through, but neither addressed the uncertainty customers raised in research.\n\nWe tested a compact summary bringing the annual fee, relevant eligibility points, welcome-bonus requirements and what to expect in the bank application into one place.\n\nI expected some people to decide the card wasn't right for them before clicking. I was comfortable with that, because a click wasn't the business outcome we cared about.\n\nThe real question was whether a higher share of offer-page visitors went on to begin and complete an application. That's why agreeing on bank-side measurement before launch was so important. Otherwise, the experiment might have looked worse based on clicks while actually improving acquisition progression.",
+      "category": "Resume deep dive — Aeroplan",
+      "part": 12,
+      "detect": [
+        "What alternatives did you reject",
+        "What was your hypothesis",
+        "Why did you expect fewer clicks?"
+      ],
+      "notes": "AERO-03. Hypothetical details requiring verification: 8,000 visitors, one-offer experiment, bank-side test attribution, click-through, application starts and 70% completion rate. 40% = relative increase in application starts per offer-page visitor; 427% YoY is broader acquisition growth.",
+      "isPreferred": true
+    },
+    {
+      "question": "What did you personally decide on the Aeroplan card offer test?",
+      "answer": "The key decision was to use confirmed bank-side application starts per unique offer-page visitor as the primary success measure, rather than Aeroplan-to-bank click-through.\n\nI worked with the issuer to get aggregate results by experiment variant. We didn't need the customer's full bank application details to understand whether visitors from each version actually made progress.\n\nThat choice mattered when the results came back. Click-through went from 30% to 28%, which could have looked negative if we'd stopped there. But application starts per visitor increased from 10% to 14%, and completion among starters held at 70%.\n\nI recommended rolling out the revised experience for that offer, while keeping expansion to other issuers and card types dependent on further testing.",
+      "category": "Resume deep dive — Aeroplan",
+      "part": 12,
+      "detect": [
+        "What was your contribution",
+        "What metric did you choose",
+        "How did you work with the issuer?"
+      ],
+      "notes": "AERO-04. Hypothetical details requiring verification: 8,000 visitors, one-offer experiment, bank-side test attribution, click-through, application starts and 70% completion rate. 40% = relative increase in application starts per offer-page visitor; 427% YoY is broader acquisition growth. Illustrative click/start/completion percentages.",
+      "isPreferred": true
+    },
+    {
+      "question": "How exactly did you measure the 40% conversion lift?",
+      "answer": "In the illustrative experiment, we split 8,000 unique logged-in mobile visitors evenly across two offer-page variants. Enrollment ran for four weeks, and we allowed seven days after each visitor's first exposure to see whether they began the bank application.\n\nWe defined a start as completing the first required application step at the bank. Landing on the bank's page didn't count.\n\nIn the original experience, 400 of 4,000 visitors started, or 10%. In the revised one, it was 560 of 4,000, or 14%.\n\nThat's a four-percentage-point lift, or 40% relative improvement in starts per offer-page visitor. Completion among starters held at 70%, so the additional starts also translated into more submitted applications.\n\nThat result applied to the tested audience and offer. It did not, on its own, explain the broader 427% year-over-year acquisition growth or prove a lift in approved, activated cardholders.",
+      "category": "Resume deep dive — Aeroplan",
+      "part": 12,
+      "detect": [
+        "Was 40% relative",
+        "Did the bank provide conversion data",
+        "How large was the experiment?"
+      ],
+      "notes": "AERO-05. Hypothetical details requiring verification: 8,000 visitors, one-offer experiment, bank-side test attribution, click-through, application starts and 70% completion rate. 40% = relative increase in application starts per offer-page visitor; 427% YoY is broader acquisition growth. Illustrative experiment size and metrics.",
+      "isPreferred": true
+    },
+    {
+      "question": "What would you do differently after the Aeroplan offer-summary test?",
+      "answer": "I'd define the next set of segmentation questions before rolling the design across the whole portfolio.\n\nThe initial test covered one issuer, one offer and logged-in mobile visitors. An entry-level card and a premium card may generate different questions, and someone coming from a campaign may behave differently from someone browsing organically.\n\nI'd select a small number of hypotheses and make sure we had enough traffic and bank-side reporting to evaluate them properly.\n\nI'd also want better visibility into approvals and eventual card activation where the partner could provide it in an appropriate aggregate form. More application starts are useful, but the longer-term commercial outcome is more approved customers who actually use the card.\n\nThe lesson is to scale the underlying insight, not assume one winning page will work everywhere.",
+      "category": "Resume deep dive — Aeroplan",
+      "part": 12,
+      "detect": [
+        "How would you scale the learning",
+        "What would you test next",
+        "What limitation did the experiment have?"
+      ],
+      "notes": "AERO-06. Hypothetical details requiring verification: 8,000 visitors, one-offer experiment, bank-side test attribution, click-through, application starts and 70% completion rate. 40% = relative increase in application starts per offer-page visitor; 427% YoY is broader acquisition growth.",
+      "isPreferred": true
+    },
+    {
+      "question": "What exactly do your 30-day activation and 90-day repeat-spend metrics mean?",
+      "answer": "I'd be precise about the denominator because a percentage-point lift isn't meaningful without one.\n\nFor 30-day activation, the clean definition would be newly approved cardholders who make at least one qualifying purchase within thirty days, divided by the approved cohort with a full observation window.\n\nFor 90-day repeat spend, I'd first confirm whether the measure means previously activated customers transacting again in days 61 to 90, or a share of the entire approved cohort. Those are different questions and I wouldn't use them interchangeably.\n\nI'd also separate a change observed between cohorts from an incremental lift demonstrated by an experiment. If the claim on my resume is 8 pp and 6 pp, I need to be able to identify the source data, comparison period and actual intervention that produced those numbers. Otherwise, I'd describe the lifecycle work without attaching those precise results.",
+      "category": "Resume deep dive — HBC",
+      "part": 12,
+      "detect": [
+        "Define activation",
+        "What is the denominator",
+        "How did you measure retention?"
+      ],
+      "notes": "HBC-X1. Rehearsal framework only until validated against real data; resume activation/retention/holdout metrics from hypothetical exercises are not established historical results.",
+      "isPreferred": false
+    },
+    {
+      "question": "How did you establish that lifecycle incentives improved P&L and modeled LTV?",
+      "answer": "I'd start by separating observed customer behaviour from a modeled long-term financial outcome.\n\nTo claim a lift versus holdout, we'd need an actual comparable control or randomized holdout and a defined window. The important question is incremental contribution after reward cost, not just how much the treatment customers spent. I'd examine active rate and spend per eligible customer as well as spend per active customer, since an incentive can change who becomes active.\n\nFor estimated LTV, I'd want Finance's approved model, including assumptions about retention, contribution economics and the costs of the offers. A modeled 10% increase is not the same as having already earned 10% more lifetime profit.\n\nIf we didn't actually run a holdout, I would not describe cohort analysis as controlled experimentation. I'd present the estimated LTV result for what it was and explain the limits of attribution rather than overstate certainty.",
+      "category": "Resume deep dive — HBC",
+      "part": 12,
+      "detect": [
+        "Was there a real holdout",
+        "How did you calculate incrementality",
+        "Why does a 5% spend lift improve LTV?"
+      ],
+      "notes": "HBC-X2. Rehearsal framework only until validated against real data; resume activation/retention/holdout metrics from hypothetical exercises are not established historical results.",
+      "isPreferred": false
+    }
+  ]
+}

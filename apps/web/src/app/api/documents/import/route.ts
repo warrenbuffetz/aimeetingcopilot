@@ -2,9 +2,6 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { requireUser } from "@/lib/auth";
 import { chunkText, parsePdf, parseTextOrMarkdown } from "@/lib/documents/parse";
-import { upsertChunkEmbedding } from "@/lib/embeddings";
-import { isOpenAIConfigured } from "@/lib/env";
-
 const MAX_BYTES = 8 * 1024 * 1024;
 
 export async function POST(req: Request) {
@@ -79,23 +76,6 @@ export async function POST(req: Request) {
   }));
   const { data: inserted, error: chunkErr } = await supabase.from("document_chunks").insert(rows).select();
   if (chunkErr) return NextResponse.json({ error: chunkErr.message }, { status: 500 });
-
-  if (isOpenAIConfigured() && inserted) {
-    for (const ch of inserted) {
-      try {
-        await upsertChunkEmbedding(supabase, {
-          id: ch.id,
-          user_id: user.id,
-          document_id: doc.id,
-          profile_id: profileId,
-          title: `${name} (chunk ${ch.chunk_index + 1})`,
-          content: ch.content,
-        });
-      } catch (e) {
-        console.error("chunk embed", e);
-      }
-    }
-  }
 
   return NextResponse.json({ document: doc, chunks: inserted?.length ?? 0 });
 }

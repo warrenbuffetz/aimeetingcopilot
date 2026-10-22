@@ -2,8 +2,6 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { requireUser } from "@/lib/auth";
-import { upsertPreparedQaEmbedding } from "@/lib/embeddings";
-import { isOpenAIConfigured } from "@/lib/env";
 import { sanitizeUserContent } from "@/lib/sanitize";
 
 const createSchema = z.object({
@@ -46,14 +44,6 @@ export async function POST(req: Request) {
 
   if (error) {
     return NextResponse.json({ error: error.message }, { status: 500 });
-  }
-
-  if (isOpenAIConfigured()) {
-    try {
-      await upsertPreparedQaEmbedding(supabase, data);
-    } catch (e) {
-      console.error("Embedding failed", e);
-    }
   }
 
   return NextResponse.json(data);

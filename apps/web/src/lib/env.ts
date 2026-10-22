@@ -44,3 +44,8 @@ export function isOpenAIConfigured(): boolean {
   const key = process.env.OPENAI_API_KEY;
   return Boolean(key && key.length > 0 && !key.startsWith("sk-..."));
 }
+
+/** Default: local word-match on prepared Q&A (no OpenAI). Set USE_OPENAI_SEMANTIC=true to use embeddings + generation. */
+export function isSemanticSearchEnabled(): boolean {
+  return process.env.USE_OPENAI_SEMANTIC === "true" && isOpenAIConfigured();
+}

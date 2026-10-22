@@ -151,11 +151,19 @@ export async function analyzeQuestion(
 
   const topQa = matches.find((m) => m.contentType === "prepared_qa");
   if (topQa && topQa.similarity >= MATCH_THRESHOLD_PREPARED) {
-    const { data: qa } = await supabase
+    let { data: qa } = await supabase
       .from("prepared_qa")
-      .select("answer, question")
+      .select("answer, question, follow_ups")
       .eq("id", topQa.sourceId)
       .single();
+    if (!qa) {
+      const fallback = await supabase
+        .from("prepared_qa")
+        .select("answer, question")
+        .eq("id", topQa.sourceId)
+        .single();
+      qa = fallback.data ? { ...fallback.data, follow_ups: [] } : null;
+    }
     const fromEmbed = topQa.content.split("\n\n").slice(1).join("\n\n");
     const verbatim = qa?.answer ?? (fromEmbed || topQa.content);
     return {
@@ -166,6 +174,8 @@ export async function analyzeQuestion(
       answer: verbatim,
       sourceLabel: "Your prepared answer (verbatim)",
       talkingPoints: [],
+      followUps: Array.isArray(qa?.follow_ups) ? (qa.follow_ups as { question: string; answer: string }[]) : [],
+      matchMethod: "semantic",
       matches,
     };
   }

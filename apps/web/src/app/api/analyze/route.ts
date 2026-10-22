@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
-import { analyzeQuestion } from "@/lib/retrieval/analyze";
-import { isOpenAIConfigured } from "@/lib/env";
+import { analyzeQuestionLocal } from "@/lib/retrieval/analyze-local";
 import { requireUser } from "@/lib/auth";
 
 const bodySchema = z.object({
@@ -19,10 +18,6 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  if (!isOpenAIConfigured()) {
-    return NextResponse.json({ error: "OpenAI is not configured" }, { status: 503 });
-  }
-
   const json = await req.json();
   const parsed = bodySchema.safeParse(json);
   if (!parsed.success) {
@@ -31,17 +26,17 @@ export async function POST(req: Request) {
 
   const supabase = await createClient();
   try {
-    const result = await analyzeQuestion(supabase, {
+    const result = await analyzeQuestionLocal(supabase, {
       question: parsed.data.question,
       profileId: parsed.data.profileId ?? null,
-      answerFormat: parsed.data.answerFormat,
     });
     return NextResponse.json(result);
   } catch (err) {
-    console.error(err);
-    return NextResponse.json(
-      { error: err instanceof Error ? err.message : "Analysis failed" },
-      { status: 500 }
-    );
+    console.error("analyze", err);
+    const message = err instanceof Error ? err.message : "Analysis failed";
+    const hint = /follow_ups|column/i.test(message)
+      ? " Run supabase/migrations/20251022190000_prepared_qa_follow_ups.sql in Supabase."
+      : "";
+    return NextResponse.json({ error: message + hint }, { status: 500 });
   }
 }

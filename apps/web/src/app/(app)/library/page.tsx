@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { QaManager } from "@/components/library/qa-manager";
-import { DocumentImport } from "@/components/library/document-import";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 
@@ -44,7 +43,6 @@ export default function LibraryPage() {
         </Select>
       </div>
 
-      <DocumentImport profileId={profileId} />
       <QaManager profileId={profileId} />
     </div>
   );

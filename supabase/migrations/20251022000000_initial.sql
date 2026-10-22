@@ -25,6 +25,7 @@ create table public.prepared_qa (
   category text,
   is_preferred boolean not null default false,
   is_authoritative boolean not null default true,
+  follow_ups jsonb not null default '[]'::jsonb,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
@@ -164,3 +165,17 @@ as $$
 $$;
 
 grant execute on function public.match_search_embeddings to authenticated;
+
+-- Privileges for logged-in clients (RLS still enforces row ownership)
+grant usage on schema public to authenticated, service_role;
+grant select, insert, update, delete on table public.interview_profiles to authenticated;
+grant select, insert, update, delete on table public.prepared_qa to authenticated;
+grant select, insert, update, delete on table public.experience_stories to authenticated;
+grant select, insert, update, delete on table public.documents to authenticated;
+grant select, insert, update, delete on table public.document_chunks to authenticated;
+grant select, insert, update, delete on table public.search_embeddings to authenticated;
+grant select, insert, update, delete on table public.interview_sessions to authenticated;
+grant select, insert, update, delete on table public.transcript_segments to authenticated;
+grant usage, select on all sequences in schema public to authenticated;
+grant all on all tables in schema public to service_role;
+grant all on all sequences in schema public to service_role;
