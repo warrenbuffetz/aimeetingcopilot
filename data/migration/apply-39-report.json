@@ -1,0 +1,388 @@
+{
+  "appliedAt": "2026-10-22T21:47:15.614Z",
+  "source": "data/migration/questrade-39-review-resolutions.json",
+  "successfullyUpdated": 39,
+  "unmatched": [],
+  "updatedRecords": [
+    {
+      "number": 1,
+      "question": "Tell me about a data-driven product decision at Aeroplan.",
+      "experienceModuleId": "aeroplan-cobrand",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "targeted_wording"
+    },
+    {
+      "number": 2,
+      "question": "How did you identify the problem?",
+      "experienceModuleId": "aeroplan-cobrand",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "targeted_wording"
+    },
+    {
+      "number": 3,
+      "question": "Why was it worth prioritizing?",
+      "experienceModuleId": "aeroplan-cobrand",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "targeted_wording"
+    },
+    {
+      "number": 4,
+      "question": "Why a clearer offer summary instead of a shorter page or bigger apply button?",
+      "experienceModuleId": "aeroplan-cobrand",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 5,
+      "question": "What did you personally decide on the Aeroplan card offer test?",
+      "experienceModuleId": "aeroplan-cobrand",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 6,
+      "question": "How exactly did you measure the 40% conversion lift?",
+      "experienceModuleId": "aeroplan-cobrand",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "targeted_wording"
+    },
+    {
+      "number": 7,
+      "question": "What would you do differently after the Aeroplan offer-summary test?",
+      "experienceModuleId": "aeroplan-cobrand",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 8,
+      "question": "Tell me about something you took from an idea into a product.",
+      "experienceModuleId": "arcteryx-membership",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 9,
+      "question": "How did you know membership was a customer problem at Arc'teryx?",
+      "experienceModuleId": "arcteryx-membership",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "targeted_wording"
+    },
+    {
+      "number": 10,
+      "question": "Why prioritize a membership platform rather than improving service pages?",
+      "experienceModuleId": "arcteryx-membership",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 11,
+      "question": "Why this solution and why start in North America?",
+      "experienceModuleId": "arcteryx-membership",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 12,
+      "question": "What did you personally decide or deprioritize?",
+      "experienceModuleId": "arcteryx-membership",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 13,
+      "question": "How did you know it worked if the full membership platform hadn't launched?",
+      "experienceModuleId": "arcteryx-membership",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "full_answer_replacement"
+    },
+    {
+      "number": 14,
+      "question": "What would you do differently on the ReBIRD membership platform?",
+      "experienceModuleId": "arcteryx-membership",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 15,
+      "question": "How do you know the headless option saved two quarters?",
+      "experienceModuleId": "arcteryx-vendor",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "full_answer_replacement"
+    },
+    {
+      "number": 16,
+      "question": "How would you explain your approach to customer activation and retention at HBC?",
+      "experienceModuleId": "hbc-activation",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 17,
+      "question": "Tell me exactly how you defined HBC's 30-day activation and 90-day retention.",
+      "experienceModuleId": "hbc-activation",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "full_answer_replacement"
+    },
+    {
+      "number": 18,
+      "question": "Did your UX redesign cause approvals in under three minutes?",
+      "experienceModuleId": "hbc-mastercard-app",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 19,
+      "question": "Tell me about a customer experience you improved at HBC.",
+      "experienceModuleId": "hbc-mastercard-app",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "targeted_wording"
+    },
+    {
+      "number": 20,
+      "question": "How did you identify the application problem?",
+      "experienceModuleId": "hbc-mastercard-app",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "targeted_wording"
+    },
+    {
+      "number": 21,
+      "question": "Why prioritize application continuation instead of more acquisition?",
+      "experienceModuleId": "hbc-mastercard-app",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 22,
+      "question": "Why save-and-resume, and how did you split ownership with Neo?",
+      "experienceModuleId": "hbc-mastercard-app",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 23,
+      "question": "What did you personally decide on the HBC Mastercard application journey?",
+      "experienceModuleId": "hbc-mastercard-app",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 24,
+      "question": "How did you measure the 15% improvement?",
+      "experienceModuleId": "hbc-mastercard-app",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "targeted_wording"
+    },
+    {
+      "number": 25,
+      "question": "What would you do differently on the HBC application experiment?",
+      "experienceModuleId": "hbc-mastercard-app",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 26,
+      "question": "Tell me about the financial impact of your work at HBC.",
+      "experienceModuleId": "hbc-portfolio",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 27,
+      "question": "How do you know your incentive program generated incremental spending?",
+      "experienceModuleId": "hbc-portfolio",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "full_answer_replacement"
+    },
+    {
+      "number": 28,
+      "question": "Did you actually run randomized holdouts on the HBC Mastercard programme?",
+      "experienceModuleId": "hbc-portfolio",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "full_answer_replacement"
+    },
+    {
+      "number": 29,
+      "question": "Why mention 500K+ cardholders if you didn't control the credit book?",
+      "experienceModuleId": "hbc-portfolio",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 30,
+      "question": "Did Quests reach six million active credit cardholders?",
+      "experienceModuleId": "hbc-quests",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 31,
+      "question": "What if leadership wants to optimize DAU but you believe retained deposits matter more?",
+      "experienceModuleId": "leadership-general",
+      "reviewStatus": "ok",
+      "evidenceStatus": "rehearsal_framework",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 32,
+      "question": "What if the team ships a feature on time, but adoption is poor?",
+      "experienceModuleId": "leadership-general",
+      "reviewStatus": "ok",
+      "evidenceStatus": "rehearsal_framework",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 33,
+      "question": "Tell me about a customer problem you solved at RBC.",
+      "experienceModuleId": "rbc-cashback",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 34,
+      "question": "How did you know the Avion cashback withdrawal was a customer problem?",
+      "experienceModuleId": "rbc-cashback",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 35,
+      "question": "Why did you prioritize it over other Avion improvements?",
+      "experienceModuleId": "rbc-cashback",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 36,
+      "question": "Why Interac e-Transfer instead of direct bank-account linking?",
+      "experienceModuleId": "rbc-cashback",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 37,
+      "question": "What did you personally decide on the Avion cashback withdrawal launch?",
+      "experienceModuleId": "rbc-cashback",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": false,
+      "editType": "metadata_only"
+    },
+    {
+      "number": 38,
+      "question": "How did you measure success for the Avion cashback withdrawal launch?",
+      "experienceModuleId": "rbc-cashback",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "targeted_wording"
+    },
+    {
+      "number": 39,
+      "question": "What would you do differently on the Avion cashback withdrawal launch?",
+      "experienceModuleId": "rbc-cashback",
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "answerUpdated": true,
+      "editType": "targeted_wording"
+    }
+  ],
+  "fullAnswerReplacements": [
+    {
+      "number": 13,
+      "question": "How did you know it worked if the full membership platform hadn't launched?",
+      "applied": true
+    },
+    {
+      "number": 15,
+      "question": "How do you know the headless option saved two quarters?",
+      "applied": true
+    },
+    {
+      "number": 17,
+      "question": "Tell me exactly how you defined HBC's 30-day activation and 90-day retention.",
+      "applied": true
+    },
+    {
+      "number": 27,
+      "question": "How do you know your incentive program generated incremental spending?",
+      "applied": true
+    },
+    {
+      "number": 28,
+      "question": "Did you actually run randomized holdouts on the HBC Mastercard programme?",
+      "applied": true
+    }
+  ],
+  "allFiveFullReplacementsApplied": true,
+  "remainingNeedsReviewInLibrary": 0
+}

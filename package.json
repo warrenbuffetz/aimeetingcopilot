@@ -23,6 +23,10 @@
     "merge:questrade:full": "node scripts/merge-questrade-full.mjs",
     "export:custom-gpt": "node scripts/export-custom-gpt-knowledge.mjs",
     "import:follow-ups": "node scripts/import-follow-ups.mjs data/seed/questrade-follow-ups.json",
+    "admin:ensure": "node scripts/ensure-admin-user.mjs",
+    "migrate:library": "npx tsx scripts/migrate-library-taxonomy.ts",
+    "apply:56-classifications": "npx tsx scripts/apply-56-classifications.ts",
+    "apply:39-review-resolutions": "npx tsx scripts/apply-39-review-resolutions.ts",
     "whisper:server": ".venv-whisper/bin/python3 scripts/mac-whisper-server.py"
   }
 }

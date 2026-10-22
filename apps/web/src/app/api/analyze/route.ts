@@ -4,10 +4,20 @@ import { createClient } from "@/lib/supabase/server";
 import { analyzeQuestionLocal } from "@/lib/retrieval/analyze-local";
 import { requireUser } from "@/lib/auth";
 
+const sessionContextSchema = z
+  .object({
+    activeExperienceModuleId: z.string().nullable().optional(),
+    activeIntent: z.string().nullable().optional(),
+    askedQuestionIds: z.array(z.string()).optional(),
+    manualExperienceOverrideId: z.string().nullable().optional(),
+  })
+  .optional();
+
 const bodySchema = z.object({
   question: z.string().min(3).max(2000),
   profileId: z.string().uuid().nullable().optional(),
   answerFormat: z.enum(["full", "thirty_second", "bullets"]).optional(),
+  sessionContext: sessionContextSchema,
 });
 
 export async function POST(req: Request) {
@@ -29,6 +39,19 @@ export async function POST(req: Request) {
     const result = await analyzeQuestionLocal(supabase, {
       question: parsed.data.question,
       profileId: parsed.data.profileId ?? null,
+      sessionContext: parsed.data.sessionContext
+        ? {
+            activeExperienceModuleId: parsed.data.sessionContext.activeExperienceModuleId ?? null,
+            activeExperienceLabel: null,
+            activeIntent: (parsed.data.sessionContext.activeIntent as import("@interview-copilot/shared").QuestionIntent) ?? null,
+            activeQuestionId: null,
+            previousExperienceModuleId: null,
+            askedQuestionIds: parsed.data.sessionContext.askedQuestionIds ?? [],
+            askedQuestionTexts: [],
+            manualExperienceOverrideId: parsed.data.sessionContext.manualExperienceOverrideId ?? null,
+            lastDetectedQuestion: null,
+          }
+        : null,
     });
     return NextResponse.json(result);
   } catch (err) {

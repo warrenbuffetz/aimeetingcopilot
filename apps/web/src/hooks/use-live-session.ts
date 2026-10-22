@@ -7,13 +7,15 @@ import {
   surfaceTurnSuggestion,
   turnSilenceMs,
   type AnalyzeQuestionResult,
+  type InterviewSessionContext,
   type LexicalQaRow,
+  type PersistedNavigatorMeta,
   type TurnClassification,
 } from "@interview-copilot/shared";
 import { createClient } from "@/lib/supabase/client";
 import { toast } from "sonner";
 
-export type TranscriptLineKind = "filler" | "speech" | "candidate" | "question";
+export type TranscriptLineKind = "filler" | "speech" | "candidate" | "question" | "readback";
 
 export type TranscriptLine = {
   id: string;
@@ -50,7 +52,11 @@ const SIMULATION_SCRIPT = [
   "What metrics would you use to measure success for a new onboarding flow?",
 ];
 
-export function useLiveSession(profileId: string | null) {
+export function useLiveSession(
+  profileId: string | null,
+  options?: { pinnedAnswer?: string | null }
+) {
+  const pinnedAnswer = options?.pinnedAnswer ?? null;
   const [listening, setListening] = useState(false);
   const [paused, setPaused] = useState(false);
   const [lines, setLines] = useState<TranscriptLine[]>([]);
@@ -80,33 +86,43 @@ export function useLiveSession(profileId: string | null) {
   const finalizeTurnRef = useRef<() => void>(() => {});
   const libraryRef = useRef(library);
   libraryRef.current = library;
+  const resultRef = useRef(result);
+  resultRef.current = result;
+  const currentQuestionRef = useRef(currentQuestion);
+  currentQuestionRef.current = currentQuestion;
 
   useEffect(() => {
     void (async () => {
       const supabase = createClient();
       let query = supabase
         .from("prepared_qa")
-        .select("id, question, answer, is_preferred, follow_ups, category");
+        .select("id, question, answer, is_preferred, follow_ups, category, navigator_meta");
       if (profileId) query = query.eq("profile_id", profileId);
       const first = await query;
       let data = first.data;
-      if (first.error && /follow_ups/i.test(first.error.message)) {
+      if (first.error && /follow_ups|navigator_meta/i.test(first.error.message)) {
         let fallback = supabase.from("prepared_qa").select("id, question, answer, is_preferred, category");
         if (profileId) fallback = fallback.eq("profile_id", profileId);
         const res = await fallback;
-        data = res.data?.map((r) => ({ ...r, follow_ups: [] })) ?? null;
+        data = res.data?.map((r) => ({ ...r, follow_ups: [], navigator_meta: {} })) ?? null;
       } else if (first.error) {
         console.error("prepared_qa load", first.error);
       }
       setLibrary(
-        (data ?? []).map((r) => ({
-          id: r.id,
-          question: r.question,
-          answer: r.answer,
-          isPreferred: r.is_preferred,
-          followUps: parseFollowUps(r.follow_ups),
-          category: r.category,
-        }))
+        (data ?? []).map((r) => {
+          const meta = (r as { navigator_meta?: PersistedNavigatorMeta }).navigator_meta;
+          return {
+            id: r.id,
+            question: r.question,
+            answer: r.answer,
+            isPreferred: r.is_preferred,
+            followUps: parseFollowUps(r.follow_ups),
+            category: r.category,
+            part: meta?.part ?? undefined,
+            notes: meta?.notes ?? meta?.seedKey ?? undefined,
+            navigatorMeta: meta ?? null,
+          };
+        })
       );
     })();
   }, [profileId]);
@@ -183,6 +199,7 @@ export function useLiveSession(profileId: string | null) {
         /** When true, do not replace main panel result (pinned / locked). */
         respectMainPanelLock?: boolean;
         forceMainPanel?: boolean;
+        sessionContext?: InterviewSessionContext;
       }
     ): Promise<AnalyzeQuestionResult | null> => {
       setLoading(true);
@@ -190,7 +207,18 @@ export function useLiveSession(profileId: string | null) {
         const res = await fetch("/api/analyze", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ question, profileId }),
+          body: JSON.stringify({
+            question,
+            profileId,
+            sessionContext: options?.sessionContext
+              ? {
+                  activeExperienceModuleId: options.sessionContext.activeExperienceModuleId,
+                  activeIntent: options.sessionContext.activeIntent,
+                  askedQuestionIds: options.sessionContext.askedQuestionIds,
+                  manualExperienceOverrideId: options.sessionContext.manualExperienceOverrideId,
+                }
+              : undefined,
+          }),
         });
         if (!res.ok) {
           const err = (await res.json().catch(() => ({}))) as { error?: string };
@@ -241,15 +269,28 @@ export function useLiveSession(profileId: string | null) {
       const trimmed = text.trim();
       if (!trimmed) return;
 
-      addTranscriptLine(trimmed, "speech");
-
       const wordCount = trimmed.split(/\s+/).filter(Boolean).length;
-      if (wordCount < 2) return;
+      if (wordCount < 2) {
+        addTranscriptLine(trimmed, "speech");
+        return;
+      }
 
-      const classification = surfaceTurnSuggestion(trimmed, libraryRef.current);
+      const displayAnswer = pinnedAnswer ?? resultRef.current?.answer ?? null;
+      const classification = surfaceTurnSuggestion(trimmed, libraryRef.current, {
+        displayAnswer,
+        activeQuestion: currentQuestionRef.current,
+      });
+
+      if (classification.action === "ignore" && classification.reason === "reading_displayed_answer") {
+        addTranscriptLine(trimmed, "readback");
+        setCandidate(null);
+        return;
+      }
+
+      addTranscriptLine(trimmed, "speech");
       setCandidate({ text: trimmed, classification });
     },
-    [addTranscriptLine, paused]
+    [addTranscriptLine, paused, pinnedAnswer]
   );
 
   const finalizeTurn = useCallback(() => {

@@ -1,12 +1,12 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { Mic } from "lucide-react";
 
 const BAR_COUNT = 8;
 
 type AudioInputMeterProps = {
   listening: boolean;
-  captureActive: boolean;
   voiceLevel: number;
   voiceActive: boolean;
   hasAudioTrack: boolean;
@@ -15,29 +15,20 @@ type AudioInputMeterProps = {
 
 export function AudioInputMeter({
   listening,
-  captureActive,
   voiceLevel,
   voiceActive,
   hasAudioTrack,
   className,
 }: AudioInputMeterProps) {
-  if (!listening) {
-    return (
-      <div className={cn("flex h-9 items-center gap-2 text-xs text-muted-foreground", className)}>
-        <MeterBars level={0} active={false} />
-        <span>Not listening</span>
-      </div>
-    );
-  }
+  const boosted = listening ? Math.min(1, voiceLevel) : 0;
 
-  const boosted = Math.min(1, voiceLevel);
-  const label = !captureActive
-    ? "Starting audio…"
+  const label = !listening
+    ? "Not listening"
     : !hasAudioTrack
-      ? "No audio track"
+      ? "Connecting mic…"
       : voiceActive
         ? "Speech detected"
-        : "Listening (waiting for speech)";
+        : "Listening";
 
   return (
     <div
@@ -46,13 +37,23 @@ export function AudioInputMeter({
       aria-live="polite"
       aria-label={label}
     >
-      <MeterBars level={boosted} active={voiceActive && hasAudioTrack} />
+      <Mic
+        className={cn(
+          "h-4 w-4 shrink-0",
+          listening && hasAudioTrack && voiceActive && "text-emerald-400",
+          listening && hasAudioTrack && !voiceActive && "text-emerald-400/55",
+          (!listening || !hasAudioTrack) && "text-muted-foreground"
+        )}
+        aria-hidden
+      />
+      <MeterBars level={boosted} voiceActive={listening && voiceActive && hasAudioTrack} />
       <span
         className={cn(
           "text-xs",
-          !hasAudioTrack && captureActive && "text-amber-400",
-          hasAudioTrack && voiceActive && "font-medium text-emerald-400",
-          hasAudioTrack && !voiceActive && "text-muted-foreground"
+          listening && !hasAudioTrack && "text-amber-400",
+          listening && hasAudioTrack && voiceActive && "font-medium text-emerald-400",
+          listening && hasAudioTrack && !voiceActive && "text-muted-foreground",
+          !listening && "text-muted-foreground"
         )}
       >
         {label}
@@ -61,22 +62,22 @@ export function AudioInputMeter({
   );
 }
 
-function MeterBars({ level, active }: { level: number; active: boolean }) {
-  const filledBars = Math.round(level * BAR_COUNT);
+function MeterBars({ level, voiceActive }: { level: number; voiceActive: boolean }) {
+  const litBars = level > 0.02 ? Math.round(level * BAR_COUNT) : 0;
   return (
     <div className="flex h-[22px] items-end gap-0.5" aria-hidden>
       {Array.from({ length: BAR_COUNT }, (_, i) => {
-        const on = i < filledBars;
+        const on = i < litBars;
         return (
           <span
             key={i}
             className={cn(
-              "w-1 rounded-sm transition-[height,background-color] duration-100",
+              "w-1 rounded-sm transition-[height,background-color] duration-75",
               on
-                ? active
+                ? voiceActive
                   ? "bg-emerald-400"
-                  : "bg-muted-foreground/35"
-                : "bg-muted-foreground/20"
+                  : "bg-emerald-400/40"
+                : "bg-muted-foreground/25"
             )}
             style={{ height: 10 + (i + 1) * 1.75 }}
           />

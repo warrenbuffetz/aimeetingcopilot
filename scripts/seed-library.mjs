@@ -43,6 +43,8 @@ if (!url || !serviceKey) {
 
 const jsonPath = resolve(root, process.argv[2] ?? "data/seed/questrade-interview.json");
 const seed = JSON.parse(readFileSync(jsonPath, "utf8"));
+const metaPath = resolve(root, "data/migration/navigator-meta-by-question.json");
+const metaByQuestion = existsSync(metaPath) ? JSON.parse(readFileSync(metaPath, "utf8")) : {};
 
 if (seed.doNotSeedUntilRevisions && process.env.FORCE_SEED !== "1") {
   console.error(
@@ -52,6 +54,42 @@ if (seed.doNotSeedUntilRevisions && process.env.FORCE_SEED !== "1") {
 }
 
 const admin = createClient(url, serviceKey, { auth: { autoRefreshToken: false, persistSession: false } });
+
+const NAVIGATOR_META_MIGRATION = resolve(
+  root,
+  "supabase/migrations/20251022194500_prepared_qa_navigator_meta.sql"
+);
+
+/** @returns {Promise<boolean>} */
+async function preparedQaHasNavigatorMeta() {
+  const { error } = await admin.from("prepared_qa").select("navigator_meta").limit(1);
+  if (!error) return true;
+  if (/navigator_meta/i.test(error.message)) return false;
+  throw error;
+}
+
+/** @returns {Promise<boolean>} */
+async function tryApplyNavigatorMetaMigration() {
+  const dbUrl = process.env.SUPABASE_DB_URL ?? process.env.DATABASE_URL;
+  if (!dbUrl || !existsSync(NAVIGATOR_META_MIGRATION)) return false;
+  let pg;
+  try {
+    pg = await import("pg");
+  } catch {
+    console.warn("Set SUPABASE_DB_URL to auto-apply navigator_meta migration (optional: npm i -D pg).");
+    return false;
+  }
+  const sql = readFileSync(NAVIGATOR_META_MIGRATION, "utf8");
+  const client = new pg.default.Client({ connectionString: dbUrl });
+  await client.connect();
+  try {
+    await client.query(sql);
+    console.log("Applied migration:", NAVIGATOR_META_MIGRATION);
+    return true;
+  } finally {
+    await client.end();
+  }
+}
 
 async function findUserId() {
   const { data, error } = await admin.auth.admin.listUsers({ perPage: 200 });
@@ -102,6 +140,20 @@ async function upsertEmbedding(userId, profileId, row) {
 }
 
 async function main() {
+  let storeNavigatorMeta = await preparedQaHasNavigatorMeta();
+  if (!storeNavigatorMeta) {
+    storeNavigatorMeta = await tryApplyNavigatorMetaMigration();
+    if (!storeNavigatorMeta) {
+      storeNavigatorMeta = await preparedQaHasNavigatorMeta();
+    }
+  }
+  if (!storeNavigatorMeta) {
+    console.warn(
+      "prepared_qa.navigator_meta column missing — seeding Q&A without navigator metadata.\n" +
+        `Run this in Supabase SQL editor, then re-run seed:\n${readFileSync(NAVIGATOR_META_MIGRATION, "utf8")}`
+    );
+  }
+
   const userId = await findUserId();
   console.log("Seeding for user:", seedEmail, userId);
 
@@ -161,6 +213,10 @@ async function main() {
       .maybeSingle();
 
     let row;
+    const metaPayload = storeNavigatorMeta
+      ? { navigator_meta: metaByQuestion[qa.question] ?? {} }
+      : {};
+
     if (existing) {
       const { data, error } = await admin
         .from("prepared_qa")
@@ -170,6 +226,7 @@ async function main() {
           is_preferred: qa.isPreferred ?? false,
           profile_id: profileId,
           follow_ups: qa.followUps ?? [],
+          ...metaPayload,
           updated_at: new Date().toISOString(),
         })
         .eq("id", existing.id)
@@ -190,6 +247,7 @@ async function main() {
           is_preferred: qa.isPreferred ?? false,
           is_authoritative: true,
           follow_ups: qa.followUps ?? [],
+          ...metaPayload,
         })
         .select()
         .single();

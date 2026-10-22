@@ -25,6 +25,7 @@ export function searchLibrary(catalog: EnrichedQaRow[], query: string, limit = 1
       row.navigator.experienceLabel,
       row.category ?? "",
       ...row.navigator.altPhrasings,
+      ...row.navigator.topicTags,
       ...row.navigator.keywords,
     ]
       .join(" ")

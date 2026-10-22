@@ -1,0 +1,386 @@
+{
+  "generatedAt": "2026-10-22T21:14:53.994Z",
+  "counts": {
+    "beforeTotal": 144,
+    "afterTotal": 144,
+    "byModuleAfter": {
+      "career-general": 17,
+      "arcteryx-membership": 12,
+      "questrade-primary": 4,
+      "questrade-deposits": 8,
+      "questrade-metrics": 10,
+      "questrade-hub": 4,
+      "rbc-cashback": 13,
+      "hbc-mastercard-app": 16,
+      "aeroplan-cobrand": 9,
+      "rbc-avion": 2,
+      "leadership-general": 19,
+      "questrade-payments": 3,
+      "unclassified-review": 24,
+      "hbc-portfolio": 3
+    },
+    "needsReview": 39,
+    "duplicateCandidates": 0
+  },
+  "movedBetweenCategories": [
+    {
+      "question": "Walk me through the Interac e-Transfer product you launched ",
+      "from": "banking_strategy/general",
+      "to": "rbc-cashback"
+    },
+    {
+      "question": "What's the difference between EFT and Interac e-Transfer?",
+      "from": "banking_strategy/general",
+      "to": "rbc-cashback"
+    },
+    {
+      "question": "What should happen when a customer initiates a transfer but ",
+      "from": "banking_strategy/general",
+      "to": "career-general"
+    },
+    {
+      "question": "How would you design a reliable account-funding experience?",
+      "from": "banking_strategy/general",
+      "to": "career-general"
+    },
+    {
+      "question": "How would you handle duplicate charges, incorrect balances o",
+      "from": "banking_strategy/general",
+      "to": "career-general"
+    },
+    {
+      "question": "Tell me about a complex integration you led.",
+      "from": "banking_strategy/general",
+      "to": "career-general"
+    },
+    {
+      "question": "How would you manage an underperforming banking technology v",
+      "from": "banking_strategy/general",
+      "to": "career-general"
+    },
+    {
+      "question": "How would you use AI to improve personal financial managemen",
+      "from": "banking_strategy/general",
+      "to": "career-general"
+    },
+    {
+      "question": "Tell me about the financial impact of your work at HBC.",
+      "from": "banking_strategy/general",
+      "to": "hbc-mastercard-app"
+    },
+    {
+      "question": "How would you explain your approach to customer activation a",
+      "from": "banking_strategy/general",
+      "to": "hbc-mastercard-app"
+    },
+    {
+      "question": "Tell me about improving the HBC Mastercard application journ",
+      "from": "banking_strategy/general",
+      "to": "hbc-mastercard-app"
+    },
+    {
+      "question": "How did you drive credit card acquisition growth at Aeroplan",
+      "from": "banking_strategy/general",
+      "to": "aeroplan-cobrand"
+    },
+    {
+      "question": "Tell me about building Avion Select from zero to one.",
+      "from": "banking_strategy/general",
+      "to": "rbc-avion"
+    },
+    {
+      "question": "How did you secure $5.2 million in capital funding at Arc'te",
+      "from": "banking_strategy/general",
+      "to": "arcteryx-membership"
+    },
+    {
+      "question": "Why did you choose a headless membership platform rather tha",
+      "from": "banking_strategy/general",
+      "to": "arcteryx-membership"
+    },
+    {
+      "question": "Tell me about a time you had competing priorities with Risk,",
+      "from": "banking_strategy/general",
+      "to": "leadership-general"
+    },
+    {
+      "question": "Tell me about a time you challenged the original product str",
+      "from": "banking_strategy/general",
+      "to": "leadership-general"
+    },
+    {
+      "question": "Tell me about a product initiative that didn't go according ",
+      "from": "banking_strategy/general",
+      "to": "leadership-general"
+    },
+    {
+      "question": "How do you make decisions when the data is incomplete?",
+      "from": "banking_strategy/general",
+      "to": "leadership-general"
+    },
+    {
+      "question": "How do you manage stakeholders who disagree on priorities?",
+      "from": "banking_strategy/general",
+      "to": "leadership-general"
+    },
+    {
+      "question": "How do you decide whether to experiment or commit directly t",
+      "from": "banking_strategy/general",
+      "to": "questrade-metrics"
+    },
+    {
+      "question": "How do you work with designers and customer researchers?",
+      "from": "banking_strategy/general",
+      "to": "leadership-general"
+    },
+    {
+      "question": "How are you using AI in your product management work?",
+      "from": "banking_strategy/general",
+      "to": "leadership-general"
+    },
+    {
+      "question": "How would you handle a major payment incident?",
+      "from": "banking_strategy/general",
+      "to": "questrade-payments"
+    },
+    {
+      "question": "Why should we hire you over someone with direct core banking",
+      "from": "banking_strategy/general",
+      "to": "leadership-general"
+    },
+    {
+      "question": "You say HBC's modeled lifetime value increased 10%. How woul",
+      "from": "banking_strategy/general",
+      "to": "hbc-mastercard-app"
+    },
+    {
+      "question": "If direct deposit conversion improved by 20%, how would you ",
+      "from": "banking_strategy/general",
+      "to": "questrade-deposits"
+    }
+  ],
+  "needsReview": [
+    {
+      "question": "Tell me about the financial impact of your work at HBC.",
+      "moduleId": "hbc-mastercard-app",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "How would you explain your approach to customer activation and retention at HBC?",
+      "moduleId": "hbc-mastercard-app",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "How do you know your incentive program generated incremental spending?",
+      "moduleId": "unclassified-review",
+      "reason": "resume_supported"
+    },
+    {
+      "question": "What if leadership wants to optimize DAU but you believe retained deposits matte",
+      "moduleId": "unclassified-review",
+      "reason": "resume_supported"
+    },
+    {
+      "question": "What if the team ships a feature on time, but adoption is poor?",
+      "moduleId": "unclassified-review",
+      "reason": "resume_supported"
+    },
+    {
+      "question": "Tell me exactly how you defined HBC's 30-day activation and 90-day retention.",
+      "moduleId": "hbc-mastercard-app",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Did you actually run randomized holdouts on the HBC Mastercard programme?",
+      "moduleId": "hbc-mastercard-app",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Why mention 500K+ cardholders if you didn't control the credit book?",
+      "moduleId": "unclassified-review",
+      "reason": "resume_supported"
+    },
+    {
+      "question": "Did your UX redesign cause approvals in under three minutes?",
+      "moduleId": "unclassified-review",
+      "reason": "resume_supported"
+    },
+    {
+      "question": "Did Quests reach six million active credit cardholders?",
+      "moduleId": "unclassified-review",
+      "reason": "resume_supported"
+    },
+    {
+      "question": "How do you know the headless option saved two quarters?",
+      "moduleId": "unclassified-review",
+      "reason": "resume_supported"
+    },
+    {
+      "question": "Tell me about a customer problem you solved at RBC.",
+      "moduleId": "rbc-cashback",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "How did you know the Avion cashback withdrawal was a customer problem?",
+      "moduleId": "rbc-cashback",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Why did you prioritize it over other Avion improvements?",
+      "moduleId": "rbc-cashback",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Why Interac e-Transfer instead of direct bank-account linking?",
+      "moduleId": "rbc-cashback",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "What did you personally decide on the Avion cashback withdrawal launch?",
+      "moduleId": "rbc-cashback",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "How did you measure success for the Avion cashback withdrawal launch?",
+      "moduleId": "rbc-cashback",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "What would you do differently on the Avion cashback withdrawal launch?",
+      "moduleId": "rbc-cashback",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Tell me about something you took from an idea into a product.",
+      "moduleId": "arcteryx-membership",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "How did you know membership was a customer problem at Arc'teryx?",
+      "moduleId": "arcteryx-membership",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Why prioritize a membership platform rather than improving service pages?",
+      "moduleId": "arcteryx-membership",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Why this solution and why start in North America?",
+      "moduleId": "arcteryx-membership",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "What did you personally decide or deprioritize?",
+      "moduleId": "arcteryx-membership",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "How did you know it worked if the full membership platform hadn't launched?",
+      "moduleId": "arcteryx-membership",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "What would you do differently on the ReBIRD membership platform?",
+      "moduleId": "arcteryx-membership",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Tell me about a customer experience you improved at HBC.",
+      "moduleId": "hbc-mastercard-app",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "How did you identify the application problem?",
+      "moduleId": "hbc-mastercard-app",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Why prioritize application continuation instead of more acquisition?",
+      "moduleId": "hbc-mastercard-app",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Why save-and-resume, and how did you split ownership with Neo?",
+      "moduleId": "hbc-mastercard-app",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "What did you personally decide on the HBC Mastercard application journey?",
+      "moduleId": "hbc-mastercard-app",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "How did you measure the 15% improvement?",
+      "moduleId": "hbc-mastercard-app",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "What would you do differently on the HBC application experiment?",
+      "moduleId": "hbc-mastercard-app",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Tell me about a data-driven product decision at Aeroplan.",
+      "moduleId": "aeroplan-cobrand",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "How did you identify the problem?",
+      "moduleId": "aeroplan-cobrand",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Why was it worth prioritizing?",
+      "moduleId": "aeroplan-cobrand",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "Why a clearer offer summary instead of a shorter page or bigger apply button?",
+      "moduleId": "aeroplan-cobrand",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "What did you personally decide on the Aeroplan card offer test?",
+      "moduleId": "aeroplan-cobrand",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "How exactly did you measure the 40% conversion lift?",
+      "moduleId": "aeroplan-cobrand",
+      "reason": "illustrative_scenario"
+    },
+    {
+      "question": "What would you do differently after the Aeroplan offer-summary test?",
+      "moduleId": "aeroplan-cobrand",
+      "reason": "illustrative_scenario"
+    }
+  ],
+  "duplicateCandidates": [],
+  "unclassified": [
+    "How do you know your incentive program generated incremental spending?",
+    "What if leadership wants to optimize DAU but you believe retained deposits matte",
+    "What if the team ships a feature on time, but adoption is poor?",
+    "Why would customers choose Questrade over Wealthsimple or a traditional bank?",
+    "What is the biggest risk in connecting external accounts?",
+    "How would you decide between better rates and better switching UX?",
+    "What if leadership wants to ship five banking features at once?",
+    "Your idea sounds sensible. Why hasn't Questrade already done it?",
+    "Give me an exact definition of a monthly active banking customer.",
+    "Your conversion improved from 10% to 12%. Is that 2% or 20%?",
+    "Explain how you would model customer lifetime value in banking.",
+    "Is a $100 million increase in deposits automatically a win?",
+    "How would you decide if a 5% incremental spending lift justified an incentive?",
+    "You have only a dashboard, no user research. What do you do?",
+    "How do you know an increase in DAU isn't just more balance checking?",
+    "What controls would you require before allowing a new transfer type?",
+    "What if Risk wants a step that cuts conversion by 20%?",
+    "How do pending and posted card transactions differ?",
+    "How would you roll out a critical payments integration?",
+    "How would you choose between building a payment service and buying one?",
+    "Why mention 500K+ cardholders if you didn't control the credit book?",
+    "Did your UX redesign cause approvals in under three minutes?",
+    "Did Quests reach six million active credit cardholders?",
+    "How do you know the headless option saved two quarters?"
+  ]
+}

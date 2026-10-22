@@ -2,6 +2,7 @@ import { rankPreparedQaLexical, scoreLexicalSimilarity, type LexicalQaRow } from
 import { LEXICAL_MATCH_THRESHOLD_WEAK } from "../lexical-match";
 import { experienceModule } from "./experience-modules";
 import { enrichQaRow, type InferMetaInput } from "./meta-inference";
+import { enrichQaRowFromPersisted, type PersistedNavigatorMeta } from "./navigator-meta-persist";
 import type {
   ContextResolution,
   EnrichedQaRow,
@@ -13,18 +14,28 @@ const TOPIC_SWITCH =
   /\b(switch gears|different topic|let'?s (talk|move) about|move on to|change (topics|subjects)|instead, tell me about)\b/i;
 
 const AMBIGUOUS_FOLLOW_UP =
-  /\b(what would you do differently|how did you measure|what did you (personally )?decide|what did you own|what was your role|what would you change)\b/i;
+  /\b(what would you do differently|how did you measure|what did you (personally )?decide|what did you own|what was your role|what would you change|was that incremental|how did you attribute)\b/i;
 
 const COMPANY_HINTS: { pattern: RegExp; moduleId: string }[] = [
   { pattern: /\b(rbc|avion|interac)\b/i, moduleId: "rbc-cashback" },
   { pattern: /\b(arc'?teryx|rebird)\b/i, moduleId: "arcteryx-membership" },
   { pattern: /\b(aeroplan|air canada)\b/i, moduleId: "aeroplan-cobrand" },
+  {
+    pattern: /\b(hbc|hudson'?s bay).*(portfolio|ltv|p&l|cardholder|incremental|quests)\b/i,
+    moduleId: "hbc-portfolio",
+  },
   { pattern: /\b(hbc|hudson'?s bay|neo financial)\b/i, moduleId: "hbc-mastercard-app" },
   { pattern: /\b(questbank|questrade)\b/i, moduleId: "questrade-primary" },
 ];
 
-export function enrichLibrary(rows: InferMetaInput[]): EnrichedQaRow[] {
-  return rows.map(enrichQaRow);
+export type EnrichLibraryInput = InferMetaInput & { navigatorMeta?: PersistedNavigatorMeta | null };
+
+export function enrichLibrary(rows: EnrichLibraryInput[]): EnrichedQaRow[] {
+  return rows.map((row) =>
+    row.navigatorMeta && Object.keys(row.navigatorMeta).length > 0
+      ? enrichQaRowFromPersisted({ ...row, navigatorMeta: row.navigatorMeta })
+      : enrichQaRow(row)
+  );
 }
 
 function detectExplicitModule(spoken: string): string | null {
@@ -102,6 +113,7 @@ export function resolveInterviewContext(
 
 function intentFromAmbiguous(spoken: string): QuestionIntent {
   const q = spoken.toLowerCase();
+  if (/incremental|attribut/.test(q)) return "attribution";
   if (/differently|change/.test(q)) return "what_differently";
   if (/measure/.test(q)) return "measurement_impact";
   if (/decide|own/.test(q)) return "personal_ownership";

@@ -2,10 +2,13 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 import {
   LEXICAL_MATCH_THRESHOLD_PREPARED,
   LEXICAL_MATCH_THRESHOLD_WEAK,
-  rankPreparedQaLexical,
+  enrichLibrary,
+  rankPreparedQaWithContext,
   type AnalyzeQuestionResult,
+  type InterviewSessionContext,
   type LexicalQaRow,
   type PreparedFollowUp,
+  type PersistedNavigatorMeta,
   type RetrievalMatch,
 } from "@interview-copilot/shared";
 import { sanitizeUserContent } from "@/lib/sanitize";
@@ -29,30 +32,43 @@ export async function analyzeQuestionLocal(
   opts: {
     question: string;
     profileId: string | null;
+    sessionContext?: InterviewSessionContext | null;
   }
 ): Promise<AnalyzeQuestionResult> {
   const question = sanitizeUserContent(opts.question, 2000);
 
   const baseCols = "id, question, answer, is_preferred, category";
-  const colsWithFollowUps = `${baseCols}, follow_ups`;
+  const colsWithMeta = `${baseCols}, follow_ups, navigator_meta`;
 
-  let query = supabase.from("prepared_qa").select(colsWithFollowUps);
+  let query = supabase.from("prepared_qa").select(colsWithMeta);
   if (opts.profileId) {
     query = query.eq("profile_id", opts.profileId);
   }
   let { data: rows, error } = await query;
 
-  if (error && /follow_ups/i.test(error.message)) {
+  if (error && /follow_ups|navigator_meta/i.test(error.message)) {
     let fallback = supabase.from("prepared_qa").select(baseCols);
     if (opts.profileId) {
       fallback = fallback.eq("profile_id", opts.profileId);
     }
     const res = await fallback;
-    rows = res.data?.map((r) => ({ ...r, follow_ups: [] })) ?? null;
+    rows = res.data?.map((r) => ({ ...r, follow_ups: [], navigator_meta: {} })) ?? null;
     error = res.error;
   }
 
   if (error) throw error;
+
+  const enriched = enrichLibrary(
+    (rows ?? []).map((r) => ({
+      id: r.id,
+      question: r.question,
+      answer: r.answer,
+      isPreferred: r.is_preferred,
+      followUps: parseFollowUps(r.follow_ups),
+      category: r.category,
+      navigatorMeta: (r.navigator_meta ?? {}) as PersistedNavigatorMeta,
+    }))
+  );
 
   const library: LexicalQaRow[] = (rows ?? []).map((r) => ({
     id: r.id,
@@ -77,7 +93,7 @@ export async function analyzeQuestionLocal(
     };
   }
 
-  const ranked = rankPreparedQaLexical(question, library);
+  const ranked = rankPreparedQaWithContext(question, library, enriched, opts.sessionContext ?? null);
   const best = ranked[0];
   const matches: RetrievalMatch[] = ranked.slice(0, 8).map((r) => ({
     id: r.rowId,
@@ -113,6 +129,7 @@ export async function analyzeQuestionLocal(
 
   const review = best.score < LEXICAL_MATCH_THRESHOLD_PREPARED;
   const isFollowUp = best.kind === "follow_up";
+  const enrichedBest = enriched.find((r) => r.id === best.rowId);
 
   return {
     question,
@@ -127,7 +144,9 @@ export async function analyzeQuestionLocal(
       : isFollowUp
         ? "Prepared follow-up (verbatim)"
         : "Your prepared answer (verbatim)",
-    talkingPoints: [],
+    talkingPoints: enrichedBest?.navigator.shortAnswer
+      ? [enrichedBest.navigator.shortAnswer]
+      : [],
     followUps: (best.followUps ?? []).filter((fu) => fu.answer.trim() !== best.answer.trim()),
     matches,
     matchMethod: "lexical",

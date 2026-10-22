@@ -6,6 +6,14 @@ export type LibraryCategory =
   | "product_analytics"
   | "leadership_behavioural";
 
+/** Five primary library sections (product UX). */
+export type LibrarySection =
+  | "career_motivation"
+  | "product_experience"
+  | "questrade_cases"
+  | "product_banking_knowledge"
+  | "leadership_behavioural";
+
 export type QuestionIntent =
   | "main_story"
   | "problem_discovery"
@@ -14,10 +22,13 @@ export type QuestionIntent =
   | "personal_ownership"
   | "technical_implementation"
   | "measurement_impact"
+  | "attribution"
   | "tradeoffs"
   | "challenges_lessons"
   | "what_differently"
   | "general";
+
+export type ReviewStatus = "ok" | "needs_review" | "duplicate_candidate";
 
 export type EvidenceStatus =
   | "verified_accomplishment"
@@ -36,13 +47,20 @@ export interface ExperienceModule {
 export interface NavigatorQaMeta {
   seedKey?: string;
   libraryCategory: LibraryCategory;
+  librarySection: LibrarySection;
   experienceModuleId: string;
   experienceLabel: string;
   intent: QuestionIntent;
   evidenceStatus: EvidenceStatus;
   altPhrasings: string[];
+  topicTags: string[];
   keywords: string[];
   part?: number;
+  canonicalQuestion?: string;
+  shortAnswer?: string;
+  relatedQuestionIds: string[];
+  sourceFile?: string;
+  reviewStatus?: ReviewStatus;
 }
 
 export interface EnrichedQaRow {

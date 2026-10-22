@@ -3,30 +3,32 @@
 import { useMemo, useState } from "react";
 import {
   EXPERIENCE_MODULES,
-  LIBRARY_CATEGORY_LABELS,
+  LIBRARY_SECTION_LABELS,
+  LIBRARY_SECTION_ORDER,
+  buildProductExperienceTree,
   intentLabel,
-  moduleCatalog,
-  suggestFollowUps,
+  searchLibrary,
   type EnrichedQaRow,
   type FollowUpSuggestion,
   type InterviewSessionContext,
-  type LibraryCategory,
+  type LibrarySection,
 } from "@interview-copilot/shared";
+import { AnswerPreviewCard } from "@/components/live/answer-preview-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { ScriptText } from "@/components/live/script-text";
 import { cn } from "@/lib/utils";
-import { ChevronDown, Copy, Pin, Search } from "lucide-react";
-import { toast } from "sonner";
+import { Search } from "lucide-react";
+
+type NavigatorTab = "next" | "experiences" | "all";
 
 type Props = {
   className?: string;
   catalog: EnrichedQaRow[];
   context: InterviewSessionContext;
-  suggestions: FollowUpSuggestion[];
+  nextSuggestions: FollowUpSuggestion[];
   pinnedQuestion: string | null;
-  onOpenInMainPanel: (row: EnrichedQaRow) => void;
+  onOpenInMainPanel: (row: EnrichedQaRow, opts?: { fromBrowse?: boolean }) => void;
   onPin: (row: EnrichedQaRow) => void;
   onSetExperience: (moduleId: string | null, label?: string) => void;
   onClearContext: () => void;
@@ -34,96 +36,50 @@ type Props = {
   practiceFooter: React.ReactNode;
 };
 
-/**
- * High-contrast “reading surface” for expanded answers (dark UI).
- * Secondary fill + solid border reads clearly against ~0.145 background.
- */
-const expandedAnswerCopyClass =
-  "rounded-md border border-white/20 bg-secondary px-3 py-2.5 text-xs leading-[1.55] text-secondary-foreground shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] border-l-[3px] border-l-sky-500/90 [&_p]:text-secondary-foreground";
-
-const expandedRowBodyClass = "border-t border-white/15 bg-card px-2.5 pb-2.5 pt-2";
-
-function groupBrowse(catalog: EnrichedQaRow[]) {
-  const tree = new Map<LibraryCategory, Map<string, EnrichedQaRow[]>>();
-  for (const row of catalog) {
-    const cat = row.navigator.libraryCategory;
-    if (!tree.has(cat)) tree.set(cat, new Map());
-    const mod = tree.get(cat)!;
-    const mid = row.navigator.experienceModuleId;
-    if (!mod.has(mid)) mod.set(mid, []);
-    mod.get(mid)!.push(row);
-  }
-  return tree;
-}
-
-function FollowUpCard({
-  item,
-  expanded,
-  onToggle,
-  onOpenMain,
-  onPin,
+function ActiveExperienceCard({
+  context,
+  onSetExperience,
+  onClearContext,
 }: {
-  item: FollowUpSuggestion;
-  expanded: boolean;
-  onToggle: () => void;
-  onOpenMain: () => void;
-  onPin: () => void;
+  context: InterviewSessionContext;
+  onSetExperience: (moduleId: string | null, label?: string) => void;
+  onClearContext: () => void;
 }) {
+  const activeId = context.manualExperienceOverrideId ?? context.activeExperienceModuleId;
   return (
-    <div
-      className={cn(
-        "rounded-md border transition-colors",
-        expanded
-          ? "border-white/20 bg-card shadow-sm"
-          : "border-border/80 bg-muted/10 hover:bg-muted/15"
+    <section className="rounded-md border border-border/70 bg-muted/5 px-2 py-2">
+      <p className="text-[10px] font-medium uppercase text-muted-foreground">Active experience</p>
+      <p className="text-sm font-medium leading-tight">
+        {context.activeExperienceLabel ?? "—"}
+        {context.manualExperienceOverrideId && (
+          <span className="ml-1 text-[10px] font-normal text-amber-400">(manual)</span>
+        )}
+      </p>
+      {context.activeIntent && (
+        <p className="text-[10px] text-muted-foreground">Intent: {intentLabel(context.activeIntent)}</p>
       )}
-    >
-      <button
-        type="button"
-        className="flex w-full items-start gap-1 px-2 py-1.5 text-left"
-        onClick={onToggle}
-      >
-        <ChevronDown className={cn("mt-0.5 h-3.5 w-3.5 shrink-0 transition-transform", expanded && "rotate-180")} />
-        <div className="min-w-0 flex-1">
-          <p className="text-xs font-medium leading-snug">{item.question}</p>
-          <p className="text-[10px] text-muted-foreground">
-            {item.experienceLabel} · {intentLabel(item.intent)}
-          </p>
-        </div>
-      </button>
-      {expanded && (
-        <div className={expandedRowBodyClass}>
-          <p className="mb-2 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
-            {item.reason}
-          </p>
-          <ScriptText
-            text={item.answer}
-            className={cn("max-h-40 overflow-y-auto", expandedAnswerCopyClass)}
-          />
-          <div className="mt-2 flex flex-wrap gap-1">
-            <Button type="button" size="sm" variant="secondary" className="h-7 text-xs" onClick={onOpenMain}>
-              Open in main panel
-            </Button>
-            <Button type="button" size="sm" variant="ghost" className="h-7 text-xs" onClick={onPin}>
-              <Pin className="h-3 w-3" />
-              Pin
-            </Button>
-            <Button
-              type="button"
-              size="sm"
-              variant="ghost"
-              className="h-7 text-xs"
-              onClick={() => {
-                void navigator.clipboard.writeText(item.answer);
-                toast.success("Copied");
-              }}
-            >
-              <Copy className="h-3 w-3" />
-            </Button>
-          </div>
-        </div>
-      )}
-    </div>
+      <div className="mt-2 flex flex-wrap gap-1">
+        <select
+          className="h-7 max-w-full rounded border border-border bg-background px-1 text-[10px]"
+          value={activeId ?? ""}
+          onChange={(e) => {
+            const id = e.target.value || null;
+            const mod = id ? EXPERIENCE_MODULES[id] : null;
+            onSetExperience(id, mod?.label ?? undefined);
+          }}
+        >
+          <option value="">Auto (from conversation)</option>
+          {Object.values(EXPERIENCE_MODULES)
+            .filter((m) => m.id !== "unclassified-review")
+            .map((m) => (
+              <option key={m.id} value={m.id}>{m.label}</option>
+            ))}
+        </select>
+        <Button type="button" size="sm" variant="outline" className="h-7 text-[10px]" onClick={onClearContext}>
+          Clear context
+        </Button>
+      </div>
+    </section>
   );
 }
 
@@ -131,7 +87,7 @@ export function InterviewNavigator({
   className,
   catalog,
   context,
-  suggestions,
+  nextSuggestions,
   pinnedQuestion,
   onOpenInMainPanel,
   onPin,
@@ -140,18 +96,34 @@ export function InterviewNavigator({
   onSearchOpen,
   practiceFooter,
 }: Props) {
-  const [expandedSuggest, setExpandedSuggest] = useState<Record<string, boolean>>({});
+  const [tab, setTab] = useState<NavigatorTab>("next");
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [browseQuery, setBrowseQuery] = useState("");
-  const [openModules, setOpenModules] = useState<Record<string, boolean>>({});
-  const [showAllModule, setShowAllModule] = useState(false);
+  const [sectionFilter, setSectionFilter] = useState<LibrarySection | "all">("all");
 
-  const browseTree = useMemo(() => groupBrowse(catalog), [catalog]);
-  const moduleSuggestions = useMemo(() => {
-    if (!showAllModule || !context.activeExperienceModuleId) return suggestions;
-    return suggestFollowUps(catalog, context, { limit: 12, includeAllModule: true });
-  }, [catalog, context, showAllModule, suggestions]);
+  const experienceTree = useMemo(() => buildProductExperienceTree(catalog), [catalog]);
+  const searchResults = useMemo(
+    () => (browseQuery.length >= 2 ? searchLibrary(catalog, browseQuery, 20) : []),
+    [catalog, browseQuery]
+  );
 
-  const activeId = context.manualExperienceOverrideId ?? context.activeExperienceModuleId;
+  const bySection = useMemo(() => {
+    const map = new Map<LibrarySection, EnrichedQaRow[]>();
+    for (const s of LIBRARY_SECTION_ORDER) map.set(s, []);
+    for (const row of catalog) {
+      map.get(row.navigator.librarySection)?.push(row);
+    }
+    return map;
+  }, [catalog]);
+
+  const reviewQueue = useMemo(
+    () => catalog.filter((r) => r.navigator.reviewStatus === "needs_review"),
+    [catalog]
+  );
+
+  function toggleExpanded(id: string) {
+    setExpanded((prev) => ({ ...prev, [id]: !prev[id] }));
+  }
 
   return (
     <div className={cn("flex min-h-0 flex-1 flex-col overflow-hidden", className)}>
@@ -167,168 +139,179 @@ export function InterviewNavigator({
             </Button>
           </div>
 
-          <div className="space-y-3 p-2">
-          <section className="rounded-md border border-border/70 bg-muted/5 px-2 py-2">
-            <p className="text-[10px] font-medium uppercase text-muted-foreground">Active experience</p>
-            <p className="text-sm font-medium leading-tight">
-              {context.activeExperienceLabel ?? "—"}
-              {context.manualExperienceOverrideId && (
-                <span className="ml-1 text-[10px] font-normal text-amber-400">(manual)</span>
-              )}
-            </p>
-            {context.activeIntent && (
-              <p className="text-[10px] text-muted-foreground">Intent: {intentLabel(context.activeIntent)}</p>
-            )}
-            <div className="mt-2 flex flex-wrap gap-1">
-              <select
-                className="h-7 max-w-full rounded border border-border bg-background px-1 text-[10px]"
-                value={activeId ?? ""}
-                onChange={(e) => {
-                  const id = e.target.value || null;
-                  const mod = id ? EXPERIENCE_MODULES[id] : null;
-                  onSetExperience(id, mod?.label ?? undefined);
-                }}
+          <div className="flex border-b border-border px-2 pt-1">
+            {(
+              [
+                ["next", "Next"],
+                ["experiences", "Experiences"],
+                ["all", "All Answers"],
+              ] as const
+            ).map(([id, label]) => (
+              <button
+                key={id}
+                type="button"
+                className={cn(
+                  "flex-1 border-b-2 px-1 py-1.5 text-[10px] font-medium uppercase tracking-wide",
+                  tab === id
+                    ? "border-primary text-foreground"
+                    : "border-transparent text-muted-foreground hover:text-foreground/80"
+                )}
+                onClick={() => setTab(id)}
               >
-                <option value="">Auto (from conversation)</option>
-                {Object.values(EXPERIENCE_MODULES).map((m) => (
-                  <option key={m.id} value={m.id}>{m.label}</option>
-                ))}
-              </select>
-              <Button type="button" size="sm" variant="outline" className="h-7 text-[10px]" onClick={onClearContext}>
-                Clear context
-              </Button>
-            </div>
-          </section>
+                {label}
+              </button>
+            ))}
+          </div>
 
-          <section>
-            <div className="mb-1 flex items-center justify-between">
-              <h3 className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
-                Suggested follow-ups
-              </h3>
-              {context.activeExperienceModuleId && (
-                <button
-                  type="button"
-                  className="text-[10px] text-primary underline-offset-2 hover:underline"
-                  onClick={() => setShowAllModule((v) => !v)}
-                >
-                  {showAllModule ? "Top ranked" : "Show all related"}
-                </button>
-              )}
-            </div>
-            <div className="space-y-1.5">
-              {moduleSuggestions.map((s) => (
-                <FollowUpCard
-                  key={s.rowId}
-                  item={s}
-                  expanded={Boolean(expandedSuggest[s.rowId])}
-                  onToggle={() =>
-                    setExpandedSuggest((prev) => ({ ...prev, [s.rowId]: !prev[s.rowId] }))
-                  }
-                  onOpenMain={() => {
-                    const row = catalog.find((r) => r.id === s.rowId);
-                    if (row) onOpenInMainPanel(row);
-                  }}
-                  onPin={() => {
-                    const row = catalog.find((r) => r.id === s.rowId);
-                    if (row) onPin(row);
-                  }}
-                />
-              ))}
-              {moduleSuggestions.length === 0 && (
-                <p className="text-xs text-muted-foreground">Start a topic or load an answer to see suggestions.</p>
-              )}
-            </div>
-          </section>
-
-          <section>
-            <h3 className="mb-1 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
-              Browse answer library
-            </h3>
-            <Input
-              value={browseQuery}
-              onChange={(e) => setBrowseQuery(e.target.value)}
-              placeholder="Filter…"
-              className="mb-2 h-8 text-xs"
+          <div className="space-y-3 p-2">
+            <ActiveExperienceCard
+              context={context}
+              onSetExperience={onSetExperience}
+              onClearContext={onClearContext}
             />
-            <div className="space-y-2">
-              {[...browseTree.entries()].map(([cat, modules]) => (
-                <details key={cat} className="rounded-md border border-border/60" open>
-                  <summary className="cursor-pointer px-2 py-1.5 text-xs font-medium">
-                    {LIBRARY_CATEGORY_LABELS[cat]}
-                  </summary>
-                  <div className="space-y-1 border-t border-border/50 px-1 py-1">
-                    {[...modules.entries()].map(([modId, rows]) => {
-                      const label = EXPERIENCE_MODULES[modId]?.label ?? rows[0]?.navigator.experienceLabel ?? modId;
-                      const filtered = rows.filter(
-                        (r) =>
-                          !browseQuery ||
-                          r.question.toLowerCase().includes(browseQuery.toLowerCase()) ||
-                          r.answer.toLowerCase().includes(browseQuery.toLowerCase())
-                      );
-                      if (filtered.length === 0) return null;
-                      const open = openModules[modId] ?? false;
-                      return (
-                        <details
-                          key={modId}
-                          open={open}
-                          onToggle={(e) => {
-                            const el = e.currentTarget;
-                            setOpenModules((prev) => ({ ...prev, [modId]: el.open }));
-                          }}
-                        >
+
+            {tab === "next" && (
+              <section>
+                <h3 className="mb-1 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+                  Likely next questions
+                </h3>
+                <div className="space-y-1.5">
+                  {nextSuggestions.map((s) => (
+                    <AnswerPreviewCard
+                      key={s.rowId}
+                      source={s}
+                      catalog={catalog}
+                      expanded={Boolean(expanded[s.rowId])}
+                      onToggle={() => toggleExpanded(s.rowId)}
+                      onOpenMain={() => {
+                        const row = catalog.find((r) => r.id === s.rowId);
+                        if (row) onOpenInMainPanel(row);
+                      }}
+                      onPin={() => {
+                        const row = catalog.find((r) => r.id === s.rowId);
+                        if (row) onPin(row);
+                      }}
+                    />
+                  ))}
+                  {nextSuggestions.length === 0 && (
+                    <p className="text-xs text-muted-foreground">
+                      Start a topic or load an answer to see follow-ups.
+                    </p>
+                  )}
+                </div>
+              </section>
+            )}
+
+            {tab === "experiences" && (
+              <section className="space-y-2">
+                <p className="text-[10px] text-muted-foreground">
+                  Browse only — does not change live interview context.
+                </p>
+                {experienceTree.map((co) => (
+                  <details key={co.company} className="rounded-md border border-border/60" open>
+                    <summary className="cursor-pointer px-2 py-1.5 text-xs font-medium">{co.company}</summary>
+                    <div className="space-y-1 border-t border-border/50 px-1 py-1">
+                      {co.modules.map((mod) => (
+                        <details key={mod.moduleId} className="rounded border border-border/40">
                           <summary className="cursor-pointer px-2 py-1 text-[11px] text-muted-foreground">
-                            {label} ({filtered.length})
+                            {mod.label}
                           </summary>
-                          <ul className="space-y-1 pb-1 pl-1">
-                            {moduleCatalog(filtered, modId).map((row) => (
-                              <li key={row.id}>
-                                <details
-                                  className="rounded-md border border-border/50 bg-muted/10 transition-colors open:border-white/20 open:bg-card open:shadow-sm"
-                                >
-                                  <summary className="cursor-pointer px-2 py-1.5 text-[11px] font-medium leading-snug text-foreground/90">
-                                    <span className="text-[10px] font-normal text-muted-foreground">
-                                      {intentLabel(row.navigator.intent)} ·{" "}
-                                    </span>
-                                    {row.question}
-                                  </summary>
-                                  <div className={expandedRowBodyClass}>
-                                    <ScriptText
-                                      text={row.answer}
-                                      className={cn("max-h-40 overflow-y-auto", expandedAnswerCopyClass)}
-                                    />
-                                    <div className="mt-1.5 flex gap-1">
-                                      <Button
-                                        type="button"
-                                        size="sm"
-                                        variant="secondary"
-                                        className="h-6 text-[10px]"
-                                        onClick={() => onOpenInMainPanel(row)}
-                                      >
-                                        Open in main
-                                      </Button>
-                                      <Button
-                                        type="button"
-                                        size="sm"
-                                        variant="ghost"
-                                        className="h-6 text-[10px]"
-                                        onClick={() => onPin(row)}
-                                      >
-                                        Pin
-                                      </Button>
-                                    </div>
-                                  </div>
-                                </details>
-                              </li>
+                          <div className="space-y-1 px-1 pb-1">
+                            {mod.intents.map((ig) => (
+                              <details key={ig.intent} className="rounded border border-border/30 bg-muted/5">
+                                <summary className="cursor-pointer px-2 py-1 text-[10px] font-medium">
+                                  {ig.intentLabel} ({ig.rows.length})
+                                </summary>
+                                <ul className="space-y-1 p-1">
+                                  {ig.rows.map((row) => (
+                                    <li key={row.id}>
+                                      <AnswerPreviewCard
+                                        source={row}
+                                        catalog={catalog}
+                                        expanded={Boolean(expanded[row.id])}
+                                        onToggle={() => toggleExpanded(row.id)}
+                                        onOpenMain={() => onOpenInMainPanel(row, { fromBrowse: true })}
+                                        onPin={() => onPin(row)}
+                                        showShortFirst
+                                      />
+                                    </li>
+                                  ))}
+                                </ul>
+                              </details>
                             ))}
-                          </ul>
+                          </div>
                         </details>
-                      );
-                    })}
-                  </div>
-                </details>
-              ))}
-            </div>
-          </section>
+                      ))}
+                    </div>
+                  </details>
+                ))}
+              </section>
+            )}
+
+            {tab === "all" && (
+              <section>
+                <Input
+                  value={browseQuery}
+                  onChange={(e) => setBrowseQuery(e.target.value)}
+                  placeholder="Search questions, tags, phrasings…"
+                  className="mb-2 h-8 text-xs"
+                />
+                <select
+                  className="mb-2 h-8 w-full rounded border border-border bg-background px-2 text-[10px]"
+                  value={sectionFilter}
+                  onChange={(e) => setSectionFilter(e.target.value as LibrarySection | "all")}
+                >
+                  <option value="all">All sections</option>
+                  {LIBRARY_SECTION_ORDER.map((s) => (
+                    <option key={s} value={s}>{LIBRARY_SECTION_LABELS[s]}</option>
+                  ))}
+                </select>
+
+                {reviewQueue.length > 0 && (
+                  <details className="mb-2 rounded-md border border-amber-500/40 bg-amber-500/5">
+                    <summary className="cursor-pointer px-2 py-1.5 text-[11px] font-medium text-amber-100/90">
+                      Review queue ({reviewQueue.length})
+                    </summary>
+                    <ul className="space-y-1 p-1">
+                      {reviewQueue.map((row) => (
+                        <li key={row.id}>
+                          <AnswerPreviewCard
+                            source={row}
+                            catalog={catalog}
+                            expanded={Boolean(expanded[row.id])}
+                            onToggle={() => toggleExpanded(row.id)}
+                            onOpenMain={() => onOpenInMainPanel(row, { fromBrowse: true })}
+                            onPin={() => onPin(row)}
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                )}
+
+                <div className="space-y-1.5">
+                  {(browseQuery.length >= 2
+                    ? searchResults.map((hit) => catalog.find((r) => r.id === hit.rowId)).filter(Boolean)
+                    : sectionFilter === "all"
+                      ? catalog
+                      : bySection.get(sectionFilter) ?? []
+                  ).map((row) =>
+                    row ? (
+                      <AnswerPreviewCard
+                        key={row.id}
+                        source={row}
+                        catalog={catalog}
+                        expanded={Boolean(expanded[row.id])}
+                        onToggle={() => toggleExpanded(row.id)}
+                        onOpenMain={() => onOpenInMainPanel(row, { fromBrowse: true })}
+                        onPin={() => onPin(row)}
+                        showShortFirst
+                      />
+                    ) : null
+                  )}
+                </div>
+              </section>
+            )}
           </div>
 
           {pinnedQuestion && (

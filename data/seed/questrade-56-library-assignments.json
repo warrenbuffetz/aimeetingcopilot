@@ -1,0 +1,506 @@
+[
+  {
+    "number": 1,
+    "question": "How did you identify the problem?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "questionIntent": "problem_discovery",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 2,
+    "question": "How exactly did you measure the 40% conversion lift?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "questionIntent": "measurement",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 3,
+    "question": "Tell me about a data-driven product decision at Aeroplan.",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "questionIntent": "main_story",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 4,
+    "question": "What did you personally decide on the Aeroplan card offer test?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "questionIntent": "personal_ownership",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 5,
+    "question": "What would you do differently after the Aeroplan offer-summary test?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "questionIntent": "what_id_do_differently",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 6,
+    "question": "Why a clearer offer summary instead of a shorter page or bigger apply button?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "questionIntent": "solution_choice",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 7,
+    "question": "Why was it worth prioritizing?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "questionIntent": "prioritization",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 8,
+    "question": "How did you know it worked if the full membership platform hadn't launched?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "questionIntent": "measurement",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 9,
+    "question": "How did you know membership was a customer problem at Arc'teryx?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "questionIntent": "problem_discovery",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 10,
+    "question": "Tell me about something you took from an idea into a product.",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "questionIntent": "main_story",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 11,
+    "question": "What did you personally decide or deprioritize?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "questionIntent": "personal_ownership",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 12,
+    "question": "What would you do differently on the ReBIRD membership platform?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "questionIntent": "what_id_do_differently",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 13,
+    "question": "Why prioritize a membership platform rather than improving service pages?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "questionIntent": "prioritization",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 14,
+    "question": "Why this solution and why start in North America?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "questionIntent": "solution_choice",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 15,
+    "question": "Did you actually run randomized holdouts on the HBC Mastercard programme?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-portfolio",
+    "questionIntent": "attribution",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 16,
+    "question": "How did you identify the application problem?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-application",
+    "questionIntent": "problem_discovery",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 17,
+    "question": "How did you measure the 15% improvement?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-application",
+    "questionIntent": "measurement",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 18,
+    "question": "How would you explain your approach to customer activation and retention at HBC?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-activation",
+    "questionIntent": "main_story",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 19,
+    "question": "Tell me about a customer experience you improved at HBC.",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-application",
+    "questionIntent": "main_story",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 20,
+    "question": "Tell me about the financial impact of your work at HBC.",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-portfolio",
+    "questionIntent": "main_story",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 21,
+    "question": "Tell me exactly how you defined HBC's 30-day activation and 90-day retention.",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-activation",
+    "questionIntent": "measurement",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 22,
+    "question": "What did you personally decide on the HBC Mastercard application journey?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-application",
+    "questionIntent": "personal_ownership",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 23,
+    "question": "What would you do differently on the HBC application experiment?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-application",
+    "questionIntent": "what_id_do_differently",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 24,
+    "question": "Why prioritize application continuation instead of more acquisition?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-application",
+    "questionIntent": "prioritization",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 25,
+    "question": "Why save-and-resume, and how did you split ownership with Neo?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-application",
+    "questionIntent": "solution_choice",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 26,
+    "question": "How did you know the Avion cashback withdrawal was a customer problem?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "questionIntent": "problem_discovery",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 27,
+    "question": "How did you measure success for the Avion cashback withdrawal launch?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "questionIntent": "measurement",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 28,
+    "question": "Tell me about a customer problem you solved at RBC.",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "questionIntent": "main_story",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 29,
+    "question": "What did you personally decide on the Avion cashback withdrawal launch?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "questionIntent": "personal_ownership",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 30,
+    "question": "What would you do differently on the Avion cashback withdrawal launch?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "questionIntent": "what_id_do_differently",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 31,
+    "question": "Why did you prioritize it over other Avion improvements?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "questionIntent": "prioritization",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 32,
+    "question": "Why Interac e-Transfer instead of direct bank-account linking?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "questionIntent": "solution_choice",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 33,
+    "question": "Did Quests reach six million active credit cardholders?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-quests",
+    "questionIntent": "measurement",
+    "evidenceStatus": "resume_supported",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 34,
+    "question": "Did your UX redesign cause approvals in under three minutes?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-application",
+    "questionIntent": "attribution",
+    "evidenceStatus": "resume_supported",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 35,
+    "question": "Explain how you would model customer lifetime value in banking.",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "banking-unit-economics",
+    "questionIntent": "measurement",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 36,
+    "question": "Give me an exact definition of a monthly active banking customer.",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "banking-product-metrics",
+    "questionIntent": "measurement",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 37,
+    "question": "How do pending and posted card transactions differ?",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "banking-card-transactions",
+    "questionIntent": "technical_implementation",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 38,
+    "question": "How do you know an increase in DAU isn't just more balance checking?",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-metrics",
+    "questionIntent": "attribution",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 39,
+    "question": "How do you know the headless option saved two quarters?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-vendor-evaluation",
+    "questionIntent": "attribution",
+    "evidenceStatus": "resume_supported",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 40,
+    "question": "How do you know your incentive program generated incremental spending?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-portfolio",
+    "questionIntent": "attribution",
+    "evidenceStatus": "illustrative_scenario",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 41,
+    "question": "How would you choose between building a payment service and buying one?",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "banking-payments-platform",
+    "questionIntent": "solution_choice",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 42,
+    "question": "How would you decide between better rates and better switching UX?",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-primary-account",
+    "questionIntent": "prioritization",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 43,
+    "question": "How would you decide if a 5% incremental spending lift justified an incentive?",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "banking-unit-economics",
+    "questionIntent": "measurement",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 44,
+    "question": "How would you roll out a critical payments integration?",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "banking-payments-integration",
+    "questionIntent": "technical_implementation",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 45,
+    "question": "Is a $100 million increase in deposits automatically a win?",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-deposits",
+    "questionIntent": "measurement",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 46,
+    "question": "What controls would you require before allowing a new transfer type?",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "banking-money-movement",
+    "questionIntent": "technical_implementation",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 47,
+    "question": "What if leadership wants to optimize DAU but you believe retained deposits matter more?",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-stakeholder-alignment",
+    "questionIntent": "tradeoffs",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 48,
+    "question": "What if leadership wants to ship five banking features at once?",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-prioritization",
+    "questionIntent": "prioritization",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 49,
+    "question": "What if Risk wants a step that cuts conversion by 20%?",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-risk-compliance",
+    "questionIntent": "tradeoffs",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 50,
+    "question": "What if the team ships a feature on time, but adoption is poor?",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-product-outcomes",
+    "questionIntent": "measurement",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 51,
+    "question": "What is the biggest risk in connecting external accounts?",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "banking-account-aggregation",
+    "questionIntent": "tradeoffs",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 52,
+    "question": "Why mention 500K+ cardholders if you didn't control the credit book?",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-portfolio",
+    "questionIntent": "personal_ownership",
+    "evidenceStatus": "resume_supported",
+    "reviewStatus": "needs_review"
+  },
+  {
+    "number": 53,
+    "question": "Why would customers choose Questrade over Wealthsimple or a traditional bank?",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-competitive-positioning",
+    "questionIntent": "main_story",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 54,
+    "question": "You have only a dashboard, no user research. What do you do?",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-product-discovery",
+    "questionIntent": "problem_discovery",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 55,
+    "question": "Your conversion improved from 10% to 12%. Is that 2% or 20%?",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "banking-product-metrics",
+    "questionIntent": "measurement",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  },
+  {
+    "number": 56,
+    "question": "Your idea sounds sensible. Why hasn't Questrade already done it?",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-primary-account",
+    "questionIntent": "tradeoffs",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok"
+  }
+]

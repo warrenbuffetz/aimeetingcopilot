@@ -1,0 +1,3799 @@
+{
+  "Tell me about yourself.": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Intro"
+    ],
+    "keywords": [
+      "career-general",
+      "Intro",
+      "career_recruiter",
+      "main_story"
+    ],
+    "part": 1,
+    "canonicalQuestion": "Tell me about yourself.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Why Questrade? Why this role?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Motivation"
+    ],
+    "keywords": [
+      "career-general",
+      "Motivation",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 1,
+    "canonicalQuestion": "Why Questrade? Why this role?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Why Questrade instead of continuing at Arc'teryx?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "experienceLabel": "Arc'teryx — Membership Platform",
+    "intent": "solution_alternatives",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Arc'teryx",
+      "Motivation"
+    ],
+    "keywords": [
+      "Arc'teryx",
+      "arcteryx-membership",
+      "Motivation",
+      "career_recruiter",
+      "solution_alternatives"
+    ],
+    "part": 1,
+    "canonicalQuestion": "Why Questrade instead of continuing at Arc'teryx?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Why move into everyday banking from rewards and loyalty?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Motivation"
+    ],
+    "keywords": [
+      "career-general",
+      "Motivation",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 1,
+    "canonicalQuestion": "Why move into everyday banking from rewards and loyalty?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "You haven't owned a traditional chequing account. Why are you qualified?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Motivation"
+    ],
+    "keywords": [
+      "career-general",
+      "Motivation",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 1,
+    "canonicalQuestion": "You haven't owned a traditional chequing account. Why are you qualified?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Why are you looking to leave Arc'teryx?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "experienceLabel": "Arc'teryx — Membership Platform",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Arc'teryx",
+      "Motivation"
+    ],
+    "keywords": [
+      "Arc'teryx",
+      "arcteryx-membership",
+      "Motivation",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 1,
+    "canonicalQuestion": "Why are you looking to leave Arc'teryx?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What makes you different from other Senior PM candidates?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Intro"
+    ],
+    "keywords": [
+      "career-general",
+      "Intro",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 1,
+    "canonicalQuestion": "What makes you different from other Senior PM candidates?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What are your compensation expectations?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Motivation"
+    ],
+    "keywords": [
+      "career-general",
+      "Motivation",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 1,
+    "canonicalQuestion": "What are your compensation expectations?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you convince existing Questrade investors to make Questbank their primary bank?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-primary",
+    "experienceLabel": "Questbank — Primary Account",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Case strategy"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-primary",
+      "Case strategy",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 2,
+    "canonicalQuestion": "How would you convince existing Questrade investors to make Questbank their primary bank?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you increase direct deposit adoption?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-deposits",
+    "experienceLabel": "Questbank — Direct Deposit",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Case strategy"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-deposits",
+      "Case strategy",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 2,
+    "canonicalQuestion": "How would you increase direct deposit adoption?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What metrics would you use to measure success in everyday banking?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Case strategy"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-metrics",
+      "Case strategy",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 2,
+    "canonicalQuestion": "What metrics would you use to measure success in everyday banking?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you design a single financial hub across spending, saving and investing?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-hub",
+    "experienceLabel": "Financial Hub / Balance Sheet",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Case strategy"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-hub",
+      "Case strategy",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 2,
+    "canonicalQuestion": "How would you design a single financial hub across spending, saving and investing?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Case strategy"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-metrics",
+      "Case strategy",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 2,
+    "canonicalQuestion": "MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-deposits",
+    "experienceLabel": "Questbank — Direct Deposit",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Case strategy"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-deposits",
+      "Case strategy",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 2,
+    "canonicalQuestion": "You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Build a business case for investing $2 million in account switching.": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Case strategy"
+    ],
+    "keywords": [
+      "career-general",
+      "Case strategy",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 2,
+    "canonicalQuestion": "Build a business case for investing $2 million in account switching.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you improve transaction histories?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Case strategy"
+    ],
+    "keywords": [
+      "career-general",
+      "Case strategy",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 2,
+    "canonicalQuestion": "How would you improve transaction histories?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you make saving more engaging without turning it into a gimmick?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Case strategy"
+    ],
+    "keywords": [
+      "career-general",
+      "Case strategy",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 2,
+    "canonicalQuestion": "How would you make saving more engaging without turning it into a gimmick?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What would you do in your first 90 days?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Case strategy"
+    ],
+    "keywords": [
+      "career-general",
+      "Case strategy",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 2,
+    "canonicalQuestion": "What would you do in your first 90 days?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Walk me through the Interac e-Transfer product you launched at RBC.": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Banking technical"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Banking technical",
+      "career_recruiter",
+      "main_story"
+    ],
+    "part": 3,
+    "canonicalQuestion": "Walk me through the Interac e-Transfer product you launched at RBC.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What's the difference between EFT and Interac e-Transfer?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Banking technical"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Banking technical",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 3,
+    "canonicalQuestion": "What's the difference between EFT and Interac e-Transfer?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What should happen when a customer initiates a transfer but the payment fails?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Banking technical"
+    ],
+    "keywords": [
+      "career-general",
+      "Banking technical",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 3,
+    "canonicalQuestion": "What should happen when a customer initiates a transfer but the payment fails?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you design a reliable account-funding experience?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Banking technical"
+    ],
+    "keywords": [
+      "career-general",
+      "Banking technical",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 3,
+    "canonicalQuestion": "How would you design a reliable account-funding experience?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you handle duplicate charges, incorrect balances or transaction discrepancies?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Banking technical"
+    ],
+    "keywords": [
+      "career-general",
+      "Banking technical",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 3,
+    "canonicalQuestion": "How would you handle duplicate charges, incorrect balances or transaction discrepancies?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Tell me about a complex integration you led.": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Banking technical"
+    ],
+    "keywords": [
+      "career-general",
+      "Banking technical",
+      "career_recruiter",
+      "main_story"
+    ],
+    "part": 3,
+    "canonicalQuestion": "Tell me about a complex integration you led.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you manage an underperforming banking technology vendor?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Banking technical"
+    ],
+    "keywords": [
+      "career-general",
+      "Banking technical",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 3,
+    "canonicalQuestion": "How would you manage an underperforming banking technology vendor?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you use AI to improve personal financial management?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Banking technical"
+    ],
+    "keywords": [
+      "career-general",
+      "Banking technical",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 3,
+    "canonicalQuestion": "How would you use AI to improve personal financial management?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Tell me about the financial impact of your work at HBC.": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-portfolio",
+    "experienceLabel": "HBC — Cardholder Portfolio & P&L",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Experience deep dive"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Experience deep dive",
+      "resume_deep_dive",
+      "main_story"
+    ],
+    "part": 4,
+    "canonicalQuestion": "Tell me about the financial impact of your work at HBC.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 20,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 26
+  },
+  "How would you explain your approach to customer activation and retention at HBC?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-activation",
+    "experienceLabel": "HBC — Post-Approval Activation",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Experience deep dive"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Experience deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 4,
+    "canonicalQuestion": "How would you explain your approach to customer activation and retention at HBC?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 18,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 16
+  },
+  "Tell me about improving the HBC Mastercard application journey.": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Experience deep dive"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Experience deep dive",
+      "resume_deep_dive",
+      "main_story"
+    ],
+    "part": 4,
+    "canonicalQuestion": "Tell me about improving the HBC Mastercard application journey.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How did you drive credit card acquisition growth at Aeroplan?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "experienceLabel": "Aeroplan — Co-brand Card Acquisition",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Aeroplan",
+      "Experience deep dive"
+    ],
+    "keywords": [
+      "Aeroplan",
+      "aeroplan-cobrand",
+      "Experience deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 4,
+    "canonicalQuestion": "How did you drive credit card acquisition growth at Aeroplan?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Tell me about building Avion Select from zero to one.": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-avion",
+    "experienceLabel": "RBC — Avion Select",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Experience deep dive"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-avion",
+      "Experience deep dive",
+      "resume_deep_dive",
+      "main_story"
+    ],
+    "part": 4,
+    "canonicalQuestion": "Tell me about building Avion Select from zero to one.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How did you secure $5.2 million in capital funding at Arc'teryx?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "experienceLabel": "Arc'teryx — Membership Platform",
+    "intent": "technical_implementation",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Arc'teryx",
+      "Experience deep dive"
+    ],
+    "keywords": [
+      "Arc'teryx",
+      "arcteryx-membership",
+      "Experience deep dive",
+      "resume_deep_dive",
+      "technical_implementation"
+    ],
+    "part": 4,
+    "canonicalQuestion": "How did you secure $5.2 million in capital funding at Arc'teryx?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Why did you choose a headless membership platform rather than building everything internally?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "experienceLabel": "Arc'teryx — Membership Platform",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Arc'teryx",
+      "Experience deep dive"
+    ],
+    "keywords": [
+      "Arc'teryx",
+      "arcteryx-membership",
+      "Experience deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 4,
+    "canonicalQuestion": "Why did you choose a headless membership platform rather than building everything internally?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Tell me about a time you had competing priorities with Risk, Compliance or Engineering.": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Leadership"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Leadership",
+      "resume_deep_dive",
+      "main_story"
+    ],
+    "part": 5,
+    "canonicalQuestion": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Tell me about a time you challenged the original product strategy.": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Leadership"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Leadership",
+      "resume_deep_dive",
+      "main_story"
+    ],
+    "part": 5,
+    "canonicalQuestion": "Tell me about a time you challenged the original product strategy.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Tell me about a product initiative that didn't go according to plan.": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Leadership"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Leadership",
+      "resume_deep_dive",
+      "main_story"
+    ],
+    "part": 5,
+    "canonicalQuestion": "Tell me about a product initiative that didn't go according to plan.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How do you make decisions when the data is incomplete?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Leadership"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Leadership",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 5,
+    "canonicalQuestion": "How do you make decisions when the data is incomplete?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How do you manage stakeholders who disagree on priorities?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Leadership"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Leadership",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 5,
+    "canonicalQuestion": "How do you manage stakeholders who disagree on priorities?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How do you decide whether to experiment or commit directly to delivery?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Leadership"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-metrics",
+      "Leadership",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 5,
+    "canonicalQuestion": "How do you decide whether to experiment or commit directly to delivery?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How do you work with designers and customer researchers?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "problem_discovery",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Leadership"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Leadership",
+      "resume_deep_dive",
+      "problem_discovery"
+    ],
+    "part": 5,
+    "canonicalQuestion": "How do you work with designers and customer researchers?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How are you using AI in your product management work?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Leadership"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Leadership",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 5,
+    "canonicalQuestion": "How are you using AI in your product management work?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you handle a major payment incident?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-payments",
+    "experienceLabel": "Payments & Controls",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Leadership"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-payments",
+      "Leadership",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 5,
+    "canonicalQuestion": "How would you handle a major payment incident?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Why should we hire you over someone with direct core banking experience?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Leadership"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Leadership",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 5,
+    "canonicalQuestion": "Why should we hire you over someone with direct core banking experience?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "You say HBC's modeled lifetime value increased 10%. How would you explain that metric?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Analytical follow-up"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Analytical follow-up",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 6,
+    "canonicalQuestion": "You say HBC's modeled lifetime value increased 10%. How would you explain that metric?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How do you know your incentive program generated incremental spending?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-portfolio",
+    "experienceLabel": "HBC — Cardholder Portfolio & P&L",
+    "intent": "attribution",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Analytical follow-up"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Analytical follow-up",
+      "resume_deep_dive",
+      "attribution"
+    ],
+    "part": 6,
+    "canonicalQuestion": "How do you know your incentive program generated incremental spending?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 40,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 27
+  },
+  "If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-deposits",
+    "experienceLabel": "Questbank — Direct Deposit",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Analytical follow-up"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-deposits",
+      "Analytical follow-up",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 6,
+    "canonicalQuestion": "If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What if leadership wants to optimize DAU but you believe retained deposits matter more?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "tradeoffs",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Analytical follow-up",
+      "alias:leadership-stakeholder-alignment"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Analytical follow-up",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 6,
+    "canonicalQuestion": "What if leadership wants to optimize DAU but you believe retained deposits matter more?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 47,
+    "reviewResolutionBasis": "An explicit hypothetical leadership question with a non-historical response.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 31
+  },
+  "What if the team ships a feature on time, but adoption is poor?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "measurement_impact",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Analytical follow-up",
+      "alias:leadership-product-outcomes"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Analytical follow-up",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 6,
+    "canonicalQuestion": "What if the team ships a feature on time, but adoption is poor?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 50,
+    "reviewResolutionBasis": "An explicit hypothetical leadership question with a non-historical response.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 32
+  },
+  "What would it take for you to leave your current role?": {
+    "libraryCategory": "career_recruiter",
+    "librarySection": "career_motivation",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Motivation"
+    ],
+    "keywords": [
+      "career-general",
+      "Motivation",
+      "career_recruiter",
+      "general"
+    ],
+    "part": 1,
+    "canonicalQuestion": "What would it take for you to leave your current role?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Why would someone switch their primary bank if their current bank works fine?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-primary",
+    "experienceLabel": "Questbank — Primary Account",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Follow-up probes"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-primary",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "Why would someone switch their primary bank if their current bank works fine?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Who would you target first for Questbank adoption?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-primary",
+    "experienceLabel": "Questbank — Primary Account",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Follow-up probes"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-primary",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "Who would you target first for Questbank adoption?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What's the one feature you'd build first to win payroll?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-deposits",
+    "experienceLabel": "Questbank — Direct Deposit",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Follow-up probes"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-deposits",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "What's the one feature you'd build first to win payroll?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What if employers aren't supported by an automated payroll switching provider?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-deposits",
+    "experienceLabel": "Questbank — Direct Deposit",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Follow-up probes"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-deposits",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "What if employers aren't supported by an automated payroll switching provider?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How do you know a customer really switched their paycheque?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-deposits",
+    "experienceLabel": "Questbank — Direct Deposit",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Follow-up probes"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-deposits",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "How do you know a customer really switched their paycheque?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What if someone keeps two banks rather than moving everything to Questbank?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-primary",
+    "experienceLabel": "Questbank — Primary Account",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Follow-up probes"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-primary",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "What if someone keeps two banks rather than moving everything to Questbank?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What if payroll bonuses bring in customers who leave immediately afterward?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-deposits",
+    "experienceLabel": "Questbank — Direct Deposit",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Follow-up probes"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-deposits",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "What if payroll bonuses bring in customers who leave immediately afterward?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Why would customers choose Questrade over Wealthsimple or a traditional bank?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-primary",
+    "experienceLabel": "Questbank — Primary Account",
+    "intent": "main_story",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Follow-up probes",
+      "alias:questrade-competitive-positioning"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "Why would customers choose Questrade over Wealthsimple or a traditional bank?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 53
+  },
+  "Isn't Balance Sheet just a dashboard? Where is the actual value?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-hub",
+    "experienceLabel": "Financial Hub / Balance Sheet",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Follow-up probes"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-hub",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "Isn't Balance Sheet just a dashboard? Where is the actual value?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What is the biggest risk in connecting external accounts?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "questrade-hub",
+    "experienceLabel": "Financial Hub / Balance Sheet",
+    "intent": "tradeoffs",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Follow-up probes",
+      "alias:banking-account-aggregation"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "What is the biggest risk in connecting external accounts?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 51
+  },
+  "How would you decide between better rates and better switching UX?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-primary",
+    "experienceLabel": "Questbank — Primary Account",
+    "intent": "prioritization",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Follow-up probes",
+      "alias:questrade-primary-account"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "How would you decide between better rates and better switching UX?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 42
+  },
+  "What if leadership wants to ship five banking features at once?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "prioritization",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Follow-up probes",
+      "alias:leadership-prioritization"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "What if leadership wants to ship five banking features at once?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 48
+  },
+  "How would you define 'share of wallet' for everyday banking?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-hub",
+    "experienceLabel": "Financial Hub / Balance Sheet",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Follow-up probes"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-hub",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "How would you define 'share of wallet' for everyday banking?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Should the financial hub automatically transfer extra cash into investments?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-hub",
+    "experienceLabel": "Financial Hub / Balance Sheet",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Follow-up probes"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-hub",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "Should the financial hub automatically transfer extra cash into investments?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Your idea sounds sensible. Why hasn't Questrade already done it?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-primary",
+    "experienceLabel": "Questbank — Primary Account",
+    "intent": "tradeoffs",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Follow-up probes",
+      "alias:questrade-primary-account"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Follow-up probes",
+      "banking_strategy",
+      "general"
+    ],
+    "part": 7,
+    "canonicalQuestion": "Your idea sounds sensible. Why hasn't Questrade already done it?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 56
+  },
+  "Give me an exact definition of a monthly active banking customer.": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "measurement_impact",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Metrics & experiments",
+      "alias:banking-product-metrics"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Metrics & experiments",
+      "product_analytics",
+      "general"
+    ],
+    "part": 8,
+    "canonicalQuestion": "Give me an exact definition of a monthly active banking customer.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 36
+  },
+  "What would your primary-account north-star metric actually be?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "measurement_impact",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Metrics & experiments"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-metrics",
+      "Metrics & experiments",
+      "product_analytics",
+      "measurement_impact"
+    ],
+    "part": 8,
+    "canonicalQuestion": "What would your primary-account north-star metric actually be?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Your conversion improved from 10% to 12%. Is that 2% or 20%?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "measurement_impact",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Metrics & experiments",
+      "alias:banking-product-metrics"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Metrics & experiments",
+      "product_analytics",
+      "general"
+    ],
+    "part": 8,
+    "canonicalQuestion": "Your conversion improved from 10% to 12%. Is that 2% or 20%?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 55
+  },
+  "How do you prevent cohort analysis from becoming a misleading before-and-after story?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Metrics & experiments"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-metrics",
+      "Metrics & experiments",
+      "product_analytics",
+      "general"
+    ],
+    "part": 8,
+    "canonicalQuestion": "How do you prevent cohort analysis from becoming a misleading before-and-after story?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you select an experiment's primary metric and guardrails?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Metrics & experiments"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-metrics",
+      "Metrics & experiments",
+      "product_analytics",
+      "general"
+    ],
+    "part": 8,
+    "canonicalQuestion": "How would you select an experiment's primary metric and guardrails?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What if an experiment looks positive after two days? Can we ship early?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Metrics & experiments"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-metrics",
+      "Metrics & experiments",
+      "product_analytics",
+      "general"
+    ],
+    "part": 8,
+    "canonicalQuestion": "What if an experiment looks positive after two days? Can we ship early?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Why is spend per active cardholder a risky metric?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Metrics & experiments"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-metrics",
+      "Metrics & experiments",
+      "product_analytics",
+      "general"
+    ],
+    "part": 8,
+    "canonicalQuestion": "Why is spend per active cardholder a risky metric?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Explain how you would model customer lifetime value in banking.": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "measurement_impact",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Metrics & experiments",
+      "alias:banking-unit-economics"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Metrics & experiments",
+      "product_analytics",
+      "general"
+    ],
+    "part": 8,
+    "canonicalQuestion": "Explain how you would model customer lifetime value in banking.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 35
+  },
+  "Is a $100 million increase in deposits automatically a win?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-deposits",
+    "experienceLabel": "Questbank — Direct Deposit",
+    "intent": "measurement_impact",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Metrics & experiments"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Metrics & experiments",
+      "product_analytics",
+      "general"
+    ],
+    "part": 8,
+    "canonicalQuestion": "Is a $100 million increase in deposits automatically a win?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 45
+  },
+  "Would you optimize account openings, funded accounts or payroll adoption?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-deposits",
+    "experienceLabel": "Questbank — Direct Deposit",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Metrics & experiments"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-deposits",
+      "Metrics & experiments",
+      "product_analytics",
+      "general"
+    ],
+    "part": 8,
+    "canonicalQuestion": "Would you optimize account openings, funded accounts or payroll adoption?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you decide if a 5% incremental spending lift justified an incentive?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "measurement_impact",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Metrics & experiments",
+      "alias:banking-unit-economics"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Metrics & experiments",
+      "product_analytics",
+      "attribution"
+    ],
+    "part": 8,
+    "canonicalQuestion": "How would you decide if a 5% incremental spending lift justified an incentive?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 43
+  },
+  "You have only a dashboard, no user research. What do you do?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-primary",
+    "experienceLabel": "Questbank — Primary Account",
+    "intent": "problem_discovery",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Metrics & experiments",
+      "alias:questrade-product-discovery"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Metrics & experiments",
+      "product_analytics",
+      "problem_discovery"
+    ],
+    "part": 8,
+    "canonicalQuestion": "You have only a dashboard, no user research. What do you do?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 54
+  },
+  "How do you know an increase in DAU isn't just more balance checking?": {
+    "libraryCategory": "banking_strategy",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "attribution",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Metrics & experiments"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Metrics & experiments",
+      "product_analytics",
+      "general"
+    ],
+    "part": 8,
+    "canonicalQuestion": "How do you know an increase in DAU isn't just more balance checking?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 38
+  },
+  "What exactly did you own versus RBC's payments infrastructure team?": {
+    "libraryCategory": "banking_technical",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Payments & controls"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Payments & controls",
+      "banking_technical",
+      "general"
+    ],
+    "part": 9,
+    "canonicalQuestion": "What exactly did you own versus RBC's payments infrastructure team?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Why mention 5M+ settlement events when Avion payouts were only $1M+?": {
+    "libraryCategory": "banking_technical",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-avion",
+    "experienceLabel": "RBC — Avion Select",
+    "intent": "technical_implementation",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Payments & controls"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-avion",
+      "Payments & controls",
+      "banking_technical",
+      "technical_implementation"
+    ],
+    "part": 9,
+    "canonicalQuestion": "Why mention 5M+ settlement events when Avion payouts were only $1M+?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Why use Interac e-Transfer rather than EFT for cashback withdrawals?": {
+    "libraryCategory": "banking_technical",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Payments & controls"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Payments & controls",
+      "banking_technical",
+      "general"
+    ],
+    "part": 9,
+    "canonicalQuestion": "Why use Interac e-Transfer rather than EFT for cashback withdrawals?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What happens if a payout API times out after the request was accepted?": {
+    "libraryCategory": "banking_technical",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "technical_implementation",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Payments & controls"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Payments & controls",
+      "banking_technical",
+      "technical_implementation"
+    ],
+    "part": 9,
+    "canonicalQuestion": "What happens if a payout API times out after the request was accepted?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What is reconciliation, and why does a PM need to understand it?": {
+    "libraryCategory": "banking_technical",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-payments",
+    "experienceLabel": "Payments & Controls",
+    "intent": "technical_implementation",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Payments & controls"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-payments",
+      "Payments & controls",
+      "banking_technical",
+      "technical_implementation"
+    ],
+    "part": 9,
+    "canonicalQuestion": "What is reconciliation, and why does a PM need to understand it?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you define payout success rate?": {
+    "libraryCategory": "banking_technical",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Payments & controls"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Payments & controls",
+      "banking_technical",
+      "general"
+    ],
+    "part": 9,
+    "canonicalQuestion": "How would you define payout success rate?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What controls would you require before allowing a new transfer type?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "questrade-deposits",
+    "experienceLabel": "Questbank — Direct Deposit",
+    "intent": "technical_implementation",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Payments & controls",
+      "alias:banking-money-movement"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Payments & controls",
+      "banking_technical",
+      "general"
+    ],
+    "part": 9,
+    "canonicalQuestion": "What controls would you require before allowing a new transfer type?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 46
+  },
+  "What if Risk wants a step that cuts conversion by 20%?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "tradeoffs",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Payments & controls",
+      "alias:leadership-risk-compliance"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Payments & controls",
+      "banking_technical",
+      "general"
+    ],
+    "part": 9,
+    "canonicalQuestion": "What if Risk wants a step that cuts conversion by 20%?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 49
+  },
+  "How do pending and posted card transactions differ?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "questrade-payments",
+    "experienceLabel": "Payments & Controls",
+    "intent": "technical_implementation",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Payments & controls",
+      "alias:banking-card-transactions"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Payments & controls",
+      "banking_technical",
+      "general"
+    ],
+    "part": 9,
+    "canonicalQuestion": "How do pending and posted card transactions differ?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 37
+  },
+  "What if the ledger balance and customer-facing balance don't match?": {
+    "libraryCategory": "banking_technical",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-payments",
+    "experienceLabel": "Payments & Controls",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Payments & controls"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-payments",
+      "Payments & controls",
+      "banking_technical",
+      "general"
+    ],
+    "part": 9,
+    "canonicalQuestion": "What if the ledger balance and customer-facing balance don't match?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How would you roll out a critical payments integration?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "questrade-payments",
+    "experienceLabel": "Payments & Controls",
+    "intent": "technical_implementation",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Payments & controls",
+      "alias:banking-payments-integration"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Payments & controls",
+      "banking_technical",
+      "general"
+    ],
+    "part": 9,
+    "canonicalQuestion": "How would you roll out a critical payments integration?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 44
+  },
+  "How would you choose between building a payment service and buying one?": {
+    "libraryCategory": "product_analytics",
+    "librarySection": "product_banking_knowledge",
+    "experienceModuleId": "questrade-payments",
+    "experienceLabel": "Payments & Controls",
+    "intent": "solution_alternatives",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "Payments & controls",
+      "alias:banking-payments-platform"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Payments & controls",
+      "banking_technical",
+      "general"
+    ],
+    "part": 9,
+    "canonicalQuestion": "How would you choose between building a payment service and buying one?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 41
+  },
+  "What does 'P&L ownership' at HBC actually mean?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 10,
+    "canonicalQuestion": "What does 'P&L ownership' at HBC actually mean?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What was your most important HBC product decision?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 10,
+    "canonicalQuestion": "What was your most important HBC product decision?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Tell me exactly how you defined HBC's 30-day activation and 90-day retention.": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-activation",
+    "experienceLabel": "HBC — Post-Approval Activation",
+    "intent": "measurement_impact",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 10,
+    "canonicalQuestion": "Tell me exactly how you defined HBC's 30-day activation and 90-day retention.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 21,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 17
+  },
+  "Did you actually run randomized holdouts on the HBC Mastercard programme?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-portfolio",
+    "experienceLabel": "HBC — Cardholder Portfolio & P&L",
+    "intent": "attribution",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "attribution"
+    ],
+    "part": 10,
+    "canonicalQuestion": "Did you actually run randomized holdouts on the HBC Mastercard programme?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 15,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 28
+  },
+  "Why did HBC modeled LTV rise 10%, and how certain are you?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-portfolio",
+    "experienceLabel": "HBC — Cardholder Portfolio & P&L",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-portfolio",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 10,
+    "canonicalQuestion": "Why did HBC modeled LTV rise 10%, and how certain are you?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Why mention 500K+ cardholders if you didn't control the credit book?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-portfolio",
+    "experienceLabel": "HBC — Cardholder Portfolio & P&L",
+    "intent": "personal_ownership",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Resume deep dive"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 10,
+    "canonicalQuestion": "Why mention 500K+ cardholders if you didn't control the credit book?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 52,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 29
+  },
+  "What exactly did you change in the HBC application experience?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 10,
+    "canonicalQuestion": "What exactly did you change in the HBC application experience?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Did your UX redesign cause approvals in under three minutes?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "attribution",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Resume deep dive",
+      "alias:hbc-mastercard-application"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 10,
+    "canonicalQuestion": "Did your UX redesign cause approvals in under three minutes?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 34,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 18
+  },
+  "Did Quests reach six million active credit cardholders?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-quests",
+    "experienceLabel": "HBC — Quests",
+    "intent": "measurement_impact",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Resume deep dive"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 10,
+    "canonicalQuestion": "Did Quests reach six million active credit cardholders?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 33,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 30
+  },
+  "How can you claim 427% acquisition growth when you only improved conversion by 40%?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "experienceLabel": "Aeroplan — Co-brand Card Acquisition",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Aeroplan",
+      "Resume deep dive"
+    ],
+    "keywords": [
+      "Aeroplan",
+      "aeroplan-cobrand",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 10,
+    "canonicalQuestion": "How can you claim 427% acquisition growth when you only improved conversion by 40%?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How did you experiment when the bank owned the application form?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Resume deep dive"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-metrics",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 10,
+    "canonicalQuestion": "How did you experiment when the bank owned the application form?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "You secured $5.2M at Arc'teryx. Was the programme launched?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "experienceLabel": "Arc'teryx — Membership Platform",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Arc'teryx",
+      "Resume deep dive"
+    ],
+    "keywords": [
+      "Arc'teryx",
+      "arcteryx-membership",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 10,
+    "canonicalQuestion": "You secured $5.2M at Arc'teryx. Was the programme launched?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How do you know the headless option saved two quarters?": {
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-vendor",
+    "experienceLabel": "Arc'teryx — Vendor Evaluation",
+    "intent": "attribution",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Resume deep dive",
+      "alias:arcteryx-vendor-evaluation"
+    ],
+    "keywords": [
+      "unclassified-review",
+      "Resume deep dive",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 10,
+    "canonicalQuestion": "How do you know the headless option saved two quarters?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 39,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 15
+  },
+  "What would you do if Engineering said your top feature was six months of work?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Senior PM judgment"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Senior PM judgment",
+      "leadership_behavioural",
+      "general"
+    ],
+    "part": 11,
+    "canonicalQuestion": "What would you do if Engineering said your top feature was six months of work?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How do you challenge a VP who has already promised a launch date?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Senior PM judgment"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Senior PM judgment",
+      "leadership_behavioural",
+      "general"
+    ],
+    "part": 11,
+    "canonicalQuestion": "How do you challenge a VP who has already promised a launch date?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Tell me about a time you said no to a stakeholder.": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Senior PM judgment"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Senior PM judgment",
+      "leadership_behavioural",
+      "main_story"
+    ],
+    "part": 11,
+    "canonicalQuestion": "Tell me about a time you said no to a stakeholder.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How do you handle an engineer who strongly disagrees with your roadmap?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Senior PM judgment"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Senior PM judgment",
+      "leadership_behavioural",
+      "general"
+    ],
+    "part": 11,
+    "canonicalQuestion": "How do you handle an engineer who strongly disagrees with your roadmap?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How do you know when to stop investing in a feature?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Senior PM judgment"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Senior PM judgment",
+      "leadership_behavioural",
+      "general"
+    ],
+    "part": 11,
+    "canonicalQuestion": "How do you know when to stop investing in a feature?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What is your biggest weakness as a product leader?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Senior PM judgment"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Senior PM judgment",
+      "leadership_behavioural",
+      "general"
+    ],
+    "part": 11,
+    "canonicalQuestion": "What is your biggest weakness as a product leader?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How do you lead when you don't manage the engineers directly?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Senior PM judgment"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Senior PM judgment",
+      "leadership_behavioural",
+      "general"
+    ],
+    "part": 11,
+    "canonicalQuestion": "How do you lead when you don't manage the engineers directly?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What if your PM peers own Cards and Money Movement, but your metric depends on both?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "questrade_cases",
+    "experienceModuleId": "questrade-metrics",
+    "experienceLabel": "Product Metrics & Economics",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Questrade",
+      "Senior PM judgment"
+    ],
+    "keywords": [
+      "Questrade",
+      "questrade-metrics",
+      "Senior PM judgment",
+      "leadership_behavioural",
+      "general"
+    ],
+    "part": 11,
+    "canonicalQuestion": "What if your PM peers own Cards and Money Movement, but your metric depends on both?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Would you delay launch over a 0.5% payment failure rate?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Senior PM judgment"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Senior PM judgment",
+      "leadership_behavioural",
+      "general"
+    ],
+    "part": 11,
+    "canonicalQuestion": "Would you delay launch over a 0.5% payment failure rate?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What would you do if a new AI feature gave customers incorrect financial advice?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Senior PM judgment"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Senior PM judgment",
+      "leadership_behavioural",
+      "general"
+    ],
+    "part": 11,
+    "canonicalQuestion": "What would you do if a new AI feature gave customers incorrect financial advice?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "What's one product opinion you hold strongly that others might disagree with?": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "general",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Senior PM judgment"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Senior PM judgment",
+      "leadership_behavioural",
+      "general"
+    ],
+    "part": 11,
+    "canonicalQuestion": "What's one product opinion you hold strongly that others might disagree with?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Tell me about your first disagreement with a new team's established strategy.": {
+    "libraryCategory": "leadership_behavioural",
+    "librarySection": "leadership_behavioural",
+    "experienceModuleId": "leadership-general",
+    "experienceLabel": "Leadership & Judgment",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Senior PM judgment"
+    ],
+    "keywords": [
+      "leadership-general",
+      "Senior PM judgment",
+      "leadership_behavioural",
+      "main_story"
+    ],
+    "part": 11,
+    "canonicalQuestion": "Tell me about your first disagreement with a new team's established strategy.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "Tell me about a customer problem you solved at RBC.": {
+    "seedKey": "RBC",
+    "notes": "RBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Resume deep dive — RBC"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Resume deep dive — RBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "Tell me about a customer problem you solved at RBC.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 28,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 33
+  },
+  "How did you know the Avion cashback withdrawal was a customer problem?": {
+    "seedKey": "RBC",
+    "notes": "RBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "problem_discovery",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Resume deep dive — RBC"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Resume deep dive — RBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "How did you know the Avion cashback withdrawal was a customer problem?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 26,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 34
+  },
+  "Why did you prioritize it over other Avion improvements?": {
+    "seedKey": "RBC",
+    "notes": "RBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "prioritization",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Resume deep dive — RBC"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Resume deep dive — RBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "Why did you prioritize it over other Avion improvements?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 31,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 35
+  },
+  "Why Interac e-Transfer instead of direct bank-account linking?": {
+    "seedKey": "RBC",
+    "notes": "RBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "solution_alternatives",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Resume deep dive — RBC"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Resume deep dive — RBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "Why Interac e-Transfer instead of direct bank-account linking?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 32,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 36
+  },
+  "What did you personally decide on the Avion cashback withdrawal launch?": {
+    "seedKey": "RBC",
+    "notes": "RBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "personal_ownership",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Resume deep dive — RBC"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Resume deep dive — RBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "What did you personally decide on the Avion cashback withdrawal launch?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 29,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 37
+  },
+  "How did you measure success for the Avion cashback withdrawal launch?": {
+    "seedKey": "RBC",
+    "notes": "RBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "measurement_impact",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Resume deep dive — RBC"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Resume deep dive — RBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "How did you measure success for the Avion cashback withdrawal launch?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 27,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 38
+  },
+  "What would you do differently on the Avion cashback withdrawal launch?": {
+    "seedKey": "RBC",
+    "notes": "RBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "rbc-cashback",
+    "experienceLabel": "RBC — Cashback Withdrawals",
+    "intent": "what_differently",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "RBC",
+      "Resume deep dive — RBC"
+    ],
+    "keywords": [
+      "RBC",
+      "rbc-cashback",
+      "Resume deep dive — RBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "What would you do differently on the Avion cashback withdrawal launch?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 30,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 39
+  },
+  "Tell me about something you took from an idea into a product.": {
+    "seedKey": "ARC",
+    "notes": "ARC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "experienceLabel": "Arc'teryx — Membership Platform",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Arc'teryx",
+      "Resume deep dive — Arc'teryx"
+    ],
+    "keywords": [
+      "Arc'teryx",
+      "arcteryx-membership",
+      "Resume deep dive — Arc'teryx",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "Tell me about something you took from an idea into a product.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 10,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 8
+  },
+  "How did you know membership was a customer problem at Arc'teryx?": {
+    "seedKey": "ARC",
+    "notes": "ARC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "experienceLabel": "Arc'teryx — Membership Platform",
+    "intent": "problem_discovery",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Arc'teryx",
+      "Resume deep dive — Arc'teryx"
+    ],
+    "keywords": [
+      "Arc'teryx",
+      "arcteryx-membership",
+      "Resume deep dive — Arc'teryx",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "How did you know membership was a customer problem at Arc'teryx?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 9,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 9
+  },
+  "Why prioritize a membership platform rather than improving service pages?": {
+    "seedKey": "ARC",
+    "notes": "ARC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "experienceLabel": "Arc'teryx — Membership Platform",
+    "intent": "prioritization",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Arc'teryx",
+      "Resume deep dive — Arc'teryx"
+    ],
+    "keywords": [
+      "Arc'teryx",
+      "arcteryx-membership",
+      "Resume deep dive — Arc'teryx",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "Why prioritize a membership platform rather than improving service pages?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 13,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 10
+  },
+  "Why this solution and why start in North America?": {
+    "seedKey": "ARC",
+    "notes": "ARC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "experienceLabel": "Arc'teryx — Membership Platform",
+    "intent": "solution_alternatives",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Arc'teryx",
+      "Resume deep dive — Arc'teryx"
+    ],
+    "keywords": [
+      "Arc'teryx",
+      "arcteryx-membership",
+      "Resume deep dive — Arc'teryx",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "Why this solution and why start in North America?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 14,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 11
+  },
+  "What did you personally decide or deprioritize?": {
+    "seedKey": "ARC",
+    "notes": "ARC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "experienceLabel": "Arc'teryx — Membership Platform",
+    "intent": "personal_ownership",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Arc'teryx",
+      "Resume deep dive — Arc'teryx"
+    ],
+    "keywords": [
+      "Arc'teryx",
+      "arcteryx-membership",
+      "Resume deep dive — Arc'teryx",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "What did you personally decide or deprioritize?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 11,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 12
+  },
+  "How did you know it worked if the full membership platform hadn't launched?": {
+    "seedKey": "ARC",
+    "notes": "ARC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "experienceLabel": "Arc'teryx — Membership Platform",
+    "intent": "measurement_impact",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Arc'teryx",
+      "Resume deep dive — Arc'teryx"
+    ],
+    "keywords": [
+      "Arc'teryx",
+      "arcteryx-membership",
+      "Resume deep dive — Arc'teryx",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "How did you know it worked if the full membership platform hadn't launched?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 8,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 13
+  },
+  "What would you do differently on the ReBIRD membership platform?": {
+    "seedKey": "ARC",
+    "notes": "ARC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "arcteryx-membership",
+    "experienceLabel": "Arc'teryx — Membership Platform",
+    "intent": "what_differently",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Arc'teryx",
+      "Resume deep dive — Arc'teryx"
+    ],
+    "keywords": [
+      "Arc'teryx",
+      "arcteryx-membership",
+      "Resume deep dive — Arc'teryx",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "What would you do differently on the ReBIRD membership platform?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 12,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 14
+  },
+  "Tell me about a customer experience you improved at HBC.": {
+    "seedKey": "HBC",
+    "notes": "HBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive — HBC",
+      "alias:hbc-mastercard-application"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Resume deep dive — HBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "Tell me about a customer experience you improved at HBC.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 19,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 19
+  },
+  "How did you identify the application problem?": {
+    "seedKey": "HBC",
+    "notes": "HBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "problem_discovery",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive — HBC",
+      "alias:hbc-mastercard-application"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Resume deep dive — HBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "How did you identify the application problem?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 16,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 20
+  },
+  "Why prioritize application continuation instead of more acquisition?": {
+    "seedKey": "HBC",
+    "notes": "HBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "prioritization",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive — HBC",
+      "alias:hbc-mastercard-application"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Resume deep dive — HBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "Why prioritize application continuation instead of more acquisition?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 24,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 21
+  },
+  "Why save-and-resume, and how did you split ownership with Neo?": {
+    "seedKey": "HBC",
+    "notes": "HBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "solution_alternatives",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive — HBC",
+      "alias:hbc-mastercard-application"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Resume deep dive — HBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "Why save-and-resume, and how did you split ownership with Neo?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 25,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 22
+  },
+  "What did you personally decide on the HBC Mastercard application journey?": {
+    "seedKey": "HBC",
+    "notes": "HBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "personal_ownership",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive — HBC",
+      "alias:hbc-mastercard-application"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Resume deep dive — HBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "What did you personally decide on the HBC Mastercard application journey?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 22,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 23
+  },
+  "How did you measure the 15% improvement?": {
+    "seedKey": "HBC",
+    "notes": "HBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "measurement_impact",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive — HBC",
+      "alias:hbc-mastercard-application"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Resume deep dive — HBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "How did you measure the 15% improvement?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 17,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 24
+  },
+  "What would you do differently on the HBC application experiment?": {
+    "seedKey": "HBC",
+    "notes": "HBC",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-mastercard-app",
+    "experienceLabel": "HBC — Mastercard Acquisition",
+    "intent": "what_differently",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive — HBC",
+      "alias:hbc-mastercard-application"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-mastercard-app",
+      "Resume deep dive — HBC",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "What would you do differently on the HBC application experiment?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 23,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 25
+  },
+  "Tell me about a data-driven product decision at Aeroplan.": {
+    "seedKey": "AERO",
+    "notes": "AERO",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "experienceLabel": "Aeroplan — Co-brand Card Acquisition",
+    "intent": "main_story",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Aeroplan",
+      "Resume deep dive — Aeroplan"
+    ],
+    "keywords": [
+      "Aeroplan",
+      "aeroplan-cobrand",
+      "Resume deep dive — Aeroplan",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "Tell me about a data-driven product decision at Aeroplan.",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 3,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.612Z",
+    "reviewResolutionNumber": 1
+  },
+  "How did you identify the problem?": {
+    "seedKey": "AERO",
+    "notes": "AERO",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "experienceLabel": "Aeroplan — Co-brand Card Acquisition",
+    "intent": "problem_discovery",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Aeroplan",
+      "Resume deep dive — Aeroplan"
+    ],
+    "keywords": [
+      "Aeroplan",
+      "aeroplan-cobrand",
+      "Resume deep dive — Aeroplan",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "How did you identify the problem?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 1,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 2
+  },
+  "Why was it worth prioritizing?": {
+    "seedKey": "AERO",
+    "notes": "AERO",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "experienceLabel": "Aeroplan — Co-brand Card Acquisition",
+    "intent": "prioritization",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Aeroplan",
+      "Resume deep dive — Aeroplan"
+    ],
+    "keywords": [
+      "Aeroplan",
+      "aeroplan-cobrand",
+      "Resume deep dive — Aeroplan",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "Why was it worth prioritizing?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 7,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 3
+  },
+  "Why a clearer offer summary instead of a shorter page or bigger apply button?": {
+    "seedKey": "AERO",
+    "notes": "AERO",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "experienceLabel": "Aeroplan — Co-brand Card Acquisition",
+    "intent": "solution_alternatives",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Aeroplan",
+      "Resume deep dive — Aeroplan"
+    ],
+    "keywords": [
+      "Aeroplan",
+      "aeroplan-cobrand",
+      "Resume deep dive — Aeroplan",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "Why a clearer offer summary instead of a shorter page or bigger apply button?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 6,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 4
+  },
+  "What did you personally decide on the Aeroplan card offer test?": {
+    "seedKey": "AERO",
+    "notes": "AERO",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "experienceLabel": "Aeroplan — Co-brand Card Acquisition",
+    "intent": "personal_ownership",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Aeroplan",
+      "Resume deep dive — Aeroplan"
+    ],
+    "keywords": [
+      "Aeroplan",
+      "aeroplan-cobrand",
+      "Resume deep dive — Aeroplan",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "What did you personally decide on the Aeroplan card offer test?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 4,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 5
+  },
+  "How exactly did you measure the 40% conversion lift?": {
+    "seedKey": "AERO",
+    "notes": "AERO",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "experienceLabel": "Aeroplan — Co-brand Card Acquisition",
+    "intent": "measurement_impact",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Aeroplan",
+      "Resume deep dive — Aeroplan"
+    ],
+    "keywords": [
+      "Aeroplan",
+      "aeroplan-cobrand",
+      "Resume deep dive — Aeroplan",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "How exactly did you measure the 40% conversion lift?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 2,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 6
+  },
+  "What would you do differently after the Aeroplan offer-summary test?": {
+    "seedKey": "AERO",
+    "notes": "AERO",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "aeroplan-cobrand",
+    "experienceLabel": "Aeroplan — Co-brand Card Acquisition",
+    "intent": "what_differently",
+    "evidenceStatus": "resume_supported",
+    "altPhrasings": [],
+    "topicTags": [
+      "Aeroplan",
+      "Resume deep dive — Aeroplan"
+    ],
+    "keywords": [
+      "Aeroplan",
+      "aeroplan-cobrand",
+      "Resume deep dive — Aeroplan",
+      "resume_deep_dive",
+      "general"
+    ],
+    "part": 12,
+    "canonicalQuestion": "What would you do differently after the Aeroplan offer-summary test?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok",
+    "classificationSource": "questrade-56-library-assignments.json",
+    "classificationNumber": 5,
+    "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
+    "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
+    "reviewResolutionNumber": 7
+  },
+  "What exactly do your 30-day activation and 90-day repeat-spend metrics mean?": {
+    "seedKey": "HBC-X1",
+    "notes": "HBC-X1",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-portfolio",
+    "experienceLabel": "HBC — Cardholder Portfolio & P&L",
+    "intent": "attribution",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive — HBC",
+      "portfolio"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-portfolio",
+      "Resume deep dive — HBC",
+      "resume_deep_dive",
+      "attribution"
+    ],
+    "part": 12,
+    "canonicalQuestion": "What exactly do your 30-day activation and 90-day repeat-spend metrics mean?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  },
+  "How did you establish that lifecycle incentives improved P&L and modeled LTV?": {
+    "seedKey": "HBC-X2",
+    "notes": "HBC-X2",
+    "libraryCategory": "resume_deep_dive",
+    "librarySection": "product_experience",
+    "experienceModuleId": "hbc-portfolio",
+    "experienceLabel": "HBC — Cardholder Portfolio & P&L",
+    "intent": "measurement_impact",
+    "evidenceStatus": "rehearsal_framework",
+    "altPhrasings": [],
+    "topicTags": [
+      "HBC",
+      "Resume deep dive — HBC",
+      "portfolio"
+    ],
+    "keywords": [
+      "HBC",
+      "hbc-portfolio",
+      "Resume deep dive — HBC",
+      "resume_deep_dive",
+      "measurement_impact"
+    ],
+    "part": 12,
+    "canonicalQuestion": "How did you establish that lifecycle incentives improved P&L and modeled LTV?",
+    "relatedQuestionIds": [],
+    "sourceFile": "questrade-interview-full.json",
+    "reviewStatus": "ok"
+  }
+}

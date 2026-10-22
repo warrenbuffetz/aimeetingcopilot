@@ -65,10 +65,13 @@ export {
   TURN_SILENCE_MS_QUESTION_END,
   classifyTurn,
   isFillerTurn,
+  isLikelyReadingDisplayedAnswer,
+  bestAnswerWindowSimilarity,
+  spokenTokenCoverageInCorpus,
   surfaceTurnSuggestion,
   turnSilenceMs,
 } from "./turn-classify";
-export type { ClassifyTurnOptions, TurnAction, TurnClassification } from "./turn-classify";
+export type { ClassifyTurnOptions, SurfaceTurnOptions, TurnAction, TurnClassification } from "./turn-classify";
 
 export {
   LEXICAL_MATCH_THRESHOLD_PREPARED,

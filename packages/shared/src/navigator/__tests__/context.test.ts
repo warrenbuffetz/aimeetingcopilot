@@ -16,12 +16,15 @@ function row(
     answer,
     navigator: {
       libraryCategory: "resume_deep_dive",
+      librarySection: "product_experience",
       experienceModuleId: moduleId,
       experienceLabel: moduleId,
       intent,
       evidenceStatus: "illustrative_scenario",
       altPhrasings: [],
+      topicTags: [],
       keywords: [],
+      relatedQuestionIds: [],
     },
   };
 }
@@ -55,6 +58,13 @@ const catalog = enrichLibrary([
     notes: "HBC-X2",
     part: 12,
     isPreferred: false,
+  },
+  {
+    id: "hbc-attrib",
+    question: "Was that incremental versus organic cardholder spend?",
+    answer: "HBC attribution",
+    notes: "HBC-X1",
+    part: 12,
   },
   {
     id: "arc0",
@@ -97,6 +107,23 @@ describe("resolveInterviewContext", () => {
     expect(res.experienceModuleId).toBe("hbc-mastercard-app");
     expect(res.rowId).toBe("hbc5");
     expect(res.rowId).not.toBe("hbcx");
+  });
+
+  it("scenario D: HBC P&L incremental → attribution in portfolio module", () => {
+    let ctx = emptyInterviewContext();
+    ctx = applyContextResolution(
+      ctx,
+      resolveInterviewContext("Walk me through HBC cardholder portfolio and P&L.", catalog, ctx),
+      "HBC P&L"
+    );
+    ctx = {
+      ...ctx,
+      activeExperienceModuleId: "hbc-portfolio",
+      activeIntent: "measurement_impact",
+    };
+    const res = resolveInterviewContext("Was that incremental?", catalog, ctx);
+    expect(res.experienceModuleId).toBe("hbc-portfolio");
+    expect(res.intent).toBe("attribution");
   });
 
   it("scenario C: topic switch to Arc'teryx", () => {

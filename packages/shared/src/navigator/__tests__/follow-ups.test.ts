@@ -9,12 +9,15 @@ const stubRow = (id: string, moduleId: string): EnrichedQaRow => ({
   answer: "A",
   navigator: {
     libraryCategory: "resume_deep_dive",
+    librarySection: "product_experience",
     experienceModuleId: moduleId,
     experienceLabel: moduleId,
     intent: "main_story",
     evidenceStatus: "resume_supported",
     altPhrasings: [],
+    topicTags: [],
     keywords: [],
+    relatedQuestionIds: [],
   },
 });
 
@@ -28,7 +31,7 @@ describe("suggestFollowUps", () => {
     const ctx = {
       ...emptyInterviewContext(),
       activeExperienceModuleId: "rbc-cashback",
-      activeIntent: "main_story",
+      activeIntent: "main_story" as const,
     };
     const catalog = [
       stubRow("1", "rbc-cashback"),

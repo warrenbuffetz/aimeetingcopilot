@@ -1,0 +1,91 @@
+{
+  "appliedAt": "2026-10-22T21:25:46.719Z",
+  "source": "data/seed/questrade-56-library-assignments.json",
+  "successfullyUpdated": 56,
+  "unmatchedQuestions": [],
+  "duplicateModuleMappings": [
+    {
+      "from": "hbc-mastercard-application",
+      "to": "hbc-mastercard-app",
+      "count": 8
+    },
+    {
+      "from": "banking-unit-economics",
+      "to": "questrade-metrics",
+      "count": 2
+    },
+    {
+      "from": "banking-product-metrics",
+      "to": "questrade-metrics",
+      "count": 2
+    },
+    {
+      "from": "banking-card-transactions",
+      "to": "questrade-payments",
+      "count": 1
+    },
+    {
+      "from": "arcteryx-vendor-evaluation",
+      "to": "arcteryx-vendor",
+      "count": 1
+    },
+    {
+      "from": "banking-payments-platform",
+      "to": "questrade-payments",
+      "count": 1
+    },
+    {
+      "from": "questrade-primary-account",
+      "to": "questrade-primary",
+      "count": 2
+    },
+    {
+      "from": "banking-payments-integration",
+      "to": "questrade-payments",
+      "count": 1
+    },
+    {
+      "from": "banking-money-movement",
+      "to": "questrade-deposits",
+      "count": 1
+    },
+    {
+      "from": "leadership-stakeholder-alignment",
+      "to": "leadership-general",
+      "count": 1
+    },
+    {
+      "from": "leadership-prioritization",
+      "to": "leadership-general",
+      "count": 1
+    },
+    {
+      "from": "leadership-risk-compliance",
+      "to": "leadership-general",
+      "count": 1
+    },
+    {
+      "from": "leadership-product-outcomes",
+      "to": "leadership-general",
+      "count": 1
+    },
+    {
+      "from": "banking-account-aggregation",
+      "to": "questrade-hub",
+      "count": 1
+    },
+    {
+      "from": "questrade-competitive-positioning",
+      "to": "questrade-primary",
+      "count": 1
+    },
+    {
+      "from": "questrade-product-discovery",
+      "to": "questrade-primary",
+      "count": 1
+    }
+  ],
+  "remainingReviewItemsInFullLibrary": 39,
+  "reviewItemsAmong56": 39,
+  "note": "Answer bodies and IDs unchanged; only navigator_meta updated for matched questions."
+}

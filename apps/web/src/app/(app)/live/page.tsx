@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
-import { useLiveSession, type TranscriptLineKind } from "@/hooks/use-live-session";
+import { useLiveSession } from "@/hooks/use-live-session";
 import { useBrowserAudioCapture } from "@/hooks/use-browser-audio-capture";
 import { useWebSpeechTranscription } from "@/hooks/use-web-speech-transcription";
 import { Button } from "@/components/ui/button";
@@ -14,15 +14,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 import {
-  ChevronDown,
   Copy,
   MoreHorizontal,
   PanelLeftClose,
@@ -36,23 +32,14 @@ import { clamp, useHorizontalResize } from "@/hooks/use-horizontal-resize";
 import { usePersistedBoolean, usePersistedNumber } from "@/hooks/use-persisted-state";
 import { toast } from "sonner";
 import { AudioInputMeter } from "@/components/live/audio-input-meter";
+import { AudioSetupPanel, type AudioSource, type SttEngine } from "@/components/live/audio-setup-panel";
+import { TranscriptLineItem } from "@/components/live/transcript-line";
 import { InterviewNavigator } from "@/components/live/interview-navigator";
 import { useLibraryCommandPalette } from "@/components/live/library-command-palette";
 import { ScriptText } from "@/components/live/script-text";
 import { useInterviewContext } from "@/hooks/use-interview-context";
 import type { EnrichedQaRow } from "@interview-copilot/shared";
 import { intentLabel } from "@interview-copilot/shared";
-
-function transcriptLineClass(kind: TranscriptLineKind, isFinal: boolean) {
-  return cn(
-    "rounded-md px-2 py-1",
-    !isFinal && "opacity-60 italic",
-    kind === "filler" && "text-muted-foreground/70 text-xs",
-    kind === "speech" && "text-foreground/80",
-    kind === "candidate" && "border border-amber-500/50 bg-amber-500/10 text-amber-50/90",
-    kind === "question" && "border border-emerald-500/40 bg-emerald-500/10"
-  );
-}
 
 export default function LiveInterviewPage() {
   const [profiles, setProfiles] = useState<{ id: string; name: string }[]>([]);
@@ -68,8 +55,9 @@ export default function LiveInterviewPage() {
   const [transcriptWidth, setTranscriptWidth] = usePersistedNumber("ic-live-transcript-width", 268);
   const [navigatorWidth, setNavigatorWidth] = usePersistedNumber("ic-live-navigator-width", 400);
   const workspaceRef = useRef<HTMLDivElement>(null);
+  const skipContextUpdateRef = useRef(false);
 
-  const session = useLiveSession(profileId);
+  const session = useLiveSession(profileId, { pinnedAnswer: pinned });
   const interviewNav = useInterviewContext(session.library);
   const capture = useBrowserAudioCapture();
   const webSpeech = useWebSpeechTranscription({
@@ -105,6 +93,10 @@ export default function LiveInterviewPage() {
   }, [capture.refreshAudioInputs]);
 
   useEffect(() => {
+    if (skipContextUpdateRef.current) {
+      skipContextUpdateRef.current = false;
+      return;
+    }
     const r = session.questionHistory[session.historyIndex];
     if (!r?.question) return;
     interviewNav.registerDetection(r.question, r.matches[0]?.sourceId);
@@ -117,10 +109,12 @@ export default function LiveInterviewPage() {
     return session.analyze(question, {
       ...options,
       respectMainPanelLock: Boolean(pinned) || session.answerLocked,
+      sessionContext: interviewNav.context,
     });
   }
 
-  function openInMainPanel(row: EnrichedQaRow) {
+  function openInMainPanel(row: EnrichedQaRow, opts?: { fromBrowse?: boolean }) {
+    if (opts?.fromBrowse) skipContextUpdateRef.current = true;
     void runAnalyze(row.question, { forceMainPanel: true });
   }
 
@@ -206,7 +200,7 @@ export default function LiveInterviewPage() {
     }
   }
 
-  function startWebSpeechMic() {
+  async function startWebSpeechMic() {
     if (!webSpeech.isSupported) {
       toast.error("Web Speech API is not supported in this browser. Try Chrome or Edge.");
       return;
@@ -214,6 +208,8 @@ export default function LiveInterviewPage() {
     capture.stop();
     setSttBackend("web-speech");
     session.setListening(true);
+    const deviceId = micDeviceId === "default" ? undefined : micDeviceId;
+    await capture.startMicrophone(deviceId);
     webSpeech.start();
     toast.message("Web Speech (Joist-style) — mic only, uses Google’s cloud STT");
   }
@@ -223,6 +219,18 @@ export default function LiveInterviewPage() {
     webSpeech.stop();
     capture.stop();
     setSttBackend(null);
+  }
+
+  function startListening(audioSource: AudioSource, engine: SttEngine) {
+    if (engine === "web-speech") {
+      void startWebSpeechMic();
+      return;
+    }
+    if (audioSource === "meeting-tab") {
+      void startLocalWhisperTab();
+      return;
+    }
+    void startLocalWhisperMic();
   }
 
   const displayAnswer = pinned ?? session.result?.answer ?? "Start listening or run simulation to detect questions.";
@@ -287,93 +295,21 @@ export default function LiveInterviewPage() {
                 <Square className="h-4 w-4" /> Stop
               </Button>
             </div>
-            <DropdownMenu>
-              <DropdownMenuTrigger
-                nativeButton
-                render={
-                  <Button
-                    type="button"
-                    size="sm"
-                    variant="outline"
-                    className={cn("gap-1.5", audioWarning && "border-amber-500/50")}
-                  />
-                }
-              >
-                Audio
-                {localWhisperOnline === true && (
-                  <span className="h-2 w-2 rounded-full bg-emerald-500" title="Whisper online" />
-                )}
-                {sttBackend !== "web-speech" && localWhisperOnline === false && (
-                  <span className="h-2 w-2 rounded-full bg-amber-500" title="Whisper offline" />
-                )}
-                {sttBackend === "web-speech" && (
-                  <span className="h-2 w-2 rounded-full bg-sky-500" title="Web Speech active" />
-                )}
-                <ChevronDown className="h-3.5 w-3.5 opacity-70" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="min-w-[17rem]">
-                <DropdownMenuGroup>
-                  <DropdownMenuLabel>Web Speech (Joist demo)</DropdownMenuLabel>
-                  <DropdownMenuItem
-                    onClick={() => startWebSpeechMic()}
-                    disabled={!webSpeech.isSupported}
-                  >
-                    Start — microphone
-                  </DropdownMenuItem>
-                  <p className="px-2 pb-2 text-[10px] text-muted-foreground">
-                    Browser STT (Chrome → Google). Compare accuracy vs local Whisper. Mic only — no tab
-                    capture.
-                  </p>
-                </DropdownMenuGroup>
-                <DropdownMenuSeparator />
-                <DropdownMenuGroup>
-                  <DropdownMenuLabel>Whisper (local STT)</DropdownMenuLabel>
-                  <DropdownMenuItem onClick={() => void startLocalWhisperTab()}>
-                    Start — meeting tab audio
-                  </DropdownMenuItem>
-                  <div className="px-2 py-1.5">
-                    <Label className="text-[10px] text-muted-foreground">Microphone</Label>
-                    <Select
-                      value={micDeviceId}
-                      onValueChange={(v) => setMicDeviceId(v ?? "default")}
-                    >
-                      <SelectTrigger className="mt-1 h-8 w-full" title="Microphone input">
-                        <span className="truncate text-xs">
-                          {micDeviceId === "default"
-                            ? "System default"
-                            : capture.audioInputDevices.find((d) => d.deviceId === micDeviceId)?.label ||
-                              "Microphone"}
-                        </span>
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="default">System default</SelectItem>
-                        {capture.audioInputDevices.map((d) => (
-                          <SelectItem key={d.deviceId} value={d.deviceId}>
-                            {d.label || `Microphone ${d.deviceId.slice(0, 8)}…`}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                    <Button
-                      size="sm"
-                      variant="secondary"
-                      className="mt-2 w-full"
-                      onClick={() => void startLocalWhisperMic()}
-                    >
-                      Start — microphone
-                    </Button>
-                  </div>
-                  {localWhisperOnline === true && (
-                    <p className="px-2 pb-1 text-[10px] text-emerald-400">Whisper server online</p>
-                  )}
-                  {localWhisperOnline === false && (
-                    <p className="px-2 pb-1 text-[10px] text-amber-400">
-                      Whisper offline — run npm run whisper:server
-                    </p>
-                  )}
-                </DropdownMenuGroup>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <AudioSetupPanel
+              listening={session.listening}
+              paused={session.paused}
+              voiceActive={capture.health.voiceActive}
+              hasAudioTrack={capture.health.hasAudioTrack || sttBackend === "web-speech"}
+              sttBackend={sttBackend}
+              captureSource={capture.source}
+              localWhisperOnline={localWhisperOnline}
+              webSpeechSupported={webSpeech.isSupported}
+              micDeviceId={micDeviceId}
+              audioInputDevices={capture.audioInputDevices}
+              onMicDeviceChange={setMicDeviceId}
+              onStart={startListening}
+              audioWarning={audioWarning}
+            />
           </div>
         </div>
       </header>
@@ -414,7 +350,6 @@ export default function LiveInterviewPage() {
                 <div className="min-w-0 flex-1 space-y-2">
                   <AudioInputMeter
                     listening={session.listening}
-                    captureActive={sttBackend !== "web-speech" && capture.active}
                     voiceLevel={capture.health.voiceLevel}
                     voiceActive={capture.health.voiceActive}
                     hasAudioTrack={capture.health.hasAudioTrack}
@@ -447,9 +382,7 @@ export default function LiveInterviewPage() {
               <ScrollArea className="min-h-0 flex-1 p-3">
                 <ul className="space-y-2 text-sm">
                   {session.lines.map((line) => (
-                    <li key={line.id} className={transcriptLineClass(line.kind, line.isFinal)}>
-                      {line.text}
-                    </li>
+                    <TranscriptLineItem key={line.id} line={line} />
                   ))}
                 </ul>
               </ScrollArea>
@@ -696,7 +629,7 @@ export default function LiveInterviewPage() {
             className="min-h-0 flex-1"
             catalog={interviewNav.catalog}
             context={interviewNav.context}
-            suggestions={interviewNav.suggestions}
+            nextSuggestions={interviewNav.nextSuggestions}
             pinnedQuestion={pinnedQuestion}
             onOpenInMainPanel={openInMainPanel}
             onPin={pinRow}

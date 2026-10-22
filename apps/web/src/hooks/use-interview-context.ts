@@ -6,7 +6,7 @@ import {
   emptyInterviewContext,
   enrichLibrary,
   resolveInterviewContext,
-  suggestFollowUps,
+  suggestNextQuestions,
   type EnrichedQaRow,
   type InterviewSessionContext,
   type LexicalQaRow,
@@ -14,7 +14,13 @@ import {
 
 const STORAGE_KEY = "interview-copilot-session-context";
 
-export type LibraryRow = LexicalQaRow & { notes?: string | null; part?: number };
+import type { PersistedNavigatorMeta } from "@interview-copilot/shared";
+
+export type LibraryRow = LexicalQaRow & {
+  notes?: string | null;
+  part?: number;
+  navigatorMeta?: PersistedNavigatorMeta | null;
+};
 
 function loadStoredContext(): InterviewSessionContext {
   if (typeof window === "undefined") return emptyInterviewContext();
@@ -40,8 +46,8 @@ export function useInterviewContext(library: LibraryRow[]) {
 
   const catalog: EnrichedQaRow[] = useMemo(() => enrichLibrary(library), [library]);
 
-  const suggestions = useMemo(
-    () => suggestFollowUps(catalog, context, { limit: 5 }),
+  const nextSuggestions = useMemo(
+    () => suggestNextQuestions(catalog, context, 3),
     [catalog, context]
   );
 
@@ -74,7 +80,7 @@ export function useInterviewContext(library: LibraryRow[]) {
   return {
     context,
     catalog,
-    suggestions,
+    nextSuggestions,
     registerDetection,
     setManualExperience,
     clearContext,

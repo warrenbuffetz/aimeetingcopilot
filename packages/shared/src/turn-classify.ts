@@ -3,6 +3,7 @@ import {
   LEXICAL_MATCH_THRESHOLD_WEAK,
   rankPreparedQaLexical,
   scoreLexicalSimilarity,
+  tokenizeForMatch,
   type LexicalMatchResult,
   type LexicalQaRow,
 } from "./lexical-match";
@@ -89,18 +90,131 @@ export function isFillerTurn(text: string): boolean {
 export interface ClassifyTurnOptions {
   library: LexicalQaRow[];
   currentPreparedQuestion?: string | null;
+  /** Answer script currently shown in the main panel (mic read-back detection). */
+  displayAnswer?: string | null;
   lastPromoteAt?: number | null;
   cooldownMs?: number;
   /** When true, only return promote for very strong / clear new questions. */
   conservative?: boolean;
 }
 
+export interface SurfaceTurnOptions {
+  displayAnswer?: string | null;
+  activeQuestion?: string | null;
+}
+
+const ANSWER_READBACK_SIM_THRESHOLD = 0.4;
+const ANSWER_READBACK_COVERAGE_THRESHOLD = 0.65;
+const MIN_WORDS_FOR_READBACK = 4;
+
+/** Fraction of spoken content tokens that appear in the corpus (STT-tolerant). */
+export function spokenTokenCoverageInCorpus(spoken: string, corpus: string): number {
+  const spokenTokens = tokenizeForMatch(spoken);
+  if (spokenTokens.length < MIN_WORDS_FOR_READBACK) return 0;
+  const corpusSet = new Set(tokenizeForMatch(corpus));
+  if (corpusSet.size === 0) return 0;
+  let hit = 0;
+  for (const t of spokenTokens) {
+    if (corpusSet.has(t)) hit += 1;
+  }
+  return hit / spokenTokens.length;
+}
+
+/** Best lexical match of spoken audio against a sliding window in a long answer script. */
+export function bestAnswerWindowSimilarity(spoken: string, answer: string): number {
+  const spokenTokens = tokenizeForMatch(spoken);
+  if (spokenTokens.length < MIN_WORDS_FOR_READBACK) return 0;
+  const answerTokens = tokenizeForMatch(answer);
+  if (answerTokens.length === 0) return 0;
+  if (answerTokens.length <= spokenTokens.length) {
+    return scoreLexicalSimilarity(spoken, answer);
+  }
+  let best = 0;
+  const windowLen = spokenTokens.length;
+  for (let i = 0; i <= answerTokens.length - windowLen; i++) {
+    const windowText = answerTokens.slice(i, i + windowLen).join(" ");
+    const sim = scoreLexicalSimilarity(spoken, windowText);
+    if (sim > best) best = sim;
+  }
+  return best;
+}
+
+/**
+ * Detect when the candidate is reading the on-screen answer (not a new interviewer question).
+ */
+export function isLikelyReadingDisplayedAnswer(
+  spoken: string,
+  displayAnswer: string,
+  activeQuestion?: string | null
+): { reading: boolean; score: number } {
+  const trimmed = spoken.trim();
+  const answer = displayAnswer.trim();
+  if (!trimmed || !answer) return { reading: false, score: 0 };
+
+  const wordCount = trimmed.split(/\s+/).filter(Boolean).length;
+  if (wordCount < MIN_WORDS_FOR_READBACK) return { reading: false, score: 0 };
+
+  const questionLike = isLikelyQuestion(trimmed);
+  const answerSim = Math.max(
+    scoreLexicalSimilarity(trimmed, answer),
+    bestAnswerWindowSimilarity(trimmed, answer)
+  );
+  const coverage = spokenTokenCoverageInCorpus(trimmed, answer);
+
+  const questionSim = activeQuestion?.trim()
+    ? scoreLexicalSimilarity(trimmed, activeQuestion.trim())
+    : 0;
+
+  const answerDominatesQuestion = answerSim >= questionSim + 0.06 || coverage >= questionSim + 0.12;
+
+  if (
+    answerDominatesQuestion &&
+    (answerSim >= ANSWER_READBACK_SIM_THRESHOLD || coverage >= ANSWER_READBACK_COVERAGE_THRESHOLD)
+  ) {
+    return { reading: true, score: Math.max(answerSim, coverage) };
+  }
+
+  if (!questionLike && coverage >= 0.72 && wordCount >= 5 && answerSim >= 0.28) {
+    return { reading: true, score: coverage };
+  }
+
+  return { reading: false, score: Math.max(answerSim, coverage) };
+}
+
+function classifyReadingDisplayedAnswer(
+  trimmed: string,
+  opts: { displayAnswer?: string | null; activeQuestion?: string | null }
+): TurnClassification | null {
+  const answer = opts.displayAnswer?.trim();
+  if (!answer) return null;
+  const { reading, score } = isLikelyReadingDisplayedAnswer(trimmed, answer, opts.activeQuestion);
+  if (!reading) return null;
+  return {
+    action: "ignore",
+    reason: "reading_displayed_answer",
+    isFiller: false,
+    isQuestionLike: false,
+    bestMatch: null,
+    score,
+  };
+}
+
 /**
  * After a full transcribed turn: always show the text; optionally surface a library hint for the user to accept.
  * No auto-promote, no filler discard.
  */
-export function surfaceTurnSuggestion(text: string, library: LexicalQaRow[]): TurnClassification {
+export function surfaceTurnSuggestion(
+  text: string,
+  library: LexicalQaRow[],
+  opts?: SurfaceTurnOptions
+): TurnClassification {
   const trimmed = text.trim();
+  const readback = classifyReadingDisplayedAnswer(trimmed, {
+    displayAnswer: opts?.displayAnswer,
+    activeQuestion: opts?.activeQuestion,
+  });
+  if (readback) return readback;
+
   const questionLike = isLikelyQuestion(trimmed);
   const ranked = library.length ? rankPreparedQaLexical(trimmed, library) : [];
   const best = ranked[0] ?? null;
@@ -147,6 +261,12 @@ export function classifyTurn(text: string, opts: ClassifyTurnOptions): TurnClass
       score: 0,
     };
   }
+
+  const readback = classifyReadingDisplayedAnswer(trimmed, {
+    displayAnswer: opts.displayAnswer,
+    activeQuestion: opts.currentPreparedQuestion,
+  });
+  if (readback) return readback;
 
   const questionLike = isLikelyQuestion(trimmed);
   const ranked = opts.library.length ? rankPreparedQaLexical(trimmed, opts.library) : [];
