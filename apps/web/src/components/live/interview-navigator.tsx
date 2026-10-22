@@ -34,9 +34,14 @@ type Props = {
   practiceFooter: React.ReactNode;
 };
 
-/** Answer body when a navigator row is expanded — improves contrast on dark UI. */
+/**
+ * High-contrast “reading surface” for expanded answers (dark UI).
+ * Secondary fill + solid border reads clearly against ~0.145 background.
+ */
 const expandedAnswerCopyClass =
-  "rounded-md border border-border/60 bg-muted/45 px-2.5 py-2 text-[11px] leading-relaxed text-foreground/95";
+  "rounded-md border border-white/20 bg-secondary px-3 py-2.5 text-xs leading-[1.55] text-secondary-foreground shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] border-l-[3px] border-l-sky-500/90 [&_p]:text-secondary-foreground";
+
+const expandedRowBodyClass = "border-t border-white/15 bg-card px-2.5 pb-2.5 pt-2";
 
 function groupBrowse(catalog: EnrichedQaRow[]) {
   const tree = new Map<LibraryCategory, Map<string, EnrichedQaRow[]>>();
@@ -65,7 +70,14 @@ function FollowUpCard({
   onPin: () => void;
 }) {
   return (
-    <div className="rounded-md border border-border/80 bg-muted/10">
+    <div
+      className={cn(
+        "rounded-md border transition-colors",
+        expanded
+          ? "border-white/20 bg-card shadow-sm"
+          : "border-border/80 bg-muted/10 hover:bg-muted/15"
+      )}
+    >
       <button
         type="button"
         className="flex w-full items-start gap-1 px-2 py-1.5 text-left"
@@ -80,11 +92,13 @@ function FollowUpCard({
         </div>
       </button>
       {expanded && (
-        <div className="border-t border-border/60 px-2 pb-2 pt-1">
-          <p className="text-[10px] text-muted-foreground">{item.reason}</p>
+        <div className={expandedRowBodyClass}>
+          <p className="mb-2 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+            {item.reason}
+          </p>
           <ScriptText
             text={item.answer}
-            className={cn("mt-1.5 max-h-32 overflow-y-auto", expandedAnswerCopyClass)}
+            className={cn("max-h-40 overflow-y-auto", expandedAnswerCopyClass)}
           />
           <div className="mt-2 flex flex-wrap gap-1">
             <Button type="button" size="sm" variant="secondary" className="h-7 text-xs" onClick={onOpenMain}>
@@ -268,15 +282,19 @@ export function InterviewNavigator({
                           <ul className="space-y-1 pb-1 pl-1">
                             {moduleCatalog(filtered, modId).map((row) => (
                               <li key={row.id}>
-                                <details className="rounded border border-border/40 bg-background/50 open:border-border/70 open:bg-muted/20">
-                                  <summary className="cursor-pointer px-2 py-1 text-[11px] leading-snug">
-                                    <span className="text-[10px] text-muted-foreground">{intentLabel(row.navigator.intent)} · </span>
+                                <details
+                                  className="rounded-md border border-border/50 bg-muted/10 transition-colors open:border-white/20 open:bg-card open:shadow-sm"
+                                >
+                                  <summary className="cursor-pointer px-2 py-1.5 text-[11px] font-medium leading-snug text-foreground/90">
+                                    <span className="text-[10px] font-normal text-muted-foreground">
+                                      {intentLabel(row.navigator.intent)} ·{" "}
+                                    </span>
                                     {row.question}
                                   </summary>
-                                  <div className="border-t border-border/40 px-2 py-1.5">
+                                  <div className={expandedRowBodyClass}>
                                     <ScriptText
                                       text={row.answer}
-                                      className={cn("max-h-28 overflow-y-auto", expandedAnswerCopyClass)}
+                                      className={cn("max-h-40 overflow-y-auto", expandedAnswerCopyClass)}
                                     />
                                     <div className="mt-1.5 flex gap-1">
                                       <Button
