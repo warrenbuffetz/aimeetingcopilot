@@ -1,0 +1,42 @@
+{
+  "mode": "apply",
+  "created": [],
+  "updated": [
+    "sperro-five-qa-2026-q01",
+    "sperro-five-qa-2026-q02",
+    "sperro-five-qa-2026-q03",
+    "sperro-five-qa-2026-q04",
+    "sperro-five-qa-2026-q05"
+  ],
+  "skipped": [],
+  "conflicts": [],
+  "parentLinks": [
+    {
+      "child": "How did you decide what to include in the smaller Sperro SV release?",
+      "parentId": "e8638ed2-3f9a-4c58-bc6b-5cfae62df074"
+    },
+    {
+      "child": "You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?",
+      "parentId": "e8638ed2-3f9a-4c58-bc6b-5cfae62df074"
+    },
+    {
+      "child": "How would you manage transitioning away from an ongoing membership initiative?",
+      "parentId": "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e"
+    }
+  ],
+  "recordIds": {
+    "sperro-five-qa-2026-q01": "e8638ed2-3f9a-4c58-bc6b-5cfae62df074",
+    "sperro-five-qa-2026-q02": "7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30",
+    "sperro-five-qa-2026-q03": "c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+    "sperro-five-qa-2026-q04": "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+    "sperro-five-qa-2026-q05": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b"
+  },
+  "embeddingsNeeded": [
+    "What are you currently working on at Arc'teryx?",
+    "How did you decide what to include in the smaller Sperro SV release?",
+    "Tell me about a product decision you got wrong.",
+    "You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?",
+    "How would you manage transitioning away from an ongoing membership initiative?"
+  ],
+  "at": "2026-10-26T19:06:59.927Z"
+}

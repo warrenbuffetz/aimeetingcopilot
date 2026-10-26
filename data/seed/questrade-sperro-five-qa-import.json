@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "version": "sperro-five-qa-2026-10-26",
+    "description": "Five reviewed career / Arc'teryx / HBC Q&As — preserve answer wording exactly."
+  },
+  "entries": [
+    {
+      "importKey": "sperro-five-qa-2026-q01",
+      "id": "e8638ed2-3f9a-4c58-bc6b-5cfae62df074",
+      "question": "What are you currently working on at Arc'teryx?",
+      "preparedAnswer": "One of the more interesting things I've been working on recently is tied to the launch of the Sperro SV, which is Arc'teryx's first circular hardshell.\n\nFor context, I've been leading the development of a broader membership program at Arc'teryx. The vision is to build a deeper relationship with customers beyond the initial purchase, particularly around gear ownership, product care, repairs and community experiences.\n\nWe'd secured about $5.2 million in funding for that program, but it's a fairly substantial platform build with dependencies across commerce, identity, customer service and our ReBIRD circularity operations.\n\nThe interesting challenge came when we needed to support the Sperro SV launch. The full membership platform wasn't going to be ready in time, but there were some genuinely valuable benefits we still wanted to offer customers buying the jacket.\n\nSo rather than trying to accelerate the entire membership roadmap, we made the decision to carve out a smaller, more focused release.\n\nThat included three years of unlimited out-of-warranty repairs, access to exclusive community events and an opportunity to win a Global Academy experience.\n\nMy focus was figuring out how to deliver those benefits independently of the larger platform, while making sure the customer experience and the operational teams behind it were actually ready.\n\nThat meant working closely with ReBIRD, customer service and the teams responsible for the jacket's digital product passport, while being really deliberate about what we owned and what needed to remain part of the longer-term membership roadmap.\n\nWe were able to support the September launch without having to wait for the entire membership platform.\n\nFor me, it was a good example of something that comes up quite often in product management. You can have a compelling long-term vision, but sometimes the right decision is to reduce scope, isolate the most valuable experience and deliver that well rather than trying to do everything at once.",
+      "librarySection": "product_experience",
+      "experienceModuleId": "arcteryx-membership",
+      "questionIntentHint": "main_story",
+      "evidenceStatusHint": "resume_supported",
+      "reviewStatusHint": "needs_review",
+      "alternatePhrasings": [
+        "What are you working on right now?",
+        "Tell me about your current role.",
+        "What's the latest product initiative you're leading?",
+        "Can you tell me more about your time at Arc'teryx?",
+        "What's happening with the membership program?",
+        "Tell me about the Sperro SV launch.",
+        "What have you been focused on recently?"
+      ],
+      "roundRelevance": {
+        "recruiter": "very_high",
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "high"
+      },
+      "relatedQuestionIds": [
+        "2f3a780e-6b54-42b8-b56d-8936a471fa68",
+        "7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30",
+        "439ccf45-857e-431f-ab0e-1312d6998f02",
+        "a85b536e-5e20-468f-87d9-fb447ae796f6",
+        "2a1ed160-bfa6-4f2a-91ea-d280a3ef0418",
+        "f9022f65-91fb-4094-ae8f-b4dc87edcca7"
+      ],
+      "isPreferred": true,
+      "part": 1
+    },
+    {
+      "importKey": "sperro-five-qa-2026-q02",
+      "id": "7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30",
+      "question": "How did you decide what to include in the smaller Sperro SV release?",
+      "preparedAnswer": "I think the key was separating the benefits customers would actually receive from the infrastructure we eventually wanted to deliver them through.\n\nThe broader membership roadmap included things like enrollment, a member dashboard, gear registration, events and different ways for customers to engage with the brand.\n\nBut for Sperro SV, we didn't need to launch that entire experience to make the jacket's benefits meaningful.\n\nSo I looked at what was essential for that specific customer journey: what benefits were we promising, how would customers understand and access them, and could the teams responsible actually fulfil those promises?\n\nThat's where we focused.\n\nWe also had to be careful about dependencies. For example, the digital product passport registration was being delivered by another team, so we needed to coordinate around that rather than pull it into our scope.\n\nThe principle was to keep the customer promise intact while reducing the amount of new technology and cross-team coordination required for the launch.\n\nI think that's an important distinction. A smaller MVP shouldn't just mean fewer features. It should mean a more focused experience that still solves the problem properly.",
+      "librarySection": "product_experience",
+      "experienceModuleId": "arcteryx-membership",
+      "questionIntentHint": "prioritization",
+      "evidenceStatusHint": "resume_supported",
+      "reviewStatusHint": "needs_review",
+      "alternatePhrasings": [
+        "How did you prioritize the Sperro SV launch?",
+        "What did you cut from the MVP?",
+        "Why didn't you wait for the full membership platform?",
+        "How did you decide which benefits were essential?",
+        "What trade-offs did you make for the circularity launch?",
+        "How did you manage dependencies across teams?"
+      ],
+      "roundRelevance": {
+        "recruiter": "medium",
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "high"
+      },
+      "canonicalQuestionId": "e8638ed2-3f9a-4c58-bc6b-5cfae62df074",
+      "relatedQuestionIds": [
+        "e8638ed2-3f9a-4c58-bc6b-5cfae62df074",
+        "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e"
+      ],
+      "isPreferred": false,
+      "part": 1
+    },
+    {
+      "importKey": "sperro-five-qa-2026-q03",
+      "id": "c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+      "question": "Tell me about a product decision you got wrong.",
+      "preparedAnswer": "One example that comes to mind is when I was working on cardholder engagement at HBC.\n\nWe were exploring ways to get customers to use their HBC Mastercard more frequently, and one of the approaches was introducing spending challenges through our Quests platform.\n\nMy initial thinking was that if we made the challenges relatively accessible, we'd get more people participating, build a habit around using the card and ultimately drive more spend.\n\nAnd we did see engagement. The problem was, when we started looking more closely at the behaviour, I realized I'd been putting too much weight on participation itself.\n\nSome of the customers completing those challenges were already fairly active cardholders. So we were potentially rewarding spending that would have happened anyway, which isn't a great use of incentive dollars.\n\nThat was the part I got wrong. I had focused too much on making the experience engaging without being disciplined enough upfront about what incremental behaviour we were actually trying to create.\n\nSo I pushed us to rethink how we were targeting the challenges. Instead of treating all cardholders the same, we'd look at where there was a genuine opportunity to change behaviour, like getting newer cardholders to make their next purchase or bringing back customers whose activity had declined.\n\nWe also needed to be much more deliberate about measurement, looking beyond completions to changes in spending behaviour and the cost of generating that activity.\n\nThe biggest lesson for me was that a product can look successful from an engagement standpoint and still be a poor business decision.\n\nSince then, I've been much more careful about agreeing on the behaviour we're trying to change before we start debating features or incentives.",
+      "librarySection": "leadership_behavioural",
+      "experienceModuleId": "hbc-quests",
+      "questionIntentHint": "what_differently",
+      "evidenceStatusHint": "unverified_detail",
+      "reviewStatusHint": "needs_review",
+      "alternatePhrasings": [
+        "Tell me about a mistake you made as a product manager.",
+        "Describe a product decision you regret.",
+        "When did you realize your product strategy was wrong?",
+        "Tell me about a time you changed your mind.",
+        "Describe a feature that performed well but didn't create business value.",
+        "What was a product failure you learned from?"
+      ],
+      "roundRelevance": {
+        "recruiter": "medium",
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "high"
+      },
+      "relatedQuestionIds": [
+        "92a7cf55-18dc-4d94-93d7-db3303028b9b",
+        "15aa03e2-46af-4d60-9d73-90ed342c6ccc"
+      ],
+      "isPreferred": false,
+      "part": 5
+    },
+    {
+      "importKey": "sperro-five-qa-2026-q04",
+      "id": "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+      "question": "You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?",
+      "preparedAnswer": "That's a fair question, and it's something I have thought about.\n\nI'm proud of the work we've done to get the program to this point. Going from an initial idea to an approved investment and a clear delivery plan has been a meaningful part of my experience.\n\nOf course, I'd like to see the program succeed. But I also recognize that a product initiative should be bigger than any one person.\n\nWhat attracts me to Questrade isn't that I'm trying to walk away from the work at Arc'teryx. It's that the opportunity brings together a lot of the areas I've enjoyed most throughout my career: financial products, customer growth, payments and platform strategy.\n\nI see everyday banking as a space where I could apply that experience to a much broader customer relationship.\n\nSo I'd want to make sure I left Arc'teryx in a good position, but I also think it's reasonable to consider a role that aligns this closely with where I want to grow professionally.",
+      "librarySection": "career_motivation",
+      "experienceModuleId": "career-general",
+      "questionIntentHint": "general",
+      "evidenceStatusHint": "rehearsal_framework",
+      "reviewStatusHint": "needs_review",
+      "alternatePhrasings": [
+        "Why would you leave Arc'teryx before completing membership?",
+        "Why leave a $5.2 million project?",
+        "Don't you want to see the membership program launch?",
+        "Why are you considering Questrade now?",
+        "Why move on when you're leading such an important initiative?",
+        "Are you concerned about leaving your current team mid-project?",
+        "So why would you leave before seeing that launch?",
+        "Why would you leave before seeing it launch?"
+      ],
+      "roundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "high",
+        "cross_functional_panel": "low"
+      },
+      "canonicalQuestionId": "e8638ed2-3f9a-4c58-bc6b-5cfae62df074",
+      "relatedQuestionIds": [
+        "e8638ed2-3f9a-4c58-bc6b-5cfae62df074",
+        "7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30",
+        "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+        "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b"
+      ],
+      "topicTags": ["related-experience:arcteryx-membership"],
+      "isPreferred": false,
+      "part": 1
+    },
+    {
+      "importKey": "sperro-five-qa-2026-q05",
+      "id": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+      "question": "How would you manage transitioning away from an ongoing membership initiative?",
+      "preparedAnswer": "I'd take that responsibility pretty seriously, especially given the scale of the membership initiative and the number of teams involved.\n\nI think the biggest risk when a product manager leaves isn't necessarily that the roadmap disappears. It's that a lot of the context behind the decisions leaves with them.\n\nWhy did we choose this platform? Why is one capability in the MVP and another deferred? What commitments have we made to different teams? Those are the things that aren't always obvious from looking at a Jira board.\n\nSo my first priority would be to make sure that context is documented properly.\n\nI'd work with my manager to identify someone who could take ownership of the product, then walk them through the strategy, the major decisions we've made, the dependencies and any unresolved risks.\n\nI'd also make sure there was a clear view of the upcoming milestones, particularly where teams like Commerce, Identity and ReBIRD are depending on us.\n\nAnd I wouldn't want to just hand over documentation and disappear. Where possible, I'd have the incoming owner participate in key meetings and decisions so they could build those relationships directly.\n\nObviously, the timing would need to be worked out with my leadership team. But I think a good product leader should be building clarity and shared ownership throughout the initiative anyway, not only when they're preparing to leave.\n\nMy goal would be to leave the team in a position where they can keep making good decisions and moving forward without being dependent on me personally.",
+      "librarySection": "leadership_behavioural",
+      "experienceModuleId": "career-general",
+      "questionIntentHint": "challenges_lessons",
+      "evidenceStatusHint": "rehearsal_framework",
+      "reviewStatusHint": "needs_review",
+      "alternatePhrasings": [
+        "What would your transition plan look like?",
+        "How would you hand over the membership program?",
+        "How would you ensure the project continues without you?",
+        "How would you transfer ownership of the roadmap?",
+        "What would happen to your team if you left?",
+        "How do you prevent knowledge loss when a PM leaves?",
+        "How would you manage a transition to Questrade?",
+        "How would you make sure the team could continue without you?"
+      ],
+      "roundRelevance": {
+        "recruiter": "medium",
+        "hiring_manager": "high",
+        "cross_functional_panel": "medium"
+      },
+      "canonicalQuestionId": "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+      "relatedQuestionIds": [
+        "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+        "e8638ed2-3f9a-4c58-bc6b-5cfae62df074"
+      ],
+      "topicTags": ["related-experience:arcteryx-membership"],
+      "isPreferred": false,
+      "part": 5
+    }
+  ],
+  "metaPatches": {
+    "Tell me about yourself.": {
+      "relatedQuestionIdsAppend": ["e8638ed2-3f9a-4c58-bc6b-5cfae62df074"]
+    },
+    "How did you decide what to include in the smaller Sperro SV release?": {
+      "relatedQuestionIdsAppend": ["a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e"]
+    }
+  }
+}

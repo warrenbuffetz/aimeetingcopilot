@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "packageId": "example-structure-only",
+  "authoredBy": "ChatGPT",
+  "authoredAt": "2026-10-27T00:00:00.000Z",
+  "targetProfile": {
+    "name": "Simplii Financial — Senior Product Manager"
+  },
+  "records": [
+    {
+      "externalId": "simplii-example-tell-me-about-yourself",
+      "canonicalQuestion": "Tell me about yourself.",
+      "answer": "REPLACE WITH AUTHORITATIVE SPOKEN ANSWER — NOT A PLACEHOLDER FOR PRODUCTION IMPORT.",
+      "adaptationType": "rewritten",
+      "sourceQuestradeRecordId": "00000000-0000-4000-8000-000000000000",
+      "preparationTier": "P0",
+      "roundRelevance": {
+        "recruiter": "very_high",
+        "hiring_manager": "high",
+        "cross_functional_panel": "medium"
+      },
+      "questionIntent": "main_story",
+      "experienceModuleId": "career-general",
+      "experienceLabel": "Career & Motivation",
+      "librarySection": "career_motivation",
+      "libraryCategory": "career_recruiter",
+      "evidenceStatus": "resume_supported",
+      "aliases": ["Walk me through your background."],
+      "isPreferred": true,
+      "reviewRequired": false
+    }
+  ]
+}

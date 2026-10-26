@@ -22,6 +22,7 @@ export function librarySectionForModule(module: ExperienceModule): LibrarySectio
   if (module.id === "career-general") return "career_motivation";
   if (module.id === "leadership-general") return "leadership_behavioural";
   if (module.id.startsWith("questrade-")) return "questrade_cases";
+  if (module.id.startsWith("digital-banking-")) return "product_banking_knowledge";
   if (module.company && module.libraryCategory === "resume_deep_dive") return "product_experience";
   if (module.libraryCategory === "career_recruiter") return "career_motivation";
   if (module.libraryCategory === "leadership_behavioural") return "leadership_behavioural";
@@ -38,6 +39,7 @@ export function librarySectionFromCategory(
   moduleId?: string
 ): LibrarySection {
   if (moduleId?.startsWith("questrade-")) return "questrade_cases";
+  if (moduleId?.startsWith("digital-banking-")) return "product_banking_knowledge";
   if (moduleId === "career-general") return "career_motivation";
   if (moduleId === "leadership-general") return "leadership_behavioural";
   if (moduleId && /^(rbc|hbc|aeroplan|arcteryx)-/.test(moduleId)) return "product_experience";

@@ -1,0 +1,552 @@
+{
+  "followup-expansion-current-employer-bcf3c6da0f44f120": {
+    "question": "You're still at Arc'teryx and leading membership. Why consider Questrade now?",
+    "action": "skipped_dedup",
+    "at": "2026-10-26T19:14:42.888Z"
+  },
+  "followup-expansion-2026-10-9aa86e6ed4991be8": {
+    "question": "Why have you moved between several industries and employers?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "66530581-f599-40f5-8f97-5bf255953c87"
+  },
+  "followup-expansion-2026-10-e875f9d64c5a9e6a": {
+    "question": "What's the biggest learning curve for you if you join Questbank?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "a5e5c740-637c-4b42-8642-e889de82dcec"
+  },
+  "followup-expansion-2026-10-67f356d158e5db0f": {
+    "question": "What is the strongest single reason we should choose you for this job?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "de31db47-3aea-4d26-be40-e0fa92423dd1"
+  },
+  "followup-expansion-2026-10-a186e0487d072c84": {
+    "question": "What concerns would you have about joining a business that is still establishing its banking offering?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1"
+  },
+  "followup-expansion-2026-10-07aa78c3f0321f51": {
+    "question": "Are you more interested in building new products or improving existing ones?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "e3acf896-6e83-4597-aeb6-088aba201987"
+  },
+  "followup-expansion-2026-10-c28bf6e58efb1cc2": {
+    "question": "What would you actually deliver in your first 30 days?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "08bed145-68a4-4f1f-a500-1287247345bc"
+  },
+  "followup-expansion-2026-10-783641cec16f6188": {
+    "question": "What happened if an Avion member didn't have Interac Autodeposit enabled?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "5c05a272-9334-44b8-bddd-fdbd4a50f6d3"
+  },
+  "followup-expansion-2026-10-47da105a5246e62e": {
+    "question": "How would you prevent a customer from receiving the same cashback payout twice?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "c864344c-3df9-4f30-b478-278b4e58f8d4"
+  },
+  "followup-expansion-2026-10-723124b41a88671e": {
+    "question": "What would the customer see while a cashback payout is pending or being investigated?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "bfaa86a1-2c06-4c4f-880a-bf2718e8a330"
+  },
+  "followup-expansion-2026-10-301fb13e986ed4d0": {
+    "question": "Who made the final decision when the payments team, Risk and Product disagreed?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "80a4e168-83f0-45ba-a9b7-bde17123566a"
+  },
+  "followup-expansion-2026-10-992afcd16dd5ffcb": {
+    "question": "What were the leading indicators before you could measure meaningful payout volume?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "14712a6a-881f-4c8c-9f98-9b3359211669"
+  },
+  "followup-expansion-2026-10-0ee11c5bb2049c12": {
+    "question": "How did you turn regulatory and operations requirements into stories engineers could build?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "79d4fa99-20bc-4cff-8c9c-0b25705550ca"
+  },
+  "followup-expansion-2026-10-d17b8d965332251b": {
+    "question": "Why did you use the member's email address, and what if that address changed?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "c22bc35e-41a0-4bc7-9b53-6d19da3ecfef"
+  },
+  "followup-expansion-2026-10-baa87ecc283d509e": {
+    "question": "If payout failures doubled after launch, how would you investigate the first week?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "03065da4-6d80-432b-bca7-c034fdf0ff52"
+  },
+  "followup-expansion-2026-10-55d503d1ee7ba2f4": {
+    "question": "How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "0cf5b127-23d5-442e-b968-59bafc1ff0b3"
+  },
+  "followup-expansion-2026-10-c106931a80bdaba7": {
+    "question": "Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "cd39ab59-8574-443c-b78e-a9dfa3010185"
+  },
+  "followup-expansion-2026-10-c8a85beb577449d9": {
+    "question": "What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "1c3f6b10-2b62-4807-bffd-ef21beef30d7"
+  },
+  "followup-expansion-2026-10-22362777e51489a8": {
+    "question": "What assumptions in the $5.2 million investment case were most sensitive?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "efc27de7-507e-4d96-b95d-446de1f5badf"
+  },
+  "followup-expansion-2026-10-490b32859c4684f4": {
+    "question": "What would have changed your recommendation from buy to build?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "73b7a947-02f5-4298-8592-4badfbcbb139"
+  },
+  "followup-expansion-2026-10-037002a66f7c0bea": {
+    "question": "What did you cut from the membership MVP, and how did you defend those trade-offs?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "31d8ded4-7dc2-4d0b-ad30-009b1f92748b"
+  },
+  "followup-expansion-2026-10-bea4a6b41c5964d6": {
+    "question": "How would you test whether customers wanted membership benefits before building the full platform?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "9b1df81f-65b7-4b77-81af-4ae48b03eb79"
+  },
+  "followup-expansion-2026-10-59161acf4bf0b119": {
+    "question": "How do you know the HBC application improvement wasn't caused by a different applicant mix?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "2af89a04-ab52-40bd-928d-96a3122fffd1"
+  },
+  "followup-expansion-2026-10-4b0212c6f3f74d1f": {
+    "question": "Which step in a credit-card application funnel would you inspect first, and why?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "0f41544d-2a2d-4b4b-bb41-f89df44c05d0"
+  },
+  "followup-expansion-2026-10-43490de1e099ede8": {
+    "question": "Could the HBC incentives have increased spending while destroying profitability?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "cee35d92-74ae-4d9b-a713-3594c8276e17"
+  },
+  "followup-expansion-2026-10-4bf5985a1de015b1": {
+    "question": "What did you control in the HBC card portfolio, and what was controlled by Neo?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "4333a9f3-b07d-4d8e-8676-6a7ca9012116"
+  },
+  "followup-expansion-2026-10-2aeba274e494fdf2": {
+    "question": "How did you align TD, CIBC and Amex when the banks had different priorities?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "233f8d5d-fa5a-45a7-a301-39c4e3743edb"
+  },
+  "followup-expansion-2026-10-6155efde5e65801e": {
+    "question": "What happened after the customer clicked Apply—how did you know they became an approved cardholder?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "195a8189-fe48-4c11-9ebe-8f2741146841"
+  },
+  "followup-expansion-2026-10-a0d40d083ec744ef": {
+    "question": "How did you prevent one card partner's offer from undermining another's?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "bb903f25-6886-4106-ab80-1fa344cd8a05"
+  },
+  "followup-expansion-2026-10-d33952d1ddef7236": {
+    "question": "What's the difference between acquiring a cardholder, activating one and retaining one?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.889Z",
+    "id": "f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1"
+  },
+  "followup-expansion-2026-10-8fc7cbfb4ebf7de3": {
+    "question": "What if customers trust Questrade for investments but refuse to deposit their salary?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "f21a166b-7a0a-41a9-a919-44781cf782a2"
+  },
+  "followup-expansion-2026-10-bf436c9433d0107c": {
+    "question": "Which Questrade investing customers would you deliberately not target first for banking?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "94fa46b3-57ae-43a9-a217-84dc00d8a565"
+  },
+  "followup-expansion-2026-10-3eaa68220372868b": {
+    "question": "How would you design a safe payroll-switching experience when the employer's first deposit could fail?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "e896f79a-bee7-4d99-a673-d337bb38cd38"
+  },
+  "followup-expansion-2026-10-a6c3f582931f677c": {
+    "question": "What if a customer receives one payroll deposit and then stops using Questbank?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42"
+  },
+  "followup-expansion-2026-10-0f5c5a1cd82b4f3d": {
+    "question": "How would you win customers without paying an expensive cash sign-up bonus?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "855c7ca3-5897-4baa-8c59-99f3c30cdd6e"
+  },
+  "followup-expansion-2026-10-1b11b5880756e558": {
+    "question": "If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "698c2786-3368-4df3-917e-de3a535d352d"
+  },
+  "followup-expansion-2026-10-aee698b800a5a0c3": {
+    "question": "What should the financial hub do if an external bank connection is stale or disconnected?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "381e64d9-0684-493b-8e36-9a2a5636966c"
+  },
+  "followup-expansion-2026-10-7348fb24d0cce3df": {
+    "question": "Why would a bank not want unlimited deposits if customers are willing to bring them?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "86fb0ff0-ee19-402f-bbd3-4d478d902d9e"
+  },
+  "followup-expansion-2026-10-8034ad0461d8c4d2": {
+    "question": "What happens to your banking growth strategy when interest rates fall?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "cfe370bc-2273-4055-b0e2-d1adbb96cbf1"
+  },
+  "followup-expansion-2026-10-7dc542ebf39e6dc6": {
+    "question": "Would you consider a secondary banking relationship a product failure?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "adc80bff-8a24-4eaf-9c48-8b050d759ab1"
+  },
+  "followup-expansion-2026-10-2aae75bc9cff3ab9": {
+    "question": "It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "2fb1eeab-7958-4099-9216-e2b88d0de5c5"
+  },
+  "followup-expansion-2026-10-52438287a208eb8e": {
+    "question": "Why might my available balance be different from my posted balance?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "0f093e83-c8de-44bd-9398-e0f186a814df"
+  },
+  "followup-expansion-2026-10-81f59cee90ddc479": {
+    "question": "A customer sees the same purchase twice, once pending and once posted. How would you fix it?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "ec3a7c0b-b921-45be-8548-df8c95b2f713"
+  },
+  "followup-expansion-2026-10-538e221cc463571b": {
+    "question": "Card payments start declining, but the banking app and core ledger are online. Where do you look?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "d8be8368-b755-4baf-8494-3cf9a9f8a69e"
+  },
+  "followup-expansion-2026-10-0de6e24c3ec72748": {
+    "question": "How would you design a new payee or recipient verification experience?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "4445d2e9-0632-4f42-b1a8-6a60adc01012"
+  },
+  "followup-expansion-2026-10-2d5216038eb7201f": {
+    "question": "How would you use feature flags without creating inconsistent financial records?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "6635b44b-bd82-4980-8aef-ea67474a075e"
+  },
+  "followup-expansion-2026-10-1a10ff8457e116b4": {
+    "question": "When should an automated retry be prohibited even if it would reduce failures?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "d17bc916-0925-4b2f-9904-092499e61920"
+  },
+  "followup-expansion-2026-10-35b5658e122b27ca": {
+    "question": "What would you do if the customer sees a successful transfer but settlement hasn't reconciled?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "771cc93c-f8fd-4499-90dd-04482b325890"
+  },
+  "followup-expansion-2026-10-011534bf24455032": {
+    "question": "How should a customer dispute an unfamiliar debit card transaction?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "0360f445-9e66-472e-932f-e06050ec3a3e"
+  },
+  "followup-expansion-2026-10-56175462d6794fa6": {
+    "question": "How do you reduce fraud without rejecting too many legitimate banking customers?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "2c8d4c01-fde5-45f2-83a5-4567c8b9ea00"
+  },
+  "followup-expansion-2026-10-333f2eb84c1d211b": {
+    "question": "How would you explain a deposit hold to a customer who needs the money tomorrow?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "b36da9fd-c09c-4202-bc35-aaf2d27afad3"
+  },
+  "followup-expansion-2026-10-565de636656ef238": {
+    "question": "How would you design recurring bill payments or pre-authorized debits for a new bank?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "10c8d63e-14a4-474f-be0c-7a6f5b731600"
+  },
+  "followup-expansion-2026-10-3df9c94b9ea49d8f": {
+    "question": "Which three metrics would you put on your first Questbank executive scorecard?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "557cbeab-d17e-48bc-99de-1a54625ee37f"
+  },
+  "followup-expansion-2026-10-6c1f0276be1cda04": {
+    "question": "Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "a27a2489-4944-4faa-b130-5a1a4ab088e9"
+  },
+  "followup-expansion-2026-10-cd8ddf2374aab188": {
+    "question": "What is sample ratio mismatch, and why would you care in a banking A/B test?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "4a20cf51-7a43-415b-b55d-d01104a46d6f"
+  },
+  "followup-expansion-2026-10-5b3cacfbf9d7ec58": {
+    "question": "How would you tell healthy banking engagement from anxiety-driven repeat checking?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "cb792784-57f0-449a-a12d-76bbbde35b46"
+  },
+  "followup-expansion-2026-10-10ec3c7fab699446": {
+    "question": "How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4"
+  },
+  "followup-expansion-2026-10-41def4e541d32b60": {
+    "question": "How would you experiment on payment reliability if you can't ethically expose customers to worse payments?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "cca30fb0-f7be-497e-8e20-2cd349712829"
+  },
+  "followup-expansion-2026-10-c1c6a9724d86f74e": {
+    "question": "Which early warning indicator would tell you Questbank is losing customer trust?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "1f935f03-d796-480c-8e77-2a3c26f156b2"
+  },
+  "followup-expansion-2026-10-6c7a1a15e3964650": {
+    "question": "What happens if a customer revokes an AI agent's access while it has a request in progress?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "2f280387-ca4c-4b94-abdf-a644c1868a4a"
+  },
+  "followup-expansion-2026-10-7c4c12feaff15b1c": {
+    "question": "Would you let an external AI agent read transaction descriptions or merchant details?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "7883e373-e58d-460a-bef5-2b89d237c66e"
+  },
+  "followup-expansion-2026-10-f9c0dbb7c57fb56a": {
+    "question": "What would convince you to stop an AI financial-assistant pilot?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "bad7b926-f617-44c4-ab13-ddc78b1e4378"
+  },
+  "followup-expansion-2026-10-820f4090df4a3dc6": {
+    "question": "When would you choose deterministic software or rules instead of an AI model?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "be3e3314-68c5-4f6a-a3d9-7f0b9147e17b"
+  },
+  "followup-expansion-2026-10-410906da823f7878": {
+    "question": "Explain your interview copilot's semantic matching architecture without using technical jargon.",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "db88df8e-3a36-4cc6-8b84-4fb24e2136c3"
+  },
+  "followup-expansion-2026-10-1f2320a19a45d757": {
+    "question": "How did you know your semantic-search approach was actually better than keyword matching?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.890Z",
+    "id": "c8d4a611-d174-48b1-911c-e2db8f3acc3e"
+  },
+  "followup-expansion-2026-10-aa3d0e2b91ac1b17": {
+    "question": "If MCP standardizes tools, what competitive advantage can Questrade still own?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "4fcf44b0-5a66-46be-a57b-0fca89af2d10"
+  },
+  "followup-expansion-2026-10-463e16f913ccff8d": {
+    "question": "What if Risk still says no after you've presented all your evidence?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "458f82bd-542b-4331-92fb-d77bb3645d06"
+  },
+  "followup-expansion-2026-10-eb5a7a85707df703": {
+    "question": "What if Engineering says your banking launch plan is unsafe but leadership wants the date?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "77caa5b4-817d-47b3-9569-366aa012daf6"
+  },
+  "followup-expansion-2026-10-d13d503e478400a0": {
+    "question": "Tell me about a product decision you got wrong.",
+    "action": "alias_attached",
+    "at": "2026-10-26T19:14:42.891Z"
+  },
+  "followup-expansion-2026-10-b85d72575972a2e5": {
+    "question": "How would you handle an offshore team that doesn't understand the customer impact of a requirement?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "a95a3a54-604e-4617-af66-92158c5c2c53"
+  },
+  "followup-expansion-2026-10-809d4ac5fe16d18c": {
+    "question": "What do you do when a shared dependency is blocking your objective but the other PM has different priorities?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "110a4074-4ba6-4eb9-9b8e-4a96b4e223e4"
+  },
+  "followup-expansion-2026-10-ff778946b3ce4c07": {
+    "question": "When would you shut down a feature your own team spent six months building?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "1de87c3a-d693-419c-9ded-b76154af230a"
+  },
+  "followup-expansion-2026-10-929f1b51201c0ddb": {
+    "question": "How do you communicate a complex banking trade-off to an executive in two minutes?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "d333a258-c050-4f17-a50b-242e5ad5254d"
+  },
+  "followup-expansion-2026-10-4f824187fbbff65a": {
+    "question": "How do you say no without damaging a relationship with a powerful stakeholder?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f"
+  },
+  "followup-expansion-2026-10-ed30a21945cc58cb": {
+    "question": "A customer says they sent money to the wrong recipient. What can your product realistically do?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "837e7efc-def5-4758-8ca1-627d006ec1ff"
+  },
+  "followup-expansion-2026-10-3556d63635e0e2ae": {
+    "question": "What is the difference between KYC, AML monitoring and transaction fraud prevention?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c"
+  },
+  "followup-expansion-2026-10-90f9fbcc4c70655e": {
+    "question": "What if a customer fails identity verification while trying to open a Questbank account?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "cdc38655-878f-4b7f-a49d-109f3b69125e"
+  },
+  "followup-expansion-2026-10-783964890115ecc2": {
+    "question": "An account was frozen for suspected fraud. How would you handle the customer experience?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "2fb50805-1cb9-43f9-a2ba-54b816d3085d"
+  },
+  "followup-expansion-2026-10-5401967e0f935946": {
+    "question": "What should happen if someone loses their phone and tries to access their bank account?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "6ffb405d-688b-433e-87c3-a7d992430bad"
+  },
+  "followup-expansion-2026-10-43130d1fc58052a7": {
+    "question": "How would you explain CDIC deposit protection versus CIPF investment protection?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "dc30e851-19e2-4bc1-8397-e4ab784ef939"
+  },
+  "followup-expansion-2026-10-704b687b4abdb2cf": {
+    "question": "Would you use screen scraping or customer-permissioned banking APIs for account aggregation?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "c6aa4266-ebca-41df-a32b-99cba4676ffd"
+  },
+  "followup-expansion-2026-10-d9a7e448477c9d46": {
+    "question": "What would you tell customers if a major banking partner was down and you didn't know the restoration time?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "ab5294e4-b011-43a7-8cb2-432d84014ec7"
+  },
+  "followup-expansion-2026-10-d2542b5d18b6f8eb": {
+    "question": "Should a bank help customers automate savings when they have unpredictable income?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "4f6209aa-a000-442c-bbd6-96723a266b9a"
+  },
+  "followup-expansion-2026-10-65e520e78893619f": {
+    "question": "How would you decide when to compensate a customer after a bank payment error?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "7fefebb7-44eb-4fa3-80f8-14e6900cba0b"
+  },
+  "followup-expansion-2026-10-deb9bcd3c95dfd17": {
+    "question": "How would you differentiate Questbank if Wealthsimple copied your best feature?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "67ef7666-80ac-452a-8506-b2375d6abc34"
+  },
+  "followup-expansion-2026-10-190f2fbd4b39dfdf": {
+    "question": "How would you handle events arriving out of order in a customer's transaction history?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "25ad6af4-9d72-4ac5-9159-29bceeebfb80"
+  },
+  "followup-expansion-2026-10-0ffeac83b074227c": {
+    "question": "How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0"
+  },
+  "followup-expansion-2026-10-fe3aaf8b0a104ebd": {
+    "question": "What would the MVP of a payroll-switching feature actually contain?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "8ba596cd-8c2c-456e-bf5e-0681333ab61a"
+  },
+  "followup-expansion-2026-10-13246270dc5fb057": {
+    "question": "How long would you wait before deciding whether a payroll-switching experiment actually worked?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "b995b443-a009-4b4c-b03b-81f53bd6cc67"
+  },
+  "followup-expansion-2026-10-25dbf0548b118c22": {
+    "question": "What would your launch-readiness checklist include for an everyday-banking feature?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "606fd4d4-8492-40ac-b65f-099d93621451"
+  },
+  "followup-expansion-2026-10-02ff8d0c1a2d62e6": {
+    "question": "How would you set shared OKRs without making ownership ambiguous?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "059b883d-ccbf-4e0b-8719-5dbff7c26da6"
+  },
+  "followup-expansion-2026-10-818789ec0c4cf2bb": {
+    "question": "What would you do if post-launch data contradicts the user research that justified the feature?",
+    "action": "created",
+    "at": "2026-10-26T19:14:42.891Z",
+    "id": "48f67960-28cb-4d6b-b863-e7cfe2c1ca71"
+  }
+}

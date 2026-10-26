@@ -19,6 +19,14 @@
     "seed:questrade": "node scripts/seed-library.mjs data/seed/questrade-interview.json",
     "seed:questrade:full": "node scripts/seed-library.mjs data/seed/questrade-interview-full.json",
     "audit:questrade:qa": "node scripts/generate-questrade-qa-audit.mjs",
+    "ensure:simplii-profile": "node scripts/ensure-simplii-profile.mjs",
+    "reset:simplii-content": "node scripts/reset-simplii-profile-content.mjs",
+    "reset:simplii-content:apply": "node scripts/reset-simplii-profile-content.mjs --apply",
+    "export:questrade-library": "node scripts/export-questrade-library.mjs",
+    "import:simplii:final": "node scripts/import-simplii-final-qa.mjs imports/simplii_final_qa.json",
+    "import:simplii:final:apply": "node scripts/import-simplii-final-qa.mjs imports/simplii_final_qa.json --apply",
+    "import:simplii:final:apply:embed": "node scripts/import-simplii-final-qa.mjs imports/simplii_final_qa.json --apply --embed",
+    "validate:simplii": "node scripts/validate-simplii-profile.mjs",
     "embed:qa:gte": "node scripts/embed-qa-gte.mjs",
     "eval:retrieval": "npm run test -w @interview-copilot/web -- retrieval-eval",
     "seed:questrade:q48": "node scripts/seed-library.mjs data/seed/questrade-q48-q112.json",
@@ -32,6 +40,13 @@
     "apply:39-review-resolutions": "npx tsx scripts/apply-39-review-resolutions.ts",
     "apply:audit-improvements": "npx tsx scripts/apply-audit-improvements.ts",
     "import:expansion-22": "npx tsx scripts/import-expansion-22.ts",
+    "reconcile:followup-92": "node scripts/reconcile-followup-expansion-92.mjs",
+    "import:followup-92": "npx tsx scripts/import-followup-expansion-92.ts",
+    "import:followup-92:apply": "npx tsx scripts/import-followup-expansion-92.ts --apply",
+    "import:sperro-five-qa": "npx tsx scripts/import-sperro-five-qa.ts",
+    "import:sperro-five-qa:apply": "npx tsx scripts/import-sperro-five-qa.ts --apply",
+    "apply:expansion-review": "node scripts/apply-questrade-expansion-review.mjs --apply",
+    "apply:expansion-review:dry": "node scripts/apply-questrade-expansion-review.mjs --dry-run",
     "whisper:server": ".venv-whisper/bin/python3 scripts/mac-whisper-server.py"
   }
 }

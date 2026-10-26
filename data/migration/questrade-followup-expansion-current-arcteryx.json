@@ -1,0 +1,2049 @@
+{
+  "meta": {
+    "version": "draft-2026-10-26-current-arcteryx-scenario",
+    "status": "proposed_not_imported",
+    "basedOnActiveRecords": 163,
+    "count": 92,
+    "important": "All entries are draft answers to review; hypothetical scenarios are frameworks, not claims that events happened. Existing library data remains unchanged.",
+    "existingEmbeddedFollowUps": 373,
+    "existingExplicitRelatedQuestionIds": 0,
+    "scenarioAssumption": "Interview rehearsal assumes current employment at Arc'teryx; no claim that actual career timeline has changed.",
+    "sourceVariant": "Questrade_Proposed_Followup_Expansion.json",
+    "changeSummary": "One proposed question and answer revised; 91 entries otherwise unchanged; no changes to saved Supabase records."
+  },
+  "entries": [
+    {
+      "group": "Career and recruiter",
+      "rounds": [
+        "recruiter",
+        "hiring_manager"
+      ],
+      "priority": "P0",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-current-employer-bcf3c6da0f44f120",
+      "librarySection": "career_motivation",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+      "canonicalQuestion": "You're still at Arc'teryx and leading membership. Why consider Questrade now?",
+      "fullAnswer": "That's a fair question. I'm proud of the work I've been doing at Arc'teryx. I've had the opportunity to shape a membership proposition from the ground up, evaluate different technology approaches and help secure $5.2 million in funding. There's meaningful work there, and I don't take that lightly.\n\nI'm also being selective about what I'd consider next. Questrade caught my attention because it brings me back into financial services, where I've spent a significant part of my career, and the everyday banking opportunity is particularly interesting.\n\nAt RBC, HBC and Aeroplan, I worked on different parts of the financial customer journey, from acquisition and credit products to payments and engagement. Questrade is an opportunity to bring those experiences together.\n\nSo it's less about wanting to leave Arc'teryx and more about recognizing an opportunity that aligns really well with where I want to take my product career. If things progressed, I'd make sure there was a responsible handover of the work I'm leading.",
+      "experienceModuleId": "career-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "very_high",
+        "hiring_manager": "very_high"
+      },
+      "sourceParentQuestion": "Why are you looking to leave Arc'teryx?",
+      "scenarioAssumption": "Hypothetical interview rehearsal: currently employed at Arc'teryx. Do not infer historical employment status or modify existing resume records."
+    },
+    {
+      "group": "Career and recruiter",
+      "rounds": [
+        "recruiter",
+        "hiring_manager"
+      ],
+      "priority": "P0",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-9aa86e6ed4991be8",
+      "librarySection": "career_motivation",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "2f3a780e-6b54-42b8-b56d-8936a471fa68",
+      "canonicalQuestion": "Why have you moved between several industries and employers?",
+      "fullAnswer": "The common thread hasn't really been the industry label. It's been building consumer products that connect acquisition, engagement and the platforms underneath.\n\nAt Aeroplan, that meant credit-card acquisition with bank partners. At HBC, it meant cardholder growth and commercial performance. At RBC, I worked on expanding Avion to non-bank customers and enabling payouts. Arc'teryx broadened that into a zero-to-one membership platform and substantial technology investment.\n\nEach role let me work on a different part of the customer and business problem. At this stage, I'm looking to bring those experiences together in one place, and everyday banking is a particularly good fit.",
+      "experienceModuleId": "career-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "very_high",
+        "hiring_manager": "very_high"
+      },
+      "sourceParentQuestion": "Tell me about yourself."
+    },
+    {
+      "group": "Career and recruiter",
+      "rounds": [
+        "recruiter",
+        "hiring_manager"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-e875f9d64c5a9e6a",
+      "librarySection": "career_motivation",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "a292f433-831a-440c-a196-dbf8c38fbddd",
+      "canonicalQuestion": "What's the biggest learning curve for you if you join Questbank?",
+      "fullAnswer": "I think it's the depth of deposit-account operations and the exact constraints of Questrade's banking stack. I've worked with money movement, eligibility, risk and financial operations, but I wouldn't pretend that's identical to owning the full lifecycle of a chequing account.\n\nI'd close the gap deliberately: understand the core ledger and payment rails, walk through customer and operations journeys, map the controls with Risk and Treasury, and study the failure modes in actual data. In the first few weeks I'd want to know which decisions sit with Everyday Banking versus the core platform or payment teams.\n\nThe thing I can contribute immediately is product judgment around customer behaviour, regulated integration work and commercial trade-offs.",
+      "experienceModuleId": "career-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "high"
+      },
+      "sourceParentQuestion": "You haven't owned a traditional chequing account. Why are you qualified?"
+    },
+    {
+      "group": "Career and recruiter",
+      "rounds": [
+        "recruiter",
+        "hiring_manager"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-67f356d158e5db0f",
+      "librarySection": "career_motivation",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "f67032ca-4e2e-4b49-ae44-29b181eab8b6",
+      "canonicalQuestion": "What is the strongest single reason we should choose you for this job?",
+      "fullAnswer": "I'd say it's that I've worked across several parts of the financial customer journey, not just one feature category.\n\nAt Aeroplan I worked on acquiring credit-card customers, at HBC on conversion and ongoing cardholder economics, and at RBC on making an actual money-movement capability available to non-bank customers. At Arc'teryx I led substantial platform and membership planning, including the investment case.\n\nThat combination helps me think about Questbank as more than a collection of banking screens. It's a customer relationship that has to work commercially, operationally and technically. I also bring enough analytics experience to challenge whether the behaviours we're measuring are creating real value.",
+      "experienceModuleId": "career-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "high"
+      },
+      "sourceParentQuestion": "What makes you different from other Senior PM candidates?"
+    },
+    {
+      "group": "Career and recruiter",
+      "rounds": [
+        "recruiter",
+        "hiring_manager"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-a186e0487d072c84",
+      "librarySection": "career_motivation",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+      "canonicalQuestion": "What concerns would you have about joining a business that is still establishing its banking offering?",
+      "fullAnswer": "The main uncertainty I'd want to understand is how much of the foundational operating model is established and how much is still being built: decision rights, service reliability, payments ownership and the handoffs between the core bank and customer-facing teams.\n\nThat's not a reason to avoid the role. It's part of why I find the opportunity interesting. But I would want a realistic view of the sequence: what must be dependable first, what is differentiated, and where the team has the ability to make decisions.\n\nI'd rather join knowing those trade-offs and help solve them than assume the work is only about adding attractive features to a new account.",
+      "experienceModuleId": "career-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "high"
+      },
+      "sourceParentQuestion": "Why Questrade? Why this role?"
+    },
+    {
+      "group": "Career and recruiter",
+      "rounds": [
+        "recruiter",
+        "hiring_manager"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-07aa78c3f0321f51",
+      "librarySection": "career_motivation",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "c45ce30e-6de2-4164-93bf-8b67902caae0",
+      "canonicalQuestion": "Are you more interested in building new products or improving existing ones?",
+      "fullAnswer": "Both, but I care more about the nature of the problem than the label. A new product is interesting because you have to establish the proposition and make hard scope decisions. An existing product can be just as challenging when there's a meaningful adoption, economics or reliability problem to solve.\n\nI've done the early platform and business-case work at Arc'teryx, and I've also optimized live financial experiences at RBC, HBC and Aeroplan. For Questbank, the likely reality is a blend: establishing new everyday-banking habits while making the core journeys more reliable and useful over time.\n\nThat's the combination that appeals to me.",
+      "experienceModuleId": "career-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "high"
+      },
+      "sourceParentQuestion": "Why move into everyday banking from rewards and loyalty?"
+    },
+    {
+      "group": "Career and recruiter",
+      "rounds": [
+        "recruiter",
+        "hiring_manager"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-c28bf6e58efb1cc2",
+      "librarySection": "career_motivation",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "d47c60d3-510e-4373-abf0-0749fcc41ebc",
+      "canonicalQuestion": "What would you actually deliver in your first 30 days?",
+      "fullAnswer": "I wouldn't promise a major launch before understanding the banking dependencies, but I would aim to deliver something tangible.\n\nBy day 30, I'd want a shared map of the highest-value customer journeys, their owners and their biggest friction points. That would come from looking at the funnel, support reasons, payment exceptions and talking directly with the teams that operate the product.\n\nI'd also propose a first measurement baseline: funded-account rate, recurring deposit behaviour, successful money movement and the most important reliability guardrails. If we discovered a contained issue we could safely fix quickly, I'd pursue it. The deliverable is shared clarity and a prioritized decision, not just a stack of introductory meetings.",
+      "experienceModuleId": "career-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "high"
+      },
+      "sourceParentQuestion": "What would you do in your first 90 days?"
+    },
+    {
+      "group": "RBC payment deep dives",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-783641cec16f6188",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "244e239c-2f88-4b6e-968f-ef8ce65daa70",
+      "canonicalQuestion": "What happened if an Avion member didn't have Interac Autodeposit enabled?",
+      "fullAnswer": "Autodeposit was an important eligibility consideration because we were sending cashback to the email associated with the member. I wouldn't frame the experience as though every customer with an email address could automatically receive funds.\n\nFrom a product standpoint, the question is whether we can establish eligibility before offering the withdrawal and give an understandable path if the member isn't eligible. We'd rather explain the requirement clearly than accept a request we know can't complete through the intended flow.\n\nIn an interview I'd separate the actual Avion rules from a general recommendation: verify eligibility, don't promise delivery prematurely, and make failure and support states clear.",
+      "experienceModuleId": "rbc-cashback",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "Walk me through the Interac e-Transfer product you launched at RBC."
+    },
+    {
+      "group": "RBC payment deep dives",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-47da105a5246e62e",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "fb3c9a13-b37d-45df-b095-e14f8e84bed2",
+      "canonicalQuestion": "How would you prevent a customer from receiving the same cashback payout twice?",
+      "fullAnswer": "I'd make the withdrawal request uniquely identifiable and ensure that retrying it doesn't create a new financial instruction. An idempotency key tied to the logical payout is one implementation pattern I'd discuss with engineering.\n\nThe important distinction is between a new request and a retry of the same request. If the API times out after acceptance, the app should investigate the existing transaction state rather than blindly submit another transfer.\n\nI'd also want limits and payout eligibility checked against the financial record, with reconciliation finding any mismatch between our request history and settlement activity. The product requirement is simple: a customer can recover from a timeout without getting paid twice or losing track of their money.",
+      "experienceModuleId": "rbc-cashback",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "What happens if a payout API times out after the request was accepted?"
+    },
+    {
+      "group": "RBC payment deep dives",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-723124b41a88671e",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "695ace4a-7c53-415e-9eb2-5f885d680c2b",
+      "canonicalQuestion": "What would the customer see while a cashback payout is pending or being investigated?",
+      "fullAnswer": "I'd distinguish a request being received from the money being sent or confirmed. The customer should see a plain-language status, the amount, when they requested it and what happens next.\n\nIf a payout is under investigation, I'd avoid telling them it failed or succeeded before we know. I'd rather say we're confirming its status, give a realistic expectation if one is available, and make the support path easy to find.\n\nThe status should come from the actual payments and settlement workflow rather than a front-end timer. A good experience here reduces duplicate withdrawal attempts and support anxiety while keeping the financial record accurate.",
+      "experienceModuleId": "rbc-cashback",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "Where should transaction status, balance calculation and reconciliation responsibilities sit?"
+    },
+    {
+      "group": "RBC payment deep dives",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-301fb13e986ed4d0",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "f290b115-770e-4448-82ac-52f4334f34de",
+      "canonicalQuestion": "Who made the final decision when the payments team, Risk and Product disagreed?",
+      "fullAnswer": "I wouldn't imply I had unilateral authority over Risk controls or enterprise payment infrastructure. My role was to own the consumer product requirements and coordinate the decisions needed for the customer experience to work.\n\nIf teams disagreed, I'd make the decision explicit: what control is mandatory, what implementation choices are flexible, what customer harm we're trying to avoid and who has authority over each part. Sometimes the right outcome is to change the product flow rather than ask a control owner to waive a requirement.\n\nAt RBC, that cross-functional alignment was a big part of the work. It taught me to distinguish influencing a decision from formally owning another team's risk acceptance.",
+      "experienceModuleId": "rbc-cashback",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "What exactly did you own versus RBC's payments infrastructure team?"
+    },
+    {
+      "group": "RBC payment deep dives",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-992afcd16dd5ffcb",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "11375f03-31fa-45da-8557-488a8cc63beb",
+      "canonicalQuestion": "What were the leading indicators before you could measure meaningful payout volume?",
+      "fullAnswer": "Before looking at annualized volume, I'd want to know whether the flow was usable and operationally safe. Leading indicators would include how many eligible members reached the withdrawal option, how many initiated a request, how many completed the required steps and where they dropped off.\n\nAlongside conversion, I'd watch failed or returned transfers, support contact reasons and settlement exceptions. Those are particularly important because a payment feature can look popular while creating hidden operational work.\n\nI'd be careful not to claim historical values I haven't verified. The broader outcome I can support is that the capability enabled more than $1 million in annualized consumer cashback withdrawals.",
+      "experienceModuleId": "rbc-cashback",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How did you measure success for the Avion cashback withdrawal launch?"
+    },
+    {
+      "group": "RBC payment deep dives",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-0ee11c5bb2049c12",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "f290b115-770e-4448-82ac-52f4334f34de",
+      "canonicalQuestion": "How did you turn regulatory and operations requirements into stories engineers could build?",
+      "fullAnswer": "I'd start by translating each requirement into an observable customer or system behaviour. For example: when is a customer eligible, what limits apply, what state should the UI show, and what information must Operations have to reconcile or investigate a payout?\n\nThe stories then need acceptance criteria for more than the happy path. What happens when eligibility changes, a request is repeated, the provider is slow or a settlement entry doesn't match?\n\nThe best requirements give engineering enough clarity on the intended behaviour while leaving room for the team to choose the implementation. I'd validate those cases with Risk, Finance and the payments service owners before committing to launch.",
+      "experienceModuleId": "rbc-cashback",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What exactly did you own versus RBC's payments infrastructure team?"
+    },
+    {
+      "group": "RBC payment deep dives",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-d17b8d965332251b",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "244e239c-2f88-4b6e-968f-ef8ce65daa70",
+      "canonicalQuestion": "Why did you use the member's email address, and what if that address changed?",
+      "fullAnswer": "The member's email was part of how we identified the destination for an eligible Interac payout. That meant the quality of the customer identity and contact information was operationally important, not just a communications detail.\n\nIf the address changed, I'd want to know which email was authorized and evaluated for eligibility at the moment of payout, and whether changes require revalidation. A payout shouldn't silently switch destinations because a profile field changed during processing.\n\nI wouldn't invent the exact production rule without checking it, but the product principle is to bind the payment instruction to a validated destination and keep an auditable record of what was authorized.",
+      "experienceModuleId": "rbc-cashback",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "Walk me through the Interac e-Transfer product you launched at RBC."
+    },
+    {
+      "group": "RBC payment deep dives",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-baa87ecc283d509e",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "14ad93b1-527c-49e9-b160-e9b22ca0f888",
+      "canonicalQuestion": "If payout failures doubled after launch, how would you investigate the first week?",
+      "fullAnswer": "I'd first break failures down by stage and reason: eligibility, request initiation, provider acceptance, delivery, return and reconciliation. I'd compare the increase by app version, customer segment and any payment-service or partner changes.\n\nI'd also ask whether the denominator changed. A growth campaign might bring in more first-time or ineligible customers, so the raw count alone could mislead us.\n\nFor customer impact, I'd distinguish money actually at risk from requests that were safely rejected. Then I'd prioritize containment for the harmful cases, communicate clearly, and work with payment operations on a root-cause fix. I'd keep an eye on repeat attempts so the investigation doesn't accidentally create duplicate transfers.",
+      "experienceModuleId": "rbc-cashback",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What would you do differently on the Avion cashback withdrawal launch?"
+    },
+    {
+      "group": "RBC payment deep dives",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-55d503d1ee7ba2f4",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "6458104e-34c6-430c-8005-aef3a3da9c02",
+      "canonicalQuestion": "How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?",
+      "fullAnswer": "I wouldn't assume the two entry points should look identical because their authentication and account relationships are different. But the value proposition and the next step should feel equally understandable.\n\nFor non-RBC members, a clear sign-up path, identity capture, terms and a reliable way to access the product become especially important. I'd compare conversion and first-value completion across the two segments, while accounting for their different journeys.\n\nIf one group struggled, I'd look at authentication friction, missing information and confusing eligibility rules before adding incentives. The important point from Avion Select was opening a financial-services-adjacent product to an audience that wasn't already inside the bank's usual sign-in flow.",
+      "experienceModuleId": "rbc-avion",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "Tell me about building Avion Select from zero to one."
+    },
+    {
+      "group": "RBC payment deep dives",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-c106931a80bdaba7",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "c226bb45-beb6-4162-9628-f16d6660b887",
+      "canonicalQuestion": "Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product?",
+      "fullAnswer": "Not automatically. The best payment rail depends on the use case, frequency, cost, customer experience and operational constraints.\n\nFor an occasional consumer cashback payout, Interac offered a practical path using infrastructure that already existed at RBC. That doesn't mean it's the right rail for recurring payroll deposits or pre-authorized bill payments. Those have different initiation patterns, returns, timing and customer expectations.\n\nI'd start by mapping the user journey and the actual money movement, then compare the available rails on reliability, economics, eligibility and exception handling. The lesson from RBC wasn't to prefer Interac everywhere. It was to reuse proven capabilities when they genuinely fit the problem.",
+      "experienceModuleId": "rbc-cashback",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "Why Interac e-Transfer instead of direct bank-account linking?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-c8a85beb577449d9",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "b1eac049-c167-4977-a7bd-55e98d7e3b0b",
+      "canonicalQuestion": "What was actually live when you left Arc'teryx, and what was still planned?",
+      "fullAnswer": "The full membership platform hadn't launched while I was there. What we had done was define and secure approval for the investment, shape the MVP and select the architectural direction.\n\nThe membership concept brought care, repair, trade-in and related benefits into a more coherent post-purchase experience. My role covered the strategy, journeys, dependencies and investment case, including securing $5.2 million in capital approval.\n\nI try to be precise about that distinction. Funding and an approved platform direction are significant product milestones, but they're not evidence of member adoption or realized revenue. I wouldn't claim a launched full program or customer outcomes we hadn't observed.",
+      "experienceModuleId": "arcteryx-membership",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "You secured $5.2M at Arc'teryx. Was the programme launched?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-22362777e51489a8",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "439ccf45-857e-431f-ab0e-1312d6998f02",
+      "canonicalQuestion": "What assumptions in the $5.2 million investment case were most sensitive?",
+      "fullAnswer": "I'd distinguish the investment decision from a proven return, because much of the value was still forecast. For a membership platform, the sensitive assumptions are likely adoption, incremental engagement with services, long-term retention, and the cost and sequencing of integrations.\n\nI would want Finance to see a range, not a single precise-looking outcome. What happens if member adoption is slower, integration costs rise, or the value comes later than expected?\n\nOur work established enough confidence to obtain approval, but I wouldn't present those forecasts as realized benefits. In a panel discussion, I'd focus on how we made the trade-offs visible and what we'd need to validate after launch.",
+      "experienceModuleId": "arcteryx-membership",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "How did you secure $5.2 million in capital funding at Arc'teryx?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-490b32859c4684f4",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "a85b536e-5e20-468f-87d9-fb447ae796f6",
+      "canonicalQuestion": "What would have changed your recommendation from buy to build?",
+      "fullAnswer": "I'd reconsider the recommendation if the vendor created more long-term constraint than leverage. For example, if its core data model couldn't support the customer journeys, the integration cost erased the time advantage, or important capabilities were so proprietary that we'd struggle to evolve them.\n\nI'd also weigh how strategically differentiating the capability really was. There are some experiences we should own closely, but that doesn't mean building commodity loyalty infrastructure from scratch.\n\nAt Arc'teryx, we evaluated five vendors and chose a headless direction. The reported delivery-time benefit was an estimate against the custom-build alternative, not a realized saving from a launched platform.",
+      "experienceModuleId": "arcteryx-membership",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "Why did you choose a headless membership platform rather than building everything internally?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-037002a66f7c0bea",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "f9022f65-91fb-4094-ae8f-b4dc87edcca7",
+      "canonicalQuestion": "What did you cut from the membership MVP, and how did you defend those trade-offs?",
+      "fullAnswer": "I was trying to protect a coherent first member experience without making the platform dependent on every possible channel and operational integration. The essential journey was enrollment, a view of membership and gear, clear benefits and a practical way for service teams to support members.\n\nCapabilities like deeper store enrollment, full native-app parity and advanced service workflows could come later if their dependencies weren't ready. That's a different decision from saying they had no value.\n\nI'd explain the trade-off in terms of customer journeys enabled, dependency risk and whether the MVP could actually be measured. The useful lesson was that 'smaller' only works if the remaining experience is still complete enough to create value.",
+      "experienceModuleId": "arcteryx-membership",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What did you personally decide or deprioritize?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-bea4a6b41c5964d6",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "ab850009-b3cc-4b2b-b026-cd9bb28987c3",
+      "canonicalQuestion": "How would you test whether customers wanted membership benefits before building the full platform?",
+      "fullAnswer": "I'd test the specific customer job before testing a big membership proposition. For example, do jacket owners struggle to understand repair eligibility or discover how to maintain a product they intend to keep for years?\n\nI'd compare a simpler guided experience against the existing service journey, measure successful task completion and support contacts, and ask customers whether the benefits were genuinely useful. I'd also look for repeated behaviour rather than relying only on stated interest.\n\nIf a small test showed customers valued clearer access to existing services, that would strengthen the case for an integrated program. If it didn't, I'd challenge whether a broad membership platform was solving the right problem.",
+      "experienceModuleId": "arcteryx-membership",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How did you know membership was a customer problem at Arc'teryx?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-59161acf4bf0b119",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "3218b561-2159-442e-a3aa-074756f877c0",
+      "canonicalQuestion": "How do you know the HBC application improvement wasn't caused by a different applicant mix?",
+      "fullAnswer": "I'd want the comparison to use a consistent definition of application start and completion, and I'd look at who entered the funnel in each period. Changes in campaign source, device, credit profile or promotions can make the conversion rate move even when the experience doesn't improve.\n\nThe strongest approach is a randomized experiment where the applicant mix should be balanced. If we couldn't do that, I'd segment cohorts and be much more conservative about attribution.\n\nI can speak to the reported 15% improvement in completions. I'd avoid claiming a specific experimental design or statistical result unless it's supported by what the team actually measured.",
+      "experienceModuleId": "hbc-mastercard-app",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "How did you measure the 15% improvement?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-4b0212c6f3f74d1f",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "e546440d-67eb-4266-8466-0827ccd35e42",
+      "canonicalQuestion": "Which step in a credit-card application funnel would you inspect first, and why?",
+      "fullAnswer": "I'd inspect the highest-friction step where we could plausibly improve the experience without weakening underwriting or compliance requirements. I'd look at drop-off by device, traffic source and field-level error patterns rather than assume the longest screen is the problem.\n\nFor a partner-issued credit card, I'd also separate the part of the application we own from the handoff and approval journey the issuer owns. A better-looking landing page doesn't help much if customers get lost at the transition.\n\nI'd prioritize a hypothesis we can actually test, such as clearer eligibility information or saving progress, and define the outcome as completed applications rather than clicks alone.",
+      "experienceModuleId": "hbc-mastercard-app",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What exactly did you change in the HBC application experience?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-43490de1e099ede8",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "3ba24689-dd1a-4428-b018-743f0a8c61af",
+      "canonicalQuestion": "Could the HBC incentives have increased spending while destroying profitability?",
+      "fullAnswer": "Absolutely. A lift in card spend by itself is not the same as value creation. We'd want to distinguish incremental spend from spend that would have happened anyway, then subtract rewards or incentive expense and consider the economics of the portfolio.\n\nI'd also worry about customers timing purchases to earn a reward without changing longer-term habits. The right evaluation looks at margin or contribution, repeat behaviour and the duration of the effect, ideally against a comparison group.\n\nThat's why I describe the 10% LTV change as modeled and the spending effect separately. Neither should be taken as proof that every individual promotion was profitable.",
+      "experienceModuleId": "hbc-portfolio",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "Why did HBC modeled LTV rise 10%, and how certain are you?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-4bf5985a1de015b1",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "9b0f399e-6750-463a-9570-805c82449eb8",
+      "canonicalQuestion": "What did you control in the HBC card portfolio, and what was controlled by Neo?",
+      "fullAnswer": "I owned the product growth roadmap and commercial decisions within the digital ecosystem, not the bank's credit underwriting or the entire lending balance sheet.\n\nOur Neo partnership meant decisions needed clear boundaries: what the retailer could change in acquisition and engagement, what the issuing partner owned in credit decisioning and operational controls, and where we had to coordinate changes.\n\nWhen I talk about financial impact, I'm referring to the cardholder growth and engagement initiatives we influenced. I wouldn't suggest I personally set credit policy or that the approval speed came from my UX redesign. That distinction is important when translating the experience into everyday banking.",
+      "experienceModuleId": "hbc-portfolio",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What does 'P&L ownership' at HBC actually mean?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-2aeba274e494fdf2",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "e8d13d9e-a98d-4dbc-a596-a178557963b0",
+      "canonicalQuestion": "How did you align TD, CIBC and Amex when the banks had different priorities?",
+      "fullAnswer": "I'd start from the shared customer journey and be explicit about where issuer priorities diverged. Different banks could have different offers, eligibility rules, application experiences or operational constraints, so one blanket implementation wasn't necessarily sensible.\n\nThe product role is to establish what the customer needs to understand before the handoff, agree on the data and measurement boundaries, and make trade-offs visible to the partners.\n\nMy Aeroplan work involved co-brand acquisition across these issuer relationships. I wouldn't imply I controlled their underwriting or internal roadmaps. What I can speak to is using product and analytics to improve the acquisition journeys we influenced and coordinating the bank-dependent pieces.",
+      "experienceModuleId": "aeroplan-cobrand",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How did you drive credit card acquisition growth at Aeroplan?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-6155efde5e65801e",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4",
+      "canonicalQuestion": "What happened after the customer clicked Apply—how did you know they became an approved cardholder?",
+      "fullAnswer": "I'd separate our digital funnel from the issuer's application and approval funnel. An application click or redirect isn't an approved new cardholder, and reporting them as the same outcome would overstate impact.\n\nWhere partner reporting made it possible, I'd reconcile downstream acquisition outcomes back to the source and offer experience, with the right privacy and aggregation controls. Where it didn't, I'd label the upstream measure honestly and avoid claiming the full effect through approval.\n\nThe important distinction is that the acquisition growth and conversion improvements are related but not interchangeable. I'd always explain which denominator and stage a metric refers to.",
+      "experienceModuleId": "aeroplan-cobrand",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How exactly did you measure the 40% conversion lift?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-a0d40d083ec744ef",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "e8d13d9e-a98d-4dbc-a596-a178557963b0",
+      "canonicalQuestion": "How did you prevent one card partner's offer from undermining another's?",
+      "fullAnswer": "I'd want a clear set of merchandising rules and a customer-first way to explain each offer. When a customer is comparing cards, the goal isn't to make every bank look identical. It's to make trade-offs understandable and ensure the experience is accurate for the partner's terms.\n\nI'd also agree with the business and issuer teams on what we were optimizing: total qualified acquisition, offer relevance and long-term economics, not simply shifting the same customer from one bank partner to another.\n\nA controlled test and partner-level reporting could help reveal whether one treatment generated truly incremental applications or just redistributed demand across offers.",
+      "experienceModuleId": "aeroplan-cobrand",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How did you drive credit card acquisition growth at Aeroplan?"
+    },
+    {
+      "group": "Experience verification and depth",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-d33952d1ddef7236",
+      "librarySection": "product_experience",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "7eb5e7ae-c611-4966-8279-0fcc8d80fc3c",
+      "canonicalQuestion": "What's the difference between acquiring a cardholder, activating one and retaining one?",
+      "fullAnswer": "They represent different steps in the relationship. Acquisition means we've gained a new customer or account. Activation means that customer has taken the first meaningful behaviour, such as a qualifying purchase, within a defined period. Retention means that useful behaviour continues over later periods.\n\nFor a card product, treating all three as one number hides very different problems. A strong application funnel with weak first purchase may point to onboarding or proposition issues; good activation with poor repeat spend may point to value or habit formation.\n\nAt HBC, that distinction informed how I thought about the cardholder lifecycle rather than optimizing application conversion in isolation.",
+      "experienceModuleId": "hbc-activation",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you explain your approach to customer activation and retention at HBC?"
+    },
+    {
+      "group": "Questbank growth scenarios",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-8fc7cbfb4ebf7de3",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "6844c2e7-03c5-434e-b64c-ca9febec68dd",
+      "canonicalQuestion": "What if customers trust Questrade for investments but refuse to deposit their salary?",
+      "fullAnswer": "I wouldn't assume an investment relationship automatically earns a banking relationship. I'd find out what specifically makes customers hesitant: uncertainty around bill payments, access to cash, service reliability, switching effort or simply no compelling benefit.\n\nThen I'd segment the problem. People who frequently move money between bank and brokerage may have a natural first use case, even if they aren't ready to switch payroll. I'd solve that reliably before trying to persuade everyone to move their entire financial life.\n\nI'd measure progression from trial to funded account to recurring activity. The product has to earn primary-account behaviour over time; it's not something we get just because the customer already has a TFSA.",
+      "experienceModuleId": "questrade-primary",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "How would you convince existing Questrade investors to make Questbank their primary bank?"
+    },
+    {
+      "group": "Questbank growth scenarios",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-bf436c9433d0107c",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "0bcc9c40-011a-4fff-9789-fdad78429b78",
+      "canonicalQuestion": "Which Questrade investing customers would you deliberately not target first for banking?",
+      "fullAnswer": "I'd avoid making an early acquisition bet on customers who have little reason to move cash through the platform or who would be disproportionately costly to serve for the expected value.\n\nFor example, a very passive long-term investor with no regular funding activity might love their brokerage account but have no immediate banking pain point. That doesn't mean we exclude them forever. It means our first proposition should focus on people where a connected cash-and-investing experience solves something observable.\n\nI'd test segment economics and actual behaviours rather than simply targeting the largest asset balances. A high-AUA client isn't automatically the best candidate for sustained daily banking use.",
+      "experienceModuleId": "questrade-primary",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "Who would you target first for Questbank adoption?"
+    },
+    {
+      "group": "Questbank growth scenarios",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-3eaa68220372868b",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "06e233ae-5d45-42d3-b560-84baf56a8948",
+      "canonicalQuestion": "How would you design a safe payroll-switching experience when the employer's first deposit could fail?",
+      "fullAnswer": "I wouldn't treat switching payroll as a single click. It's a process with an employer dependency and potentially serious consequences if it goes wrong.\n\nI'd give customers clear instructions or supported switching assistance, explain that an employer may need time to update details, and avoid implying the switch is complete before we have evidence. I'd encourage a transitional period where customers can verify the first successful deposit before relying entirely on the new account for bills.\n\nInternally, I'd define how we recognize successful recurring income and what support should do when a deposit is missing. The goal is to reduce switching friction without giving customers false certainty about their next payday.",
+      "experienceModuleId": "questrade-deposits",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "How would you increase direct deposit adoption?"
+    },
+    {
+      "group": "Questbank growth scenarios",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-a6c3f582931f677c",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "6f890192-85ca-45f7-8259-f92001b996cf",
+      "canonicalQuestion": "What if a customer receives one payroll deposit and then stops using Questbank?",
+      "fullAnswer": "I'd call that an initial conversion, not a successful primary-bank relationship. One income event could be a test, a split deposit or even an incentive-driven behaviour.\n\nI'd define sustained payroll use across several expected cycles and look for connected activity: bill payments, card spending, retained balances and repeated customer use. For people with irregular income, I'd use a more flexible classification so the metric doesn't unfairly exclude them.\n\nI'd also look at why the relationship stopped. If people deposit salary and immediately transfer it elsewhere, that may tell us the account is functioning as a pass-through rather than becoming useful for everyday banking.",
+      "experienceModuleId": "questrade-deposits",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "How do you know a customer really switched their paycheque?"
+    },
+    {
+      "group": "Questbank growth scenarios",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-0f5c5a1cd82b4f3d",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "dd28e2fe-24d1-4012-98d0-e951276439c6",
+      "canonicalQuestion": "How would you win customers without paying an expensive cash sign-up bonus?",
+      "fullAnswer": "I'd focus on a proposition that makes a repeated customer task materially easier. For Questrade, an obvious area to test is moving money between everyday cash needs and investments, with accurate balances and predictable availability.\n\nI'd look for customer segments with existing friction, then test the value proposition before spending heavily on broad incentives. Better cash visibility, simpler recurring contributions or fewer steps to move funds may matter more than an offer that expires after the first deposit.\n\nI'd still model the economics. If customers only join for the bonus and leave, we've bought a temporary metric rather than a durable relationship. I'd optimize for retention and contribution, not merely the cost per opened account.",
+      "experienceModuleId": "questrade-primary",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "Why would someone switch their primary bank if their current bank works fine?"
+    },
+    {
+      "group": "Questbank growth scenarios",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-1b11b5880756e558",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "47a2ee59-f62e-4b8c-a95b-abab90b7891b",
+      "canonicalQuestion": "If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?",
+      "fullAnswer": "I'd start with jobs that connect directly to the actions Questrade can actually enable, rather than another view of spending categories.\n\nAn investing customer may want to know what cash is genuinely available for a contribution, what bills are coming up, and what happens to their liquidity if they transfer funds. A financial hub could make those decisions more understandable, but only if the data is accurate and the next action is convenient.\n\nI'd test whether the hub changes useful customer behaviour, such as successful recurring contributions or fewer avoidable cash shortages, rather than only whether people open a dashboard. The differentiator has to be actionability and trust, not prettier charts.",
+      "experienceModuleId": "questrade-hub",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you design a single financial hub across spending, saving and investing?"
+    },
+    {
+      "group": "Questbank growth scenarios",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-aee698b800a5a0c3",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "6a8c3993-05ae-456b-8750-2b6778b6ee6b",
+      "canonicalQuestion": "What should the financial hub do if an external bank connection is stale or disconnected?",
+      "fullAnswer": "It should make that limitation obvious before customers act on the information. I'd show the last successful refresh, identify which accounts are unavailable and avoid quietly presenting an incomplete financial picture as current.\n\nIf an insight depends on missing account data, the app should qualify the conclusion or withhold it. For example, it shouldn't confidently say someone can invest extra cash if we can't see obligations from a disconnected account.\n\nI'd give the customer a clear reconnect path and continue to show verified Questrade data normally. The core design principle is that a partial view can still be useful, but it must never masquerade as a complete one.",
+      "experienceModuleId": "questrade-hub",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What is the biggest risk in connecting external accounts?"
+    },
+    {
+      "group": "Questbank growth scenarios",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-7348fb24d0cce3df",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "6bf73e61-9653-44ef-b0b3-03f854f27398",
+      "canonicalQuestion": "Why would a bank not want unlimited deposits if customers are willing to bring them?",
+      "fullAnswer": "Deposits are a funding source, but they aren't automatically profitable. The bank has to consider the rate it pays, how stable those balances are, how the funds can be deployed, liquidity and capital constraints, and the cost of servicing the customers.\n\nA large promotional inflow that disappears as soon as the offer ends may be far less useful than smaller, stable operating balances from customers who transact regularly.\n\nI'd partner with Finance and Treasury to understand the marginal contribution of the deposits we're attracting. As a PM, I'd want to know whether our incentives are drawing in the right kind of relationship, not just making the balance chart look impressive.",
+      "experienceModuleId": "questrade-deposits",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "Is a $100 million increase in deposits automatically a win?"
+    },
+    {
+      "group": "Questbank growth scenarios",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-8034ad0461d8c4d2",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "648015c7-c77e-4d15-87c7-b0c2c688beb0",
+      "canonicalQuestion": "What happens to your banking growth strategy when interest rates fall?",
+      "fullAnswer": "I'd avoid building the entire value proposition around one temporarily attractive savings rate. A rate can help customers try the account, but it can also attract people who move their money as soon as someone else pays more.\n\nI'd look at how sensitive each segment is to rates versus convenience, reliable payments, integrations and service. If rates fall, I'd update the economics with Treasury and examine whether customers continue to use the product for real everyday activity.\n\nThe longer-term opportunity is to become useful in a customer's routine, not win an endless bidding contest for promotional balances. I'd measure retained relationships and contribution through different rate environments.",
+      "experienceModuleId": "questrade-deposits",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you decide between better rates and better switching UX?"
+    },
+    {
+      "group": "Questbank growth scenarios",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-7dc542ebf39e6dc6",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "0d2ba56b-828d-4eeb-bbc4-b099d740e800",
+      "canonicalQuestion": "Would you consider a secondary banking relationship a product failure?",
+      "fullAnswer": "No. I would distinguish the customer's current stage from the long-term opportunity. For someone who's had the same primary bank for years, using Questbank for a recurring contribution or a portion of pay may be a rational first step.\n\nI'd measure the behaviour we actually earned and whether it deepens over time. A customer who consistently funds an investment account through Questbank may have a valuable relationship even if their rent still comes out of another bank.\n\nThe risk is declaring victory too early. I'd keep primary banking as a meaningful ambition, but recognize that a secondary relationship can be a profitable and useful stage on the way there.",
+      "experienceModuleId": "questrade-primary",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What if someone keeps two banks rather than moving everything to Questbank?"
+    },
+    {
+      "group": "Banking and card operations",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-2aae75bc9cff3ab9",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+      "canonicalQuestion": "It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?",
+      "fullAnswer": "First I need to establish whether the money is delayed, rejected, posted but not visible, or missing upstream. Those require different responses, and I wouldn't let the app tell customers their payroll failed until we've confirmed it.\n\nI'd convene the incident owners across Engineering, Operations, payments and the banking core, establish impact and an incident lead, and preserve accurate transaction tracing. If there's customer harm, we'd prioritize containment and communication rather than feature work.\n\nI'd also ask Support for a consistent message that clearly distinguishes confirmed facts from what we're still investigating. The immediate goal is protecting customers and restoring a reliable picture of their funds, not racing to a premature root-cause explanation.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "How would you handle a major payment incident?"
+    },
+    {
+      "group": "Banking and card operations",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-52438287a208eb8e",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "0c8b1a1c-7290-4b60-8c88-8d978935beae",
+      "canonicalQuestion": "Why might my available balance be different from my posted balance?",
+      "fullAnswer": "A posted balance reflects entries recorded on the account ledger, while available funds may account for things like pending holds or restrictions that affect what the customer can spend right now.\n\nThe key is not to present one number as universally correct for every customer decision. The app should make clear what is posted, what is pending and what is available, using data from authoritative systems.\n\nI'd test tricky scenarios: a pending card authorization, a released hold, a returned deposit or a delayed state update. If the systems disagree, the customer experience should acknowledge the uncertainty rather than manufacture a precise-looking available amount.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "What if the ledger balance and customer-facing balance don't match?"
+    },
+    {
+      "group": "Banking and card operations",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-81f59cee90ddc479",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "fb56f902-9f1a-4f18-9f34-dffa2027c038",
+      "canonicalQuestion": "A customer sees the same purchase twice, once pending and once posted. How would you fix it?",
+      "fullAnswer": "I'd first make sure we're not looking at two actual financial events. A pending authorization and a later posted clearing transaction can represent stages of the same purchase, but their identifiers and amounts may differ.\n\nThe experience should link them where we have reliable evidence and replace or resolve the pending presentation when the posted record arrives, rather than showing both as separate settled spending. I'd ask engineering how we correlate those events and what exceptions exist for tips, fuel or adjusted amounts.\n\nI'd also give Support a way to see the underlying states. The goal is accurate display without hiding a genuine duplicate charge.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "How do pending and posted card transactions differ?"
+    },
+    {
+      "group": "Banking and card operations",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-538e221cc463571b",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+      "canonicalQuestion": "Card payments start declining, but the banking app and core ledger are online. Where do you look?",
+      "fullAnswer": "I'd treat card authorization as its own end-to-end service, not assume the whole banking product is healthy because account login works.\n\nI'd break declines down by merchant category, processor response, card status, geography, balance state and time. Are we seeing legitimate insufficient-funds decisions, new fraud rules, a card-network problem or an integration outage?\n\nI wouldn't suggest disabling risk controls broadly just to improve approval rates. I'd bring the card processor, Risk, Operations and engineering owners together, focus on the affected cohort and distinguish genuine declines from technical failures.\n\nFor customers, we'd want a clear, safe support path and communication that doesn't disclose sensitive fraud logic.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "How would you handle a major payment incident?"
+    },
+    {
+      "group": "Banking and card operations",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-0de6e24c3ec72748",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "83d6cb34-59ce-42d0-88ca-dfb46a91bfae",
+      "canonicalQuestion": "How would you design a new payee or recipient verification experience?",
+      "fullAnswer": "I'd start with the harm we're trying to prevent: customers sending money to the wrong destination or fraudsters changing payout details. Verification should be proportional to the action and the risk.\n\nI'd want clear recipient information, appropriate authentication or step-up checks for sensitive changes, and a final review before execution. We should not rely on an attractive confirmation screen if the underlying authorization is weak.\n\nI'd work with Risk and engineering to make sure the rules are enforced server-side. Then I'd measure both sides: prevented errors and fraud, but also abandonment, false positives and support contacts. A control that blocks legitimate customers unnecessarily still has a product cost.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What controls would you require before allowing a new transfer type?"
+    },
+    {
+      "group": "Banking and card operations",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-2d5216038eb7201f",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "038f6014-b892-4a64-84d6-e09048b9fea2",
+      "canonicalQuestion": "How would you use feature flags without creating inconsistent financial records?",
+      "fullAnswer": "I'd use feature flags to control customer exposure and routing, not as an excuse to let two systems maintain contradictory financial truth.\n\nFor a new payment path, I'd plan a small rollout with clear eligibility, transaction correlation, observability and rollback conditions. Any in-flight instruction has to finish safely on the path it started; switching a flag shouldn't resubmit or lose it.\n\nI'd rehearse failure cases such as timeouts and duplicate submissions before scaling. In the rollout review, I'd compare successful end-to-end completion, exceptions, support demand and reconciliation, not merely whether the front-end feature loads for users.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you roll out a critical payments integration?"
+    },
+    {
+      "group": "Banking and card operations",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-1a10ff8457e116b4",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "4068ab67-0613-40ae-bb08-f810651d27a0",
+      "canonicalQuestion": "When should an automated retry be prohibited even if it would reduce failures?",
+      "fullAnswer": "When we can't establish whether the original financial instruction actually executed, an automatic retry can be dangerous. It could send money twice.\n\nI'd separate safe technical retries from new business instructions. With a stable transaction identifier and idempotent service contract, some operations can be retried safely. If the downstream outcome is uncertain, I would first query the transaction's authoritative status or route it into an exception workflow.\n\nI'd also prohibit blind retries for failures that require customer action, risk review or corrected recipient information. The operational metric shouldn't reward us for making the system look faster while increasing financial harm.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you handle payment exceptions and straight-through processing as transaction volume grows?"
+    },
+    {
+      "group": "Banking and card operations",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-35b5658e122b27ca",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "21cb8214-854d-48a1-a86d-c1d8fd37bf89",
+      "canonicalQuestion": "What would you do if the customer sees a successful transfer but settlement hasn't reconciled?",
+      "fullAnswer": "I'd avoid assuming that a customer-facing 'success' label proves every financial event has been reconciled. I'd investigate exactly what success was meant to indicate: instruction accepted, funds posted or final settlement confirmed.\n\nThe first step is preserving the accurate transaction history and identifying the discrepancy with Finance, Operations and the payment service. If funds are genuinely at risk or duplicated, that becomes an incident.\n\nLonger term, I'd tighten the product's status definitions and monitoring so we don't prematurely label an operation as final. Customers need a trustworthy status, and internal teams need an exception path that connects the operational record to the financial one.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What is reconciliation, and why does a PM need to understand it?"
+    },
+    {
+      "group": "Banking and card operations",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-011534bf24455032",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "a40816ee-67e5-4b52-9228-33132bb5ffb1",
+      "canonicalQuestion": "How should a customer dispute an unfamiliar debit card transaction?",
+      "fullAnswer": "I'd want the customer to be able to identify the transaction, see the relevant details and reach the correct dispute path without guessing whether it is an authorization hold or a settled purchase.\n\nIf the card may be compromised, immediate protective controls such as card locking and appropriate support escalation matter. The investigation and provisional-credit process must follow the relevant product and network requirements, so I'd work with card operations and Risk rather than inventing an instant-refund promise.\n\nI'd measure dispute initiation success, customer time to resolution and repeat contacts while protecting the accuracy of the underlying financial record.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you handle duplicate charges, incorrect balances or transaction discrepancies?"
+    },
+    {
+      "group": "Banking and card operations",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-56175462d6794fa6",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "9e7049a3-2fa7-4388-931c-875a7cc4d416",
+      "canonicalQuestion": "How do you reduce fraud without rejecting too many legitimate banking customers?",
+      "fullAnswer": "I'd separate confirmed fraud loss from friction and false positives. A risk control has to prevent harm, but broad rules can disproportionately hurt good customers.\n\nI'd ask Risk for the underlying threat model and test whether controls can be targeted by risk signals rather than applied identically to everyone. Where appropriate, we could use additional verification for higher-risk cases while keeping lower-risk journeys simpler.\n\nI'd monitor prevented loss, verified fraud, false-positive rate, completion rate and customer support burden together. I wouldn't optimize conversion by simply removing critical controls. The goal is a better overall risk-adjusted experience, not choosing Risk or Growth as the winner.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What if Risk wants a step that cuts conversion by 20%?"
+    },
+    {
+      "group": "Banking and card operations",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-333f2eb84c1d211b",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc",
+      "canonicalQuestion": "How would you explain a deposit hold to a customer who needs the money tomorrow?",
+      "fullAnswer": "I'd be explicit about the distinction between money received, money posted and money available to use. Customers shouldn't have to discover a hold only when a payment is declined.\n\nThe experience should show what amount is currently available, what's on hold, the known release timing or conditions where available, and what support can and cannot change. I'd avoid promising that a hold will clear early unless the underlying system supports it.\n\nI'd also examine whether we can communicate the hold before the customer initiates the deposit. The outcome to track is fewer surprise shortfalls and support contacts, alongside compliance with the actual funds-availability policy.",
+      "experienceModuleId": "questrade-deposits",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you design a reliable account-funding experience?"
+    },
+    {
+      "group": "Banking and card operations",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-565de636656ef238",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc",
+      "canonicalQuestion": "How would you design recurring bill payments or pre-authorized debits for a new bank?",
+      "fullAnswer": "I'd map the full lifecycle: setting up a payee or authorization, scheduling the debit, notifying the customer, handling insufficient funds and correcting errors or returns.\n\nThe customer needs clarity about when a payment is scheduled versus actually processed, and which balance is safe to rely on. I'd make cancellation and change rules understandable because an update made too close to the processing window may not stop an instruction already in flight.\n\nBefore scaling, I'd test timing boundaries, duplicate requests and return scenarios with banking operations. Reliable recurring payments are a major part of earning someone's primary-bank relationship, so I'd treat them as a foundation rather than a secondary feature.",
+      "experienceModuleId": "questrade-deposits",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you design a reliable account-funding experience?"
+    },
+    {
+      "group": "Analytics and experimentation",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-3df9c94b9ea49d8f",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "04f3d519-31e2-478e-9083-e60d2bca7818",
+      "canonicalQuestion": "Which three metrics would you put on your first Questbank executive scorecard?",
+      "fullAnswer": "I'd choose one outcome, one behavioural diagnostic and one non-negotiable reliability guardrail.\n\nFor the outcome, I'd use sustained active primary-banking relationships, defined through recurring income and meaningful financial activity over an appropriate window. For the diagnostic, I'd track conversion from funded account to recurring deposit and payment use. For the guardrail, I'd want successful money movement and significant customer-impacting exceptions.\n\nI'd add retained deposits and contribution economics in the deeper view, but I wouldn't put twenty charts on the executive scorecard. The question it should answer is whether more people are genuinely relying on the product and whether we're earning that trust safely.",
+      "experienceModuleId": "questrade-metrics",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "How do you measure primary-banking adoption versus superficial account opening?"
+    },
+    {
+      "group": "Analytics and experimentation",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-6c1f0276be1cda04",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "976c189b-f59f-409f-92ea-2648cc5b2f5a",
+      "canonicalQuestion": "Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship?",
+      "fullAnswer": "I wouldn't make the decision from the conversion number alone. I'd first establish whether the 20% is relative or absolute, whether the result is credible, and which customers and support issues are driving the increase.\n\nIf the extra calls are short, temporary setup questions, that is different from customers whose first paycheque is missing or who misunderstood whether switching was complete.\n\nI'd segment the support contacts, quantify customer harm and the cost to serve, and look at sustained successful payroll deposits rather than just setup completion. I might revise the experience or roll it out selectively. A conversion lift that damages trust could be a bad trade.",
+      "experienceModuleId": "questrade-metrics",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?"
+    },
+    {
+      "group": "Analytics and experimentation",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-cd8ddf2374aab188",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "629392bb-f39b-414e-b66d-0d879a9c4557",
+      "canonicalQuestion": "What is sample ratio mismatch, and why would you care in a banking A/B test?",
+      "fullAnswer": "Sample ratio mismatch means the observed split between experiment groups differs materially from the allocation we expected. That can indicate something went wrong with randomization, eligibility, exposure tracking or logging.\n\nIt's important because an apparent conversion lift may be unreliable if the underlying groups aren't comparable. In banking, issues can also arise if a risk rule or technical problem disproportionately prevents one group from reaching the measured step.\n\nI'd check the assignment and exposure data before interpreting the outcome, then review segment balance and instrumentation with Analytics and Engineering. I wouldn't celebrate a lift until the experiment itself was trustworthy.",
+      "experienceModuleId": "questrade-metrics",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How do you prevent cohort analysis from becoming a misleading before-and-after story?"
+    },
+    {
+      "group": "Analytics and experimentation",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-5b3cacfbf9d7ec58",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "f7e403b2-26b8-4da4-83c1-ea58c2e3371b",
+      "canonicalQuestion": "How would you tell healthy banking engagement from anxiety-driven repeat checking?",
+      "fullAnswer": "I'd look at the reason people are returning. More sessions can mean the product is valuable, but they can also mean customers are unsure whether a deposit arrived or a payment cleared.\n\nI'd compare visits against successful customer jobs: completed payments, recurring funding, savings actions and resolution of outstanding questions. I'd also look at support contacts, complaints, repeated visits to the same unresolved transaction and qualitative feedback.\n\nIf DAU rises while money-movement completion and retention are flat, that's a diagnostic signal, not necessarily good news. The experience should reduce uncertainty and improve financial control, even if that means fewer frantic balance checks.",
+      "experienceModuleId": "questrade-metrics",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How do you know an increase in DAU isn't just more balance checking?"
+    },
+    {
+      "group": "Analytics and experimentation",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-10ec3c7fab699446",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "96d0d431-bf77-42e5-85b5-1b8106ff1edc",
+      "canonicalQuestion": "How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card?",
+      "fullAnswer": "I'd start with the actual economics of those deposits, not assume the $5,000 balance is revenue. Finance and Treasury would help estimate what the bank earns from deploying or funding against that balance, net of interest paid, liquidity cost and servicing expenses.\n\nI'd then consider balance stability and how long the relationship lasts. A steady operating balance can be more valuable than a promotional balance that disappears after a few weeks.\n\nI'd separate that from debit-card revenue and cross-product benefits, since the customer doesn't generate those just by holding cash. The result would be a contribution estimate with sensitivity to deposit duration and rate assumptions.",
+      "experienceModuleId": "questrade-metrics",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "Explain how you would model customer lifetime value in banking."
+    },
+    {
+      "group": "Analytics and experimentation",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-41def4e541d32b60",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "6441c9f1-738a-4bd4-b819-92ddf2c1de5b",
+      "canonicalQuestion": "How would you experiment on payment reliability if you can't ethically expose customers to worse payments?",
+      "fullAnswer": "I'd never deliberately degrade real payment reliability just to create a control group. We can test improvements without putting one group at unacceptable risk.\n\nBefore rollout, I'd use simulation, sandbox scenarios, replayed test cases and controlled operational verification to establish safety. Then I might gradually expose customers to a validated change while monitoring completion, duplicate handling, latency and reconciliation exceptions.\n\nIf a change is essential for safety or regulatory compliance, it may not need a standard randomized experiment. The product decision becomes whether the system meets agreed acceptance criteria and whether the staged rollout exposes new failure modes. Experimentation should support judgment, not override customer protection.",
+      "experienceModuleId": "questrade-metrics",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you select an experiment's primary metric and guardrails?"
+    },
+    {
+      "group": "Analytics and experimentation",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-c1c6a9724d86f74e",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "735da866-20fc-4837-b67d-c91a6b4e2c77",
+      "canonicalQuestion": "Which early warning indicator would tell you Questbank is losing customer trust?",
+      "fullAnswer": "I'd watch for a rise in failed or unexplained financial events, especially when paired with repeat support contacts or customers withdrawing their recurring activity. A single metric won't fully capture trust, but those behaviours are meaningful.\n\nFor example, people who successfully received payroll for several cycles and then move it away after an incident are a more serious signal than a transient drop in app sessions. I'd combine reliability incidents, time to resolution, complaint themes and reductions in retained primary relationships.\n\nI'd segment by affected journey so we can tell whether a problem is concentrated in payroll, cards or account funding and act on the right root cause.",
+      "experienceModuleId": "questrade-metrics",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What metrics would you use to measure success in everyday banking?"
+    },
+    {
+      "group": "AI and agentic finance",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-6c7a1a15e3964650",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "1429b53c-f5fd-4819-bb3b-c116ce1ed889",
+      "canonicalQuestion": "What happens if a customer revokes an AI agent's access while it has a request in progress?",
+      "fullAnswer": "I'd want permissions checked at the actual moment each sensitive action is authorized, not only when the agent initially connects. Revoking access should stop new data retrieval and new instructions through that authorization.\n\nIf an operation has already been accepted by a payment or trading system, revocation may not undo it. The experience has to distinguish stopping future access from cancelling an in-flight financial instruction.\n\nI'd design clear audit records, revocation feedback and safe handling for queued requests. The principle is that customer control needs to be enforced by the financial platform, not just acknowledged politely by the AI model.",
+      "experienceModuleId": "questrade-mcp",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you protect customers from malicious or unauthorized AI-agent actions?"
+    },
+    {
+      "group": "AI and agentic finance",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-7c4c12feaff15b1c",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "233b0497-5bff-471f-9617-6abdeca51522",
+      "canonicalQuestion": "Would you let an external AI agent read transaction descriptions or merchant details?",
+      "fullAnswer": "Only for a clearly useful customer-authorized purpose, and I wouldn't treat all transaction information as equally harmless. Merchant details can reveal sensitive personal behaviour, and a broad permission can disclose far more than a customer expects.\n\nI'd start with narrow scopes and a read-only use case. The customer should understand what data is shared, with which provider, how long access lasts and how to revoke it. I'd also think about whether some useful insights could be produced inside Questrade without passing raw details externally.\n\nThe central product question is whether the value justifies the disclosure. Technical ability to expose a field is not a reason to expose it by default.",
+      "experienceModuleId": "questrade-mcp",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "Would you extend Questrade MCP beyond brokerage into everyday banking?"
+    },
+    {
+      "group": "AI and agentic finance",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-f9c0dbb7c57fb56a",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "df23d3a1-181c-4c9b-9460-42d635d2352d",
+      "canonicalQuestion": "What would convince you to stop an AI financial-assistant pilot?",
+      "fullAnswer": "I'd define stop conditions before launch, including any demonstrated pattern of materially incorrect balances, unsafe transaction interpretations, unauthorized data access or high-severity customer confusion.\n\nA great satisfaction score wouldn't compensate for a smaller number of serious financial errors. I'd classify failures by severity and investigate whether they're coming from stale source data, tool permissions, prompt handling or the model's explanation layer.\n\nI'd also monitor customer corrections and whether the system handles uncertainty properly. In a pilot, stopping or narrowing scope is a useful learning outcome if we discover a risk we can't yet control. The aim is a trustworthy product, not proving AI should ship at any cost.",
+      "experienceModuleId": "questrade-mcp",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you test an AI-powered financial feature before launching it broadly?"
+    },
+    {
+      "group": "AI and agentic finance",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-820f4090df4a3dc6",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "3c961ee8-43cb-4ec8-850f-24e822917f47",
+      "canonicalQuestion": "When would you choose deterministic software or rules instead of an AI model?",
+      "fullAnswer": "Whenever the required behaviour can be specified reliably and failure has a clear cost. Balance calculations, eligibility rules, permissions, transfer limits and execution controls should be deterministic and validated server-side.\n\nI'd use AI where natural language or unstructured information adds value, such as helping customers find an explanation or helping an operations team categorize exception descriptions. Even there, I want authoritative inputs and a safe fallback.\n\nThe decision isn't AI versus no AI as an identity statement. It's whether a probabilistic model improves the actual customer job enough to justify its latency, error rate, monitoring and security complexity.",
+      "experienceModuleId": "questrade-mcp",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?"
+    },
+    {
+      "group": "AI and agentic finance",
+      "rounds": [
+        "recruiter",
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-410906da823f7878",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "7c079cf5-b153-435d-a4b3-e83ad3139a2b",
+      "canonicalQuestion": "Explain your interview copilot's semantic matching architecture without using technical jargon.",
+      "fullAnswer": "I had a library of prepared interview answers, but the same question can be asked in dozens of ways. Searching by exact words wasn't good enough.\n\nSo I explored a small embedding model through Supabase. It turns each question into a numerical representation of its meaning, then retrieves prepared answers whose questions have similar meanings. I combine that with the conversation topic, because 'How did you measure that?' could mean RBC, HBC or Arc'teryx depending on what we were just discussing.\n\nI deliberately chose retrieval over generating a new answer each time. It keeps the response tied to material I've reviewed and lets me manage cost and reliability. I'd only describe the hosted implementation as deployed if I've verified the live pipeline is running.",
+      "experienceModuleId": "leadership-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "very_high",
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "How are you using AI in your product management work?"
+    },
+    {
+      "group": "AI and agentic finance",
+      "rounds": [
+        "recruiter",
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-1f2320a19a45d757",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "7c079cf5-b153-435d-a4b3-e83ad3139a2b",
+      "canonicalQuestion": "How did you know your semantic-search approach was actually better than keyword matching?",
+      "fullAnswer": "I'd compare both systems against a fixed set of realistic questions, including paraphrases, short follow-ups, employer switches and deliberately unrelated prompts. For each case, I'd define which prepared Q&A should appear.\n\nI'd measure top-one accuracy, whether the right answer is in the top three, latency and the rate of wrong-context matches. I'd also test whether manually reanalyzing a missed transcript can recover the answer.\n\nThe key is not to assume embeddings are better just because they sound more sophisticated. If the hybrid matcher doesn't improve retrieval in those cases, I'd tune the context logic or simplify the system. I wouldn't claim a percentage improvement until I'd run that benchmark.",
+      "experienceModuleId": "leadership-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How are you using AI in your product management work?"
+    },
+    {
+      "group": "AI and agentic finance",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-aa3d0e2b91ac1b17",
+      "librarySection": "questrade_cases",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "7547195c-f21b-4d86-9d4f-c7dd07f73109",
+      "canonicalQuestion": "If MCP standardizes tools, what competitive advantage can Questrade still own?",
+      "fullAnswer": "I think the competitive advantage sits in the trusted financial capabilities and customer relationship behind those tools. A standard protocol can make integrations easier, but it doesn't make account information accurate or establish safe trading permissions by itself.\n\nQuestrade still owns the quality of the underlying product, the authorization experience, the reliability of the data and the customer outcomes enabled by each capability. It can also choose which workflows are genuinely useful and which are too risky to expose.\n\nSo I'd see MCP as a distribution and integration mechanism rather than the product's entire moat. The differentiator is making those authorized financial actions dependable and valuable regardless of which assistant a customer prefers.",
+      "experienceModuleId": "questrade-mcp",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What is MCP, and why is it different from putting a chatbot inside a financial app?"
+    },
+    {
+      "group": "Leadership and influence",
+      "rounds": [
+        "recruiter",
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-463e16f913ccff8d",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "e09deee1-3efa-4774-9274-2f18848b739f",
+      "canonicalQuestion": "What if Risk still says no after you've presented all your evidence?",
+      "fullAnswer": "I'd make sure I understand whether it's a non-negotiable requirement, a decision within their mandate or a concern we might solve in another way.\n\nIf it's a hard control, the product needs to work within it. The question then is whether we can change the customer flow, add targeted verification or reduce scope without undermining the objective.\n\nIf it's a genuine judgment call, I'd document the options, impact and decision owner, and escalate through the agreed governance when appropriate. I wouldn't treat escalation as a way to bully Risk into approving a launch. In financial products, you need to build a working relationship where disagreement improves the decision.",
+      "experienceModuleId": "leadership-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "very_high",
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering."
+    },
+    {
+      "group": "Leadership and influence",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-eb5a7a85707df703",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "309200d8-48f6-4957-8eda-75eb4e3faf62",
+      "canonicalQuestion": "What if Engineering says your banking launch plan is unsafe but leadership wants the date?",
+      "fullAnswer": "I'd want to understand the specific failure mode before turning it into a date negotiation. Is the concern data integrity, double payment, reconciliation, untested load or an incomplete operational process?\n\nI'd bring the engineering owner and relevant controls teams together to define the minimum safe conditions for launch. Then I'd give leadership clear choices: reduce scope, stage rollout, change sequencing or move the date, with the risks of each option visible.\n\nA date can be a business commitment, but it doesn't make an unsafe money-movement path safe. I'd rather explain the trade-off early than have customers discover it after launch.",
+      "experienceModuleId": "leadership-general",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "How do you handle an engineer who strongly disagrees with your roadmap?"
+    },
+    {
+      "group": "Leadership and influence",
+      "rounds": [
+        "recruiter",
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "needs_personal_example",
+      "importKey": "followup-expansion-2026-10-d13d503e478400a0",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "15aa03e2-46af-4d60-9d73-90ed342c6ccc",
+      "canonicalQuestion": "Tell me about a product decision you got wrong. What changed your mind?",
+      "fullAnswer": "I'd choose a specific decision I can verify rather than manufacture a dramatic failure story. The important part of the answer is what I believed at the time, which evidence contradicted that belief and what I changed.\n\nOne genuine product lesson across my work is that activity isn't proof of value. In a financial product, an incentive can lift near-term behaviour without proving it improves long-term contribution. That changes how I frame experiments: I want the counterfactual and the economics, not just a positive dashboard.\n\nFor a behavioural interview I'd bring the interviewer back to the exact project, decision and result once those details are validated. I wouldn't claim a randomized test or a failed launch that didn't occur.",
+      "experienceModuleId": "leadership-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "Tell me about a product initiative that didn't go according to plan."
+    },
+    {
+      "group": "Leadership and influence",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-2026-10-b85d72575972a2e5",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "20f12afb-0dbb-49eb-821e-01989453d828",
+      "canonicalQuestion": "How would you handle an offshore team that doesn't understand the customer impact of a requirement?",
+      "fullAnswer": "I'd avoid treating that as a motivation problem before checking whether I've supplied enough context. A ticket that only describes a field or API change doesn't help an engineer make good decisions.\n\nI'd walk through the customer journey, explain what goes wrong if the requirement fails, and include examples of both the expected and exceptional states. I'd also create a quick feedback loop where engineers can challenge unclear assumptions before work proceeds too far.\n\nI've worked with geographically distributed engineering teams, so I'm conscious that written communication and explicit acceptance criteria matter. The aim is to create shared product understanding, not just hand out detailed instructions.",
+      "experienceModuleId": "leadership-general",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How do you lead when you don't manage the engineers directly?"
+    },
+    {
+      "group": "Leadership and influence",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-809d4ac5fe16d18c",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "c4c44a09-0799-471a-97cb-05e06e8bf8a8",
+      "canonicalQuestion": "What do you do when a shared dependency is blocking your objective but the other PM has different priorities?",
+      "fullAnswer": "I'd start with the shared outcome and the actual cost of the dependency, rather than arguing whose roadmap is more important.\n\nIf Everyday Banking needs a money-movement change to improve primary-account adoption, I'd quantify the expected value, the customer impact of delay and the effort or risk involved. Then I'd work with the other PM to see whether there's a smaller shared milestone or sequencing option that helps both teams.\n\nIf we still can't resolve it, leadership should make an explicit portfolio trade-off with the facts available. I'd want clear ownership, dates and interim customer workarounds, not an indefinite dependency in a roadmap spreadsheet.",
+      "experienceModuleId": "leadership-general",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What if your PM peers own Cards and Money Movement, but your metric depends on both?"
+    },
+    {
+      "group": "Leadership and influence",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-ff778946b3ce4c07",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "df6c37ec-3c98-4d5d-b441-30ba78608f56",
+      "canonicalQuestion": "When would you shut down a feature your own team spent six months building?",
+      "fullAnswer": "I'd separate sunk cost from future value. Six months of work tells us what we've invested, but it doesn't by itself justify another six months.\n\nI'd examine whether the feature solves a meaningful customer problem, whether adoption and quality are improving, whether the economics work and what we'd give up by continuing. Sometimes a contained iteration or repositioning test is appropriate. Sometimes the better decision is to stop.\n\nI'd also consider contractual, operational and customer obligations before shutting anything off. I'd explain the decision to the team through what we've learned and where their effort will create more value, rather than framing it as their work having been wasted.",
+      "experienceModuleId": "leadership-general",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How do you know when to stop investing in a feature?"
+    },
+    {
+      "group": "Leadership and influence",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-929f1b51201c0ddb",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "b4880442-6054-41de-b29b-f89c40e95005",
+      "canonicalQuestion": "How do you communicate a complex banking trade-off to an executive in two minutes?",
+      "fullAnswer": "I'd start with the decision we need, not a technical history lesson. For example: 'We can launch the new transfer experience this quarter, but only if we reduce scope or accept a specific operational risk. Here are the choices.'\n\nThen I'd give the customer and business impact, the non-negotiable controls, and my recommendation with the main uncertainty. If there are three options, I'd make the consequences explicit rather than ask the executive to infer them from a detailed roadmap.\n\nI'd keep the technical evidence available for follow-up. The goal is to help leadership make a responsible decision quickly without losing the nuance that matters.",
+      "experienceModuleId": "leadership-general",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How do you manage stakeholders who disagree on priorities?"
+    },
+    {
+      "group": "Leadership and influence",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-4f824187fbbff65a",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "1c3ffb21-7fdd-46b3-832a-57c13b409a34",
+      "canonicalQuestion": "How do you say no without damaging a relationship with a powerful stakeholder?",
+      "fullAnswer": "I'd make it clear that I'm saying no to a proposed solution or timing, not dismissing the underlying problem. I'd first ask what outcome they're trying to achieve and whether our current roadmap already addresses it.\n\nThen I'd explain the trade-off in concrete terms: what we'd delay, what customer or operational risk we'd introduce, and what evidence would change my recommendation. Where possible I'd suggest a smaller test or an alternative that preserves the underlying goal.\n\nI also think consistency matters. If I change my position later because new evidence emerges, I'd explain why. That makes the decision feel principled rather than personal.",
+      "experienceModuleId": "leadership-general",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "Tell me about a time you said no to a stakeholder."
+    },
+    {
+      "group": "Banking controls and customer trust",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-ed30a21945cc58cb",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "a40816ee-67e5-4b52-9228-33132bb5ffb1",
+      "canonicalQuestion": "A customer says they sent money to the wrong recipient. What can your product realistically do?",
+      "fullAnswer": "I'd first establish the rail, the actual transaction state and whether the instruction is still cancellable. I wouldn't promise an instant reversal just because the customer made a mistake; what is possible depends on how the payment was processed and the applicable rules.\n\nThe product should make destination and amount confirmation clear before sending and provide a fast support path when an error is reported. I'd want operations to be able to trace the instruction, explain what can be investigated and communicate outcomes accurately.\n\nPrevention is often more controllable than recovery, so I'd examine why the mistake happened and whether recipient verification or clearer confirmations would reduce it.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "How would you handle duplicate charges, incorrect balances or transaction discrepancies?"
+    },
+    {
+      "group": "Banking controls and customer trust",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P0",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-3556d63635e0e2ae",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "9e7049a3-2fa7-4388-931c-875a7cc4d416",
+      "canonicalQuestion": "What is the difference between KYC, AML monitoring and transaction fraud prevention?",
+      "fullAnswer": "I think of them as related but different controls. KYC is about identifying and understanding the customer and meeting applicable onboarding requirements. AML monitoring looks for patterns and activity that require review under financial-crime controls. Transaction fraud prevention focuses on whether a specific action appears unauthorized or deceptive.\n\nThey share data but aren't interchangeable. A customer can be legitimately onboarded and still experience an account takeover or suspicious payment attempt.\n\nAs a PM, I'd work with the right control owners to design clear workflows and measure legitimate-customer friction and false positives, while keeping mandatory decisions with the regulated risk and compliance teams.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "very_high"
+      },
+      "sourceParentQuestion": "What if Risk wants a step that cuts conversion by 20%?"
+    },
+    {
+      "group": "Banking controls and customer trust",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-90f9fbcc4c70655e",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "6844c2e7-03c5-434e-b64c-ca9febec68dd",
+      "canonicalQuestion": "What if a customer fails identity verification while trying to open a Questbank account?",
+      "fullAnswer": "I'd make the failure recoverable when policy allows, without revealing sensitive verification logic. A generic 'something went wrong' message is frustrating, but exposing all the signals we use could help attackers.\n\nI'd distinguish missing or incorrect information from a higher-risk case that needs manual review or can't proceed. The customer should understand the next legitimate step, what documents may be needed, or how to contact support.\n\nI'd measure false-positive rates, abandonment, manual-review time and eventual successful onboarding. The goal is strong identity controls with understandable and fair recovery paths for genuine customers.",
+      "experienceModuleId": "questrade-primary",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you convince existing Questrade investors to make Questbank their primary bank?"
+    },
+    {
+      "group": "Banking controls and customer trust",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-783964890115ecc2",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+      "canonicalQuestion": "An account was frozen for suspected fraud. How would you handle the customer experience?",
+      "fullAnswer": "I'd treat protecting funds and complying with the control as non-negotiable, but I'd also recognize how disruptive an unexpected restriction can be.\n\nThe customer needs a clear explanation of what we can disclose, how to verify their identity, how the review progresses and where they can get help. We shouldn't promise a release time the Risk team hasn't authorized, and we shouldn't reveal sensitive fraud-detection methods.\n\nInternally, I'd track time in restricted state, legitimate-customer false positives, escalations and downstream financial harm. The experience should be humane and predictable without compromising the review.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you handle a major payment incident?"
+    },
+    {
+      "group": "Banking controls and customer trust",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-5401967e0f935946",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "83d6cb34-59ce-42d0-88ca-dfb46a91bfae",
+      "canonicalQuestion": "What should happen if someone loses their phone and tries to access their bank account?",
+      "fullAnswer": "I'd separate account recovery from payment authorization. Someone who has lost their phone needs a way back in, but that is also a moment when an attacker might impersonate them.\n\nI'd work with identity and security teams on a recovery path with appropriate alternative verification, additional checks when credentials or devices change, and strong restrictions around sensitive actions until the account is trusted again.\n\nI'd also measure recovery success, time to regain access and fraud linked to recovery flows. Fast recovery is valuable, but it can't be so easy that changing devices becomes a shortcut around security controls.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What controls would you require before allowing a new transfer type?"
+    },
+    {
+      "group": "Banking controls and customer trust",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-43130d1fc58052a7",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc",
+      "canonicalQuestion": "How would you explain CDIC deposit protection versus CIPF investment protection?",
+      "fullAnswer": "I'd start by saying they protect different things and shouldn't be presented as interchangeable. Eligible deposits at CDIC member institutions have deposit insurance subject to the applicable rules and limits. CIPF is a different protection framework associated with investment-dealer insolvency and eligible customer property; it doesn't protect against investment losses from the market.\n\nIn the product, I'd make the relevant legal entity and product type clear. Customers shouldn't have to infer which protections apply based on the Questrade name alone.\n\nI'd work with Legal and Compliance on precise wording and link to the applicable official coverage details rather than offering a sweeping statement that every account or balance is protected the same way.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you design a reliable account-funding experience?"
+    },
+    {
+      "group": "Banking controls and customer trust",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-704b687b4abdb2cf",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "6a8c3993-05ae-456b-8750-2b6778b6ee6b",
+      "canonicalQuestion": "Would you use screen scraping or customer-permissioned banking APIs for account aggregation?",
+      "fullAnswer": "I'd start with the coverage and reliability required for the customer job, then assess the actual data-access methods available in Canada and the bank connections we're targeting.\n\nWhere secure permissioned APIs are available, they can provide clearer access control and revocation than sharing credentials. But I'd still validate data freshness, completeness, authentication journeys and vendor operations rather than assuming an API solves the product problem automatically.\n\nI'd involve Security and Privacy early, show customers what they're connecting and how to disconnect, and never suggest that a linked account gives us a complete or always-current view of their finances.",
+      "experienceModuleId": "questrade-hub",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What is the biggest risk in connecting external accounts?"
+    },
+    {
+      "group": "Banking controls and customer trust",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-d9a7e448477c9d46",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+      "canonicalQuestion": "What would you tell customers if a major banking partner was down and you didn't know the restoration time?",
+      "fullAnswer": "I'd communicate the confirmed impact, the affected journeys and the next planned update without inventing a recovery estimate. It's tempting to say 'we'll be back shortly,' but that can undermine trust if we don't know.\n\nI'd coordinate with incident command and Support so every channel tells the same story. If there's a safe alternative path for customers, we'd explain it clearly without encouraging repeated submissions that could duplicate payments.\n\nOnce service returns, we'd verify financial consistency and any unresolved transactions before announcing that everything is complete. Reliability includes honest status communication and a real recovery process, not just an uptime banner.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you handle a major payment incident?"
+    },
+    {
+      "group": "Banking controls and customer trust",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-d2542b5d18b6f8eb",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "06e233ae-5d45-42d3-b560-84baf56a8948",
+      "canonicalQuestion": "Should a bank help customers automate savings when they have unpredictable income?",
+      "fullAnswer": "Yes, but I'd avoid a fixed recurring transfer that assumes everyone receives the same paycheque every two weeks.\n\nFor someone with variable income, I'd explore flexible triggers, clear minimum-balance safeguards and the ability to pause or adjust transfers. I'd prioritize transparent rules and explicit consent before more ambitious AI-led automation.\n\nI'd test whether the feature actually helps people accumulate savings without triggering failed payments, overdrafts or repeated manual reversals. A savings automation that creates cash shortages isn't a successful savings product, even if the transfer count looks healthy.",
+      "experienceModuleId": "questrade-deposits",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you increase direct deposit adoption?"
+    },
+    {
+      "group": "Banking controls and customer trust",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-65e520e78893619f",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "4068ab67-0613-40ae-bb08-f810651d27a0",
+      "canonicalQuestion": "How would you decide when to compensate a customer after a bank payment error?",
+      "fullAnswer": "I'd first establish the facts and the customer's actual harm. Was money unavailable, did a bill fail, were fees incurred or did the customer simply see a delayed status?\n\nThe response needs to follow the bank's legal obligations, policies and incident-remediation framework, so I wouldn't invent a flat compensation promise. But I'd want consistent criteria, fast escalation for urgent hardship and a clear path to correct the financial record.\n\nI'd look for patterns where repeated incidents are generating both customer harm and remediation cost. The product lesson is to prevent the failures, not treat goodwill credits as the primary solution.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you handle payment exceptions and straight-through processing as transaction volume grows?"
+    },
+    {
+      "group": "Banking controls and customer trust",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-deb9bcd3c95dfd17",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "c4343691-6421-47c9-9c1e-8c88f948e0b6",
+      "canonicalQuestion": "How would you differentiate Questbank if Wealthsimple copied your best feature?",
+      "fullAnswer": "I wouldn't assume a single feature is a durable moat. Another fintech can often copy a visible workflow, rate or design pattern.\n\nI'd focus on the broader customer job and the operational experience behind it: trusted money movement, investing integration, useful context and consistent service. I'd also examine whether Questrade can serve customer segments with more complex investment and banking needs better than a general-purpose alternative.\n\nI'd keep testing actual customer switching behaviour rather than relying on feature-comparison slides. If a competitor copied one capability, we should still know what combination of convenience, trust and relationships makes customers stay.",
+      "experienceModuleId": "questrade-primary",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "Why would customers choose Questrade over Wealthsimple or a traditional bank?"
+    },
+    {
+      "group": "Banking controls and customer trust",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-190f2fbd4b39dfdf",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "0c8b1a1c-7290-4b60-8c88-8d978935beae",
+      "canonicalQuestion": "How would you handle events arriving out of order in a customer's transaction history?",
+      "fullAnswer": "I'd want financial systems to remain authoritative about posted entries while the app handles presentation carefully. If events arrive late or out of order, we shouldn't assume the arrival order is the financial order.\n\nI'd work with engineering on stable identifiers, event timestamps, versions and reconciliation against the source of truth. The customer view may need to update an earlier pending item when a final status becomes available rather than append another unrelated row.\n\nI'd test delayed, duplicated and missing events explicitly. If we can't establish an accurate status, it's better to acknowledge uncertainty than show a confident but incorrect sequence of money movements.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What if the ledger balance and customer-facing balance don't match?"
+    },
+    {
+      "group": "Product execution and prioritization",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-0ffeac83b074227c",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "50313c26-9a05-42e6-b88e-cc571be4b272",
+      "canonicalQuestion": "How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant?",
+      "fullAnswer": "If card reliability is genuinely meeting the required customer and operational guardrails, I'd stop treating it as an automatic reason to defer every growth initiative.\n\nI'd diagnose why payroll adoption is stagnant: weak value proposition, high switching friction, missing employer support, low awareness or a failure to retain activity after the first deposit. Then I'd prioritize the bottleneck we can credibly move.\n\nThe decision would still depend on severity and impact, not just a headline uptime figure. But a mature reliability baseline should create room to invest in sustained primary-account growth rather than endlessly optimizing a metric that's already healthy.",
+      "experienceModuleId": "questrade-primary",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose?"
+    },
+    {
+      "group": "Product execution and prioritization",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-fe3aaf8b0a104ebd",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "06e233ae-5d45-42d3-b560-84baf56a8948",
+      "canonicalQuestion": "What would the MVP of a payroll-switching feature actually contain?",
+      "fullAnswer": "I'd define the smallest end-to-end journey that helps an eligible customer move income safely. That could include clear account details, simple employer instructions or supported switching assistance, confirmation of what the customer submitted and a way to verify the first successful deposit.\n\nI'd also make the failure and support paths part of the MVP, not phase-two surprises. Customers need to understand what is and isn't confirmed, and what to do if their next paycheque doesn't arrive.\n\nI wouldn't start with every employer integration. I'd choose a segment with a credible route to adoption and measure sustained deposits and support burden after the first cycle.",
+      "experienceModuleId": "questrade-deposits",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you increase direct deposit adoption?"
+    },
+    {
+      "group": "Product execution and prioritization",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-13246270dc5fb057",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "976c189b-f59f-409f-92ea-2648cc5b2f5a",
+      "canonicalQuestion": "How long would you wait before deciding whether a payroll-switching experiment actually worked?",
+      "fullAnswer": "I'd align the measurement window to the behaviour. A completed setup form can be measured quickly, but payroll often follows an employer's own cycle. I'd need enough time to observe the first actual deposit and, ideally, repeated deposits.\n\nI'd define the evaluation period before launching the test, based on expected payroll frequency and a meaningful sample. I'd also watch support contacts and failed deposits while the experiment runs.\n\nIf early setup conversion rises but deposits haven't occurred yet, I'd call that a promising leading signal, not proof of primary-banking adoption. The decision to scale should reflect the delay between a user action and the outcome we really care about.",
+      "experienceModuleId": "questrade-metrics",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?"
+    },
+    {
+      "group": "Product execution and prioritization",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-25dbf0548b118c22",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "038f6014-b892-4a64-84d6-e09048b9fea2",
+      "canonicalQuestion": "What would your launch-readiness checklist include for an everyday-banking feature?",
+      "fullAnswer": "I'd want explicit ownership and evidence across the customer journey, integration, risk controls and operations—not just a feature checklist.\n\nFor a money-movement feature, that means the happy path, authorization, exception states, transaction tracing, reconciliations, support training, monitoring and rollback or containment procedures. I'd also check that customer-facing claims are accurate about timing and availability.\n\nI'd run realistic failure scenarios, confirm launch guardrails with the control owners and stage exposure where possible. The release decision should answer whether we can operate the experience safely when things go wrong, not simply whether the UI works in a demo.",
+      "experienceModuleId": "questrade-payments",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "How would you roll out a critical payments integration?"
+    },
+    {
+      "group": "Product execution and prioritization",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-02ff8d0c1a2d62e6",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "c4c44a09-0799-471a-97cb-05e06e8bf8a8",
+      "canonicalQuestion": "How would you set shared OKRs without making ownership ambiguous?",
+      "fullAnswer": "I'd separate the customer outcome that teams jointly influence from the capabilities each team directly owns. For example, sustained active primary accounts might be shared, while one team owns reliable payroll funding and another owns card transaction success.\n\nI'd define lead measures and service-level guardrails for the dependencies, then agree on a regular decision forum where cross-team trade-offs are resolved. Shared outcomes should encourage collaboration, but they shouldn't become a way for everyone to blame someone else when performance misses.\n\nI'd want clear escalation paths and a common view of the customer journey so the organization optimizes for the relationship rather than isolated feature deliveries.",
+      "experienceModuleId": "questrade-metrics",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What if your PM peers own Cards and Money Movement, but your metric depends on both?"
+    },
+    {
+      "group": "Product execution and prioritization",
+      "rounds": [
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "scenario_framework",
+      "importKey": "followup-expansion-2026-10-818789ec0c4cf2bb",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc",
+      "canonicalQuestion": "What would you do if post-launch data contradicts the user research that justified the feature?",
+      "fullAnswer": "I'd treat that as an opportunity to learn which assumption was wrong. Research can accurately describe customer frustration while still failing to predict whether a particular solution changes behaviour.\n\nI'd check whether the target segment was actually reached, whether the feature worked as intended and whether the metric captured the job we hoped to improve. I'd also follow up with customers who tried it and those who ignored it.\n\nDepending on the evidence, I might improve discoverability, change the workflow, test a narrower segment or stop investing. I wouldn't defend the original research or the feature just because we'd already committed to it.",
+      "experienceModuleId": "leadership-general",
+      "suggestedRoundRelevance": {
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "What if the team ships a feature on time, but adoption is poor?"
+    }
+  ]
+}

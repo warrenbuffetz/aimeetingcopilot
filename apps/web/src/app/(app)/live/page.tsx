@@ -30,6 +30,7 @@ import { usePersistedBoolean, usePersistedNumber } from "@/hooks/use-persisted-s
 import { toast } from "sonner";
 import { AudioSetupPanel, type AudioSource, type SttEngine } from "@/components/live/audio-setup-panel";
 import { DetectedQuestionConcepts } from "@/components/live/detected-question-concepts";
+import { AlternativeAnswerOption } from "@/components/live/alternative-answer-option";
 import { MatchedLibraryQuestionBlock } from "@/components/live/matched-library-question";
 import { RawTranscriptPanel } from "@/components/live/raw-transcript-panel";
 import { DetectedQuestionsPanel } from "@/components/live/detected-questions-panel";
@@ -83,6 +84,7 @@ export default function LiveInterviewPage() {
   const [mapFocus, setMapFocus] = useState<QuestionMapFocus | null>(null);
   const [selectedTranscriptIds, setSelectedTranscriptIds] = useState<string[]>([]);
   const [editRetryDraft, setEditRetryDraft] = useState<{ lineId: string; text: string } | null>(null);
+  const [pendingAltId, setPendingAltId] = useState<string | null>(null);
 
   const session = useLiveSession(profileId, {
     pinnedAnswer: pinned,
@@ -783,24 +785,21 @@ export default function LiveInterviewPage() {
                 <ul className="mt-2 space-y-1.5">
                   {session.result.alternativeMatches.map((alt) => (
                     <li key={alt.sourceId}>
-                      <button
-                        type="button"
-                        className={cn(
-                          "w-full px-2.5 py-2 text-left text-xs hover:bg-ic-alternative-surface",
-                          liveSemantic.surfaceAlternative
-                        )}
-                        onClick={() =>
+                      <AlternativeAnswerOption
+                        alt={alt}
+                        catalog={interviewNav.catalog}
+                        isPending={pendingAltId === alt.sourceId}
+                        onSelect={() => {
+                          setPendingAltId(alt.sourceId);
                           void runAnalyze(alt.libraryQuestion, {
                             forceMainPanel: !(pinned || session.answerLocked),
                             respectLock: Boolean(pinned) || session.answerLocked,
                             announce: true,
                             preserveDetectedQuestion: true,
                             analysisSource: "manual",
-                          })
-                        }
-                      >
-                        <span className={cn("font-medium", liveSemantic.textAnswer)}>{alt.matchedLabel}</span>
-                      </button>
+                          }).finally(() => setPendingAltId(null));
+                        }}
+                      />
                     </li>
                   ))}
                 </ul>

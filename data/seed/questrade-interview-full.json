@@ -30,7 +30,15 @@
       "category": "Motivation",
       "part": 1,
       "isPreferred": false,
-      "notes": "Use when they explicitly compare staying at Arc'teryx vs joining Questrade."
+      "notes": "Use when they explicitly compare staying at Arc'teryx vs joining Questrade.",
+      "detect": [
+        "You're leading membership at Arc'teryx, so why explore Questrade?",
+        "What would make you leave Arc'teryx for this banking role?",
+        "Why make a move now when you're still at Arc'teryx?",
+        "Why switch from Arc'teryx membership to everyday banking?",
+        "What's drawing you to Questrade at this stage?",
+        "If you're happy at Arc'teryx, why are we talking?"
+      ]
     },
     {
       "question": "Why move into everyday banking from rewards and loyalty?",
@@ -52,7 +60,15 @@
       "category": "Motivation",
       "part": 1,
       "isPreferred": true,
-      "notes": "If asked about Vancouver/GTA only: Arc'teryx has been moving toward more roles in Vancouver; you're planning to stay in the GTA long term. Do not lead with relocation unless asked."
+      "notes": "If asked about Vancouver/GTA only: Arc'teryx has been moving toward more roles in Vancouver; you're planning to stay in the GTA long term. Do not lead with relocation unless asked.",
+      "detect": [
+        "You're leading membership at Arc'teryx, so why explore Questrade?",
+        "What would make you leave Arc'teryx for this banking role?",
+        "Why make a move now when you're still at Arc'teryx?",
+        "Why switch from Arc'teryx membership to everyday banking?",
+        "What's drawing you to Questrade at this stage?",
+        "If you're happy at Arc'teryx, why are we talking?"
+      ]
     },
     {
       "question": "What makes you different from other Senior PM candidates?",
@@ -1852,6 +1868,1109 @@
         "How do you evaluate financial AI before launch?"
       ],
       "notes": "questrade-expansion-ai-2026-q21"
+    },
+    {
+      "id": "e8638ed2-3f9a-4c58-bc6b-5cfae62df074",
+      "question": "What are you currently working on at Arc'teryx?",
+      "answer": "One of the more interesting things I've been working on recently is tied to the launch of the Sperro SV, which is Arc'teryx's first circular hardshell.\n\nFor context, I've been leading the development of a broader membership program at Arc'teryx. The vision is to build a deeper relationship with customers beyond the initial purchase, particularly around gear ownership, product care, repairs and community experiences.\n\nWe'd secured about $5.2 million in funding for that program, but it's a fairly substantial platform build with dependencies across commerce, identity, customer service and our ReBIRD circularity operations.\n\nThe interesting challenge came when we needed to support the Sperro SV launch. The full membership platform wasn't going to be ready in time, but there were some genuinely valuable benefits we still wanted to offer customers buying the jacket.\n\nSo rather than trying to accelerate the entire membership roadmap, we made the decision to carve out a smaller, more focused release.\n\nThat included three years of unlimited out-of-warranty repairs, access to exclusive community events and an opportunity to win a Global Academy experience.\n\nMy focus was figuring out how to deliver those benefits independently of the larger platform, while making sure the customer experience and the operational teams behind it were actually ready.\n\nThat meant working closely with ReBIRD, customer service and the teams responsible for the jacket's digital product passport, while being really deliberate about what we owned and what needed to remain part of the longer-term membership roadmap.\n\nWe were able to support the September launch without having to wait for the entire membership platform.\n\nFor me, it was a good example of something that comes up quite often in product management. You can have a compelling long-term vision, but sometimes the right decision is to reduce scope, isolate the most valuable experience and deliver that well rather than trying to do everything at once.",
+      "category": "product experience",
+      "part": 1,
+      "isPreferred": true,
+      "detect": [
+        "What are you working on right now?",
+        "Tell me about your current role.",
+        "What's the latest product initiative you're leading?",
+        "Can you tell me more about your time at Arc'teryx?",
+        "What's happening with the membership program?",
+        "Tell me about the Sperro SV launch.",
+        "What have you been focused on recently?"
+      ],
+      "notes": "sperro-five-qa-2026-q01"
+    },
+    {
+      "id": "7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30",
+      "question": "How did you decide what to include in the smaller Sperro SV release?",
+      "answer": "I think the key was separating the benefits customers would actually receive from the infrastructure we eventually wanted to deliver them through.\n\nThe broader membership roadmap included things like enrollment, a member dashboard, gear registration, events and different ways for customers to engage with the brand.\n\nBut for Sperro SV, we didn't need to launch that entire experience to make the jacket's benefits meaningful.\n\nSo I looked at what was essential for that specific customer journey: what benefits were we promising, how would customers understand and access them, and could the teams responsible actually fulfil those promises?\n\nThat's where we focused.\n\nWe also had to be careful about dependencies. For example, the digital product passport registration was being delivered by another team, so we needed to coordinate around that rather than pull it into our scope.\n\nThe principle was to keep the customer promise intact while reducing the amount of new technology and cross-team coordination required for the launch.\n\nI think that's an important distinction. A smaller MVP shouldn't just mean fewer features. It should mean a more focused experience that still solves the problem properly.",
+      "category": "product experience",
+      "part": 1,
+      "isPreferred": false,
+      "detect": [
+        "How did you prioritize the Sperro SV launch?",
+        "What did you cut from the MVP?",
+        "Why didn't you wait for the full membership platform?",
+        "How did you decide which benefits were essential?",
+        "What trade-offs did you make for the circularity launch?",
+        "How did you manage dependencies across teams?"
+      ],
+      "notes": "sperro-five-qa-2026-q02"
+    },
+    {
+      "id": "c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+      "question": "Tell me about a product decision you got wrong.",
+      "answer": "One example that comes to mind is when I was working on cardholder engagement at HBC.\n\nWe were exploring ways to get customers to use their HBC Mastercard more frequently, and one of the approaches was introducing spending challenges through our Quests platform.\n\nMy initial thinking was that if we made the challenges relatively accessible, we'd get more people participating, build a habit around using the card and ultimately drive more spend.\n\nAnd we did see engagement. The problem was, when we started looking more closely at the behaviour, I realized I'd been putting too much weight on participation itself.\n\nSome of the customers completing those challenges were already fairly active cardholders. So we were potentially rewarding spending that would have happened anyway, which isn't a great use of incentive dollars.\n\nThat was the part I got wrong. I had focused too much on making the experience engaging without being disciplined enough upfront about what incremental behaviour we were actually trying to create.\n\nSo I pushed us to rethink how we were targeting the challenges. Instead of treating all cardholders the same, we'd look at where there was a genuine opportunity to change behaviour, like getting newer cardholders to make their next purchase or bringing back customers whose activity had declined.\n\nWe also needed to be much more deliberate about measurement, looking beyond completions to changes in spending behaviour and the cost of generating that activity.\n\nThe biggest lesson for me was that a product can look successful from an engagement standpoint and still be a poor business decision.\n\nSince then, I've been much more careful about agreeing on the behaviour we're trying to change before we start debating features or incentives.",
+      "category": "leadership behavioural",
+      "part": 5,
+      "isPreferred": false,
+      "detect": [
+        "Tell me about a mistake you made as a product manager.",
+        "Describe a product decision you regret.",
+        "When did you realize your product strategy was wrong?",
+        "Tell me about a time you changed your mind.",
+        "Describe a feature that performed well but didn't create business value.",
+        "What was a product failure you learned from?"
+      ],
+      "notes": "sperro-five-qa-2026-q03"
+    },
+    {
+      "id": "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+      "question": "You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?",
+      "answer": "That's a fair question, and it's something I have thought about.\n\nI'm proud of the work we've done to get the program to this point. Going from an initial idea to an approved investment and a clear delivery plan has been a meaningful part of my experience.\n\nOf course, I'd like to see the program succeed. But I also recognize that a product initiative should be bigger than any one person.\n\nWhat attracts me to Questrade isn't that I'm trying to walk away from the work at Arc'teryx. It's that the opportunity brings together a lot of the areas I've enjoyed most throughout my career: financial products, customer growth, payments and platform strategy.\n\nI see everyday banking as a space where I could apply that experience to a much broader customer relationship.\n\nSo I'd want to make sure I left Arc'teryx in a good position, but I also think it's reasonable to consider a role that aligns this closely with where I want to grow professionally.",
+      "category": "career motivation",
+      "part": 1,
+      "isPreferred": false,
+      "detect": [
+        "Why would you leave Arc'teryx before completing membership?",
+        "Why leave a $5.2 million project?",
+        "Don't you want to see the membership program launch?",
+        "Why are you considering Questrade now?",
+        "Why move on when you're leading such an important initiative?",
+        "Are you concerned about leaving your current team mid-project?",
+        "So why would you leave before seeing that launch?",
+        "Why would you leave before seeing it launch?",
+        "You're leading membership at Arc'teryx, so why explore Questrade?",
+        "What would make you leave Arc'teryx for this banking role?",
+        "Why make a move now when you're still at Arc'teryx?",
+        "Why switch from Arc'teryx membership to everyday banking?",
+        "What's drawing you to Questrade at this stage?",
+        "If you're happy at Arc'teryx, why are we talking?"
+      ],
+      "notes": "sperro-five-qa-2026-q04"
+    },
+    {
+      "id": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+      "question": "How would you manage transitioning away from an ongoing membership initiative?",
+      "answer": "I'd take that responsibility pretty seriously, especially given the scale of the membership initiative and the number of teams involved.\n\nI think the biggest risk when a product manager leaves isn't necessarily that the roadmap disappears. It's that a lot of the context behind the decisions leaves with them.\n\nWhy did we choose this platform? Why is one capability in the MVP and another deferred? What commitments have we made to different teams? Those are the things that aren't always obvious from looking at a Jira board.\n\nSo my first priority would be to make sure that context is documented properly.\n\nI'd work with my manager to identify someone who could take ownership of the product, then walk them through the strategy, the major decisions we've made, the dependencies and any unresolved risks.\n\nI'd also make sure there was a clear view of the upcoming milestones, particularly where teams like Commerce, Identity and ReBIRD are depending on us.\n\nAnd I wouldn't want to just hand over documentation and disappear. Where possible, I'd have the incoming owner participate in key meetings and decisions so they could build those relationships directly.\n\nObviously, the timing would need to be worked out with my leadership team. But I think a good product leader should be building clarity and shared ownership throughout the initiative anyway, not only when they're preparing to leave.\n\nMy goal would be to leave the team in a position where they can keep making good decisions and moving forward without being dependent on me personally.",
+      "category": "leadership behavioural",
+      "part": 5,
+      "isPreferred": false,
+      "detect": [
+        "What would your transition plan look like?",
+        "How would you hand over the membership program?",
+        "How would you ensure the project continues without you?",
+        "How would you transfer ownership of the roadmap?",
+        "What would happen to your team if you left?",
+        "How do you prevent knowledge loss when a PM leaves?",
+        "How would you manage a transition to Questrade?",
+        "How would you make sure the team could continue without you?",
+        "What happens to the membership program if you leave?",
+        "What happens to membership if you take another job?",
+        "Who owns the roadmap if you're not there?",
+        "Would the membership rollout suffer if you moved to Questrade?",
+        "What happens to the Sperro and membership work if you're gone?"
+      ],
+      "notes": "sperro-five-qa-2026-q05"
+    },
+    {
+      "id": "66530581-f599-40f5-8f97-5bf255953c87",
+      "question": "Why have you moved between several industries and employers?",
+      "answer": "The common thread hasn't really been the industry label. It's been building consumer products that connect acquisition, engagement and the platforms underneath.\n\nAt Aeroplan, that meant credit-card acquisition with bank partners. At HBC, it meant cardholder growth and commercial performance. At RBC, I worked on expanding Avion to non-bank customers and enabling payouts. Arc'teryx broadened that into a zero-to-one membership platform and substantial technology investment.\n\nEach role let me work on a different part of the customer and business problem. At this stage, I'm looking to bring those experiences together in one place, and everyday banking is a particularly good fit.",
+      "category": "career motivation",
+      "part": 1,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-9aa86e6ed4991be8",
+      "detect": [
+        "Walk me through why you've changed industries.",
+        "What's the thread connecting your career moves?",
+        "Why have you worked in airlines, retail, banking and outdoor apparel?",
+        "Is there a pattern behind your job changes?",
+        "How do your career moves fit together?",
+        "Why have you switched companies a few times?"
+      ]
+    },
+    {
+      "id": "a5e5c740-637c-4b42-8642-e889de82dcec",
+      "question": "What's the biggest learning curve for you if you join Questbank?",
+      "answer": "I think it's the depth of deposit-account operations and the exact constraints of Questrade's banking stack. I've worked with money movement, eligibility, risk and financial operations, but I wouldn't pretend that's identical to owning the full lifecycle of a chequing account.\n\nI'd close the gap deliberately: understand the core ledger and payment rails, walk through customer and operations journeys, map the controls with Risk and Treasury, and study the failure modes in actual data. In the first few weeks I'd want to know which decisions sit with Everyday Banking versus the core platform or payment teams.\n\nThe thing I can contribute immediately is product judgment around customer behaviour, regulated integration work and commercial trade-offs.",
+      "category": "career motivation",
+      "part": 1,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-e875f9d64c5a9e6a"
+    },
+    {
+      "id": "de31db47-3aea-4d26-be40-e0fa92423dd1",
+      "question": "What is the strongest single reason we should choose you for this job?",
+      "answer": "I'd say it's that I've worked across several parts of the financial customer journey, not just one feature category.\n\nAt Aeroplan I worked on acquiring credit-card customers, at HBC on conversion and ongoing cardholder economics, and at RBC on making an actual money-movement capability available to non-bank customers. At Arc'teryx I led substantial platform and membership planning, including the investment case.\n\nThat combination helps me think about Questbank as more than a collection of banking screens. It's a customer relationship that has to work commercially, operationally and technically. I also bring enough analytics experience to challenge whether the behaviours we're measuring are creating real value.",
+      "category": "career motivation",
+      "part": 1,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-67f356d158e5db0f"
+    },
+    {
+      "id": "55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1",
+      "question": "What concerns would you have about joining a business that is still establishing its banking offering?",
+      "answer": "The main uncertainty I'd want to understand is how much of the foundational operating model is established and how much is still being built: decision rights, service reliability, payments ownership and the handoffs between the core bank and customer-facing teams.\n\nThat's not a reason to avoid the role. It's part of why I find the opportunity interesting. But I would want a realistic view of the sequence: what must be dependable first, what is differentiated, and where the team has the ability to make decisions.\n\nI'd rather join knowing those trade-offs and help solve them than assume the work is only about adding attractive features to a new account.",
+      "category": "career motivation",
+      "part": 1,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-a186e0487d072c84"
+    },
+    {
+      "id": "e3acf896-6e83-4597-aeb6-088aba201987",
+      "question": "Are you more interested in building new products or improving existing ones?",
+      "answer": "Both, but I care more about the nature of the problem than the label. A new product is interesting because you have to establish the proposition and make hard scope decisions. An existing product can be just as challenging when there's a meaningful adoption, economics or reliability problem to solve.\n\nI've done the early platform and business-case work at Arc'teryx, and I've also optimized live financial experiences at RBC, HBC and Aeroplan. For Questbank, the likely reality is a blend: establishing new everyday-banking habits while making the core journeys more reliable and useful over time.\n\nThat's the combination that appeals to me.",
+      "category": "career motivation",
+      "part": 1,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-07aa78c3f0321f51"
+    },
+    {
+      "id": "08bed145-68a4-4f1f-a500-1287247345bc",
+      "question": "What would you actually deliver in your first 30 days?",
+      "answer": "I wouldn't promise a major launch before understanding the banking dependencies, but I would aim to deliver something tangible.\n\nBy day 30, I'd want a shared map of the highest-value customer journeys, their owners and their biggest friction points. That would come from looking at the funnel, support reasons, payment exceptions and talking directly with the teams that operate the product.\n\nI'd also propose a first measurement baseline: funded-account rate, recurring deposit behaviour, successful money movement and the most important reliability guardrails. If we discovered a contained issue we could safely fix quickly, I'd pursue it. The deliverable is shared clarity and a prioritized decision, not just a stack of introductory meetings.",
+      "category": "career motivation",
+      "part": 1,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-c28bf6e58efb1cc2"
+    },
+    {
+      "id": "5c05a272-9334-44b8-bddd-fdbd4a50f6d3",
+      "question": "What happened if an Avion member didn't have Interac Autodeposit enabled?",
+      "answer": "Autodeposit was an important eligibility consideration because we were sending cashback to the email associated with the member. I wouldn't frame the experience as though every customer with an email address could automatically receive funds.\n\nFrom a product standpoint, the question is whether we can establish eligibility before offering the withdrawal and give an understandable path if the member isn't eligible. We'd rather explain the requirement clearly than accept a request we know can't complete through the intended flow.\n\nIn an interview I'd separate the actual Avion rules from a general recommendation: verify eligibility, don't promise delivery prematurely, and make failure and support states clear.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-783641cec16f6188",
+      "detect": [
+        "What if an Avion customer didn't use Interac Autodeposit?",
+        "How did you handle cashback withdrawals without Autodeposit?",
+        "Could someone cash out without Interac Autodeposit enabled?",
+        "What happened when a cashback member wasn't eligible for Autodeposit?",
+        "Walk me through the payout eligibility requirement for Autodeposit.",
+        "If their Interac auto deposit wasn't set up, what did the member see?"
+      ]
+    },
+    {
+      "id": "c864344c-3df9-4f30-b478-278b4e58f8d4",
+      "question": "How would you prevent a customer from receiving the same cashback payout twice?",
+      "answer": "I'd make the withdrawal request uniquely identifiable and ensure that retrying it doesn't create a new financial instruction. An idempotency key tied to the logical payout is one implementation pattern I'd discuss with engineering.\n\nThe important distinction is between a new request and a retry of the same request. If the API times out after acceptance, the app should investigate the existing transaction state rather than blindly submit another transfer.\n\nI'd also want limits and payout eligibility checked against the financial record, with reconciliation finding any mismatch between our request history and settlement activity. The product requirement is simple: a customer can recover from a timeout without getting paid twice or losing track of their money.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-47da105a5246e62e",
+      "detect": [
+        "How did you stop customers getting paid twice?",
+        "What stops duplicate cashback withdrawals?",
+        "What happens if someone hits withdraw two times?",
+        "How would you handle a timeout without issuing a second payout?",
+        "How do you make the cash-out request idempotent?",
+        "What's your duplicate-payment prevention strategy?"
+      ]
+    },
+    {
+      "id": "bfaa86a1-2c06-4c4f-880a-bf2718e8a330",
+      "question": "What would the customer see while a cashback payout is pending or being investigated?",
+      "answer": "I'd distinguish a request being received from the money being sent or confirmed. The customer should see a plain-language status, the amount, when they requested it and what happens next.\n\nIf a payout is under investigation, I'd avoid telling them it failed or succeeded before we know. I'd rather say we're confirming its status, give a realistic expectation if one is available, and make the support path easy to find.\n\nThe status should come from the actual payments and settlement workflow rather than a front-end timer. A good experience here reduces duplicate withdrawal attempts and support anxiety while keeping the financial record accurate.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-723124b41a88671e",
+      "detect": [
+        "What does a customer see when their cash-out is still processing?",
+        "What status do you show for a pending Interac payout?",
+        "How do you communicate a delayed cashback withdrawal?",
+        "What if the transfer's outcome is unknown?",
+        "How would customers know their cashback was on the way?",
+        "What would the Avion app say while a payout was under review?"
+      ]
+    },
+    {
+      "id": "80a4e168-83f0-45ba-a9b7-bde17123566a",
+      "question": "Who made the final decision when the payments team, Risk and Product disagreed?",
+      "answer": "I wouldn't imply I had unilateral authority over Risk controls or enterprise payment infrastructure. My role was to own the consumer product requirements and coordinate the decisions needed for the customer experience to work.\n\nIf teams disagreed, I'd make the decision explicit: what control is mandatory, what implementation choices are flexible, what customer harm we're trying to avoid and who has authority over each part. Sometimes the right outcome is to change the product flow rather than ask a control owner to waive a requirement.\n\nAt RBC, that cross-functional alignment was a big part of the work. It taught me to distinguish influencing a decision from formally owning another team's risk acceptance.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-301fb13e986ed4d0",
+      "detect": [
+        "Who had decision authority when Risk and Product disagreed?",
+        "What did you own versus the payments team?",
+        "Who signed off on the payout controls?",
+        "If AML said no, who made the call?",
+        "How did you resolve a disagreement with Financial Operations?",
+        "Walk me through who actually had final say on that payment decision."
+      ]
+    },
+    {
+      "id": "14712a6a-881f-4c8c-9f98-9b3359211669",
+      "question": "What were the leading indicators before you could measure meaningful payout volume?",
+      "answer": "Before looking at annualized volume, I'd want to know whether the flow was usable and operationally safe. Leading indicators would include how many eligible members reached the withdrawal option, how many initiated a request, how many completed the required steps and where they dropped off.\n\nAlongside conversion, I'd watch failed or returned transfers, support contact reasons and settlement exceptions. Those are particularly important because a payment feature can look popular while creating hidden operational work.\n\nI'd be careful not to claim historical values I haven't verified. The broader outcome I can support is that the capability enabled more than $1 million in annualized consumer cashback withdrawals.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-992afcd16dd5ffcb"
+    },
+    {
+      "id": "79d4fa99-20bc-4cff-8c9c-0b25705550ca",
+      "question": "How did you turn regulatory and operations requirements into stories engineers could build?",
+      "answer": "I'd start by translating each requirement into an observable customer or system behaviour. For example: when is a customer eligible, what limits apply, what state should the UI show, and what information must Operations have to reconcile or investigate a payout?\n\nThe stories then need acceptance criteria for more than the happy path. What happens when eligibility changes, a request is repeated, the provider is slow or a settlement entry doesn't match?\n\nThe best requirements give engineering enough clarity on the intended behaviour while leaving room for the team to choose the implementation. I'd validate those cases with Risk, Finance and the payments service owners before committing to launch.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-0ee11c5bb2049c12"
+    },
+    {
+      "id": "c22bc35e-41a0-4bc7-9b53-6d19da3ecfef",
+      "question": "Why did you use the member's email address, and what if that address changed?",
+      "answer": "The member's email was part of how we identified the destination for an eligible Interac payout. That meant the quality of the customer identity and contact information was operationally important, not just a communications detail.\n\nIf the address changed, I'd want to know which email was authorized and evaluated for eligibility at the moment of payout, and whether changes require revalidation. A payout shouldn't silently switch destinations because a profile field changed during processing.\n\nI wouldn't invent the exact production rule without checking it, but the product principle is to bind the payment instruction to a validated destination and keep an auditable record of what was authorized.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-d17b8d965332251b"
+    },
+    {
+      "id": "03065da4-6d80-432b-bca7-c034fdf0ff52",
+      "question": "If payout failures doubled after launch, how would you investigate the first week?",
+      "answer": "I'd first break failures down by stage and reason: eligibility, request initiation, provider acceptance, delivery, return and reconciliation. I'd compare the increase by app version, customer segment and any payment-service or partner changes.\n\nI'd also ask whether the denominator changed. A growth campaign might bring in more first-time or ineligible customers, so the raw count alone could mislead us.\n\nFor customer impact, I'd distinguish money actually at risk from requests that were safely rejected. Then I'd prioritize containment for the harmful cases, communicate clearly, and work with payment operations on a root-cause fix. I'd keep an eye on repeat attempts so the investigation doesn't accidentally create duplicate transfers.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-baa87ecc283d509e"
+    },
+    {
+      "id": "0cf5b127-23d5-442e-b968-59bafc1ff0b3",
+      "question": "How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?",
+      "answer": "I wouldn't assume the two entry points should look identical because their authentication and account relationships are different. But the value proposition and the next step should feel equally understandable.\n\nFor non-RBC members, a clear sign-up path, identity capture, terms and a reliable way to access the product become especially important. I'd compare conversion and first-value completion across the two segments, while accounting for their different journeys.\n\nIf one group struggled, I'd look at authentication friction, missing information and confusing eligibility rules before adding incentives. The important point from Avion Select was opening a financial-services-adjacent product to an audience that wasn't already inside the bank's usual sign-in flow.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-55d503d1ee7ba2f4"
+    },
+    {
+      "id": "cd39ab59-8574-443c-b78e-a9dfa3010185",
+      "question": "Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product?",
+      "answer": "Not automatically. The best payment rail depends on the use case, frequency, cost, customer experience and operational constraints.\n\nFor an occasional consumer cashback payout, Interac offered a practical path using infrastructure that already existed at RBC. That doesn't mean it's the right rail for recurring payroll deposits or pre-authorized bill payments. Those have different initiation patterns, returns, timing and customer expectations.\n\nI'd start by mapping the user journey and the actual money movement, then compare the available rails on reliability, economics, eligibility and exception handling. The lesson from RBC wasn't to prefer Interac everywhere. It was to reuse proven capabilities when they genuinely fit the problem.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-c106931a80bdaba7"
+    },
+    {
+      "id": "1c3f6b10-2b62-4807-bffd-ef21beef30d7",
+      "question": "What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?",
+      "answer": "I'd separate the smaller Sperro SV benefits release from the broader membership platform we're building. For the September jacket launch, our work supported the customer benefits, including three years of unlimited out-of-warranty repairs, access to exclusive community events and a chance to win a Global Academy experience. The digital product passport registration was delivered by a separate team; we coordinated with them rather than claiming that work as ours.\n\nThe wider membership program is a different scope. We secured $5.2 million in approved funding, defined the MVP and its integration direction, but I wouldn't describe those milestones as proof that the full platform has launched or generated adoption or ROI. What matters is being precise about what customers can use today versus what we're still building.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-c8a85beb577449d9",
+      "detect": [
+        "What's actually launched from the membership plan so far?",
+        "Which Arc'teryx membership capabilities are live versus planned?",
+        "What delivered for Sperro SV, and what's still on the roadmap?",
+        "What's shipping now versus later on the Arc teryx membership program?",
+        "Has the full membership platform launched yet?",
+        "What was in the September Sperro launch versus the full membership MVP?"
+      ]
+    },
+    {
+      "id": "efc27de7-507e-4d96-b95d-446de1f5badf",
+      "question": "What assumptions in the $5.2 million investment case were most sensitive?",
+      "answer": "I'd distinguish the investment decision from a proven return, because much of the value was still forecast. For a membership platform, the sensitive assumptions are likely adoption, incremental engagement with services, long-term retention, and the cost and sequencing of integrations.\n\nI would want Finance to see a range, not a single precise-looking outcome. What happens if member adoption is slower, integration costs rise, or the value comes later than expected?\n\nOur work established enough confidence to obtain approval, but I wouldn't present those forecasts as realized benefits. In a panel discussion, I'd focus on how we made the trade-offs visible and what we'd need to validate after launch.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-22362777e51489a8",
+      "detect": [
+        "What drove the assumptions behind the five point two million business case?",
+        "Which assumptions mattered most in the membership funding case?",
+        "What would put the $5.2 million investment return at risk?",
+        "What did you stress-test in the Arc'teryx membership financial model?",
+        "How sensitive was the membership case to adoption?",
+        "Which forecast assumption would you challenge first?"
+      ]
+    },
+    {
+      "id": "73b7a947-02f5-4298-8592-4badfbcbb139",
+      "question": "What would have changed your recommendation from buy to build?",
+      "answer": "I'd reconsider the recommendation if the vendor created more long-term constraint than leverage. For example, if its core data model couldn't support the customer journeys, the integration cost erased the time advantage, or important capabilities were so proprietary that we'd struggle to evolve them.\n\nI'd also weigh how strategically differentiating the capability really was. There are some experiences we should own closely, but that doesn't mean building commodity loyalty infrastructure from scratch.\n\nAt Arc'teryx, we evaluated five vendors and chose a headless direction. The reported delivery-time benefit was an estimate against the custom-build alternative, not a realized saving from a launched platform.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-490b32859c4684f4"
+    },
+    {
+      "id": "31d8ded4-7dc2-4d0b-ad30-009b1f92748b",
+      "question": "What did you cut from the membership MVP, and how did you defend those trade-offs?",
+      "answer": "I was trying to protect a coherent first member experience without making the platform dependent on every possible channel and operational integration. The essential journey was enrollment, a view of membership and gear, clear benefits and a practical way for service teams to support members.\n\nCapabilities like deeper store enrollment, full native-app parity and advanced service workflows could come later if their dependencies weren't ready. That's a different decision from saying they had no value.\n\nI'd explain the trade-off in terms of customer journeys enabled, dependency risk and whether the MVP could actually be measured. The useful lesson was that 'smaller' only works if the remaining experience is still complete enough to create value.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-037002a66f7c0bea"
+    },
+    {
+      "id": "9b1df81f-65b7-4b77-81af-4ae48b03eb79",
+      "question": "How would you test whether customers wanted membership benefits before building the full platform?",
+      "answer": "I'd test the specific customer job before testing a big membership proposition. For example, do jacket owners struggle to understand repair eligibility or discover how to maintain a product they intend to keep for years?\n\nI'd compare a simpler guided experience against the existing service journey, measure successful task completion and support contacts, and ask customers whether the benefits were genuinely useful. I'd also look for repeated behaviour rather than relying only on stated interest.\n\nIf a small test showed customers valued clearer access to existing services, that would strengthen the case for an integrated program. If it didn't, I'd challenge whether a broad membership platform was solving the right problem.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-bea4a6b41c5964d6"
+    },
+    {
+      "id": "2af89a04-ab52-40bd-928d-96a3122fffd1",
+      "question": "How do you know the HBC application improvement wasn't caused by a different applicant mix?",
+      "answer": "I'd want the comparison to use a consistent definition of application start and completion, and I'd look at who entered the funnel in each period. Changes in campaign source, device, credit profile or promotions can make the conversion rate move even when the experience doesn't improve.\n\nThe strongest approach is a randomized experiment where the applicant mix should be balanced. If we couldn't do that, I'd segment cohorts and be much more conservative about attribution.\n\nI can speak to the reported 15% improvement in completions. I'd avoid claiming a specific experimental design or statistical result unless it's supported by what the team actually measured.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-59161acf4bf0b119",
+      "detect": [
+        "How did you know the HBC application lift was real?",
+        "Could the fifteen percent conversion increase be from a different customer mix?",
+        "How did you separate better UX from a change in applicants?",
+        "What did you control for in the credit-card application funnel?",
+        "Could the HBC results just reflect different marketing traffic?",
+        "How did you establish attribution for application completions?"
+      ]
+    },
+    {
+      "id": "0f41544d-2a2d-4b4b-bb41-f89df44c05d0",
+      "question": "Which step in a credit-card application funnel would you inspect first, and why?",
+      "answer": "I'd inspect the highest-friction step where we could plausibly improve the experience without weakening underwriting or compliance requirements. I'd look at drop-off by device, traffic source and field-level error patterns rather than assume the longest screen is the problem.\n\nFor a partner-issued credit card, I'd also separate the part of the application we own from the handoff and approval journey the issuer owns. A better-looking landing page doesn't help much if customers get lost at the transition.\n\nI'd prioritize a hypothesis we can actually test, such as clearer eligibility information or saving progress, and define the outcome as completed applications rather than clicks alone.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-4b0212c6f3f74d1f"
+    },
+    {
+      "id": "cee35d92-74ae-4d9b-a713-3594c8276e17",
+      "question": "Could the HBC incentives have increased spending while destroying profitability?",
+      "answer": "Absolutely. A lift in card spend by itself is not the same as value creation. We'd want to distinguish incremental spend from spend that would have happened anyway, then subtract rewards or incentive expense and consider the economics of the portfolio.\n\nI'd also worry about customers timing purchases to earn a reward without changing longer-term habits. The right evaluation looks at margin or contribution, repeat behaviour and the duration of the effect, ideally against a comparison group.\n\nThat's why I describe the 10% LTV change as modeled and the spending effect separately. Neither should be taken as proof that every individual promotion was profitable.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-43490de1e099ede8",
+      "detect": [
+        "Did the Quests incentive program actually make money?",
+        "Could rewards have increased spend but hurt contribution?",
+        "What if the cardholder incentives cost more than the lift?",
+        "How did you think about incremental spending versus rewarding existing spending?",
+        "Were the HBC promotion economics actually positive?",
+        "How do you know cardholder spending growth wasn't just subsidized?"
+      ]
+    },
+    {
+      "id": "4333a9f3-b07d-4d8e-8676-6a7ca9012116",
+      "question": "What did you control in the HBC card portfolio, and what was controlled by Neo?",
+      "answer": "I owned the product growth roadmap and commercial decisions within the digital ecosystem, not the bank's credit underwriting or the entire lending balance sheet.\n\nOur Neo partnership meant decisions needed clear boundaries: what the retailer could change in acquisition and engagement, what the issuing partner owned in credit decisioning and operational controls, and where we had to coordinate changes.\n\nWhen I talk about financial impact, I'm referring to the cardholder growth and engagement initiatives we influenced. I wouldn't suggest I personally set credit policy or that the approval speed came from my UX redesign. That distinction is important when translating the experience into everyday banking.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-4bf5985a1de015b1"
+    },
+    {
+      "id": "233f8d5d-fa5a-45a7-a301-39c4e3743edb",
+      "question": "How did you align TD, CIBC and Amex when the banks had different priorities?",
+      "answer": "I'd start from the shared customer journey and be explicit about where issuer priorities diverged. Different banks could have different offers, eligibility rules, application experiences or operational constraints, so one blanket implementation wasn't necessarily sensible.\n\nThe product role is to establish what the customer needs to understand before the handoff, agree on the data and measurement boundaries, and make trade-offs visible to the partners.\n\nMy Aeroplan work involved co-brand acquisition across these issuer relationships. I wouldn't imply I controlled their underwriting or internal roadmaps. What I can speak to is using product and analytics to improve the acquisition journeys we influenced and coordinating the bank-dependent pieces.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-2aeba274e494fdf2"
+    },
+    {
+      "id": "195a8189-fe48-4c11-9ebe-8f2741146841",
+      "question": "What happened after the customer clicked Apply—how did you know they became an approved cardholder?",
+      "answer": "I'd separate our digital funnel from the issuer's application and approval funnel. An application click or redirect isn't an approved new cardholder, and reporting them as the same outcome would overstate impact.\n\nWhere partner reporting made it possible, I'd reconcile downstream acquisition outcomes back to the source and offer experience, with the right privacy and aggregation controls. Where it didn't, I'd label the upstream measure honestly and avoid claiming the full effect through approval.\n\nThe important distinction is that the acquisition growth and conversion improvements are related but not interchangeable. I'd always explain which denominator and stage a metric refers to.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-6155efde5e65801e"
+    },
+    {
+      "id": "bb903f25-6886-4106-ab80-1fa344cd8a05",
+      "question": "How did you prevent one card partner's offer from undermining another's?",
+      "answer": "I'd want a clear set of merchandising rules and a customer-first way to explain each offer. When a customer is comparing cards, the goal isn't to make every bank look identical. It's to make trade-offs understandable and ensure the experience is accurate for the partner's terms.\n\nI'd also agree with the business and issuer teams on what we were optimizing: total qualified acquisition, offer relevance and long-term economics, not simply shifting the same customer from one bank partner to another.\n\nA controlled test and partner-level reporting could help reveal whether one treatment generated truly incremental applications or just redistributed demand across offers.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-a0d40d083ec744ef"
+    },
+    {
+      "id": "f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1",
+      "question": "What's the difference between acquiring a cardholder, activating one and retaining one?",
+      "answer": "They represent different steps in the relationship. Acquisition means we've gained a new customer or account. Activation means that customer has taken the first meaningful behaviour, such as a qualifying purchase, within a defined period. Retention means that useful behaviour continues over later periods.\n\nFor a card product, treating all three as one number hides very different problems. A strong application funnel with weak first purchase may point to onboarding or proposition issues; good activation with poor repeat spend may point to value or habit formation.\n\nAt HBC, that distinction informed how I thought about the cardholder lifecycle rather than optimizing application conversion in isolation.",
+      "category": "product experience",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-d33952d1ddef7236"
+    },
+    {
+      "id": "f21a166b-7a0a-41a9-a919-44781cf782a2",
+      "question": "What if customers trust Questrade for investments but refuse to deposit their salary?",
+      "answer": "I wouldn't assume an investment relationship automatically earns a banking relationship. I'd find out what specifically makes customers hesitant: uncertainty around bill payments, access to cash, service reliability, switching effort or simply no compelling benefit.\n\nThen I'd segment the problem. People who frequently move money between bank and brokerage may have a natural first use case, even if they aren't ready to switch payroll. I'd solve that reliably before trying to persuade everyone to move their entire financial life.\n\nI'd measure progression from trial to funded account to recurring activity. The product has to earn primary-account behaviour over time; it's not something we get just because the customer already has a TFSA.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-8fc7cbfb4ebf7de3",
+      "detect": [
+        "What if brokerage customers won't move their paycheque to Questrade?",
+        "How do you earn customers' trust for payroll, not just investments?",
+        "Why would an investor choose to deposit salary into Questbank?",
+        "What if someone likes Questrade investing but keeps their main bank?",
+        "How do you get from an investing relationship to primary banking?",
+        "What if customers refuse to switch direct deposit?"
+      ]
+    },
+    {
+      "id": "94fa46b3-57ae-43a9-a217-84dc00d8a565",
+      "question": "Which Questrade investing customers would you deliberately not target first for banking?",
+      "answer": "I'd avoid making an early acquisition bet on customers who have little reason to move cash through the platform or who would be disproportionately costly to serve for the expected value.\n\nFor example, a very passive long-term investor with no regular funding activity might love their brokerage account but have no immediate banking pain point. That doesn't mean we exclude them forever. It means our first proposition should focus on people where a connected cash-and-investing experience solves something observable.\n\nI'd test segment economics and actual behaviours rather than simply targeting the largest asset balances. A high-AUA client isn't automatically the best candidate for sustained daily banking use.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-bf436c9433d0107c",
+      "detect": [
+        "Which investors would you exclude from your first banking target segment?",
+        "Who shouldn't we target for Questbank first?",
+        "Would you prioritize every Questrade customer for banking?",
+        "Which existing brokerage cohorts are least likely to adopt everyday banking?",
+        "Are high-AUA investors always the best banking prospects?",
+        "How would you choose who not to market the bank account to?"
+      ]
+    },
+    {
+      "id": "e896f79a-bee7-4d99-a673-d337bb38cd38",
+      "question": "How would you design a safe payroll-switching experience when the employer's first deposit could fail?",
+      "answer": "I wouldn't treat switching payroll as a single click. It's a process with an employer dependency and potentially serious consequences if it goes wrong.\n\nI'd give customers clear instructions or supported switching assistance, explain that an employer may need time to update details, and avoid implying the switch is complete before we have evidence. I'd encourage a transitional period where customers can verify the first successful deposit before relying entirely on the new account for bills.\n\nInternally, I'd define how we recognize successful recurring income and what support should do when a deposit is missing. The goal is to reduce switching friction without giving customers false certainty about their next payday.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-3eaa68220372868b",
+      "detect": [
+        "How would you make payroll switching safe for the first paycheque?",
+        "What if the employer doesn't switch direct deposit in time?",
+        "How do you design the first payroll deposit experience?",
+        "What would you do if a customer's first salary doesn't arrive?",
+        "How do you help someone move salary without missing bill payments?",
+        "How do you handle employer-side delays when switching payroll?"
+      ]
+    },
+    {
+      "id": "c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42",
+      "question": "What if a customer receives one payroll deposit and then stops using Questbank?",
+      "answer": "I'd call that an initial conversion, not a successful primary-bank relationship. One income event could be a test, a split deposit or even an incentive-driven behaviour.\n\nI'd define sustained payroll use across several expected cycles and look for connected activity: bill payments, card spending, retained balances and repeated customer use. For people with irregular income, I'd use a more flexible classification so the metric doesn't unfairly exclude them.\n\nI'd also look at why the relationship stopped. If people deposit salary and immediately transfer it elsewhere, that may tell us the account is functioning as a pass-through rather than becoming useful for everyday banking.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-a6c3f582931f677c",
+      "detect": [
+        "What if the customer only deposits their salary once?",
+        "How do you know payroll switching will stick?",
+        "What if someone gets one paycheque and stops using the account?",
+        "Does the first direct deposit count as primary banking?",
+        "How do you measure sustained payroll activity rather than one-time setup?",
+        "What if the customer opens a banking account just for a first deposit bonus?"
+      ]
+    },
+    {
+      "id": "855c7ca3-5897-4baa-8c59-99f3c30cdd6e",
+      "question": "How would you win customers without paying an expensive cash sign-up bonus?",
+      "answer": "I'd focus on a proposition that makes a repeated customer task materially easier. For Questrade, an obvious area to test is moving money between everyday cash needs and investments, with accurate balances and predictable availability.\n\nI'd look for customer segments with existing friction, then test the value proposition before spending heavily on broad incentives. Better cash visibility, simpler recurring contributions or fewer steps to move funds may matter more than an offer that expires after the first deposit.\n\nI'd still model the economics. If customers only join for the bonus and leave, we've bought a temporary metric rather than a durable relationship. I'd optimize for retention and contribution, not merely the cost per opened account.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-0f5c5a1cd82b4f3d",
+      "detect": [
+        "How would you grow Questbank without a big sign-up incentive?",
+        "What if we don't offer a cash bonus?",
+        "How do you compete without paying people to open an account?",
+        "What would make investors choose our bank without a promotion?",
+        "How would you build adoption with a limited acquisition budget?",
+        "What's the organic value proposition for Questbank?"
+      ]
+    },
+    {
+      "id": "698c2786-3368-4df3-917e-de3a535d352d",
+      "question": "If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?",
+      "answer": "I'd start with jobs that connect directly to the actions Questrade can actually enable, rather than another view of spending categories.\n\nAn investing customer may want to know what cash is genuinely available for a contribution, what bills are coming up, and what happens to their liquidity if they transfer funds. A financial hub could make those decisions more understandable, but only if the data is accurate and the next action is convenient.\n\nI'd test whether the hub changes useful customer behaviour, such as successful recurring contributions or fewer avoidable cash shortages, rather than only whether people open a dashboard. The differentiator has to be actionability and trust, not prettier charts.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-1b11b5880756e558"
+    },
+    {
+      "id": "381e64d9-0684-493b-8e36-9a2a5636966c",
+      "question": "What should the financial hub do if an external bank connection is stale or disconnected?",
+      "answer": "It should make that limitation obvious before customers act on the information. I'd show the last successful refresh, identify which accounts are unavailable and avoid quietly presenting an incomplete financial picture as current.\n\nIf an insight depends on missing account data, the app should qualify the conclusion or withhold it. For example, it shouldn't confidently say someone can invest extra cash if we can't see obligations from a disconnected account.\n\nI'd give the customer a clear reconnect path and continue to show verified Questrade data normally. The core design principle is that a partial view can still be useful, but it must never masquerade as a complete one.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-aee698b800a5a0c3"
+    },
+    {
+      "id": "86fb0ff0-ee19-402f-bbd3-4d478d902d9e",
+      "question": "Why would a bank not want unlimited deposits if customers are willing to bring them?",
+      "answer": "Deposits are a funding source, but they aren't automatically profitable. The bank has to consider the rate it pays, how stable those balances are, how the funds can be deployed, liquidity and capital constraints, and the cost of servicing the customers.\n\nA large promotional inflow that disappears as soon as the offer ends may be far less useful than smaller, stable operating balances from customers who transact regularly.\n\nI'd partner with Finance and Treasury to understand the marginal contribution of the deposits we're attracting. As a PM, I'd want to know whether our incentives are drawing in the right kind of relationship, not just making the balance chart look impressive.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-7348fb24d0cce3df"
+    },
+    {
+      "id": "cfe370bc-2273-4055-b0e2-d1adbb96cbf1",
+      "question": "What happens to your banking growth strategy when interest rates fall?",
+      "answer": "I'd avoid building the entire value proposition around one temporarily attractive savings rate. A rate can help customers try the account, but it can also attract people who move their money as soon as someone else pays more.\n\nI'd look at how sensitive each segment is to rates versus convenience, reliable payments, integrations and service. If rates fall, I'd update the economics with Treasury and examine whether customers continue to use the product for real everyday activity.\n\nThe longer-term opportunity is to become useful in a customer's routine, not win an endless bidding contest for promotional balances. I'd measure retained relationships and contribution through different rate environments.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-8034ad0461d8c4d2"
+    },
+    {
+      "id": "adc80bff-8a24-4eaf-9c48-8b050d759ab1",
+      "question": "Would you consider a secondary banking relationship a product failure?",
+      "answer": "No. I would distinguish the customer's current stage from the long-term opportunity. For someone who's had the same primary bank for years, using Questbank for a recurring contribution or a portion of pay may be a rational first step.\n\nI'd measure the behaviour we actually earned and whether it deepens over time. A customer who consistently funds an investment account through Questbank may have a valuable relationship even if their rent still comes out of another bank.\n\nThe risk is declaring victory too early. I'd keep primary banking as a meaningful ambition, but recognize that a secondary relationship can be a profitable and useful stage on the way there.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-7dc542ebf39e6dc6"
+    },
+    {
+      "id": "2fb1eeab-7958-4099-9216-e2b88d0de5c5",
+      "question": "It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?",
+      "answer": "First I need to establish whether the money is delayed, rejected, posted but not visible, or missing upstream. Those require different responses, and I wouldn't let the app tell customers their payroll failed until we've confirmed it.\n\nI'd convene the incident owners across Engineering, Operations, payments and the banking core, establish impact and an incident lead, and preserve accurate transaction tracing. If there's customer harm, we'd prioritize containment and communication rather than feature work.\n\nI'd also ask Support for a consistent message that clearly distinguishes confirmed facts from what we're still investigating. The immediate goal is protecting customers and restoring a reliable picture of their funds, not racing to a premature root-cause explanation.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-2aae75bc9cff3ab9",
+      "detect": [
+        "It's payroll day and customer paycheques are missing. What's your first move?",
+        "What would you do in the first fifteen minutes of a salary outage?",
+        "A hundred employees say direct deposit hasn't landed. Where do you start?",
+        "How do you triage a major payroll deposit incident?",
+        "What's your immediate response when customer salaries are delayed?",
+        "How do you determine if a payroll problem is with the app or payment rail?"
+      ]
+    },
+    {
+      "id": "0f093e83-c8de-44bd-9398-e0f186a814df",
+      "question": "Why might my available balance be different from my posted balance?",
+      "answer": "A posted balance reflects entries recorded on the account ledger, while available funds may account for things like pending holds or restrictions that affect what the customer can spend right now.\n\nThe key is not to present one number as universally correct for every customer decision. The app should make clear what is posted, what is pending and what is available, using data from authoritative systems.\n\nI'd test tricky scenarios: a pending card authorization, a released hold, a returned deposit or a delayed state update. If the systems disagree, the customer experience should acknowledge the uncertainty rather than manufacture a precise-looking available amount.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-52438287a208eb8e",
+      "detect": [
+        "Why is my available balance not my account balance?",
+        "What's the difference between posted and available funds?",
+        "Why can customers see money they can't spend?",
+        "How would you explain an account hold affecting available balance?",
+        "Why would my banking app show two different balance numbers?",
+        "What can cause available funds to differ from posted transactions?"
+      ]
+    },
+    {
+      "id": "ec3a7c0b-b921-45be-8548-df8c95b2f713",
+      "question": "A customer sees the same purchase twice, once pending and once posted. How would you fix it?",
+      "answer": "I'd first make sure we're not looking at two actual financial events. A pending authorization and a later posted clearing transaction can represent stages of the same purchase, but their identifiers and amounts may differ.\n\nThe experience should link them where we have reliable evidence and replace or resolve the pending presentation when the posted record arrives, rather than showing both as separate settled spending. I'd ask engineering how we correlate those events and what exceptions exist for tips, fuel or adjusted amounts.\n\nI'd also give Support a way to see the underlying states. The goal is accurate display without hiding a genuine duplicate charge.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-81f59cee90ddc479",
+      "detect": [
+        "Why does the same debit purchase appear twice?",
+        "How do you handle a pending and settled charge for one purchase?",
+        "What if my card transaction is duplicated in the app?",
+        "Is the customer charged twice or is one entry just a hold?",
+        "How would you link card authorization to posting?",
+        "How do you prevent duplicate-looking card transactions?"
+      ]
+    },
+    {
+      "id": "d8be8368-b755-4baf-8494-3cf9a9f8a69e",
+      "question": "Card payments start declining, but the banking app and core ledger are online. Where do you look?",
+      "answer": "I'd treat card authorization as its own end-to-end service, not assume the whole banking product is healthy because account login works.\n\nI'd break declines down by merchant category, processor response, card status, geography, balance state and time. Are we seeing legitimate insufficient-funds decisions, new fraud rules, a card-network problem or an integration outage?\n\nI wouldn't suggest disabling risk controls broadly just to improve approval rates. I'd bring the card processor, Risk, Operations and engineering owners together, focus on the affected cohort and distinguish genuine declines from technical failures.\n\nFor customers, we'd want a clear, safe support path and communication that doesn't disclose sensitive fraud logic.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-538e221cc463571b",
+      "detect": [
+        "Cards are declining while the app stays up. How do you troubleshoot?",
+        "Where do you look when debit transactions start failing?",
+        "What if the core banking system is fine but authorization fails?",
+        "Card acceptance falls but balances still work. What's the cause?",
+        "How do you separate fraud declines from technical card failures?",
+        "What would you check first during a spike in debit-card declines?"
+      ]
+    },
+    {
+      "id": "4445d2e9-0632-4f42-b1a8-6a60adc01012",
+      "question": "How would you design a new payee or recipient verification experience?",
+      "answer": "I'd start with the harm we're trying to prevent: customers sending money to the wrong destination or fraudsters changing payout details. Verification should be proportional to the action and the risk.\n\nI'd want clear recipient information, appropriate authentication or step-up checks for sensitive changes, and a final review before execution. We should not rely on an attractive confirmation screen if the underlying authorization is weak.\n\nI'd work with Risk and engineering to make sure the rules are enforced server-side. Then I'd measure both sides: prevented errors and fraud, but also abandonment, false positives and support contacts. A control that blocks legitimate customers unnecessarily still has a product cost.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-0de6e24c3ec72748"
+    },
+    {
+      "id": "6635b44b-bd82-4980-8aef-ea67474a075e",
+      "question": "How would you use feature flags without creating inconsistent financial records?",
+      "answer": "I'd use feature flags to control customer exposure and routing, not as an excuse to let two systems maintain contradictory financial truth.\n\nFor a new payment path, I'd plan a small rollout with clear eligibility, transaction correlation, observability and rollback conditions. Any in-flight instruction has to finish safely on the path it started; switching a flag shouldn't resubmit or lose it.\n\nI'd rehearse failure cases such as timeouts and duplicate submissions before scaling. In the rollout review, I'd compare successful end-to-end completion, exceptions, support demand and reconciliation, not merely whether the front-end feature loads for users.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-2d5216038eb7201f"
+    },
+    {
+      "id": "d17bc916-0925-4b2f-9904-092499e61920",
+      "question": "When should an automated retry be prohibited even if it would reduce failures?",
+      "answer": "When we can't establish whether the original financial instruction actually executed, an automatic retry can be dangerous. It could send money twice.\n\nI'd separate safe technical retries from new business instructions. With a stable transaction identifier and idempotent service contract, some operations can be retried safely. If the downstream outcome is uncertain, I would first query the transaction's authoritative status or route it into an exception workflow.\n\nI'd also prohibit blind retries for failures that require customer action, risk review or corrected recipient information. The operational metric shouldn't reward us for making the system look faster while increasing financial harm.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-1a10ff8457e116b4"
+    },
+    {
+      "id": "771cc93c-f8fd-4499-90dd-04482b325890",
+      "question": "What would you do if the customer sees a successful transfer but settlement hasn't reconciled?",
+      "answer": "I'd avoid assuming that a customer-facing 'success' label proves every financial event has been reconciled. I'd investigate exactly what success was meant to indicate: instruction accepted, funds posted or final settlement confirmed.\n\nThe first step is preserving the accurate transaction history and identifying the discrepancy with Finance, Operations and the payment service. If funds are genuinely at risk or duplicated, that becomes an incident.\n\nLonger term, I'd tighten the product's status definitions and monitoring so we don't prematurely label an operation as final. Customers need a trustworthy status, and internal teams need an exception path that connects the operational record to the financial one.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-35b5658e122b27ca"
+    },
+    {
+      "id": "0360f445-9e66-472e-932f-e06050ec3a3e",
+      "question": "How should a customer dispute an unfamiliar debit card transaction?",
+      "answer": "I'd want the customer to be able to identify the transaction, see the relevant details and reach the correct dispute path without guessing whether it is an authorization hold or a settled purchase.\n\nIf the card may be compromised, immediate protective controls such as card locking and appropriate support escalation matter. The investigation and provisional-credit process must follow the relevant product and network requirements, so I'd work with card operations and Risk rather than inventing an instant-refund promise.\n\nI'd measure dispute initiation success, customer time to resolution and repeat contacts while protecting the accuracy of the underlying financial record.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-011534bf24455032"
+    },
+    {
+      "id": "2c8d4c01-fde5-45f2-83a5-4567c8b9ea00",
+      "question": "How do you reduce fraud without rejecting too many legitimate banking customers?",
+      "answer": "I'd separate confirmed fraud loss from friction and false positives. A risk control has to prevent harm, but broad rules can disproportionately hurt good customers.\n\nI'd ask Risk for the underlying threat model and test whether controls can be targeted by risk signals rather than applied identically to everyone. Where appropriate, we could use additional verification for higher-risk cases while keeping lower-risk journeys simpler.\n\nI'd monitor prevented loss, verified fraud, false-positive rate, completion rate and customer support burden together. I wouldn't optimize conversion by simply removing critical controls. The goal is a better overall risk-adjusted experience, not choosing Risk or Growth as the winner.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-56175462d6794fa6"
+    },
+    {
+      "id": "b36da9fd-c09c-4202-bc35-aaf2d27afad3",
+      "question": "How would you explain a deposit hold to a customer who needs the money tomorrow?",
+      "answer": "I'd be explicit about the distinction between money received, money posted and money available to use. Customers shouldn't have to discover a hold only when a payment is declined.\n\nThe experience should show what amount is currently available, what's on hold, the known release timing or conditions where available, and what support can and cannot change. I'd avoid promising that a hold will clear early unless the underlying system supports it.\n\nI'd also examine whether we can communicate the hold before the customer initiates the deposit. The outcome to track is fewer surprise shortfalls and support contacts, alongside compliance with the actual funds-availability policy.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-333f2eb84c1d211b"
+    },
+    {
+      "id": "10c8d63e-14a4-474f-be0c-7a6f5b731600",
+      "question": "How would you design recurring bill payments or pre-authorized debits for a new bank?",
+      "answer": "I'd map the full lifecycle: setting up a payee or authorization, scheduling the debit, notifying the customer, handling insufficient funds and correcting errors or returns.\n\nThe customer needs clarity about when a payment is scheduled versus actually processed, and which balance is safe to rely on. I'd make cancellation and change rules understandable because an update made too close to the processing window may not stop an instruction already in flight.\n\nBefore scaling, I'd test timing boundaries, duplicate requests and return scenarios with banking operations. Reliable recurring payments are a major part of earning someone's primary-bank relationship, so I'd treat them as a foundation rather than a secondary feature.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-565de636656ef238"
+    },
+    {
+      "id": "557cbeab-d17e-48bc-99de-1a54625ee37f",
+      "question": "Which three metrics would you put on your first Questbank executive scorecard?",
+      "answer": "I'd choose one outcome, one behavioural diagnostic and one non-negotiable reliability guardrail.\n\nFor the outcome, I'd use sustained active primary-banking relationships, defined through recurring income and meaningful financial activity over an appropriate window. For the diagnostic, I'd track conversion from funded account to recurring deposit and payment use. For the guardrail, I'd want successful money movement and significant customer-impacting exceptions.\n\nI'd add retained deposits and contribution economics in the deeper view, but I wouldn't put twenty charts on the executive scorecard. The question it should answer is whether more people are genuinely relying on the product and whether we're earning that trust safely.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-3df9c94b9ea49d8f",
+      "detect": [
+        "What would be on your first executive dashboard for Questbank?",
+        "Which three KPIs matter most for the bank?",
+        "What would you measure first in Everyday Banking?",
+        "How would you design a simple banking leadership scorecard?",
+        "What are the core growth and reliability metrics for Questbank?",
+        "If you only had three banking measures, what are they?"
+      ]
+    },
+    {
+      "id": "a27a2489-4944-4faa-b130-5a1a4ab088e9",
+      "question": "Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship?",
+      "answer": "I wouldn't make the decision from the conversion number alone. I'd first establish whether the 20% is relative or absolute, whether the result is credible, and which customers and support issues are driving the increase.\n\nIf the extra calls are short, temporary setup questions, that is different from customers whose first paycheque is missing or who misunderstood whether switching was complete.\n\nI'd segment the support contacts, quantify customer harm and the cost to serve, and look at sustained successful payroll deposits rather than just setup completion. I might revise the experience or roll it out selectively. A conversion lift that damages trust could be a bad trade.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-6c1f0276be1cda04"
+    },
+    {
+      "id": "4a20cf51-7a43-415b-b55d-d01104a46d6f",
+      "question": "What is sample ratio mismatch, and why would you care in a banking A/B test?",
+      "answer": "Sample ratio mismatch means the observed split between experiment groups differs materially from the allocation we expected. That can indicate something went wrong with randomization, eligibility, exposure tracking or logging.\n\nIt's important because an apparent conversion lift may be unreliable if the underlying groups aren't comparable. In banking, issues can also arise if a risk rule or technical problem disproportionately prevents one group from reaching the measured step.\n\nI'd check the assignment and exposure data before interpreting the outcome, then review segment balance and instrumentation with Analytics and Engineering. I wouldn't celebrate a lift until the experiment itself was trustworthy.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-cd8ddf2374aab188"
+    },
+    {
+      "id": "cb792784-57f0-449a-a12d-76bbbde35b46",
+      "question": "How would you tell healthy banking engagement from anxiety-driven repeat checking?",
+      "answer": "I'd look at the reason people are returning. More sessions can mean the product is valuable, but they can also mean customers are unsure whether a deposit arrived or a payment cleared.\n\nI'd compare visits against successful customer jobs: completed payments, recurring funding, savings actions and resolution of outstanding questions. I'd also look at support contacts, complaints, repeated visits to the same unresolved transaction and qualitative feedback.\n\nIf DAU rises while money-movement completion and retention are flat, that's a diagnostic signal, not necessarily good news. The experience should reduce uncertainty and improve financial control, even if that means fewer frantic balance checks.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-5b3cacfbf9d7ec58"
+    },
+    {
+      "id": "23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4",
+      "question": "How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card?",
+      "answer": "I'd start with the actual economics of those deposits, not assume the $5,000 balance is revenue. Finance and Treasury would help estimate what the bank earns from deploying or funding against that balance, net of interest paid, liquidity cost and servicing expenses.\n\nI'd then consider balance stability and how long the relationship lasts. A steady operating balance can be more valuable than a promotional balance that disappears after a few weeks.\n\nI'd separate that from debit-card revenue and cross-product benefits, since the customer doesn't generate those just by holding cash. The result would be a contribution estimate with sensitivity to deposit duration and rate assumptions.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-10ec3c7fab699446"
+    },
+    {
+      "id": "cca30fb0-f7be-497e-8e20-2cd349712829",
+      "question": "How would you experiment on payment reliability if you can't ethically expose customers to worse payments?",
+      "answer": "I'd never deliberately degrade real payment reliability just to create a control group. We can test improvements without putting one group at unacceptable risk.\n\nBefore rollout, I'd use simulation, sandbox scenarios, replayed test cases and controlled operational verification to establish safety. Then I might gradually expose customers to a validated change while monitoring completion, duplicate handling, latency and reconciliation exceptions.\n\nIf a change is essential for safety or regulatory compliance, it may not need a standard randomized experiment. The product decision becomes whether the system meets agreed acceptance criteria and whether the staged rollout exposes new failure modes. Experimentation should support judgment, not override customer protection.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-41def4e541d32b60"
+    },
+    {
+      "id": "1f935f03-d796-480c-8e77-2a3c26f156b2",
+      "question": "Which early warning indicator would tell you Questbank is losing customer trust?",
+      "answer": "I'd watch for a rise in failed or unexplained financial events, especially when paired with repeat support contacts or customers withdrawing their recurring activity. A single metric won't fully capture trust, but those behaviours are meaningful.\n\nFor example, people who successfully received payroll for several cycles and then move it away after an incident are a more serious signal than a transient drop in app sessions. I'd combine reliability incidents, time to resolution, complaint themes and reductions in retained primary relationships.\n\nI'd segment by affected journey so we can tell whether a problem is concentrated in payroll, cards or account funding and act on the right root cause.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-c1c6a9724d86f74e"
+    },
+    {
+      "id": "2f280387-ca4c-4b94-abdf-a644c1868a4a",
+      "question": "What happens if a customer revokes an AI agent's access while it has a request in progress?",
+      "answer": "I'd want permissions checked at the actual moment each sensitive action is authorized, not only when the agent initially connects. Revoking access should stop new data retrieval and new instructions through that authorization.\n\nIf an operation has already been accepted by a payment or trading system, revocation may not undo it. The experience has to distinguish stopping future access from cancelling an in-flight financial instruction.\n\nI'd design clear audit records, revocation feedback and safe handling for queued requests. The principle is that customer control needs to be enforced by the financial platform, not just acknowledged politely by the AI model.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-6c7a1a15e3964650"
+    },
+    {
+      "id": "7883e373-e58d-460a-bef5-2b89d237c66e",
+      "question": "Would you let an external AI agent read transaction descriptions or merchant details?",
+      "answer": "Only for a clearly useful customer-authorized purpose, and I wouldn't treat all transaction information as equally harmless. Merchant details can reveal sensitive personal behaviour, and a broad permission can disclose far more than a customer expects.\n\nI'd start with narrow scopes and a read-only use case. The customer should understand what data is shared, with which provider, how long access lasts and how to revoke it. I'd also think about whether some useful insights could be produced inside Questrade without passing raw details externally.\n\nThe central product question is whether the value justifies the disclosure. Technical ability to expose a field is not a reason to expose it by default.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-7c4c12feaff15b1c"
+    },
+    {
+      "id": "bad7b926-f617-44c4-ab13-ddc78b1e4378",
+      "question": "What would convince you to stop an AI financial-assistant pilot?",
+      "answer": "I'd define stop conditions before launch, including any demonstrated pattern of materially incorrect balances, unsafe transaction interpretations, unauthorized data access or high-severity customer confusion.\n\nA great satisfaction score wouldn't compensate for a smaller number of serious financial errors. I'd classify failures by severity and investigate whether they're coming from stale source data, tool permissions, prompt handling or the model's explanation layer.\n\nI'd also monitor customer corrections and whether the system handles uncertainty properly. In a pilot, stopping or narrowing scope is a useful learning outcome if we discover a risk we can't yet control. The aim is a trustworthy product, not proving AI should ship at any cost.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-f9c0dbb7c57fb56a"
+    },
+    {
+      "id": "be3e3314-68c5-4f6a-a3d9-7f0b9147e17b",
+      "question": "When would you choose deterministic software or rules instead of an AI model?",
+      "answer": "Whenever the required behaviour can be specified reliably and failure has a clear cost. Balance calculations, eligibility rules, permissions, transfer limits and execution controls should be deterministic and validated server-side.\n\nI'd use AI where natural language or unstructured information adds value, such as helping customers find an explanation or helping an operations team categorize exception descriptions. Even there, I want authoritative inputs and a safe fallback.\n\nThe decision isn't AI versus no AI as an identity statement. It's whether a probabilistic model improves the actual customer job enough to justify its latency, error rate, monitoring and security complexity.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-820f4090df4a3dc6"
+    },
+    {
+      "id": "db88df8e-3a36-4cc6-8b84-4fb24e2136c3",
+      "question": "Explain your interview copilot's semantic matching architecture without using technical jargon.",
+      "answer": "I had a library of prepared interview answers, but the same question can be asked in dozens of ways. Searching by exact words wasn't good enough.\n\nSo I explored a small embedding model through Supabase. It turns each question into a numerical representation of its meaning, then retrieves prepared answers whose questions have similar meanings. I combine that with the conversation topic, because 'How did you measure that?' could mean RBC, HBC or Arc'teryx depending on what we were just discussing.\n\nI deliberately chose retrieval over generating a new answer each time. It keeps the response tied to material I've reviewed and lets me manage cost and reliability. I'd only describe the hosted implementation as deployed if I've verified the live pipeline is running.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-410906da823f7878",
+      "detect": [
+        "Explain how your interview copilot matches questions without the jargon.",
+        "How does your AI copilot find the right prepared answer?",
+        "What's the simple explanation for your semantic search?",
+        "How did you make your Q and A library searchable by meaning?",
+        "Explain what embeddings do in your product like I'm a non-technical stakeholder.",
+        "Why doesn't your interview tool just search exact keywords?"
+      ]
+    },
+    {
+      "id": "c8d4a611-d174-48b1-911c-e2db8f3acc3e",
+      "question": "How did you know your semantic-search approach was actually better than keyword matching?",
+      "answer": "I'd compare both systems against a fixed set of realistic questions, including paraphrases, short follow-ups, employer switches and deliberately unrelated prompts. For each case, I'd define which prepared Q&A should appear.\n\nI'd measure top-one accuracy, whether the right answer is in the top three, latency and the rate of wrong-context matches. I'd also test whether manually reanalyzing a missed transcript can recover the answer.\n\nThe key is not to assume embeddings are better just because they sound more sophisticated. If the hybrid matcher doesn't improve retrieval in those cases, I'd tune the context logic or simplify the system. I wouldn't claim a percentage improvement until I'd run that benchmark.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-1f2320a19a45d757"
+    },
+    {
+      "id": "4fcf44b0-5a66-46be-a57b-0fca89af2d10",
+      "question": "If MCP standardizes tools, what competitive advantage can Questrade still own?",
+      "answer": "I think the competitive advantage sits in the trusted financial capabilities and customer relationship behind those tools. A standard protocol can make integrations easier, but it doesn't make account information accurate or establish safe trading permissions by itself.\n\nQuestrade still owns the quality of the underlying product, the authorization experience, the reliability of the data and the customer outcomes enabled by each capability. It can also choose which workflows are genuinely useful and which are too risky to expose.\n\nSo I'd see MCP as a distribution and integration mechanism rather than the product's entire moat. The differentiator is making those authorized financial actions dependable and valuable regardless of which assistant a customer prefers.",
+      "category": "questrade cases",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-aa3d0e2b91ac1b17"
+    },
+    {
+      "id": "458f82bd-542b-4331-92fb-d77bb3645d06",
+      "question": "What if Risk still says no after you've presented all your evidence?",
+      "answer": "I'd make sure I understand whether it's a non-negotiable requirement, a decision within their mandate or a concern we might solve in another way.\n\nIf it's a hard control, the product needs to work within it. The question then is whether we can change the customer flow, add targeted verification or reduce scope without undermining the objective.\n\nIf it's a genuine judgment call, I'd document the options, impact and decision owner, and escalate through the agreed governance when appropriate. I wouldn't treat escalation as a way to bully Risk into approving a launch. In financial products, you need to build a working relationship where disagreement improves the decision.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-463e16f913ccff8d",
+      "detect": [
+        "What if Risk won't sign off even after you explain the benefits?",
+        "How do you move forward when Compliance rejects the proposal?",
+        "What do you do when the Risk team still says no?",
+        "Would you escalate if AML refuses to approve the change?",
+        "How do you balance a growth opportunity against a hard risk control?",
+        "What's your next step after Risk rejects your product recommendation?"
+      ]
+    },
+    {
+      "id": "77caa5b4-817d-47b3-9569-366aa012daf6",
+      "question": "What if Engineering says your banking launch plan is unsafe but leadership wants the date?",
+      "answer": "I'd want to understand the specific failure mode before turning it into a date negotiation. Is the concern data integrity, double payment, reconciliation, untested load or an incomplete operational process?\n\nI'd bring the engineering owner and relevant controls teams together to define the minimum safe conditions for launch. Then I'd give leadership clear choices: reduce scope, stage rollout, change sequencing or move the date, with the risks of each option visible.\n\nA date can be a business commitment, but it doesn't make an unsafe money-movement path safe. I'd rather explain the trade-off early than have customers discover it after launch.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-eb5a7a85707df703",
+      "detect": [
+        "Engineering says the banking launch is risky but the deadline is fixed. What do you do?",
+        "Would you ship a payment feature if the engineers say it's unsafe?",
+        "How do you push back when leadership demands an unsafe launch?",
+        "What if you have to choose between launch date and financial integrity?",
+        "What would you tell an executive who won't move the banking release date?",
+        "If the team finds a critical money-movement risk before launch, then what?"
+      ]
+    },
+    {
+      "id": "a95a3a54-604e-4617-af66-92158c5c2c53",
+      "question": "How would you handle an offshore team that doesn't understand the customer impact of a requirement?",
+      "answer": "I'd avoid treating that as a motivation problem before checking whether I've supplied enough context. A ticket that only describes a field or API change doesn't help an engineer make good decisions.\n\nI'd walk through the customer journey, explain what goes wrong if the requirement fails, and include examples of both the expected and exceptional states. I'd also create a quick feedback loop where engineers can challenge unclear assumptions before work proceeds too far.\n\nI've worked with geographically distributed engineering teams, so I'm conscious that written communication and explicit acceptance criteria matter. The aim is to create shared product understanding, not just hand out detailed instructions.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-b85d72575972a2e5"
+    },
+    {
+      "id": "110a4074-4ba6-4eb9-9b8e-4a96b4e223e4",
+      "question": "What do you do when a shared dependency is blocking your objective but the other PM has different priorities?",
+      "answer": "I'd start with the shared outcome and the actual cost of the dependency, rather than arguing whose roadmap is more important.\n\nIf Everyday Banking needs a money-movement change to improve primary-account adoption, I'd quantify the expected value, the customer impact of delay and the effort or risk involved. Then I'd work with the other PM to see whether there's a smaller shared milestone or sequencing option that helps both teams.\n\nIf we still can't resolve it, leadership should make an explicit portfolio trade-off with the facts available. I'd want clear ownership, dates and interim customer workarounds, not an indefinite dependency in a roadmap spreadsheet.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-809d4ac5fe16d18c"
+    },
+    {
+      "id": "1de87c3a-d693-419c-9ded-b76154af230a",
+      "question": "When would you shut down a feature your own team spent six months building?",
+      "answer": "I'd separate sunk cost from future value. Six months of work tells us what we've invested, but it doesn't by itself justify another six months.\n\nI'd examine whether the feature solves a meaningful customer problem, whether adoption and quality are improving, whether the economics work and what we'd give up by continuing. Sometimes a contained iteration or repositioning test is appropriate. Sometimes the better decision is to stop.\n\nI'd also consider contractual, operational and customer obligations before shutting anything off. I'd explain the decision to the team through what we've learned and where their effort will create more value, rather than framing it as their work having been wasted.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-ff778946b3ce4c07"
+    },
+    {
+      "id": "d333a258-c050-4f17-a50b-242e5ad5254d",
+      "question": "How do you communicate a complex banking trade-off to an executive in two minutes?",
+      "answer": "I'd start with the decision we need, not a technical history lesson. For example: 'We can launch the new transfer experience this quarter, but only if we reduce scope or accept a specific operational risk. Here are the choices.'\n\nThen I'd give the customer and business impact, the non-negotiable controls, and my recommendation with the main uncertainty. If there are three options, I'd make the consequences explicit rather than ask the executive to infer them from a detailed roadmap.\n\nI'd keep the technical evidence available for follow-up. The goal is to help leadership make a responsible decision quickly without losing the nuance that matters.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-929f1b51201c0ddb"
+    },
+    {
+      "id": "f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f",
+      "question": "How do you say no without damaging a relationship with a powerful stakeholder?",
+      "answer": "I'd make it clear that I'm saying no to a proposed solution or timing, not dismissing the underlying problem. I'd first ask what outcome they're trying to achieve and whether our current roadmap already addresses it.\n\nThen I'd explain the trade-off in concrete terms: what we'd delay, what customer or operational risk we'd introduce, and what evidence would change my recommendation. Where possible I'd suggest a smaller test or an alternative that preserves the underlying goal.\n\nI also think consistency matters. If I change my position later because new evidence emerges, I'd explain why. That makes the decision feel principled rather than personal.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-4f824187fbbff65a"
+    },
+    {
+      "id": "837e7efc-def5-4758-8ca1-627d006ec1ff",
+      "question": "A customer says they sent money to the wrong recipient. What can your product realistically do?",
+      "answer": "I'd first establish the rail, the actual transaction state and whether the instruction is still cancellable. I wouldn't promise an instant reversal just because the customer made a mistake; what is possible depends on how the payment was processed and the applicable rules.\n\nThe product should make destination and amount confirmation clear before sending and provide a fast support path when an error is reported. I'd want operations to be able to trace the instruction, explain what can be investigated and communicate outcomes accurately.\n\nPrevention is often more controllable than recovery, so I'd examine why the mistake happened and whether recipient verification or clearer confirmations would reduce it.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-ed30a21945cc58cb",
+      "detect": [
+        "What do you do when a customer transfers money to the wrong person?",
+        "Can a customer reverse a payment sent to the wrong recipient?",
+        "How do you help someone who entered the wrong payee?",
+        "What can the bank promise after an incorrect transfer?",
+        "How would you handle an Interac payment sent to the wrong email address?",
+        "What product safeguards prevent misdirected transfers?"
+      ]
+    },
+    {
+      "id": "ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c",
+      "question": "What is the difference between KYC, AML monitoring and transaction fraud prevention?",
+      "answer": "I think of them as related but different controls. KYC is about identifying and understanding the customer and meeting applicable onboarding requirements. AML monitoring looks for patterns and activity that require review under financial-crime controls. Transaction fraud prevention focuses on whether a specific action appears unauthorized or deceptive.\n\nThey share data but aren't interchangeable. A customer can be legitimately onboarded and still experience an account takeover or suspicious payment attempt.\n\nAs a PM, I'd work with the right control owners to design clear workflows and measure legitimate-customer friction and false positives, while keeping mandatory decisions with the regulated risk and compliance teams.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": true,
+      "notes": "followup-expansion-2026-10-3556d63635e0e2ae",
+      "detect": [
+        "How is KYC different from AML and transaction fraud?",
+        "Explain know your customer versus fraud prevention.",
+        "What's the difference between anti money laundering and fraud detection?",
+        "Why isn't identity verification the same thing as transaction monitoring?",
+        "How do KYC, AML and payment fraud controls fit together?",
+        "What role does each financial crime control actually play?"
+      ]
+    },
+    {
+      "id": "cdc38655-878f-4b7f-a49d-109f3b69125e",
+      "question": "What if a customer fails identity verification while trying to open a Questbank account?",
+      "answer": "I'd make the failure recoverable when policy allows, without revealing sensitive verification logic. A generic 'something went wrong' message is frustrating, but exposing all the signals we use could help attackers.\n\nI'd distinguish missing or incorrect information from a higher-risk case that needs manual review or can't proceed. The customer should understand the next legitimate step, what documents may be needed, or how to contact support.\n\nI'd measure false-positive rates, abandonment, manual-review time and eventual successful onboarding. The goal is strong identity controls with understandable and fair recovery paths for genuine customers.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-90f9fbcc4c70655e"
+    },
+    {
+      "id": "2fb50805-1cb9-43f9-a2ba-54b816d3085d",
+      "question": "An account was frozen for suspected fraud. How would you handle the customer experience?",
+      "answer": "I'd treat protecting funds and complying with the control as non-negotiable, but I'd also recognize how disruptive an unexpected restriction can be.\n\nThe customer needs a clear explanation of what we can disclose, how to verify their identity, how the review progresses and where they can get help. We shouldn't promise a release time the Risk team hasn't authorized, and we shouldn't reveal sensitive fraud-detection methods.\n\nInternally, I'd track time in restricted state, legitimate-customer false positives, escalations and downstream financial harm. The experience should be humane and predictable without compromising the review.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-783964890115ecc2"
+    },
+    {
+      "id": "6ffb405d-688b-433e-87c3-a7d992430bad",
+      "question": "What should happen if someone loses their phone and tries to access their bank account?",
+      "answer": "I'd separate account recovery from payment authorization. Someone who has lost their phone needs a way back in, but that is also a moment when an attacker might impersonate them.\n\nI'd work with identity and security teams on a recovery path with appropriate alternative verification, additional checks when credentials or devices change, and strong restrictions around sensitive actions until the account is trusted again.\n\nI'd also measure recovery success, time to regain access and fraud linked to recovery flows. Fast recovery is valuable, but it can't be so easy that changing devices becomes a shortcut around security controls.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-5401967e0f935946"
+    },
+    {
+      "id": "dc30e851-19e2-4bc1-8397-e4ab784ef939",
+      "question": "How would you explain CDIC deposit protection versus CIPF investment protection?",
+      "answer": "I'd start by saying they protect different things and shouldn't be presented as interchangeable. Eligible deposits at CDIC member institutions have deposit insurance subject to the applicable rules and limits. CIPF is a different protection framework associated with investment-dealer insolvency and eligible customer property; it doesn't protect against investment losses from the market.\n\nIn the product, I'd make the relevant legal entity and product type clear. Customers shouldn't have to infer which protections apply based on the Questrade name alone.\n\nI'd work with Legal and Compliance on precise wording and link to the applicable official coverage details rather than offering a sweeping statement that every account or balance is protected the same way.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-43130d1fc58052a7"
+    },
+    {
+      "id": "c6aa4266-ebca-41df-a32b-99cba4676ffd",
+      "question": "Would you use screen scraping or customer-permissioned banking APIs for account aggregation?",
+      "answer": "I'd start with the coverage and reliability required for the customer job, then assess the actual data-access methods available in Canada and the bank connections we're targeting.\n\nWhere secure permissioned APIs are available, they can provide clearer access control and revocation than sharing credentials. But I'd still validate data freshness, completeness, authentication journeys and vendor operations rather than assuming an API solves the product problem automatically.\n\nI'd involve Security and Privacy early, show customers what they're connecting and how to disconnect, and never suggest that a linked account gives us a complete or always-current view of their finances.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-704b687b4abdb2cf"
+    },
+    {
+      "id": "ab5294e4-b011-43a7-8cb2-432d84014ec7",
+      "question": "What would you tell customers if a major banking partner was down and you didn't know the restoration time?",
+      "answer": "I'd communicate the confirmed impact, the affected journeys and the next planned update without inventing a recovery estimate. It's tempting to say 'we'll be back shortly,' but that can undermine trust if we don't know.\n\nI'd coordinate with incident command and Support so every channel tells the same story. If there's a safe alternative path for customers, we'd explain it clearly without encouraging repeated submissions that could duplicate payments.\n\nOnce service returns, we'd verify financial consistency and any unresolved transactions before announcing that everything is complete. Reliability includes honest status communication and a real recovery process, not just an uptime banner.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-d9a7e448477c9d46"
+    },
+    {
+      "id": "4f6209aa-a000-442c-bbd6-96723a266b9a",
+      "question": "Should a bank help customers automate savings when they have unpredictable income?",
+      "answer": "Yes, but I'd avoid a fixed recurring transfer that assumes everyone receives the same paycheque every two weeks.\n\nFor someone with variable income, I'd explore flexible triggers, clear minimum-balance safeguards and the ability to pause or adjust transfers. I'd prioritize transparent rules and explicit consent before more ambitious AI-led automation.\n\nI'd test whether the feature actually helps people accumulate savings without triggering failed payments, overdrafts or repeated manual reversals. A savings automation that creates cash shortages isn't a successful savings product, even if the transfer count looks healthy.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-d2542b5d18b6f8eb"
+    },
+    {
+      "id": "7fefebb7-44eb-4fa3-80f8-14e6900cba0b",
+      "question": "How would you decide when to compensate a customer after a bank payment error?",
+      "answer": "I'd first establish the facts and the customer's actual harm. Was money unavailable, did a bill fail, were fees incurred or did the customer simply see a delayed status?\n\nThe response needs to follow the bank's legal obligations, policies and incident-remediation framework, so I wouldn't invent a flat compensation promise. But I'd want consistent criteria, fast escalation for urgent hardship and a clear path to correct the financial record.\n\nI'd look for patterns where repeated incidents are generating both customer harm and remediation cost. The product lesson is to prevent the failures, not treat goodwill credits as the primary solution.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-65e520e78893619f"
+    },
+    {
+      "id": "67ef7666-80ac-452a-8506-b2375d6abc34",
+      "question": "How would you differentiate Questbank if Wealthsimple copied your best feature?",
+      "answer": "I wouldn't assume a single feature is a durable moat. Another fintech can often copy a visible workflow, rate or design pattern.\n\nI'd focus on the broader customer job and the operational experience behind it: trusted money movement, investing integration, useful context and consistent service. I'd also examine whether Questrade can serve customer segments with more complex investment and banking needs better than a general-purpose alternative.\n\nI'd keep testing actual customer switching behaviour rather than relying on feature-comparison slides. If a competitor copied one capability, we should still know what combination of convenience, trust and relationships makes customers stay.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-deb9bcd3c95dfd17"
+    },
+    {
+      "id": "25ad6af4-9d72-4ac5-9159-29bceeebfb80",
+      "question": "How would you handle events arriving out of order in a customer's transaction history?",
+      "answer": "I'd want financial systems to remain authoritative about posted entries while the app handles presentation carefully. If events arrive late or out of order, we shouldn't assume the arrival order is the financial order.\n\nI'd work with engineering on stable identifiers, event timestamps, versions and reconciliation against the source of truth. The customer view may need to update an earlier pending item when a final status becomes available rather than append another unrelated row.\n\nI'd test delayed, duplicated and missing events explicitly. If we can't establish an accurate status, it's better to acknowledge uncertainty than show a confident but incorrect sequence of money movements.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-190f2fbd4b39dfdf"
+    },
+    {
+      "id": "e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0",
+      "question": "How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant?",
+      "answer": "If card reliability is genuinely meeting the required customer and operational guardrails, I'd stop treating it as an automatic reason to defer every growth initiative.\n\nI'd diagnose why payroll adoption is stagnant: weak value proposition, high switching friction, missing employer support, low awareness or a failure to retain activity after the first deposit. Then I'd prioritize the bottleneck we can credibly move.\n\nThe decision would still depend on severity and impact, not just a headline uptime figure. But a mature reliability baseline should create room to invest in sustained primary-account growth rather than endlessly optimizing a metric that's already healthy.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-0ffeac83b074227c"
+    },
+    {
+      "id": "8ba596cd-8c2c-456e-bf5e-0681333ab61a",
+      "question": "What would the MVP of a payroll-switching feature actually contain?",
+      "answer": "I'd define the smallest end-to-end journey that helps an eligible customer move income safely. That could include clear account details, simple employer instructions or supported switching assistance, confirmation of what the customer submitted and a way to verify the first successful deposit.\n\nI'd also make the failure and support paths part of the MVP, not phase-two surprises. Customers need to understand what is and isn't confirmed, and what to do if their next paycheque doesn't arrive.\n\nI wouldn't start with every employer integration. I'd choose a segment with a credible route to adoption and measure sustained deposits and support burden after the first cycle.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-fe3aaf8b0a104ebd"
+    },
+    {
+      "id": "b995b443-a009-4b4c-b03b-81f53bd6cc67",
+      "question": "How long would you wait before deciding whether a payroll-switching experiment actually worked?",
+      "answer": "I'd align the measurement window to the behaviour. A completed setup form can be measured quickly, but payroll often follows an employer's own cycle. I'd need enough time to observe the first actual deposit and, ideally, repeated deposits.\n\nI'd define the evaluation period before launching the test, based on expected payroll frequency and a meaningful sample. I'd also watch support contacts and failed deposits while the experiment runs.\n\nIf early setup conversion rises but deposits haven't occurred yet, I'd call that a promising leading signal, not proof of primary-banking adoption. The decision to scale should reflect the delay between a user action and the outcome we really care about.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-13246270dc5fb057"
+    },
+    {
+      "id": "606fd4d4-8492-40ac-b65f-099d93621451",
+      "question": "What would your launch-readiness checklist include for an everyday-banking feature?",
+      "answer": "I'd want explicit ownership and evidence across the customer journey, integration, risk controls and operations—not just a feature checklist.\n\nFor a money-movement feature, that means the happy path, authorization, exception states, transaction tracing, reconciliations, support training, monitoring and rollback or containment procedures. I'd also check that customer-facing claims are accurate about timing and availability.\n\nI'd run realistic failure scenarios, confirm launch guardrails with the control owners and stage exposure where possible. The release decision should answer whether we can operate the experience safely when things go wrong, not simply whether the UI works in a demo.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-25dbf0548b118c22"
+    },
+    {
+      "id": "059b883d-ccbf-4e0b-8719-5dbff7c26da6",
+      "question": "How would you set shared OKRs without making ownership ambiguous?",
+      "answer": "I'd separate the customer outcome that teams jointly influence from the capabilities each team directly owns. For example, sustained active primary accounts might be shared, while one team owns reliable payroll funding and another owns card transaction success.\n\nI'd define lead measures and service-level guardrails for the dependencies, then agree on a regular decision forum where cross-team trade-offs are resolved. Shared outcomes should encourage collaboration, but they shouldn't become a way for everyone to blame someone else when performance misses.\n\nI'd want clear escalation paths and a common view of the customer journey so the organization optimizes for the relationship rather than isolated feature deliveries.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-02ff8d0c1a2d62e6"
+    },
+    {
+      "id": "48f67960-28cb-4d6b-b863-e7cfe2c1ca71",
+      "question": "What would you do if post-launch data contradicts the user research that justified the feature?",
+      "answer": "I'd treat that as an opportunity to learn which assumption was wrong. Research can accurately describe customer frustration while still failing to predict whether a particular solution changes behaviour.\n\nI'd check whether the target segment was actually reached, whether the feature worked as intended and whether the metric captured the job we hoped to improve. I'd also follow up with customers who tried it and those who ignored it.\n\nDepending on the evidence, I might improve discoverability, change the workflow, test a narrower segment or stop investing. I wouldn't defend the original research or the feature just because we'd already committed to it.",
+      "category": "leadership behavioural",
+      "part": 9,
+      "isPreferred": false,
+      "notes": "followup-expansion-2026-10-818789ec0c4cf2bb"
     }
   ]
 }

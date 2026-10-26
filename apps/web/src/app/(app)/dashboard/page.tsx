@@ -6,11 +6,23 @@ import { Badge } from "@/components/ui/badge";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
-  const [{ count: qa }, { count: stories }, { count: profiles }] = await Promise.all([
+  const [{ count: qa }, { count: stories }, { count: profiles }, { data: profileRows }] = await Promise.all([
     supabase.from("prepared_qa").select("*", { count: "exact", head: true }),
     supabase.from("experience_stories").select("*", { count: "exact", head: true }),
     supabase.from("interview_profiles").select("*", { count: "exact", head: true }),
+    supabase.from("interview_profiles").select("id, name, employer, role_title, updated_at").order("updated_at", { ascending: false }),
   ]);
+
+  const profileQaCounts: { id: string; name: string; count: number }[] = [];
+  if (profileRows?.length) {
+    for (const p of profileRows) {
+      const { count } = await supabase
+        .from("prepared_qa")
+        .select("*", { count: "exact", head: true })
+        .eq("profile_id", p.id);
+      profileQaCounts.push({ id: p.id, name: p.name, count: count ?? 0 });
+    }
+  }
 
   return (
     <div className="mx-auto max-w-5xl space-y-8 p-6 md:p-10">
@@ -42,6 +54,23 @@ export default async function DashboardPage() {
           </CardHeader>
         </Card>
       </div>
+
+      {profileQaCounts.length > 0 ? (
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">Library by profile</CardTitle>
+            <CardDescription>Prepared Q&amp;A scoped per interview context.</CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            {profileQaCounts.map((p) => (
+              <div key={p.id} className="flex flex-wrap items-center justify-between gap-2 text-sm">
+                <span className="font-medium">{p.name}</span>
+                <Badge variant="secondary">{p.count} Q&amp;A</Badge>
+              </div>
+            ))}
+          </CardContent>
+        </Card>
+      ) : null}
 
       <Card>
         <CardHeader>

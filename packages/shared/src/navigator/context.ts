@@ -14,7 +14,7 @@ const TOPIC_SWITCH =
   /\b(switch gears|different topic|let'?s (talk|move) about|move on to|change (topics|subjects)|instead, tell me about)\b/i;
 
 const AMBIGUOUS_FOLLOW_UP =
-  /\b(what would you do differently|how did you measure|what did you (personally )?decide|what did you own|what was your role|what would you change|was that incremental|how did you attribute)\b/i;
+  /\b(what would you do differently|how did you measure|how exactly did you measure|what did you (personally )?decide|what did you own|what was your role|what would you change|was that incremental|how did you attribute|why did you use|why interac|what if it failed|how would the customer know|how did you prevent|how did you know it worked|what went wrong|how would you handle|why didn't you|whole membership platform|continue without you|leave before seeing)\b/i;
 
 const COMPANY_HINTS: { pattern: RegExp; moduleId: string }[] = [
   { pattern: /\b(rbc|avion|interac)\b/i, moduleId: "rbc-cashback" },
@@ -38,7 +38,7 @@ export function enrichLibrary(rows: EnrichLibraryInput[]): EnrichedQaRow[] {
   );
 }
 
-function detectExplicitModule(spoken: string): string | null {
+export function explicitExperienceModuleFromSpoken(spoken: string): string | null {
   for (const { pattern, moduleId } of COMPANY_HINTS) {
     if (pattern.test(spoken)) return moduleId;
   }
@@ -68,7 +68,7 @@ export function resolveInterviewContext(
   const bestEnriched = best ? library.find((r) => r.id === best.rowId) : undefined;
 
   const topicSwitch = TOPIC_SWITCH.test(spoken);
-  const explicitModule = detectExplicitModule(spoken);
+  const explicitModule = explicitExperienceModuleFromSpoken(spoken);
   const ambiguous = isAmbiguousFollowUp(spoken);
   const override = prev.manualExperienceOverrideId;
 
@@ -115,8 +115,10 @@ function intentFromAmbiguous(spoken: string): QuestionIntent {
   const q = spoken.toLowerCase();
   if (/incremental|attribut/.test(q)) return "attribution";
   if (/differently|change/.test(q)) return "what_differently";
-  if (/measure/.test(q)) return "measurement_impact";
+  if (/measure|know it worked|prevent/.test(q)) return "measurement_impact";
   if (/decide|own/.test(q)) return "personal_ownership";
+  if (/why did you use|why interac|technical|integrat/.test(q)) return "technical_implementation";
+  if (/what if|failed|went wrong|customer know/.test(q)) return "challenges_lessons";
   return "general";
 }
 

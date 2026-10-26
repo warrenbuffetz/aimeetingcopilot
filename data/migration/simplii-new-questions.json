@@ -1,0 +1,222 @@
+[
+  {
+    "importKey": "simplii-new-discovery-problem-2026",
+    "question": "How do you identify the right customer problem before committing engineering capacity?",
+    "answer": "I start by making the problem statement falsifiable.\n\nI'll look at behavioural data first — where customers stall, retry, or contact support — and pair that with a small set of interviews to understand intent, not just the click path.\n\nBefore we build, I want to see evidence that the pain is frequent, costly, or trust-eroding, and that a product change could plausibly move a metric we care about.\n\nAt RBC on cashback withdrawals, customers cared less about the marketing wrapper and more about whether money actually arrived and whether status was clear when something was pending. That reframed the problem from \"launch a feature\" to \"make payment outcomes legible and recoverable.\"\n\nIf I can't articulate what we'd learn from a thin experiment — a prototype, a concierge test, or a narrow rollout — I treat that as a signal we're still in solution mode too early.",
+    "category": "Discovery",
+    "experienceModuleId": "leadership-general",
+    "librarySection": "leadership_behavioural",
+    "preparationTier": "P0",
+    "roundRelevance": { "recruiter": "medium", "hiring_manager": "very_high", "cross_functional_panel": "high" },
+    "isPreferred": true
+  },
+  {
+    "importKey": "simplii-new-backlog-prioritize-2026",
+    "question": "How do you structure and prioritize your backlog when customer and business asks compete?",
+    "answer": "I keep one backlog per squad outcome, not per stakeholder inbox.\n\nEach item needs a customer problem, expected impact, effort, and dependencies called out. I rank by whether it moves a metric we agreed matters this quarter — and I'm explicit about what we're not doing.\n\nWhen tradeoffs get political, I bring data and a short narrative: here's the customer pain, here's the risk if we defer, here's the smallest slice we could ship to learn.\n\nOn Avion Select enrollment, we had pressure to add steps for compliance and pressure to remove steps for conversion. We sequenced — ship the minimum compliant path, measure drop-off by step, then tighten rules only where data showed abuse or error, not everywhere by default.",
+    "category": "Execution",
+    "experienceModuleId": "leadership-general",
+    "librarySection": "leadership_behavioural",
+    "preparationTier": "P0",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "very_high", "cross_functional_panel": "high" },
+    "isPreferred": true
+  },
+  {
+    "importKey": "simplii-new-user-story-2026",
+    "question": "Walk me through how you write a user story for a regulated banking feature.",
+    "answer": "I write from the customer's job, then make operational reality visible.\n\nThe story states who, what they need, and why — plus acceptance criteria that cover happy path, failure modes, and auditability.\n\nFor a money movement feature, that means amount limits, status transitions, what the customer sees when a payment is pending versus failed, and what happens on retry. I also note non-functional requirements: logging, reconciliation hooks, and which partners must sign off.\n\nI keep stories small enough to demo in a sprint but refuse to hide edge cases in a footnote. If risk or ops cares about a scenario, it belongs in acceptance criteria or a linked tech task with the same ID traceability.",
+    "category": "Execution",
+    "experienceModuleId": "digital-banking-payments",
+    "librarySection": "product_banking_knowledge",
+    "preparationTier": "P0",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "very_high", "cross_functional_panel": "very_high" },
+    "isPreferred": true
+  },
+  {
+    "importKey": "simplii-new-acceptance-criteria-2026",
+    "question": "How do you define acceptance criteria so engineering and risk interpret customer intent the same way?",
+    "answer": "I write criteria as observable outcomes, not implementation hints.\n\nGiven a customer in state X, when they do Y, they see Z and the system records W. I include negative cases: insufficient funds, timeout, duplicate submission, and what message the customer gets versus what ops sees.\n\nFor Avion cashback withdrawals, \"payment succeeds\" wasn't one state — we separated requested, in progress, completed, and failed with different customer copy and support playbooks.\n\nI review criteria with engineering and risk in the same meeting when possible. If they interpret a line differently, the story isn't ready.",
+    "category": "Execution",
+    "experienceModuleId": "rbc-cashback",
+    "librarySection": "product_experience",
+    "preparationTier": "P0",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "very_high", "cross_functional_panel": "very_high" },
+    "isPreferred": true
+  },
+  {
+    "importKey": "simplii-new-launch-underperform-2026",
+    "question": "Tell me about something you launched that did not perform as expected. What did you change?",
+    "answer": "On HBC Mastercard acquisition, we improved application completion materially — roughly 15% — but activation behaviour didn't move in line with our hopes.\n\nThat forced us to separate conversion from quality of cardholder. We dug into approval-to-first-purchase timing and found friction after approval, not in the form itself.\n\nWe reprioritized post-approval onboarding and clearer first-use prompts instead of chasing more top-of-funnel volume.\n\nThe lesson I keep applying: define success metrics before launch and be willing to kill your favourite hypothesis when the data says the bottleneck moved.",
+    "category": "Outcomes",
+    "experienceModuleId": "hbc-mastercard-app",
+    "librarySection": "product_experience",
+    "preparationTier": "P0",
+    "roundRelevance": { "recruiter": "medium", "hiring_manager": "very_high", "cross_functional_panel": "medium" },
+    "isPreferred": true
+  },
+  {
+    "importKey": "simplii-new-onboarding-metrics-2026",
+    "question": "How would you measure improvements to digital account onboarding?",
+    "answer": "I'd instrument the journey end-to-end: start, identity verification, funding setup, first successful funding, and first recurring money movement.\n\nFor each step I'd track completion rate, time to complete, error codes, and support contacts tagged to onboarding.\n\nI'd cohort by device, acquisition channel, and customer type — new-to-bank versus existing CIBC relationship if that's in scope — because fixes are rarely one-size.\n\nSuccess isn't \"more applications submitted.\" It's funded accounts that reach a defined activation milestone within 30 days without disproportionate support load.",
+    "category": "Digital banking",
+    "experienceModuleId": "digital-banking-engagement",
+    "librarySection": "product_banking_knowledge",
+    "preparationTier": "P0",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "very_high", "cross_functional_panel": "high" },
+    "isPreferred": true
+  },
+  {
+    "importKey": "simplii-new-risk-rejected-built-2026",
+    "question": "What would you do if risk rejected a feature engineering had already built?",
+    "answer": "First I'd make sure we understand the specific control gap — not a vague \"no.\"\n\nIf it's a true compliance blocker, we don't ship. I'd work with risk and engineering on the smallest change that satisfies the control: feature flag off, limit scope, add logging, or change default behaviour.\n\nIf the team built ahead of alignment, that's on me as PM — I'd reset the process, document what we missed in discovery, and negotiate whether a pilot with tight eligibility is possible.\n\nThe worst outcome is a silent shelf build. I'd communicate clearly to leadership: here's what we learned, here's the cost sunk, here's the path to compliant launch or deliberate kill.",
+    "category": "Stakeholders",
+    "experienceModuleId": "leadership-general",
+    "librarySection": "leadership_behavioural",
+    "preparationTier": "P1",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "high", "cross_functional_panel": "very_high" },
+    "isPreferred": false
+  },
+  {
+    "importKey": "simplii-new-account-opening-abandon-2026",
+    "question": "How would you diagnose abandonment during digital account opening?",
+    "answer": "I'd map the funnel with timestamps and error events, then sample sessions where users dropped.\n\nCommon buckets: identity verification failure, unclear funding instructions, fear of making a mistake, or mobile UX friction on long forms.\n\nI'd pair quant with five to eight targeted interviews in the abandoned cohort.\n\nFixes follow diagnosis — sometimes it's copy and progress indicators, sometimes it's eligibility rules surfacing too late, sometimes it's an ops delay that looks like a product bug.",
+    "category": "Digital banking",
+    "experienceModuleId": "digital-banking-engagement",
+    "librarySection": "product_banking_knowledge",
+    "preparationTier": "P0",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "very_high", "cross_functional_panel": "high" },
+    "isPreferred": true
+  },
+  {
+    "importKey": "simplii-new-transfer-failures-2026",
+    "question": "How would you approach recurring failures in a money-transfer journey?",
+    "answer": "I'd treat it as a reliability incident before a UX polish problem.\n\nSegment failures by error type, rail, amount band, and customer segment. Check whether customers retry successfully or churn to support.\n\nAt RBC, payment status clarity reduced panic retries and unnecessary contacts even when the underlying rail was slow.\n\nI'd prioritize fixes that improve observability and customer-visible status first, then attack root causes with engineering and ops — limits, holds, partner timeouts, and reconciliation mismatches.",
+    "category": "Digital banking",
+    "experienceModuleId": "rbc-cashback",
+    "librarySection": "product_experience",
+    "preparationTier": "P0",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "high", "cross_functional_panel": "very_high" },
+    "isPreferred": true
+  },
+  {
+    "importKey": "simplii-new-security-convenience-2026",
+    "question": "How would you balance security and customer convenience in digital banking?",
+    "answer": "I default to risk-based friction — harder steps when signals warrant it, lighter when we've earned trust on that device or pattern.\n\nEvery security control needs a customer-facing explanation and a recovery path. Silent failures destroy more trust than an extra prompt.\n\nI involve fraud and risk early in story writing, not at the end of a sprint, and I measure false positives: legitimate customers blocked or delayed.\n\nConvenience isn't the absence of controls; it's predictability about when and why they'll appear.",
+    "category": "Digital banking",
+    "experienceModuleId": "digital-banking-payments",
+    "librarySection": "product_banking_knowledge",
+    "preparationTier": "P1",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "high", "cross_functional_panel": "very_high" },
+    "isPreferred": false
+  },
+  {
+    "importKey": "simplii-new-chequing-engagement-2026",
+    "question": "How would you improve engagement with a digital chequing account?",
+    "answer": "I'd verify we're solving a recurring job — payroll, bills, spending — not adding dashboard noise.\n\nTactics follow behaviour: simplify direct deposit setup, surface upcoming bills, make transfer status obvious, and celebrate milestones that matter (first payroll received) without gimmicks.\n\nI'd watch whether engagement is broad (many small transactions) or shallow (one funding event then idle). The levers differ.\n\nHBC taught me that post-acquisition activation often beats more acquisition spend; the same applies after a bank account is opened.",
+    "category": "Digital banking",
+    "experienceModuleId": "digital-banking-engagement",
+    "librarySection": "product_banking_knowledge",
+    "preparationTier": "P1",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "very_high", "cross_functional_panel": "medium" },
+    "isPreferred": false
+  },
+  {
+    "importKey": "simplii-new-support-contacts-payments-2026",
+    "question": "How would you investigate rising payment-related support contacts?",
+    "answer": "I'd cluster contact reasons and tie them to payment states in the product.\n\nIf contacts spike while technical success rates look fine, it's often a status communication problem. If failures cluster on a rail or time window, it's operational.\n\nI'd pull a daily bridge metric: initiated, completed, failed, pending beyond SLA — and compare to contact volume.\n\nFixes might be copy, timing of notifications, self-serve retry, or a true defect. I wouldn't optimize away support until customers can answer \"where is my money?\" without calling.",
+    "category": "Digital banking",
+    "experienceModuleId": "rbc-cashback",
+    "librarySection": "product_experience",
+    "preparationTier": "P1",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "high", "cross_functional_panel": "very_high" },
+    "isPreferred": false
+  },
+  {
+    "importKey": "simplii-new-requirement-mid-sprint-2026",
+    "question": "What happens when a requirement changes mid-sprint?",
+    "answer": "I clarify whether it's a true scope change or newly discovered acceptance criteria.\n\nIf it's critical for compliance or customer harm, we negotiate what drops out of the sprint with the team — not silently add work.\n\nI update the story, notify stakeholders, and if it happens often, that's a discovery gap to fix upstream.\n\nI'd rather slip a nice-to-have than ship a half-understood money movement change.",
+    "category": "Execution",
+    "experienceModuleId": "leadership-general",
+    "librarySection": "leadership_behavioural",
+    "preparationTier": "P1",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "very_high", "cross_functional_panel": "medium" },
+    "isPreferred": false
+  },
+  {
+    "importKey": "simplii-new-ready-to-launch-2026",
+    "question": "How do you know a feature is ready to launch?",
+    "answer": "When acceptance criteria are met in environments that mirror production controls, observability is in place, support has a playbook, and we've defined what we'll measure in the first two weeks.\n\nFor regulated flows, sign-offs from risk and ops are explicit, not assumed.\n\nI also want a rollback or kill switch where feasible. \"Shipped\" without learning plan is just output.",
+    "category": "Execution",
+    "experienceModuleId": "leadership-general",
+    "librarySection": "leadership_behavioural",
+    "preparationTier": "P1",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "very_high", "cross_functional_panel": "high" },
+    "isPreferred": false
+  },
+  {
+    "importKey": "simplii-new-influence-without-authority-2026",
+    "question": "Tell me about a time you influenced a decision without formal authority.",
+    "answer": "On Avion cashback withdrawals, payment operations initially preferred a slower batch process that was easier to reconcile.\n\nEngineering wanted real-time customer status. I didn't own either team.\n\nI built a simple model showing support contact risk and customer trust impact from opaque delays, paired with a phased approach: clearer statuses first, then incremental automation with shared reconciliation checkpoints.\n\nWe aligned on a path that improved customer experience without blowing up ops — because I brought data, acknowledged their constraints, and made the tradeoff explicit instead of arguing taste.",
+    "category": "Stakeholders",
+    "experienceModuleId": "rbc-cashback",
+    "librarySection": "product_experience",
+    "preparationTier": "P0",
+    "roundRelevance": { "recruiter": "medium", "hiring_manager": "very_high", "cross_functional_panel": "high" },
+    "isPreferred": true
+  },
+  {
+    "importKey": "simplii-new-business-case-discovery-2026",
+    "question": "How do you create a business case from a customer problem?",
+    "answer": "I size the pain: frequency, severity, and cost — support, attrition, manual work, or lost revenue.\n\nThen I outline the smallest solution with expected metric movement and implementation cost.\n\nAt Arc'teryx on membership, the case tied customer lifetime value to specific MVP capabilities we could deliver in phase one versus a multi-year wish list.\n\nA good case names what we'd stop doing to fund the work. Otherwise it's just a feature request with adjectives.",
+    "category": "Discovery",
+    "experienceModuleId": "arcteryx-membership",
+    "librarySection": "product_experience",
+    "preparationTier": "P1",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "very_high", "cross_functional_panel": "medium" },
+    "isPreferred": false
+  },
+  {
+    "importKey": "simplii-new-outcomes-vs-delivery-2026",
+    "question": "How do you separate business outcomes from delivery metrics?",
+    "answer": "Delivery metrics tell me if we shipped and if the system is healthy. Outcomes tell me if customer behaviour or economics changed.\n\nStory points and sprint velocity never appear in my stakeholder updates as success.\n\nFor payments, delivery might be uptime and API latency; outcomes are completion rate, time to funds, support rate per thousand transactions, and repeat usage.\n\nIf delivery is green and outcomes are flat, we're solving the wrong problem or measuring the wrong cohort.",
+    "category": "Outcomes",
+    "experienceModuleId": "digital-banking-metrics",
+    "librarySection": "product_banking_knowledge",
+    "preparationTier": "P0",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "very_high", "cross_functional_panel": "high" },
+    "isPreferred": true
+  },
+  {
+    "importKey": "simplii-new-multi-system-journey-2026",
+    "question": "How do you evaluate success when the customer journey spans multiple systems?",
+    "answer": "I define journey-level metrics with shared IDs across systems — even if internal teams own slices.\n\nFor enrollment plus first payment, I'd track one customer key from signup through funding confirmation, and attribute drop-off to the owning step.\n\nWe did similar work at RBC where rewards, payments, and core banking each had their own dashboards. The product view stitched events into one funnel for decisions.\n\nWithout that, teams optimize local metrics and customers still feel the pain at the handoffs.",
+    "category": "Outcomes",
+    "experienceModuleId": "rbc-cashback",
+    "librarySection": "product_experience",
+    "preparationTier": "P1",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "high", "cross_functional_panel": "very_high" },
+    "isPreferred": false
+  },
+  {
+    "importKey": "simplii-new-delay-communication-2026",
+    "question": "How do you communicate a delivery delay to leadership?",
+    "answer": "Early, with the why, impact, and options.\n\nI don't hide behind engineering jargon. I explain what we learned, what risk we'd accept if we shipped on the original date, and what date is credible with a narrower scope.\n\nI bring a recommendation, not a problem dump — usually a phased launch or a scope cut that preserves the customer-critical path.",
+    "category": "Stakeholders",
+    "experienceModuleId": "leadership-general",
+    "librarySection": "leadership_behavioural",
+    "preparationTier": "P1",
+    "roundRelevance": { "recruiter": "medium", "hiring_manager": "very_high", "cross_functional_panel": "medium" },
+    "isPreferred": false
+  },
+  {
+    "importKey": "simplii-new-design-engineering-disagree-2026",
+    "question": "How do you resolve disagreements between design and engineering?",
+    "answer": "I bring us back to the customer job and constraints.\n\nWe list options with customer impact, implementation cost, and risk. If design wins on experience but engineering flags operational load, we look for a thinner MVP that preserves the core insight.\n\nIf it's deadlock, I decide and document why — then we measure after launch.\n\nAmbiguity is worse than a clear bet everyone disagreed with but understood.",
+    "category": "Stakeholders",
+    "experienceModuleId": "leadership-general",
+    "librarySection": "leadership_behavioural",
+    "preparationTier": "P1",
+    "roundRelevance": { "recruiter": "low", "hiring_manager": "high", "cross_functional_panel": "medium" },
+    "isPreferred": false
+  }
+]

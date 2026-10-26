@@ -1,0 +1,107 @@
+<timestamp>Monday, Oct 26, 2026, 3:00 PM (UTC-4)</timestamp>
+<user_query>
+# Interview Copilot — Add 5 Prepared Interview Q&As and Connect Follow-Ups
+
+## Objective
+
+Update my existing Questrade Senior Product Manager, Everyday Banking interview profile with the five complete questions and answers provided below.
+
+These answers have been reviewed for tone and structure. Preserve their natural, conversational wording exactly.
+
+Use the existing Supabase `prepared_qa` database, current Q&A taxonomy, parent-child relationships, interview-round ranking and Supabase `gte-small` semantic-search infrastructure.
+
+Do not redesign the application or change STT, authentication, Live Interview navigation or unrelated Q&A records.
+
+## 1. Important career context
+
+For this interview-preparation profile, assume I am currently employed at Arc'teryx as Senior Product Manager, CRM & Loyalty.
+
+I am leading membership-related product work and selectively exploring Questrade because of the opportunity to return to financial services.
+
+All five answers must remain consistent with this interview scenario.
+
+Do not introduce references to unemployment, layoffs or having left Arc'teryx.
+
+Do not imply that the full membership platform has launched or achieved outcomes that haven't been substantiated.
+
+## 2. Import the following Q&As
+
+### Q1 — What are you currently working on at Arc'teryx?
+
+Canonical question:
+"What are you currently working on at Arc'teryx?"
+
+Alternative phrasings:
+- What are you working on right now?
+- Tell me about your current role.
+- What's the latest product initiative you're leading?
+- Can you tell me more about your time at Arc'teryx?
+- What's happening with the membership program?
+- Tell me about the Sperro SV launch.
+- What have you been focused on recently?
+
+Library section: `product_experience`
+
+Experience module: `arcteryx-membership`
+
+Question intent: `main_story`
+
+Round relevance:
+- Recruiter: Very High
+- Hiring Manager: Very High
+- Cross-functional Panel: High
+
+Evidence classification: `resume_supported_review`
+
+Full prepared answer:
+
+One of the more interesting things I've been working on recently is tied to the launch of the Sperro SV, which is Arc'teryx's first circular hardshell.
+
+For context, I've been leading the development of a broader membership program at Arc'teryx. The vision is to build a deeper relationship with customers beyond the initial purchase, particularly around gear ownership, product care, repairs and community experiences.
+
+We'd secured about $5.2 million in funding for that program, but it's a fairly substantial platform build with dependencies across commerce, identity, customer service and our ReBIRD circularity operations.
+
+The interesting challenge came when we needed to support the Sperro SV launch. The full membership platform wasn't going to be ready in time, but there were some genuinely valuable benefits we still wanted to offer customers buying the jacket.
+
+So rather than trying to accelerate the entire membership roadmap, we made the decision to carve out a smaller, more focused release.
+
+That included three years of unlimited out-of-warranty repairs, access to exclusive community events and an opportunity to win a Global Academy experience.
+
+My focus was figuring out how to deliver those benefits independently of the larger platform, while making sure the customer experience and the operational teams behind it were actually ready.
+
+That meant working closely with ReBIRD, customer service and the teams responsible for the jacket's digital product passport, while being really deliberate about what we owned and what needed to remain part of the longer-term membership roadmap.
+
+We were able to support the September launch without having to wait for the entire membership platform.
+
+For me, it was a good example of something that comes up quite often in product management. You can have a compelling long-term vision, but sometimes the right decision is to reduce scope, isolate the most valuable experience and deliver that well rather than trying to do everything at once.
+
+### Q2 — How did you decide what to include in the smaller Sperro SV release?
+
+Canonical question:
+"How did you decide what to include in the smaller Sperro SV release?"
+
+Alternative phrasings:
+- How did you prioritize the Sperro SV launch?
+- What did you cut from the MVP?
+- Why didn't you wait for the full membership platform?
+- How did you decide which benefits were essential?
+- What trade-offs did you make for the circularity launch?
+- How did you manage dependencies across teams?
+
+Library section: `product_experience`
+
+Experience module: `arcteryx-membership`
+
+Question intent: `prioritization`
+
+Round relevance:
+- Recruiter: Medium
+- Hiring Manager: Very High
+- Cross-functional Panel: High
+
+Evidence classification: `resume_supported_review`
+
+Full prepared answer:
+
+I think the key was separating the benefits customers would actually receive from the infrastructure we eventually wanted to
+</user_query>

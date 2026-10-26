@@ -1,0 +1,19 @@
+{
+  "action": "alias_only",
+  "targetCanonicalQuestion": "How would you manage transitioning away from an ongoing membership initiative?",
+  "targetPreparedQaId": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+  "altPhrasings": [
+    "What happens to the membership program if you leave?",
+    "What happens to membership if you take another job?",
+    "Who owns the roadmap if you're not there?",
+    "Would the membership rollout suffer if you moved to Questrade?",
+    "What happens to the Sperro and membership work if you're gone?"
+  ],
+  "newCanonicalRecord": false,
+  "suggestedShortRehearsalAnswer_NotForSeparateCanonical": "The program should be able to keep moving without me. I'd work with my manager to agree on a new product owner, then hand over the reasoning behind our roadmap and platform decisions, not just the backlog. I'd make the upcoming milestones, cross-team dependencies and open risks visible, and introduce that person directly to partners like Commerce, Identity and ReBIRD. I'd want them involved in key decisions during the transition so relationships and context carry forward. The goal is a clean handover, not to make the membership program dependent on me staying.",
+  "guardrails": [
+    "Keep existing Q5 full answer; no new competing canonical.",
+    "No claim that departure or handover already occurred.",
+    "Merge normalized unique phrases to navigator_meta and seed detect after schema inspection."
+  ]
+}

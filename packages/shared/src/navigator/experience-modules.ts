@@ -121,6 +121,36 @@ export const EXPERIENCE_MODULES: Record<string, ExperienceModule> = {
     company: "Questrade",
     libraryCategory: "banking_technical",
   },
+  "digital-banking-engagement": {
+    id: "digital-banking-engagement",
+    label: "Digital Banking — Account Engagement",
+    libraryCategory: "banking_strategy",
+  },
+  "digital-banking-deposits": {
+    id: "digital-banking-deposits",
+    label: "Digital Banking — Direct Deposit & Funding",
+    libraryCategory: "banking_strategy",
+  },
+  "digital-banking-payments": {
+    id: "digital-banking-payments",
+    label: "Digital Banking — Payments & Controls",
+    libraryCategory: "banking_technical",
+  },
+  "digital-banking-metrics": {
+    id: "digital-banking-metrics",
+    label: "Digital Banking — Metrics & Economics",
+    libraryCategory: "product_analytics",
+  },
+  "digital-banking-ai": {
+    id: "digital-banking-ai",
+    label: "Digital Banking — AI & Automation",
+    libraryCategory: "banking_technical",
+  },
+  "digital-banking-hub": {
+    id: "digital-banking-hub",
+    label: "Digital Banking — Aggregation & Financial View",
+    libraryCategory: "banking_strategy",
+  },
   "career-general": {
     id: "career-general",
     label: "Career & Motivation",

@@ -1,0 +1,559 @@
+{
+  "mode": "apply",
+  "processed": 91,
+  "created": [
+    "followup-expansion-2026-10-9aa86e6ed4991be8",
+    "followup-expansion-2026-10-e875f9d64c5a9e6a",
+    "followup-expansion-2026-10-67f356d158e5db0f",
+    "followup-expansion-2026-10-a186e0487d072c84",
+    "followup-expansion-2026-10-07aa78c3f0321f51",
+    "followup-expansion-2026-10-c28bf6e58efb1cc2",
+    "followup-expansion-2026-10-783641cec16f6188",
+    "followup-expansion-2026-10-47da105a5246e62e",
+    "followup-expansion-2026-10-723124b41a88671e",
+    "followup-expansion-2026-10-301fb13e986ed4d0",
+    "followup-expansion-2026-10-992afcd16dd5ffcb",
+    "followup-expansion-2026-10-0ee11c5bb2049c12",
+    "followup-expansion-2026-10-d17b8d965332251b",
+    "followup-expansion-2026-10-baa87ecc283d509e",
+    "followup-expansion-2026-10-55d503d1ee7ba2f4",
+    "followup-expansion-2026-10-c106931a80bdaba7",
+    "followup-expansion-2026-10-c8a85beb577449d9",
+    "followup-expansion-2026-10-22362777e51489a8",
+    "followup-expansion-2026-10-490b32859c4684f4",
+    "followup-expansion-2026-10-037002a66f7c0bea",
+    "followup-expansion-2026-10-bea4a6b41c5964d6",
+    "followup-expansion-2026-10-59161acf4bf0b119",
+    "followup-expansion-2026-10-4b0212c6f3f74d1f",
+    "followup-expansion-2026-10-43490de1e099ede8",
+    "followup-expansion-2026-10-4bf5985a1de015b1",
+    "followup-expansion-2026-10-2aeba274e494fdf2",
+    "followup-expansion-2026-10-6155efde5e65801e",
+    "followup-expansion-2026-10-a0d40d083ec744ef",
+    "followup-expansion-2026-10-d33952d1ddef7236",
+    "followup-expansion-2026-10-8fc7cbfb4ebf7de3",
+    "followup-expansion-2026-10-bf436c9433d0107c",
+    "followup-expansion-2026-10-3eaa68220372868b",
+    "followup-expansion-2026-10-a6c3f582931f677c",
+    "followup-expansion-2026-10-0f5c5a1cd82b4f3d",
+    "followup-expansion-2026-10-1b11b5880756e558",
+    "followup-expansion-2026-10-aee698b800a5a0c3",
+    "followup-expansion-2026-10-7348fb24d0cce3df",
+    "followup-expansion-2026-10-8034ad0461d8c4d2",
+    "followup-expansion-2026-10-7dc542ebf39e6dc6",
+    "followup-expansion-2026-10-2aae75bc9cff3ab9",
+    "followup-expansion-2026-10-52438287a208eb8e",
+    "followup-expansion-2026-10-81f59cee90ddc479",
+    "followup-expansion-2026-10-538e221cc463571b",
+    "followup-expansion-2026-10-0de6e24c3ec72748",
+    "followup-expansion-2026-10-2d5216038eb7201f",
+    "followup-expansion-2026-10-1a10ff8457e116b4",
+    "followup-expansion-2026-10-35b5658e122b27ca",
+    "followup-expansion-2026-10-011534bf24455032",
+    "followup-expansion-2026-10-56175462d6794fa6",
+    "followup-expansion-2026-10-333f2eb84c1d211b",
+    "followup-expansion-2026-10-565de636656ef238",
+    "followup-expansion-2026-10-3df9c94b9ea49d8f",
+    "followup-expansion-2026-10-6c1f0276be1cda04",
+    "followup-expansion-2026-10-cd8ddf2374aab188",
+    "followup-expansion-2026-10-5b3cacfbf9d7ec58",
+    "followup-expansion-2026-10-10ec3c7fab699446",
+    "followup-expansion-2026-10-41def4e541d32b60",
+    "followup-expansion-2026-10-c1c6a9724d86f74e",
+    "followup-expansion-2026-10-6c7a1a15e3964650",
+    "followup-expansion-2026-10-7c4c12feaff15b1c",
+    "followup-expansion-2026-10-f9c0dbb7c57fb56a",
+    "followup-expansion-2026-10-820f4090df4a3dc6",
+    "followup-expansion-2026-10-410906da823f7878",
+    "followup-expansion-2026-10-1f2320a19a45d757",
+    "followup-expansion-2026-10-aa3d0e2b91ac1b17",
+    "followup-expansion-2026-10-463e16f913ccff8d",
+    "followup-expansion-2026-10-eb5a7a85707df703",
+    "followup-expansion-2026-10-b85d72575972a2e5",
+    "followup-expansion-2026-10-809d4ac5fe16d18c",
+    "followup-expansion-2026-10-ff778946b3ce4c07",
+    "followup-expansion-2026-10-929f1b51201c0ddb",
+    "followup-expansion-2026-10-4f824187fbbff65a",
+    "followup-expansion-2026-10-ed30a21945cc58cb",
+    "followup-expansion-2026-10-3556d63635e0e2ae",
+    "followup-expansion-2026-10-90f9fbcc4c70655e",
+    "followup-expansion-2026-10-783964890115ecc2",
+    "followup-expansion-2026-10-5401967e0f935946",
+    "followup-expansion-2026-10-43130d1fc58052a7",
+    "followup-expansion-2026-10-704b687b4abdb2cf",
+    "followup-expansion-2026-10-d9a7e448477c9d46",
+    "followup-expansion-2026-10-d2542b5d18b6f8eb",
+    "followup-expansion-2026-10-65e520e78893619f",
+    "followup-expansion-2026-10-deb9bcd3c95dfd17",
+    "followup-expansion-2026-10-190f2fbd4b39dfdf",
+    "followup-expansion-2026-10-0ffeac83b074227c",
+    "followup-expansion-2026-10-fe3aaf8b0a104ebd",
+    "followup-expansion-2026-10-13246270dc5fb057",
+    "followup-expansion-2026-10-25dbf0548b118c22",
+    "followup-expansion-2026-10-02ff8d0c1a2d62e6",
+    "followup-expansion-2026-10-818789ec0c4cf2bb"
+  ],
+  "aliasesAdded": [
+    "followup-expansion-2026-10-d13d503e478400a0"
+  ],
+  "skipped": [
+    "followup-expansion-current-employer-bcf3c6da0f44f120: skipped (user dedup — existing career answers)"
+  ],
+  "parentLinks": [
+    {
+      "child": "Why have you moved between several industries and employers?",
+      "parent": "Tell me about yourself."
+    },
+    {
+      "child": "What's the biggest learning curve for you if you join Questbank?",
+      "parent": "You haven't owned a traditional chequing account. Why are you qualified?"
+    },
+    {
+      "child": "What is the strongest single reason we should choose you for this job?",
+      "parent": "What makes you different from other Senior PM candidates?"
+    },
+    {
+      "child": "What concerns would you have about joining a business that is still establishing its banking offering?",
+      "parent": "Why Questrade? Why this role?"
+    },
+    {
+      "child": "Are you more interested in building new products or improving existing ones?",
+      "parent": "Why move into everyday banking from rewards and loyalty?"
+    },
+    {
+      "child": "What would you actually deliver in your first 30 days?",
+      "parent": "What would you do in your first 90 days?"
+    },
+    {
+      "child": "What happened if an Avion member didn't have Interac Autodeposit enabled?",
+      "parent": "Walk me through the Interac e-Transfer product you launched at RBC."
+    },
+    {
+      "child": "How would you prevent a customer from receiving the same cashback payout twice?",
+      "parent": "What happens if a payout API times out after the request was accepted?"
+    },
+    {
+      "child": "What would the customer see while a cashback payout is pending or being investigated?",
+      "parent": "Where should transaction status, balance calculation and reconciliation responsibilities sit?"
+    },
+    {
+      "child": "Who made the final decision when the payments team, Risk and Product disagreed?",
+      "parent": "What exactly did you own versus RBC's payments infrastructure team?"
+    },
+    {
+      "child": "What were the leading indicators before you could measure meaningful payout volume?",
+      "parent": "How did you measure success for the Avion cashback withdrawal launch?"
+    },
+    {
+      "child": "How did you turn regulatory and operations requirements into stories engineers could build?",
+      "parent": "What exactly did you own versus RBC's payments infrastructure team?"
+    },
+    {
+      "child": "Why did you use the member's email address, and what if that address changed?",
+      "parent": "Walk me through the Interac e-Transfer product you launched at RBC."
+    },
+    {
+      "child": "If payout failures doubled after launch, how would you investigate the first week?",
+      "parent": "What would you do differently on the Avion cashback withdrawal launch?"
+    },
+    {
+      "child": "How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?",
+      "parent": "Tell me about building Avion Select from zero to one."
+    },
+    {
+      "child": "Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product?",
+      "parent": "Why Interac e-Transfer instead of direct bank-account linking?"
+    },
+    {
+      "child": "What was actually live when you left Arc'teryx, and what was still planned?",
+      "parent": "You secured $5.2M at Arc'teryx. Was the programme launched?"
+    },
+    {
+      "child": "What assumptions in the $5.2 million investment case were most sensitive?",
+      "parent": "How did you secure $5.2 million in capital funding at Arc'teryx?"
+    },
+    {
+      "child": "What would have changed your recommendation from buy to build?",
+      "parent": "Why did you choose a headless membership platform rather than building everything internally?"
+    },
+    {
+      "child": "What did you cut from the membership MVP, and how did you defend those trade-offs?",
+      "parent": "What did you personally decide or deprioritize?"
+    },
+    {
+      "child": "How would you test whether customers wanted membership benefits before building the full platform?",
+      "parent": "How did you know membership was a customer problem at Arc'teryx?"
+    },
+    {
+      "child": "How do you know the HBC application improvement wasn't caused by a different applicant mix?",
+      "parent": "How did you measure the 15% improvement?"
+    },
+    {
+      "child": "Which step in a credit-card application funnel would you inspect first, and why?",
+      "parent": "What exactly did you change in the HBC application experience?"
+    },
+    {
+      "child": "Could the HBC incentives have increased spending while destroying profitability?",
+      "parent": "Why did HBC modeled LTV rise 10%, and how certain are you?"
+    },
+    {
+      "child": "What did you control in the HBC card portfolio, and what was controlled by Neo?",
+      "parent": "What does 'P&L ownership' at HBC actually mean?"
+    },
+    {
+      "child": "How did you align TD, CIBC and Amex when the banks had different priorities?",
+      "parent": "How did you drive credit card acquisition growth at Aeroplan?"
+    },
+    {
+      "child": "What happened after the customer clicked Apply—how did you know they became an approved cardholder?",
+      "parent": "How exactly did you measure the 40% conversion lift?"
+    },
+    {
+      "child": "How did you prevent one card partner's offer from undermining another's?",
+      "parent": "How did you drive credit card acquisition growth at Aeroplan?"
+    },
+    {
+      "child": "What's the difference between acquiring a cardholder, activating one and retaining one?",
+      "parent": "How would you explain your approach to customer activation and retention at HBC?"
+    },
+    {
+      "child": "What if customers trust Questrade for investments but refuse to deposit their salary?",
+      "parent": "How would you convince existing Questrade investors to make Questbank their primary bank?"
+    },
+    {
+      "child": "Which Questrade investing customers would you deliberately not target first for banking?",
+      "parent": "Who would you target first for Questbank adoption?"
+    },
+    {
+      "child": "How would you design a safe payroll-switching experience when the employer's first deposit could fail?",
+      "parent": "How would you increase direct deposit adoption?"
+    },
+    {
+      "child": "What if a customer receives one payroll deposit and then stops using Questbank?",
+      "parent": "How do you know a customer really switched their paycheque?"
+    },
+    {
+      "child": "How would you win customers without paying an expensive cash sign-up bonus?",
+      "parent": "Why would someone switch their primary bank if their current bank works fine?"
+    },
+    {
+      "child": "If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?",
+      "parent": "How would you design a single financial hub across spending, saving and investing?"
+    },
+    {
+      "child": "What should the financial hub do if an external bank connection is stale or disconnected?",
+      "parent": "What is the biggest risk in connecting external accounts?"
+    },
+    {
+      "child": "Why would a bank not want unlimited deposits if customers are willing to bring them?",
+      "parent": "Is a $100 million increase in deposits automatically a win?"
+    },
+    {
+      "child": "What happens to your banking growth strategy when interest rates fall?",
+      "parent": "How would you decide between better rates and better switching UX?"
+    },
+    {
+      "child": "Would you consider a secondary banking relationship a product failure?",
+      "parent": "What if someone keeps two banks rather than moving everything to Questbank?"
+    },
+    {
+      "child": "It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?",
+      "parent": "How would you handle a major payment incident?"
+    },
+    {
+      "child": "Why might my available balance be different from my posted balance?",
+      "parent": "What if the ledger balance and customer-facing balance don't match?"
+    },
+    {
+      "child": "A customer sees the same purchase twice, once pending and once posted. How would you fix it?",
+      "parent": "How do pending and posted card transactions differ?"
+    },
+    {
+      "child": "Card payments start declining, but the banking app and core ledger are online. Where do you look?",
+      "parent": "How would you handle a major payment incident?"
+    },
+    {
+      "child": "How would you design a new payee or recipient verification experience?",
+      "parent": "What controls would you require before allowing a new transfer type?"
+    },
+    {
+      "child": "How would you use feature flags without creating inconsistent financial records?",
+      "parent": "How would you roll out a critical payments integration?"
+    },
+    {
+      "child": "When should an automated retry be prohibited even if it would reduce failures?",
+      "parent": "How would you handle payment exceptions and straight-through processing as transaction volume grows?"
+    },
+    {
+      "child": "What would you do if the customer sees a successful transfer but settlement hasn't reconciled?",
+      "parent": "What is reconciliation, and why does a PM need to understand it?"
+    },
+    {
+      "child": "How should a customer dispute an unfamiliar debit card transaction?",
+      "parent": "How would you handle duplicate charges, incorrect balances or transaction discrepancies?"
+    },
+    {
+      "child": "How do you reduce fraud without rejecting too many legitimate banking customers?",
+      "parent": "What if Risk wants a step that cuts conversion by 20%?"
+    },
+    {
+      "child": "How would you explain a deposit hold to a customer who needs the money tomorrow?",
+      "parent": "How would you design a reliable account-funding experience?"
+    },
+    {
+      "child": "How would you design recurring bill payments or pre-authorized debits for a new bank?",
+      "parent": "How would you design a reliable account-funding experience?"
+    },
+    {
+      "child": "Which three metrics would you put on your first Questbank executive scorecard?",
+      "parent": "How do you measure primary-banking adoption versus superficial account opening?"
+    },
+    {
+      "child": "Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship?",
+      "parent": "If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?"
+    },
+    {
+      "child": "What is sample ratio mismatch, and why would you care in a banking A/B test?",
+      "parent": "How do you prevent cohort analysis from becoming a misleading before-and-after story?"
+    },
+    {
+      "child": "How would you tell healthy banking engagement from anxiety-driven repeat checking?",
+      "parent": "How do you know an increase in DAU isn't just more balance checking?"
+    },
+    {
+      "child": "How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card?",
+      "parent": "Explain how you would model customer lifetime value in banking."
+    },
+    {
+      "child": "How would you experiment on payment reliability if you can't ethically expose customers to worse payments?",
+      "parent": "How would you select an experiment's primary metric and guardrails?"
+    },
+    {
+      "child": "Which early warning indicator would tell you Questbank is losing customer trust?",
+      "parent": "What metrics would you use to measure success in everyday banking?"
+    },
+    {
+      "child": "What happens if a customer revokes an AI agent's access while it has a request in progress?",
+      "parent": "How would you protect customers from malicious or unauthorized AI-agent actions?"
+    },
+    {
+      "child": "Would you let an external AI agent read transaction descriptions or merchant details?",
+      "parent": "Would you extend Questrade MCP beyond brokerage into everyday banking?"
+    },
+    {
+      "child": "What would convince you to stop an AI financial-assistant pilot?",
+      "parent": "How would you test an AI-powered financial feature before launching it broadly?"
+    },
+    {
+      "child": "When would you choose deterministic software or rules instead of an AI model?",
+      "parent": "Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?"
+    },
+    {
+      "child": "Explain your interview copilot's semantic matching architecture without using technical jargon.",
+      "parent": "How are you using AI in your product management work?"
+    },
+    {
+      "child": "How did you know your semantic-search approach was actually better than keyword matching?",
+      "parent": "How are you using AI in your product management work?"
+    },
+    {
+      "child": "If MCP standardizes tools, what competitive advantage can Questrade still own?",
+      "parent": "What is MCP, and why is it different from putting a chatbot inside a financial app?"
+    },
+    {
+      "child": "What if Risk still says no after you've presented all your evidence?",
+      "parent": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering."
+    },
+    {
+      "child": "What if Engineering says your banking launch plan is unsafe but leadership wants the date?",
+      "parent": "How do you handle an engineer who strongly disagrees with your roadmap?"
+    },
+    {
+      "child": "How would you handle an offshore team that doesn't understand the customer impact of a requirement?",
+      "parent": "How do you lead when you don't manage the engineers directly?"
+    },
+    {
+      "child": "What do you do when a shared dependency is blocking your objective but the other PM has different priorities?",
+      "parent": "What if your PM peers own Cards and Money Movement, but your metric depends on both?"
+    },
+    {
+      "child": "When would you shut down a feature your own team spent six months building?",
+      "parent": "How do you know when to stop investing in a feature?"
+    },
+    {
+      "child": "How do you communicate a complex banking trade-off to an executive in two minutes?",
+      "parent": "How do you manage stakeholders who disagree on priorities?"
+    },
+    {
+      "child": "How do you say no without damaging a relationship with a powerful stakeholder?",
+      "parent": "Tell me about a time you said no to a stakeholder."
+    },
+    {
+      "child": "A customer says they sent money to the wrong recipient. What can your product realistically do?",
+      "parent": "How would you handle duplicate charges, incorrect balances or transaction discrepancies?"
+    },
+    {
+      "child": "What is the difference between KYC, AML monitoring and transaction fraud prevention?",
+      "parent": "What if Risk wants a step that cuts conversion by 20%?"
+    },
+    {
+      "child": "What if a customer fails identity verification while trying to open a Questbank account?",
+      "parent": "How would you convince existing Questrade investors to make Questbank their primary bank?"
+    },
+    {
+      "child": "An account was frozen for suspected fraud. How would you handle the customer experience?",
+      "parent": "How would you handle a major payment incident?"
+    },
+    {
+      "child": "What should happen if someone loses their phone and tries to access their bank account?",
+      "parent": "What controls would you require before allowing a new transfer type?"
+    },
+    {
+      "child": "How would you explain CDIC deposit protection versus CIPF investment protection?",
+      "parent": "How would you design a reliable account-funding experience?"
+    },
+    {
+      "child": "Would you use screen scraping or customer-permissioned banking APIs for account aggregation?",
+      "parent": "What is the biggest risk in connecting external accounts?"
+    },
+    {
+      "child": "What would you tell customers if a major banking partner was down and you didn't know the restoration time?",
+      "parent": "How would you handle a major payment incident?"
+    },
+    {
+      "child": "Should a bank help customers automate savings when they have unpredictable income?",
+      "parent": "How would you increase direct deposit adoption?"
+    },
+    {
+      "child": "How would you decide when to compensate a customer after a bank payment error?",
+      "parent": "How would you handle payment exceptions and straight-through processing as transaction volume grows?"
+    },
+    {
+      "child": "How would you differentiate Questbank if Wealthsimple copied your best feature?",
+      "parent": "Why would customers choose Questrade over Wealthsimple or a traditional bank?"
+    },
+    {
+      "child": "How would you handle events arriving out of order in a customer's transaction history?",
+      "parent": "What if the ledger balance and customer-facing balance don't match?"
+    },
+    {
+      "child": "How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant?",
+      "parent": "You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose?"
+    },
+    {
+      "child": "What would the MVP of a payroll-switching feature actually contain?",
+      "parent": "How would you increase direct deposit adoption?"
+    },
+    {
+      "child": "How long would you wait before deciding whether a payroll-switching experiment actually worked?",
+      "parent": "If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?"
+    },
+    {
+      "child": "What would your launch-readiness checklist include for an everyday-banking feature?",
+      "parent": "How would you roll out a critical payments integration?"
+    },
+    {
+      "child": "How would you set shared OKRs without making ownership ambiguous?",
+      "parent": "What if your PM peers own Cards and Money Movement, but your metric depends on both?"
+    },
+    {
+      "child": "What would you do if post-launch data contradicts the user research that justified the feature?",
+      "parent": "What if the team ships a feature on time, but adoption is poor?"
+    }
+  ],
+  "embeddingCandidates": [
+    "Why have you moved between several industries and employers?",
+    "What's the biggest learning curve for you if you join Questbank?",
+    "What is the strongest single reason we should choose you for this job?",
+    "What concerns would you have about joining a business that is still establishing its banking offering?",
+    "Are you more interested in building new products or improving existing ones?",
+    "What would you actually deliver in your first 30 days?",
+    "What happened if an Avion member didn't have Interac Autodeposit enabled?",
+    "How would you prevent a customer from receiving the same cashback payout twice?",
+    "What would the customer see while a cashback payout is pending or being investigated?",
+    "Who made the final decision when the payments team, Risk and Product disagreed?",
+    "What were the leading indicators before you could measure meaningful payout volume?",
+    "How did you turn regulatory and operations requirements into stories engineers could build?",
+    "Why did you use the member's email address, and what if that address changed?",
+    "If payout failures doubled after launch, how would you investigate the first week?",
+    "How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?",
+    "Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product?",
+    "What was actually live when you left Arc'teryx, and what was still planned?",
+    "What assumptions in the $5.2 million investment case were most sensitive?",
+    "What would have changed your recommendation from buy to build?",
+    "What did you cut from the membership MVP, and how did you defend those trade-offs?",
+    "How would you test whether customers wanted membership benefits before building the full platform?",
+    "How do you know the HBC application improvement wasn't caused by a different applicant mix?",
+    "Which step in a credit-card application funnel would you inspect first, and why?",
+    "Could the HBC incentives have increased spending while destroying profitability?",
+    "What did you control in the HBC card portfolio, and what was controlled by Neo?",
+    "How did you align TD, CIBC and Amex when the banks had different priorities?",
+    "What happened after the customer clicked Apply—how did you know they became an approved cardholder?",
+    "How did you prevent one card partner's offer from undermining another's?",
+    "What's the difference between acquiring a cardholder, activating one and retaining one?",
+    "What if customers trust Questrade for investments but refuse to deposit their salary?",
+    "Which Questrade investing customers would you deliberately not target first for banking?",
+    "How would you design a safe payroll-switching experience when the employer's first deposit could fail?",
+    "What if a customer receives one payroll deposit and then stops using Questbank?",
+    "How would you win customers without paying an expensive cash sign-up bonus?",
+    "If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?",
+    "What should the financial hub do if an external bank connection is stale or disconnected?",
+    "Why would a bank not want unlimited deposits if customers are willing to bring them?",
+    "What happens to your banking growth strategy when interest rates fall?",
+    "Would you consider a secondary banking relationship a product failure?",
+    "It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?",
+    "Why might my available balance be different from my posted balance?",
+    "A customer sees the same purchase twice, once pending and once posted. How would you fix it?",
+    "Card payments start declining, but the banking app and core ledger are online. Where do you look?",
+    "How would you design a new payee or recipient verification experience?",
+    "How would you use feature flags without creating inconsistent financial records?",
+    "When should an automated retry be prohibited even if it would reduce failures?",
+    "What would you do if the customer sees a successful transfer but settlement hasn't reconciled?",
+    "How should a customer dispute an unfamiliar debit card transaction?",
+    "How do you reduce fraud without rejecting too many legitimate banking customers?",
+    "How would you explain a deposit hold to a customer who needs the money tomorrow?",
+    "How would you design recurring bill payments or pre-authorized debits for a new bank?",
+    "Which three metrics would you put on your first Questbank executive scorecard?",
+    "Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship?",
+    "What is sample ratio mismatch, and why would you care in a banking A/B test?",
+    "How would you tell healthy banking engagement from anxiety-driven repeat checking?",
+    "How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card?",
+    "How would you experiment on payment reliability if you can't ethically expose customers to worse payments?",
+    "Which early warning indicator would tell you Questbank is losing customer trust?",
+    "What happens if a customer revokes an AI agent's access while it has a request in progress?",
+    "Would you let an external AI agent read transaction descriptions or merchant details?",
+    "What would convince you to stop an AI financial-assistant pilot?",
+    "When would you choose deterministic software or rules instead of an AI model?",
+    "Explain your interview copilot's semantic matching architecture without using technical jargon.",
+    "How did you know your semantic-search approach was actually better than keyword matching?",
+    "If MCP standardizes tools, what competitive advantage can Questrade still own?",
+    "What if Risk still says no after you've presented all your evidence?",
+    "What if Engineering says your banking launch plan is unsafe but leadership wants the date?",
+    "How would you handle an offshore team that doesn't understand the customer impact of a requirement?",
+    "What do you do when a shared dependency is blocking your objective but the other PM has different priorities?",
+    "When would you shut down a feature your own team spent six months building?",
+    "How do you communicate a complex banking trade-off to an executive in two minutes?",
+    "How do you say no without damaging a relationship with a powerful stakeholder?",
+    "A customer says they sent money to the wrong recipient. What can your product realistically do?",
+    "What is the difference between KYC, AML monitoring and transaction fraud prevention?",
+    "What if a customer fails identity verification while trying to open a Questbank account?",
+    "An account was frozen for suspected fraud. How would you handle the customer experience?",
+    "What should happen if someone loses their phone and tries to access their bank account?",
+    "How would you explain CDIC deposit protection versus CIPF investment protection?",
+    "Would you use screen scraping or customer-permissioned banking APIs for account aggregation?",
+    "What would you tell customers if a major banking partner was down and you didn't know the restoration time?",
+    "Should a bank help customers automate savings when they have unpredictable income?",
+    "How would you decide when to compensate a customer after a bank payment error?",
+    "How would you differentiate Questbank if Wealthsimple copied your best feature?",
+    "How would you handle events arriving out of order in a customer's transaction history?",
+    "How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant?",
+    "What would the MVP of a payroll-switching feature actually contain?",
+    "How long would you wait before deciding whether a payroll-switching experiment actually worked?",
+    "What would your launch-readiness checklist include for an everyday-banking feature?",
+    "How would you set shared OKRs without making ownership ambiguous?",
+    "What would you do if post-launch data contradicts the user research that justified the feature?"
+  ],
+  "at": "2026-10-26T19:14:42.891Z",
+  "seedCountAfter": 261,
+  "registryKeys": 92
+}

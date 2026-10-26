@@ -1,0 +1,2449 @@
+{
+  "generatedAt": "2026-10-26T19:14:40.903Z",
+  "expansionMeta": {
+    "version": "draft-2026-10-26-current-arcteryx-scenario",
+    "status": "proposed_not_imported",
+    "basedOnActiveRecords": 163,
+    "count": 92,
+    "important": "All entries are draft answers to review; hypothetical scenarios are frameworks, not claims that events happened. Existing library data remains unchanged.",
+    "existingEmbeddedFollowUps": 373,
+    "existingExplicitRelatedQuestionIds": 0,
+    "scenarioAssumption": "Interview rehearsal assumes current employment at Arc'teryx; no claim that actual career timeline has changed.",
+    "sourceVariant": "Questrade_Proposed_Followup_Expansion.json",
+    "changeSummary": "One proposed question and answer revised; 91 entries otherwise unchanged; no changes to saved Supabase records."
+  },
+  "counts": {
+    "proposed": 92,
+    "p0": 25,
+    "p1": 67,
+    "newDistinct": 92,
+    "existingEquivalent": 0,
+    "aliasCandidates": 0,
+    "embeddedEquivalent": 0,
+    "unresolvedConflicts": 0,
+    "needsFactualReview": 1,
+    "alreadyImported": 0,
+    "seedCanonicalCount": 171,
+    "embeddedFollowUpCount": 376
+  },
+  "byCategory": {
+    "newDistinct": [
+      {
+        "importKey": "followup-expansion-current-employer-bcf3c6da0f44f120",
+        "priority": "P0",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "You're still at Arc'teryx and leading membership. Why consider Questrade now?",
+        "sourceParentId": "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+        "sourceParentQuestion": "Why are you looking to leave Arc'teryx?",
+        "experienceModuleId": "career-general",
+        "librarySection": "career_motivation",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-9aa86e6ed4991be8",
+        "priority": "P0",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Why have you moved between several industries and employers?",
+        "sourceParentId": "2f3a780e-6b54-42b8-b56d-8936a471fa68",
+        "sourceParentQuestion": "Tell me about yourself.",
+        "experienceModuleId": "career-general",
+        "librarySection": "career_motivation",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-e875f9d64c5a9e6a",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What's the biggest learning curve for you if you join Questbank?",
+        "sourceParentId": "a292f433-831a-440c-a196-dbf8c38fbddd",
+        "sourceParentQuestion": "You haven't owned a traditional chequing account. Why are you qualified?",
+        "experienceModuleId": "career-general",
+        "librarySection": "career_motivation",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-67f356d158e5db0f",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What is the strongest single reason we should choose you for this job?",
+        "sourceParentId": "f67032ca-4e2e-4b49-ae44-29b181eab8b6",
+        "sourceParentQuestion": "What makes you different from other Senior PM candidates?",
+        "experienceModuleId": "career-general",
+        "librarySection": "career_motivation",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-a186e0487d072c84",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What concerns would you have about joining a business that is still establishing its banking offering?",
+        "sourceParentId": "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+        "sourceParentQuestion": "Why Questrade? Why this role?",
+        "experienceModuleId": "career-general",
+        "librarySection": "career_motivation",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-07aa78c3f0321f51",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Are you more interested in building new products or improving existing ones?",
+        "sourceParentId": "c45ce30e-6de2-4164-93bf-8b67902caae0",
+        "sourceParentQuestion": "Why move into everyday banking from rewards and loyalty?",
+        "experienceModuleId": "career-general",
+        "librarySection": "career_motivation",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-c28bf6e58efb1cc2",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What would you actually deliver in your first 30 days?",
+        "sourceParentId": "d47c60d3-510e-4373-abf0-0749fcc41ebc",
+        "sourceParentQuestion": "What would you do in your first 90 days?",
+        "experienceModuleId": "career-general",
+        "librarySection": "career_motivation",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-783641cec16f6188",
+        "priority": "P0",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What happened if an Avion member didn't have Interac Autodeposit enabled?",
+        "sourceParentId": "244e239c-2f88-4b6e-968f-ef8ce65daa70",
+        "sourceParentQuestion": "Walk me through the Interac e-Transfer product you launched at RBC.",
+        "experienceModuleId": "rbc-cashback",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-47da105a5246e62e",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you prevent a customer from receiving the same cashback payout twice?",
+        "sourceParentId": "fb3c9a13-b37d-45df-b095-e14f8e84bed2",
+        "sourceParentQuestion": "What happens if a payout API times out after the request was accepted?",
+        "experienceModuleId": "rbc-cashback",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-723124b41a88671e",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What would the customer see while a cashback payout is pending or being investigated?",
+        "sourceParentId": "695ace4a-7c53-415e-9eb2-5f885d680c2b",
+        "sourceParentQuestion": "Where should transaction status, balance calculation and reconciliation responsibilities sit?",
+        "experienceModuleId": "rbc-cashback",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-301fb13e986ed4d0",
+        "priority": "P0",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Who made the final decision when the payments team, Risk and Product disagreed?",
+        "sourceParentId": "f290b115-770e-4448-82ac-52f4334f34de",
+        "sourceParentQuestion": "What exactly did you own versus RBC's payments infrastructure team?",
+        "experienceModuleId": "rbc-cashback",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-992afcd16dd5ffcb",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What were the leading indicators before you could measure meaningful payout volume?",
+        "sourceParentId": "11375f03-31fa-45da-8557-488a8cc63beb",
+        "sourceParentQuestion": "How did you measure success for the Avion cashback withdrawal launch?",
+        "experienceModuleId": "rbc-cashback",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-0ee11c5bb2049c12",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How did you turn regulatory and operations requirements into stories engineers could build?",
+        "sourceParentId": "f290b115-770e-4448-82ac-52f4334f34de",
+        "sourceParentQuestion": "What exactly did you own versus RBC's payments infrastructure team?",
+        "experienceModuleId": "rbc-cashback",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-d17b8d965332251b",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Why did you use the member's email address, and what if that address changed?",
+        "sourceParentId": "244e239c-2f88-4b6e-968f-ef8ce65daa70",
+        "sourceParentQuestion": "Walk me through the Interac e-Transfer product you launched at RBC.",
+        "experienceModuleId": "rbc-cashback",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-baa87ecc283d509e",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "If payout failures doubled after launch, how would you investigate the first week?",
+        "sourceParentId": "14ad93b1-527c-49e9-b160-e9b22ca0f888",
+        "sourceParentQuestion": "What would you do differently on the Avion cashback withdrawal launch?",
+        "experienceModuleId": "rbc-cashback",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-55d503d1ee7ba2f4",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?",
+        "sourceParentId": "6458104e-34c6-430c-8005-aef3a3da9c02",
+        "sourceParentQuestion": "Tell me about building Avion Select from zero to one.",
+        "experienceModuleId": "rbc-avion",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-c106931a80bdaba7",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product?",
+        "sourceParentId": "c226bb45-beb6-4162-9628-f16d6660b887",
+        "sourceParentQuestion": "Why Interac e-Transfer instead of direct bank-account linking?",
+        "experienceModuleId": "rbc-cashback",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-c8a85beb577449d9",
+        "priority": "P0",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What was actually live when you left Arc'teryx, and what was still planned?",
+        "sourceParentId": "b1eac049-c167-4977-a7bd-55e98d7e3b0b",
+        "sourceParentQuestion": "You secured $5.2M at Arc'teryx. Was the programme launched?",
+        "experienceModuleId": "arcteryx-membership",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-22362777e51489a8",
+        "priority": "P0",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What assumptions in the $5.2 million investment case were most sensitive?",
+        "sourceParentId": "439ccf45-857e-431f-ab0e-1312d6998f02",
+        "sourceParentQuestion": "How did you secure $5.2 million in capital funding at Arc'teryx?",
+        "experienceModuleId": "arcteryx-membership",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-490b32859c4684f4",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What would have changed your recommendation from buy to build?",
+        "sourceParentId": "a85b536e-5e20-468f-87d9-fb447ae796f6",
+        "sourceParentQuestion": "Why did you choose a headless membership platform rather than building everything internally?",
+        "experienceModuleId": "arcteryx-membership",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-037002a66f7c0bea",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What did you cut from the membership MVP, and how did you defend those trade-offs?",
+        "sourceParentId": "f9022f65-91fb-4094-ae8f-b4dc87edcca7",
+        "sourceParentQuestion": "What did you personally decide or deprioritize?",
+        "experienceModuleId": "arcteryx-membership",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-bea4a6b41c5964d6",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you test whether customers wanted membership benefits before building the full platform?",
+        "sourceParentId": "ab850009-b3cc-4b2b-b026-cd9bb28987c3",
+        "sourceParentQuestion": "How did you know membership was a customer problem at Arc'teryx?",
+        "experienceModuleId": "arcteryx-membership",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-59161acf4bf0b119",
+        "priority": "P0",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How do you know the HBC application improvement wasn't caused by a different applicant mix?",
+        "sourceParentId": "3218b561-2159-442e-a3aa-074756f877c0",
+        "sourceParentQuestion": "How did you measure the 15% improvement?",
+        "experienceModuleId": "hbc-mastercard-app",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-4b0212c6f3f74d1f",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Which step in a credit-card application funnel would you inspect first, and why?",
+        "sourceParentId": "e546440d-67eb-4266-8466-0827ccd35e42",
+        "sourceParentQuestion": "What exactly did you change in the HBC application experience?",
+        "experienceModuleId": "hbc-mastercard-app",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-43490de1e099ede8",
+        "priority": "P0",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Could the HBC incentives have increased spending while destroying profitability?",
+        "sourceParentId": "3ba24689-dd1a-4428-b018-743f0a8c61af",
+        "sourceParentQuestion": "Why did HBC modeled LTV rise 10%, and how certain are you?",
+        "experienceModuleId": "hbc-portfolio",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-4bf5985a1de015b1",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What did you control in the HBC card portfolio, and what was controlled by Neo?",
+        "sourceParentId": "9b0f399e-6750-463a-9570-805c82449eb8",
+        "sourceParentQuestion": "What does 'P&L ownership' at HBC actually mean?",
+        "experienceModuleId": "hbc-portfolio",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-2aeba274e494fdf2",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How did you align TD, CIBC and Amex when the banks had different priorities?",
+        "sourceParentId": "e8d13d9e-a98d-4dbc-a596-a178557963b0",
+        "sourceParentQuestion": "How did you drive credit card acquisition growth at Aeroplan?",
+        "experienceModuleId": "aeroplan-cobrand",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-6155efde5e65801e",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What happened after the customer clicked Apply—how did you know they became an approved cardholder?",
+        "sourceParentId": "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4",
+        "sourceParentQuestion": "How exactly did you measure the 40% conversion lift?",
+        "experienceModuleId": "aeroplan-cobrand",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-a0d40d083ec744ef",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How did you prevent one card partner's offer from undermining another's?",
+        "sourceParentId": "e8d13d9e-a98d-4dbc-a596-a178557963b0",
+        "sourceParentQuestion": "How did you drive credit card acquisition growth at Aeroplan?",
+        "experienceModuleId": "aeroplan-cobrand",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-d33952d1ddef7236",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What's the difference between acquiring a cardholder, activating one and retaining one?",
+        "sourceParentId": "7eb5e7ae-c611-4966-8279-0fcc8d80fc3c",
+        "sourceParentQuestion": "How would you explain your approach to customer activation and retention at HBC?",
+        "experienceModuleId": "hbc-activation",
+        "librarySection": "product_experience",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-8fc7cbfb4ebf7de3",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What if customers trust Questrade for investments but refuse to deposit their salary?",
+        "sourceParentId": "6844c2e7-03c5-434e-b64c-ca9febec68dd",
+        "sourceParentQuestion": "How would you convince existing Questrade investors to make Questbank their primary bank?",
+        "experienceModuleId": "questrade-primary",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-bf436c9433d0107c",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Which Questrade investing customers would you deliberately not target first for banking?",
+        "sourceParentId": "0bcc9c40-011a-4fff-9789-fdad78429b78",
+        "sourceParentQuestion": "Who would you target first for Questbank adoption?",
+        "experienceModuleId": "questrade-primary",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-3eaa68220372868b",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you design a safe payroll-switching experience when the employer's first deposit could fail?",
+        "sourceParentId": "06e233ae-5d45-42d3-b560-84baf56a8948",
+        "sourceParentQuestion": "How would you increase direct deposit adoption?",
+        "experienceModuleId": "questrade-deposits",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-a6c3f582931f677c",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What if a customer receives one payroll deposit and then stops using Questbank?",
+        "sourceParentId": "6f890192-85ca-45f7-8259-f92001b996cf",
+        "sourceParentQuestion": "How do you know a customer really switched their paycheque?",
+        "experienceModuleId": "questrade-deposits",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-0f5c5a1cd82b4f3d",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you win customers without paying an expensive cash sign-up bonus?",
+        "sourceParentId": "dd28e2fe-24d1-4012-98d0-e951276439c6",
+        "sourceParentQuestion": "Why would someone switch their primary bank if their current bank works fine?",
+        "experienceModuleId": "questrade-primary",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-1b11b5880756e558",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?",
+        "sourceParentId": "47a2ee59-f62e-4b8c-a95b-abab90b7891b",
+        "sourceParentQuestion": "How would you design a single financial hub across spending, saving and investing?",
+        "experienceModuleId": "questrade-hub",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-aee698b800a5a0c3",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What should the financial hub do if an external bank connection is stale or disconnected?",
+        "sourceParentId": "6a8c3993-05ae-456b-8750-2b6778b6ee6b",
+        "sourceParentQuestion": "What is the biggest risk in connecting external accounts?",
+        "experienceModuleId": "questrade-hub",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-7348fb24d0cce3df",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Why would a bank not want unlimited deposits if customers are willing to bring them?",
+        "sourceParentId": "6bf73e61-9653-44ef-b0b3-03f854f27398",
+        "sourceParentQuestion": "Is a $100 million increase in deposits automatically a win?",
+        "experienceModuleId": "questrade-deposits",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-8034ad0461d8c4d2",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What happens to your banking growth strategy when interest rates fall?",
+        "sourceParentId": "648015c7-c77e-4d15-87c7-b0c2c688beb0",
+        "sourceParentQuestion": "How would you decide between better rates and better switching UX?",
+        "experienceModuleId": "questrade-deposits",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-7dc542ebf39e6dc6",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Would you consider a secondary banking relationship a product failure?",
+        "sourceParentId": "0d2ba56b-828d-4eeb-bbc4-b099d740e800",
+        "sourceParentQuestion": "What if someone keeps two banks rather than moving everything to Questbank?",
+        "experienceModuleId": "questrade-primary",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-2aae75bc9cff3ab9",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?",
+        "sourceParentId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+        "sourceParentQuestion": "How would you handle a major payment incident?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-52438287a208eb8e",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Why might my available balance be different from my posted balance?",
+        "sourceParentId": "0c8b1a1c-7290-4b60-8c88-8d978935beae",
+        "sourceParentQuestion": "What if the ledger balance and customer-facing balance don't match?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-81f59cee90ddc479",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "A customer sees the same purchase twice, once pending and once posted. How would you fix it?",
+        "sourceParentId": "fb56f902-9f1a-4f18-9f34-dffa2027c038",
+        "sourceParentQuestion": "How do pending and posted card transactions differ?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-538e221cc463571b",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Card payments start declining, but the banking app and core ledger are online. Where do you look?",
+        "sourceParentId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+        "sourceParentQuestion": "How would you handle a major payment incident?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-0de6e24c3ec72748",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you design a new payee or recipient verification experience?",
+        "sourceParentId": "83d6cb34-59ce-42d0-88ca-dfb46a91bfae",
+        "sourceParentQuestion": "What controls would you require before allowing a new transfer type?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-2d5216038eb7201f",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you use feature flags without creating inconsistent financial records?",
+        "sourceParentId": "038f6014-b892-4a64-84d6-e09048b9fea2",
+        "sourceParentQuestion": "How would you roll out a critical payments integration?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-1a10ff8457e116b4",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "When should an automated retry be prohibited even if it would reduce failures?",
+        "sourceParentId": "4068ab67-0613-40ae-bb08-f810651d27a0",
+        "sourceParentQuestion": "How would you handle payment exceptions and straight-through processing as transaction volume grows?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-35b5658e122b27ca",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What would you do if the customer sees a successful transfer but settlement hasn't reconciled?",
+        "sourceParentId": "21cb8214-854d-48a1-a86d-c1d8fd37bf89",
+        "sourceParentQuestion": "What is reconciliation, and why does a PM need to understand it?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-011534bf24455032",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How should a customer dispute an unfamiliar debit card transaction?",
+        "sourceParentId": "a40816ee-67e5-4b52-9228-33132bb5ffb1",
+        "sourceParentQuestion": "How would you handle duplicate charges, incorrect balances or transaction discrepancies?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-56175462d6794fa6",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How do you reduce fraud without rejecting too many legitimate banking customers?",
+        "sourceParentId": "9e7049a3-2fa7-4388-931c-875a7cc4d416",
+        "sourceParentQuestion": "What if Risk wants a step that cuts conversion by 20%?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-333f2eb84c1d211b",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you explain a deposit hold to a customer who needs the money tomorrow?",
+        "sourceParentId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc",
+        "sourceParentQuestion": "How would you design a reliable account-funding experience?",
+        "experienceModuleId": "questrade-deposits",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-565de636656ef238",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you design recurring bill payments or pre-authorized debits for a new bank?",
+        "sourceParentId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc",
+        "sourceParentQuestion": "How would you design a reliable account-funding experience?",
+        "experienceModuleId": "questrade-deposits",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-3df9c94b9ea49d8f",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Which three metrics would you put on your first Questbank executive scorecard?",
+        "sourceParentId": "04f3d519-31e2-478e-9083-e60d2bca7818",
+        "sourceParentQuestion": "How do you measure primary-banking adoption versus superficial account opening?",
+        "experienceModuleId": "questrade-metrics",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-6c1f0276be1cda04",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship?",
+        "sourceParentId": "976c189b-f59f-409f-92ea-2648cc5b2f5a",
+        "sourceParentQuestion": "If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?",
+        "experienceModuleId": "questrade-metrics",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-cd8ddf2374aab188",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What is sample ratio mismatch, and why would you care in a banking A/B test?",
+        "sourceParentId": "629392bb-f39b-414e-b66d-0d879a9c4557",
+        "sourceParentQuestion": "How do you prevent cohort analysis from becoming a misleading before-and-after story?",
+        "experienceModuleId": "questrade-metrics",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-5b3cacfbf9d7ec58",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you tell healthy banking engagement from anxiety-driven repeat checking?",
+        "sourceParentId": "f7e403b2-26b8-4da4-83c1-ea58c2e3371b",
+        "sourceParentQuestion": "How do you know an increase in DAU isn't just more balance checking?",
+        "experienceModuleId": "questrade-metrics",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-10ec3c7fab699446",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card?",
+        "sourceParentId": "96d0d431-bf77-42e5-85b5-1b8106ff1edc",
+        "sourceParentQuestion": "Explain how you would model customer lifetime value in banking.",
+        "experienceModuleId": "questrade-metrics",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-41def4e541d32b60",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you experiment on payment reliability if you can't ethically expose customers to worse payments?",
+        "sourceParentId": "6441c9f1-738a-4bd4-b819-92ddf2c1de5b",
+        "sourceParentQuestion": "How would you select an experiment's primary metric and guardrails?",
+        "experienceModuleId": "questrade-metrics",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-c1c6a9724d86f74e",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Which early warning indicator would tell you Questbank is losing customer trust?",
+        "sourceParentId": "735da866-20fc-4837-b67d-c91a6b4e2c77",
+        "sourceParentQuestion": "What metrics would you use to measure success in everyday banking?",
+        "experienceModuleId": "questrade-metrics",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-6c7a1a15e3964650",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What happens if a customer revokes an AI agent's access while it has a request in progress?",
+        "sourceParentId": "1429b53c-f5fd-4819-bb3b-c116ce1ed889",
+        "sourceParentQuestion": "How would you protect customers from malicious or unauthorized AI-agent actions?",
+        "experienceModuleId": "questrade-mcp",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-7c4c12feaff15b1c",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Would you let an external AI agent read transaction descriptions or merchant details?",
+        "sourceParentId": "233b0497-5bff-471f-9617-6abdeca51522",
+        "sourceParentQuestion": "Would you extend Questrade MCP beyond brokerage into everyday banking?",
+        "experienceModuleId": "questrade-mcp",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-f9c0dbb7c57fb56a",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What would convince you to stop an AI financial-assistant pilot?",
+        "sourceParentId": "df23d3a1-181c-4c9b-9460-42d635d2352d",
+        "sourceParentQuestion": "How would you test an AI-powered financial feature before launching it broadly?",
+        "experienceModuleId": "questrade-mcp",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-820f4090df4a3dc6",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "When would you choose deterministic software or rules instead of an AI model?",
+        "sourceParentId": "3c961ee8-43cb-4ec8-850f-24e822917f47",
+        "sourceParentQuestion": "Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?",
+        "experienceModuleId": "questrade-mcp",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-410906da823f7878",
+        "priority": "P0",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Explain your interview copilot's semantic matching architecture without using technical jargon.",
+        "sourceParentId": "7c079cf5-b153-435d-a4b3-e83ad3139a2b",
+        "sourceParentQuestion": "How are you using AI in your product management work?",
+        "experienceModuleId": "leadership-general",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-1f2320a19a45d757",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How did you know your semantic-search approach was actually better than keyword matching?",
+        "sourceParentId": "7c079cf5-b153-435d-a4b3-e83ad3139a2b",
+        "sourceParentQuestion": "How are you using AI in your product management work?",
+        "experienceModuleId": "leadership-general",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-aa3d0e2b91ac1b17",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "If MCP standardizes tools, what competitive advantage can Questrade still own?",
+        "sourceParentId": "7547195c-f21b-4d86-9d4f-c7dd07f73109",
+        "sourceParentQuestion": "What is MCP, and why is it different from putting a chatbot inside a financial app?",
+        "experienceModuleId": "questrade-mcp",
+        "librarySection": "questrade_cases",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-463e16f913ccff8d",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What if Risk still says no after you've presented all your evidence?",
+        "sourceParentId": "e09deee1-3efa-4774-9274-2f18848b739f",
+        "sourceParentQuestion": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering.",
+        "experienceModuleId": "leadership-general",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-eb5a7a85707df703",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What if Engineering says your banking launch plan is unsafe but leadership wants the date?",
+        "sourceParentId": "309200d8-48f6-4957-8eda-75eb4e3faf62",
+        "sourceParentQuestion": "How do you handle an engineer who strongly disagrees with your roadmap?",
+        "experienceModuleId": "leadership-general",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-d13d503e478400a0",
+        "priority": "P1",
+        "evidenceType": "needs_personal_example",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Tell me about a product decision you got wrong. What changed your mind?",
+        "sourceParentId": "15aa03e2-46af-4d60-9d73-90ed342c6ccc",
+        "sourceParentQuestion": "Tell me about a product initiative that didn't go according to plan.",
+        "experienceModuleId": "leadership-general",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "unverified_detail",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-b85d72575972a2e5",
+        "priority": "P1",
+        "evidenceType": "resume_supported_review",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you handle an offshore team that doesn't understand the customer impact of a requirement?",
+        "sourceParentId": "20f12afb-0dbb-49eb-821e-01989453d828",
+        "sourceParentQuestion": "How do you lead when you don't manage the engineers directly?",
+        "experienceModuleId": "leadership-general",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-809d4ac5fe16d18c",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What do you do when a shared dependency is blocking your objective but the other PM has different priorities?",
+        "sourceParentId": "c4c44a09-0799-471a-97cb-05e06e8bf8a8",
+        "sourceParentQuestion": "What if your PM peers own Cards and Money Movement, but your metric depends on both?",
+        "experienceModuleId": "leadership-general",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-ff778946b3ce4c07",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "When would you shut down a feature your own team spent six months building?",
+        "sourceParentId": "df6c37ec-3c98-4d5d-b441-30ba78608f56",
+        "sourceParentQuestion": "How do you know when to stop investing in a feature?",
+        "experienceModuleId": "leadership-general",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-929f1b51201c0ddb",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How do you communicate a complex banking trade-off to an executive in two minutes?",
+        "sourceParentId": "b4880442-6054-41de-b29b-f89c40e95005",
+        "sourceParentQuestion": "How do you manage stakeholders who disagree on priorities?",
+        "experienceModuleId": "leadership-general",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-4f824187fbbff65a",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How do you say no without damaging a relationship with a powerful stakeholder?",
+        "sourceParentId": "1c3ffb21-7fdd-46b3-832a-57c13b409a34",
+        "sourceParentQuestion": "Tell me about a time you said no to a stakeholder.",
+        "experienceModuleId": "leadership-general",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-ed30a21945cc58cb",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "A customer says they sent money to the wrong recipient. What can your product realistically do?",
+        "sourceParentId": "a40816ee-67e5-4b52-9228-33132bb5ffb1",
+        "sourceParentQuestion": "How would you handle duplicate charges, incorrect balances or transaction discrepancies?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-3556d63635e0e2ae",
+        "priority": "P0",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What is the difference between KYC, AML monitoring and transaction fraud prevention?",
+        "sourceParentId": "9e7049a3-2fa7-4388-931c-875a7cc4d416",
+        "sourceParentQuestion": "What if Risk wants a step that cuts conversion by 20%?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-90f9fbcc4c70655e",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What if a customer fails identity verification while trying to open a Questbank account?",
+        "sourceParentId": "6844c2e7-03c5-434e-b64c-ca9febec68dd",
+        "sourceParentQuestion": "How would you convince existing Questrade investors to make Questbank their primary bank?",
+        "experienceModuleId": "questrade-primary",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-783964890115ecc2",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "An account was frozen for suspected fraud. How would you handle the customer experience?",
+        "sourceParentId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+        "sourceParentQuestion": "How would you handle a major payment incident?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-5401967e0f935946",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What should happen if someone loses their phone and tries to access their bank account?",
+        "sourceParentId": "83d6cb34-59ce-42d0-88ca-dfb46a91bfae",
+        "sourceParentQuestion": "What controls would you require before allowing a new transfer type?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-43130d1fc58052a7",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you explain CDIC deposit protection versus CIPF investment protection?",
+        "sourceParentId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc",
+        "sourceParentQuestion": "How would you design a reliable account-funding experience?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-704b687b4abdb2cf",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Would you use screen scraping or customer-permissioned banking APIs for account aggregation?",
+        "sourceParentId": "6a8c3993-05ae-456b-8750-2b6778b6ee6b",
+        "sourceParentQuestion": "What is the biggest risk in connecting external accounts?",
+        "experienceModuleId": "questrade-hub",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-d9a7e448477c9d46",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What would you tell customers if a major banking partner was down and you didn't know the restoration time?",
+        "sourceParentId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+        "sourceParentQuestion": "How would you handle a major payment incident?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-d2542b5d18b6f8eb",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Should a bank help customers automate savings when they have unpredictable income?",
+        "sourceParentId": "06e233ae-5d45-42d3-b560-84baf56a8948",
+        "sourceParentQuestion": "How would you increase direct deposit adoption?",
+        "experienceModuleId": "questrade-deposits",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-65e520e78893619f",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you decide when to compensate a customer after a bank payment error?",
+        "sourceParentId": "4068ab67-0613-40ae-bb08-f810651d27a0",
+        "sourceParentQuestion": "How would you handle payment exceptions and straight-through processing as transaction volume grows?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-deb9bcd3c95dfd17",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you differentiate Questbank if Wealthsimple copied your best feature?",
+        "sourceParentId": "c4343691-6421-47c9-9c1e-8c88f948e0b6",
+        "sourceParentQuestion": "Why would customers choose Questrade over Wealthsimple or a traditional bank?",
+        "experienceModuleId": "questrade-primary",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-190f2fbd4b39dfdf",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you handle events arriving out of order in a customer's transaction history?",
+        "sourceParentId": "0c8b1a1c-7290-4b60-8c88-8d978935beae",
+        "sourceParentQuestion": "What if the ledger balance and customer-facing balance don't match?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-0ffeac83b074227c",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant?",
+        "sourceParentId": "50313c26-9a05-42e6-b88e-cc571be4b272",
+        "sourceParentQuestion": "You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose?",
+        "experienceModuleId": "questrade-primary",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-fe3aaf8b0a104ebd",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What would the MVP of a payroll-switching feature actually contain?",
+        "sourceParentId": "06e233ae-5d45-42d3-b560-84baf56a8948",
+        "sourceParentQuestion": "How would you increase direct deposit adoption?",
+        "experienceModuleId": "questrade-deposits",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-13246270dc5fb057",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How long would you wait before deciding whether a payroll-switching experiment actually worked?",
+        "sourceParentId": "976c189b-f59f-409f-92ea-2648cc5b2f5a",
+        "sourceParentQuestion": "If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?",
+        "experienceModuleId": "questrade-metrics",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-25dbf0548b118c22",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What would your launch-readiness checklist include for an everyday-banking feature?",
+        "sourceParentId": "038f6014-b892-4a64-84d6-e09048b9fea2",
+        "sourceParentQuestion": "How would you roll out a critical payments integration?",
+        "experienceModuleId": "questrade-payments",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-02ff8d0c1a2d62e6",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "How would you set shared OKRs without making ownership ambiguous?",
+        "sourceParentId": "c4c44a09-0799-471a-97cb-05e06e8bf8a8",
+        "sourceParentQuestion": "What if your PM peers own Cards and Money Movement, but your metric depends on both?",
+        "experienceModuleId": "questrade-metrics",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      },
+      {
+        "importKey": "followup-expansion-2026-10-818789ec0c4cf2bb",
+        "priority": "P1",
+        "evidenceType": "scenario_framework",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "What would you do if post-launch data contradicts the user research that justified the feature?",
+        "sourceParentId": "4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc",
+        "sourceParentQuestion": "What if the team ships a feature on time, but adoption is poor?",
+        "experienceModuleId": "leadership-general",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "rehearsal_framework",
+          "reviewStatus": "needs_review"
+        }
+      }
+    ],
+    "existingEquivalent": [],
+    "aliasCandidates": [],
+    "embeddedEquivalent": [],
+    "unresolvedConflicts": [],
+    "needsFactualReview": [
+      {
+        "importKey": "followup-expansion-2026-10-d13d503e478400a0",
+        "priority": "P1",
+        "evidenceType": "needs_personal_example",
+        "status": "DRAFT_REVIEW_REQUIRED",
+        "canonicalQuestion": "Tell me about a product decision you got wrong. What changed your mind?",
+        "sourceParentId": "15aa03e2-46af-4d60-9d73-90ed342c6ccc",
+        "sourceParentQuestion": "Tell me about a product initiative that didn't go according to plan.",
+        "experienceModuleId": "leadership-general",
+        "librarySection": "leadership_behavioural",
+        "proposedMeta": {
+          "evidenceStatus": "unverified_detail",
+          "reviewStatus": "needs_review"
+        },
+        "careerFlags": [],
+        "evidenceNote": "needs_personal_example"
+      }
+    ],
+    "alreadyImported": []
+  },
+  "parentLinkPlan": [
+    {
+      "importKey": "followup-expansion-current-employer-bcf3c6da0f44f120",
+      "childQuestion": "You're still at Arc'teryx and leading membership. Why consider Questrade now?",
+      "parentId": "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+      "parentQuestion": "Why are you looking to leave Arc'teryx?",
+      "relatedQuestionIds": [
+        "28571e7f-620f-4880-9cd7-cdfc2e146aa8"
+      ],
+      "canonicalQuestionId": "28571e7f-620f-4880-9cd7-cdfc2e146aa8"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-9aa86e6ed4991be8",
+      "childQuestion": "Why have you moved between several industries and employers?",
+      "parentId": "2f3a780e-6b54-42b8-b56d-8936a471fa68",
+      "parentQuestion": "Tell me about yourself.",
+      "relatedQuestionIds": [
+        "2f3a780e-6b54-42b8-b56d-8936a471fa68"
+      ],
+      "canonicalQuestionId": "2f3a780e-6b54-42b8-b56d-8936a471fa68"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-e875f9d64c5a9e6a",
+      "childQuestion": "What's the biggest learning curve for you if you join Questbank?",
+      "parentId": "a292f433-831a-440c-a196-dbf8c38fbddd",
+      "parentQuestion": "You haven't owned a traditional chequing account. Why are you qualified?",
+      "relatedQuestionIds": [
+        "a292f433-831a-440c-a196-dbf8c38fbddd"
+      ],
+      "canonicalQuestionId": "a292f433-831a-440c-a196-dbf8c38fbddd"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-67f356d158e5db0f",
+      "childQuestion": "What is the strongest single reason we should choose you for this job?",
+      "parentId": "f67032ca-4e2e-4b49-ae44-29b181eab8b6",
+      "parentQuestion": "What makes you different from other Senior PM candidates?",
+      "relatedQuestionIds": [
+        "f67032ca-4e2e-4b49-ae44-29b181eab8b6"
+      ],
+      "canonicalQuestionId": "f67032ca-4e2e-4b49-ae44-29b181eab8b6"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-a186e0487d072c84",
+      "childQuestion": "What concerns would you have about joining a business that is still establishing its banking offering?",
+      "parentId": "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+      "parentQuestion": "Why Questrade? Why this role?",
+      "relatedQuestionIds": [
+        "c1d638b6-1858-487d-9ac2-5b6cc5327eb8"
+      ],
+      "canonicalQuestionId": "c1d638b6-1858-487d-9ac2-5b6cc5327eb8"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-07aa78c3f0321f51",
+      "childQuestion": "Are you more interested in building new products or improving existing ones?",
+      "parentId": "c45ce30e-6de2-4164-93bf-8b67902caae0",
+      "parentQuestion": "Why move into everyday banking from rewards and loyalty?",
+      "relatedQuestionIds": [
+        "c45ce30e-6de2-4164-93bf-8b67902caae0"
+      ],
+      "canonicalQuestionId": "c45ce30e-6de2-4164-93bf-8b67902caae0"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-c28bf6e58efb1cc2",
+      "childQuestion": "What would you actually deliver in your first 30 days?",
+      "parentId": "d47c60d3-510e-4373-abf0-0749fcc41ebc",
+      "parentQuestion": "What would you do in your first 90 days?",
+      "relatedQuestionIds": [
+        "d47c60d3-510e-4373-abf0-0749fcc41ebc"
+      ],
+      "canonicalQuestionId": "d47c60d3-510e-4373-abf0-0749fcc41ebc"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-783641cec16f6188",
+      "childQuestion": "What happened if an Avion member didn't have Interac Autodeposit enabled?",
+      "parentId": "244e239c-2f88-4b6e-968f-ef8ce65daa70",
+      "parentQuestion": "Walk me through the Interac e-Transfer product you launched at RBC.",
+      "relatedQuestionIds": [
+        "244e239c-2f88-4b6e-968f-ef8ce65daa70"
+      ],
+      "canonicalQuestionId": "244e239c-2f88-4b6e-968f-ef8ce65daa70"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-47da105a5246e62e",
+      "childQuestion": "How would you prevent a customer from receiving the same cashback payout twice?",
+      "parentId": "fb3c9a13-b37d-45df-b095-e14f8e84bed2",
+      "parentQuestion": "What happens if a payout API times out after the request was accepted?",
+      "relatedQuestionIds": [
+        "fb3c9a13-b37d-45df-b095-e14f8e84bed2"
+      ],
+      "canonicalQuestionId": "fb3c9a13-b37d-45df-b095-e14f8e84bed2"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-723124b41a88671e",
+      "childQuestion": "What would the customer see while a cashback payout is pending or being investigated?",
+      "parentId": "695ace4a-7c53-415e-9eb2-5f885d680c2b",
+      "parentQuestion": "Where should transaction status, balance calculation and reconciliation responsibilities sit?",
+      "relatedQuestionIds": [
+        "695ace4a-7c53-415e-9eb2-5f885d680c2b"
+      ],
+      "canonicalQuestionId": "695ace4a-7c53-415e-9eb2-5f885d680c2b"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-301fb13e986ed4d0",
+      "childQuestion": "Who made the final decision when the payments team, Risk and Product disagreed?",
+      "parentId": "f290b115-770e-4448-82ac-52f4334f34de",
+      "parentQuestion": "What exactly did you own versus RBC's payments infrastructure team?",
+      "relatedQuestionIds": [
+        "f290b115-770e-4448-82ac-52f4334f34de"
+      ],
+      "canonicalQuestionId": "f290b115-770e-4448-82ac-52f4334f34de"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-992afcd16dd5ffcb",
+      "childQuestion": "What were the leading indicators before you could measure meaningful payout volume?",
+      "parentId": "11375f03-31fa-45da-8557-488a8cc63beb",
+      "parentQuestion": "How did you measure success for the Avion cashback withdrawal launch?",
+      "relatedQuestionIds": [
+        "11375f03-31fa-45da-8557-488a8cc63beb"
+      ],
+      "canonicalQuestionId": "11375f03-31fa-45da-8557-488a8cc63beb"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-0ee11c5bb2049c12",
+      "childQuestion": "How did you turn regulatory and operations requirements into stories engineers could build?",
+      "parentId": "f290b115-770e-4448-82ac-52f4334f34de",
+      "parentQuestion": "What exactly did you own versus RBC's payments infrastructure team?",
+      "relatedQuestionIds": [
+        "f290b115-770e-4448-82ac-52f4334f34de"
+      ],
+      "canonicalQuestionId": "f290b115-770e-4448-82ac-52f4334f34de"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-d17b8d965332251b",
+      "childQuestion": "Why did you use the member's email address, and what if that address changed?",
+      "parentId": "244e239c-2f88-4b6e-968f-ef8ce65daa70",
+      "parentQuestion": "Walk me through the Interac e-Transfer product you launched at RBC.",
+      "relatedQuestionIds": [
+        "244e239c-2f88-4b6e-968f-ef8ce65daa70"
+      ],
+      "canonicalQuestionId": "244e239c-2f88-4b6e-968f-ef8ce65daa70"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-baa87ecc283d509e",
+      "childQuestion": "If payout failures doubled after launch, how would you investigate the first week?",
+      "parentId": "14ad93b1-527c-49e9-b160-e9b22ca0f888",
+      "parentQuestion": "What would you do differently on the Avion cashback withdrawal launch?",
+      "relatedQuestionIds": [
+        "14ad93b1-527c-49e9-b160-e9b22ca0f888"
+      ],
+      "canonicalQuestionId": "14ad93b1-527c-49e9-b160-e9b22ca0f888"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-55d503d1ee7ba2f4",
+      "childQuestion": "How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?",
+      "parentId": "6458104e-34c6-430c-8005-aef3a3da9c02",
+      "parentQuestion": "Tell me about building Avion Select from zero to one.",
+      "relatedQuestionIds": [
+        "6458104e-34c6-430c-8005-aef3a3da9c02"
+      ],
+      "canonicalQuestionId": "6458104e-34c6-430c-8005-aef3a3da9c02"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-c106931a80bdaba7",
+      "childQuestion": "Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product?",
+      "parentId": "c226bb45-beb6-4162-9628-f16d6660b887",
+      "parentQuestion": "Why Interac e-Transfer instead of direct bank-account linking?",
+      "relatedQuestionIds": [
+        "c226bb45-beb6-4162-9628-f16d6660b887"
+      ],
+      "canonicalQuestionId": "c226bb45-beb6-4162-9628-f16d6660b887"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-c8a85beb577449d9",
+      "childQuestion": "What was actually live when you left Arc'teryx, and what was still planned?",
+      "parentId": "b1eac049-c167-4977-a7bd-55e98d7e3b0b",
+      "parentQuestion": "You secured $5.2M at Arc'teryx. Was the programme launched?",
+      "relatedQuestionIds": [
+        "b1eac049-c167-4977-a7bd-55e98d7e3b0b"
+      ],
+      "canonicalQuestionId": "b1eac049-c167-4977-a7bd-55e98d7e3b0b"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-22362777e51489a8",
+      "childQuestion": "What assumptions in the $5.2 million investment case were most sensitive?",
+      "parentId": "439ccf45-857e-431f-ab0e-1312d6998f02",
+      "parentQuestion": "How did you secure $5.2 million in capital funding at Arc'teryx?",
+      "relatedQuestionIds": [
+        "439ccf45-857e-431f-ab0e-1312d6998f02"
+      ],
+      "canonicalQuestionId": "439ccf45-857e-431f-ab0e-1312d6998f02"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-490b32859c4684f4",
+      "childQuestion": "What would have changed your recommendation from buy to build?",
+      "parentId": "a85b536e-5e20-468f-87d9-fb447ae796f6",
+      "parentQuestion": "Why did you choose a headless membership platform rather than building everything internally?",
+      "relatedQuestionIds": [
+        "a85b536e-5e20-468f-87d9-fb447ae796f6"
+      ],
+      "canonicalQuestionId": "a85b536e-5e20-468f-87d9-fb447ae796f6"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-037002a66f7c0bea",
+      "childQuestion": "What did you cut from the membership MVP, and how did you defend those trade-offs?",
+      "parentId": "f9022f65-91fb-4094-ae8f-b4dc87edcca7",
+      "parentQuestion": "What did you personally decide or deprioritize?",
+      "relatedQuestionIds": [
+        "f9022f65-91fb-4094-ae8f-b4dc87edcca7"
+      ],
+      "canonicalQuestionId": "f9022f65-91fb-4094-ae8f-b4dc87edcca7"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-bea4a6b41c5964d6",
+      "childQuestion": "How would you test whether customers wanted membership benefits before building the full platform?",
+      "parentId": "ab850009-b3cc-4b2b-b026-cd9bb28987c3",
+      "parentQuestion": "How did you know membership was a customer problem at Arc'teryx?",
+      "relatedQuestionIds": [
+        "ab850009-b3cc-4b2b-b026-cd9bb28987c3"
+      ],
+      "canonicalQuestionId": "ab850009-b3cc-4b2b-b026-cd9bb28987c3"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-59161acf4bf0b119",
+      "childQuestion": "How do you know the HBC application improvement wasn't caused by a different applicant mix?",
+      "parentId": "3218b561-2159-442e-a3aa-074756f877c0",
+      "parentQuestion": "How did you measure the 15% improvement?",
+      "relatedQuestionIds": [
+        "3218b561-2159-442e-a3aa-074756f877c0"
+      ],
+      "canonicalQuestionId": "3218b561-2159-442e-a3aa-074756f877c0"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-4b0212c6f3f74d1f",
+      "childQuestion": "Which step in a credit-card application funnel would you inspect first, and why?",
+      "parentId": "e546440d-67eb-4266-8466-0827ccd35e42",
+      "parentQuestion": "What exactly did you change in the HBC application experience?",
+      "relatedQuestionIds": [
+        "e546440d-67eb-4266-8466-0827ccd35e42"
+      ],
+      "canonicalQuestionId": "e546440d-67eb-4266-8466-0827ccd35e42"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-43490de1e099ede8",
+      "childQuestion": "Could the HBC incentives have increased spending while destroying profitability?",
+      "parentId": "3ba24689-dd1a-4428-b018-743f0a8c61af",
+      "parentQuestion": "Why did HBC modeled LTV rise 10%, and how certain are you?",
+      "relatedQuestionIds": [
+        "3ba24689-dd1a-4428-b018-743f0a8c61af"
+      ],
+      "canonicalQuestionId": "3ba24689-dd1a-4428-b018-743f0a8c61af"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-4bf5985a1de015b1",
+      "childQuestion": "What did you control in the HBC card portfolio, and what was controlled by Neo?",
+      "parentId": "9b0f399e-6750-463a-9570-805c82449eb8",
+      "parentQuestion": "What does 'P&L ownership' at HBC actually mean?",
+      "relatedQuestionIds": [
+        "9b0f399e-6750-463a-9570-805c82449eb8"
+      ],
+      "canonicalQuestionId": "9b0f399e-6750-463a-9570-805c82449eb8"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-2aeba274e494fdf2",
+      "childQuestion": "How did you align TD, CIBC and Amex when the banks had different priorities?",
+      "parentId": "e8d13d9e-a98d-4dbc-a596-a178557963b0",
+      "parentQuestion": "How did you drive credit card acquisition growth at Aeroplan?",
+      "relatedQuestionIds": [
+        "e8d13d9e-a98d-4dbc-a596-a178557963b0"
+      ],
+      "canonicalQuestionId": "e8d13d9e-a98d-4dbc-a596-a178557963b0"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-6155efde5e65801e",
+      "childQuestion": "What happened after the customer clicked Apply—how did you know they became an approved cardholder?",
+      "parentId": "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4",
+      "parentQuestion": "How exactly did you measure the 40% conversion lift?",
+      "relatedQuestionIds": [
+        "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4"
+      ],
+      "canonicalQuestionId": "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-a0d40d083ec744ef",
+      "childQuestion": "How did you prevent one card partner's offer from undermining another's?",
+      "parentId": "e8d13d9e-a98d-4dbc-a596-a178557963b0",
+      "parentQuestion": "How did you drive credit card acquisition growth at Aeroplan?",
+      "relatedQuestionIds": [
+        "e8d13d9e-a98d-4dbc-a596-a178557963b0"
+      ],
+      "canonicalQuestionId": "e8d13d9e-a98d-4dbc-a596-a178557963b0"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-d33952d1ddef7236",
+      "childQuestion": "What's the difference between acquiring a cardholder, activating one and retaining one?",
+      "parentId": "7eb5e7ae-c611-4966-8279-0fcc8d80fc3c",
+      "parentQuestion": "How would you explain your approach to customer activation and retention at HBC?",
+      "relatedQuestionIds": [
+        "7eb5e7ae-c611-4966-8279-0fcc8d80fc3c"
+      ],
+      "canonicalQuestionId": "7eb5e7ae-c611-4966-8279-0fcc8d80fc3c"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-8fc7cbfb4ebf7de3",
+      "childQuestion": "What if customers trust Questrade for investments but refuse to deposit their salary?",
+      "parentId": "6844c2e7-03c5-434e-b64c-ca9febec68dd",
+      "parentQuestion": "How would you convince existing Questrade investors to make Questbank their primary bank?",
+      "relatedQuestionIds": [
+        "6844c2e7-03c5-434e-b64c-ca9febec68dd"
+      ],
+      "canonicalQuestionId": "6844c2e7-03c5-434e-b64c-ca9febec68dd"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-bf436c9433d0107c",
+      "childQuestion": "Which Questrade investing customers would you deliberately not target first for banking?",
+      "parentId": "0bcc9c40-011a-4fff-9789-fdad78429b78",
+      "parentQuestion": "Who would you target first for Questbank adoption?",
+      "relatedQuestionIds": [
+        "0bcc9c40-011a-4fff-9789-fdad78429b78"
+      ],
+      "canonicalQuestionId": "0bcc9c40-011a-4fff-9789-fdad78429b78"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-3eaa68220372868b",
+      "childQuestion": "How would you design a safe payroll-switching experience when the employer's first deposit could fail?",
+      "parentId": "06e233ae-5d45-42d3-b560-84baf56a8948",
+      "parentQuestion": "How would you increase direct deposit adoption?",
+      "relatedQuestionIds": [
+        "06e233ae-5d45-42d3-b560-84baf56a8948"
+      ],
+      "canonicalQuestionId": "06e233ae-5d45-42d3-b560-84baf56a8948"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-a6c3f582931f677c",
+      "childQuestion": "What if a customer receives one payroll deposit and then stops using Questbank?",
+      "parentId": "6f890192-85ca-45f7-8259-f92001b996cf",
+      "parentQuestion": "How do you know a customer really switched their paycheque?",
+      "relatedQuestionIds": [
+        "6f890192-85ca-45f7-8259-f92001b996cf"
+      ],
+      "canonicalQuestionId": "6f890192-85ca-45f7-8259-f92001b996cf"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-0f5c5a1cd82b4f3d",
+      "childQuestion": "How would you win customers without paying an expensive cash sign-up bonus?",
+      "parentId": "dd28e2fe-24d1-4012-98d0-e951276439c6",
+      "parentQuestion": "Why would someone switch their primary bank if their current bank works fine?",
+      "relatedQuestionIds": [
+        "dd28e2fe-24d1-4012-98d0-e951276439c6"
+      ],
+      "canonicalQuestionId": "dd28e2fe-24d1-4012-98d0-e951276439c6"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-1b11b5880756e558",
+      "childQuestion": "If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?",
+      "parentId": "47a2ee59-f62e-4b8c-a95b-abab90b7891b",
+      "parentQuestion": "How would you design a single financial hub across spending, saving and investing?",
+      "relatedQuestionIds": [
+        "47a2ee59-f62e-4b8c-a95b-abab90b7891b"
+      ],
+      "canonicalQuestionId": "47a2ee59-f62e-4b8c-a95b-abab90b7891b"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-aee698b800a5a0c3",
+      "childQuestion": "What should the financial hub do if an external bank connection is stale or disconnected?",
+      "parentId": "6a8c3993-05ae-456b-8750-2b6778b6ee6b",
+      "parentQuestion": "What is the biggest risk in connecting external accounts?",
+      "relatedQuestionIds": [
+        "6a8c3993-05ae-456b-8750-2b6778b6ee6b"
+      ],
+      "canonicalQuestionId": "6a8c3993-05ae-456b-8750-2b6778b6ee6b"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-7348fb24d0cce3df",
+      "childQuestion": "Why would a bank not want unlimited deposits if customers are willing to bring them?",
+      "parentId": "6bf73e61-9653-44ef-b0b3-03f854f27398",
+      "parentQuestion": "Is a $100 million increase in deposits automatically a win?",
+      "relatedQuestionIds": [
+        "6bf73e61-9653-44ef-b0b3-03f854f27398"
+      ],
+      "canonicalQuestionId": "6bf73e61-9653-44ef-b0b3-03f854f27398"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-8034ad0461d8c4d2",
+      "childQuestion": "What happens to your banking growth strategy when interest rates fall?",
+      "parentId": "648015c7-c77e-4d15-87c7-b0c2c688beb0",
+      "parentQuestion": "How would you decide between better rates and better switching UX?",
+      "relatedQuestionIds": [
+        "648015c7-c77e-4d15-87c7-b0c2c688beb0"
+      ],
+      "canonicalQuestionId": "648015c7-c77e-4d15-87c7-b0c2c688beb0"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-7dc542ebf39e6dc6",
+      "childQuestion": "Would you consider a secondary banking relationship a product failure?",
+      "parentId": "0d2ba56b-828d-4eeb-bbc4-b099d740e800",
+      "parentQuestion": "What if someone keeps two banks rather than moving everything to Questbank?",
+      "relatedQuestionIds": [
+        "0d2ba56b-828d-4eeb-bbc4-b099d740e800"
+      ],
+      "canonicalQuestionId": "0d2ba56b-828d-4eeb-bbc4-b099d740e800"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-2aae75bc9cff3ab9",
+      "childQuestion": "It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?",
+      "parentId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+      "parentQuestion": "How would you handle a major payment incident?",
+      "relatedQuestionIds": [
+        "2f00fac1-89ff-470f-992d-cd89980a36a9"
+      ],
+      "canonicalQuestionId": "2f00fac1-89ff-470f-992d-cd89980a36a9"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-52438287a208eb8e",
+      "childQuestion": "Why might my available balance be different from my posted balance?",
+      "parentId": "0c8b1a1c-7290-4b60-8c88-8d978935beae",
+      "parentQuestion": "What if the ledger balance and customer-facing balance don't match?",
+      "relatedQuestionIds": [
+        "0c8b1a1c-7290-4b60-8c88-8d978935beae"
+      ],
+      "canonicalQuestionId": "0c8b1a1c-7290-4b60-8c88-8d978935beae"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-81f59cee90ddc479",
+      "childQuestion": "A customer sees the same purchase twice, once pending and once posted. How would you fix it?",
+      "parentId": "fb56f902-9f1a-4f18-9f34-dffa2027c038",
+      "parentQuestion": "How do pending and posted card transactions differ?",
+      "relatedQuestionIds": [
+        "fb56f902-9f1a-4f18-9f34-dffa2027c038"
+      ],
+      "canonicalQuestionId": "fb56f902-9f1a-4f18-9f34-dffa2027c038"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-538e221cc463571b",
+      "childQuestion": "Card payments start declining, but the banking app and core ledger are online. Where do you look?",
+      "parentId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+      "parentQuestion": "How would you handle a major payment incident?",
+      "relatedQuestionIds": [
+        "2f00fac1-89ff-470f-992d-cd89980a36a9"
+      ],
+      "canonicalQuestionId": "2f00fac1-89ff-470f-992d-cd89980a36a9"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-0de6e24c3ec72748",
+      "childQuestion": "How would you design a new payee or recipient verification experience?",
+      "parentId": "83d6cb34-59ce-42d0-88ca-dfb46a91bfae",
+      "parentQuestion": "What controls would you require before allowing a new transfer type?",
+      "relatedQuestionIds": [
+        "83d6cb34-59ce-42d0-88ca-dfb46a91bfae"
+      ],
+      "canonicalQuestionId": "83d6cb34-59ce-42d0-88ca-dfb46a91bfae"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-2d5216038eb7201f",
+      "childQuestion": "How would you use feature flags without creating inconsistent financial records?",
+      "parentId": "038f6014-b892-4a64-84d6-e09048b9fea2",
+      "parentQuestion": "How would you roll out a critical payments integration?",
+      "relatedQuestionIds": [
+        "038f6014-b892-4a64-84d6-e09048b9fea2"
+      ],
+      "canonicalQuestionId": "038f6014-b892-4a64-84d6-e09048b9fea2"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-1a10ff8457e116b4",
+      "childQuestion": "When should an automated retry be prohibited even if it would reduce failures?",
+      "parentId": "4068ab67-0613-40ae-bb08-f810651d27a0",
+      "parentQuestion": "How would you handle payment exceptions and straight-through processing as transaction volume grows?",
+      "relatedQuestionIds": [
+        "4068ab67-0613-40ae-bb08-f810651d27a0"
+      ],
+      "canonicalQuestionId": "4068ab67-0613-40ae-bb08-f810651d27a0"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-35b5658e122b27ca",
+      "childQuestion": "What would you do if the customer sees a successful transfer but settlement hasn't reconciled?",
+      "parentId": "21cb8214-854d-48a1-a86d-c1d8fd37bf89",
+      "parentQuestion": "What is reconciliation, and why does a PM need to understand it?",
+      "relatedQuestionIds": [
+        "21cb8214-854d-48a1-a86d-c1d8fd37bf89"
+      ],
+      "canonicalQuestionId": "21cb8214-854d-48a1-a86d-c1d8fd37bf89"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-011534bf24455032",
+      "childQuestion": "How should a customer dispute an unfamiliar debit card transaction?",
+      "parentId": "a40816ee-67e5-4b52-9228-33132bb5ffb1",
+      "parentQuestion": "How would you handle duplicate charges, incorrect balances or transaction discrepancies?",
+      "relatedQuestionIds": [
+        "a40816ee-67e5-4b52-9228-33132bb5ffb1"
+      ],
+      "canonicalQuestionId": "a40816ee-67e5-4b52-9228-33132bb5ffb1"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-56175462d6794fa6",
+      "childQuestion": "How do you reduce fraud without rejecting too many legitimate banking customers?",
+      "parentId": "9e7049a3-2fa7-4388-931c-875a7cc4d416",
+      "parentQuestion": "What if Risk wants a step that cuts conversion by 20%?",
+      "relatedQuestionIds": [
+        "9e7049a3-2fa7-4388-931c-875a7cc4d416"
+      ],
+      "canonicalQuestionId": "9e7049a3-2fa7-4388-931c-875a7cc4d416"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-333f2eb84c1d211b",
+      "childQuestion": "How would you explain a deposit hold to a customer who needs the money tomorrow?",
+      "parentId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc",
+      "parentQuestion": "How would you design a reliable account-funding experience?",
+      "relatedQuestionIds": [
+        "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc"
+      ],
+      "canonicalQuestionId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-565de636656ef238",
+      "childQuestion": "How would you design recurring bill payments or pre-authorized debits for a new bank?",
+      "parentId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc",
+      "parentQuestion": "How would you design a reliable account-funding experience?",
+      "relatedQuestionIds": [
+        "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc"
+      ],
+      "canonicalQuestionId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-3df9c94b9ea49d8f",
+      "childQuestion": "Which three metrics would you put on your first Questbank executive scorecard?",
+      "parentId": "04f3d519-31e2-478e-9083-e60d2bca7818",
+      "parentQuestion": "How do you measure primary-banking adoption versus superficial account opening?",
+      "relatedQuestionIds": [
+        "04f3d519-31e2-478e-9083-e60d2bca7818"
+      ],
+      "canonicalQuestionId": "04f3d519-31e2-478e-9083-e60d2bca7818"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-6c1f0276be1cda04",
+      "childQuestion": "Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship?",
+      "parentId": "976c189b-f59f-409f-92ea-2648cc5b2f5a",
+      "parentQuestion": "If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?",
+      "relatedQuestionIds": [
+        "976c189b-f59f-409f-92ea-2648cc5b2f5a"
+      ],
+      "canonicalQuestionId": "976c189b-f59f-409f-92ea-2648cc5b2f5a"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-cd8ddf2374aab188",
+      "childQuestion": "What is sample ratio mismatch, and why would you care in a banking A/B test?",
+      "parentId": "629392bb-f39b-414e-b66d-0d879a9c4557",
+      "parentQuestion": "How do you prevent cohort analysis from becoming a misleading before-and-after story?",
+      "relatedQuestionIds": [
+        "629392bb-f39b-414e-b66d-0d879a9c4557"
+      ],
+      "canonicalQuestionId": "629392bb-f39b-414e-b66d-0d879a9c4557"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-5b3cacfbf9d7ec58",
+      "childQuestion": "How would you tell healthy banking engagement from anxiety-driven repeat checking?",
+      "parentId": "f7e403b2-26b8-4da4-83c1-ea58c2e3371b",
+      "parentQuestion": "How do you know an increase in DAU isn't just more balance checking?",
+      "relatedQuestionIds": [
+        "f7e403b2-26b8-4da4-83c1-ea58c2e3371b"
+      ],
+      "canonicalQuestionId": "f7e403b2-26b8-4da4-83c1-ea58c2e3371b"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-10ec3c7fab699446",
+      "childQuestion": "How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card?",
+      "parentId": "96d0d431-bf77-42e5-85b5-1b8106ff1edc",
+      "parentQuestion": "Explain how you would model customer lifetime value in banking.",
+      "relatedQuestionIds": [
+        "96d0d431-bf77-42e5-85b5-1b8106ff1edc"
+      ],
+      "canonicalQuestionId": "96d0d431-bf77-42e5-85b5-1b8106ff1edc"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-41def4e541d32b60",
+      "childQuestion": "How would you experiment on payment reliability if you can't ethically expose customers to worse payments?",
+      "parentId": "6441c9f1-738a-4bd4-b819-92ddf2c1de5b",
+      "parentQuestion": "How would you select an experiment's primary metric and guardrails?",
+      "relatedQuestionIds": [
+        "6441c9f1-738a-4bd4-b819-92ddf2c1de5b"
+      ],
+      "canonicalQuestionId": "6441c9f1-738a-4bd4-b819-92ddf2c1de5b"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-c1c6a9724d86f74e",
+      "childQuestion": "Which early warning indicator would tell you Questbank is losing customer trust?",
+      "parentId": "735da866-20fc-4837-b67d-c91a6b4e2c77",
+      "parentQuestion": "What metrics would you use to measure success in everyday banking?",
+      "relatedQuestionIds": [
+        "735da866-20fc-4837-b67d-c91a6b4e2c77"
+      ],
+      "canonicalQuestionId": "735da866-20fc-4837-b67d-c91a6b4e2c77"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-6c7a1a15e3964650",
+      "childQuestion": "What happens if a customer revokes an AI agent's access while it has a request in progress?",
+      "parentId": "1429b53c-f5fd-4819-bb3b-c116ce1ed889",
+      "parentQuestion": "How would you protect customers from malicious or unauthorized AI-agent actions?",
+      "relatedQuestionIds": [
+        "1429b53c-f5fd-4819-bb3b-c116ce1ed889"
+      ],
+      "canonicalQuestionId": "1429b53c-f5fd-4819-bb3b-c116ce1ed889"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-7c4c12feaff15b1c",
+      "childQuestion": "Would you let an external AI agent read transaction descriptions or merchant details?",
+      "parentId": "233b0497-5bff-471f-9617-6abdeca51522",
+      "parentQuestion": "Would you extend Questrade MCP beyond brokerage into everyday banking?",
+      "relatedQuestionIds": [
+        "233b0497-5bff-471f-9617-6abdeca51522"
+      ],
+      "canonicalQuestionId": "233b0497-5bff-471f-9617-6abdeca51522"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-f9c0dbb7c57fb56a",
+      "childQuestion": "What would convince you to stop an AI financial-assistant pilot?",
+      "parentId": "df23d3a1-181c-4c9b-9460-42d635d2352d",
+      "parentQuestion": "How would you test an AI-powered financial feature before launching it broadly?",
+      "relatedQuestionIds": [
+        "df23d3a1-181c-4c9b-9460-42d635d2352d"
+      ],
+      "canonicalQuestionId": "df23d3a1-181c-4c9b-9460-42d635d2352d"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-820f4090df4a3dc6",
+      "childQuestion": "When would you choose deterministic software or rules instead of an AI model?",
+      "parentId": "3c961ee8-43cb-4ec8-850f-24e822917f47",
+      "parentQuestion": "Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?",
+      "relatedQuestionIds": [
+        "3c961ee8-43cb-4ec8-850f-24e822917f47"
+      ],
+      "canonicalQuestionId": "3c961ee8-43cb-4ec8-850f-24e822917f47"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-410906da823f7878",
+      "childQuestion": "Explain your interview copilot's semantic matching architecture without using technical jargon.",
+      "parentId": "7c079cf5-b153-435d-a4b3-e83ad3139a2b",
+      "parentQuestion": "How are you using AI in your product management work?",
+      "relatedQuestionIds": [
+        "7c079cf5-b153-435d-a4b3-e83ad3139a2b"
+      ],
+      "canonicalQuestionId": "7c079cf5-b153-435d-a4b3-e83ad3139a2b"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-1f2320a19a45d757",
+      "childQuestion": "How did you know your semantic-search approach was actually better than keyword matching?",
+      "parentId": "7c079cf5-b153-435d-a4b3-e83ad3139a2b",
+      "parentQuestion": "How are you using AI in your product management work?",
+      "relatedQuestionIds": [
+        "7c079cf5-b153-435d-a4b3-e83ad3139a2b"
+      ],
+      "canonicalQuestionId": "7c079cf5-b153-435d-a4b3-e83ad3139a2b"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-aa3d0e2b91ac1b17",
+      "childQuestion": "If MCP standardizes tools, what competitive advantage can Questrade still own?",
+      "parentId": "7547195c-f21b-4d86-9d4f-c7dd07f73109",
+      "parentQuestion": "What is MCP, and why is it different from putting a chatbot inside a financial app?",
+      "relatedQuestionIds": [
+        "7547195c-f21b-4d86-9d4f-c7dd07f73109"
+      ],
+      "canonicalQuestionId": "7547195c-f21b-4d86-9d4f-c7dd07f73109"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-463e16f913ccff8d",
+      "childQuestion": "What if Risk still says no after you've presented all your evidence?",
+      "parentId": "e09deee1-3efa-4774-9274-2f18848b739f",
+      "parentQuestion": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering.",
+      "relatedQuestionIds": [
+        "e09deee1-3efa-4774-9274-2f18848b739f"
+      ],
+      "canonicalQuestionId": "e09deee1-3efa-4774-9274-2f18848b739f"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-eb5a7a85707df703",
+      "childQuestion": "What if Engineering says your banking launch plan is unsafe but leadership wants the date?",
+      "parentId": "309200d8-48f6-4957-8eda-75eb4e3faf62",
+      "parentQuestion": "How do you handle an engineer who strongly disagrees with your roadmap?",
+      "relatedQuestionIds": [
+        "309200d8-48f6-4957-8eda-75eb4e3faf62"
+      ],
+      "canonicalQuestionId": "309200d8-48f6-4957-8eda-75eb4e3faf62"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-d13d503e478400a0",
+      "childQuestion": "Tell me about a product decision you got wrong. What changed your mind?",
+      "parentId": "15aa03e2-46af-4d60-9d73-90ed342c6ccc",
+      "parentQuestion": "Tell me about a product initiative that didn't go according to plan.",
+      "relatedQuestionIds": [
+        "15aa03e2-46af-4d60-9d73-90ed342c6ccc"
+      ],
+      "canonicalQuestionId": "15aa03e2-46af-4d60-9d73-90ed342c6ccc"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-b85d72575972a2e5",
+      "childQuestion": "How would you handle an offshore team that doesn't understand the customer impact of a requirement?",
+      "parentId": "20f12afb-0dbb-49eb-821e-01989453d828",
+      "parentQuestion": "How do you lead when you don't manage the engineers directly?",
+      "relatedQuestionIds": [
+        "20f12afb-0dbb-49eb-821e-01989453d828"
+      ],
+      "canonicalQuestionId": "20f12afb-0dbb-49eb-821e-01989453d828"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-809d4ac5fe16d18c",
+      "childQuestion": "What do you do when a shared dependency is blocking your objective but the other PM has different priorities?",
+      "parentId": "c4c44a09-0799-471a-97cb-05e06e8bf8a8",
+      "parentQuestion": "What if your PM peers own Cards and Money Movement, but your metric depends on both?",
+      "relatedQuestionIds": [
+        "c4c44a09-0799-471a-97cb-05e06e8bf8a8"
+      ],
+      "canonicalQuestionId": "c4c44a09-0799-471a-97cb-05e06e8bf8a8"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-ff778946b3ce4c07",
+      "childQuestion": "When would you shut down a feature your own team spent six months building?",
+      "parentId": "df6c37ec-3c98-4d5d-b441-30ba78608f56",
+      "parentQuestion": "How do you know when to stop investing in a feature?",
+      "relatedQuestionIds": [
+        "df6c37ec-3c98-4d5d-b441-30ba78608f56"
+      ],
+      "canonicalQuestionId": "df6c37ec-3c98-4d5d-b441-30ba78608f56"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-929f1b51201c0ddb",
+      "childQuestion": "How do you communicate a complex banking trade-off to an executive in two minutes?",
+      "parentId": "b4880442-6054-41de-b29b-f89c40e95005",
+      "parentQuestion": "How do you manage stakeholders who disagree on priorities?",
+      "relatedQuestionIds": [
+        "b4880442-6054-41de-b29b-f89c40e95005"
+      ],
+      "canonicalQuestionId": "b4880442-6054-41de-b29b-f89c40e95005"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-4f824187fbbff65a",
+      "childQuestion": "How do you say no without damaging a relationship with a powerful stakeholder?",
+      "parentId": "1c3ffb21-7fdd-46b3-832a-57c13b409a34",
+      "parentQuestion": "Tell me about a time you said no to a stakeholder.",
+      "relatedQuestionIds": [
+        "1c3ffb21-7fdd-46b3-832a-57c13b409a34"
+      ],
+      "canonicalQuestionId": "1c3ffb21-7fdd-46b3-832a-57c13b409a34"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-ed30a21945cc58cb",
+      "childQuestion": "A customer says they sent money to the wrong recipient. What can your product realistically do?",
+      "parentId": "a40816ee-67e5-4b52-9228-33132bb5ffb1",
+      "parentQuestion": "How would you handle duplicate charges, incorrect balances or transaction discrepancies?",
+      "relatedQuestionIds": [
+        "a40816ee-67e5-4b52-9228-33132bb5ffb1"
+      ],
+      "canonicalQuestionId": "a40816ee-67e5-4b52-9228-33132bb5ffb1"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-3556d63635e0e2ae",
+      "childQuestion": "What is the difference between KYC, AML monitoring and transaction fraud prevention?",
+      "parentId": "9e7049a3-2fa7-4388-931c-875a7cc4d416",
+      "parentQuestion": "What if Risk wants a step that cuts conversion by 20%?",
+      "relatedQuestionIds": [
+        "9e7049a3-2fa7-4388-931c-875a7cc4d416"
+      ],
+      "canonicalQuestionId": "9e7049a3-2fa7-4388-931c-875a7cc4d416"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-90f9fbcc4c70655e",
+      "childQuestion": "What if a customer fails identity verification while trying to open a Questbank account?",
+      "parentId": "6844c2e7-03c5-434e-b64c-ca9febec68dd",
+      "parentQuestion": "How would you convince existing Questrade investors to make Questbank their primary bank?",
+      "relatedQuestionIds": [
+        "6844c2e7-03c5-434e-b64c-ca9febec68dd"
+      ],
+      "canonicalQuestionId": "6844c2e7-03c5-434e-b64c-ca9febec68dd"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-783964890115ecc2",
+      "childQuestion": "An account was frozen for suspected fraud. How would you handle the customer experience?",
+      "parentId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+      "parentQuestion": "How would you handle a major payment incident?",
+      "relatedQuestionIds": [
+        "2f00fac1-89ff-470f-992d-cd89980a36a9"
+      ],
+      "canonicalQuestionId": "2f00fac1-89ff-470f-992d-cd89980a36a9"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-5401967e0f935946",
+      "childQuestion": "What should happen if someone loses their phone and tries to access their bank account?",
+      "parentId": "83d6cb34-59ce-42d0-88ca-dfb46a91bfae",
+      "parentQuestion": "What controls would you require before allowing a new transfer type?",
+      "relatedQuestionIds": [
+        "83d6cb34-59ce-42d0-88ca-dfb46a91bfae"
+      ],
+      "canonicalQuestionId": "83d6cb34-59ce-42d0-88ca-dfb46a91bfae"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-43130d1fc58052a7",
+      "childQuestion": "How would you explain CDIC deposit protection versus CIPF investment protection?",
+      "parentId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc",
+      "parentQuestion": "How would you design a reliable account-funding experience?",
+      "relatedQuestionIds": [
+        "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc"
+      ],
+      "canonicalQuestionId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-704b687b4abdb2cf",
+      "childQuestion": "Would you use screen scraping or customer-permissioned banking APIs for account aggregation?",
+      "parentId": "6a8c3993-05ae-456b-8750-2b6778b6ee6b",
+      "parentQuestion": "What is the biggest risk in connecting external accounts?",
+      "relatedQuestionIds": [
+        "6a8c3993-05ae-456b-8750-2b6778b6ee6b"
+      ],
+      "canonicalQuestionId": "6a8c3993-05ae-456b-8750-2b6778b6ee6b"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-d9a7e448477c9d46",
+      "childQuestion": "What would you tell customers if a major banking partner was down and you didn't know the restoration time?",
+      "parentId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+      "parentQuestion": "How would you handle a major payment incident?",
+      "relatedQuestionIds": [
+        "2f00fac1-89ff-470f-992d-cd89980a36a9"
+      ],
+      "canonicalQuestionId": "2f00fac1-89ff-470f-992d-cd89980a36a9"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-d2542b5d18b6f8eb",
+      "childQuestion": "Should a bank help customers automate savings when they have unpredictable income?",
+      "parentId": "06e233ae-5d45-42d3-b560-84baf56a8948",
+      "parentQuestion": "How would you increase direct deposit adoption?",
+      "relatedQuestionIds": [
+        "06e233ae-5d45-42d3-b560-84baf56a8948"
+      ],
+      "canonicalQuestionId": "06e233ae-5d45-42d3-b560-84baf56a8948"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-65e520e78893619f",
+      "childQuestion": "How would you decide when to compensate a customer after a bank payment error?",
+      "parentId": "4068ab67-0613-40ae-bb08-f810651d27a0",
+      "parentQuestion": "How would you handle payment exceptions and straight-through processing as transaction volume grows?",
+      "relatedQuestionIds": [
+        "4068ab67-0613-40ae-bb08-f810651d27a0"
+      ],
+      "canonicalQuestionId": "4068ab67-0613-40ae-bb08-f810651d27a0"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-deb9bcd3c95dfd17",
+      "childQuestion": "How would you differentiate Questbank if Wealthsimple copied your best feature?",
+      "parentId": "c4343691-6421-47c9-9c1e-8c88f948e0b6",
+      "parentQuestion": "Why would customers choose Questrade over Wealthsimple or a traditional bank?",
+      "relatedQuestionIds": [
+        "c4343691-6421-47c9-9c1e-8c88f948e0b6"
+      ],
+      "canonicalQuestionId": "c4343691-6421-47c9-9c1e-8c88f948e0b6"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-190f2fbd4b39dfdf",
+      "childQuestion": "How would you handle events arriving out of order in a customer's transaction history?",
+      "parentId": "0c8b1a1c-7290-4b60-8c88-8d978935beae",
+      "parentQuestion": "What if the ledger balance and customer-facing balance don't match?",
+      "relatedQuestionIds": [
+        "0c8b1a1c-7290-4b60-8c88-8d978935beae"
+      ],
+      "canonicalQuestionId": "0c8b1a1c-7290-4b60-8c88-8d978935beae"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-0ffeac83b074227c",
+      "childQuestion": "How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant?",
+      "parentId": "50313c26-9a05-42e6-b88e-cc571be4b272",
+      "parentQuestion": "You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose?",
+      "relatedQuestionIds": [
+        "50313c26-9a05-42e6-b88e-cc571be4b272"
+      ],
+      "canonicalQuestionId": "50313c26-9a05-42e6-b88e-cc571be4b272"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-fe3aaf8b0a104ebd",
+      "childQuestion": "What would the MVP of a payroll-switching feature actually contain?",
+      "parentId": "06e233ae-5d45-42d3-b560-84baf56a8948",
+      "parentQuestion": "How would you increase direct deposit adoption?",
+      "relatedQuestionIds": [
+        "06e233ae-5d45-42d3-b560-84baf56a8948"
+      ],
+      "canonicalQuestionId": "06e233ae-5d45-42d3-b560-84baf56a8948"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-13246270dc5fb057",
+      "childQuestion": "How long would you wait before deciding whether a payroll-switching experiment actually worked?",
+      "parentId": "976c189b-f59f-409f-92ea-2648cc5b2f5a",
+      "parentQuestion": "If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?",
+      "relatedQuestionIds": [
+        "976c189b-f59f-409f-92ea-2648cc5b2f5a"
+      ],
+      "canonicalQuestionId": "976c189b-f59f-409f-92ea-2648cc5b2f5a"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-25dbf0548b118c22",
+      "childQuestion": "What would your launch-readiness checklist include for an everyday-banking feature?",
+      "parentId": "038f6014-b892-4a64-84d6-e09048b9fea2",
+      "parentQuestion": "How would you roll out a critical payments integration?",
+      "relatedQuestionIds": [
+        "038f6014-b892-4a64-84d6-e09048b9fea2"
+      ],
+      "canonicalQuestionId": "038f6014-b892-4a64-84d6-e09048b9fea2"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-02ff8d0c1a2d62e6",
+      "childQuestion": "How would you set shared OKRs without making ownership ambiguous?",
+      "parentId": "c4c44a09-0799-471a-97cb-05e06e8bf8a8",
+      "parentQuestion": "What if your PM peers own Cards and Money Movement, but your metric depends on both?",
+      "relatedQuestionIds": [
+        "c4c44a09-0799-471a-97cb-05e06e8bf8a8"
+      ],
+      "canonicalQuestionId": "c4c44a09-0799-471a-97cb-05e06e8bf8a8"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-818789ec0c4cf2bb",
+      "childQuestion": "What would you do if post-launch data contradicts the user research that justified the feature?",
+      "parentId": "4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc",
+      "parentQuestion": "What if the team ships a feature on time, but adoption is poor?",
+      "relatedQuestionIds": [
+        "4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc"
+      ],
+      "canonicalQuestionId": "4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc"
+    }
+  ],
+  "careerAudit": [
+    {
+      "question": "Tell me about yourself.",
+      "id": "2f3a780e-6b54-42b8-b56d-8936a471fa68",
+      "careerFlags": [],
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "notes": "No forbidden-pattern hits."
+    },
+    {
+      "question": "Why are you looking to leave Arc'teryx?",
+      "id": "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+      "careerFlags": [],
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "notes": "No forbidden-pattern hits."
+    },
+    {
+      "question": "Why Questrade instead of continuing at Arc'teryx?",
+      "id": "bfd102e5-8b51-47ea-aeea-c84745fa7f64",
+      "careerFlags": [],
+      "reviewStatus": "ok",
+      "evidenceStatus": "rehearsal_framework",
+      "notes": "No forbidden-pattern hits."
+    },
+    {
+      "question": "What would it take for you to leave your current role?",
+      "id": "2235a907-b3ae-4899-9b1b-77a47d746119",
+      "careerFlags": [],
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "notes": "No forbidden-pattern hits."
+    },
+    {
+      "question": "Why does joining Questrade during its expansion into banking appeal to you?",
+      "id": "0accbf98-6b70-462f-9631-d279d5fe3ae5",
+      "careerFlags": [],
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "notes": "No forbidden-pattern hits."
+    },
+    {
+      "question": "Why move into everyday banking from rewards and loyalty?",
+      "id": "c45ce30e-6de2-4164-93bf-8b67902caae0",
+      "careerFlags": [],
+      "reviewStatus": "ok",
+      "evidenceStatus": "resume_supported",
+      "notes": "No forbidden-pattern hits."
+    },
+    {
+      "question": "What are you currently working on at Arc'teryx?",
+      "id": null,
+      "careerFlags": [],
+      "reviewStatus": "needs_review",
+      "evidenceStatus": "resume_supported",
+      "notes": "No forbidden-pattern hits."
+    },
+    {
+      "question": "How would you manage transitioning away from an ongoing membership initiative?",
+      "id": null,
+      "careerFlags": [],
+      "reviewStatus": "needs_review",
+      "evidenceStatus": "rehearsal_framework",
+      "notes": "No forbidden-pattern hits."
+    }
+  ],
+  "gapProposals": [
+    {
+      "suggestedQuestion": "How did you prevent duplicate payouts?",
+      "suggestedParent": "Walk me through the Interac e-Transfer product you launched at RBC.",
+      "rationale": "Realistic follow-up not in expansion batch or embedded follow-ups"
+    },
+    {
+      "suggestedQuestion": "What if the Interac payout failed after the customer was debited?",
+      "suggestedParent": "Walk me through the Interac e-Transfer product you launched at RBC.",
+      "rationale": "Realistic follow-up not in expansion batch or embedded follow-ups"
+    },
+    {
+      "suggestedQuestion": "What happens to the membership program if you leave?",
+      "suggestedParent": "How would you manage transitioning away from an ongoing membership initiative?",
+      "rationale": "Realistic follow-up not in expansion batch or embedded follow-ups"
+    }
+  ],
+  "importReady": true,
+  "nextSteps": [
+    "Review data/migration/followup-expansion-92-reconciliation.md",
+    "Approve P0 newDistinct entries first",
+    "Run: npx tsx scripts/import-followup-expansion-92.ts (dry-run) then --apply",
+    "After apply: npm run embed:qa:gte for new/changed rows only"
+  ]
+}

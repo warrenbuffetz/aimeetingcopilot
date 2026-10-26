@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-26T19:26:08.670Z",
+  "questradeIntegrity": {
+    "baselineHash": "6e1c04b4b1dce49c8bf536963c1a05952c863c50d59465f866cc306df3cb380b",
+    "currentHash": "6e1c04b4b1dce49c8bf536963c1a05952c863c50d59465f866cc306df3cb380b",
+    "unchanged": true,
+    "rowCount": 261
+  },
+  "simplii": {
+    "profileId": "1aff0813-6615-4a12-bfd6-ce7603604f6b",
+    "totalRows": 0,
+    "activeRows": 0,
+    "duplicateActiveQuestions": 0,
+    "forbiddenTermHits": 0,
+    "withCloneSourceId": 0,
+    "p0Count": 0
+  },
+  "forbiddenHits": [],
+  "duplicateSamples": [],
+  "p0Questions": []
+}

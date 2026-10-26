@@ -1,0 +1,1325 @@
+{
+  "generatedAt": "2026-10-26T19:23:17.376Z",
+  "mode": "apply",
+  "questradeProfileId": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
+  "questradeRowCount": 261,
+  "questradeIntegrityHash": "6e1c04b4b1dce49c8bf536963c1a05952c863c50d59465f866cc306df3cb380b",
+  "counts": {
+    "REUSE_UNCHANGED": 127,
+    "REUSE_WITH_LIGHT_EDIT": 10,
+    "REWRITE_FOR_SIMPLII": 8,
+    "RETAIN_AS_GENERAL_BANKING": 107,
+    "EXCLUDE_FROM_SIMPLII": 9,
+    "NEW_SIMPLII_QUESTION": 20
+  },
+  "excluded": [
+    {
+      "id": "4fcf44b0-5a66-46be-a57b-0fca89af2d10",
+      "question": "If MCP standardizes tools, what competitive advantage can Questrade still own?",
+      "reason": "explicit_remap_exclude"
+    },
+    {
+      "id": "698c2786-3368-4df3-917e-de3a535d352d",
+      "question": "If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?",
+      "reason": "hub_product_specific"
+    },
+    {
+      "id": "3c961ee8-43cb-4ec8-850f-24e822917f47",
+      "question": "Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?",
+      "reason": "explicit_remap_exclude"
+    },
+    {
+      "id": "233b0497-5bff-471f-9617-6abdeca51522",
+      "question": "Would you extend Questrade MCP beyond brokerage into everyday banking?",
+      "reason": "explicit_remap_exclude"
+    },
+    {
+      "id": "be18eb7a-948b-4a5d-8c5c-4d69faaa418e",
+      "question": "How would you measure whether Questrade MCP is successful?",
+      "reason": "mcp_not_generalizable"
+    },
+    {
+      "id": "e32103f8-3c33-4d7f-99ee-4fa46e8049ed",
+      "question": "Isn't Balance Sheet just a dashboard? Where is the actual value?",
+      "reason": "hub_product_specific"
+    },
+    {
+      "id": "2bcf440c-7c6e-4914-8c9d-f6577178c3b8",
+      "question": "Should the financial hub automatically transfer extra cash into investments?",
+      "reason": "hub_product_specific"
+    },
+    {
+      "id": "a8fe6bd5-ecc2-4c0f-95d5-63bb51f0c20c",
+      "question": "How would you build product on top of Temenos core banking without owning the ledger?",
+      "reason": "explicit_remap_exclude"
+    },
+    {
+      "id": "627cda69-cdae-4941-89d5-fdafba1ac674",
+      "question": "How is Questrade MCP different from Flows? How much autonomy should financial AI have?",
+      "reason": "mcp_vendor_specific"
+    }
+  ],
+  "simpliiRows": [
+    {
+      "sourceId": "c45ce30e-6de2-4164-93bf-8b67902caae0",
+      "question": "Why move into everyday banking from rewards and loyalty?",
+      "disposition": "REWRITE_FOR_SIMPLII"
+    },
+    {
+      "sourceId": "93f1f35c-cd54-49c3-8d6d-6a95d262fd4b",
+      "question": "What are your compensation expectations?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "bfd102e5-8b51-47ea-aeea-c84745fa7f64",
+      "question": "Why Simplii Financial instead of continuing at Arc'teryx?",
+      "disposition": "REWRITE_FOR_SIMPLII"
+    },
+    {
+      "sourceId": "e8d13d9e-a98d-4dbc-a596-a178557963b0",
+      "question": "How did you drive credit card acquisition growth at Aeroplan?",
+      "disposition": "REUSE_WITH_LIGHT_EDIT"
+    },
+    {
+      "sourceId": "c22bc35e-41a0-4bc7-9b53-6d19da3ecfef",
+      "question": "Why did you use the member's email address, and what if that address changed?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "cd39ab59-8574-443c-b78e-a9dfa3010185",
+      "question": "Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "73b7a947-02f5-4298-8592-4badfbcbb139",
+      "question": "What would have changed your recommendation from buy to build?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "6844c2e7-03c5-434e-b64c-ca9febec68dd",
+      "question": "How would you evaluate whether customers are becoming more engaged with their everyday banking accounts?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "73c5726c-d892-4f7b-895c-59a71c29080b",
+      "question": "What if payroll bonuses bring in customers who leave immediately afterward?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "1c3f6b10-2b62-4807-bffd-ef21beef30d7",
+      "question": "What was actually live when you left Arc'teryx, and what was still planned?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "06e233ae-5d45-42d3-b560-84baf56a8948",
+      "question": "How would you increase direct deposit adoption?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "31d8ded4-7dc2-4d0b-ad30-009b1f92748b",
+      "question": "What did you cut from the membership MVP, and how did you defend those trade-offs?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "0f41544d-2a2d-4b4b-bb41-f89df44c05d0",
+      "question": "Which step in a credit-card application funnel would you inspect first, and why?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "233f8d5d-fa5a-45a7-a301-39c4e3743edb",
+      "question": "How did you align TD, CIBC and Amex when the banks had different priorities?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "9b0f399e-6750-463a-9570-805c82449eb8",
+      "question": "What does 'P&L ownership' at HBC actually mean?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "2f280387-ca4c-4b94-abdf-a644c1868a4a",
+      "question": "What happens if a customer revokes an AI agent's access while it has a request in progress?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "91cd5cac-65b4-41e6-be3b-76ba3c49e9b1",
+      "question": "What's the difference between EFT and Interac e-Transfer?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "be3e3314-68c5-4f6a-a3d9-7f0b9147e17b",
+      "question": "When would you choose deterministic software or rules instead of an AI model?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "a95a3a54-604e-4617-af66-92158c5c2c53",
+      "question": "How would you handle an offshore team that doesn't understand the customer impact of a requirement?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "d333a258-c050-4f17-a50b-242e5ad5254d",
+      "question": "How do you communicate a complex banking trade-off to an executive in two minutes?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "a40816ee-67e5-4b52-9228-33132bb5ffb1",
+      "question": "How would you handle duplicate charges, incorrect balances or transaction discrepancies?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "7883e373-e58d-460a-bef5-2b89d237c66e",
+      "question": "Would you let an external AI agent read transaction descriptions or merchant details?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "db88df8e-3a36-4cc6-8b84-4fb24e2136c3",
+      "question": "Explain your interview copilot's semantic matching architecture without using technical jargon.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "458f82bd-542b-4331-92fb-d77bb3645d06",
+      "question": "What if Risk still says no after you've presented all your evidence?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "110a4074-4ba6-4eb9-9b8e-4a96b4e223e4",
+      "question": "What do you do when a shared dependency is blocking your objective but the other PM has different priorities?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "cdc38655-878f-4b7f-a49d-109f3b69125e",
+      "question": "What if a customer fails identity verification while trying to open a everyday banking account?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "bad7b926-f617-44c4-ab13-ddc78b1e4378",
+      "question": "What would convince you to stop an AI financial-assistant pilot?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "c8d4a611-d174-48b1-911c-e2db8f3acc3e",
+      "question": "How did you know your semantic-search approach was actually better than keyword matching?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "03d6326e-9615-4ffc-8464-d9d6c186811d",
+      "question": "How do you decide whether to experiment or commit directly to delivery?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "77caa5b4-817d-47b3-9569-366aa012daf6",
+      "question": "What if Engineering says your banking launch plan is unsafe but leadership wants the date?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "7eb5e7ae-c611-4966-8279-0fcc8d80fc3c",
+      "question": "How would you explain your approach to customer activation and retention at HBC?",
+      "disposition": "REUSE_WITH_LIGHT_EDIT"
+    },
+    {
+      "sourceId": "1de87c3a-d693-419c-9ded-b76154af230a",
+      "question": "When would you shut down a feature your own team spent six months building?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c",
+      "question": "What is the difference between KYC, AML monitoring and transaction fraud prevention?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc",
+      "question": "How would you design a reliable account-funding experience?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "e481df79-5778-46dc-8292-e381da7845d6",
+      "question": "What's the one feature you'd build first to win payroll?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f",
+      "question": "How do you say no without damaging a relationship with a powerful stakeholder?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "837e7efc-def5-4758-8ca1-627d006ec1ff",
+      "question": "A customer says they sent money to the wrong recipient. What can your product realistically do?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "2fb50805-1cb9-43f9-a2ba-54b816d3085d",
+      "question": "An account was frozen for suspected fraud. How would you handle the customer experience?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "c6aa4266-ebca-41df-a32b-99cba4676ffd",
+      "question": "Would you use screen scraping or customer-permissioned banking APIs for account aggregation?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "d551219e-6540-4760-a132-b27c92c706db",
+      "question": "What if employers aren't supported by an automated payroll switching provider?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "c4343691-6421-47c9-9c1e-8c88f948e0b6",
+      "question": "Why would customers choose a digital bank over Wealthsimple or a traditional bank?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "6ffb405d-688b-433e-87c3-a7d992430bad",
+      "question": "What should happen if someone loses their phone and tries to access their bank account?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "6441c9f1-738a-4bd4-b819-92ddf2c1de5b",
+      "question": "How would you select an experiment's primary metric and guardrails?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "a85b536e-5e20-468f-87d9-fb447ae796f6",
+      "question": "Why did you choose a headless membership platform rather than building everything internally?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "1d491196-487e-4282-9a80-15e857190b75",
+      "question": "What if leadership wants to ship five banking features at once?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "dc30e851-19e2-4bc1-8397-e4ab784ef939",
+      "question": "How would you explain CDIC deposit protection versus CIPF investment protection?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "21cb8214-854d-48a1-a86d-c1d8fd37bf89",
+      "question": "What is reconciliation, and why does a PM need to understand it?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "a412c28e-815d-42b5-91fa-ad7bc4e444b6",
+      "question": "How did you know it worked if the full membership platform hadn't launched?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "04f9a779-8058-4470-8817-beccdcbecf1e",
+      "question": "How did you identify the application problem?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "3c438a5c-c720-4277-a72a-fdcdfd5e156d",
+      "question": "Why is spend per active cardholder a risky metric?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "7df4eff0-1801-4505-afc3-cf652d90eb63",
+      "question": "How did you know the Avion cashback withdrawal was a customer problem?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "5ec7e958-1225-4a83-8c30-26430dfe04d9",
+      "question": "What exactly do your 30-day activation and 90-day repeat-spend metrics mean?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "2af89a04-ab52-40bd-928d-96a3122fffd1",
+      "question": "How do you know the HBC application improvement wasn't caused by a different applicant mix?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "fb3c9a13-b37d-45df-b095-e14f8e84bed2",
+      "question": "What happens if a payout API times out after the request was accepted?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+      "question": "What interests you about Simplii Financial, and why does this Senior Product Manager role make sense for you?",
+      "disposition": "REWRITE_FOR_SIMPLII"
+    },
+    {
+      "sourceId": "868dbf79-c06d-4ed3-83c4-f001b12be2bf",
+      "question": "What if leadership wants to optimize DAU but you believe retained deposits matter more?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "cee35d92-74ae-4d9b-a713-3594c8276e17",
+      "question": "Could the HBC incentives have increased spending while destroying profitability?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "195a8189-fe48-4c11-9ebe-8f2741146841",
+      "question": "What happened after the customer clicked Apply—how did you know they became an approved cardholder?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "f21a166b-7a0a-41a9-a919-44781cf782a2",
+      "question": "What if customers trust a digital bank for investments but refuse to deposit their salary?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42",
+      "question": "What if a customer receives one payroll deposit and then stops using everyday banking?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "09b7fdec-df53-4a0a-a6af-592fe54cbe57",
+      "question": "How can you claim 427% acquisition growth when you only improved conversion by 40%?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "14ad93b1-527c-49e9-b160-e9b22ca0f888",
+      "question": "What would you do differently on the Avion cashback withdrawal launch?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "bb903f25-6886-4106-ab80-1fa344cd8a05",
+      "question": "How did you prevent one card partner's offer from undermining another's?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "4333a9f3-b07d-4d8e-8676-6a7ca9012116",
+      "question": "What did you control in the HBC card portfolio, and what was controlled by Neo?",
+      "disposition": "REUSE_WITH_LIGHT_EDIT"
+    },
+    {
+      "sourceId": "94fa46b3-57ae-43a9-a217-84dc00d8a565",
+      "question": "Which customers would you deliberately not target first for banking?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "ab5294e4-b011-43a7-8cb2-432d84014ec7",
+      "question": "What would you tell customers if a major banking partner was down and you didn't know the restoration time?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "67ef7666-80ac-452a-8506-b2375d6abc34",
+      "question": "How would you differentiate everyday banking if Wealthsimple copied your best feature?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "8ba596cd-8c2c-456e-bf5e-0681333ab61a",
+      "question": "What would the MVP of a payroll-switching feature actually contain?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "56065bcd-e97e-4d82-ac21-e35a44296ae7",
+      "question": "Why should we hire you over someone with direct core banking experience?",
+      "disposition": "REUSE_WITH_LIGHT_EDIT"
+    },
+    {
+      "sourceId": "059b883d-ccbf-4e0b-8719-5dbff7c26da6",
+      "question": "How would you set shared OKRs without making ownership ambiguous?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "0d2ba56b-828d-4eeb-bbc4-b099d740e800",
+      "question": "What if someone keeps two banks rather than moving everything to everyday banking?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "96d0d431-bf77-42e5-85b5-1b8106ff1edc",
+      "question": "Explain how you would model customer lifetime value in banking.",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "17154883-f321-4b28-bee5-6fa80de879db",
+      "question": "Would you delay launch over a 0.5% payment failure rate?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1",
+      "question": "What's the difference between acquiring a cardholder, activating one and retaining one?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "ecbddc79-ce40-4452-88cc-68b3f56f197a",
+      "question": "Build a business case for investing $2 million in account switching.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "e896f79a-bee7-4d99-a673-d337bb38cd38",
+      "question": "How would you design a safe payroll-switching experience when the employer's first deposit could fail?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "cfe370bc-2273-4055-b0e2-d1adbb96cbf1",
+      "question": "What happens to your banking growth strategy when interest rates fall?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "fef2b30f-d115-48fe-be83-cf89c80548de",
+      "question": "Tell me about your first disagreement with a new team's established strategy.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "092b08d1-51ec-4761-a05d-2ccd56724ad5",
+      "question": "What would you do differently on the HBC application experiment?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "855c7ca3-5897-4baa-8c59-99f3c30cdd6e",
+      "question": "How would you win customers without paying an expensive cash sign-up bonus?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "86fb0ff0-ee19-402f-bbd3-4d478d902d9e",
+      "question": "Why would a bank not want unlimited deposits if customers are willing to bring them?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "2fb1eeab-7958-4099-9216-e2b88d0de5c5",
+      "question": "It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "d9c4b9aa-5e54-44a8-b246-c99a3a380239",
+      "question": "Why prioritize application continuation instead of more acquisition?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "c88f487e-e0d1-44c0-ab54-60f1e19fe79d",
+      "question": "Tell me about a data-driven product decision at Aeroplan.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "4f6209aa-a000-442c-bbd6-96723a266b9a",
+      "question": "Should a bank help customers automate savings when they have unpredictable income?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "aca9b58e-3d58-4ac5-85a4-da997aac635f",
+      "question": "How would you approach owning a regulated everyday banking product area end-to-end?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "7547195c-f21b-4d86-9d4f-c7dd07f73109",
+      "question": "How is an agent-style financial integration different from putting a chatbot inside a banking app?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "381e64d9-0684-493b-8e36-9a2a5636966c",
+      "question": "What should the financial hub do if an external bank connection is stale or disconnected?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "f2dabb52-3af6-43eb-ab59-c5934bc3a036",
+      "question": "Why was it worth prioritizing?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "7fefebb7-44eb-4fa3-80f8-14e6900cba0b",
+      "question": "How would you decide when to compensate a customer after a bank payment error?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0",
+      "question": "How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "606fd4d4-8492-40ac-b65f-099d93621451",
+      "question": "What would your launch-readiness checklist include for an everyday-banking feature?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "f67032ca-4e2e-4b49-ae44-29b181eab8b6",
+      "question": "What makes you different from other Senior PM candidates?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "fce9554d-a36d-4085-874f-e842afda538c",
+      "question": "You have only a dashboard, no user research. What do you do?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "2c8d4c01-fde5-45f2-83a5-4567c8b9ea00",
+      "question": "How do you reduce fraud without rejecting too many legitimate banking customers?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "2f3a780e-6b54-42b8-b56d-8936a471fa68",
+      "question": "Tell me about yourself.",
+      "disposition": "REWRITE_FOR_SIMPLII"
+    },
+    {
+      "sourceId": "d8be8368-b755-4baf-8494-3cf9a9f8a69e",
+      "question": "Card payments start declining, but the banking app and core ledger are online. Where do you look?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "d17bc916-0925-4b2f-9904-092499e61920",
+      "question": "When should an automated retry be prohibited even if it would reduce failures?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "a91d4a5a-19bf-4cd7-8ade-e773f9e83028",
+      "question": "How would you define payout success rate?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "25ad6af4-9d72-4ac5-9159-29bceeebfb80",
+      "question": "How would you handle events arriving out of order in a customer's transaction history?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "557cbeab-d17e-48bc-99de-1a54625ee37f",
+      "question": "Which three metrics would you put on your first everyday banking executive scorecard?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "cb792784-57f0-449a-a12d-76bbbde35b46",
+      "question": "How would you tell healthy banking engagement from anxiety-driven repeat checking?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "1f935f03-d796-480c-8e77-2a3c26f156b2",
+      "question": "Which early warning indicator would tell you everyday banking is losing customer trust?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "fb56f902-9f1a-4f18-9f34-dffa2027c038",
+      "question": "How do pending and posted card transactions differ?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "b995b443-a009-4b4c-b03b-81f53bd6cc67",
+      "question": "How long would you wait before deciding whether a payroll-switching experiment actually worked?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "7aafc468-3bf5-48c2-886e-5ca34ce4f660",
+      "question": "Did your UX redesign cause approvals in under three minutes?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "48f67960-28cb-4d6b-b863-e7cfe2c1ca71",
+      "question": "What would you do if post-launch data contradicts the user research that justified the feature?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "04f3d519-31e2-478e-9083-e60d2bca7818",
+      "question": "How do you measure primary-banking adoption versus superficial account opening?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4",
+      "question": "How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "a292f433-831a-440c-a196-dbf8c38fbddd",
+      "question": "You haven't owned a traditional chequing account. Why are you qualified?",
+      "disposition": "REWRITE_FOR_SIMPLII"
+    },
+    {
+      "sourceId": "50313c26-9a05-42e6-b88e-cc571be4b272",
+      "question": "You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "7c079cf5-b153-435d-a4b3-e83ad3139a2b",
+      "question": "How are you using AI in your product management work?",
+      "disposition": "REUSE_WITH_LIGHT_EDIT"
+    },
+    {
+      "sourceId": "d6e02f71-bdb1-4dbc-b373-4c7958d83e04",
+      "question": "How would you prioritize a reliable everyday account versus differentiated experiences?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+      "question": "Why are you looking to leave Arc'teryx?",
+      "disposition": "REWRITE_FOR_SIMPLII"
+    },
+    {
+      "sourceId": "59024cc1-b1e1-4f5b-a146-1936c8c86037",
+      "question": "How would you know whether a financial hub truly deepens the customer relationship?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "35d5ff6e-5890-41c9-a4f2-2d48476b7d3d",
+      "question": "How would you decide if a 5% incremental spending lift justified an incentive?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "b51df0d6-2cd1-41cb-b1f6-757f899b8bcc",
+      "question": "MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "a60003e2-1f39-431f-8386-531fc24d711c",
+      "question": "How would you define 'share of wallet' for everyday banking?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "309200d8-48f6-4957-8eda-75eb4e3faf62",
+      "question": "How do you handle an engineer who strongly disagrees with your roadmap?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "3c199d05-67ba-4f4c-aa98-d7f06a2cc3c6",
+      "question": "Why use Interac e-Transfer rather than EFT for cashback withdrawals?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "94d1edb7-2a12-40f6-8145-2a6006c2d682",
+      "question": "How would you improve transaction histories?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "d616c1d2-a2f7-49f4-a246-47feeacdf169",
+      "question": "How would you introduce AI-assisted account insights while preserving consent, accuracy and user control?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "244e239c-2f88-4b6e-968f-ef8ce65daa70",
+      "question": "Walk me through the Interac e-Transfer product you launched at RBC.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "c4c44a09-0799-471a-97cb-05e06e8bf8a8",
+      "question": "What if your PM peers own Cards and Money Movement, but your metric depends on both?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "aa868026-c8b7-4c7a-9318-a8754cb383af",
+      "question": "How would you make saving more engaging without turning it into a gimmick?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "2b7b68cd-d7ae-4358-b609-405c36f1f6b6",
+      "question": "What's one product opinion you hold strongly that others might disagree with?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "47a2ee59-f62e-4b8c-a95b-abab90b7891b",
+      "question": "How would you design a single financial hub across spending, saving and investing?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "adc80bff-8a24-4eaf-9c48-8b050d759ab1",
+      "question": "Would you consider a secondary banking relationship a product failure?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "d47c60d3-510e-4373-abf0-0749fcc41ebc",
+      "question": "What would you do in your first 90 days?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "735da866-20fc-4837-b67d-c91a6b4e2c77",
+      "question": "What metrics would you use to measure success in everyday banking?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "038f6014-b892-4a64-84d6-e09048b9fea2",
+      "question": "How would you roll out a critical payments integration?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "af5bd3a4-1b6f-4f1c-a319-15475be31b5d",
+      "question": "Did you actually run randomized holdouts on the HBC Mastercard programme?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "3772aed5-2bdd-43f0-a114-3eb66342d397",
+      "question": "What happens if an AI agent gives the customer an incorrect account balance or invents a transaction?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "6a8c3993-05ae-456b-8750-2b6778b6ee6b",
+      "question": "What is the biggest risk in connecting external accounts?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "9dbe28fe-5bde-46e2-86a2-2a9381643704",
+      "question": "Why mention 500K+ cardholders if you didn't control the credit book?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "8150bb81-67d5-48dc-82e0-b8bf223984f0",
+      "question": "Your idea sounds sensible. Why hasn't a digital bank already done it?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "1161687d-c6f7-4dd4-9c47-39354f254b09",
+      "question": "How did you experiment when the bank owned the application form?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "0f4d097c-a03a-4123-9e70-37c642139843",
+      "question": "What would you do if Engineering said your top feature was six months of work?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "6c389a15-714e-48e7-bdcc-0576ee78673b",
+      "question": "What if an AI drafts the wrong trade and the customer approves it?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "93a2100c-050b-4990-9340-00412fb9b507",
+      "question": "What should happen when a customer initiates a transfer but the payment fails?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "478cb389-1d3d-43e6-9a9b-71fd8b7c7cd5",
+      "question": "How do you challenge a VP who has already promised a launch date?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "3ba24689-dd1a-4428-b018-743f0a8c61af",
+      "question": "Why did HBC modeled LTV rise 10%, and how certain are you?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "df6c37ec-3c98-4d5d-b441-30ba78608f56",
+      "question": "How do you know when to stop investing in a feature?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "009d20a6-a8cf-458a-a7ea-9ef696c693e0",
+      "question": "How would you choose between building a payment service and buying one?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "176ce1ac-757b-452d-b98c-d8055754808c",
+      "question": "How would you manage an underperforming banking technology vendor?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "6458104e-34c6-430c-8005-aef3a3da9c02",
+      "question": "Tell me about building Avion Select from zero to one.",
+      "disposition": "REUSE_WITH_LIGHT_EDIT"
+    },
+    {
+      "sourceId": "e09deee1-3efa-4774-9274-2f18848b739f",
+      "question": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "2e58d329-4b40-4142-bf45-67504474f730",
+      "question": "What did you personally decide on the Aeroplan card offer test?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+      "question": "You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?",
+      "disposition": "REUSE_WITH_LIGHT_EDIT"
+    },
+    {
+      "sourceId": "140caed9-55a1-48ac-9190-5d2256afd262",
+      "question": "Tell me about improving the HBC Mastercard application journey.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "439ccf45-857e-431f-ab0e-1312d6998f02",
+      "question": "How did you secure $5.2 million in capital funding at Arc'teryx?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "0accbf98-6b70-462f-9631-d279d5fe3ae5",
+      "question": "Why does a squad-embedded product role at an established digital bank appeal to you?",
+      "disposition": "REWRITE_FOR_SIMPLII"
+    },
+    {
+      "sourceId": "c226bb45-beb6-4162-9628-f16d6660b887",
+      "question": "Why Interac e-Transfer instead of direct bank-account linking?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4",
+      "question": "How exactly did you measure the 40% conversion lift?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "89ded97e-dc5a-420c-a4ee-a7372c2937a9",
+      "question": "Tell me about the financial impact of your work at HBC.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "15aa03e2-46af-4d60-9d73-90ed342c6ccc",
+      "question": "Tell me about a product initiative that didn't go according to plan.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc",
+      "question": "What if the team ships a feature on time, but adoption is poor?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "2f00fac1-89ff-470f-992d-cd89980a36a9",
+      "question": "How would you handle a major payment incident?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "6cffb3bc-d87e-45de-a116-f6539d8d23dc",
+      "question": "How do you know your incentive program generated incremental spending?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "b9f349e9-64c8-4308-a221-2004dd8f3038",
+      "question": "What did you personally decide on the HBC Mastercard application journey?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+      "question": "Tell me about a product decision you got wrong.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "b4880442-6054-41de-b29b-f89c40e95005",
+      "question": "How do you manage stakeholders who disagree on priorities?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "333428ab-ba63-4939-a069-a376f0334868",
+      "question": "You say HBC's modeled lifetime value increased 10%. How would you explain that metric?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "dd28e2fe-24d1-4012-98d0-e951276439c6",
+      "question": "Why would someone switch their primary bank if their current bank works fine?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "5e92bdca-a458-4e00-9e4f-e5034d641a9b",
+      "question": "Tell me about a customer experience you improved at HBC.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "1429b53c-f5fd-4819-bb3b-c116ce1ed889",
+      "question": "How would you protect customers from malicious or unauthorized AI-agent actions?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "ad2fa044-aa66-4016-a587-a812cc94514d",
+      "question": "Would you use AI to recommend how someone should move their money?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "14239bac-e0fc-4f29-abfe-3c7a4386539b",
+      "question": "How would you prioritize AI features against core banking reliability?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "61e3bef4-cce7-4566-a2c6-e67a4764884b",
+      "question": "How did you establish that lifecycle incentives improved P&L and modeled LTV?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "4f7c15c5-f4ec-40ce-b1df-3e0a7dddfc71",
+      "question": "How do you make decisions when the data is incomplete?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "92a7cf55-18dc-4d94-93d7-db3303028b9b",
+      "question": "Did Quests reach six million active credit cardholders?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "9e7049a3-2fa7-4388-931c-875a7cc4d416",
+      "question": "What if Risk wants a step that cuts conversion by 20%?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30",
+      "question": "How did you decide what to include in the smaller Sperro SV release?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "7ade5d00-b631-4813-bf25-039f6c808fa5",
+      "question": "Give me an exact definition of a monthly active banking customer.",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "b0d58fdf-bced-41f7-b878-1b158fc89643",
+      "question": "What was your most important HBC product decision?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "1db0b6d1-d7a9-4d2b-b2a4-7758f9c47b3b",
+      "question": "How do you know the headless option saved two quarters?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "2235a907-b3ae-4899-9b1b-77a47d746119",
+      "question": "What would it take for you to leave your current role?",
+      "disposition": "REUSE_WITH_LIGHT_EDIT"
+    },
+    {
+      "sourceId": "c79db9b5-4487-4e2d-b794-624b16332f9e",
+      "question": "How do you work with designers and customer researchers?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "6f890192-85ca-45f7-8259-f92001b996cf",
+      "question": "How do you know a customer really switched their paycheque?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "2a1ed160-bfa6-4f2a-91ea-d280a3ef0418",
+      "question": "Tell me about something you took from an idea into a product.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "648015c7-c77e-4d15-87c7-b0c2c688beb0",
+      "question": "How would you decide between better rates and better switching UX?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "ab850009-b3cc-4b2b-b026-cd9bb28987c3",
+      "question": "How did you know membership was a customer problem at Arc'teryx?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "11375f03-31fa-45da-8557-488a8cc63beb",
+      "question": "How did you measure success for the Avion cashback withdrawal launch?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "f95b4bf7-5896-494b-810c-bb4d06393365",
+      "question": "What if an experiment looks positive after two days? Can we ship early?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "83d6cb34-59ce-42d0-88ca-dfb46a91bfae",
+      "question": "What controls would you require before allowing a new transfer type?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "0bcc9c40-011a-4fff-9789-fdad78429b78",
+      "question": "Who would you target first for everyday banking adoption?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "f290b115-770e-4448-82ac-52f4334f34de",
+      "question": "What exactly did you own versus RBC's payments infrastructure team?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "e4952adf-c7af-45fb-955e-169fc91e2f7d",
+      "question": "What would you do if a new AI feature gave customers incorrect financial advice?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "6bf73e61-9653-44ef-b0b3-03f854f27398",
+      "question": "Is a $100 million increase in deposits automatically a win?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "20f12afb-0dbb-49eb-821e-01989453d828",
+      "question": "How do you lead when you don't manage the engineers directly?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a",
+      "question": "Your conversion improved from 10% to 12%. Is that 2% or 20%?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "f7e403b2-26b8-4da4-83c1-ea58c2e3371b",
+      "question": "How do you know an increase in DAU isn't just more balance checking?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "b1eac049-c167-4977-a7bd-55e98d7e3b0b",
+      "question": "You secured $5.2M at Arc'teryx. Was the programme launched?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "0059c616-ee5b-4b23-a15e-f8af7061fd25",
+      "question": "What would your primary-account north-star metric actually be?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "629392bb-f39b-414e-b66d-0d879a9c4557",
+      "question": "How do you prevent cohort analysis from becoming a misleading before-and-after story?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "1c3ffb21-7fdd-46b3-832a-57c13b409a34",
+      "question": "Tell me about a time you said no to a stakeholder.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "39a0bcf9-7d01-4cde-8da4-4ff893da44b3",
+      "question": "What is your biggest weakness as a product leader?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "75a6db9c-b40c-44d3-b7b7-3edd17933d54",
+      "question": "Would you optimize account openings, funded accounts or payroll adoption?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "0c8b1a1c-7290-4b60-8c88-8d978935beae",
+      "question": "What if the ledger balance and customer-facing balance don't match?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "e546440d-67eb-4266-8466-0827ccd35e42",
+      "question": "What exactly did you change in the HBC application experience?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "66530581-f599-40f5-8f97-5bf255953c87",
+      "question": "Why have you moved between several industries and employers?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "c864344c-3df9-4f30-b478-278b4e58f8d4",
+      "question": "How would you prevent a customer from receiving the same cashback payout twice?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "f1194ecf-438d-422d-a96f-9c9b69a54fe2",
+      "question": "Tell me about a customer problem you solved at RBC.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "7d32e566-7779-4fe8-bca5-f9db5c8180d1",
+      "question": "Why prioritize a membership platform rather than improving service pages?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "8efd1a27-85fe-41e7-a279-d79a07bda1d4",
+      "question": "What would you do differently on the ReBIRD membership platform?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "14712a6a-881f-4c8c-9f98-9b3359211669",
+      "question": "What were the leading indicators before you could measure meaningful payout volume?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "03065da4-6d80-432b-bca7-c034fdf0ff52",
+      "question": "If payout failures doubled after launch, how would you investigate the first week?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "3bcaff0a-31cb-447a-b037-889edb579c5d",
+      "question": "Why did you prioritize it over other Avion improvements?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "0977208e-9d2d-40dc-8cfa-d48c79105e79",
+      "question": "How would you use AI to improve personal financial management?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "011b9f33-e2ea-4063-aa22-446d561e6df1",
+      "question": "Tell me about a time you challenged the original product strategy.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "f8074663-5773-4b95-a25b-1e32a764c1a9",
+      "question": "Tell me about a complex integration you led.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "d8d2b2a3-94db-456b-b6d2-f94c28429a61",
+      "question": "Why this solution and why start in North America?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "976c189b-f59f-409f-92ea-2648cc5b2f5a",
+      "question": "If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "27d2a524-6a0d-4a3d-b102-c531d65f368f",
+      "question": "What did you personally decide on the Avion cashback withdrawal launch?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "a5e5c740-637c-4b42-8642-e889de82dcec",
+      "question": "What's the biggest learning curve for you if you join everyday banking?",
+      "disposition": "REWRITE_FOR_SIMPLII"
+    },
+    {
+      "sourceId": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+      "question": "How would you manage transitioning away from an ongoing membership initiative?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "6eb506c0-03c7-4205-aa2a-ba3662c5b94d",
+      "question": "Why mention 5M+ settlement events when Avion payouts were only $1M+?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5",
+      "question": "Tell me exactly how you defined HBC's 30-day activation and 90-day retention.",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "f9022f65-91fb-4094-ae8f-b4dc87edcca7",
+      "question": "What did you personally decide or deprioritize?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "fb30286a-49ca-4ce1-b54a-4b7c4cea2d58",
+      "question": "How would you design MCP or agentic finance connections with consent and human approval?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "75fd6429-dc9a-4cd3-b996-ce48af985a7b",
+      "question": "How did you identify the problem?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "c60f747c-fd04-49d7-821c-1ed3e4a0d4c9",
+      "question": "Why save-and-resume, and how did you split ownership with Neo?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "3218b561-2159-442e-a3aa-074756f877c0",
+      "question": "How did you measure the 15% improvement?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "de31db47-3aea-4d26-be40-e0fa92423dd1",
+      "question": "What is the strongest single reason we should choose you for this job?",
+      "disposition": "REUSE_WITH_LIGHT_EDIT"
+    },
+    {
+      "sourceId": "b810ad2f-f519-4a36-9e96-246c398f9d70",
+      "question": "What would you do differently after the Aeroplan offer-summary test?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1",
+      "question": "What concerns would you have about joining a business that is still establishing its banking offering?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "e3acf896-6e83-4597-aeb6-088aba201987",
+      "question": "Are you more interested in building new products or improving existing ones?",
+      "disposition": "REUSE_WITH_LIGHT_EDIT"
+    },
+    {
+      "sourceId": "08bed145-68a4-4f1f-a500-1287247345bc",
+      "question": "What would you actually deliver in your first 30 days?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "eb393097-3860-4697-a24d-dd0a0cbaaf1d",
+      "question": "How do you ensure financial data shown to customers — or AI tools — is accurate enough to act on?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "1fd9478b-7396-4778-bc00-e62aee52de52",
+      "question": "What are you currently working on at Arc'teryx?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "df23d3a1-181c-4c9b-9460-42d635d2352d",
+      "question": "How would you test an AI-powered financial feature before launching it broadly?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "5c05a272-9334-44b8-bddd-fdbd4a50f6d3",
+      "question": "What happened if an Avion member didn't have Interac Autodeposit enabled?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "4fa0697a-ebf8-4c97-a107-946de9e5bf1c",
+      "question": "Why a clearer offer summary instead of a shorter page or bigger apply button?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "4068ab67-0613-40ae-bb08-f810651d27a0",
+      "question": "How would you handle payment exceptions and straight-through processing as transaction volume grows?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "80a4e168-83f0-45ba-a9b7-bde17123566a",
+      "question": "Who made the final decision when the payments team, Risk and Product disagreed?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "695ace4a-7c53-415e-9eb2-5f885d680c2b",
+      "question": "Where should transaction status, balance calculation and reconciliation responsibilities sit?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "bfaa86a1-2c06-4c4f-880a-bf2718e8a330",
+      "question": "What would the customer see while a cashback payout is pending or being investigated?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "79d4fa99-20bc-4cff-8c9c-0b25705550ca",
+      "question": "How did you turn regulatory and operations requirements into stories engineers could build?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "9b1df81f-65b7-4b77-81af-4ae48b03eb79",
+      "question": "How would you test whether customers wanted membership benefits before building the full platform?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "0cf5b127-23d5-442e-b968-59bafc1ff0b3",
+      "question": "How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "efc27de7-507e-4d96-b95d-446de1f5badf",
+      "question": "What assumptions in the $5.2 million investment case were most sensitive?",
+      "disposition": "REUSE_UNCHANGED"
+    },
+    {
+      "sourceId": "0f093e83-c8de-44bd-9398-e0f186a814df",
+      "question": "Why might my available balance be different from my posted balance?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "4445d2e9-0632-4f42-b1a8-6a60adc01012",
+      "question": "How would you design a new payee or recipient verification experience?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "771cc93c-f8fd-4499-90dd-04482b325890",
+      "question": "What would you do if the customer sees a successful transfer but settlement hasn't reconciled?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "b36da9fd-c09c-4202-bc35-aaf2d27afad3",
+      "question": "How would you explain a deposit hold to a customer who needs the money tomorrow?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "a27a2489-4944-4faa-b130-5a1a4ab088e9",
+      "question": "Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "ec3a7c0b-b921-45be-8548-df8c95b2f713",
+      "question": "A customer sees the same purchase twice, once pending and once posted. How would you fix it?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "6635b44b-bd82-4980-8aef-ea67474a075e",
+      "question": "How would you use feature flags without creating inconsistent financial records?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "0360f445-9e66-472e-932f-e06050ec3a3e",
+      "question": "How should a customer dispute an unfamiliar debit card transaction?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "10c8d63e-14a4-474f-be0c-7a6f5b731600",
+      "question": "How would you design recurring bill payments or pre-authorized debits for a new bank?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "4a20cf51-7a43-415b-b55d-d01104a46d6f",
+      "question": "What is sample ratio mismatch, and why would you care in a banking A/B test?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    },
+    {
+      "sourceId": "cca30fb0-f7be-497e-8e20-2cd349712829",
+      "question": "How would you experiment on payment reliability if you can't ethically expose customers to worse payments?",
+      "disposition": "RETAIN_AS_GENERAL_BANKING"
+    }
+  ],
+  "finalSimpliiCount": 272
+}

@@ -1,0 +1,339 @@
+{
+  "sourceFile": "Questrade_Followup_Expansion_Current_Arcteryx.json",
+  "proposedOnly": true,
+  "notes": [
+    "Apply by stable importKey resolved through real import registry.",
+    "One item (current-employment mismatch) requires canonical question and answer rewrite before use.",
+    "Do not create new Q&A records; merge variants and dedupe against other canonical questions.",
+    "One expansion item may have been skipped as a duplicate career answer; transfer useful aliases to existing canonical if appropriate."
+  ],
+  "entries": [
+    {
+      "importKey": "followup-expansion-current-employer-bcf3c6da0f44f120",
+      "canonicalQuestion": "You're still at Arc'teryx and leading membership. Why consider Questrade now?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "You're leading membership at Arc'teryx, so why explore Questrade?",
+        "What would make you leave Arc'teryx for this banking role?",
+        "Why make a move now when you're still at Arc'teryx?",
+        "Why switch from Arc'teryx membership to everyday banking?",
+        "What's drawing you to Questrade at this stage?",
+        "If you're happy at Arc'teryx, why are we talking?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-9aa86e6ed4991be8",
+      "canonicalQuestion": "Why have you moved between several industries and employers?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "Walk me through why you've changed industries.",
+        "What's the thread connecting your career moves?",
+        "Why have you worked in airlines, retail, banking and outdoor apparel?",
+        "Is there a pattern behind your job changes?",
+        "How do your career moves fit together?",
+        "Why have you switched companies a few times?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-783641cec16f6188",
+      "canonicalQuestion": "What happened if an Avion member didn't have Interac Autodeposit enabled?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "What if an Avion customer didn't use Interac Autodeposit?",
+        "How did you handle cashback withdrawals without Autodeposit?",
+        "Could someone cash out without Interac Autodeposit enabled?",
+        "What happened when a cashback member wasn't eligible for Autodeposit?",
+        "Walk me through the payout eligibility requirement for Autodeposit.",
+        "If their Interac auto deposit wasn't set up, what did the member see?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-47da105a5246e62e",
+      "canonicalQuestion": "How would you prevent a customer from receiving the same cashback payout twice?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "How did you stop customers getting paid twice?",
+        "What stops duplicate cashback withdrawals?",
+        "What happens if someone hits withdraw two times?",
+        "How would you handle a timeout without issuing a second payout?",
+        "How do you make the cash-out request idempotent?",
+        "What's your duplicate-payment prevention strategy?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-723124b41a88671e",
+      "canonicalQuestion": "What would the customer see while a cashback payout is pending or being investigated?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "What does a customer see when their cash-out is still processing?",
+        "What status do you show for a pending Interac payout?",
+        "How do you communicate a delayed cashback withdrawal?",
+        "What if the transfer's outcome is unknown?",
+        "How would customers know their cashback was on the way?",
+        "What would the Avion app say while a payout was under review?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-301fb13e986ed4d0",
+      "canonicalQuestion": "Who made the final decision when the payments team, Risk and Product disagreed?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "Who had decision authority when Risk and Product disagreed?",
+        "What did you own versus the payments team?",
+        "Who signed off on the payout controls?",
+        "If AML said no, who made the call?",
+        "How did you resolve a disagreement with Financial Operations?",
+        "Walk me through who actually had final say on that payment decision."
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-c8a85beb577449d9",
+      "canonicalQuestion": "What was actually live when you left Arc'teryx, and what was still planned?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "What's actually launched from the membership plan so far?",
+        "Which Arc'teryx membership capabilities are live versus planned?",
+        "What delivered for Sperro SV, and what's still on the roadmap?",
+        "What's shipping now versus later on the Arc teryx membership program?",
+        "Has the full membership platform launched yet?",
+        "What was in the September Sperro launch versus the full membership MVP?"
+      ],
+      "canonicalRewriteRequired": true,
+      "proposedCanonicalQuestion": "What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?"
+    },
+    {
+      "importKey": "followup-expansion-2026-10-22362777e51489a8",
+      "canonicalQuestion": "What assumptions in the $5.2 million investment case were most sensitive?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "What drove the assumptions behind the five point two million business case?",
+        "Which assumptions mattered most in the membership funding case?",
+        "What would put the $5.2 million investment return at risk?",
+        "What did you stress-test in the Arc'teryx membership financial model?",
+        "How sensitive was the membership case to adoption?",
+        "Which forecast assumption would you challenge first?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-59161acf4bf0b119",
+      "canonicalQuestion": "How do you know the HBC application improvement wasn't caused by a different applicant mix?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "How did you know the HBC application lift was real?",
+        "Could the fifteen percent conversion increase be from a different customer mix?",
+        "How did you separate better UX from a change in applicants?",
+        "What did you control for in the credit-card application funnel?",
+        "Could the HBC results just reflect different marketing traffic?",
+        "How did you establish attribution for application completions?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-43490de1e099ede8",
+      "canonicalQuestion": "Could the HBC incentives have increased spending while destroying profitability?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "Did the Quests incentive program actually make money?",
+        "Could rewards have increased spend but hurt contribution?",
+        "What if the cardholder incentives cost more than the lift?",
+        "How did you think about incremental spending versus rewarding existing spending?",
+        "Were the HBC promotion economics actually positive?",
+        "How do you know cardholder spending growth wasn't just subsidized?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-8fc7cbfb4ebf7de3",
+      "canonicalQuestion": "What if customers trust Questrade for investments but refuse to deposit their salary?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "What if brokerage customers won't move their paycheque to Questrade?",
+        "How do you earn customers' trust for payroll, not just investments?",
+        "Why would an investor choose to deposit salary into Questbank?",
+        "What if someone likes Questrade investing but keeps their main bank?",
+        "How do you get from an investing relationship to primary banking?",
+        "What if customers refuse to switch direct deposit?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-bf436c9433d0107c",
+      "canonicalQuestion": "Which Questrade investing customers would you deliberately not target first for banking?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "Which investors would you exclude from your first banking target segment?",
+        "Who shouldn't we target for Questbank first?",
+        "Would you prioritize every Questrade customer for banking?",
+        "Which existing brokerage cohorts are least likely to adopt everyday banking?",
+        "Are high-AUA investors always the best banking prospects?",
+        "How would you choose who not to market the bank account to?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-3eaa68220372868b",
+      "canonicalQuestion": "How would you design a safe payroll-switching experience when the employer's first deposit could fail?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "How would you make payroll switching safe for the first paycheque?",
+        "What if the employer doesn't switch direct deposit in time?",
+        "How do you design the first payroll deposit experience?",
+        "What would you do if a customer's first salary doesn't arrive?",
+        "How do you help someone move salary without missing bill payments?",
+        "How do you handle employer-side delays when switching payroll?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-a6c3f582931f677c",
+      "canonicalQuestion": "What if a customer receives one payroll deposit and then stops using Questbank?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "What if the customer only deposits their salary once?",
+        "How do you know payroll switching will stick?",
+        "What if someone gets one paycheque and stops using the account?",
+        "Does the first direct deposit count as primary banking?",
+        "How do you measure sustained payroll activity rather than one-time setup?",
+        "What if the customer opens a banking account just for a first deposit bonus?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-0f5c5a1cd82b4f3d",
+      "canonicalQuestion": "How would you win customers without paying an expensive cash sign-up bonus?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "How would you grow Questbank without a big sign-up incentive?",
+        "What if we don't offer a cash bonus?",
+        "How do you compete without paying people to open an account?",
+        "What would make investors choose our bank without a promotion?",
+        "How would you build adoption with a limited acquisition budget?",
+        "What's the organic value proposition for Questbank?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-2aae75bc9cff3ab9",
+      "canonicalQuestion": "It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "It's payroll day and customer paycheques are missing. What's your first move?",
+        "What would you do in the first fifteen minutes of a salary outage?",
+        "A hundred employees say direct deposit hasn't landed. Where do you start?",
+        "How do you triage a major payroll deposit incident?",
+        "What's your immediate response when customer salaries are delayed?",
+        "How do you determine if a payroll problem is with the app or payment rail?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-52438287a208eb8e",
+      "canonicalQuestion": "Why might my available balance be different from my posted balance?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "Why is my available balance not my account balance?",
+        "What's the difference between posted and available funds?",
+        "Why can customers see money they can't spend?",
+        "How would you explain an account hold affecting available balance?",
+        "Why would my banking app show two different balance numbers?",
+        "What can cause available funds to differ from posted transactions?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-81f59cee90ddc479",
+      "canonicalQuestion": "A customer sees the same purchase twice, once pending and once posted. How would you fix it?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "Why does the same debit purchase appear twice?",
+        "How do you handle a pending and settled charge for one purchase?",
+        "What if my card transaction is duplicated in the app?",
+        "Is the customer charged twice or is one entry just a hold?",
+        "How would you link card authorization to posting?",
+        "How do you prevent duplicate-looking card transactions?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-538e221cc463571b",
+      "canonicalQuestion": "Card payments start declining, but the banking app and core ledger are online. Where do you look?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "Cards are declining while the app stays up. How do you troubleshoot?",
+        "Where do you look when debit transactions start failing?",
+        "What if the core banking system is fine but authorization fails?",
+        "Card acceptance falls but balances still work. What's the cause?",
+        "How do you separate fraud declines from technical card failures?",
+        "What would you check first during a spike in debit-card declines?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-3df9c94b9ea49d8f",
+      "canonicalQuestion": "Which three metrics would you put on your first Questbank executive scorecard?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "What would be on your first executive dashboard for Questbank?",
+        "Which three KPIs matter most for the bank?",
+        "What would you measure first in Everyday Banking?",
+        "How would you design a simple banking leadership scorecard?",
+        "What are the core growth and reliability metrics for Questbank?",
+        "If you only had three banking measures, what are they?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-410906da823f7878",
+      "canonicalQuestion": "Explain your interview copilot's semantic matching architecture without using technical jargon.",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "Explain how your interview copilot matches questions without the jargon.",
+        "How does your AI copilot find the right prepared answer?",
+        "What's the simple explanation for your semantic search?",
+        "How did you make your Q and A library searchable by meaning?",
+        "Explain what embeddings do in your product like I'm a non-technical stakeholder.",
+        "Why doesn't your interview tool just search exact keywords?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-463e16f913ccff8d",
+      "canonicalQuestion": "What if Risk still says no after you've presented all your evidence?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "What if Risk won't sign off even after you explain the benefits?",
+        "How do you move forward when Compliance rejects the proposal?",
+        "What do you do when the Risk team still says no?",
+        "Would you escalate if AML refuses to approve the change?",
+        "How do you balance a growth opportunity against a hard risk control?",
+        "What's your next step after Risk rejects your product recommendation?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-eb5a7a85707df703",
+      "canonicalQuestion": "What if Engineering says your banking launch plan is unsafe but leadership wants the date?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "Engineering says the banking launch is risky but the deadline is fixed. What do you do?",
+        "Would you ship a payment feature if the engineers say it's unsafe?",
+        "How do you push back when leadership demands an unsafe launch?",
+        "What if you have to choose between launch date and financial integrity?",
+        "What would you tell an executive who won't move the banking release date?",
+        "If the team finds a critical money-movement risk before launch, then what?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-ed30a21945cc58cb",
+      "canonicalQuestion": "A customer says they sent money to the wrong recipient. What can your product realistically do?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "What do you do when a customer transfers money to the wrong person?",
+        "Can a customer reverse a payment sent to the wrong recipient?",
+        "How do you help someone who entered the wrong payee?",
+        "What can the bank promise after an incorrect transfer?",
+        "How would you handle an Interac payment sent to the wrong email address?",
+        "What product safeguards prevent misdirected transfers?"
+      ]
+    },
+    {
+      "importKey": "followup-expansion-2026-10-3556d63635e0e2ae",
+      "canonicalQuestion": "What is the difference between KYC, AML monitoring and transaction fraud prevention?",
+      "priority": "P0",
+      "proposedAltPhrasings": [
+        "How is KYC different from AML and transaction fraud?",
+        "Explain know your customer versus fraud prevention.",
+        "What's the difference between anti money laundering and fraud detection?",
+        "Why isn't identity verification the same thing as transaction monitoring?",
+        "How do KYC, AML and payment fraud controls fit together?",
+        "What role does each financial crime control actually play?"
+      ]
+    }
+  ]
+}

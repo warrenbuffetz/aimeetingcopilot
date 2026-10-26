@@ -1,0 +1,214 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interview-copilot.local/schemas/interview_qa_import.schema.json",
+  "title": "Interview Q&A import package",
+  "description": "Externally authored prepared Q&A for a single interview profile (e.g. Simplii). Imported verbatim by scripts/import-simplii-final-qa.mjs.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "targetProfile", "records"],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "packageId": {
+      "type": "string",
+      "description": "Optional identifier for this content package (audit trail)."
+    },
+    "authoredBy": {
+      "type": "string",
+      "description": "e.g. ChatGPT content pass 2026-10-27"
+    },
+    "authoredAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "targetProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "description": "If omitted, resolved by profile name at import time."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Must match Simplii Financial — Senior Product Manager unless overridden with --profile-name."
+        }
+      }
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/record" }
+    }
+  },
+  "$defs": {
+    "roundPriority": {
+      "type": "string",
+      "enum": ["very_high", "high", "medium", "low"]
+    },
+    "interviewRound": {
+      "type": "string",
+      "enum": ["recruiter", "hiring_manager", "cross_functional_panel"]
+    },
+    "preparationTier": {
+      "type": "string",
+      "enum": ["P0", "P1", "P2"]
+    },
+    "adaptationType": {
+      "type": "string",
+      "enum": ["reused", "lightly_edited", "rewritten", "newly_authored"]
+    },
+    "revisionStatus": {
+      "type": "string",
+      "enum": ["current", "superseded", "archived"]
+    },
+    "evidenceStatus": {
+      "type": "string",
+      "enum": [
+        "verified_accomplishment",
+        "resume_supported",
+        "illustrative_scenario",
+        "rehearsal_framework",
+        "unverified_detail"
+      ]
+    },
+    "questionIntent": {
+      "type": "string",
+      "enum": [
+        "main_story",
+        "problem_discovery",
+        "prioritization",
+        "solution_alternatives",
+        "personal_ownership",
+        "technical_implementation",
+        "measurement_impact",
+        "attribution",
+        "tradeoffs",
+        "challenges_lessons",
+        "what_differently",
+        "general"
+      ]
+    },
+    "followUp": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["question", "answer"],
+      "properties": {
+        "externalId": {
+          "type": "string",
+          "description": "Stable ID for embedded follow-up (optional; generated if omitted)."
+        },
+        "question": { "type": "string", "minLength": 1 },
+        "answer": { "type": "string", "minLength": 1 },
+        "notes": { "type": "string" }
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["externalId", "canonicalQuestion", "answer", "adaptationType"],
+      "properties": {
+        "externalId": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable idempotent key stored as navigator_meta.importKey and externalContentId."
+        },
+        "canonicalQuestion": { "type": "string", "minLength": 1 },
+        "answer": { "type": "string", "minLength": 1 },
+        "spokenAnswer": { "type": "string" },
+        "shortAnswer": { "type": "string" },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "category": { "type": "string" },
+        "isPreferred": { "type": "boolean", "default": false },
+        "isAuthoritative": { "type": "boolean", "default": true },
+        "revisionStatus": { "$ref": "#/$defs/revisionStatus" },
+        "retrievalExcluded": { "type": "boolean" },
+        "supersededByExternalId": { "type": "string" },
+        "parentExternalId": {
+          "type": "string",
+          "description": "Optional parent for standalone follow-up rows (second-pass link to relatedQuestionIds)."
+        },
+        "relatedExternalIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "followUps": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/followUp" }
+        },
+        "roundRelevance": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "recruiter": { "$ref": "#/$defs/roundPriority" },
+            "hiring_manager": { "$ref": "#/$defs/roundPriority" },
+            "cross_functional_panel": { "$ref": "#/$defs/roundPriority" }
+          }
+        },
+        "primaryInterviewRound": { "$ref": "#/$defs/interviewRound" },
+        "preparationTier": { "$ref": "#/$defs/preparationTier" },
+        "questionIntent": { "$ref": "#/$defs/questionIntent" },
+        "experienceModuleId": { "type": "string" },
+        "experienceLabel": { "type": "string" },
+        "librarySection": {
+          "type": "string",
+          "enum": [
+            "career_motivation",
+            "product_experience",
+            "questrade_cases",
+            "product_banking_knowledge",
+            "leadership_behavioural"
+          ]
+        },
+        "libraryCategory": {
+          "type": "string",
+          "enum": [
+            "career_recruiter",
+            "resume_deep_dive",
+            "banking_strategy",
+            "banking_technical",
+            "product_analytics",
+            "leadership_behavioural"
+          ]
+        },
+        "panelDiscipline": {
+          "type": "string",
+          "enum": [
+            "payments_ops",
+            "risk_compliance",
+            "finance_economics",
+            "engineering_platform",
+            "data_experimentation",
+            "ai_agentic",
+            "general"
+          ]
+        },
+        "adaptationType": { "$ref": "#/$defs/adaptationType" },
+        "sourceQuestradeRecordId": {
+          "type": "string",
+          "format": "uuid",
+          "description": "Provenance only; does not link rows across profiles."
+        },
+        "evidenceStatus": { "$ref": "#/$defs/evidenceStatus" },
+        "reviewRequired": { "type": "boolean", "default": false },
+        "reviewNotes": { "type": "string" },
+        "reviewStatus": {
+          "type": "string",
+          "enum": ["ok", "needs_review", "duplicate_candidate"]
+        },
+        "topicTags": { "type": "array", "items": { "type": "string" } },
+        "keywords": { "type": "array", "items": { "type": "string" } },
+        "sourceFile": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

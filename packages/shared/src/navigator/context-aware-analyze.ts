@@ -1,6 +1,11 @@
 import { rankPreparedQaLexical, scoreLexicalSimilarity, type LexicalMatchResult, type LexicalQaRow } from "../lexical-match";
-import { isAmbiguousFollowUp, resolveInterviewContext } from "./context";
+import {
+  explicitExperienceModuleFromSpoken,
+  isAmbiguousFollowUp,
+  resolveInterviewContext,
+} from "./context";
 import type { EnrichedQaRow, InterviewSessionContext, QuestionIntent } from "./types";
+import { emptyInterviewContext } from "./types";
 
 /**
  * Lexical rank with session context — ambiguous follow-ups stay on active experience/intent.
@@ -12,14 +17,18 @@ export function rankPreparedQaWithContext(
   session: InterviewSessionContext | null | undefined
 ): LexicalMatchResult[] {
   const base = rankPreparedQaLexical(spoken, library);
-  if (!session?.activeExperienceModuleId || !isAmbiguousFollowUp(spoken)) {
+  const explicitModule = explicitExperienceModuleFromSpoken(spoken);
+  const useSessionContext =
+    Boolean(session?.activeExperienceModuleId && isAmbiguousFollowUp(spoken)) || Boolean(explicitModule);
+  if (!useSessionContext) {
     return base;
   }
 
-  const resolution = resolveInterviewContext(spoken, enriched, session);
-  const targetModule = resolution.experienceModuleId;
+  const resolution = resolveInterviewContext(spoken, enriched, session ?? emptyInterviewContext());
+  const targetModule = explicitModule ?? resolution.experienceModuleId;
   const targetIntent = resolution.intent;
 
+  const ambiguous = Boolean(session?.activeExperienceModuleId && isAmbiguousFollowUp(spoken));
   const boosted = base.map((match) => {
     const row = enriched.find((r) => r.id === match.rowId);
     if (!row) return match;
@@ -28,9 +37,17 @@ export function rankPreparedQaWithContext(
       const altScore = scoreLexicalSimilarity(spoken, alt);
       if (altScore > score) score = Math.min(1, altScore + 0.02);
     }
-    if (row.navigator.experienceModuleId === targetModule) score += 0.12;
-    if (targetIntent && row.navigator.intent === targetIntent) score += 0.1;
+    const inModule = row.navigator.experienceModuleId === targetModule;
+    if (inModule) score += explicitModule ? 0.24 : 0.16;
+    if (targetIntent && row.navigator.intent === targetIntent) score += 0.12;
     if (resolution.rowId === row.id) score += 0.15;
+    if (ambiguous && targetModule && !inModule) score *= 0.82;
+    if (session?.activeQuestionId && row.navigator.canonicalQuestionId === session.activeQuestionId) {
+      score += 0.28;
+      for (const alt of row.navigator.altPhrasings ?? []) {
+        if (scoreLexicalSimilarity(spoken, alt) >= 0.42) score += 0.2;
+      }
+    }
     return { ...match, score: Math.min(1, score) };
   });
 

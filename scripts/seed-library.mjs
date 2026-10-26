@@ -209,22 +209,37 @@ async function main() {
   }
 
   for (const qa of seed.preparedQa.map(expandPreparedQa)) {
-    const { data: existing } = await admin
-      .from("prepared_qa")
-      .select("id")
-      .eq("user_id", userId)
-      .eq("question", qa.question)
-      .maybeSingle();
-
-    let row;
     const metaPayload = storeNavigatorMeta
       ? { navigator_meta: metaByQuestion[qa.question] ?? {} }
       : {};
+
+    let existing = null;
+    if (qa.id) {
+      const { data: byId } = await admin
+        .from("prepared_qa")
+        .select("id")
+        .eq("user_id", userId)
+        .eq("id", qa.id)
+        .maybeSingle();
+      existing = byId;
+    }
+    if (!existing) {
+      const { data: byQuestion } = await admin
+        .from("prepared_qa")
+        .select("id")
+        .eq("user_id", userId)
+        .eq("question", qa.question)
+        .maybeSingle();
+      existing = byQuestion;
+    }
+
+    let row;
 
     if (existing) {
       const { data, error } = await admin
         .from("prepared_qa")
         .update({
+          question: qa.question,
           answer: qa.answer,
           category: qa.category,
           is_preferred: qa.isPreferred ?? false,
@@ -240,21 +255,19 @@ async function main() {
       row = data;
       console.log("Updated:", qa.question.slice(0, 50));
     } else {
-      const { data, error } = await admin
-        .from("prepared_qa")
-        .insert({
-          user_id: userId,
-          profile_id: profileId,
-          question: qa.question,
-          answer: qa.answer,
-          category: qa.category,
-          is_preferred: qa.isPreferred ?? false,
-          is_authoritative: true,
-          follow_ups: qa.followUps ?? [],
-          ...metaPayload,
-        })
-        .select()
-        .single();
+      const insertRow = {
+        user_id: userId,
+        profile_id: profileId,
+        question: qa.question,
+        answer: qa.answer,
+        category: qa.category,
+        is_preferred: qa.isPreferred ?? false,
+        is_authoritative: true,
+        follow_ups: qa.followUps ?? [],
+        ...metaPayload,
+      };
+      if (qa.id) insertRow.id = qa.id;
+      const { data, error } = await admin.from("prepared_qa").insert(insertRow).select().single();
       if (error) throw error;
       row = data;
       console.log("Created:", qa.question.slice(0, 50));

@@ -1,6 +1,7 @@
 import type { LexicalMatchResult, LexicalQaRow } from "../lexical-match";
 import { LEXICAL_MATCH_THRESHOLD_PREPARED } from "../lexical-match";
 import { rankPreparedQaWithContext } from "./context-aware-analyze";
+import { isAmbiguousFollowUp, resolveInterviewContext } from "./context";
 import type { EnrichedQaRow, InterviewSessionContext } from "./types";
 import { roundRelevanceBoost } from "./interview-rounds";
 import type { InterviewRound } from "./interview-rounds";
@@ -25,9 +26,10 @@ export function rankPreparedQaHybrid(
   semanticBySourceId: Map<string, number> | null | undefined,
   activeRound?: InterviewRound | null
 ): LexicalMatchResult[] {
+  const ambiguous = Boolean(session?.activeExperienceModuleId && isAmbiguousFollowUp(spoken));
   const lexicalRanked = rankPreparedQaWithContext(spoken, library, enriched, session);
   if (!semanticBySourceId || semanticBySourceId.size === 0) {
-    return applyRoundBoost(lexicalRanked, enriched, activeRound);
+    return applyRoundBoost(lexicalRanked, enriched, activeRound, ambiguous);
   }
 
   const lexicalById = new Map(lexicalRanked.map((r) => [r.rowId, r]));
@@ -78,23 +80,44 @@ export function rankPreparedQaHybrid(
     }
   }
 
-  return applyRoundBoost(merged, enriched, activeRound);
+  if (ambiguous && session) {
+    const resolution = resolveInterviewContext(spoken, enriched, session);
+    const targetModule = resolution.experienceModuleId;
+    const targetIntent = resolution.intent;
+    for (let i = 0; i < merged.length; i++) {
+      const row = enriched.find((r) => r.id === merged[i].rowId);
+      if (!row) continue;
+      let score = merged[i].score;
+      if (row.navigator.experienceModuleId === targetModule) score += 0.12;
+      if (targetIntent && row.navigator.intent === targetIntent) score += 0.1;
+      if (resolution.rowId === row.id) score += 0.15;
+      merged[i] = { ...merged[i], score: Math.min(1, score) };
+    }
+    merged.sort((a, b) => b.score - a.score);
+  }
+
+  return applyRoundBoost(merged, enriched, activeRound, ambiguous);
 }
 
 function applyRoundBoost(
   ranked: LexicalMatchResult[],
   enriched: EnrichedQaRow[],
-  activeRound?: InterviewRound | null
+  activeRound?: InterviewRound | null,
+  dampenRoundBoost = false
 ): LexicalMatchResult[] {
   if (!activeRound) return ranked;
+  const dampen = dampenRoundBoost ? 0.4 : 1;
   return ranked
     .map((m) => {
       const row = enriched.find((r) => r.id === m.rowId);
-      const boosted = roundRelevanceBoost(
+      let boosted = roundRelevanceBoost(
         activeRound,
         row?.navigator.roundRelevance,
         m.score
       );
+      if (dampenRoundBoost && boosted > m.score) {
+        boosted = m.score + (boosted - m.score) * dampen;
+      }
       return { ...m, score: boosted };
     })
     .sort((a, b) => b.score - a.score);

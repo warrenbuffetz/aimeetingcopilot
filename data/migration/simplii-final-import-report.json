@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-26T19:47:25.316Z",
+  "mode": "dry-run",
+  "inputPath": "/Users/johnlee/Documents/Cursor/ai meeting copilot/imports/simplii_final_qa.json",
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      {
+        "path": "records[152].sourceQuestradeRecordId",
+        "message": "Not a RFC-4122 UUID (c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f); stored as provenance reference only"
+      },
+      {
+        "path": "records[153].sourceQuestradeRecordId",
+        "message": "Not a RFC-4122 UUID (b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b); stored as provenance reference only"
+      }
+    ]
+  },
+  "actions": {
+    "insert": 257,
+    "update": 0,
+    "skipped": 0
+  },
+  "relationshipIssues": [],
+  "semanticDuplicates": [],
+  "questradeIntegrity": null
+}

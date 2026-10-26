@@ -14,3 +14,4 @@ export * from "./search";
 export * from "./revision-retrieval";
 export * from "./interview-rounds";
 export * from "./hybrid-rank";
+export * from "./lexical-rows";

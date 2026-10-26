@@ -4,6 +4,7 @@ import {
   LEXICAL_MATCH_THRESHOLD_WEAK,
   enrichLibrary,
   isRetrievalExcluded,
+  lexicalRowsFromEnriched,
   normalizeInterviewQuery,
   rankPreparedQaHybrid,
   type AnalyzeQuestionResult,
@@ -101,14 +102,10 @@ export async function analyzeQuestionLocal(
     }))
   );
 
-  const library: LexicalQaRow[] = activeRows.map((r) => ({
-    id: r.id,
-    question: r.question,
-    answer: r.answer,
-    isPreferred: r.is_preferred,
-    followUps: parseFollowUps(r.follow_ups),
-    category: r.category,
-  }));
+  const dbFollowUpsById = new Map(
+    activeRows.map((r) => [r.id, parseFollowUps(r.follow_ups)])
+  );
+  const library: LexicalQaRow[] = lexicalRowsFromEnriched(enriched, dbFollowUpsById);
 
   let semanticBySourceId: Map<string, number> | null = null;
   let matchMethod: AnalyzeQuestionResult["matchMethod"] = "lexical";

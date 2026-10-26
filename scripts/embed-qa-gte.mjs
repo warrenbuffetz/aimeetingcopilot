@@ -133,7 +133,14 @@ async function main() {
     .eq("profile_id", profile.id);
   if (error) throw error;
 
-  const active = (rows ?? []).filter((r) => !isInactive(r.navigator_meta));
+  let active = (rows ?? []).filter((r) => !isInactive(r.navigator_meta));
+  const filterIds = (process.env.EMBED_QA_IDS ?? "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  if (filterIds.length > 0) {
+    active = active.filter((r) => filterIds.includes(r.id));
+  }
   const work = [];
   for (const row of active) {
     for (const v of buildVariants(row)) {

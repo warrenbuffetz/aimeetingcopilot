@@ -1,0 +1,72 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedAt": "2026-10-26T19:26:02.296Z",
+  "note": "Source file in repo is data/migration/questrade-followup-expansion-current-arcteryx.json (variant of Questrade_Proposed_Followup_Expansion.json). Entries already in Supabase are omitted.",
+  "sourceMeta": {
+    "version": "draft-2026-10-26-current-arcteryx-scenario",
+    "status": "proposed_not_imported",
+    "basedOnActiveRecords": 163,
+    "count": 92,
+    "important": "All entries are draft answers to review; hypothetical scenarios are frameworks, not claims that events happened. Existing library data remains unchanged.",
+    "existingEmbeddedFollowUps": 373,
+    "existingExplicitRelatedQuestionIds": 0,
+    "scenarioAssumption": "Interview rehearsal assumes current employment at Arc'teryx; no claim that actual career timeline has changed.",
+    "sourceVariant": "Questrade_Proposed_Followup_Expansion.json",
+    "changeSummary": "One proposed question and answer revised; 91 entries otherwise unchanged; no changes to saved Supabase records."
+  },
+  "summary": {
+    "proposedFileEntryCount": 92,
+    "notRepresentedInDatabase": 2,
+    "alreadyImportedOrPresent": 90
+  },
+  "entriesNotInDatabase": [
+    {
+      "group": "Career and recruiter",
+      "rounds": [
+        "recruiter",
+        "hiring_manager"
+      ],
+      "priority": "P0",
+      "evidenceType": "resume_supported_review",
+      "importKey": "followup-expansion-current-employer-bcf3c6da0f44f120",
+      "librarySection": "career_motivation",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+      "canonicalQuestion": "You're still at Arc'teryx and leading membership. Why consider Questrade now?",
+      "fullAnswer": "That's a fair question. I'm proud of the work I've been doing at Arc'teryx. I've had the opportunity to shape a membership proposition from the ground up, evaluate different technology approaches and help secure $5.2 million in funding. There's meaningful work there, and I don't take that lightly.\n\nI'm also being selective about what I'd consider next. Questrade caught my attention because it brings me back into financial services, where I've spent a significant part of my career, and the everyday banking opportunity is particularly interesting.\n\nAt RBC, HBC and Aeroplan, I worked on different parts of the financial customer journey, from acquisition and credit products to payments and engagement. Questrade is an opportunity to bring those experiences together.\n\nSo it's less about wanting to leave Arc'teryx and more about recognizing an opportunity that aligns really well with where I want to take my product career. If things progressed, I'd make sure there was a responsible handover of the work I'm leading.",
+      "experienceModuleId": "career-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "very_high",
+        "hiring_manager": "very_high"
+      },
+      "sourceParentQuestion": "Why are you looking to leave Arc'teryx?",
+      "scenarioAssumption": "Hypothetical interview rehearsal: currently employed at Arc'teryx. Do not infer historical employment status or modify existing resume records."
+    },
+    {
+      "group": "Leadership and influence",
+      "rounds": [
+        "recruiter",
+        "hiring_manager",
+        "cross_functional_panel"
+      ],
+      "priority": "P1",
+      "evidenceType": "needs_personal_example",
+      "importKey": "followup-expansion-2026-10-d13d503e478400a0",
+      "librarySection": "leadership_behavioural",
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "source": "proposed expansion grounded in questrade-interview-ranked-inventory.json, plus PM domain scenarios",
+      "sourceParentId": "15aa03e2-46af-4d60-9d73-90ed342c6ccc",
+      "canonicalQuestion": "Tell me about a product decision you got wrong. What changed your mind?",
+      "fullAnswer": "I'd choose a specific decision I can verify rather than manufacture a dramatic failure story. The important part of the answer is what I believed at the time, which evidence contradicted that belief and what I changed.\n\nOne genuine product lesson across my work is that activity isn't proof of value. In a financial product, an incentive can lift near-term behaviour without proving it improves long-term contribution. That changes how I frame experiments: I want the counterfactual and the economics, not just a positive dashboard.\n\nFor a behavioural interview I'd bring the interviewer back to the exact project, decision and result once those details are validated. I wouldn't claim a randomized test or a failed launch that didn't occur.",
+      "experienceModuleId": "leadership-general",
+      "suggestedRoundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      },
+      "sourceParentQuestion": "Tell me about a product initiative that didn't go according to plan."
+    }
+  ],
+  "registryReference": "/Users/johnlee/Documents/Cursor/ai meeting copilot/data/migration/import-registry-followup-expansion-92.json"
+}

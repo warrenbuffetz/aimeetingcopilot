@@ -1,6 +1,6 @@
 # Questrade Interview Copilot — Complete Q&A Library Audit
 
-**Generated:** 2026-10-26T16:21:09.557Z  
+**Generated:** 2026-10-26T19:43:50.857Z  
 **Source of truth:** Supabase `prepared_qa` for profile **Questrade — Senior PM, Everyday Banking** (`f96f6db8-c0e9-4341-be68-c29f6975dc5e`)  
 **User:** poc-demo@interviewcopilot.app  
 
@@ -23,12 +23,12 @@
 
 ## 1. Executive Summary
 
-- **Active prepared Q&As:** 163 (fetched 166 total for this profile; 3 inactive/superseded)
-- **Unique canonical questions (active):** 163
-- **Very High / High by round:** Recruiter 21 (VH 20, H 1); HM 135; Panel 37
-- **Embedded follow-up arrays:** 111 parent records
-- **REFINE flagged:** 3; **MISSING:** 0
-- **Round rankings:** 32 rows use stored `navigator_meta.roundRelevance`; 131 use **recommended** inference (section/category/keywords) — see JSON `roundRelevanceSource`.
+- **Active prepared Q&As:** 258 (fetched 261 total for this profile; 3 inactive/superseded)
+- **Unique canonical questions (active):** 258
+- **Very High / High by round:** Recruiter 32 (VH 24, H 8); HM 230; Panel 124
+- **Embedded follow-up arrays:** 142 parent records
+- **REFINE flagged:** 11; **MISSING:** 0
+- **Round rankings:** 127 rows use stored `navigator_meta.roundRelevance`; 131 use **recommended** inference (section/category/keywords) — see JSON `roundRelevanceSource`.
 
 ### Questrade / AI coverage (presence in active library)
 
@@ -50,20 +50,20 @@
 
 | Metric | Count |
 | --- | ---: |
-| Total rows fetched (profile-scoped) | 166 |
-| Active | 163 |
+| Total rows fetched (profile-scoped) | 261 |
+| Active | 258 |
 | Inactive (superseded/archived/excluded) | 3 |
 | Missing answer body | 0 |
-| With round assignment (any round) | 163 |
+| With round assignment (any round) | 258 |
 | Without round assignment | 0 |
 
 ### By library section
 
-- **product_experience:** 58
-- **questrade_cases:** 43
-- **leadership_behavioural:** 23
+- **product_experience:** 83
+- **questrade_cases:** 77
+- **leadership_behavioural:** 52
+- **career_motivation:** 26
 - **product_banking_knowledge:** 20
-- **career_motivation:** 19
 
 ### Inactive / superseded records (not in round rankings)
 
@@ -83,26 +83,37 @@
 | 4 | [bfd102e5…](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) | very_high (stored) | arcteryx-membership | solution_alternatives | Why Questrade instead of continuing at Arc'teryx? |
 | 5 | [7c079cf5…](qa-7c079cf5-b153-435d-a4b3-e83ad3139a2b) | very_high (stored) | leadership-general | general | How are you using AI in your product management work? |
 | 6 | [c45ce30e…](qa-c45ce30e-6de2-4164-93bf-8b67902caae0) | very_high (inferred) | career-general | general | Why move into everyday banking from rewards and loyalty? |
-| 7 | [f67032ca…](qa-f67032ca-4e2e-4b49-ae44-29b181eab8b6) | very_high (inferred) | career-general | general | What makes you different from other Senior PM candidates? |
-| 8 | [93a2100c…](qa-93a2100c-050b-4990-9340-00412fb9b507) | very_high (inferred) | career-general | general | What should happen when a customer initiates a transfer but the payment fails? |
-| 9 | [2235a907…](qa-2235a907-b3ae-4899-9b1b-77a47d746119) | very_high (inferred) | career-general | general | What would it take for you to leave your current role? |
-| 10 | [28571e7f…](qa-28571e7f-620f-4880-9cd7-cdfc2e146aa8) | very_high (inferred) | arcteryx-membership | general | Why are you looking to leave Arc'teryx? |
-| 11 | [a292f433…](qa-a292f433-831a-440c-a196-dbf8c38fbddd) | very_high (inferred) | career-general | general | You haven't owned a traditional chequing account. Why are you qualified? |
-| 12 | [cf5d16e4…](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) | very_high (inferred) | career-general | general | How would you design a reliable account-funding experience? |
-| 13 | [a40816ee…](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) | very_high (inferred) | career-general | general | How would you handle duplicate charges, incorrect balances or transaction discrepancies? |
-| 14 | [94d1edb7…](qa-94d1edb7-2a12-40f6-8145-2a6006c2d682) | very_high (inferred) | career-general | general | How would you improve transaction histories? |
-| 15 | [aa868026…](qa-aa868026-c8b7-4c7a-9318-a8754cb383af) | very_high (inferred) | career-general | general | How would you make saving more engaging without turning it into a gimmick? |
-| 16 | [176ce1ac…](qa-176ce1ac-757b-452d-b98c-d8055754808c) | very_high (inferred) | career-general | general | How would you manage an underperforming banking technology vendor? |
-| 17 | [0977208e…](qa-0977208e-9d2d-40dc-8cfa-d48c79105e79) | very_high (inferred) | career-general | general | How would you use AI to improve personal financial management? |
-| 18 | [f8074663…](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) | very_high (inferred) | career-general | main_story | Tell me about a complex integration you led. |
-| 19 | [d47c60d3…](qa-d47c60d3-510e-4373-abf0-0749fcc41ebc) | very_high (inferred) | career-general | general | What would you do in your first 90 days? |
-| 20 | [ecbddc79…](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) | very_high (inferred) | career-general | general | Build a business case for investing $2 million in account switching. |
+| 7 | [db88df8e…](qa-db88df8e-3a36-4cc6-8b84-4fb24e2136c3) | very_high (stored) | leadership-general | general | Explain your interview copilot's semantic matching architecture without using technical jargon. |
+| 8 | [1fd9478b…](qa-1fd9478b-7396-4778-bc00-e62aee52de52) | very_high (stored) | arcteryx-membership | main_story | What are you currently working on at Arc'teryx? |
+| 9 | [458f82bd…](qa-458f82bd-542b-4331-92fb-d77bb3645d06) | very_high (stored) | leadership-general | general | What if Risk still says no after you've presented all your evidence? |
+| 10 | [66530581…](qa-66530581-f599-40f5-8f97-5bf255953c87) | very_high (stored) | career-general | general | Why have you moved between several industries and employers? |
+| 11 | [f67032ca…](qa-f67032ca-4e2e-4b49-ae44-29b181eab8b6) | very_high (inferred) | career-general | general | What makes you different from other Senior PM candidates? |
+| 12 | [93a2100c…](qa-93a2100c-050b-4990-9340-00412fb9b507) | very_high (inferred) | career-general | general | What should happen when a customer initiates a transfer but the payment fails? |
+| 13 | [2235a907…](qa-2235a907-b3ae-4899-9b1b-77a47d746119) | very_high (inferred) | career-general | general | What would it take for you to leave your current role? |
+| 14 | [28571e7f…](qa-28571e7f-620f-4880-9cd7-cdfc2e146aa8) | very_high (inferred) | arcteryx-membership | general | Why are you looking to leave Arc'teryx? |
+| 15 | [a292f433…](qa-a292f433-831a-440c-a196-dbf8c38fbddd) | very_high (inferred) | career-general | general | You haven't owned a traditional chequing account. Why are you qualified? |
+| 16 | [cf5d16e4…](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) | very_high (inferred) | career-general | general | How would you design a reliable account-funding experience? |
+| 17 | [a40816ee…](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) | very_high (inferred) | career-general | general | How would you handle duplicate charges, incorrect balances or transaction discrepancies? |
+| 18 | [94d1edb7…](qa-94d1edb7-2a12-40f6-8145-2a6006c2d682) | very_high (inferred) | career-general | general | How would you improve transaction histories? |
+| 19 | [aa868026…](qa-aa868026-c8b7-4c7a-9318-a8754cb383af) | very_high (inferred) | career-general | general | How would you make saving more engaging without turning it into a gimmick? |
+| 20 | [176ce1ac…](qa-176ce1ac-757b-452d-b98c-d8055754808c) | very_high (inferred) | career-general | general | How would you manage an underperforming banking technology vendor? |
+| 21 | [0977208e…](qa-0977208e-9d2d-40dc-8cfa-d48c79105e79) | very_high (inferred) | career-general | general | How would you use AI to improve personal financial management? |
+| 22 | [f8074663…](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) | very_high (inferred) | career-general | main_story | Tell me about a complex integration you led. |
+| 23 | [d47c60d3…](qa-d47c60d3-510e-4373-abf0-0749fcc41ebc) | very_high (inferred) | career-general | general | What would you do in your first 90 days? |
+| 24 | [ecbddc79…](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) | very_high (inferred) | career-general | general | Build a business case for investing $2 million in account switching. |
 
 ### B. High Likelihood
 
 | Rank | ID | Likelihood | Module | Intent | Question |
 | ---: | --- | --- | --- | --- | --- |
 | 1 | [93f1f35c…](qa-93f1f35c-cd54-49c3-8d6d-6a95d262fd4b) | high (inferred) | career-general | general | What are your compensation expectations? |
+| 2 | [e3acf896…](qa-e3acf896-6e83-4597-aeb6-088aba201987) | high (stored) | career-general | general | Are you more interested in building new products or improving existing ones? |
+| 3 | [c8d4a611…](qa-c8d4a611-d174-48b1-911c-e2db8f3acc3e) | high (stored) | leadership-general | general | How did you know your semantic-search approach was actually better than keyword matching? |
+| 4 | [55b22c18…](qa-55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1) | high (stored) | career-general | general | What concerns would you have about joining a business that is still establishing its banking offering? |
+| 5 | [de31db47…](qa-de31db47-3aea-4d26-be40-e0fa92423dd1) | high (stored) | career-general | general | What is the strongest single reason we should choose you for this job? |
+| 6 | [08bed145…](qa-08bed145-68a4-4f1f-a500-1287247345bc) | high (stored) | career-general | general | What would you actually deliver in your first 30 days? |
+| 7 | [a5e5c740…](qa-a5e5c740-637c-4b42-8642-e889de82dcec) | high (stored) | career-general | general | What's the biggest learning curve for you if you join Questbank? |
+| 8 | [a3f8c2d1…](qa-a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e) | high (stored) | career-general | general | You've secured a significant investment and are still building the product. Why would you leave before seeing it launch? |
 
 ### C. Medium Likelihood
 
@@ -124,137 +135,221 @@
 | 14 | [0f4d097c…](qa-0f4d097c-a03a-4123-9e70-37c642139843) | medium (inferred) | leadership-general | general | What would you do if Engineering said your top feature was six months of work? |
 | 15 | [2b7b68cd…](qa-2b7b68cd-d7ae-4358-b609-405c36f1f6b6) | medium (inferred) | leadership-general | general | What's one product opinion you hold strongly that others might disagree with? |
 | 16 | [17154883…](qa-17154883-f321-4b28-bee5-6fa80de879db) | medium (inferred) | leadership-general | general | Would you delay launch over a 0.5% payment failure rate? |
-| 17 | [4f7c15c5…](qa-4f7c15c5-f4ec-40ce-b1df-3e0a7dddfc71) | medium (inferred) | leadership-general | general | How do you make decisions when the data is incomplete? |
-| 18 | [b4880442…](qa-b4880442-6054-41de-b29b-f89c40e95005) | medium (inferred) | leadership-general | general | How do you manage stakeholders who disagree on priorities? |
-| 19 | [c79db9b5…](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) | medium (inferred) | leadership-general | problem_discovery | How do you work with designers and customer researchers? |
-| 20 | [011b9f33…](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) | medium (inferred) | leadership-general | main_story | Tell me about a time you challenged the original product strategy. |
-| 21 | [868dbf79…](qa-868dbf79-c06d-4ed3-83c4-f001b12be2bf) | medium (inferred) | leadership-general | tradeoffs | What if leadership wants to optimize DAU but you believe retained deposits matter more? |
-| 22 | [4671a4a2…](qa-4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc) | medium (inferred) | leadership-general | measurement_impact | What if the team ships a feature on time, but adoption is poor? |
+| 17 | [7c4b9e12…](qa-7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30) | medium (stored) | arcteryx-membership | prioritization | How did you decide what to include in the smaller Sperro SV release? |
+| 18 | [4f7c15c5…](qa-4f7c15c5-f4ec-40ce-b1df-3e0a7dddfc71) | medium (inferred) | leadership-general | general | How do you make decisions when the data is incomplete? |
+| 19 | [b4880442…](qa-b4880442-6054-41de-b29b-f89c40e95005) | medium (inferred) | leadership-general | general | How do you manage stakeholders who disagree on priorities? |
+| 20 | [c79db9b5…](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) | medium (inferred) | leadership-general | problem_discovery | How do you work with designers and customer researchers? |
+| 21 | [b8e9f0a1…](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) | medium (stored) | career-general | challenges_lessons | How would you manage transitioning away from an ongoing membership initiative? |
+| 22 | [c8d9e0f1…](qa-c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f) | medium (stored) | hbc-quests | what_differently | Tell me about a product decision you got wrong. |
+| 23 | [011b9f33…](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) | medium (inferred) | leadership-general | main_story | Tell me about a time you challenged the original product strategy. |
+| 24 | [868dbf79…](qa-868dbf79-c06d-4ed3-83c4-f001b12be2bf) | medium (inferred) | leadership-general | tradeoffs | What if leadership wants to optimize DAU but you believe retained deposits matter more? |
+| 25 | [4671a4a2…](qa-4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc) | medium (inferred) | leadership-general | measurement_impact | What if the team ships a feature on time, but adoption is poor? |
 
 ### D. Low Likelihood
 
 | Rank | ID | Likelihood | Module | Intent | Question |
 | ---: | --- | --- | --- | --- | --- |
 | 1 | [3c961ee8…](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) | low (stored) | questrade-mcp | solution_alternatives | Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant? |
-| 2 | [92a7cf55…](qa-92a7cf55-18dc-4d94-93d7-db3303028b9b) | low (inferred) | hbc-quests | measurement_impact | Did Quests reach six million active credit cardholders? |
-| 3 | [7aafc468…](qa-7aafc468-3bf5-48c2-886e-5ca34ce4f660) | low (inferred) | hbc-mastercard-app | attribution | Did your UX redesign cause approvals in under three minutes? |
-| 4 | [09b7fdec…](qa-09b7fdec-df53-4a0a-a6af-592fe54cbe57) | low (inferred) | aeroplan-cobrand | general | How can you claim 427% acquisition growth when you only improved conversion by 40%? |
-| 5 | [1161687d…](qa-1161687d-c6f7-4dd4-9c47-39354f254b09) | low (inferred) | questrade-metrics | general | How did you experiment when the bank owned the application form? |
-| 6 | [04f9a779…](qa-04f9a779-8058-4470-8817-beccdcbecf1e) | low (inferred) | hbc-mastercard-app | problem_discovery | How did you identify the application problem? |
-| 7 | [75fd6429…](qa-75fd6429-dc9a-4cd3-b996-ce48af985a7b) | low (inferred) | aeroplan-cobrand | problem_discovery | How did you identify the problem? |
-| 8 | [a412c28e…](qa-a412c28e-815d-42b5-91fa-ad7bc4e444b6) | low (inferred) | arcteryx-membership | measurement_impact | How did you know it worked if the full membership platform hadn't launched? |
-| 9 | [ab850009…](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) | low (inferred) | arcteryx-membership | problem_discovery | How did you know membership was a customer problem at Arc'teryx? |
-| 10 | [7df4eff0…](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) | low (inferred) | rbc-cashback | problem_discovery | How did you know the Avion cashback withdrawal was a customer problem? |
-| 11 | [11375f03…](qa-11375f03-31fa-45da-8557-488a8cc63beb) | low (stored) | rbc-cashback | measurement_impact | How did you measure success for the Avion cashback withdrawal launch? |
-| 12 | [3218b561…](qa-3218b561-2159-442e-a3aa-074756f877c0) | low (inferred) | hbc-mastercard-app | measurement_impact | How did you measure the 15% improvement? |
-| 13 | [fb56f902…](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) | low (inferred) | questrade-payments | technical_implementation | How do pending and posted card transactions differ? |
-| 14 | [6f890192…](qa-6f890192-85ca-45f7-8259-f92001b996cf) | low (inferred) | questrade-deposits | general | How do you know a customer really switched their paycheque? |
-| 15 | [f7e403b2…](qa-f7e403b2-26b8-4da4-83c1-ea58c2e3371b) | low (inferred) | questrade-metrics | attribution | How do you know an increase in DAU isn't just more balance checking? |
-| 16 | [1db0b6d1…](qa-1db0b6d1-d7a9-4d2b-b2a4-7758f9c47b3b) | low (inferred) | arcteryx-vendor | attribution | How do you know the headless option saved two quarters? |
-| 17 | [6cffb3bc…](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) | low (inferred) | hbc-portfolio | attribution | How do you know your incentive program generated incremental spending? |
-| 18 | [8f93a4d4…](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) | low (inferred) | aeroplan-cobrand | measurement_impact | How exactly did you measure the 40% conversion lift? |
-| 19 | [009d20a6…](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) | low (inferred) | questrade-payments | solution_alternatives | How would you choose between building a payment service and buying one? |
-| 20 | [648015c7…](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) | low (inferred) | questrade-primary | prioritization | How would you decide between better rates and better switching UX? |
-| 21 | [35d5ff6e…](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) | low (inferred) | questrade-metrics | measurement_impact | How would you decide if a 5% incremental spending lift justified an incentive? |
-| 22 | [a60003e2…](qa-a60003e2-1f39-431f-8386-531fc24d711c) | low (inferred) | questrade-hub | general | How would you define 'share of wallet' for everyday banking? |
-| 23 | [a91d4a5a…](qa-a91d4a5a-19bf-4cd7-8ade-e773f9e83028) | low (inferred) | rbc-cashback | general | How would you define payout success rate? |
-| 24 | [06e233ae…](qa-06e233ae-5d45-42d3-b560-84baf56a8948) | low (inferred) | questrade-deposits | general | How would you increase direct deposit adoption? |
-| 25 | [038f6014…](qa-038f6014-b892-4a64-84d6-e09048b9fea2) | low (inferred) | questrade-payments | technical_implementation | How would you roll out a critical payments integration? |
-| 26 | [6441c9f1…](qa-6441c9f1-738a-4bd4-b819-92ddf2c1de5b) | low (inferred) | questrade-metrics | general | How would you select an experiment's primary metric and guardrails? |
-| 27 | [6bf73e61…](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) | low (inferred) | questrade-deposits | measurement_impact | Is a $100 million increase in deposits automatically a win? |
-| 28 | [e32103f8…](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) | low (inferred) | questrade-hub | general | Isn't Balance Sheet just a dashboard? Where is the actual value? |
-| 29 | [2bcf440c…](qa-2bcf440c-7c6e-4914-8c9d-f6577178c3b8) | low (inferred) | questrade-hub | general | Should the financial hub automatically transfer extra cash into investments? |
-| 30 | [5e92bdca…](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) | low (inferred) | hbc-mastercard-app | main_story | Tell me about a customer experience you improved at HBC. |
-| 31 | [f1194ecf…](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) | low (stored) | rbc-cashback | main_story | Tell me about a customer problem you solved at RBC. |
-| 32 | [c88f487e…](qa-c88f487e-e0d1-44c0-ab54-60f1e19fe79d) | low (inferred) | aeroplan-cobrand | main_story | Tell me about a data-driven product decision at Aeroplan. |
-| 33 | [6458104e…](qa-6458104e-34c6-430c-8005-aef3a3da9c02) | low (inferred) | rbc-avion | main_story | Tell me about building Avion Select from zero to one. |
-| 34 | [2a1ed160…](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) | low (inferred) | arcteryx-membership | main_story | Tell me about something you took from an idea into a product. |
-| 35 | [89ded97e…](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) | low (stored) | hbc-portfolio | main_story | Tell me about the financial impact of your work at HBC. |
-| 36 | [244e239c…](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) | low (inferred) | rbc-cashback | main_story | Walk me through the Interac e-Transfer product you launched at RBC. |
-| 37 | [83d6cb34…](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) | low (inferred) | questrade-deposits | technical_implementation | What controls would you require before allowing a new transfer type? |
-| 38 | [2e58d329…](qa-2e58d329-4b40-4142-bf45-67504474f730) | low (inferred) | aeroplan-cobrand | personal_ownership | What did you personally decide on the Aeroplan card offer test? |
-| 39 | [27d2a524…](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) | low (inferred) | rbc-cashback | personal_ownership | What did you personally decide on the Avion cashback withdrawal launch? |
-| 40 | [b9f349e9…](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) | low (inferred) | hbc-mastercard-app | personal_ownership | What did you personally decide on the HBC Mastercard application journey? |
-| 41 | [f9022f65…](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) | low (inferred) | arcteryx-membership | personal_ownership | What did you personally decide or deprioritize? |
-| 42 | [9b0f399e…](qa-9b0f399e-6750-463a-9570-805c82449eb8) | low (inferred) | hbc-mastercard-app | general | What does 'P&L ownership' at HBC actually mean? |
-| 43 | [e546440d…](qa-e546440d-67eb-4266-8466-0827ccd35e42) | low (inferred) | hbc-mastercard-app | general | What exactly did you change in the HBC application experience? |
-| 44 | [f290b115…](qa-f290b115-770e-4448-82ac-52f4334f34de) | low (inferred) | rbc-cashback | general | What exactly did you own versus RBC's payments infrastructure team? |
-| 45 | [fb3c9a13…](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) | low (inferred) | rbc-cashback | technical_implementation | What happens if a payout API times out after the request was accepted? |
-| 46 | [f95b4bf7…](qa-f95b4bf7-5896-494b-810c-bb4d06393365) | low (inferred) | questrade-metrics | general | What if an experiment looks positive after two days? Can we ship early? |
-| 47 | [d551219e…](qa-d551219e-6540-4760-a132-b27c92c706db) | low (inferred) | questrade-deposits | general | What if employers aren't supported by an automated payroll switching provider? |
-| 48 | [73c5726c…](qa-73c5726c-d892-4f7b-895c-59a71c29080b) | low (inferred) | questrade-deposits | general | What if payroll bonuses bring in customers who leave immediately afterward? |
-| 49 | [0d2ba56b…](qa-0d2ba56b-828d-4eeb-bbc4-b099d740e800) | low (inferred) | questrade-primary | general | What if someone keeps two banks rather than moving everything to Questbank? |
-| 50 | [0c8b1a1c…](qa-0c8b1a1c-7290-4b60-8c88-8d978935beae) | low (inferred) | questrade-payments | general | What if the ledger balance and customer-facing balance don't match? |
-| 51 | [c4c44a09…](qa-c4c44a09-0799-471a-97cb-05e06e8bf8a8) | low (inferred) | questrade-metrics | general | What if your PM peers own Cards and Money Movement, but your metric depends on both? |
-| 52 | [21cb8214…](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) | low (inferred) | questrade-payments | technical_implementation | What is reconciliation, and why does a PM need to understand it? |
-| 53 | [6a8c3993…](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) | low (inferred) | questrade-hub | tradeoffs | What is the biggest risk in connecting external accounts? |
-| 54 | [735da866…](qa-735da866-20fc-4837-b67d-c91a6b4e2c77) | low (inferred) | questrade-metrics | general | What metrics would you use to measure success in everyday banking? |
-| 55 | [b0d58fdf…](qa-b0d58fdf-bced-41f7-b878-1b158fc89643) | low (inferred) | hbc-mastercard-app | general | What was your most important HBC product decision? |
-| 56 | [b810ad2f…](qa-b810ad2f-f519-4a36-9e96-246c398f9d70) | low (inferred) | aeroplan-cobrand | what_differently | What would you do differently after the Aeroplan offer-summary test? |
-| 57 | [14ad93b1…](qa-14ad93b1-527c-49e9-b160-e9b22ca0f888) | low (inferred) | rbc-cashback | what_differently | What would you do differently on the Avion cashback withdrawal launch? |
-| 58 | [092b08d1…](qa-092b08d1-51ec-4761-a05d-2ccd56724ad5) | low (inferred) | hbc-mastercard-app | what_differently | What would you do differently on the HBC application experiment? |
-| 59 | [8efd1a27…](qa-8efd1a27-85fe-41e7-a279-d79a07bda1d4) | low (inferred) | arcteryx-membership | what_differently | What would you do differently on the ReBIRD membership platform? |
-| 60 | [0059c616…](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) | low (inferred) | questrade-metrics | measurement_impact | What would your primary-account north-star metric actually be? |
-| 61 | [e481df79…](qa-e481df79-5778-46dc-8292-e381da7845d6) | low (inferred) | questrade-deposits | general | What's the one feature you'd build first to win payroll? |
-| 62 | [0bcc9c40…](qa-0bcc9c40-011a-4fff-9789-fdad78429b78) | low (stored) | questrade-primary | general | Who would you target first for Questbank adoption? |
-| 63 | [4fa0697a…](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) | low (inferred) | aeroplan-cobrand | solution_alternatives | Why a clearer offer summary instead of a shorter page or bigger apply button? |
-| 64 | [3ba24689…](qa-3ba24689-dd1a-4428-b018-743f0a8c61af) | low (inferred) | hbc-portfolio | general | Why did HBC modeled LTV rise 10%, and how certain are you? |
-| 65 | [3bcaff0a…](qa-3bcaff0a-31cb-447a-b037-889edb579c5d) | low (inferred) | rbc-cashback | prioritization | Why did you prioritize it over other Avion improvements? |
-| 66 | [c226bb45…](qa-c226bb45-beb6-4162-9628-f16d6660b887) | low (inferred) | rbc-cashback | solution_alternatives | Why Interac e-Transfer instead of direct bank-account linking? |
-| 67 | [3c438a5c…](qa-3c438a5c-c720-4277-a72a-fdcdfd5e156d) | low (inferred) | questrade-metrics | general | Why is spend per active cardholder a risky metric? |
-| 68 | [9dbe28fe…](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) | low (inferred) | hbc-portfolio | personal_ownership | Why mention 500K+ cardholders if you didn't control the credit book? |
-| 69 | [6eb506c0…](qa-6eb506c0-03c7-4205-aa2a-ba3662c5b94d) | low (inferred) | rbc-avion | technical_implementation | Why mention 5M+ settlement events when Avion payouts were only $1M+? |
-| 70 | [7d32e566…](qa-7d32e566-7779-4fe8-bca5-f9db5c8180d1) | low (inferred) | arcteryx-membership | prioritization | Why prioritize a membership platform rather than improving service pages? |
-| 71 | [d9c4b9aa…](qa-d9c4b9aa-5e54-44a8-b246-c99a3a380239) | low (inferred) | hbc-mastercard-app | prioritization | Why prioritize application continuation instead of more acquisition? |
-| 72 | [c60f747c…](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) | low (inferred) | hbc-mastercard-app | solution_alternatives | Why save-and-resume, and how did you split ownership with Neo? |
-| 73 | [56065bcd…](qa-56065bcd-e97e-4d82-ac21-e35a44296ae7) | low (stored) | leadership-general | general | Why should we hire you over someone with direct core banking experience? |
-| 74 | [d8d2b2a3…](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) | low (inferred) | arcteryx-membership | solution_alternatives | Why this solution and why start in North America? |
-| 75 | [3c199d05…](qa-3c199d05-67ba-4f4c-aa98-d7f06a2cc3c6) | low (inferred) | rbc-cashback | general | Why use Interac e-Transfer rather than EFT for cashback withdrawals? |
-| 76 | [f2dabb52…](qa-f2dabb52-3af6-43eb-ab59-c5934bc3a036) | low (inferred) | aeroplan-cobrand | prioritization | Why was it worth prioritizing? |
-| 77 | [c4343691…](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) | low (inferred) | questrade-primary | main_story | Why would customers choose Questrade over Wealthsimple or a traditional bank? |
-| 78 | [dd28e2fe…](qa-dd28e2fe-24d1-4012-98d0-e951276439c6) | low (inferred) | questrade-primary | general | Why would someone switch their primary bank if their current bank works fine? |
-| 79 | [75a6db9c…](qa-75a6db9c-b40c-44d3-b7b7-3edd17933d54) | low (inferred) | questrade-deposits | general | Would you optimize account openings, funded accounts or payroll adoption? |
-| 80 | [50313c26…](qa-50313c26-9a05-42e6-b88e-cc571be4b272) | low (inferred) | questrade-deposits | general | You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose? |
-| 81 | [fce9554d…](qa-fce9554d-a36d-4085-874f-e842afda538c) | low (inferred) | questrade-primary | problem_discovery | You have only a dashboard, no user research. What do you do? |
-| 82 | [b1eac049…](qa-b1eac049-c167-4977-a7bd-55e98d7e3b0b) | low (inferred) | arcteryx-membership | general | You secured $5.2M at Arc'teryx. Was the programme launched? |
-| 83 | [0e0a03bc…](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) | low (inferred) | questrade-metrics | measurement_impact | Your conversion improved from 10% to 12%. Is that 2% or 20%? |
-| 84 | [8150bb81…](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) | low (inferred) | questrade-primary | tradeoffs | Your idea sounds sensible. Why hasn't Questrade already done it? |
-| 85 | [af5bd3a4…](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) | low (inferred) | hbc-portfolio | attribution | Did you actually run randomized holdouts on the HBC Mastercard programme? |
-| 86 | [e8d13d9e…](qa-e8d13d9e-a98d-4dbc-a596-a178557963b0) | low (inferred) | aeroplan-cobrand | general | How did you drive credit card acquisition growth at Aeroplan? |
-| 87 | [439ccf45…](qa-439ccf45-857e-431f-ab0e-1312d6998f02) | low (inferred) | arcteryx-membership | technical_implementation | How did you secure $5.2 million in capital funding at Arc'teryx? |
-| 88 | [03d6326e…](qa-03d6326e-9615-4ffc-8464-d9d6c186811d) | low (inferred) | questrade-metrics | general | How do you decide whether to experiment or commit directly to delivery? |
-| 89 | [eb393097…](qa-eb393097-3860-4697-a24d-dd0a0cbaaf1d) | low (stored) | questrade-payments | general | How do you ensure financial data shown to customers — or AI tools — is accurate enough to act on? |
-| 90 | [04f3d519…](qa-04f3d519-31e2-478e-9083-e60d2bca7818) | low (stored) | questrade-metrics | general | How do you measure primary-banking adoption versus superficial account opening? |
-| 91 | [627cda69…](qa-627cda69-cdae-4941-89d5-fdafba1ac674) | low (stored) | questrade-mcp | solution_alternatives | How is Questrade MCP different from Flows? How much autonomy should financial AI have? |
-| 92 | [a8fe6bd5…](qa-a8fe6bd5-ecc2-4c0f-95d5-63bb51f0c20c) | low (stored) | questrade-temenos | technical_implementation | How would you build product on top of Temenos core banking without owning the ledger? |
-| 93 | [47a2ee59…](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) | low (inferred) | questrade-hub | general | How would you design a single financial hub across spending, saving and investing? |
-| 94 | [fb30286a…](qa-fb30286a-49ca-4ce1-b54a-4b7c4cea2d58) | low (stored) | questrade-mcp | general | How would you design MCP or agentic finance connections with consent and human approval? |
-| 95 | [7eb5e7ae…](qa-7eb5e7ae-c611-4966-8279-0fcc8d80fc3c) | low (inferred) | hbc-activation | main_story | How would you explain your approach to customer activation and retention at HBC? |
-| 96 | [2f00fac1…](qa-2f00fac1-89ff-470f-992d-cd89980a36a9) | low (stored) | questrade-payments | general | How would you handle a major payment incident? |
-| 97 | [4068ab67…](qa-4068ab67-0613-40ae-bb08-f810651d27a0) | low (stored) | questrade-payments | challenges_lessons | How would you handle payment exceptions and straight-through processing as transaction volume grows? |
-| 98 | [d616c1d2…](qa-d616c1d2-a2f7-49f4-a246-47feeacdf169) | low (stored) | questrade-mcp | general | How would you introduce AI-assisted account insights while preserving consent, accuracy and user control? |
-| 99 | [59024cc1…](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) | low (stored) | questrade-hub | measurement_impact | How would you know whether a financial hub truly deepens the customer relationship? |
-| 100 | [be18eb7a…](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) | low (stored) | questrade-mcp | measurement_impact | How would you measure whether Questrade MCP is successful? |
-| 101 | [d6e02f71…](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) | low (stored) | questrade-primary | prioritization | How would you prioritize a reliable everyday account versus differentiated experiences? |
-| 102 | [14239bac…](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) | low (stored) | questrade-primary | prioritization | How would you prioritize AI features against core banking reliability? |
-| 103 | [1429b53c…](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) | low (stored) | questrade-mcp | tradeoffs | How would you protect customers from malicious or unauthorized AI-agent actions? |
-| 104 | [df23d3a1…](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) | low (stored) | questrade-mcp | measurement_impact | How would you test an AI-powered financial feature before launching it broadly? |
-| 105 | [976c189b…](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) | low (inferred) | questrade-deposits | general | If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded? |
-| 106 | [b51df0d6…](qa-b51df0d6-2cd1-41cb-b1f6-757f899b8bcc) | low (inferred) | questrade-metrics | general | MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it? |
-| 107 | [140caed9…](qa-140caed9-55a1-48ac-9190-5d2256afd262) | low (inferred) | hbc-mastercard-app | main_story | Tell me about improving the HBC Mastercard application journey. |
-| 108 | [4da64bdb…](qa-4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5) | low (inferred) | hbc-activation | measurement_impact | Tell me exactly how you defined HBC's 30-day activation and 90-day retention. |
-| 109 | [3772aed5…](qa-3772aed5-2bdd-43f0-a114-3eb66342d397) | low (stored) | questrade-payments | challenges_lessons | What happens if an AI agent gives the customer an incorrect account balance or invents a transaction? |
-| 110 | [6c389a15…](qa-6c389a15-714e-48e7-bdcc-0576ee78673b) | low (stored) | questrade-mcp | tradeoffs | What if an AI drafts the wrong trade and the customer approves it? |
-| 111 | [7547195c…](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) | low (stored) | questrade-mcp | technical_implementation | What is MCP, and why is it different from putting a chatbot inside a financial app? |
-| 112 | [91cd5cac…](qa-91cd5cac-65b4-41e6-be3b-76ba3c49e9b1) | low (inferred) | rbc-cashback | general | What's the difference between EFT and Interac e-Transfer? |
-| 113 | [695ace4a…](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) | low (stored) | questrade-payments | technical_implementation | Where should transaction status, balance calculation and reconciliation responsibilities sit? |
-| 114 | [a85b536e…](qa-a85b536e-5e20-468f-87d9-fb447ae796f6) | low (inferred) | arcteryx-membership | general | Why did you choose a headless membership platform rather than building everything internally? |
-| 115 | [233b0497…](qa-233b0497-5bff-471f-9617-6abdeca51522) | low (stored) | questrade-mcp | general | Would you extend Questrade MCP beyond brokerage into everyday banking? |
-| 116 | [ad2fa044…](qa-ad2fa044-aa66-4016-a587-a812cc94514d) | low (stored) | questrade-mcp | tradeoffs | Would you use AI to recommend how someone should move their money? |
-| 117 | [96d0d431…](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) | low (inferred) | questrade-metrics | measurement_impact | Explain how you would model customer lifetime value in banking. |
-| 118 | [7ade5d00…](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) | low (inferred) | questrade-metrics | measurement_impact | Give me an exact definition of a monthly active banking customer. |
-| 119 | [629392bb…](qa-629392bb-f39b-414e-b66d-0d879a9c4557) | low (inferred) | questrade-metrics | general | How do you prevent cohort analysis from becoming a misleading before-and-after story? |
-| 120 | [333428ab…](qa-333428ab-ba63-4939-a069-a376f0334868) | low (inferred) | hbc-mastercard-app | general | You say HBC's modeled lifetime value increased 10%. How would you explain that metric? |
+| 2 | [837e7efc…](qa-837e7efc-def5-4758-8ca1-627d006ec1ff) | low (stored) | questrade-payments | general | A customer says they sent money to the wrong recipient. What can your product realistically do? |
+| 3 | [ec3a7c0b…](qa-ec3a7c0b-b921-45be-8548-df8c95b2f713) | low (stored) | questrade-payments | general | A customer sees the same purchase twice, once pending and once posted. How would you fix it? |
+| 4 | [d8be8368…](qa-d8be8368-b755-4baf-8494-3cf9a9f8a69e) | low (stored) | questrade-payments | general | Card payments start declining, but the banking app and core ledger are online. Where do you look? |
+| 5 | [cee35d92…](qa-cee35d92-74ae-4d9b-a713-3594c8276e17) | low (stored) | hbc-portfolio | general | Could the HBC incentives have increased spending while destroying profitability? |
+| 6 | [92a7cf55…](qa-92a7cf55-18dc-4d94-93d7-db3303028b9b) | low (inferred) | hbc-quests | measurement_impact | Did Quests reach six million active credit cardholders? |
+| 7 | [7aafc468…](qa-7aafc468-3bf5-48c2-886e-5ca34ce4f660) | low (inferred) | hbc-mastercard-app | attribution | Did your UX redesign cause approvals in under three minutes? |
+| 8 | [09b7fdec…](qa-09b7fdec-df53-4a0a-a6af-592fe54cbe57) | low (inferred) | aeroplan-cobrand | general | How can you claim 427% acquisition growth when you only improved conversion by 40%? |
+| 9 | [1161687d…](qa-1161687d-c6f7-4dd4-9c47-39354f254b09) | low (inferred) | questrade-metrics | general | How did you experiment when the bank owned the application form? |
+| 10 | [04f9a779…](qa-04f9a779-8058-4470-8817-beccdcbecf1e) | low (inferred) | hbc-mastercard-app | problem_discovery | How did you identify the application problem? |
+| 11 | [75fd6429…](qa-75fd6429-dc9a-4cd3-b996-ce48af985a7b) | low (inferred) | aeroplan-cobrand | problem_discovery | How did you identify the problem? |
+| 12 | [a412c28e…](qa-a412c28e-815d-42b5-91fa-ad7bc4e444b6) | low (inferred) | arcteryx-membership | measurement_impact | How did you know it worked if the full membership platform hadn't launched? |
+| 13 | [ab850009…](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) | low (inferred) | arcteryx-membership | problem_discovery | How did you know membership was a customer problem at Arc'teryx? |
+| 14 | [7df4eff0…](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) | low (inferred) | rbc-cashback | problem_discovery | How did you know the Avion cashback withdrawal was a customer problem? |
+| 15 | [11375f03…](qa-11375f03-31fa-45da-8557-488a8cc63beb) | low (stored) | rbc-cashback | measurement_impact | How did you measure success for the Avion cashback withdrawal launch? |
+| 16 | [3218b561…](qa-3218b561-2159-442e-a3aa-074756f877c0) | low (inferred) | hbc-mastercard-app | measurement_impact | How did you measure the 15% improvement? |
+| 17 | [fb56f902…](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) | low (inferred) | questrade-payments | technical_implementation | How do pending and posted card transactions differ? |
+| 18 | [6f890192…](qa-6f890192-85ca-45f7-8259-f92001b996cf) | low (inferred) | questrade-deposits | general | How do you know a customer really switched their paycheque? |
+| 19 | [f7e403b2…](qa-f7e403b2-26b8-4da4-83c1-ea58c2e3371b) | low (inferred) | questrade-metrics | attribution | How do you know an increase in DAU isn't just more balance checking? |
+| 20 | [2af89a04…](qa-2af89a04-ab52-40bd-928d-96a3122fffd1) | low (stored) | hbc-mastercard-app | general | How do you know the HBC application improvement wasn't caused by a different applicant mix? |
+| 21 | [1db0b6d1…](qa-1db0b6d1-d7a9-4d2b-b2a4-7758f9c47b3b) | low (inferred) | arcteryx-vendor | attribution | How do you know the headless option saved two quarters? |
+| 22 | [6cffb3bc…](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) | low (inferred) | hbc-portfolio | attribution | How do you know your incentive program generated incremental spending? |
+| 23 | [8f93a4d4…](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) | low (inferred) | aeroplan-cobrand | measurement_impact | How exactly did you measure the 40% conversion lift? |
+| 24 | [009d20a6…](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) | low (inferred) | questrade-payments | solution_alternatives | How would you choose between building a payment service and buying one? |
+| 25 | [648015c7…](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) | low (inferred) | questrade-primary | prioritization | How would you decide between better rates and better switching UX? |
+| 26 | [35d5ff6e…](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) | low (inferred) | questrade-metrics | measurement_impact | How would you decide if a 5% incremental spending lift justified an incentive? |
+| 27 | [a60003e2…](qa-a60003e2-1f39-431f-8386-531fc24d711c) | low (inferred) | questrade-hub | general | How would you define 'share of wallet' for everyday banking? |
+| 28 | [a91d4a5a…](qa-a91d4a5a-19bf-4cd7-8ade-e773f9e83028) | low (inferred) | rbc-cashback | general | How would you define payout success rate? |
+| 29 | [e896f79a…](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) | low (stored) | questrade-deposits | general | How would you design a safe payroll-switching experience when the employer's first deposit could fail? |
+| 30 | [06e233ae…](qa-06e233ae-5d45-42d3-b560-84baf56a8948) | low (inferred) | questrade-deposits | general | How would you increase direct deposit adoption? |
+| 31 | [c864344c…](qa-c864344c-3df9-4f30-b478-278b4e58f8d4) | low (stored) | rbc-cashback | general | How would you prevent a customer from receiving the same cashback payout twice? |
+| 32 | [038f6014…](qa-038f6014-b892-4a64-84d6-e09048b9fea2) | low (inferred) | questrade-payments | technical_implementation | How would you roll out a critical payments integration? |
+| 33 | [6441c9f1…](qa-6441c9f1-738a-4bd4-b819-92ddf2c1de5b) | low (inferred) | questrade-metrics | general | How would you select an experiment's primary metric and guardrails? |
+| 34 | [855c7ca3…](qa-855c7ca3-5897-4baa-8c59-99f3c30cdd6e) | low (stored) | questrade-primary | general | How would you win customers without paying an expensive cash sign-up bonus? |
+| 35 | [6bf73e61…](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) | low (inferred) | questrade-deposits | measurement_impact | Is a $100 million increase in deposits automatically a win? |
+| 36 | [e32103f8…](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) | low (inferred) | questrade-hub | general | Isn't Balance Sheet just a dashboard? Where is the actual value? |
+| 37 | [2fb1eeab…](qa-2fb1eeab-7958-4099-9216-e2b88d0de5c5) | low (stored) | questrade-payments | general | It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes? |
+| 38 | [2bcf440c…](qa-2bcf440c-7c6e-4914-8c9d-f6577178c3b8) | low (inferred) | questrade-hub | general | Should the financial hub automatically transfer extra cash into investments? |
+| 39 | [5e92bdca…](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) | low (inferred) | hbc-mastercard-app | main_story | Tell me about a customer experience you improved at HBC. |
+| 40 | [f1194ecf…](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) | low (stored) | rbc-cashback | main_story | Tell me about a customer problem you solved at RBC. |
+| 41 | [c88f487e…](qa-c88f487e-e0d1-44c0-ab54-60f1e19fe79d) | low (inferred) | aeroplan-cobrand | main_story | Tell me about a data-driven product decision at Aeroplan. |
+| 42 | [6458104e…](qa-6458104e-34c6-430c-8005-aef3a3da9c02) | low (inferred) | rbc-avion | main_story | Tell me about building Avion Select from zero to one. |
+| 43 | [2a1ed160…](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) | low (inferred) | arcteryx-membership | main_story | Tell me about something you took from an idea into a product. |
+| 44 | [89ded97e…](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) | low (stored) | hbc-portfolio | main_story | Tell me about the financial impact of your work at HBC. |
+| 45 | [244e239c…](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) | low (inferred) | rbc-cashback | main_story | Walk me through the Interac e-Transfer product you launched at RBC. |
+| 46 | [efc27de7…](qa-efc27de7-507e-4d96-b95d-446de1f5badf) | low (stored) | arcteryx-membership | general | What assumptions in the $5.2 million investment case were most sensitive? |
+| 47 | [83d6cb34…](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) | low (inferred) | questrade-deposits | technical_implementation | What controls would you require before allowing a new transfer type? |
+| 48 | [2e58d329…](qa-2e58d329-4b40-4142-bf45-67504474f730) | low (inferred) | aeroplan-cobrand | personal_ownership | What did you personally decide on the Aeroplan card offer test? |
+| 49 | [27d2a524…](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) | low (inferred) | rbc-cashback | personal_ownership | What did you personally decide on the Avion cashback withdrawal launch? |
+| 50 | [b9f349e9…](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) | low (inferred) | hbc-mastercard-app | personal_ownership | What did you personally decide on the HBC Mastercard application journey? |
+| 51 | [f9022f65…](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) | low (inferred) | arcteryx-membership | personal_ownership | What did you personally decide or deprioritize? |
+| 52 | [9b0f399e…](qa-9b0f399e-6750-463a-9570-805c82449eb8) | low (inferred) | hbc-mastercard-app | general | What does 'P&L ownership' at HBC actually mean? |
+| 53 | [e546440d…](qa-e546440d-67eb-4266-8466-0827ccd35e42) | low (inferred) | hbc-mastercard-app | general | What exactly did you change in the HBC application experience? |
+| 54 | [f290b115…](qa-f290b115-770e-4448-82ac-52f4334f34de) | low (inferred) | rbc-cashback | general | What exactly did you own versus RBC's payments infrastructure team? |
+| 55 | [5c05a272…](qa-5c05a272-9334-44b8-bddd-fdbd4a50f6d3) | low (stored) | rbc-cashback | general | What happened if an Avion member didn't have Interac Autodeposit enabled? |
+| 56 | [fb3c9a13…](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) | low (inferred) | rbc-cashback | technical_implementation | What happens if a payout API times out after the request was accepted? |
+| 57 | [c4eabdaa…](qa-c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42) | low (stored) | questrade-deposits | general | What if a customer receives one payroll deposit and then stops using Questbank? |
+| 58 | [f95b4bf7…](qa-f95b4bf7-5896-494b-810c-bb4d06393365) | low (inferred) | questrade-metrics | general | What if an experiment looks positive after two days? Can we ship early? |
+| 59 | [f21a166b…](qa-f21a166b-7a0a-41a9-a919-44781cf782a2) | low (stored) | questrade-primary | general | What if customers trust Questrade for investments but refuse to deposit their salary? |
+| 60 | [d551219e…](qa-d551219e-6540-4760-a132-b27c92c706db) | low (inferred) | questrade-deposits | general | What if employers aren't supported by an automated payroll switching provider? |
+| 61 | [77caa5b4…](qa-77caa5b4-817d-47b3-9569-366aa012daf6) | low (stored) | leadership-general | general | What if Engineering says your banking launch plan is unsafe but leadership wants the date? |
+| 62 | [73c5726c…](qa-73c5726c-d892-4f7b-895c-59a71c29080b) | low (inferred) | questrade-deposits | general | What if payroll bonuses bring in customers who leave immediately afterward? |
+| 63 | [0d2ba56b…](qa-0d2ba56b-828d-4eeb-bbc4-b099d740e800) | low (inferred) | questrade-primary | general | What if someone keeps two banks rather than moving everything to Questbank? |
+| 64 | [0c8b1a1c…](qa-0c8b1a1c-7290-4b60-8c88-8d978935beae) | low (inferred) | questrade-payments | general | What if the ledger balance and customer-facing balance don't match? |
+| 65 | [c4c44a09…](qa-c4c44a09-0799-471a-97cb-05e06e8bf8a8) | low (inferred) | questrade-metrics | general | What if your PM peers own Cards and Money Movement, but your metric depends on both? |
+| 66 | [1c3f6b10…](qa-1c3f6b10-2b62-4807-bffd-ef21beef30d7) | low (stored) | arcteryx-membership | general | What is live from Arc'teryx's membership and Sperro SV work, and what remains planned? |
+| 67 | [21cb8214…](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) | low (inferred) | questrade-payments | technical_implementation | What is reconciliation, and why does a PM need to understand it? |
+| 68 | [6a8c3993…](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) | low (inferred) | questrade-hub | tradeoffs | What is the biggest risk in connecting external accounts? |
+| 69 | [ba4861ca…](qa-ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c) | low (stored) | questrade-payments | general | What is the difference between KYC, AML monitoring and transaction fraud prevention? |
+| 70 | [735da866…](qa-735da866-20fc-4837-b67d-c91a6b4e2c77) | low (inferred) | questrade-metrics | general | What metrics would you use to measure success in everyday banking? |
+| 71 | [b0d58fdf…](qa-b0d58fdf-bced-41f7-b878-1b158fc89643) | low (inferred) | hbc-mastercard-app | general | What was your most important HBC product decision? |
+| 72 | [bfaa86a1…](qa-bfaa86a1-2c06-4c4f-880a-bf2718e8a330) | low (stored) | rbc-cashback | general | What would the customer see while a cashback payout is pending or being investigated? |
+| 73 | [b810ad2f…](qa-b810ad2f-f519-4a36-9e96-246c398f9d70) | low (inferred) | aeroplan-cobrand | what_differently | What would you do differently after the Aeroplan offer-summary test? |
+| 74 | [14ad93b1…](qa-14ad93b1-527c-49e9-b160-e9b22ca0f888) | low (inferred) | rbc-cashback | what_differently | What would you do differently on the Avion cashback withdrawal launch? |
+| 75 | [092b08d1…](qa-092b08d1-51ec-4761-a05d-2ccd56724ad5) | low (inferred) | hbc-mastercard-app | what_differently | What would you do differently on the HBC application experiment? |
+| 76 | [8efd1a27…](qa-8efd1a27-85fe-41e7-a279-d79a07bda1d4) | low (inferred) | arcteryx-membership | what_differently | What would you do differently on the ReBIRD membership platform? |
+| 77 | [0059c616…](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) | low (inferred) | questrade-metrics | measurement_impact | What would your primary-account north-star metric actually be? |
+| 78 | [e481df79…](qa-e481df79-5778-46dc-8292-e381da7845d6) | low (inferred) | questrade-deposits | general | What's the one feature you'd build first to win payroll? |
+| 79 | [94fa46b3…](qa-94fa46b3-57ae-43a9-a217-84dc00d8a565) | low (stored) | questrade-primary | general | Which Questrade investing customers would you deliberately not target first for banking? |
+| 80 | [557cbeab…](qa-557cbeab-d17e-48bc-99de-1a54625ee37f) | low (stored) | questrade-metrics | general | Which three metrics would you put on your first Questbank executive scorecard? |
+| 81 | [80a4e168…](qa-80a4e168-83f0-45ba-a9b7-bde17123566a) | low (stored) | rbc-cashback | general | Who made the final decision when the payments team, Risk and Product disagreed? |
+| 82 | [0bcc9c40…](qa-0bcc9c40-011a-4fff-9789-fdad78429b78) | low (stored) | questrade-primary | general | Who would you target first for Questbank adoption? |
+| 83 | [4fa0697a…](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) | low (inferred) | aeroplan-cobrand | solution_alternatives | Why a clearer offer summary instead of a shorter page or bigger apply button? |
+| 84 | [3ba24689…](qa-3ba24689-dd1a-4428-b018-743f0a8c61af) | low (inferred) | hbc-portfolio | general | Why did HBC modeled LTV rise 10%, and how certain are you? |
+| 85 | [3bcaff0a…](qa-3bcaff0a-31cb-447a-b037-889edb579c5d) | low (inferred) | rbc-cashback | prioritization | Why did you prioritize it over other Avion improvements? |
+| 86 | [c226bb45…](qa-c226bb45-beb6-4162-9628-f16d6660b887) | low (inferred) | rbc-cashback | solution_alternatives | Why Interac e-Transfer instead of direct bank-account linking? |
+| 87 | [3c438a5c…](qa-3c438a5c-c720-4277-a72a-fdcdfd5e156d) | low (inferred) | questrade-metrics | general | Why is spend per active cardholder a risky metric? |
+| 88 | [9dbe28fe…](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) | low (inferred) | hbc-portfolio | personal_ownership | Why mention 500K+ cardholders if you didn't control the credit book? |
+| 89 | [6eb506c0…](qa-6eb506c0-03c7-4205-aa2a-ba3662c5b94d) | low (inferred) | rbc-avion | technical_implementation | Why mention 5M+ settlement events when Avion payouts were only $1M+? |
+| 90 | [0f093e83…](qa-0f093e83-c8de-44bd-9398-e0f186a814df) | low (stored) | questrade-payments | general | Why might my available balance be different from my posted balance? |
+| 91 | [7d32e566…](qa-7d32e566-7779-4fe8-bca5-f9db5c8180d1) | low (inferred) | arcteryx-membership | prioritization | Why prioritize a membership platform rather than improving service pages? |
+| 92 | [d9c4b9aa…](qa-d9c4b9aa-5e54-44a8-b246-c99a3a380239) | low (inferred) | hbc-mastercard-app | prioritization | Why prioritize application continuation instead of more acquisition? |
+| 93 | [c60f747c…](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) | low (inferred) | hbc-mastercard-app | solution_alternatives | Why save-and-resume, and how did you split ownership with Neo? |
+| 94 | [56065bcd…](qa-56065bcd-e97e-4d82-ac21-e35a44296ae7) | low (stored) | leadership-general | general | Why should we hire you over someone with direct core banking experience? |
+| 95 | [d8d2b2a3…](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) | low (inferred) | arcteryx-membership | solution_alternatives | Why this solution and why start in North America? |
+| 96 | [3c199d05…](qa-3c199d05-67ba-4f4c-aa98-d7f06a2cc3c6) | low (inferred) | rbc-cashback | general | Why use Interac e-Transfer rather than EFT for cashback withdrawals? |
+| 97 | [f2dabb52…](qa-f2dabb52-3af6-43eb-ab59-c5934bc3a036) | low (inferred) | aeroplan-cobrand | prioritization | Why was it worth prioritizing? |
+| 98 | [c4343691…](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) | low (inferred) | questrade-primary | main_story | Why would customers choose Questrade over Wealthsimple or a traditional bank? |
+| 99 | [dd28e2fe…](qa-dd28e2fe-24d1-4012-98d0-e951276439c6) | low (inferred) | questrade-primary | general | Why would someone switch their primary bank if their current bank works fine? |
+| 100 | [75a6db9c…](qa-75a6db9c-b40c-44d3-b7b7-3edd17933d54) | low (inferred) | questrade-deposits | general | Would you optimize account openings, funded accounts or payroll adoption? |
+| 101 | [50313c26…](qa-50313c26-9a05-42e6-b88e-cc571be4b272) | low (inferred) | questrade-deposits | general | You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose? |
+| 102 | [fce9554d…](qa-fce9554d-a36d-4085-874f-e842afda538c) | low (inferred) | questrade-primary | problem_discovery | You have only a dashboard, no user research. What do you do? |
+| 103 | [b1eac049…](qa-b1eac049-c167-4977-a7bd-55e98d7e3b0b) | low (inferred) | arcteryx-membership | general | You secured $5.2M at Arc'teryx. Was the programme launched? |
+| 104 | [0e0a03bc…](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) | low (inferred) | questrade-metrics | measurement_impact | Your conversion improved from 10% to 12%. Is that 2% or 20%? |
+| 105 | [8150bb81…](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) | low (inferred) | questrade-primary | tradeoffs | Your idea sounds sensible. Why hasn't Questrade already done it? |
+| 106 | [2fb50805…](qa-2fb50805-1cb9-43f9-a2ba-54b816d3085d) | low (stored) | questrade-payments | general | An account was frozen for suspected fraud. How would you handle the customer experience? |
+| 107 | [af5bd3a4…](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) | low (inferred) | hbc-portfolio | attribution | Did you actually run randomized holdouts on the HBC Mastercard programme? |
+| 108 | [233f8d5d…](qa-233f8d5d-fa5a-45a7-a301-39c4e3743edb) | low (stored) | aeroplan-cobrand | general | How did you align TD, CIBC and Amex when the banks had different priorities? |
+| 109 | [e8d13d9e…](qa-e8d13d9e-a98d-4dbc-a596-a178557963b0) | low (inferred) | aeroplan-cobrand | general | How did you drive credit card acquisition growth at Aeroplan? |
+| 110 | [0cf5b127…](qa-0cf5b127-23d5-442e-b968-59bafc1ff0b3) | low (stored) | rbc-avion | general | How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer? |
+| 111 | [bb903f25…](qa-bb903f25-6886-4106-ab80-1fa344cd8a05) | low (stored) | aeroplan-cobrand | general | How did you prevent one card partner's offer from undermining another's? |
+| 112 | [439ccf45…](qa-439ccf45-857e-431f-ab0e-1312d6998f02) | low (inferred) | arcteryx-membership | technical_implementation | How did you secure $5.2 million in capital funding at Arc'teryx? |
+| 113 | [79d4fa99…](qa-79d4fa99-20bc-4cff-8c9c-0b25705550ca) | low (stored) | rbc-cashback | general | How did you turn regulatory and operations requirements into stories engineers could build? |
+| 114 | [d333a258…](qa-d333a258-c050-4f17-a50b-242e5ad5254d) | low (stored) | leadership-general | general | How do you communicate a complex banking trade-off to an executive in two minutes? |
+| 115 | [03d6326e…](qa-03d6326e-9615-4ffc-8464-d9d6c186811d) | low (inferred) | questrade-metrics | general | How do you decide whether to experiment or commit directly to delivery? |
+| 116 | [eb393097…](qa-eb393097-3860-4697-a24d-dd0a0cbaaf1d) | low (stored) | questrade-payments | general | How do you ensure financial data shown to customers — or AI tools — is accurate enough to act on? |
+| 117 | [04f3d519…](qa-04f3d519-31e2-478e-9083-e60d2bca7818) | low (stored) | questrade-metrics | general | How do you measure primary-banking adoption versus superficial account opening? |
+| 118 | [2c8d4c01…](qa-2c8d4c01-fde5-45f2-83a5-4567c8b9ea00) | low (stored) | questrade-payments | general | How do you reduce fraud without rejecting too many legitimate banking customers? |
+| 119 | [f33aaf31…](qa-f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f) | low (stored) | leadership-general | general | How do you say no without damaging a relationship with a powerful stakeholder? |
+| 120 | [627cda69…](qa-627cda69-cdae-4941-89d5-fdafba1ac674) | low (stored) | questrade-mcp | solution_alternatives | How is Questrade MCP different from Flows? How much autonomy should financial AI have? |
+| 121 | [b995b443…](qa-b995b443-a009-4b4c-b03b-81f53bd6cc67) | low (stored) | questrade-metrics | general | How long would you wait before deciding whether a payroll-switching experiment actually worked? |
+| 122 | [0360f445…](qa-0360f445-9e66-472e-932f-e06050ec3a3e) | low (stored) | questrade-payments | general | How should a customer dispute an unfamiliar debit card transaction? |
+| 123 | [a8fe6bd5…](qa-a8fe6bd5-ecc2-4c0f-95d5-63bb51f0c20c) | low (stored) | questrade-temenos | technical_implementation | How would you build product on top of Temenos core banking without owning the ledger? |
+| 124 | [e3fe2cd3…](qa-e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0) | low (stored) | questrade-primary | general | How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant? |
+| 125 | [7fefebb7…](qa-7fefebb7-44eb-4fa3-80f8-14e6900cba0b) | low (stored) | questrade-payments | general | How would you decide when to compensate a customer after a bank payment error? |
+| 126 | [4445d2e9…](qa-4445d2e9-0632-4f42-b1a8-6a60adc01012) | low (stored) | questrade-payments | general | How would you design a new payee or recipient verification experience? |
+| 127 | [47a2ee59…](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) | low (inferred) | questrade-hub | general | How would you design a single financial hub across spending, saving and investing? |
+| 128 | [fb30286a…](qa-fb30286a-49ca-4ce1-b54a-4b7c4cea2d58) | low (stored) | questrade-mcp | general | How would you design MCP or agentic finance connections with consent and human approval? |
+| 129 | [10c8d63e…](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) | low (stored) | questrade-deposits | general | How would you design recurring bill payments or pre-authorized debits for a new bank? |
+| 130 | [67ef7666…](qa-67ef7666-80ac-452a-8506-b2375d6abc34) | low (stored) | questrade-primary | general | How would you differentiate Questbank if Wealthsimple copied your best feature? |
+| 131 | [23e0a9f7…](qa-23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4) | low (stored) | questrade-metrics | general | How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card? |
+| 132 | [cca30fb0…](qa-cca30fb0-f7be-497e-8e20-2cd349712829) | low (stored) | questrade-metrics | general | How would you experiment on payment reliability if you can't ethically expose customers to worse payments? |
+| 133 | [b36da9fd…](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) | low (stored) | questrade-deposits | general | How would you explain a deposit hold to a customer who needs the money tomorrow? |
+| 134 | [dc30e851…](qa-dc30e851-19e2-4bc1-8397-e4ab784ef939) | low (stored) | questrade-payments | general | How would you explain CDIC deposit protection versus CIPF investment protection? |
+| 135 | [7eb5e7ae…](qa-7eb5e7ae-c611-4966-8279-0fcc8d80fc3c) | low (inferred) | hbc-activation | main_story | How would you explain your approach to customer activation and retention at HBC? |
+| 136 | [2f00fac1…](qa-2f00fac1-89ff-470f-992d-cd89980a36a9) | low (stored) | questrade-payments | general | How would you handle a major payment incident? |
+| 137 | [a95a3a54…](qa-a95a3a54-604e-4617-af66-92158c5c2c53) | low (stored) | leadership-general | general | How would you handle an offshore team that doesn't understand the customer impact of a requirement? |
+| 138 | [25ad6af4…](qa-25ad6af4-9d72-4ac5-9159-29bceeebfb80) | low (stored) | questrade-payments | general | How would you handle events arriving out of order in a customer's transaction history? |
+| 139 | [4068ab67…](qa-4068ab67-0613-40ae-bb08-f810651d27a0) | low (stored) | questrade-payments | challenges_lessons | How would you handle payment exceptions and straight-through processing as transaction volume grows? |
+| 140 | [d616c1d2…](qa-d616c1d2-a2f7-49f4-a246-47feeacdf169) | low (stored) | questrade-mcp | general | How would you introduce AI-assisted account insights while preserving consent, accuracy and user control? |
+| 141 | [59024cc1…](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) | low (stored) | questrade-hub | measurement_impact | How would you know whether a financial hub truly deepens the customer relationship? |
+| 142 | [be18eb7a…](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) | low (stored) | questrade-mcp | measurement_impact | How would you measure whether Questrade MCP is successful? |
+| 143 | [d6e02f71…](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) | low (stored) | questrade-primary | prioritization | How would you prioritize a reliable everyday account versus differentiated experiences? |
+| 144 | [14239bac…](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) | low (stored) | questrade-primary | prioritization | How would you prioritize AI features against core banking reliability? |
+| 145 | [1429b53c…](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) | low (stored) | questrade-mcp | tradeoffs | How would you protect customers from malicious or unauthorized AI-agent actions? |
+| 146 | [059b883d…](qa-059b883d-ccbf-4e0b-8719-5dbff7c26da6) | low (stored) | questrade-metrics | general | How would you set shared OKRs without making ownership ambiguous? |
+| 147 | [cb792784…](qa-cb792784-57f0-449a-a12d-76bbbde35b46) | low (stored) | questrade-metrics | general | How would you tell healthy banking engagement from anxiety-driven repeat checking? |
+| 148 | [df23d3a1…](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) | low (stored) | questrade-mcp | measurement_impact | How would you test an AI-powered financial feature before launching it broadly? |
+| 149 | [9b1df81f…](qa-9b1df81f-65b7-4b77-81af-4ae48b03eb79) | low (stored) | arcteryx-membership | general | How would you test whether customers wanted membership benefits before building the full platform? |
+| 150 | [6635b44b…](qa-6635b44b-bd82-4980-8aef-ea67474a075e) | low (stored) | questrade-payments | general | How would you use feature flags without creating inconsistent financial records? |
+| 151 | [698c2786…](qa-698c2786-3368-4df3-917e-de3a535d352d) | low (stored) | questrade-hub | general | If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do? |
+| 152 | [976c189b…](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) | low (inferred) | questrade-deposits | general | If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded? |
+| 153 | [4fcf44b0…](qa-4fcf44b0-5a66-46be-a57b-0fca89af2d10) | low (stored) | questrade-mcp | general | If MCP standardizes tools, what competitive advantage can Questrade still own? |
+| 154 | [03065da4…](qa-03065da4-6d80-432b-bca7-c034fdf0ff52) | low (stored) | rbc-cashback | general | If payout failures doubled after launch, how would you investigate the first week? |
+| 155 | [b51df0d6…](qa-b51df0d6-2cd1-41cb-b1f6-757f899b8bcc) | low (inferred) | questrade-metrics | general | MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it? |
+| 156 | [4f6209aa…](qa-4f6209aa-a000-442c-bbd6-96723a266b9a) | low (stored) | questrade-deposits | general | Should a bank help customers automate savings when they have unpredictable income? |
+| 157 | [140caed9…](qa-140caed9-55a1-48ac-9190-5d2256afd262) | low (inferred) | hbc-mastercard-app | main_story | Tell me about improving the HBC Mastercard application journey. |
+| 158 | [4da64bdb…](qa-4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5) | low (inferred) | hbc-activation | measurement_impact | Tell me exactly how you defined HBC's 30-day activation and 90-day retention. |
+| 159 | [4333a9f3…](qa-4333a9f3-b07d-4d8e-8676-6a7ca9012116) | low (stored) | hbc-portfolio | general | What did you control in the HBC card portfolio, and what was controlled by Neo? |
+| 160 | [31d8ded4…](qa-31d8ded4-7dc2-4d0b-ad30-009b1f92748b) | low (stored) | arcteryx-membership | general | What did you cut from the membership MVP, and how did you defend those trade-offs? |
+| 161 | [110a4074…](qa-110a4074-4ba6-4eb9-9b8e-4a96b4e223e4) | low (stored) | leadership-general | general | What do you do when a shared dependency is blocking your objective but the other PM has different priorities? |
+| 162 | [195a8189…](qa-195a8189-fe48-4c11-9ebe-8f2741146841) | low (stored) | aeroplan-cobrand | general | What happened after the customer clicked Apply—how did you know they became an approved cardholder? |
+| 163 | [2f280387…](qa-2f280387-ca4c-4b94-abdf-a644c1868a4a) | low (stored) | questrade-mcp | general | What happens if a customer revokes an AI agent's access while it has a request in progress? |
+| 164 | [3772aed5…](qa-3772aed5-2bdd-43f0-a114-3eb66342d397) | low (stored) | questrade-payments | challenges_lessons | What happens if an AI agent gives the customer an incorrect account balance or invents a transaction? |
+| 165 | [cfe370bc…](qa-cfe370bc-2273-4055-b0e2-d1adbb96cbf1) | low (stored) | questrade-deposits | general | What happens to your banking growth strategy when interest rates fall? |
+| 166 | [cdc38655…](qa-cdc38655-878f-4b7f-a49d-109f3b69125e) | low (stored) | questrade-primary | general | What if a customer fails identity verification while trying to open a Questbank account? |
+| 167 | [6c389a15…](qa-6c389a15-714e-48e7-bdcc-0576ee78673b) | low (stored) | questrade-mcp | tradeoffs | What if an AI drafts the wrong trade and the customer approves it? |
+| 168 | [7547195c…](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) | low (stored) | questrade-mcp | technical_implementation | What is MCP, and why is it different from putting a chatbot inside a financial app? |
+| 169 | [4a20cf51…](qa-4a20cf51-7a43-415b-b55d-d01104a46d6f) | low (stored) | questrade-metrics | general | What is sample ratio mismatch, and why would you care in a banking A/B test? |
+| 170 | [6ffb405d…](qa-6ffb405d-688b-433e-87c3-a7d992430bad) | low (stored) | questrade-payments | general | What should happen if someone loses their phone and tries to access their bank account? |
+| 171 | [381e64d9…](qa-381e64d9-0684-493b-8e36-9a2a5636966c) | low (stored) | questrade-hub | general | What should the financial hub do if an external bank connection is stale or disconnected? |
+| 172 | [14712a6a…](qa-14712a6a-881f-4c8c-9f98-9b3359211669) | low (stored) | rbc-cashback | general | What were the leading indicators before you could measure meaningful payout volume? |
+| 173 | [bad7b926…](qa-bad7b926-f617-44c4-ab13-ddc78b1e4378) | low (stored) | questrade-mcp | general | What would convince you to stop an AI financial-assistant pilot? |
+| 174 | [73b7a947…](qa-73b7a947-02f5-4298-8592-4badfbcbb139) | low (stored) | arcteryx-membership | general | What would have changed your recommendation from buy to build? |
+| 175 | [8ba596cd…](qa-8ba596cd-8c2c-456e-bf5e-0681333ab61a) | low (stored) | questrade-deposits | general | What would the MVP of a payroll-switching feature actually contain? |
+| 176 | [48f67960…](qa-48f67960-28cb-4d6b-b863-e7cfe2c1ca71) | low (stored) | leadership-general | general | What would you do if post-launch data contradicts the user research that justified the feature? |
+| 177 | [771cc93c…](qa-771cc93c-f8fd-4499-90dd-04482b325890) | low (stored) | questrade-payments | general | What would you do if the customer sees a successful transfer but settlement hasn't reconciled? |
+| 178 | [ab5294e4…](qa-ab5294e4-b011-43a7-8cb2-432d84014ec7) | low (stored) | questrade-payments | general | What would you tell customers if a major banking partner was down and you didn't know the restoration time? |
+| 179 | [606fd4d4…](qa-606fd4d4-8492-40ac-b65f-099d93621451) | low (stored) | questrade-payments | general | What would your launch-readiness checklist include for an everyday-banking feature? |
+| 180 | [f1a3ec4e…](qa-f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1) | low (stored) | hbc-activation | general | What's the difference between acquiring a cardholder, activating one and retaining one? |
+| 181 | [91cd5cac…](qa-91cd5cac-65b4-41e6-be3b-76ba3c49e9b1) | low (inferred) | rbc-cashback | general | What's the difference between EFT and Interac e-Transfer? |
+| 182 | [d17bc916…](qa-d17bc916-0925-4b2f-9904-092499e61920) | low (stored) | questrade-payments | general | When should an automated retry be prohibited even if it would reduce failures? |
+| 183 | [be3e3314…](qa-be3e3314-68c5-4f6a-a3d9-7f0b9147e17b) | low (stored) | questrade-mcp | general | When would you choose deterministic software or rules instead of an AI model? |
+| 184 | [1de87c3a…](qa-1de87c3a-d693-419c-9ded-b76154af230a) | low (stored) | leadership-general | general | When would you shut down a feature your own team spent six months building? |
+| 185 | [695ace4a…](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) | low (stored) | questrade-payments | technical_implementation | Where should transaction status, balance calculation and reconciliation responsibilities sit? |
+| 186 | [1f935f03…](qa-1f935f03-d796-480c-8e77-2a3c26f156b2) | low (stored) | questrade-metrics | general | Which early warning indicator would tell you Questbank is losing customer trust? |
+| 187 | [0f41544d…](qa-0f41544d-2a2d-4b4b-bb41-f89df44c05d0) | low (stored) | hbc-mastercard-app | general | Which step in a credit-card application funnel would you inspect first, and why? |
+| 188 | [a85b536e…](qa-a85b536e-5e20-468f-87d9-fb447ae796f6) | low (inferred) | arcteryx-membership | general | Why did you choose a headless membership platform rather than building everything internally? |
+| 189 | [c22bc35e…](qa-c22bc35e-41a0-4bc7-9b53-6d19da3ecfef) | low (stored) | rbc-cashback | general | Why did you use the member's email address, and what if that address changed? |
+| 190 | [86fb0ff0…](qa-86fb0ff0-ee19-402f-bbd3-4d478d902d9e) | low (stored) | questrade-deposits | general | Why would a bank not want unlimited deposits if customers are willing to bring them? |
+| 191 | [adc80bff…](qa-adc80bff-8a24-4eaf-9c48-8b050d759ab1) | low (stored) | questrade-primary | general | Would you consider a secondary banking relationship a product failure? |
+| 192 | [233b0497…](qa-233b0497-5bff-471f-9617-6abdeca51522) | low (stored) | questrade-mcp | general | Would you extend Questrade MCP beyond brokerage into everyday banking? |
+| 193 | [7883e373…](qa-7883e373-e58d-460a-bef5-2b89d237c66e) | low (stored) | questrade-mcp | general | Would you let an external AI agent read transaction descriptions or merchant details? |
+| 194 | [cd39ab59…](qa-cd39ab59-8574-443c-b78e-a9dfa3010185) | low (stored) | rbc-cashback | general | Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product? |
+| 195 | [ad2fa044…](qa-ad2fa044-aa66-4016-a587-a812cc94514d) | low (stored) | questrade-mcp | tradeoffs | Would you use AI to recommend how someone should move their money? |
+| 196 | [c6aa4266…](qa-c6aa4266-ebca-41df-a32b-99cba4676ffd) | low (stored) | questrade-hub | general | Would you use screen scraping or customer-permissioned banking APIs for account aggregation? |
+| 197 | [a27a2489…](qa-a27a2489-4944-4faa-b130-5a1a4ab088e9) | low (stored) | questrade-metrics | general | Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship? |
+| 198 | [96d0d431…](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) | low (inferred) | questrade-metrics | measurement_impact | Explain how you would model customer lifetime value in banking. |
+| 199 | [7ade5d00…](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) | low (inferred) | questrade-metrics | measurement_impact | Give me an exact definition of a monthly active banking customer. |
+| 200 | [629392bb…](qa-629392bb-f39b-414e-b66d-0d879a9c4557) | low (inferred) | questrade-metrics | general | How do you prevent cohort analysis from becoming a misleading before-and-after story? |
+| 201 | [333428ab…](qa-333428ab-ba63-4939-a069-a376f0334868) | low (inferred) | hbc-mastercard-app | general | You say HBC's modeled lifetime value increased 10%. How would you explain that metric? |
 
 ## 4. Round 2 — Hiring Manager
 
@@ -264,144 +359,239 @@
 | ---: | --- | --- | --- | --- | --- |
 | 1 | [6844c2e7…](qa-6844c2e7-03c5-434e-b64c-ca9febec68dd) | very_high (stored) | questrade-primary | general | How would you convince existing Questrade investors to make Questbank their primary bank? |
 | 2 | [976c189b…](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) | very_high (inferred) | questrade-deposits | general | If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded? |
-| 3 | [59024cc1…](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) | very_high (stored) | questrade-hub | measurement_impact | How would you know whether a financial hub truly deepens the customer relationship? |
-| 4 | [06e233ae…](qa-06e233ae-5d45-42d3-b560-84baf56a8948) | very_high (inferred) | questrade-deposits | general | How would you increase direct deposit adoption? |
-| 5 | [2bcf440c…](qa-2bcf440c-7c6e-4914-8c9d-f6577178c3b8) | very_high (inferred) | questrade-hub | general | Should the financial hub automatically transfer extra cash into investments? |
-| 6 | [0d2ba56b…](qa-0d2ba56b-828d-4eeb-bbc4-b099d740e800) | very_high (inferred) | questrade-primary | general | What if someone keeps two banks rather than moving everything to Questbank? |
-| 7 | [dd28e2fe…](qa-dd28e2fe-24d1-4012-98d0-e951276439c6) | very_high (inferred) | questrade-primary | general | Why would someone switch their primary bank if their current bank works fine? |
-| 8 | [47a2ee59…](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) | very_high (inferred) | questrade-hub | general | How would you design a single financial hub across spending, saving and investing? |
-| 9 | [f1194ecf…](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) | very_high (stored) | rbc-cashback | main_story | Tell me about a customer problem you solved at RBC. |
-| 10 | [89ded97e…](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) | very_high (stored) | hbc-portfolio | main_story | Tell me about the financial impact of your work at HBC. |
-| 11 | [d6e02f71…](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) | very_high (stored) | questrade-primary | prioritization | How would you prioritize a reliable everyday account versus differentiated experiences? |
-| 12 | [1161687d…](qa-1161687d-c6f7-4dd4-9c47-39354f254b09) | very_high (inferred) | questrade-metrics | general | How did you experiment when the bank owned the application form? |
-| 13 | [6441c9f1…](qa-6441c9f1-738a-4bd4-b819-92ddf2c1de5b) | very_high (inferred) | questrade-metrics | general | How would you select an experiment's primary metric and guardrails? |
-| 14 | [f95b4bf7…](qa-f95b4bf7-5896-494b-810c-bb4d06393365) | very_high (inferred) | questrade-metrics | general | What if an experiment looks positive after two days? Can we ship early? |
-| 15 | [50313c26…](qa-50313c26-9a05-42e6-b88e-cc571be4b272) | very_high (inferred) | questrade-deposits | general | You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose? |
-| 16 | [03d6326e…](qa-03d6326e-9615-4ffc-8464-d9d6c186811d) | very_high (inferred) | questrade-metrics | general | How do you decide whether to experiment or commit directly to delivery? |
-| 17 | [11375f03…](qa-11375f03-31fa-45da-8557-488a8cc63beb) | very_high (stored) | rbc-cashback | measurement_impact | How did you measure success for the Avion cashback withdrawal launch? |
-| 18 | [6f890192…](qa-6f890192-85ca-45f7-8259-f92001b996cf) | very_high (inferred) | questrade-deposits | general | How do you know a customer really switched their paycheque? |
-| 19 | [f7e403b2…](qa-f7e403b2-26b8-4da4-83c1-ea58c2e3371b) | very_high (inferred) | questrade-metrics | attribution | How do you know an increase in DAU isn't just more balance checking? |
-| 20 | [629392bb…](qa-629392bb-f39b-414e-b66d-0d879a9c4557) | very_high (inferred) | questrade-metrics | general | How do you prevent cohort analysis from becoming a misleading before-and-after story? |
-| 21 | [648015c7…](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) | very_high (inferred) | questrade-primary | prioritization | How would you decide between better rates and better switching UX? |
-| 22 | [a60003e2…](qa-a60003e2-1f39-431f-8386-531fc24d711c) | very_high (inferred) | questrade-hub | general | How would you define 'share of wallet' for everyday banking? |
-| 23 | [6bf73e61…](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) | very_high (inferred) | questrade-deposits | measurement_impact | Is a $100 million increase in deposits automatically a win? |
-| 24 | [e32103f8…](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) | very_high (inferred) | questrade-hub | general | Isn't Balance Sheet just a dashboard? Where is the actual value? |
-| 25 | [d551219e…](qa-d551219e-6540-4760-a132-b27c92c706db) | very_high (inferred) | questrade-deposits | general | What if employers aren't supported by an automated payroll switching provider? |
-| 26 | [73c5726c…](qa-73c5726c-d892-4f7b-895c-59a71c29080b) | very_high (inferred) | questrade-deposits | general | What if payroll bonuses bring in customers who leave immediately afterward? |
-| 27 | [c4c44a09…](qa-c4c44a09-0799-471a-97cb-05e06e8bf8a8) | very_high (inferred) | questrade-metrics | general | What if your PM peers own Cards and Money Movement, but your metric depends on both? |
-| 28 | [735da866…](qa-735da866-20fc-4837-b67d-c91a6b4e2c77) | very_high (inferred) | questrade-metrics | general | What metrics would you use to measure success in everyday banking? |
-| 29 | [0059c616…](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) | very_high (inferred) | questrade-metrics | measurement_impact | What would your primary-account north-star metric actually be? |
-| 30 | [e481df79…](qa-e481df79-5778-46dc-8292-e381da7845d6) | very_high (inferred) | questrade-deposits | general | What's the one feature you'd build first to win payroll? |
-| 31 | [3c438a5c…](qa-3c438a5c-c720-4277-a72a-fdcdfd5e156d) | very_high (inferred) | questrade-metrics | general | Why is spend per active cardholder a risky metric? |
-| 32 | [c4343691…](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) | very_high (inferred) | questrade-primary | main_story | Why would customers choose Questrade over Wealthsimple or a traditional bank? |
-| 33 | [75a6db9c…](qa-75a6db9c-b40c-44d3-b7b7-3edd17933d54) | very_high (inferred) | questrade-deposits | general | Would you optimize account openings, funded accounts or payroll adoption? |
-| 34 | [fce9554d…](qa-fce9554d-a36d-4085-874f-e842afda538c) | very_high (inferred) | questrade-primary | problem_discovery | You have only a dashboard, no user research. What do you do? |
-| 35 | [8150bb81…](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) | very_high (inferred) | questrade-primary | tradeoffs | Your idea sounds sensible. Why hasn't Questrade already done it? |
-| 36 | [04f3d519…](qa-04f3d519-31e2-478e-9083-e60d2bca7818) | very_high (stored) | questrade-metrics | general | How do you measure primary-banking adoption versus superficial account opening? |
-| 37 | [b51df0d6…](qa-b51df0d6-2cd1-41cb-b1f6-757f899b8bcc) | very_high (inferred) | questrade-metrics | general | MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it? |
+| 3 | [c4eabdaa…](qa-c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42) | very_high (stored) | questrade-deposits | general | What if a customer receives one payroll deposit and then stops using Questbank? |
+| 4 | [557cbeab…](qa-557cbeab-d17e-48bc-99de-1a54625ee37f) | very_high (stored) | questrade-metrics | general | Which three metrics would you put on your first Questbank executive scorecard? |
+| 5 | [59024cc1…](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) | very_high (stored) | questrade-hub | measurement_impact | How would you know whether a financial hub truly deepens the customer relationship? |
+| 6 | [06e233ae…](qa-06e233ae-5d45-42d3-b560-84baf56a8948) | very_high (inferred) | questrade-deposits | general | How would you increase direct deposit adoption? |
+| 7 | [2bcf440c…](qa-2bcf440c-7c6e-4914-8c9d-f6577178c3b8) | very_high (inferred) | questrade-hub | general | Should the financial hub automatically transfer extra cash into investments? |
+| 8 | [0d2ba56b…](qa-0d2ba56b-828d-4eeb-bbc4-b099d740e800) | very_high (inferred) | questrade-primary | general | What if someone keeps two banks rather than moving everything to Questbank? |
+| 9 | [dd28e2fe…](qa-dd28e2fe-24d1-4012-98d0-e951276439c6) | very_high (inferred) | questrade-primary | general | Why would someone switch their primary bank if their current bank works fine? |
+| 10 | [47a2ee59…](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) | very_high (inferred) | questrade-hub | general | How would you design a single financial hub across spending, saving and investing? |
+| 11 | [f1194ecf…](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) | very_high (stored) | rbc-cashback | main_story | Tell me about a customer problem you solved at RBC. |
+| 12 | [89ded97e…](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) | very_high (stored) | hbc-portfolio | main_story | Tell me about the financial impact of your work at HBC. |
+| 13 | [d6e02f71…](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) | very_high (stored) | questrade-primary | prioritization | How would you prioritize a reliable everyday account versus differentiated experiences? |
+| 14 | [1161687d…](qa-1161687d-c6f7-4dd4-9c47-39354f254b09) | very_high (inferred) | questrade-metrics | general | How did you experiment when the bank owned the application form? |
+| 15 | [6441c9f1…](qa-6441c9f1-738a-4bd4-b819-92ddf2c1de5b) | very_high (inferred) | questrade-metrics | general | How would you select an experiment's primary metric and guardrails? |
+| 16 | [f95b4bf7…](qa-f95b4bf7-5896-494b-810c-bb4d06393365) | very_high (inferred) | questrade-metrics | general | What if an experiment looks positive after two days? Can we ship early? |
+| 17 | [50313c26…](qa-50313c26-9a05-42e6-b88e-cc571be4b272) | very_high (inferred) | questrade-deposits | general | You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose? |
+| 18 | [837e7efc…](qa-837e7efc-def5-4758-8ca1-627d006ec1ff) | very_high (stored) | questrade-payments | general | A customer says they sent money to the wrong recipient. What can your product realistically do? |
+| 19 | [ec3a7c0b…](qa-ec3a7c0b-b921-45be-8548-df8c95b2f713) | very_high (stored) | questrade-payments | general | A customer sees the same purchase twice, once pending and once posted. How would you fix it? |
+| 20 | [d8be8368…](qa-d8be8368-b755-4baf-8494-3cf9a9f8a69e) | very_high (stored) | questrade-payments | general | Card payments start declining, but the banking app and core ledger are online. Where do you look? |
+| 21 | [cee35d92…](qa-cee35d92-74ae-4d9b-a713-3594c8276e17) | very_high (stored) | hbc-portfolio | general | Could the HBC incentives have increased spending while destroying profitability? |
+| 22 | [03d6326e…](qa-03d6326e-9615-4ffc-8464-d9d6c186811d) | very_high (inferred) | questrade-metrics | general | How do you decide whether to experiment or commit directly to delivery? |
+| 23 | [2af89a04…](qa-2af89a04-ab52-40bd-928d-96a3122fffd1) | very_high (stored) | hbc-mastercard-app | general | How do you know the HBC application improvement wasn't caused by a different applicant mix? |
+| 24 | [e896f79a…](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) | very_high (stored) | questrade-deposits | general | How would you design a safe payroll-switching experience when the employer's first deposit could fail? |
+| 25 | [c864344c…](qa-c864344c-3df9-4f30-b478-278b4e58f8d4) | very_high (stored) | rbc-cashback | general | How would you prevent a customer from receiving the same cashback payout twice? |
+| 26 | [855c7ca3…](qa-855c7ca3-5897-4baa-8c59-99f3c30cdd6e) | very_high (stored) | questrade-primary | general | How would you win customers without paying an expensive cash sign-up bonus? |
+| 27 | [2fb1eeab…](qa-2fb1eeab-7958-4099-9216-e2b88d0de5c5) | very_high (stored) | questrade-payments | general | It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes? |
+| 28 | [efc27de7…](qa-efc27de7-507e-4d96-b95d-446de1f5badf) | very_high (stored) | arcteryx-membership | general | What assumptions in the $5.2 million investment case were most sensitive? |
+| 29 | [5c05a272…](qa-5c05a272-9334-44b8-bddd-fdbd4a50f6d3) | very_high (stored) | rbc-cashback | general | What happened if an Avion member didn't have Interac Autodeposit enabled? |
+| 30 | [f21a166b…](qa-f21a166b-7a0a-41a9-a919-44781cf782a2) | very_high (stored) | questrade-primary | general | What if customers trust Questrade for investments but refuse to deposit their salary? |
+| 31 | [77caa5b4…](qa-77caa5b4-817d-47b3-9569-366aa012daf6) | very_high (stored) | leadership-general | general | What if Engineering says your banking launch plan is unsafe but leadership wants the date? |
+| 32 | [1c3f6b10…](qa-1c3f6b10-2b62-4807-bffd-ef21beef30d7) | very_high (stored) | arcteryx-membership | general | What is live from Arc'teryx's membership and Sperro SV work, and what remains planned? |
+| 33 | [ba4861ca…](qa-ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c) | very_high (stored) | questrade-payments | general | What is the difference between KYC, AML monitoring and transaction fraud prevention? |
+| 34 | [bfaa86a1…](qa-bfaa86a1-2c06-4c4f-880a-bf2718e8a330) | very_high (stored) | rbc-cashback | general | What would the customer see while a cashback payout is pending or being investigated? |
+| 35 | [94fa46b3…](qa-94fa46b3-57ae-43a9-a217-84dc00d8a565) | very_high (stored) | questrade-primary | general | Which Questrade investing customers would you deliberately not target first for banking? |
+| 36 | [80a4e168…](qa-80a4e168-83f0-45ba-a9b7-bde17123566a) | very_high (stored) | rbc-cashback | general | Who made the final decision when the payments team, Risk and Product disagreed? |
+| 37 | [0f093e83…](qa-0f093e83-c8de-44bd-9398-e0f186a814df) | very_high (stored) | questrade-payments | general | Why might my available balance be different from my posted balance? |
+| 38 | [7c4b9e12…](qa-7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30) | very_high (stored) | arcteryx-membership | prioritization | How did you decide what to include in the smaller Sperro SV release? |
+| 39 | [c8d9e0f1…](qa-c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f) | very_high (stored) | hbc-quests | what_differently | Tell me about a product decision you got wrong. |
+| 40 | [db88df8e…](qa-db88df8e-3a36-4cc6-8b84-4fb24e2136c3) | very_high (stored) | leadership-general | general | Explain your interview copilot's semantic matching architecture without using technical jargon. |
+| 41 | [11375f03…](qa-11375f03-31fa-45da-8557-488a8cc63beb) | very_high (stored) | rbc-cashback | measurement_impact | How did you measure success for the Avion cashback withdrawal launch? |
+| 42 | [6f890192…](qa-6f890192-85ca-45f7-8259-f92001b996cf) | very_high (inferred) | questrade-deposits | general | How do you know a customer really switched their paycheque? |
+| 43 | [f7e403b2…](qa-f7e403b2-26b8-4da4-83c1-ea58c2e3371b) | very_high (inferred) | questrade-metrics | attribution | How do you know an increase in DAU isn't just more balance checking? |
+| 44 | [629392bb…](qa-629392bb-f39b-414e-b66d-0d879a9c4557) | very_high (inferred) | questrade-metrics | general | How do you prevent cohort analysis from becoming a misleading before-and-after story? |
+| 45 | [648015c7…](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) | very_high (inferred) | questrade-primary | prioritization | How would you decide between better rates and better switching UX? |
+| 46 | [a60003e2…](qa-a60003e2-1f39-431f-8386-531fc24d711c) | very_high (inferred) | questrade-hub | general | How would you define 'share of wallet' for everyday banking? |
+| 47 | [6bf73e61…](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) | very_high (inferred) | questrade-deposits | measurement_impact | Is a $100 million increase in deposits automatically a win? |
+| 48 | [e32103f8…](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) | very_high (inferred) | questrade-hub | general | Isn't Balance Sheet just a dashboard? Where is the actual value? |
+| 49 | [1fd9478b…](qa-1fd9478b-7396-4778-bc00-e62aee52de52) | very_high (stored) | arcteryx-membership | main_story | What are you currently working on at Arc'teryx? |
+| 50 | [d551219e…](qa-d551219e-6540-4760-a132-b27c92c706db) | very_high (inferred) | questrade-deposits | general | What if employers aren't supported by an automated payroll switching provider? |
+| 51 | [73c5726c…](qa-73c5726c-d892-4f7b-895c-59a71c29080b) | very_high (inferred) | questrade-deposits | general | What if payroll bonuses bring in customers who leave immediately afterward? |
+| 52 | [458f82bd…](qa-458f82bd-542b-4331-92fb-d77bb3645d06) | very_high (stored) | leadership-general | general | What if Risk still says no after you've presented all your evidence? |
+| 53 | [c4c44a09…](qa-c4c44a09-0799-471a-97cb-05e06e8bf8a8) | very_high (inferred) | questrade-metrics | general | What if your PM peers own Cards and Money Movement, but your metric depends on both? |
+| 54 | [735da866…](qa-735da866-20fc-4837-b67d-c91a6b4e2c77) | very_high (inferred) | questrade-metrics | general | What metrics would you use to measure success in everyday banking? |
+| 55 | [0059c616…](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) | very_high (inferred) | questrade-metrics | measurement_impact | What would your primary-account north-star metric actually be? |
+| 56 | [e481df79…](qa-e481df79-5778-46dc-8292-e381da7845d6) | very_high (inferred) | questrade-deposits | general | What's the one feature you'd build first to win payroll? |
+| 57 | [66530581…](qa-66530581-f599-40f5-8f97-5bf255953c87) | very_high (stored) | career-general | general | Why have you moved between several industries and employers? |
+| 58 | [3c438a5c…](qa-3c438a5c-c720-4277-a72a-fdcdfd5e156d) | very_high (inferred) | questrade-metrics | general | Why is spend per active cardholder a risky metric? |
+| 59 | [c4343691…](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) | very_high (inferred) | questrade-primary | main_story | Why would customers choose Questrade over Wealthsimple or a traditional bank? |
+| 60 | [75a6db9c…](qa-75a6db9c-b40c-44d3-b7b7-3edd17933d54) | very_high (inferred) | questrade-deposits | general | Would you optimize account openings, funded accounts or payroll adoption? |
+| 61 | [fce9554d…](qa-fce9554d-a36d-4085-874f-e842afda538c) | very_high (inferred) | questrade-primary | problem_discovery | You have only a dashboard, no user research. What do you do? |
+| 62 | [8150bb81…](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) | very_high (inferred) | questrade-primary | tradeoffs | Your idea sounds sensible. Why hasn't Questrade already done it? |
+| 63 | [04f3d519…](qa-04f3d519-31e2-478e-9083-e60d2bca7818) | very_high (stored) | questrade-metrics | general | How do you measure primary-banking adoption versus superficial account opening? |
+| 64 | [b51df0d6…](qa-b51df0d6-2cd1-41cb-b1f6-757f899b8bcc) | very_high (inferred) | questrade-metrics | general | MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it? |
 
 ### B. High Likelihood
 
 | Rank | ID | Likelihood | Module | Intent | Question |
 | ---: | --- | --- | --- | --- | --- |
-| 1 | [0bcc9c40…](qa-0bcc9c40-011a-4fff-9789-fdad78429b78) | high (stored) | questrade-primary | general | Who would you target first for Questbank adoption? |
-| 2 | [3c961ee8…](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) | high (stored) | questrade-mcp | solution_alternatives | Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant? |
-| 3 | [233b0497…](qa-233b0497-5bff-471f-9617-6abdeca51522) | high (stored) | questrade-mcp | general | Would you extend Questrade MCP beyond brokerage into everyday banking? |
-| 4 | [a8fe6bd5…](qa-a8fe6bd5-ecc2-4c0f-95d5-63bb51f0c20c) | high (stored) | questrade-temenos | technical_implementation | How would you build product on top of Temenos core banking without owning the ledger? |
-| 5 | [5e92bdca…](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) | high (inferred) | hbc-mastercard-app | main_story | Tell me about a customer experience you improved at HBC. |
-| 6 | [c88f487e…](qa-c88f487e-e0d1-44c0-ab54-60f1e19fe79d) | high (inferred) | aeroplan-cobrand | main_story | Tell me about a data-driven product decision at Aeroplan. |
-| 7 | [244e239c…](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) | high (inferred) | rbc-cashback | main_story | Walk me through the Interac e-Transfer product you launched at RBC. |
-| 8 | [140caed9…](qa-140caed9-55a1-48ac-9190-5d2256afd262) | high (inferred) | hbc-mastercard-app | main_story | Tell me about improving the HBC Mastercard application journey. |
-| 9 | [14239bac…](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) | high (stored) | questrade-primary | prioritization | How would you prioritize AI features against core banking reliability? |
-| 10 | [309200d8…](qa-309200d8-48f6-4957-8eda-75eb4e3faf62) | high (inferred) | leadership-general | general | How do you handle an engineer who strongly disagrees with your roadmap? |
-| 11 | [1c3ffb21…](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) | high (inferred) | leadership-general | main_story | Tell me about a time you said no to a stakeholder. |
-| 12 | [f9022f65…](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) | high (inferred) | arcteryx-membership | personal_ownership | What did you personally decide or deprioritize? |
-| 13 | [092b08d1…](qa-092b08d1-51ec-4761-a05d-2ccd56724ad5) | high (inferred) | hbc-mastercard-app | what_differently | What would you do differently on the HBC application experiment? |
-| 14 | [3bcaff0a…](qa-3bcaff0a-31cb-447a-b037-889edb579c5d) | high (inferred) | rbc-cashback | prioritization | Why did you prioritize it over other Avion improvements? |
-| 15 | [7d32e566…](qa-7d32e566-7779-4fe8-bca5-f9db5c8180d1) | high (inferred) | arcteryx-membership | prioritization | Why prioritize a membership platform rather than improving service pages? |
-| 16 | [d9c4b9aa…](qa-d9c4b9aa-5e54-44a8-b246-c99a3a380239) | high (inferred) | hbc-mastercard-app | prioritization | Why prioritize application continuation instead of more acquisition? |
-| 17 | [f2dabb52…](qa-f2dabb52-3af6-43eb-ab59-c5934bc3a036) | high (inferred) | aeroplan-cobrand | prioritization | Why was it worth prioritizing? |
-| 18 | [b4880442…](qa-b4880442-6054-41de-b29b-f89c40e95005) | high (inferred) | leadership-general | general | How do you manage stakeholders who disagree on priorities? |
-| 19 | [be18eb7a…](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) | high (stored) | questrade-mcp | measurement_impact | How would you measure whether Questrade MCP is successful? |
-| 20 | [ad2fa044…](qa-ad2fa044-aa66-4016-a587-a812cc94514d) | high (stored) | questrade-mcp | tradeoffs | Would you use AI to recommend how someone should move their money? |
-| 21 | [92a7cf55…](qa-92a7cf55-18dc-4d94-93d7-db3303028b9b) | high (inferred) | hbc-quests | measurement_impact | Did Quests reach six million active credit cardholders? |
-| 22 | [7aafc468…](qa-7aafc468-3bf5-48c2-886e-5ca34ce4f660) | high (inferred) | hbc-mastercard-app | attribution | Did your UX redesign cause approvals in under three minutes? |
-| 23 | [96d0d431…](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) | high (inferred) | questrade-metrics | measurement_impact | Explain how you would model customer lifetime value in banking. |
-| 24 | [7ade5d00…](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) | high (inferred) | questrade-metrics | measurement_impact | Give me an exact definition of a monthly active banking customer. |
-| 25 | [09b7fdec…](qa-09b7fdec-df53-4a0a-a6af-592fe54cbe57) | high (inferred) | aeroplan-cobrand | general | How can you claim 427% acquisition growth when you only improved conversion by 40%? |
-| 26 | [04f9a779…](qa-04f9a779-8058-4470-8817-beccdcbecf1e) | high (inferred) | hbc-mastercard-app | problem_discovery | How did you identify the application problem? |
-| 27 | [75fd6429…](qa-75fd6429-dc9a-4cd3-b996-ce48af985a7b) | high (inferred) | aeroplan-cobrand | problem_discovery | How did you identify the problem? |
-| 28 | [a412c28e…](qa-a412c28e-815d-42b5-91fa-ad7bc4e444b6) | high (inferred) | arcteryx-membership | measurement_impact | How did you know it worked if the full membership platform hadn't launched? |
-| 29 | [ab850009…](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) | high (inferred) | arcteryx-membership | problem_discovery | How did you know membership was a customer problem at Arc'teryx? |
-| 30 | [7df4eff0…](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) | high (inferred) | rbc-cashback | problem_discovery | How did you know the Avion cashback withdrawal was a customer problem? |
-| 31 | [3218b561…](qa-3218b561-2159-442e-a3aa-074756f877c0) | high (inferred) | hbc-mastercard-app | measurement_impact | How did you measure the 15% improvement? |
-| 32 | [fb56f902…](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) | high (inferred) | questrade-payments | technical_implementation | How do pending and posted card transactions differ? |
-| 33 | [478cb389…](qa-478cb389-1d3d-43e6-9a9b-71fd8b7c7cd5) | high (inferred) | leadership-general | general | How do you challenge a VP who has already promised a launch date? |
-| 34 | [1db0b6d1…](qa-1db0b6d1-d7a9-4d2b-b2a4-7758f9c47b3b) | high (inferred) | arcteryx-vendor | attribution | How do you know the headless option saved two quarters? |
-| 35 | [df6c37ec…](qa-df6c37ec-3c98-4d5d-b441-30ba78608f56) | high (inferred) | leadership-general | general | How do you know when to stop investing in a feature? |
-| 36 | [6cffb3bc…](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) | high (inferred) | hbc-portfolio | attribution | How do you know your incentive program generated incremental spending? |
-| 37 | [20f12afb…](qa-20f12afb-0dbb-49eb-821e-01989453d828) | high (inferred) | leadership-general | general | How do you lead when you don't manage the engineers directly? |
-| 38 | [8f93a4d4…](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) | high (inferred) | aeroplan-cobrand | measurement_impact | How exactly did you measure the 40% conversion lift? |
-| 39 | [009d20a6…](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) | high (inferred) | questrade-payments | solution_alternatives | How would you choose between building a payment service and buying one? |
-| 40 | [35d5ff6e…](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) | high (inferred) | questrade-metrics | measurement_impact | How would you decide if a 5% incremental spending lift justified an incentive? |
-| 41 | [a91d4a5a…](qa-a91d4a5a-19bf-4cd7-8ade-e773f9e83028) | high (inferred) | rbc-cashback | general | How would you define payout success rate? |
-| 42 | [038f6014…](qa-038f6014-b892-4a64-84d6-e09048b9fea2) | high (inferred) | questrade-payments | technical_implementation | How would you roll out a critical payments integration? |
-| 43 | [15aa03e2…](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) | high (inferred) | leadership-general | main_story | Tell me about a product initiative that didn't go according to plan. |
-| 44 | [e09deee1…](qa-e09deee1-3efa-4774-9274-2f18848b739f) | high (inferred) | leadership-general | main_story | Tell me about a time you had competing priorities with Risk, Compliance or Engineering. |
-| 45 | [6458104e…](qa-6458104e-34c6-430c-8005-aef3a3da9c02) | high (inferred) | rbc-avion | main_story | Tell me about building Avion Select from zero to one. |
-| 46 | [2a1ed160…](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) | high (inferred) | arcteryx-membership | main_story | Tell me about something you took from an idea into a product. |
-| 47 | [fef2b30f…](qa-fef2b30f-d115-48fe-be83-cf89c80548de) | high (inferred) | leadership-general | main_story | Tell me about your first disagreement with a new team's established strategy. |
-| 48 | [2f3a780e…](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) | high (stored) | career-general | main_story | Tell me about yourself. |
-| 49 | [83d6cb34…](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) | high (inferred) | questrade-deposits | technical_implementation | What controls would you require before allowing a new transfer type? |
-| 50 | [2e58d329…](qa-2e58d329-4b40-4142-bf45-67504474f730) | high (inferred) | aeroplan-cobrand | personal_ownership | What did you personally decide on the Aeroplan card offer test? |
-| 51 | [27d2a524…](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) | high (inferred) | rbc-cashback | personal_ownership | What did you personally decide on the Avion cashback withdrawal launch? |
-| 52 | [b9f349e9…](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) | high (inferred) | hbc-mastercard-app | personal_ownership | What did you personally decide on the HBC Mastercard application journey? |
-| 53 | [9b0f399e…](qa-9b0f399e-6750-463a-9570-805c82449eb8) | high (inferred) | hbc-mastercard-app | general | What does 'P&L ownership' at HBC actually mean? |
-| 54 | [e546440d…](qa-e546440d-67eb-4266-8466-0827ccd35e42) | high (inferred) | hbc-mastercard-app | general | What exactly did you change in the HBC application experience? |
-| 55 | [f290b115…](qa-f290b115-770e-4448-82ac-52f4334f34de) | high (inferred) | rbc-cashback | general | What exactly did you own versus RBC's payments infrastructure team? |
-| 56 | [fb3c9a13…](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) | high (inferred) | rbc-cashback | technical_implementation | What happens if a payout API times out after the request was accepted? |
-| 57 | [1d491196…](qa-1d491196-487e-4282-9a80-15e857190b75) | high (inferred) | leadership-general | prioritization | What if leadership wants to ship five banking features at once? |
-| 58 | [9e7049a3…](qa-9e7049a3-2fa7-4388-931c-875a7cc4d416) | high (inferred) | leadership-general | tradeoffs | What if Risk wants a step that cuts conversion by 20%? |
-| 59 | [0c8b1a1c…](qa-0c8b1a1c-7290-4b60-8c88-8d978935beae) | high (inferred) | questrade-payments | general | What if the ledger balance and customer-facing balance don't match? |
-| 60 | [21cb8214…](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) | high (inferred) | questrade-payments | technical_implementation | What is reconciliation, and why does a PM need to understand it? |
-| 61 | [6a8c3993…](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) | high (inferred) | questrade-hub | tradeoffs | What is the biggest risk in connecting external accounts? |
-| 62 | [39a0bcf9…](qa-39a0bcf9-7d01-4cde-8da4-4ff893da44b3) | high (inferred) | leadership-general | general | What is your biggest weakness as a product leader? |
-| 63 | [b0d58fdf…](qa-b0d58fdf-bced-41f7-b878-1b158fc89643) | high (inferred) | hbc-mastercard-app | general | What was your most important HBC product decision? |
-| 64 | [b810ad2f…](qa-b810ad2f-f519-4a36-9e96-246c398f9d70) | high (inferred) | aeroplan-cobrand | what_differently | What would you do differently after the Aeroplan offer-summary test? |
-| 65 | [14ad93b1…](qa-14ad93b1-527c-49e9-b160-e9b22ca0f888) | high (inferred) | rbc-cashback | what_differently | What would you do differently on the Avion cashback withdrawal launch? |
-| 66 | [8efd1a27…](qa-8efd1a27-85fe-41e7-a279-d79a07bda1d4) | high (inferred) | arcteryx-membership | what_differently | What would you do differently on the ReBIRD membership platform? |
-| 67 | [e4952adf…](qa-e4952adf-c7af-45fb-955e-169fc91e2f7d) | high (inferred) | leadership-general | general | What would you do if a new AI feature gave customers incorrect financial advice? |
-| 68 | [0f4d097c…](qa-0f4d097c-a03a-4123-9e70-37c642139843) | high (inferred) | leadership-general | general | What would you do if Engineering said your top feature was six months of work? |
-| 69 | [2b7b68cd…](qa-2b7b68cd-d7ae-4358-b609-405c36f1f6b6) | high (inferred) | leadership-general | general | What's one product opinion you hold strongly that others might disagree with? |
-| 70 | [4fa0697a…](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) | high (inferred) | aeroplan-cobrand | solution_alternatives | Why a clearer offer summary instead of a shorter page or bigger apply button? |
-| 71 | [3ba24689…](qa-3ba24689-dd1a-4428-b018-743f0a8c61af) | high (inferred) | hbc-portfolio | general | Why did HBC modeled LTV rise 10%, and how certain are you? |
-| 72 | [c226bb45…](qa-c226bb45-beb6-4162-9628-f16d6660b887) | high (inferred) | rbc-cashback | solution_alternatives | Why Interac e-Transfer instead of direct bank-account linking? |
-| 73 | [9dbe28fe…](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) | high (inferred) | hbc-portfolio | personal_ownership | Why mention 500K+ cardholders if you didn't control the credit book? |
-| 74 | [6eb506c0…](qa-6eb506c0-03c7-4205-aa2a-ba3662c5b94d) | high (inferred) | rbc-avion | technical_implementation | Why mention 5M+ settlement events when Avion payouts were only $1M+? |
-| 75 | [c60f747c…](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) | high (inferred) | hbc-mastercard-app | solution_alternatives | Why save-and-resume, and how did you split ownership with Neo? |
-| 76 | [56065bcd…](qa-56065bcd-e97e-4d82-ac21-e35a44296ae7) | high (stored) | leadership-general | general | Why should we hire you over someone with direct core banking experience? |
-| 77 | [d8d2b2a3…](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) | high (inferred) | arcteryx-membership | solution_alternatives | Why this solution and why start in North America? |
-| 78 | [3c199d05…](qa-3c199d05-67ba-4f4c-aa98-d7f06a2cc3c6) | high (inferred) | rbc-cashback | general | Why use Interac e-Transfer rather than EFT for cashback withdrawals? |
-| 79 | [17154883…](qa-17154883-f321-4b28-bee5-6fa80de879db) | high (inferred) | leadership-general | general | Would you delay launch over a 0.5% payment failure rate? |
-| 80 | [333428ab…](qa-333428ab-ba63-4939-a069-a376f0334868) | high (inferred) | hbc-mastercard-app | general | You say HBC's modeled lifetime value increased 10%. How would you explain that metric? |
-| 81 | [b1eac049…](qa-b1eac049-c167-4977-a7bd-55e98d7e3b0b) | high (inferred) | arcteryx-membership | general | You secured $5.2M at Arc'teryx. Was the programme launched? |
-| 82 | [0e0a03bc…](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) | high (inferred) | questrade-metrics | measurement_impact | Your conversion improved from 10% to 12%. Is that 2% or 20%? |
-| 83 | [af5bd3a4…](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) | high (inferred) | hbc-portfolio | attribution | Did you actually run randomized holdouts on the HBC Mastercard programme? |
-| 84 | [7c079cf5…](qa-7c079cf5-b153-435d-a4b3-e83ad3139a2b) | high (stored) | leadership-general | general | How are you using AI in your product management work? |
-| 85 | [e8d13d9e…](qa-e8d13d9e-a98d-4dbc-a596-a178557963b0) | high (inferred) | aeroplan-cobrand | general | How did you drive credit card acquisition growth at Aeroplan? |
-| 86 | [439ccf45…](qa-439ccf45-857e-431f-ab0e-1312d6998f02) | high (inferred) | arcteryx-membership | technical_implementation | How did you secure $5.2 million in capital funding at Arc'teryx? |
-| 87 | [4f7c15c5…](qa-4f7c15c5-f4ec-40ce-b1df-3e0a7dddfc71) | high (inferred) | leadership-general | general | How do you make decisions when the data is incomplete? |
-| 88 | [c79db9b5…](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) | high (inferred) | leadership-general | problem_discovery | How do you work with designers and customer researchers? |
-| 89 | [fb30286a…](qa-fb30286a-49ca-4ce1-b54a-4b7c4cea2d58) | high (stored) | questrade-mcp | general | How would you design MCP or agentic finance connections with consent and human approval? |
-| 90 | [7eb5e7ae…](qa-7eb5e7ae-c611-4966-8279-0fcc8d80fc3c) | high (inferred) | hbc-activation | main_story | How would you explain your approach to customer activation and retention at HBC? |
-| 91 | [d616c1d2…](qa-d616c1d2-a2f7-49f4-a246-47feeacdf169) | high (stored) | questrade-mcp | general | How would you introduce AI-assisted account insights while preserving consent, accuracy and user control? |
-| 92 | [df23d3a1…](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) | high (stored) | questrade-mcp | measurement_impact | How would you test an AI-powered financial feature before launching it broadly? |
-| 93 | [011b9f33…](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) | high (inferred) | leadership-general | main_story | Tell me about a time you challenged the original product strategy. |
-| 94 | [4da64bdb…](qa-4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5) | high (inferred) | hbc-activation | measurement_impact | Tell me exactly how you defined HBC's 30-day activation and 90-day retention. |
-| 95 | [868dbf79…](qa-868dbf79-c06d-4ed3-83c4-f001b12be2bf) | high (inferred) | leadership-general | tradeoffs | What if leadership wants to optimize DAU but you believe retained deposits matter more? |
-| 96 | [4671a4a2…](qa-4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc) | high (inferred) | leadership-general | measurement_impact | What if the team ships a feature on time, but adoption is poor? |
-| 97 | [91cd5cac…](qa-91cd5cac-65b4-41e6-be3b-76ba3c49e9b1) | high (inferred) | rbc-cashback | general | What's the difference between EFT and Interac e-Transfer? |
-| 98 | [a85b536e…](qa-a85b536e-5e20-468f-87d9-fb447ae796f6) | high (inferred) | arcteryx-membership | general | Why did you choose a headless membership platform rather than building everything internally? |
+| 1 | [67ef7666…](qa-67ef7666-80ac-452a-8506-b2375d6abc34) | high (stored) | questrade-primary | general | How would you differentiate Questbank if Wealthsimple copied your best feature? |
+| 2 | [698c2786…](qa-698c2786-3368-4df3-917e-de3a535d352d) | high (stored) | questrade-hub | general | If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do? |
+| 3 | [cdc38655…](qa-cdc38655-878f-4b7f-a49d-109f3b69125e) | high (stored) | questrade-primary | general | What if a customer fails identity verification while trying to open a Questbank account? |
+| 4 | [381e64d9…](qa-381e64d9-0684-493b-8e36-9a2a5636966c) | high (stored) | questrade-hub | general | What should the financial hub do if an external bank connection is stale or disconnected? |
+| 5 | [1f935f03…](qa-1f935f03-d796-480c-8e77-2a3c26f156b2) | high (stored) | questrade-metrics | general | Which early warning indicator would tell you Questbank is losing customer trust? |
+| 6 | [0bcc9c40…](qa-0bcc9c40-011a-4fff-9789-fdad78429b78) | high (stored) | questrade-primary | general | Who would you target first for Questbank adoption? |
+| 7 | [3c961ee8…](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) | high (stored) | questrade-mcp | solution_alternatives | Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant? |
+| 8 | [233b0497…](qa-233b0497-5bff-471f-9617-6abdeca51522) | high (stored) | questrade-mcp | general | Would you extend Questrade MCP beyond brokerage into everyday banking? |
+| 9 | [a8fe6bd5…](qa-a8fe6bd5-ecc2-4c0f-95d5-63bb51f0c20c) | high (stored) | questrade-temenos | technical_implementation | How would you build product on top of Temenos core banking without owning the ledger? |
+| 10 | [a5e5c740…](qa-a5e5c740-637c-4b42-8642-e889de82dcec) | high (stored) | career-general | general | What's the biggest learning curve for you if you join Questbank? |
+| 11 | [5e92bdca…](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) | high (inferred) | hbc-mastercard-app | main_story | Tell me about a customer experience you improved at HBC. |
+| 12 | [c88f487e…](qa-c88f487e-e0d1-44c0-ab54-60f1e19fe79d) | high (inferred) | aeroplan-cobrand | main_story | Tell me about a data-driven product decision at Aeroplan. |
+| 13 | [244e239c…](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) | high (inferred) | rbc-cashback | main_story | Walk me through the Interac e-Transfer product you launched at RBC. |
+| 14 | [140caed9…](qa-140caed9-55a1-48ac-9190-5d2256afd262) | high (inferred) | hbc-mastercard-app | main_story | Tell me about improving the HBC Mastercard application journey. |
+| 15 | [f33aaf31…](qa-f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f) | high (stored) | leadership-general | general | How do you say no without damaging a relationship with a powerful stakeholder? |
+| 16 | [b995b443…](qa-b995b443-a009-4b4c-b03b-81f53bd6cc67) | high (stored) | questrade-metrics | general | How long would you wait before deciding whether a payroll-switching experiment actually worked? |
+| 17 | [cca30fb0…](qa-cca30fb0-f7be-497e-8e20-2cd349712829) | high (stored) | questrade-metrics | general | How would you experiment on payment reliability if you can't ethically expose customers to worse payments? |
+| 18 | [14239bac…](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) | high (stored) | questrade-primary | prioritization | How would you prioritize AI features against core banking reliability? |
+| 19 | [a27a2489…](qa-a27a2489-4944-4faa-b130-5a1a4ab088e9) | high (stored) | questrade-metrics | general | Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship? |
+| 20 | [309200d8…](qa-309200d8-48f6-4957-8eda-75eb4e3faf62) | high (inferred) | leadership-general | general | How do you handle an engineer who strongly disagrees with your roadmap? |
+| 21 | [1c3ffb21…](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) | high (inferred) | leadership-general | main_story | Tell me about a time you said no to a stakeholder. |
+| 22 | [f9022f65…](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) | high (inferred) | arcteryx-membership | personal_ownership | What did you personally decide or deprioritize? |
+| 23 | [092b08d1…](qa-092b08d1-51ec-4761-a05d-2ccd56724ad5) | high (inferred) | hbc-mastercard-app | what_differently | What would you do differently on the HBC application experiment? |
+| 24 | [3bcaff0a…](qa-3bcaff0a-31cb-447a-b037-889edb579c5d) | high (inferred) | rbc-cashback | prioritization | Why did you prioritize it over other Avion improvements? |
+| 25 | [7d32e566…](qa-7d32e566-7779-4fe8-bca5-f9db5c8180d1) | high (inferred) | arcteryx-membership | prioritization | Why prioritize a membership platform rather than improving service pages? |
+| 26 | [d9c4b9aa…](qa-d9c4b9aa-5e54-44a8-b246-c99a3a380239) | high (inferred) | hbc-mastercard-app | prioritization | Why prioritize application continuation instead of more acquisition? |
+| 27 | [f2dabb52…](qa-f2dabb52-3af6-43eb-ab59-c5934bc3a036) | high (inferred) | aeroplan-cobrand | prioritization | Why was it worth prioritizing? |
+| 28 | [b4880442…](qa-b4880442-6054-41de-b29b-f89c40e95005) | high (inferred) | leadership-general | general | How do you manage stakeholders who disagree on priorities? |
+| 29 | [2fb50805…](qa-2fb50805-1cb9-43f9-a2ba-54b816d3085d) | high (stored) | questrade-payments | general | An account was frozen for suspected fraud. How would you handle the customer experience? |
+| 30 | [233f8d5d…](qa-233f8d5d-fa5a-45a7-a301-39c4e3743edb) | high (stored) | aeroplan-cobrand | general | How did you align TD, CIBC and Amex when the banks had different priorities? |
+| 31 | [0cf5b127…](qa-0cf5b127-23d5-442e-b968-59bafc1ff0b3) | high (stored) | rbc-avion | general | How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer? |
+| 32 | [bb903f25…](qa-bb903f25-6886-4106-ab80-1fa344cd8a05) | high (stored) | aeroplan-cobrand | general | How did you prevent one card partner's offer from undermining another's? |
+| 33 | [79d4fa99…](qa-79d4fa99-20bc-4cff-8c9c-0b25705550ca) | high (stored) | rbc-cashback | general | How did you turn regulatory and operations requirements into stories engineers could build? |
+| 34 | [d333a258…](qa-d333a258-c050-4f17-a50b-242e5ad5254d) | high (stored) | leadership-general | general | How do you communicate a complex banking trade-off to an executive in two minutes? |
+| 35 | [2c8d4c01…](qa-2c8d4c01-fde5-45f2-83a5-4567c8b9ea00) | high (stored) | questrade-payments | general | How do you reduce fraud without rejecting too many legitimate banking customers? |
+| 36 | [0360f445…](qa-0360f445-9e66-472e-932f-e06050ec3a3e) | high (stored) | questrade-payments | general | How should a customer dispute an unfamiliar debit card transaction? |
+| 37 | [e3fe2cd3…](qa-e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0) | high (stored) | questrade-primary | general | How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant? |
+| 38 | [7fefebb7…](qa-7fefebb7-44eb-4fa3-80f8-14e6900cba0b) | high (stored) | questrade-payments | general | How would you decide when to compensate a customer after a bank payment error? |
+| 39 | [4445d2e9…](qa-4445d2e9-0632-4f42-b1a8-6a60adc01012) | high (stored) | questrade-payments | general | How would you design a new payee or recipient verification experience? |
+| 40 | [10c8d63e…](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) | high (stored) | questrade-deposits | general | How would you design recurring bill payments or pre-authorized debits for a new bank? |
+| 41 | [23e0a9f7…](qa-23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4) | high (stored) | questrade-metrics | general | How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card? |
+| 42 | [b36da9fd…](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) | high (stored) | questrade-deposits | general | How would you explain a deposit hold to a customer who needs the money tomorrow? |
+| 43 | [dc30e851…](qa-dc30e851-19e2-4bc1-8397-e4ab784ef939) | high (stored) | questrade-payments | general | How would you explain CDIC deposit protection versus CIPF investment protection? |
+| 44 | [a95a3a54…](qa-a95a3a54-604e-4617-af66-92158c5c2c53) | high (stored) | leadership-general | general | How would you handle an offshore team that doesn't understand the customer impact of a requirement? |
+| 45 | [25ad6af4…](qa-25ad6af4-9d72-4ac5-9159-29bceeebfb80) | high (stored) | questrade-payments | general | How would you handle events arriving out of order in a customer's transaction history? |
+| 46 | [b8e9f0a1…](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) | high (stored) | career-general | challenges_lessons | How would you manage transitioning away from an ongoing membership initiative? |
+| 47 | [be18eb7a…](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) | high (stored) | questrade-mcp | measurement_impact | How would you measure whether Questrade MCP is successful? |
+| 48 | [059b883d…](qa-059b883d-ccbf-4e0b-8719-5dbff7c26da6) | high (stored) | questrade-metrics | general | How would you set shared OKRs without making ownership ambiguous? |
+| 49 | [cb792784…](qa-cb792784-57f0-449a-a12d-76bbbde35b46) | high (stored) | questrade-metrics | general | How would you tell healthy banking engagement from anxiety-driven repeat checking? |
+| 50 | [9b1df81f…](qa-9b1df81f-65b7-4b77-81af-4ae48b03eb79) | high (stored) | arcteryx-membership | general | How would you test whether customers wanted membership benefits before building the full platform? |
+| 51 | [6635b44b…](qa-6635b44b-bd82-4980-8aef-ea67474a075e) | high (stored) | questrade-payments | general | How would you use feature flags without creating inconsistent financial records? |
+| 52 | [4fcf44b0…](qa-4fcf44b0-5a66-46be-a57b-0fca89af2d10) | high (stored) | questrade-mcp | general | If MCP standardizes tools, what competitive advantage can Questrade still own? |
+| 53 | [03065da4…](qa-03065da4-6d80-432b-bca7-c034fdf0ff52) | high (stored) | rbc-cashback | general | If payout failures doubled after launch, how would you investigate the first week? |
+| 54 | [4f6209aa…](qa-4f6209aa-a000-442c-bbd6-96723a266b9a) | high (stored) | questrade-deposits | general | Should a bank help customers automate savings when they have unpredictable income? |
+| 55 | [4333a9f3…](qa-4333a9f3-b07d-4d8e-8676-6a7ca9012116) | high (stored) | hbc-portfolio | general | What did you control in the HBC card portfolio, and what was controlled by Neo? |
+| 56 | [31d8ded4…](qa-31d8ded4-7dc2-4d0b-ad30-009b1f92748b) | high (stored) | arcteryx-membership | general | What did you cut from the membership MVP, and how did you defend those trade-offs? |
+| 57 | [110a4074…](qa-110a4074-4ba6-4eb9-9b8e-4a96b4e223e4) | high (stored) | leadership-general | general | What do you do when a shared dependency is blocking your objective but the other PM has different priorities? |
+| 58 | [195a8189…](qa-195a8189-fe48-4c11-9ebe-8f2741146841) | high (stored) | aeroplan-cobrand | general | What happened after the customer clicked Apply—how did you know they became an approved cardholder? |
+| 59 | [2f280387…](qa-2f280387-ca4c-4b94-abdf-a644c1868a4a) | high (stored) | questrade-mcp | general | What happens if a customer revokes an AI agent's access while it has a request in progress? |
+| 60 | [cfe370bc…](qa-cfe370bc-2273-4055-b0e2-d1adbb96cbf1) | high (stored) | questrade-deposits | general | What happens to your banking growth strategy when interest rates fall? |
+| 61 | [4a20cf51…](qa-4a20cf51-7a43-415b-b55d-d01104a46d6f) | high (stored) | questrade-metrics | general | What is sample ratio mismatch, and why would you care in a banking A/B test? |
+| 62 | [6ffb405d…](qa-6ffb405d-688b-433e-87c3-a7d992430bad) | high (stored) | questrade-payments | general | What should happen if someone loses their phone and tries to access their bank account? |
+| 63 | [14712a6a…](qa-14712a6a-881f-4c8c-9f98-9b3359211669) | high (stored) | rbc-cashback | general | What were the leading indicators before you could measure meaningful payout volume? |
+| 64 | [bad7b926…](qa-bad7b926-f617-44c4-ab13-ddc78b1e4378) | high (stored) | questrade-mcp | general | What would convince you to stop an AI financial-assistant pilot? |
+| 65 | [73b7a947…](qa-73b7a947-02f5-4298-8592-4badfbcbb139) | high (stored) | arcteryx-membership | general | What would have changed your recommendation from buy to build? |
+| 66 | [8ba596cd…](qa-8ba596cd-8c2c-456e-bf5e-0681333ab61a) | high (stored) | questrade-deposits | general | What would the MVP of a payroll-switching feature actually contain? |
+| 67 | [48f67960…](qa-48f67960-28cb-4d6b-b863-e7cfe2c1ca71) | high (stored) | leadership-general | general | What would you do if post-launch data contradicts the user research that justified the feature? |
+| 68 | [771cc93c…](qa-771cc93c-f8fd-4499-90dd-04482b325890) | high (stored) | questrade-payments | general | What would you do if the customer sees a successful transfer but settlement hasn't reconciled? |
+| 69 | [ab5294e4…](qa-ab5294e4-b011-43a7-8cb2-432d84014ec7) | high (stored) | questrade-payments | general | What would you tell customers if a major banking partner was down and you didn't know the restoration time? |
+| 70 | [606fd4d4…](qa-606fd4d4-8492-40ac-b65f-099d93621451) | high (stored) | questrade-payments | general | What would your launch-readiness checklist include for an everyday-banking feature? |
+| 71 | [f1a3ec4e…](qa-f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1) | high (stored) | hbc-activation | general | What's the difference between acquiring a cardholder, activating one and retaining one? |
+| 72 | [d17bc916…](qa-d17bc916-0925-4b2f-9904-092499e61920) | high (stored) | questrade-payments | general | When should an automated retry be prohibited even if it would reduce failures? |
+| 73 | [be3e3314…](qa-be3e3314-68c5-4f6a-a3d9-7f0b9147e17b) | high (stored) | questrade-mcp | general | When would you choose deterministic software or rules instead of an AI model? |
+| 74 | [1de87c3a…](qa-1de87c3a-d693-419c-9ded-b76154af230a) | high (stored) | leadership-general | general | When would you shut down a feature your own team spent six months building? |
+| 75 | [0f41544d…](qa-0f41544d-2a2d-4b4b-bb41-f89df44c05d0) | high (stored) | hbc-mastercard-app | general | Which step in a credit-card application funnel would you inspect first, and why? |
+| 76 | [c22bc35e…](qa-c22bc35e-41a0-4bc7-9b53-6d19da3ecfef) | high (stored) | rbc-cashback | general | Why did you use the member's email address, and what if that address changed? |
+| 77 | [86fb0ff0…](qa-86fb0ff0-ee19-402f-bbd3-4d478d902d9e) | high (stored) | questrade-deposits | general | Why would a bank not want unlimited deposits if customers are willing to bring them? |
+| 78 | [adc80bff…](qa-adc80bff-8a24-4eaf-9c48-8b050d759ab1) | high (stored) | questrade-primary | general | Would you consider a secondary banking relationship a product failure? |
+| 79 | [7883e373…](qa-7883e373-e58d-460a-bef5-2b89d237c66e) | high (stored) | questrade-mcp | general | Would you let an external AI agent read transaction descriptions or merchant details? |
+| 80 | [cd39ab59…](qa-cd39ab59-8574-443c-b78e-a9dfa3010185) | high (stored) | rbc-cashback | general | Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product? |
+| 81 | [ad2fa044…](qa-ad2fa044-aa66-4016-a587-a812cc94514d) | high (stored) | questrade-mcp | tradeoffs | Would you use AI to recommend how someone should move their money? |
+| 82 | [c6aa4266…](qa-c6aa4266-ebca-41df-a32b-99cba4676ffd) | high (stored) | questrade-hub | general | Would you use screen scraping or customer-permissioned banking APIs for account aggregation? |
+| 83 | [92a7cf55…](qa-92a7cf55-18dc-4d94-93d7-db3303028b9b) | high (inferred) | hbc-quests | measurement_impact | Did Quests reach six million active credit cardholders? |
+| 84 | [7aafc468…](qa-7aafc468-3bf5-48c2-886e-5ca34ce4f660) | high (inferred) | hbc-mastercard-app | attribution | Did your UX redesign cause approvals in under three minutes? |
+| 85 | [96d0d431…](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) | high (inferred) | questrade-metrics | measurement_impact | Explain how you would model customer lifetime value in banking. |
+| 86 | [7ade5d00…](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) | high (inferred) | questrade-metrics | measurement_impact | Give me an exact definition of a monthly active banking customer. |
+| 87 | [09b7fdec…](qa-09b7fdec-df53-4a0a-a6af-592fe54cbe57) | high (inferred) | aeroplan-cobrand | general | How can you claim 427% acquisition growth when you only improved conversion by 40%? |
+| 88 | [04f9a779…](qa-04f9a779-8058-4470-8817-beccdcbecf1e) | high (inferred) | hbc-mastercard-app | problem_discovery | How did you identify the application problem? |
+| 89 | [75fd6429…](qa-75fd6429-dc9a-4cd3-b996-ce48af985a7b) | high (inferred) | aeroplan-cobrand | problem_discovery | How did you identify the problem? |
+| 90 | [a412c28e…](qa-a412c28e-815d-42b5-91fa-ad7bc4e444b6) | high (inferred) | arcteryx-membership | measurement_impact | How did you know it worked if the full membership platform hadn't launched? |
+| 91 | [ab850009…](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) | high (inferred) | arcteryx-membership | problem_discovery | How did you know membership was a customer problem at Arc'teryx? |
+| 92 | [7df4eff0…](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) | high (inferred) | rbc-cashback | problem_discovery | How did you know the Avion cashback withdrawal was a customer problem? |
+| 93 | [3218b561…](qa-3218b561-2159-442e-a3aa-074756f877c0) | high (inferred) | hbc-mastercard-app | measurement_impact | How did you measure the 15% improvement? |
+| 94 | [fb56f902…](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) | high (inferred) | questrade-payments | technical_implementation | How do pending and posted card transactions differ? |
+| 95 | [478cb389…](qa-478cb389-1d3d-43e6-9a9b-71fd8b7c7cd5) | high (inferred) | leadership-general | general | How do you challenge a VP who has already promised a launch date? |
+| 96 | [1db0b6d1…](qa-1db0b6d1-d7a9-4d2b-b2a4-7758f9c47b3b) | high (inferred) | arcteryx-vendor | attribution | How do you know the headless option saved two quarters? |
+| 97 | [df6c37ec…](qa-df6c37ec-3c98-4d5d-b441-30ba78608f56) | high (inferred) | leadership-general | general | How do you know when to stop investing in a feature? |
+| 98 | [6cffb3bc…](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) | high (inferred) | hbc-portfolio | attribution | How do you know your incentive program generated incremental spending? |
+| 99 | [20f12afb…](qa-20f12afb-0dbb-49eb-821e-01989453d828) | high (inferred) | leadership-general | general | How do you lead when you don't manage the engineers directly? |
+| 100 | [8f93a4d4…](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) | high (inferred) | aeroplan-cobrand | measurement_impact | How exactly did you measure the 40% conversion lift? |
+| 101 | [009d20a6…](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) | high (inferred) | questrade-payments | solution_alternatives | How would you choose between building a payment service and buying one? |
+| 102 | [35d5ff6e…](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) | high (inferred) | questrade-metrics | measurement_impact | How would you decide if a 5% incremental spending lift justified an incentive? |
+| 103 | [a91d4a5a…](qa-a91d4a5a-19bf-4cd7-8ade-e773f9e83028) | high (inferred) | rbc-cashback | general | How would you define payout success rate? |
+| 104 | [038f6014…](qa-038f6014-b892-4a64-84d6-e09048b9fea2) | high (inferred) | questrade-payments | technical_implementation | How would you roll out a critical payments integration? |
+| 105 | [15aa03e2…](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) | high (inferred) | leadership-general | main_story | Tell me about a product initiative that didn't go according to plan. |
+| 106 | [e09deee1…](qa-e09deee1-3efa-4774-9274-2f18848b739f) | high (inferred) | leadership-general | main_story | Tell me about a time you had competing priorities with Risk, Compliance or Engineering. |
+| 107 | [6458104e…](qa-6458104e-34c6-430c-8005-aef3a3da9c02) | high (inferred) | rbc-avion | main_story | Tell me about building Avion Select from zero to one. |
+| 108 | [2a1ed160…](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) | high (inferred) | arcteryx-membership | main_story | Tell me about something you took from an idea into a product. |
+| 109 | [fef2b30f…](qa-fef2b30f-d115-48fe-be83-cf89c80548de) | high (inferred) | leadership-general | main_story | Tell me about your first disagreement with a new team's established strategy. |
+| 110 | [2f3a780e…](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) | high (stored) | career-general | main_story | Tell me about yourself. |
+| 111 | [83d6cb34…](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) | high (inferred) | questrade-deposits | technical_implementation | What controls would you require before allowing a new transfer type? |
+| 112 | [2e58d329…](qa-2e58d329-4b40-4142-bf45-67504474f730) | high (inferred) | aeroplan-cobrand | personal_ownership | What did you personally decide on the Aeroplan card offer test? |
+| 113 | [27d2a524…](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) | high (inferred) | rbc-cashback | personal_ownership | What did you personally decide on the Avion cashback withdrawal launch? |
+| 114 | [b9f349e9…](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) | high (inferred) | hbc-mastercard-app | personal_ownership | What did you personally decide on the HBC Mastercard application journey? |
+| 115 | [9b0f399e…](qa-9b0f399e-6750-463a-9570-805c82449eb8) | high (inferred) | hbc-mastercard-app | general | What does 'P&L ownership' at HBC actually mean? |
+| 116 | [e546440d…](qa-e546440d-67eb-4266-8466-0827ccd35e42) | high (inferred) | hbc-mastercard-app | general | What exactly did you change in the HBC application experience? |
+| 117 | [f290b115…](qa-f290b115-770e-4448-82ac-52f4334f34de) | high (inferred) | rbc-cashback | general | What exactly did you own versus RBC's payments infrastructure team? |
+| 118 | [fb3c9a13…](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) | high (inferred) | rbc-cashback | technical_implementation | What happens if a payout API times out after the request was accepted? |
+| 119 | [1d491196…](qa-1d491196-487e-4282-9a80-15e857190b75) | high (inferred) | leadership-general | prioritization | What if leadership wants to ship five banking features at once? |
+| 120 | [9e7049a3…](qa-9e7049a3-2fa7-4388-931c-875a7cc4d416) | high (inferred) | leadership-general | tradeoffs | What if Risk wants a step that cuts conversion by 20%? |
+| 121 | [0c8b1a1c…](qa-0c8b1a1c-7290-4b60-8c88-8d978935beae) | high (inferred) | questrade-payments | general | What if the ledger balance and customer-facing balance don't match? |
+| 122 | [21cb8214…](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) | high (inferred) | questrade-payments | technical_implementation | What is reconciliation, and why does a PM need to understand it? |
+| 123 | [6a8c3993…](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) | high (inferred) | questrade-hub | tradeoffs | What is the biggest risk in connecting external accounts? |
+| 124 | [39a0bcf9…](qa-39a0bcf9-7d01-4cde-8da4-4ff893da44b3) | high (inferred) | leadership-general | general | What is your biggest weakness as a product leader? |
+| 125 | [b0d58fdf…](qa-b0d58fdf-bced-41f7-b878-1b158fc89643) | high (inferred) | hbc-mastercard-app | general | What was your most important HBC product decision? |
+| 126 | [b810ad2f…](qa-b810ad2f-f519-4a36-9e96-246c398f9d70) | high (inferred) | aeroplan-cobrand | what_differently | What would you do differently after the Aeroplan offer-summary test? |
+| 127 | [14ad93b1…](qa-14ad93b1-527c-49e9-b160-e9b22ca0f888) | high (inferred) | rbc-cashback | what_differently | What would you do differently on the Avion cashback withdrawal launch? |
+| 128 | [8efd1a27…](qa-8efd1a27-85fe-41e7-a279-d79a07bda1d4) | high (inferred) | arcteryx-membership | what_differently | What would you do differently on the ReBIRD membership platform? |
+| 129 | [e4952adf…](qa-e4952adf-c7af-45fb-955e-169fc91e2f7d) | high (inferred) | leadership-general | general | What would you do if a new AI feature gave customers incorrect financial advice? |
+| 130 | [0f4d097c…](qa-0f4d097c-a03a-4123-9e70-37c642139843) | high (inferred) | leadership-general | general | What would you do if Engineering said your top feature was six months of work? |
+| 131 | [2b7b68cd…](qa-2b7b68cd-d7ae-4358-b609-405c36f1f6b6) | high (inferred) | leadership-general | general | What's one product opinion you hold strongly that others might disagree with? |
+| 132 | [4fa0697a…](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) | high (inferred) | aeroplan-cobrand | solution_alternatives | Why a clearer offer summary instead of a shorter page or bigger apply button? |
+| 133 | [3ba24689…](qa-3ba24689-dd1a-4428-b018-743f0a8c61af) | high (inferred) | hbc-portfolio | general | Why did HBC modeled LTV rise 10%, and how certain are you? |
+| 134 | [c226bb45…](qa-c226bb45-beb6-4162-9628-f16d6660b887) | high (inferred) | rbc-cashback | solution_alternatives | Why Interac e-Transfer instead of direct bank-account linking? |
+| 135 | [9dbe28fe…](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) | high (inferred) | hbc-portfolio | personal_ownership | Why mention 500K+ cardholders if you didn't control the credit book? |
+| 136 | [6eb506c0…](qa-6eb506c0-03c7-4205-aa2a-ba3662c5b94d) | high (inferred) | rbc-avion | technical_implementation | Why mention 5M+ settlement events when Avion payouts were only $1M+? |
+| 137 | [c60f747c…](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) | high (inferred) | hbc-mastercard-app | solution_alternatives | Why save-and-resume, and how did you split ownership with Neo? |
+| 138 | [56065bcd…](qa-56065bcd-e97e-4d82-ac21-e35a44296ae7) | high (stored) | leadership-general | general | Why should we hire you over someone with direct core banking experience? |
+| 139 | [d8d2b2a3…](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) | high (inferred) | arcteryx-membership | solution_alternatives | Why this solution and why start in North America? |
+| 140 | [3c199d05…](qa-3c199d05-67ba-4f4c-aa98-d7f06a2cc3c6) | high (inferred) | rbc-cashback | general | Why use Interac e-Transfer rather than EFT for cashback withdrawals? |
+| 141 | [17154883…](qa-17154883-f321-4b28-bee5-6fa80de879db) | high (inferred) | leadership-general | general | Would you delay launch over a 0.5% payment failure rate? |
+| 142 | [333428ab…](qa-333428ab-ba63-4939-a069-a376f0334868) | high (inferred) | hbc-mastercard-app | general | You say HBC's modeled lifetime value increased 10%. How would you explain that metric? |
+| 143 | [b1eac049…](qa-b1eac049-c167-4977-a7bd-55e98d7e3b0b) | high (inferred) | arcteryx-membership | general | You secured $5.2M at Arc'teryx. Was the programme launched? |
+| 144 | [0e0a03bc…](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) | high (inferred) | questrade-metrics | measurement_impact | Your conversion improved from 10% to 12%. Is that 2% or 20%? |
+| 145 | [e3acf896…](qa-e3acf896-6e83-4597-aeb6-088aba201987) | high (stored) | career-general | general | Are you more interested in building new products or improving existing ones? |
+| 146 | [af5bd3a4…](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) | high (inferred) | hbc-portfolio | attribution | Did you actually run randomized holdouts on the HBC Mastercard programme? |
+| 147 | [7c079cf5…](qa-7c079cf5-b153-435d-a4b3-e83ad3139a2b) | high (stored) | leadership-general | general | How are you using AI in your product management work? |
+| 148 | [e8d13d9e…](qa-e8d13d9e-a98d-4dbc-a596-a178557963b0) | high (inferred) | aeroplan-cobrand | general | How did you drive credit card acquisition growth at Aeroplan? |
+| 149 | [c8d4a611…](qa-c8d4a611-d174-48b1-911c-e2db8f3acc3e) | high (stored) | leadership-general | general | How did you know your semantic-search approach was actually better than keyword matching? |
+| 150 | [439ccf45…](qa-439ccf45-857e-431f-ab0e-1312d6998f02) | high (inferred) | arcteryx-membership | technical_implementation | How did you secure $5.2 million in capital funding at Arc'teryx? |
+| 151 | [4f7c15c5…](qa-4f7c15c5-f4ec-40ce-b1df-3e0a7dddfc71) | high (inferred) | leadership-general | general | How do you make decisions when the data is incomplete? |
+| 152 | [c79db9b5…](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) | high (inferred) | leadership-general | problem_discovery | How do you work with designers and customer researchers? |
+| 153 | [fb30286a…](qa-fb30286a-49ca-4ce1-b54a-4b7c4cea2d58) | high (stored) | questrade-mcp | general | How would you design MCP or agentic finance connections with consent and human approval? |
+| 154 | [7eb5e7ae…](qa-7eb5e7ae-c611-4966-8279-0fcc8d80fc3c) | high (inferred) | hbc-activation | main_story | How would you explain your approach to customer activation and retention at HBC? |
+| 155 | [d616c1d2…](qa-d616c1d2-a2f7-49f4-a246-47feeacdf169) | high (stored) | questrade-mcp | general | How would you introduce AI-assisted account insights while preserving consent, accuracy and user control? |
+| 156 | [df23d3a1…](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) | high (stored) | questrade-mcp | measurement_impact | How would you test an AI-powered financial feature before launching it broadly? |
+| 157 | [011b9f33…](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) | high (inferred) | leadership-general | main_story | Tell me about a time you challenged the original product strategy. |
+| 158 | [4da64bdb…](qa-4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5) | high (inferred) | hbc-activation | measurement_impact | Tell me exactly how you defined HBC's 30-day activation and 90-day retention. |
+| 159 | [55b22c18…](qa-55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1) | high (stored) | career-general | general | What concerns would you have about joining a business that is still establishing its banking offering? |
+| 160 | [868dbf79…](qa-868dbf79-c06d-4ed3-83c4-f001b12be2bf) | high (inferred) | leadership-general | tradeoffs | What if leadership wants to optimize DAU but you believe retained deposits matter more? |
+| 161 | [4671a4a2…](qa-4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc) | high (inferred) | leadership-general | measurement_impact | What if the team ships a feature on time, but adoption is poor? |
+| 162 | [de31db47…](qa-de31db47-3aea-4d26-be40-e0fa92423dd1) | high (stored) | career-general | general | What is the strongest single reason we should choose you for this job? |
+| 163 | [08bed145…](qa-08bed145-68a4-4f1f-a500-1287247345bc) | high (stored) | career-general | general | What would you actually deliver in your first 30 days? |
+| 164 | [91cd5cac…](qa-91cd5cac-65b4-41e6-be3b-76ba3c49e9b1) | high (inferred) | rbc-cashback | general | What's the difference between EFT and Interac e-Transfer? |
+| 165 | [a85b536e…](qa-a85b536e-5e20-468f-87d9-fb447ae796f6) | high (inferred) | arcteryx-membership | general | Why did you choose a headless membership platform rather than building everything internally? |
+| 166 | [a3f8c2d1…](qa-a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e) | high (stored) | career-general | general | You've secured a significant investment and are still building the product. Why would you leave before seeing it launch? |
 
 ### C. Medium Likelihood
 
@@ -450,45 +640,132 @@
 | 1 | [a8fe6bd5…](qa-a8fe6bd5-ecc2-4c0f-95d5-63bb51f0c20c) | very_high (stored) | questrade-temenos | technical_implementation | How would you build product on top of Temenos core banking without owning the ledger? |
 | 2 | [4068ab67…](qa-4068ab67-0613-40ae-bb08-f810651d27a0) | very_high (stored) | questrade-payments | challenges_lessons | How would you handle payment exceptions and straight-through processing as transaction volume grows? |
 | 3 | [695ace4a…](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) | very_high (stored) | questrade-payments | technical_implementation | Where should transaction status, balance calculation and reconciliation responsibilities sit? |
-| 4 | [0c8b1a1c…](qa-0c8b1a1c-7290-4b60-8c88-8d978935beae) | very_high (inferred) | questrade-payments | general | What if the ledger balance and customer-facing balance don't match? |
-| 5 | [21cb8214…](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) | very_high (inferred) | questrade-payments | technical_implementation | What is reconciliation, and why does a PM need to understand it? |
-| 6 | [1429b53c…](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) | very_high (stored) | questrade-mcp | tradeoffs | How would you protect customers from malicious or unauthorized AI-agent actions? |
-| 7 | [7547195c…](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) | very_high (stored) | questrade-mcp | technical_implementation | What is MCP, and why is it different from putting a chatbot inside a financial app? |
-| 8 | [244e239c…](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) | very_high (inferred) | rbc-cashback | main_story | Walk me through the Interac e-Transfer product you launched at RBC. |
-| 9 | [c226bb45…](qa-c226bb45-beb6-4162-9628-f16d6660b887) | very_high (inferred) | rbc-cashback | solution_alternatives | Why Interac e-Transfer instead of direct bank-account linking? |
-| 10 | [6eb506c0…](qa-6eb506c0-03c7-4205-aa2a-ba3662c5b94d) | very_high (inferred) | rbc-avion | technical_implementation | Why mention 5M+ settlement events when Avion payouts were only $1M+? |
-| 11 | [3c199d05…](qa-3c199d05-67ba-4f4c-aa98-d7f06a2cc3c6) | very_high (inferred) | rbc-cashback | general | Why use Interac e-Transfer rather than EFT for cashback withdrawals? |
-| 12 | [fb30286a…](qa-fb30286a-49ca-4ce1-b54a-4b7c4cea2d58) | very_high (stored) | questrade-mcp | general | How would you design MCP or agentic finance connections with consent and human approval? |
-| 13 | [91cd5cac…](qa-91cd5cac-65b4-41e6-be3b-76ba3c49e9b1) | very_high (inferred) | rbc-cashback | general | What's the difference between EFT and Interac e-Transfer? |
-| 14 | [d616c1d2…](qa-d616c1d2-a2f7-49f4-a246-47feeacdf169) | very_high (stored) | questrade-mcp | general | How would you introduce AI-assisted account insights while preserving consent, accuracy and user control? |
-| 15 | [df23d3a1…](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) | very_high (stored) | questrade-mcp | measurement_impact | How would you test an AI-powered financial feature before launching it broadly? |
-| 16 | [3772aed5…](qa-3772aed5-2bdd-43f0-a114-3eb66342d397) | very_high (stored) | questrade-payments | challenges_lessons | What happens if an AI agent gives the customer an incorrect account balance or invents a transaction? |
-| 17 | [96d0d431…](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) | very_high (inferred) | questrade-metrics | measurement_impact | Explain how you would model customer lifetime value in banking. |
-| 18 | [7ade5d00…](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) | very_high (inferred) | questrade-metrics | measurement_impact | Give me an exact definition of a monthly active banking customer. |
-| 19 | [fb56f902…](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) | very_high (inferred) | questrade-payments | technical_implementation | How do pending and posted card transactions differ? |
-| 20 | [009d20a6…](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) | very_high (inferred) | questrade-payments | solution_alternatives | How would you choose between building a payment service and buying one? |
-| 21 | [35d5ff6e…](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) | very_high (inferred) | questrade-metrics | measurement_impact | How would you decide if a 5% incremental spending lift justified an incentive? |
-| 22 | [038f6014…](qa-038f6014-b892-4a64-84d6-e09048b9fea2) | very_high (inferred) | questrade-payments | technical_implementation | How would you roll out a critical payments integration? |
-| 23 | [83d6cb34…](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) | very_high (inferred) | questrade-deposits | technical_implementation | What controls would you require before allowing a new transfer type? |
-| 24 | [6a8c3993…](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) | very_high (inferred) | questrade-hub | tradeoffs | What is the biggest risk in connecting external accounts? |
-| 25 | [0e0a03bc…](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) | very_high (inferred) | questrade-metrics | measurement_impact | Your conversion improved from 10% to 12%. Is that 2% or 20%? |
-| 26 | [eb393097…](qa-eb393097-3860-4697-a24d-dd0a0cbaaf1d) | very_high (stored) | questrade-payments | general | How do you ensure financial data shown to customers — or AI tools — is accurate enough to act on? |
-| 27 | [2f00fac1…](qa-2f00fac1-89ff-470f-992d-cd89980a36a9) | very_high (stored) | questrade-payments | general | How would you handle a major payment incident? |
+| 4 | [d8be8368…](qa-d8be8368-b755-4baf-8494-3cf9a9f8a69e) | very_high (stored) | questrade-payments | general | Card payments start declining, but the banking app and core ledger are online. Where do you look? |
+| 5 | [0c8b1a1c…](qa-0c8b1a1c-7290-4b60-8c88-8d978935beae) | very_high (inferred) | questrade-payments | general | What if the ledger balance and customer-facing balance don't match? |
+| 6 | [21cb8214…](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) | very_high (inferred) | questrade-payments | technical_implementation | What is reconciliation, and why does a PM need to understand it? |
+| 7 | [1429b53c…](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) | very_high (stored) | questrade-mcp | tradeoffs | How would you protect customers from malicious or unauthorized AI-agent actions? |
+| 8 | [7547195c…](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) | very_high (stored) | questrade-mcp | technical_implementation | What is MCP, and why is it different from putting a chatbot inside a financial app? |
+| 9 | [244e239c…](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) | very_high (inferred) | rbc-cashback | main_story | Walk me through the Interac e-Transfer product you launched at RBC. |
+| 10 | [5c05a272…](qa-5c05a272-9334-44b8-bddd-fdbd4a50f6d3) | very_high (stored) | rbc-cashback | general | What happened if an Avion member didn't have Interac Autodeposit enabled? |
+| 11 | [c226bb45…](qa-c226bb45-beb6-4162-9628-f16d6660b887) | very_high (inferred) | rbc-cashback | solution_alternatives | Why Interac e-Transfer instead of direct bank-account linking? |
+| 12 | [6eb506c0…](qa-6eb506c0-03c7-4205-aa2a-ba3662c5b94d) | very_high (inferred) | rbc-avion | technical_implementation | Why mention 5M+ settlement events when Avion payouts were only $1M+? |
+| 13 | [3c199d05…](qa-3c199d05-67ba-4f4c-aa98-d7f06a2cc3c6) | very_high (inferred) | rbc-cashback | general | Why use Interac e-Transfer rather than EFT for cashback withdrawals? |
+| 14 | [fb30286a…](qa-fb30286a-49ca-4ce1-b54a-4b7c4cea2d58) | very_high (stored) | questrade-mcp | general | How would you design MCP or agentic finance connections with consent and human approval? |
+| 15 | [91cd5cac…](qa-91cd5cac-65b4-41e6-be3b-76ba3c49e9b1) | very_high (inferred) | rbc-cashback | general | What's the difference between EFT and Interac e-Transfer? |
+| 16 | [d616c1d2…](qa-d616c1d2-a2f7-49f4-a246-47feeacdf169) | very_high (stored) | questrade-mcp | general | How would you introduce AI-assisted account insights while preserving consent, accuracy and user control? |
+| 17 | [df23d3a1…](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) | very_high (stored) | questrade-mcp | measurement_impact | How would you test an AI-powered financial feature before launching it broadly? |
+| 18 | [3772aed5…](qa-3772aed5-2bdd-43f0-a114-3eb66342d397) | very_high (stored) | questrade-payments | challenges_lessons | What happens if an AI agent gives the customer an incorrect account balance or invents a transaction? |
+| 19 | [837e7efc…](qa-837e7efc-def5-4758-8ca1-627d006ec1ff) | very_high (stored) | questrade-payments | general | A customer says they sent money to the wrong recipient. What can your product realistically do? |
+| 20 | [ec3a7c0b…](qa-ec3a7c0b-b921-45be-8548-df8c95b2f713) | very_high (stored) | questrade-payments | general | A customer sees the same purchase twice, once pending and once posted. How would you fix it? |
+| 21 | [cee35d92…](qa-cee35d92-74ae-4d9b-a713-3594c8276e17) | very_high (stored) | hbc-portfolio | general | Could the HBC incentives have increased spending while destroying profitability? |
+| 22 | [96d0d431…](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) | very_high (inferred) | questrade-metrics | measurement_impact | Explain how you would model customer lifetime value in banking. |
+| 23 | [db88df8e…](qa-db88df8e-3a36-4cc6-8b84-4fb24e2136c3) | very_high (stored) | leadership-general | general | Explain your interview copilot's semantic matching architecture without using technical jargon. |
+| 24 | [7ade5d00…](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) | very_high (inferred) | questrade-metrics | measurement_impact | Give me an exact definition of a monthly active banking customer. |
+| 25 | [fb56f902…](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) | very_high (inferred) | questrade-payments | technical_implementation | How do pending and posted card transactions differ? |
+| 26 | [2af89a04…](qa-2af89a04-ab52-40bd-928d-96a3122fffd1) | very_high (stored) | hbc-mastercard-app | general | How do you know the HBC application improvement wasn't caused by a different applicant mix? |
+| 27 | [009d20a6…](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) | very_high (inferred) | questrade-payments | solution_alternatives | How would you choose between building a payment service and buying one? |
+| 28 | [35d5ff6e…](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) | very_high (inferred) | questrade-metrics | measurement_impact | How would you decide if a 5% incremental spending lift justified an incentive? |
+| 29 | [e896f79a…](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) | very_high (stored) | questrade-deposits | general | How would you design a safe payroll-switching experience when the employer's first deposit could fail? |
+| 30 | [c864344c…](qa-c864344c-3df9-4f30-b478-278b4e58f8d4) | very_high (stored) | rbc-cashback | general | How would you prevent a customer from receiving the same cashback payout twice? |
+| 31 | [038f6014…](qa-038f6014-b892-4a64-84d6-e09048b9fea2) | very_high (inferred) | questrade-payments | technical_implementation | How would you roll out a critical payments integration? |
+| 32 | [855c7ca3…](qa-855c7ca3-5897-4baa-8c59-99f3c30cdd6e) | very_high (stored) | questrade-primary | general | How would you win customers without paying an expensive cash sign-up bonus? |
+| 33 | [2fb1eeab…](qa-2fb1eeab-7958-4099-9216-e2b88d0de5c5) | very_high (stored) | questrade-payments | general | It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes? |
+| 34 | [efc27de7…](qa-efc27de7-507e-4d96-b95d-446de1f5badf) | very_high (stored) | arcteryx-membership | general | What assumptions in the $5.2 million investment case were most sensitive? |
+| 35 | [83d6cb34…](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) | very_high (inferred) | questrade-deposits | technical_implementation | What controls would you require before allowing a new transfer type? |
+| 36 | [c4eabdaa…](qa-c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42) | very_high (stored) | questrade-deposits | general | What if a customer receives one payroll deposit and then stops using Questbank? |
+| 37 | [f21a166b…](qa-f21a166b-7a0a-41a9-a919-44781cf782a2) | very_high (stored) | questrade-primary | general | What if customers trust Questrade for investments but refuse to deposit their salary? |
+| 38 | [77caa5b4…](qa-77caa5b4-817d-47b3-9569-366aa012daf6) | very_high (stored) | leadership-general | general | What if Engineering says your banking launch plan is unsafe but leadership wants the date? |
+| 39 | [458f82bd…](qa-458f82bd-542b-4331-92fb-d77bb3645d06) | very_high (stored) | leadership-general | general | What if Risk still says no after you've presented all your evidence? |
+| 40 | [1c3f6b10…](qa-1c3f6b10-2b62-4807-bffd-ef21beef30d7) | very_high (stored) | arcteryx-membership | general | What is live from Arc'teryx's membership and Sperro SV work, and what remains planned? |
+| 41 | [6a8c3993…](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) | very_high (inferred) | questrade-hub | tradeoffs | What is the biggest risk in connecting external accounts? |
+| 42 | [ba4861ca…](qa-ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c) | very_high (stored) | questrade-payments | general | What is the difference between KYC, AML monitoring and transaction fraud prevention? |
+| 43 | [bfaa86a1…](qa-bfaa86a1-2c06-4c4f-880a-bf2718e8a330) | very_high (stored) | rbc-cashback | general | What would the customer see while a cashback payout is pending or being investigated? |
+| 44 | [94fa46b3…](qa-94fa46b3-57ae-43a9-a217-84dc00d8a565) | very_high (stored) | questrade-primary | general | Which Questrade investing customers would you deliberately not target first for banking? |
+| 45 | [557cbeab…](qa-557cbeab-d17e-48bc-99de-1a54625ee37f) | very_high (stored) | questrade-metrics | general | Which three metrics would you put on your first Questbank executive scorecard? |
+| 46 | [80a4e168…](qa-80a4e168-83f0-45ba-a9b7-bde17123566a) | very_high (stored) | rbc-cashback | general | Who made the final decision when the payments team, Risk and Product disagreed? |
+| 47 | [0f093e83…](qa-0f093e83-c8de-44bd-9398-e0f186a814df) | very_high (stored) | questrade-payments | general | Why might my available balance be different from my posted balance? |
+| 48 | [0e0a03bc…](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) | very_high (inferred) | questrade-metrics | measurement_impact | Your conversion improved from 10% to 12%. Is that 2% or 20%? |
+| 49 | [eb393097…](qa-eb393097-3860-4697-a24d-dd0a0cbaaf1d) | very_high (stored) | questrade-payments | general | How do you ensure financial data shown to customers — or AI tools — is accurate enough to act on? |
+| 50 | [2f00fac1…](qa-2f00fac1-89ff-470f-992d-cd89980a36a9) | very_high (stored) | questrade-payments | general | How would you handle a major payment incident? |
 
 ### B. High Likelihood
 
 | Rank | ID | Likelihood | Module | Intent | Question |
 | ---: | --- | --- | --- | --- | --- |
-| 1 | [627cda69…](qa-627cda69-cdae-4941-89d5-fdafba1ac674) | high (stored) | questrade-mcp | solution_alternatives | How is Questrade MCP different from Flows? How much autonomy should financial AI have? |
-| 2 | [be18eb7a…](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) | high (stored) | questrade-mcp | measurement_impact | How would you measure whether Questrade MCP is successful? |
-| 3 | [233b0497…](qa-233b0497-5bff-471f-9617-6abdeca51522) | high (stored) | questrade-mcp | general | Would you extend Questrade MCP beyond brokerage into everyday banking? |
-| 4 | [6c389a15…](qa-6c389a15-714e-48e7-bdcc-0576ee78673b) | high (stored) | questrade-mcp | tradeoffs | What if an AI drafts the wrong trade and the customer approves it? |
-| 5 | [11375f03…](qa-11375f03-31fa-45da-8557-488a8cc63beb) | high (stored) | rbc-cashback | measurement_impact | How did you measure success for the Avion cashback withdrawal launch? |
-| 6 | [59024cc1…](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) | high (stored) | questrade-hub | measurement_impact | How would you know whether a financial hub truly deepens the customer relationship? |
-| 7 | [d6e02f71…](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) | high (stored) | questrade-primary | prioritization | How would you prioritize a reliable everyday account versus differentiated experiences? |
-| 8 | [14239bac…](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) | high (stored) | questrade-primary | prioritization | How would you prioritize AI features against core banking reliability? |
-| 9 | [3c961ee8…](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) | high (stored) | questrade-mcp | solution_alternatives | Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant? |
-| 10 | [ad2fa044…](qa-ad2fa044-aa66-4016-a587-a812cc94514d) | high (stored) | questrade-mcp | tradeoffs | Would you use AI to recommend how someone should move their money? |
+| 1 | [771cc93c…](qa-771cc93c-f8fd-4499-90dd-04482b325890) | high (stored) | questrade-payments | general | What would you do if the customer sees a successful transfer but settlement hasn't reconciled? |
+| 2 | [627cda69…](qa-627cda69-cdae-4941-89d5-fdafba1ac674) | high (stored) | questrade-mcp | solution_alternatives | How is Questrade MCP different from Flows? How much autonomy should financial AI have? |
+| 3 | [be18eb7a…](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) | high (stored) | questrade-mcp | measurement_impact | How would you measure whether Questrade MCP is successful? |
+| 4 | [4fcf44b0…](qa-4fcf44b0-5a66-46be-a57b-0fca89af2d10) | high (stored) | questrade-mcp | general | If MCP standardizes tools, what competitive advantage can Questrade still own? |
+| 5 | [233b0497…](qa-233b0497-5bff-471f-9617-6abdeca51522) | high (stored) | questrade-mcp | general | Would you extend Questrade MCP beyond brokerage into everyday banking? |
+| 6 | [cd39ab59…](qa-cd39ab59-8574-443c-b78e-a9dfa3010185) | high (stored) | rbc-cashback | general | Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product? |
+| 7 | [6c389a15…](qa-6c389a15-714e-48e7-bdcc-0576ee78673b) | high (stored) | questrade-mcp | tradeoffs | What if an AI drafts the wrong trade and the customer approves it? |
+| 8 | [11375f03…](qa-11375f03-31fa-45da-8557-488a8cc63beb) | high (stored) | rbc-cashback | measurement_impact | How did you measure success for the Avion cashback withdrawal launch? |
+| 9 | [1fd9478b…](qa-1fd9478b-7396-4778-bc00-e62aee52de52) | high (stored) | arcteryx-membership | main_story | What are you currently working on at Arc'teryx? |
+| 10 | [2fb50805…](qa-2fb50805-1cb9-43f9-a2ba-54b816d3085d) | high (stored) | questrade-payments | general | An account was frozen for suspected fraud. How would you handle the customer experience? |
+| 11 | [233f8d5d…](qa-233f8d5d-fa5a-45a7-a301-39c4e3743edb) | high (stored) | aeroplan-cobrand | general | How did you align TD, CIBC and Amex when the banks had different priorities? |
+| 12 | [7c4b9e12…](qa-7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30) | high (stored) | arcteryx-membership | prioritization | How did you decide what to include in the smaller Sperro SV release? |
+| 13 | [c8d4a611…](qa-c8d4a611-d174-48b1-911c-e2db8f3acc3e) | high (stored) | leadership-general | general | How did you know your semantic-search approach was actually better than keyword matching? |
+| 14 | [0cf5b127…](qa-0cf5b127-23d5-442e-b968-59bafc1ff0b3) | high (stored) | rbc-avion | general | How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer? |
+| 15 | [bb903f25…](qa-bb903f25-6886-4106-ab80-1fa344cd8a05) | high (stored) | aeroplan-cobrand | general | How did you prevent one card partner's offer from undermining another's? |
+| 16 | [79d4fa99…](qa-79d4fa99-20bc-4cff-8c9c-0b25705550ca) | high (stored) | rbc-cashback | general | How did you turn regulatory and operations requirements into stories engineers could build? |
+| 17 | [d333a258…](qa-d333a258-c050-4f17-a50b-242e5ad5254d) | high (stored) | leadership-general | general | How do you communicate a complex banking trade-off to an executive in two minutes? |
+| 18 | [2c8d4c01…](qa-2c8d4c01-fde5-45f2-83a5-4567c8b9ea00) | high (stored) | questrade-payments | general | How do you reduce fraud without rejecting too many legitimate banking customers? |
+| 19 | [f33aaf31…](qa-f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f) | high (stored) | leadership-general | general | How do you say no without damaging a relationship with a powerful stakeholder? |
+| 20 | [b995b443…](qa-b995b443-a009-4b4c-b03b-81f53bd6cc67) | high (stored) | questrade-metrics | general | How long would you wait before deciding whether a payroll-switching experiment actually worked? |
+| 21 | [0360f445…](qa-0360f445-9e66-472e-932f-e06050ec3a3e) | high (stored) | questrade-payments | general | How should a customer dispute an unfamiliar debit card transaction? |
+| 22 | [e3fe2cd3…](qa-e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0) | high (stored) | questrade-primary | general | How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant? |
+| 23 | [7fefebb7…](qa-7fefebb7-44eb-4fa3-80f8-14e6900cba0b) | high (stored) | questrade-payments | general | How would you decide when to compensate a customer after a bank payment error? |
+| 24 | [4445d2e9…](qa-4445d2e9-0632-4f42-b1a8-6a60adc01012) | high (stored) | questrade-payments | general | How would you design a new payee or recipient verification experience? |
+| 25 | [10c8d63e…](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) | high (stored) | questrade-deposits | general | How would you design recurring bill payments or pre-authorized debits for a new bank? |
+| 26 | [67ef7666…](qa-67ef7666-80ac-452a-8506-b2375d6abc34) | high (stored) | questrade-primary | general | How would you differentiate Questbank if Wealthsimple copied your best feature? |
+| 27 | [23e0a9f7…](qa-23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4) | high (stored) | questrade-metrics | general | How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card? |
+| 28 | [cca30fb0…](qa-cca30fb0-f7be-497e-8e20-2cd349712829) | high (stored) | questrade-metrics | general | How would you experiment on payment reliability if you can't ethically expose customers to worse payments? |
+| 29 | [b36da9fd…](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) | high (stored) | questrade-deposits | general | How would you explain a deposit hold to a customer who needs the money tomorrow? |
+| 30 | [dc30e851…](qa-dc30e851-19e2-4bc1-8397-e4ab784ef939) | high (stored) | questrade-payments | general | How would you explain CDIC deposit protection versus CIPF investment protection? |
+| 31 | [a95a3a54…](qa-a95a3a54-604e-4617-af66-92158c5c2c53) | high (stored) | leadership-general | general | How would you handle an offshore team that doesn't understand the customer impact of a requirement? |
+| 32 | [25ad6af4…](qa-25ad6af4-9d72-4ac5-9159-29bceeebfb80) | high (stored) | questrade-payments | general | How would you handle events arriving out of order in a customer's transaction history? |
+| 33 | [59024cc1…](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) | high (stored) | questrade-hub | measurement_impact | How would you know whether a financial hub truly deepens the customer relationship? |
+| 34 | [d6e02f71…](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) | high (stored) | questrade-primary | prioritization | How would you prioritize a reliable everyday account versus differentiated experiences? |
+| 35 | [14239bac…](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) | high (stored) | questrade-primary | prioritization | How would you prioritize AI features against core banking reliability? |
+| 36 | [059b883d…](qa-059b883d-ccbf-4e0b-8719-5dbff7c26da6) | high (stored) | questrade-metrics | general | How would you set shared OKRs without making ownership ambiguous? |
+| 37 | [cb792784…](qa-cb792784-57f0-449a-a12d-76bbbde35b46) | high (stored) | questrade-metrics | general | How would you tell healthy banking engagement from anxiety-driven repeat checking? |
+| 38 | [9b1df81f…](qa-9b1df81f-65b7-4b77-81af-4ae48b03eb79) | high (stored) | arcteryx-membership | general | How would you test whether customers wanted membership benefits before building the full platform? |
+| 39 | [6635b44b…](qa-6635b44b-bd82-4980-8aef-ea67474a075e) | high (stored) | questrade-payments | general | How would you use feature flags without creating inconsistent financial records? |
+| 40 | [698c2786…](qa-698c2786-3368-4df3-917e-de3a535d352d) | high (stored) | questrade-hub | general | If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do? |
+| 41 | [03065da4…](qa-03065da4-6d80-432b-bca7-c034fdf0ff52) | high (stored) | rbc-cashback | general | If payout failures doubled after launch, how would you investigate the first week? |
+| 42 | [4f6209aa…](qa-4f6209aa-a000-442c-bbd6-96723a266b9a) | high (stored) | questrade-deposits | general | Should a bank help customers automate savings when they have unpredictable income? |
+| 43 | [c8d9e0f1…](qa-c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f) | high (stored) | hbc-quests | what_differently | Tell me about a product decision you got wrong. |
+| 44 | [4333a9f3…](qa-4333a9f3-b07d-4d8e-8676-6a7ca9012116) | high (stored) | hbc-portfolio | general | What did you control in the HBC card portfolio, and what was controlled by Neo? |
+| 45 | [31d8ded4…](qa-31d8ded4-7dc2-4d0b-ad30-009b1f92748b) | high (stored) | arcteryx-membership | general | What did you cut from the membership MVP, and how did you defend those trade-offs? |
+| 46 | [110a4074…](qa-110a4074-4ba6-4eb9-9b8e-4a96b4e223e4) | high (stored) | leadership-general | general | What do you do when a shared dependency is blocking your objective but the other PM has different priorities? |
+| 47 | [195a8189…](qa-195a8189-fe48-4c11-9ebe-8f2741146841) | high (stored) | aeroplan-cobrand | general | What happened after the customer clicked Apply—how did you know they became an approved cardholder? |
+| 48 | [2f280387…](qa-2f280387-ca4c-4b94-abdf-a644c1868a4a) | high (stored) | questrade-mcp | general | What happens if a customer revokes an AI agent's access while it has a request in progress? |
+| 49 | [cfe370bc…](qa-cfe370bc-2273-4055-b0e2-d1adbb96cbf1) | high (stored) | questrade-deposits | general | What happens to your banking growth strategy when interest rates fall? |
+| 50 | [cdc38655…](qa-cdc38655-878f-4b7f-a49d-109f3b69125e) | high (stored) | questrade-primary | general | What if a customer fails identity verification while trying to open a Questbank account? |
+| 51 | [4a20cf51…](qa-4a20cf51-7a43-415b-b55d-d01104a46d6f) | high (stored) | questrade-metrics | general | What is sample ratio mismatch, and why would you care in a banking A/B test? |
+| 52 | [6ffb405d…](qa-6ffb405d-688b-433e-87c3-a7d992430bad) | high (stored) | questrade-payments | general | What should happen if someone loses their phone and tries to access their bank account? |
+| 53 | [381e64d9…](qa-381e64d9-0684-493b-8e36-9a2a5636966c) | high (stored) | questrade-hub | general | What should the financial hub do if an external bank connection is stale or disconnected? |
+| 54 | [14712a6a…](qa-14712a6a-881f-4c8c-9f98-9b3359211669) | high (stored) | rbc-cashback | general | What were the leading indicators before you could measure meaningful payout volume? |
+| 55 | [bad7b926…](qa-bad7b926-f617-44c4-ab13-ddc78b1e4378) | high (stored) | questrade-mcp | general | What would convince you to stop an AI financial-assistant pilot? |
+| 56 | [73b7a947…](qa-73b7a947-02f5-4298-8592-4badfbcbb139) | high (stored) | arcteryx-membership | general | What would have changed your recommendation from buy to build? |
+| 57 | [8ba596cd…](qa-8ba596cd-8c2c-456e-bf5e-0681333ab61a) | high (stored) | questrade-deposits | general | What would the MVP of a payroll-switching feature actually contain? |
+| 58 | [48f67960…](qa-48f67960-28cb-4d6b-b863-e7cfe2c1ca71) | high (stored) | leadership-general | general | What would you do if post-launch data contradicts the user research that justified the feature? |
+| 59 | [ab5294e4…](qa-ab5294e4-b011-43a7-8cb2-432d84014ec7) | high (stored) | questrade-payments | general | What would you tell customers if a major banking partner was down and you didn't know the restoration time? |
+| 60 | [606fd4d4…](qa-606fd4d4-8492-40ac-b65f-099d93621451) | high (stored) | questrade-payments | general | What would your launch-readiness checklist include for an everyday-banking feature? |
+| 61 | [f1a3ec4e…](qa-f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1) | high (stored) | hbc-activation | general | What's the difference between acquiring a cardholder, activating one and retaining one? |
+| 62 | [d17bc916…](qa-d17bc916-0925-4b2f-9904-092499e61920) | high (stored) | questrade-payments | general | When should an automated retry be prohibited even if it would reduce failures? |
+| 63 | [be3e3314…](qa-be3e3314-68c5-4f6a-a3d9-7f0b9147e17b) | high (stored) | questrade-mcp | general | When would you choose deterministic software or rules instead of an AI model? |
+| 64 | [1de87c3a…](qa-1de87c3a-d693-419c-9ded-b76154af230a) | high (stored) | leadership-general | general | When would you shut down a feature your own team spent six months building? |
+| 65 | [1f935f03…](qa-1f935f03-d796-480c-8e77-2a3c26f156b2) | high (stored) | questrade-metrics | general | Which early warning indicator would tell you Questbank is losing customer trust? |
+| 66 | [0f41544d…](qa-0f41544d-2a2d-4b4b-bb41-f89df44c05d0) | high (stored) | hbc-mastercard-app | general | Which step in a credit-card application funnel would you inspect first, and why? |
+| 67 | [c22bc35e…](qa-c22bc35e-41a0-4bc7-9b53-6d19da3ecfef) | high (stored) | rbc-cashback | general | Why did you use the member's email address, and what if that address changed? |
+| 68 | [86fb0ff0…](qa-86fb0ff0-ee19-402f-bbd3-4d478d902d9e) | high (stored) | questrade-deposits | general | Why would a bank not want unlimited deposits if customers are willing to bring them? |
+| 69 | [3c961ee8…](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) | high (stored) | questrade-mcp | solution_alternatives | Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant? |
+| 70 | [adc80bff…](qa-adc80bff-8a24-4eaf-9c48-8b050d759ab1) | high (stored) | questrade-primary | general | Would you consider a secondary banking relationship a product failure? |
+| 71 | [7883e373…](qa-7883e373-e58d-460a-bef5-2b89d237c66e) | high (stored) | questrade-mcp | general | Would you let an external AI agent read transaction descriptions or merchant details? |
+| 72 | [ad2fa044…](qa-ad2fa044-aa66-4016-a587-a812cc94514d) | high (stored) | questrade-mcp | tradeoffs | Would you use AI to recommend how someone should move their money? |
+| 73 | [c6aa4266…](qa-c6aa4266-ebca-41df-a32b-99cba4676ffd) | high (stored) | questrade-hub | general | Would you use screen scraping or customer-permissioned banking APIs for account aggregation? |
+| 74 | [a27a2489…](qa-a27a2489-4944-4faa-b130-5a1a4ab088e9) | high (stored) | questrade-metrics | general | Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship? |
 
 ### C. Medium Likelihood
 
@@ -586,14 +863,15 @@
 | 90 | [c79db9b5…](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) | medium (inferred) | leadership-general | problem_discovery | How do you work with designers and customer researchers? |
 | 91 | [47a2ee59…](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) | medium (inferred) | questrade-hub | general | How would you design a single financial hub across spending, saving and investing? |
 | 92 | [7eb5e7ae…](qa-7eb5e7ae-c611-4966-8279-0fcc8d80fc3c) | medium (inferred) | hbc-activation | main_story | How would you explain your approach to customer activation and retention at HBC? |
-| 93 | [976c189b…](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) | medium (inferred) | questrade-deposits | general | If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded? |
-| 94 | [b51df0d6…](qa-b51df0d6-2cd1-41cb-b1f6-757f899b8bcc) | medium (inferred) | questrade-metrics | general | MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it? |
-| 95 | [011b9f33…](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) | medium (inferred) | leadership-general | main_story | Tell me about a time you challenged the original product strategy. |
-| 96 | [140caed9…](qa-140caed9-55a1-48ac-9190-5d2256afd262) | medium (inferred) | hbc-mastercard-app | main_story | Tell me about improving the HBC Mastercard application journey. |
-| 97 | [4da64bdb…](qa-4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5) | medium (inferred) | hbc-activation | measurement_impact | Tell me exactly how you defined HBC's 30-day activation and 90-day retention. |
-| 98 | [868dbf79…](qa-868dbf79-c06d-4ed3-83c4-f001b12be2bf) | medium (inferred) | leadership-general | tradeoffs | What if leadership wants to optimize DAU but you believe retained deposits matter more? |
-| 99 | [4671a4a2…](qa-4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc) | medium (inferred) | leadership-general | measurement_impact | What if the team ships a feature on time, but adoption is poor? |
-| 100 | [a85b536e…](qa-a85b536e-5e20-468f-87d9-fb447ae796f6) | medium (inferred) | arcteryx-membership | general | Why did you choose a headless membership platform rather than building everything internally? |
+| 93 | [b8e9f0a1…](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) | medium (stored) | career-general | challenges_lessons | How would you manage transitioning away from an ongoing membership initiative? |
+| 94 | [976c189b…](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) | medium (inferred) | questrade-deposits | general | If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded? |
+| 95 | [b51df0d6…](qa-b51df0d6-2cd1-41cb-b1f6-757f899b8bcc) | medium (inferred) | questrade-metrics | general | MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it? |
+| 96 | [011b9f33…](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) | medium (inferred) | leadership-general | main_story | Tell me about a time you challenged the original product strategy. |
+| 97 | [140caed9…](qa-140caed9-55a1-48ac-9190-5d2256afd262) | medium (inferred) | hbc-mastercard-app | main_story | Tell me about improving the HBC Mastercard application journey. |
+| 98 | [4da64bdb…](qa-4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5) | medium (inferred) | hbc-activation | measurement_impact | Tell me exactly how you defined HBC's 30-day activation and 90-day retention. |
+| 99 | [868dbf79…](qa-868dbf79-c06d-4ed3-83c4-f001b12be2bf) | medium (inferred) | leadership-general | tradeoffs | What if leadership wants to optimize DAU but you believe retained deposits matter more? |
+| 100 | [4671a4a2…](qa-4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc) | medium (inferred) | leadership-general | measurement_impact | What if the team ships a feature on time, but adoption is poor? |
+| 101 | [a85b536e…](qa-a85b536e-5e20-468f-87d9-fb447ae796f6) | medium (inferred) | arcteryx-membership | general | Why did you choose a headless membership platform rather than building everything internally? |
 
 ### D. Low Likelihood
 
@@ -607,35 +885,50 @@
 | 6 | [2235a907…](qa-2235a907-b3ae-4899-9b1b-77a47d746119) | low (inferred) | career-general | general | What would it take for you to leave your current role? |
 | 7 | [0bcc9c40…](qa-0bcc9c40-011a-4fff-9789-fdad78429b78) | low (stored) | questrade-primary | general | Who would you target first for Questbank adoption? |
 | 8 | [28571e7f…](qa-28571e7f-620f-4880-9cd7-cdfc2e146aa8) | low (inferred) | arcteryx-membership | general | Why are you looking to leave Arc'teryx? |
-| 9 | [c1d638b6…](qa-c1d638b6-1858-487d-9ac2-5b6cc5327eb8) | low (stored) | career-general | general | Why Questrade? Why this role? |
-| 10 | [56065bcd…](qa-56065bcd-e97e-4d82-ac21-e35a44296ae7) | low (stored) | leadership-general | general | Why should we hire you over someone with direct core banking experience? |
-| 11 | [a292f433…](qa-a292f433-831a-440c-a196-dbf8c38fbddd) | low (inferred) | career-general | general | You haven't owned a traditional chequing account. Why are you qualified? |
-| 12 | [ecbddc79…](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) | low (inferred) | career-general | general | Build a business case for investing $2 million in account switching. |
-| 13 | [7c079cf5…](qa-7c079cf5-b153-435d-a4b3-e83ad3139a2b) | low (stored) | leadership-general | general | How are you using AI in your product management work? |
-| 14 | [04f3d519…](qa-04f3d519-31e2-478e-9083-e60d2bca7818) | low (stored) | questrade-metrics | general | How do you measure primary-banking adoption versus superficial account opening? |
-| 15 | [cf5d16e4…](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) | low (inferred) | career-general | general | How would you design a reliable account-funding experience? |
-| 16 | [a40816ee…](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) | low (inferred) | career-general | general | How would you handle duplicate charges, incorrect balances or transaction discrepancies? |
-| 17 | [94d1edb7…](qa-94d1edb7-2a12-40f6-8145-2a6006c2d682) | low (inferred) | career-general | general | How would you improve transaction histories? |
-| 18 | [aa868026…](qa-aa868026-c8b7-4c7a-9318-a8754cb383af) | low (inferred) | career-general | general | How would you make saving more engaging without turning it into a gimmick? |
-| 19 | [176ce1ac…](qa-176ce1ac-757b-452d-b98c-d8055754808c) | low (inferred) | career-general | general | How would you manage an underperforming banking technology vendor? |
-| 20 | [0977208e…](qa-0977208e-9d2d-40dc-8cfa-d48c79105e79) | low (inferred) | career-general | general | How would you use AI to improve personal financial management? |
-| 21 | [f8074663…](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) | low (inferred) | career-general | main_story | Tell me about a complex integration you led. |
-| 22 | [93f1f35c…](qa-93f1f35c-cd54-49c3-8d6d-6a95d262fd4b) | low (inferred) | career-general | general | What are your compensation expectations? |
-| 23 | [d47c60d3…](qa-d47c60d3-510e-4373-abf0-0749fcc41ebc) | low (inferred) | career-general | general | What would you do in your first 90 days? |
-| 24 | [0accbf98…](qa-0accbf98-6b70-462f-9631-d279d5fe3ae5) | low (stored) | career-general | general | Why does joining Questrade during its expansion into banking appeal to you? |
-| 25 | [c45ce30e…](qa-c45ce30e-6de2-4164-93bf-8b67902caae0) | low (inferred) | career-general | general | Why move into everyday banking from rewards and loyalty? |
-| 26 | [bfd102e5…](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) | low (stored) | arcteryx-membership | solution_alternatives | Why Questrade instead of continuing at Arc'teryx? |
+| 9 | [66530581…](qa-66530581-f599-40f5-8f97-5bf255953c87) | low (stored) | career-general | general | Why have you moved between several industries and employers? |
+| 10 | [c1d638b6…](qa-c1d638b6-1858-487d-9ac2-5b6cc5327eb8) | low (stored) | career-general | general | Why Questrade? Why this role? |
+| 11 | [56065bcd…](qa-56065bcd-e97e-4d82-ac21-e35a44296ae7) | low (stored) | leadership-general | general | Why should we hire you over someone with direct core banking experience? |
+| 12 | [a292f433…](qa-a292f433-831a-440c-a196-dbf8c38fbddd) | low (inferred) | career-general | general | You haven't owned a traditional chequing account. Why are you qualified? |
+| 13 | [e3acf896…](qa-e3acf896-6e83-4597-aeb6-088aba201987) | low (stored) | career-general | general | Are you more interested in building new products or improving existing ones? |
+| 14 | [ecbddc79…](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) | low (inferred) | career-general | general | Build a business case for investing $2 million in account switching. |
+| 15 | [7c079cf5…](qa-7c079cf5-b153-435d-a4b3-e83ad3139a2b) | low (stored) | leadership-general | general | How are you using AI in your product management work? |
+| 16 | [04f3d519…](qa-04f3d519-31e2-478e-9083-e60d2bca7818) | low (stored) | questrade-metrics | general | How do you measure primary-banking adoption versus superficial account opening? |
+| 17 | [cf5d16e4…](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) | low (inferred) | career-general | general | How would you design a reliable account-funding experience? |
+| 18 | [a40816ee…](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) | low (inferred) | career-general | general | How would you handle duplicate charges, incorrect balances or transaction discrepancies? |
+| 19 | [94d1edb7…](qa-94d1edb7-2a12-40f6-8145-2a6006c2d682) | low (inferred) | career-general | general | How would you improve transaction histories? |
+| 20 | [aa868026…](qa-aa868026-c8b7-4c7a-9318-a8754cb383af) | low (inferred) | career-general | general | How would you make saving more engaging without turning it into a gimmick? |
+| 21 | [176ce1ac…](qa-176ce1ac-757b-452d-b98c-d8055754808c) | low (inferred) | career-general | general | How would you manage an underperforming banking technology vendor? |
+| 22 | [0977208e…](qa-0977208e-9d2d-40dc-8cfa-d48c79105e79) | low (inferred) | career-general | general | How would you use AI to improve personal financial management? |
+| 23 | [f8074663…](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) | low (inferred) | career-general | main_story | Tell me about a complex integration you led. |
+| 24 | [93f1f35c…](qa-93f1f35c-cd54-49c3-8d6d-6a95d262fd4b) | low (inferred) | career-general | general | What are your compensation expectations? |
+| 25 | [55b22c18…](qa-55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1) | low (stored) | career-general | general | What concerns would you have about joining a business that is still establishing its banking offering? |
+| 26 | [de31db47…](qa-de31db47-3aea-4d26-be40-e0fa92423dd1) | low (stored) | career-general | general | What is the strongest single reason we should choose you for this job? |
+| 27 | [08bed145…](qa-08bed145-68a4-4f1f-a500-1287247345bc) | low (stored) | career-general | general | What would you actually deliver in your first 30 days? |
+| 28 | [d47c60d3…](qa-d47c60d3-510e-4373-abf0-0749fcc41ebc) | low (inferred) | career-general | general | What would you do in your first 90 days? |
+| 29 | [a5e5c740…](qa-a5e5c740-637c-4b42-8642-e889de82dcec) | low (stored) | career-general | general | What's the biggest learning curve for you if you join Questbank? |
+| 30 | [0accbf98…](qa-0accbf98-6b70-462f-9631-d279d5fe3ae5) | low (stored) | career-general | general | Why does joining Questrade during its expansion into banking appeal to you? |
+| 31 | [c45ce30e…](qa-c45ce30e-6de2-4164-93bf-8b67902caae0) | low (inferred) | career-general | general | Why move into everyday banking from rewards and loyalty? |
+| 32 | [bfd102e5…](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) | low (stored) | arcteryx-membership | solution_alternatives | Why Questrade instead of continuing at Arc'teryx? |
+| 33 | [a3f8c2d1…](qa-a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e) | low (stored) | career-general | general | You've secured a significant investment and are still building the product. Why would you leave before seeing it launch? |
 
 ### Panel discipline tags (active questions)
 
 | ID | Discipline | Question |
 | --- | --- | --- |
+| 837e7efc… | Product Leadership | A customer says they sent money to the wrong recipient. What can your product realistically do? |
+| ec3a7c0b… | Product Leadership | A customer sees the same purchase twice, once pending and once posted. How would you fix it? |
+| 2fb50805… | Product Leadership | An account was frozen for suspected fraud. How would you handle the customer experience? |
+| d8be8368… | Product Leadership | Card payments start declining, but the banking app and core ledger are online. Where do you look? |
+| cee35d92… | Product Leadership | Could the HBC incentives have increased spending while destroying profitability? |
 | 92a7cf55… | Product Leadership | Did Quests reach six million active credit cardholders? |
 | af5bd3a4… | Product Leadership | Did you actually run randomized holdouts on the HBC Mastercard programme? |
 | 7aafc468… | Product Leadership | Did your UX redesign cause approvals in under three minutes? |
 | 96d0d431… | Engineering / Architecture | Explain how you would model customer lifetime value in banking. |
+| db88df8e… | Product Leadership | Explain your interview copilot's semantic matching architecture without using technical jargon. |
 | 7ade5d00… | Engineering / Architecture | Give me an exact definition of a monthly active banking customer. |
 | 09b7fdec… | Product Leadership | How can you claim 427% acquisition growth when you only improved conversion by 40%? |
+| 233f8d5d… | Product Leadership | How did you align TD, CIBC and Amex when the banks had different priorities? |
+| 7c4b9e12… | Product Leadership | How did you decide what to include in the smaller Sperro SV release? |
 | e8d13d9e… | Product Leadership | How did you drive credit card acquisition growth at Aeroplan? |
 | 1161687d… | Product Leadership | How did you experiment when the bank owned the application form? |
 | 04f9a779… | Product Leadership | How did you identify the application problem? |
@@ -643,16 +936,22 @@
 | a412c28e… | Product Leadership | How did you know it worked if the full membership platform hadn't launched? |
 | ab850009… | Product Leadership | How did you know membership was a customer problem at Arc'teryx? |
 | 7df4eff0… | Product Leadership | How did you know the Avion cashback withdrawal was a customer problem? |
+| c8d4a611… | Product Leadership | How did you know your semantic-search approach was actually better than keyword matching? |
 | 11375f03… | Product Leadership | How did you measure success for the Avion cashback withdrawal launch? |
 | 3218b561… | Product Leadership | How did you measure the 15% improvement? |
+| 0cf5b127… | Product Leadership | How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer? |
+| bb903f25… | Product Leadership | How did you prevent one card partner's offer from undermining another's? |
 | 439ccf45… | Product Leadership | How did you secure $5.2 million in capital funding at Arc'teryx? |
+| 79d4fa99… | Product Leadership | How did you turn regulatory and operations requirements into stories engineers could build? |
 | fb56f902… | Engineering / Architecture | How do pending and posted card transactions differ? |
 | 478cb389… | Product Leadership | How do you challenge a VP who has already promised a launch date? |
+| d333a258… | Product Leadership | How do you communicate a complex banking trade-off to an executive in two minutes? |
 | 03d6326e… | Product Leadership | How do you decide whether to experiment or commit directly to delivery? |
 | eb393097… | Engineering / Architecture | How do you ensure financial data shown to customers — or AI tools — is accurate enough to act on? |
 | 309200d8… | Product Leadership | How do you handle an engineer who strongly disagrees with your roadmap? |
 | 6f890192… | Product Leadership | How do you know a customer really switched their paycheque? |
 | f7e403b2… | Product Leadership | How do you know an increase in DAU isn't just more balance checking? |
+| 2af89a04… | Product Leadership | How do you know the HBC application improvement wasn't caused by a different applicant mix? |
 | 1db0b6d1… | Product Leadership | How do you know the headless option saved two quarters? |
 | df6c37ec… | Product Leadership | How do you know when to stop investing in a feature? |
 | 6cffb3bc… | Product Leadership | How do you know your incentive program generated incremental spending? |
@@ -660,38 +959,67 @@
 | 4f7c15c5… | Product Leadership | How do you make decisions when the data is incomplete? |
 | b4880442… | Product Leadership | How do you manage stakeholders who disagree on priorities? |
 | 629392bb… | Product Leadership | How do you prevent cohort analysis from becoming a misleading before-and-after story? |
+| 2c8d4c01… | Product Leadership | How do you reduce fraud without rejecting too many legitimate banking customers? |
+| f33aaf31… | Product Leadership | How do you say no without damaging a relationship with a powerful stakeholder? |
 | c79db9b5… | Product Leadership | How do you work with designers and customer researchers? |
 | 8f93a4d4… | Product Leadership | How exactly did you measure the 40% conversion lift? |
 | 627cda69… | AI / Platform | How is Questrade MCP different from Flows? How much autonomy should financial AI have? |
+| b995b443… | Product Leadership | How long would you wait before deciding whether a payroll-switching experiment actually worked? |
+| 0360f445… | Product Leadership | How should a customer dispute an unfamiliar debit card transaction? |
 | a8fe6bd5… | Engineering / Architecture | How would you build product on top of Temenos core banking without owning the ledger? |
+| e3fe2cd3… | Product Leadership | How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant? |
 | 009d20a6… | Engineering / Architecture | How would you choose between building a payment service and buying one? |
 | 6844c2e7… | Product Leadership | How would you convince existing Questrade investors to make Questbank their primary bank? |
 | 648015c7… | Product Leadership | How would you decide between better rates and better switching UX? |
 | 35d5ff6e… | Engineering / Architecture | How would you decide if a 5% incremental spending lift justified an incentive? |
+| 7fefebb7… | Product Leadership | How would you decide when to compensate a customer after a bank payment error? |
 | a60003e2… | Product Leadership | How would you define 'share of wallet' for everyday banking? |
 | a91d4a5a… | Product Leadership | How would you define payout success rate? |
+| 4445d2e9… | Product Leadership | How would you design a new payee or recipient verification experience? |
+| e896f79a… | Product Leadership | How would you design a safe payroll-switching experience when the employer's first deposit could fail? |
 | 47a2ee59… | Product Leadership | How would you design a single financial hub across spending, saving and investing? |
 | fb30286a… | AI / Platform | How would you design MCP or agentic finance connections with consent and human approval? |
+| 10c8d63e… | Product Leadership | How would you design recurring bill payments or pre-authorized debits for a new bank? |
+| 67ef7666… | Product Leadership | How would you differentiate Questbank if Wealthsimple copied your best feature? |
+| 23e0a9f7… | Product Leadership | How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card? |
+| cca30fb0… | Product Leadership | How would you experiment on payment reliability if you can't ethically expose customers to worse payments? |
+| b36da9fd… | Product Leadership | How would you explain a deposit hold to a customer who needs the money tomorrow? |
+| dc30e851… | Product Leadership | How would you explain CDIC deposit protection versus CIPF investment protection? |
 | 7eb5e7ae… | Product Leadership | How would you explain your approach to customer activation and retention at HBC? |
 | 2f00fac1… | Product Leadership | How would you handle a major payment incident? |
+| a95a3a54… | Product Leadership | How would you handle an offshore team that doesn't understand the customer impact of a requirement? |
+| 25ad6af4… | Product Leadership | How would you handle events arriving out of order in a customer's transaction history? |
 | 4068ab67… | Engineering / Architecture | How would you handle payment exceptions and straight-through processing as transaction volume grows? |
 | 06e233ae… | Product Leadership | How would you increase direct deposit adoption? |
 | d616c1d2… | Risk / Compliance | How would you introduce AI-assisted account insights while preserving consent, accuracy and user control? |
 | 59024cc1… | Product Leadership | How would you know whether a financial hub truly deepens the customer relationship? |
+| b8e9f0a1… | Product Leadership | How would you manage transitioning away from an ongoing membership initiative? |
 | be18eb7a… | AI / Platform | How would you measure whether Questrade MCP is successful? |
+| c864344c… | Product Leadership | How would you prevent a customer from receiving the same cashback payout twice? |
 | d6e02f71… | Product Leadership | How would you prioritize a reliable everyday account versus differentiated experiences? |
 | 14239bac… | AI / Platform | How would you prioritize AI features against core banking reliability? |
 | 1429b53c… | Engineering / Architecture | How would you protect customers from malicious or unauthorized AI-agent actions? |
 | 038f6014… | Engineering / Architecture | How would you roll out a critical payments integration? |
 | 6441c9f1… | Product Leadership | How would you select an experiment's primary metric and guardrails? |
+| 059b883d… | Product Leadership | How would you set shared OKRs without making ownership ambiguous? |
+| cb792784… | Product Leadership | How would you tell healthy banking engagement from anxiety-driven repeat checking? |
 | df23d3a1… | Risk / Compliance | How would you test an AI-powered financial feature before launching it broadly? |
+| 9b1df81f… | Product Leadership | How would you test whether customers wanted membership benefits before building the full platform? |
+| 6635b44b… | Product Leadership | How would you use feature flags without creating inconsistent financial records? |
+| 855c7ca3… | Product Leadership | How would you win customers without paying an expensive cash sign-up bonus? |
+| 698c2786… | Product Leadership | If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do? |
 | 976c189b… | Product Leadership | If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded? |
+| 4fcf44b0… | Product Leadership | If MCP standardizes tools, what competitive advantage can Questrade still own? |
+| 03065da4… | Product Leadership | If payout failures doubled after launch, how would you investigate the first week? |
 | 6bf73e61… | Product Leadership | Is a $100 million increase in deposits automatically a win? |
 | e32103f8… | Product Leadership | Isn't Balance Sheet just a dashboard? Where is the actual value? |
+| 2fb1eeab… | Product Leadership | It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes? |
 | b51df0d6… | Product Leadership | MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it? |
+| 4f6209aa… | Product Leadership | Should a bank help customers automate savings when they have unpredictable income? |
 | 2bcf440c… | Product Leadership | Should the financial hub automatically transfer extra cash into investments? |
 | 5e92bdca… | Product Leadership | Tell me about a customer experience you improved at HBC. |
 | c88f487e… | Product Leadership | Tell me about a data-driven product decision at Aeroplan. |
+| c8d9e0f1… | Product Leadership | Tell me about a product decision you got wrong. |
 | 15aa03e2… | Product Leadership | Tell me about a product initiative that didn't go according to plan. |
 | 011b9f33… | Product Leadership | Tell me about a time you challenged the original product strategy. |
 | e09deee1… | Product Leadership | Tell me about a time you had competing priorities with Risk, Compliance or Engineering. |
@@ -702,73 +1030,204 @@
 | fef2b30f… | Product Leadership | Tell me about your first disagreement with a new team's established strategy. |
 | 4da64bdb… | Product Leadership | Tell me exactly how you defined HBC's 30-day activation and 90-day retention. |
 | 244e239c… | Product Leadership | Walk me through the Interac e-Transfer product you launched at RBC. |
+| 1fd9478b… | Product Leadership | What are you currently working on at Arc'teryx? |
+| efc27de7… | Product Leadership | What assumptions in the $5.2 million investment case were most sensitive? |
 | 83d6cb34… | Money Movement / Payments | What controls would you require before allowing a new transfer type? |
+| 4333a9f3… | Product Leadership | What did you control in the HBC card portfolio, and what was controlled by Neo? |
+| 31d8ded4… | Product Leadership | What did you cut from the membership MVP, and how did you defend those trade-offs? |
 | 2e58d329… | Product Leadership | What did you personally decide on the Aeroplan card offer test? |
 | 27d2a524… | Product Leadership | What did you personally decide on the Avion cashback withdrawal launch? |
 | b9f349e9… | Product Leadership | What did you personally decide on the HBC Mastercard application journey? |
 | f9022f65… | Product Leadership | What did you personally decide or deprioritize? |
+| 110a4074… | Product Leadership | What do you do when a shared dependency is blocking your objective but the other PM has different priorities? |
 | 9b0f399e… | Product Leadership | What does 'P&L ownership' at HBC actually mean? |
 | e546440d… | Product Leadership | What exactly did you change in the HBC application experience? |
 | f290b115… | Product Leadership | What exactly did you own versus RBC's payments infrastructure team? |
+| 195a8189… | Product Leadership | What happened after the customer clicked Apply—how did you know they became an approved cardholder? |
+| 5c05a272… | Product Leadership | What happened if an Avion member didn't have Interac Autodeposit enabled? |
+| 2f280387… | Product Leadership | What happens if a customer revokes an AI agent's access while it has a request in progress? |
 | fb3c9a13… | Product Leadership | What happens if a payout API times out after the request was accepted? |
 | 3772aed5… | Engineering / Architecture | What happens if an AI agent gives the customer an incorrect account balance or invents a transaction? |
+| cfe370bc… | Product Leadership | What happens to your banking growth strategy when interest rates fall? |
+| cdc38655… | Product Leadership | What if a customer fails identity verification while trying to open a Questbank account? |
+| c4eabdaa… | Product Leadership | What if a customer receives one payroll deposit and then stops using Questbank? |
 | 6c389a15… | Risk / Compliance | What if an AI drafts the wrong trade and the customer approves it? |
 | f95b4bf7… | Product Leadership | What if an experiment looks positive after two days? Can we ship early? |
+| f21a166b… | Product Leadership | What if customers trust Questrade for investments but refuse to deposit their salary? |
 | d551219e… | Product Leadership | What if employers aren't supported by an automated payroll switching provider? |
+| 77caa5b4… | Product Leadership | What if Engineering says your banking launch plan is unsafe but leadership wants the date? |
 | 868dbf79… | Product Leadership | What if leadership wants to optimize DAU but you believe retained deposits matter more? |
 | 1d491196… | Product Leadership | What if leadership wants to ship five banking features at once? |
 | 73c5726c… | Product Leadership | What if payroll bonuses bring in customers who leave immediately afterward? |
+| 458f82bd… | Product Leadership | What if Risk still says no after you've presented all your evidence? |
 | 9e7049a3… | Risk / Compliance | What if Risk wants a step that cuts conversion by 20%? |
 | 0d2ba56b… | Product Leadership | What if someone keeps two banks rather than moving everything to Questbank? |
 | 0c8b1a1c… | Product Leadership | What if the ledger balance and customer-facing balance don't match? |
 | 4671a4a2… | Product Leadership | What if the team ships a feature on time, but adoption is poor? |
 | c4c44a09… | Product Leadership | What if your PM peers own Cards and Money Movement, but your metric depends on both? |
+| 1c3f6b10… | Product Leadership | What is live from Arc'teryx's membership and Sperro SV work, and what remains planned? |
 | 7547195c… | Engineering / Architecture | What is MCP, and why is it different from putting a chatbot inside a financial app? |
 | 21cb8214… | Product Leadership | What is reconciliation, and why does a PM need to understand it? |
+| 4a20cf51… | Product Leadership | What is sample ratio mismatch, and why would you care in a banking A/B test? |
 | 6a8c3993… | Engineering / Architecture | What is the biggest risk in connecting external accounts? |
+| ba4861ca… | Product Leadership | What is the difference between KYC, AML monitoring and transaction fraud prevention? |
 | 39a0bcf9… | Product Leadership | What is your biggest weakness as a product leader? |
 | 735da866… | Product Leadership | What metrics would you use to measure success in everyday banking? |
+| 6ffb405d… | Product Leadership | What should happen if someone loses their phone and tries to access their bank account? |
+| 381e64d9… | Product Leadership | What should the financial hub do if an external bank connection is stale or disconnected? |
 | b0d58fdf… | Product Leadership | What was your most important HBC product decision? |
+| 14712a6a… | Product Leadership | What were the leading indicators before you could measure meaningful payout volume? |
+| bad7b926… | Product Leadership | What would convince you to stop an AI financial-assistant pilot? |
+| 73b7a947… | Product Leadership | What would have changed your recommendation from buy to build? |
+| bfaa86a1… | Product Leadership | What would the customer see while a cashback payout is pending or being investigated? |
+| 8ba596cd… | Product Leadership | What would the MVP of a payroll-switching feature actually contain? |
 | b810ad2f… | Product Leadership | What would you do differently after the Aeroplan offer-summary test? |
 | 14ad93b1… | Product Leadership | What would you do differently on the Avion cashback withdrawal launch? |
 | 092b08d1… | Product Leadership | What would you do differently on the HBC application experiment? |
 | 8efd1a27… | Product Leadership | What would you do differently on the ReBIRD membership platform? |
 | e4952adf… | Product Leadership | What would you do if a new AI feature gave customers incorrect financial advice? |
 | 0f4d097c… | Product Leadership | What would you do if Engineering said your top feature was six months of work? |
+| 48f67960… | Product Leadership | What would you do if post-launch data contradicts the user research that justified the feature? |
+| 771cc93c… | Product Leadership | What would you do if the customer sees a successful transfer but settlement hasn't reconciled? |
+| ab5294e4… | Product Leadership | What would you tell customers if a major banking partner was down and you didn't know the restoration time? |
+| 606fd4d4… | Product Leadership | What would your launch-readiness checklist include for an everyday-banking feature? |
 | 0059c616… | Product Leadership | What would your primary-account north-star metric actually be? |
 | 2b7b68cd… | Product Leadership | What's one product opinion you hold strongly that others might disagree with? |
+| f1a3ec4e… | Product Leadership | What's the difference between acquiring a cardholder, activating one and retaining one? |
 | 91cd5cac… | Product Leadership | What's the difference between EFT and Interac e-Transfer? |
 | e481df79… | Product Leadership | What's the one feature you'd build first to win payroll? |
+| d17bc916… | Product Leadership | When should an automated retry be prohibited even if it would reduce failures? |
+| be3e3314… | Product Leadership | When would you choose deterministic software or rules instead of an AI model? |
+| 1de87c3a… | Product Leadership | When would you shut down a feature your own team spent six months building? |
 | 695ace4a… | Engineering / Architecture | Where should transaction status, balance calculation and reconciliation responsibilities sit? |
+| 1f935f03… | Product Leadership | Which early warning indicator would tell you Questbank is losing customer trust? |
+| 94fa46b3… | Product Leadership | Which Questrade investing customers would you deliberately not target first for banking? |
+| 0f41544d… | Product Leadership | Which step in a credit-card application funnel would you inspect first, and why? |
+| 557cbeab… | Product Leadership | Which three metrics would you put on your first Questbank executive scorecard? |
+| 80a4e168… | Product Leadership | Who made the final decision when the payments team, Risk and Product disagreed? |
 | 4fa0697a… | Product Leadership | Why a clearer offer summary instead of a shorter page or bigger apply button? |
 | 3ba24689… | Product Leadership | Why did HBC modeled LTV rise 10%, and how certain are you? |
 | a85b536e… | Product Leadership | Why did you choose a headless membership platform rather than building everything internally? |
 | 3bcaff0a… | Product Leadership | Why did you prioritize it over other Avion improvements? |
+| c22bc35e… | Product Leadership | Why did you use the member's email address, and what if that address changed? |
 | c226bb45… | Product Leadership | Why Interac e-Transfer instead of direct bank-account linking? |
 | 3c438a5c… | Product Leadership | Why is spend per active cardholder a risky metric? |
 | 9dbe28fe… | Product Leadership | Why mention 500K+ cardholders if you didn't control the credit book? |
 | 6eb506c0… | Product Leadership | Why mention 5M+ settlement events when Avion payouts were only $1M+? |
+| 0f093e83… | Product Leadership | Why might my available balance be different from my posted balance? |
 | 7d32e566… | Product Leadership | Why prioritize a membership platform rather than improving service pages? |
 | d9c4b9aa… | Product Leadership | Why prioritize application continuation instead of more acquisition? |
 | c60f747c… | Product Leadership | Why save-and-resume, and how did you split ownership with Neo? |
 | d8d2b2a3… | Product Leadership | Why this solution and why start in North America? |
 | 3c199d05… | Product Leadership | Why use Interac e-Transfer rather than EFT for cashback withdrawals? |
 | f2dabb52… | Product Leadership | Why was it worth prioritizing? |
+| 86fb0ff0… | Product Leadership | Why would a bank not want unlimited deposits if customers are willing to bring them? |
 | c4343691… | Product Leadership | Why would customers choose Questrade over Wealthsimple or a traditional bank? |
 | 3c961ee8… | AI / Platform | Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant? |
 | dd28e2fe… | Product Leadership | Why would someone switch their primary bank if their current bank works fine? |
+| adc80bff… | Product Leadership | Would you consider a secondary banking relationship a product failure? |
 | 17154883… | Product Leadership | Would you delay launch over a 0.5% payment failure rate? |
 | 233b0497… | Risk / Compliance | Would you extend Questrade MCP beyond brokerage into everyday banking? |
+| 7883e373… | Product Leadership | Would you let an external AI agent read transaction descriptions or merchant details? |
+| cd39ab59… | Product Leadership | Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product? |
 | 75a6db9c… | Product Leadership | Would you optimize account openings, funded accounts or payroll adoption? |
 | ad2fa044… | Risk / Compliance | Would you use AI to recommend how someone should move their money? |
+| c6aa4266… | Product Leadership | Would you use screen scraping or customer-permissioned banking APIs for account aggregation? |
 | 50313c26… | Product Leadership | You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose? |
 | fce9554d… | Product Leadership | You have only a dashboard, no user research. What do you do? |
 | 333428ab… | Product Leadership | You say HBC's modeled lifetime value increased 10%. How would you explain that metric? |
 | b1eac049… | Product Leadership | You secured $5.2M at Arc'teryx. Was the programme launched? |
 | 0e0a03bc… | Engineering / Architecture | Your conversion improved from 10% to 12%. Is that 2% or 20%? |
+| a27a2489… | Product Leadership | Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship? |
 | 8150bb81… | Product Leadership | Your idea sounds sensible. Why hasn't Questrade already done it? |
 
 ## 6. Follow-Up Question Maps
+
+### Parent: [You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?](qa-a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e) (`a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e`)
+
+1. Why would you leave Arc'teryx before completing membership? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Why leave a $5.2 million project? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Don't you want to see the membership program launch? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Why are you considering Questrade now? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. Why move on when you're leading such an important initiative? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. Are you concerned about leaving your current team mid-project? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. So why would you leave before seeing that launch? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+8. Why would you leave before seeing it launch? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+9. You're leading membership at Arc'teryx, so why explore Questrade? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+10. What would make you leave Arc'teryx for this banking role? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+11. Why make a move now when you're still at Arc'teryx? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+12. Why switch from Arc'teryx membership to everyday banking? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+13. What's drawing you to Questrade at this stage? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+14. If you're happy at Arc'teryx, why are we talking? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+15. [How did you decide what to include in the smaller Sperro SV release?](qa-7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30) — **high** — Linked via relatedQuestionIds metadata
+16. [Why are you looking to leave Arc'teryx?](qa-28571e7f-620f-4880-9cd7-cdfc2e146aa8) — **high** — Linked via relatedQuestionIds metadata
+17. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **high** — Linked via relatedQuestionIds metadata
+18. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+19. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+20. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+21. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+22. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) (`1fd9478b-7396-4778-bc00-e62aee52de52`)
+
+1. What are you working on right now? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Tell me about your current role. — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What's the latest product initiative you're leading? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Can you tell me more about your time at Arc'teryx? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. What's happening with the membership program? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. Tell me about the Sperro SV launch. — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. What have you been focused on recently? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+8. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **high** — Linked via relatedQuestionIds metadata
+9. [How did you decide what to include in the smaller Sperro SV release?](qa-7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30) — **high** — Linked via relatedQuestionIds metadata
+10. [How did you secure $5.2 million in capital funding at Arc'teryx?](qa-439ccf45-857e-431f-ab0e-1312d6998f02) — **high** — Linked via relatedQuestionIds metadata
+11. [Why did you choose a headless membership platform rather than building everything internally?](qa-a85b536e-5e20-468f-87d9-fb447ae796f6) — **high** — Linked via relatedQuestionIds metadata
+12. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **high** — Linked via relatedQuestionIds metadata
+13. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Linked via relatedQuestionIds metadata
+14. [Tell me about a product decision you got wrong.](qa-c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f) — **high** — Linked via relatedQuestionIds metadata
+15. [You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?](qa-a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e) — **high** — Linked via relatedQuestionIds metadata
+16. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+17. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+18. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+19. [How did you know it worked if the full membership platform hadn't launched?](qa-a412c28e-815d-42b5-91fa-ad7bc4e444b6) — **medium** — Same experience module (arcteryx-membership); typical measurement_impact probe
+20. [What would you do differently on the ReBIRD membership platform?](qa-8efd1a27-85fe-41e7-a279-d79a07bda1d4) — **medium** — Same experience module (arcteryx-membership); typical what_differently probe
+
+### Parent: [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) (`b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b`)
+
+1. What would your transition plan look like? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. How would you hand over the membership program? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. How would you ensure the project continues without you? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. How would you transfer ownership of the roadmap? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. What would happen to your team if you left? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. How do you prevent knowledge loss when a PM leaves? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. How would you manage a transition to Questrade? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+8. How would you make sure the team could continue without you? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+9. What happens to the membership program if you leave? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+10. What happens to membership if you take another job? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+11. Who owns the roadmap if you're not there? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+12. Would the membership rollout suffer if you moved to Questrade? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+13. What happens to the Sperro and membership work if you're gone? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+14. [You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?](qa-a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e) — **high** — Linked via relatedQuestionIds metadata
+15. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+16. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+17. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+18. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+19. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [How did you decide what to include in the smaller Sperro SV release?](qa-7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30) (`7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30`)
+
+1. How did you prioritize the Sperro SV launch? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What did you cut from the MVP? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Why didn't you wait for the full membership platform? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. How did you decide which benefits were essential? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. What trade-offs did you make for the circularity launch? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. How did you manage dependencies across teams? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?](qa-a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about a product decision you got wrong.](qa-c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f) — **high** — Linked via relatedQuestionIds metadata
+9. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+10. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+11. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+12. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+13. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
 
 ### Parent: [What is the biggest risk in connecting external accounts?](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) (`6a8c3993-05ae-456b-8750-2b6778b6ee6b`)
 
@@ -778,11 +1237,696 @@
 4. Wealthica — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 5. Data stale — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 6. Privacy — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-7. [How would you know whether a financial hub truly deepens the customer relationship?](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) — **medium** — Same experience module (questrade-hub); typical measurement_impact probe
-8. [How would you define 'share of wallet' for everyday banking?](qa-a60003e2-1f39-431f-8386-531fc24d711c) — **medium** — Same experience module (questrade-hub); typical general probe
-9. [How would you design a single financial hub across spending, saving and investing?](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) — **medium** — Same experience module (questrade-hub); typical general probe
-10. [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) — **medium** — Same experience module (questrade-hub); typical general probe
-11. [Should the financial hub automatically transfer extra cash into investments?](qa-2bcf440c-7c6e-4914-8c9d-f6577178c3b8) — **medium** — Same experience module (questrade-hub); typical general probe
+7. [What should the financial hub do if an external bank connection is stale or disconnected?](qa-381e64d9-0684-493b-8e36-9a2a5636966c) — **high** — Linked via relatedQuestionIds metadata
+8. [Would you use screen scraping or customer-permissioned banking APIs for account aggregation?](qa-c6aa4266-ebca-41df-a32b-99cba4676ffd) — **high** — Linked via relatedQuestionIds metadata
+9. [How would you know whether a financial hub truly deepens the customer relationship?](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) — **medium** — Same experience module (questrade-hub); typical measurement_impact probe
+10. [How would you define 'share of wallet' for everyday banking?](qa-a60003e2-1f39-431f-8386-531fc24d711c) — **medium** — Same experience module (questrade-hub); typical general probe
+11. [How would you design a single financial hub across spending, saving and investing?](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) — **medium** — Same experience module (questrade-hub); typical general probe
+12. [If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?](qa-698c2786-3368-4df3-917e-de3a535d352d) — **medium** — Same experience module (questrade-hub); typical general probe
+13. [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) — **medium** — Same experience module (questrade-hub); typical general probe
+
+### Parent: [A customer says they sent money to the wrong recipient. What can your product realistically do?](qa-837e7efc-def5-4758-8ca1-627d006ec1ff) (`837e7efc-def5-4758-8ca1-627d006ec1ff`)
+
+1. What do you do when a customer transfers money to the wrong person? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Can a customer reverse a payment sent to the wrong recipient? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. How do you help someone who entered the wrong payee? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. What can the bank promise after an incorrect transfer? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How would you handle an Interac payment sent to the wrong email address? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. What product safeguards prevent misdirected transfers? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **high** — Linked via relatedQuestionIds metadata
+8. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+9. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+10. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+11. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+12. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [A customer sees the same purchase twice, once pending and once posted. How would you fix it?](qa-ec3a7c0b-b921-45be-8548-df8c95b2f713) (`ec3a7c0b-b921-45be-8548-df8c95b2f713`)
+
+1. Why does the same debit purchase appear twice? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. How do you handle a pending and settled charge for one purchase? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What if my card transaction is duplicated in the app? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Is the customer charged twice or is one entry just a hold? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How would you link card authorization to posting? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. How do you prevent duplicate-looking card transactions? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **high** — Linked via relatedQuestionIds metadata
+8. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+9. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+10. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+11. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+12. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **medium** — Same experience module (questrade-payments); typical challenges_lessons probe
+
+### Parent: [Card payments start declining, but the banking app and core ledger are online. Where do you look?](qa-d8be8368-b755-4baf-8494-3cf9a9f8a69e) (`d8be8368-b755-4baf-8494-3cf9a9f8a69e`)
+
+1. Cards are declining while the app stays up. How do you troubleshoot? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Where do you look when debit transactions start failing? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What if the core banking system is fine but authorization fails? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Card acceptance falls but balances still work. What's the cause? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How do you separate fraud declines from technical card failures? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. What would you check first during a spike in debit-card declines? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [How would you handle a major payment incident?](qa-2f00fac1-89ff-470f-992d-cd89980a36a9) — **high** — Linked via relatedQuestionIds metadata
+8. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+9. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+10. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+11. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+12. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [Could the HBC incentives have increased spending while destroying profitability?](qa-cee35d92-74ae-4d9b-a713-3594c8276e17) (`cee35d92-74ae-4d9b-a713-3594c8276e17`)
+
+1. Did the Quests incentive program actually make money? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Could rewards have increased spend but hurt contribution? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What if the cardholder incentives cost more than the lift? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. How did you think about incremental spending versus rewarding existing spending? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. Were the HBC promotion economics actually positive? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. How do you know cardholder spending growth wasn't just subsidized? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [Why did HBC modeled LTV rise 10%, and how certain are you?](qa-3ba24689-dd1a-4428-b018-743f0a8c61af) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about the financial impact of your work at HBC.](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) — **medium** — Same experience module (hbc-portfolio); typical main_story probe
+9. [Why mention 500K+ cardholders if you didn't control the credit book?](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) — **high** — Same experience module (hbc-portfolio); typical personal_ownership probe
+10. [Did you actually run randomized holdouts on the HBC Mastercard programme?](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
+11. [How do you know your incentive program generated incremental spending?](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
+12. [What did you control in the HBC card portfolio, and what was controlled by Neo?](qa-4333a9f3-b07d-4d8e-8676-6a7ca9012116) — **medium** — Same experience module (hbc-portfolio); typical general probe
+
+### Parent: [Explain your interview copilot's semantic matching architecture without using technical jargon.](qa-db88df8e-3a36-4cc6-8b84-4fb24e2136c3) (`db88df8e-3a36-4cc6-8b84-4fb24e2136c3`)
+
+1. Explain how your interview copilot matches questions without the jargon. — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. How does your AI copilot find the right prepared answer? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What's the simple explanation for your semantic search? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. How did you make your Q and A library searchable by meaning? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. Explain what embeddings do in your product like I'm a non-technical stakeholder. — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. Why doesn't your interview tool just search exact keywords? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [How are you using AI in your product management work?](qa-7c079cf5-b153-435d-a4b3-e83ad3139a2b) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+9. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+10. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+11. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+12. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [How do you know the HBC application improvement wasn't caused by a different applicant mix?](qa-2af89a04-ab52-40bd-928d-96a3122fffd1) (`2af89a04-ab52-40bd-928d-96a3122fffd1`)
+
+1. How did you know the HBC application lift was real? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Could the fifteen percent conversion increase be from a different customer mix? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. How did you separate better UX from a change in applicants? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. What did you control for in the credit-card application funnel? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. Could the HBC results just reflect different marketing traffic? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. How did you establish attribution for application completions? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [How did you measure the 15% improvement?](qa-3218b561-2159-442e-a3aa-074756f877c0) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about a customer experience you improved at HBC.](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
+9. [Tell me about improving the HBC Mastercard application journey.](qa-140caed9-55a1-48ac-9190-5d2256afd262) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
+10. [How did you identify the application problem?](qa-04f9a779-8058-4470-8817-beccdcbecf1e) — **medium** — Same experience module (hbc-mastercard-app); typical problem_discovery probe
+11. [Why save-and-resume, and how did you split ownership with Neo?](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) — **medium** — Same experience module (hbc-mastercard-app); typical solution_alternatives probe
+12. [What did you personally decide on the HBC Mastercard application journey?](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) — **high** — Same experience module (hbc-mastercard-app); typical personal_ownership probe
+
+### Parent: [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) (`e896f79a-bee7-4d99-a673-d337bb38cd38`)
+
+1. How would you make payroll switching safe for the first paycheque? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What if the employer doesn't switch direct deposit in time? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. How do you design the first payroll deposit experience? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. What would you do if a customer's first salary doesn't arrive? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How do you help someone move salary without missing bill payments? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. How do you handle employer-side delays when switching payroll? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) — **high** — Linked via relatedQuestionIds metadata
+8. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+9. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
+10. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
+11. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+12. [How would you explain a deposit hold to a customer who needs the money tomorrow?](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [How would you prevent a customer from receiving the same cashback payout twice?](qa-c864344c-3df9-4f30-b478-278b4e58f8d4) (`c864344c-3df9-4f30-b478-278b4e58f8d4`)
+
+1. How did you stop customers getting paid twice? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What stops duplicate cashback withdrawals? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What happens if someone hits withdraw two times? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. How would you handle a timeout without issuing a second payout? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How do you make the cash-out request idempotent? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. What's your duplicate-payment prevention strategy? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [What happens if a payout API times out after the request was accepted?](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+9. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+10. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+11. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+12. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+
+### Parent: [How would you win customers without paying an expensive cash sign-up bonus?](qa-855c7ca3-5897-4baa-8c59-99f3c30cdd6e) (`855c7ca3-5897-4baa-8c59-99f3c30cdd6e`)
+
+1. How would you grow Questbank without a big sign-up incentive? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What if we don't offer a cash bonus? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. How do you compete without paying people to open an account? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. What would make investors choose our bank without a promotion? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How would you build adoption with a limited acquisition budget? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. What's the organic value proposition for Questbank? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [Why would someone switch their primary bank if their current bank works fine?](qa-dd28e2fe-24d1-4012-98d0-e951276439c6) — **high** — Linked via relatedQuestionIds metadata
+8. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
+9. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
+10. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
+11. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+12. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+
+### Parent: [It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?](qa-2fb1eeab-7958-4099-9216-e2b88d0de5c5) (`2fb1eeab-7958-4099-9216-e2b88d0de5c5`)
+
+1. It's payroll day and customer paycheques are missing. What's your first move? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What would you do in the first fifteen minutes of a salary outage? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. A hundred employees say direct deposit hasn't landed. Where do you start? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. How do you triage a major payroll deposit incident? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. What's your immediate response when customer salaries are delayed? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. How do you determine if a payroll problem is with the app or payment rail? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [How would you handle a major payment incident?](qa-2f00fac1-89ff-470f-992d-cd89980a36a9) — **high** — Linked via relatedQuestionIds metadata
+8. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+9. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+10. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+11. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+12. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [What assumptions in the $5.2 million investment case were most sensitive?](qa-efc27de7-507e-4d96-b95d-446de1f5badf) (`efc27de7-507e-4d96-b95d-446de1f5badf`)
+
+1. What drove the assumptions behind the five point two million business case? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Which assumptions mattered most in the membership funding case? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What would put the $5.2 million investment return at risk? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. What did you stress-test in the Arc'teryx membership financial model? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How sensitive was the membership case to adoption? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. Which forecast assumption would you challenge first? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [How did you secure $5.2 million in capital funding at Arc'teryx?](qa-439ccf45-857e-431f-ab0e-1312d6998f02) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+9. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+10. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+11. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+12. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+
+### Parent: [What happened if an Avion member didn't have Interac Autodeposit enabled?](qa-5c05a272-9334-44b8-bddd-fdbd4a50f6d3) (`5c05a272-9334-44b8-bddd-fdbd4a50f6d3`)
+
+1. What if an Avion customer didn't use Interac Autodeposit? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. How did you handle cashback withdrawals without Autodeposit? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Could someone cash out without Interac Autodeposit enabled? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. What happened when a cashback member wasn't eligible for Autodeposit? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. Walk me through the payout eligibility requirement for Autodeposit. — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. If their Interac auto deposit wasn't set up, what did the member see? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+9. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+10. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+11. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+12. [What happens if a payout API times out after the request was accepted?](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) — **medium** — Same experience module (rbc-cashback); typical technical_implementation probe
+
+### Parent: [What if a customer receives one payroll deposit and then stops using Questbank?](qa-c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42) (`c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42`)
+
+1. What if the customer only deposits their salary once? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. How do you know payroll switching will stick? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What if someone gets one paycheque and stops using the account? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Does the first direct deposit count as primary banking? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How do you measure sustained payroll activity rather than one-time setup? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. What if the customer opens a banking account just for a first deposit bonus? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **high** — Linked via relatedQuestionIds metadata
+8. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+9. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
+10. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+11. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+12. [How would you explain a deposit hold to a customer who needs the money tomorrow?](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [What if customers trust Questrade for investments but refuse to deposit their salary?](qa-f21a166b-7a0a-41a9-a919-44781cf782a2) (`f21a166b-7a0a-41a9-a919-44781cf782a2`)
+
+1. What if brokerage customers won't move their paycheque to Questrade? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. How do you earn customers' trust for payroll, not just investments? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Why would an investor choose to deposit salary into Questbank? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. What if someone likes Questrade investing but keeps their main bank? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How do you get from an investing relationship to primary banking? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. What if customers refuse to switch direct deposit? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [How would you convince existing Questrade investors to make Questbank their primary bank?](qa-6844c2e7-03c5-434e-b64c-ca9febec68dd) — **high** — Linked via relatedQuestionIds metadata
+8. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
+9. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
+10. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
+11. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+12. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+
+### Parent: [What if Engineering says your banking launch plan is unsafe but leadership wants the date?](qa-77caa5b4-817d-47b3-9569-366aa012daf6) (`77caa5b4-817d-47b3-9569-366aa012daf6`)
+
+1. Engineering says the banking launch is risky but the deadline is fixed. What do you do? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Would you ship a payment feature if the engineers say it's unsafe? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. How do you push back when leadership demands an unsafe launch? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. What if you have to choose between launch date and financial integrity? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. What would you tell an executive who won't move the banking release date? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. If the team finds a critical money-movement risk before launch, then what? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [How do you handle an engineer who strongly disagrees with your roadmap?](qa-309200d8-48f6-4957-8eda-75eb4e3faf62) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+9. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+10. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+11. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+12. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [What if Risk still says no after you've presented all your evidence?](qa-458f82bd-542b-4331-92fb-d77bb3645d06) (`458f82bd-542b-4331-92fb-d77bb3645d06`)
+
+1. What if Risk won't sign off even after you explain the benefits? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. How do you move forward when Compliance rejects the proposal? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What do you do when the Risk team still says no? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Would you escalate if AML refuses to approve the change? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How do you balance a growth opportunity against a hard risk control? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. What's your next step after Risk rejects your product recommendation? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+9. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+10. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+11. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+12. [How do you work with designers and customer researchers?](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) — **medium** — Same experience module (leadership-general); typical problem_discovery probe
+
+### Parent: [What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?](qa-1c3f6b10-2b62-4807-bffd-ef21beef30d7) (`1c3f6b10-2b62-4807-bffd-ef21beef30d7`)
+
+1. What's actually launched from the membership plan so far? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Which Arc'teryx membership capabilities are live versus planned? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What delivered for Sperro SV, and what's still on the roadmap? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. What's shipping now versus later on the Arc teryx membership program? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. Has the full membership platform launched yet? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. What was in the September Sperro launch versus the full membership MVP? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [You secured $5.2M at Arc'teryx. Was the programme launched?](qa-b1eac049-c167-4977-a7bd-55e98d7e3b0b) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+9. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+10. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+11. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+12. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+
+### Parent: [What is the difference between KYC, AML monitoring and transaction fraud prevention?](qa-ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c) (`ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c`)
+
+1. How is KYC different from AML and transaction fraud? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Explain know your customer versus fraud prevention. — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What's the difference between anti money laundering and fraud detection? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Why isn't identity verification the same thing as transaction monitoring? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How do KYC, AML and payment fraud controls fit together? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. What role does each financial crime control actually play? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [What if Risk wants a step that cuts conversion by 20%?](qa-9e7049a3-2fa7-4388-931c-875a7cc4d416) — **high** — Linked via relatedQuestionIds metadata
+8. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+9. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+10. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+11. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+12. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [What would the customer see while a cashback payout is pending or being investigated?](qa-bfaa86a1-2c06-4c4f-880a-bf2718e8a330) (`bfaa86a1-2c06-4c4f-880a-bf2718e8a330`)
+
+1. What does a customer see when their cash-out is still processing? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What status do you show for a pending Interac payout? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. How do you communicate a delayed cashback withdrawal? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. What if the transfer's outcome is unknown? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How would customers know their cashback was on the way? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. What would the Avion app say while a payout was under review? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+9. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+10. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+11. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+12. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+
+### Parent: [Which Questrade investing customers would you deliberately not target first for banking?](qa-94fa46b3-57ae-43a9-a217-84dc00d8a565) (`94fa46b3-57ae-43a9-a217-84dc00d8a565`)
+
+1. Which investors would you exclude from your first banking target segment? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Who shouldn't we target for Questbank first? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Would you prioritize every Questrade customer for banking? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Which existing brokerage cohorts are least likely to adopt everyday banking? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. Are high-AUA investors always the best banking prospects? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. How would you choose who not to market the bank account to? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [Who would you target first for Questbank adoption?](qa-0bcc9c40-011a-4fff-9789-fdad78429b78) — **high** — Linked via relatedQuestionIds metadata
+8. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
+9. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
+10. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
+11. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+12. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+
+### Parent: [Which three metrics would you put on your first Questbank executive scorecard?](qa-557cbeab-d17e-48bc-99de-1a54625ee37f) (`557cbeab-d17e-48bc-99de-1a54625ee37f`)
+
+1. What would be on your first executive dashboard for Questbank? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Which three KPIs matter most for the bank? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What would you measure first in Everyday Banking? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. How would you design a simple banking leadership scorecard? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. What are the core growth and reliability metrics for Questbank? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. If you only had three banking measures, what are they? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [How do you measure primary-banking adoption versus superficial account opening?](qa-04f3d519-31e2-478e-9083-e60d2bca7818) — **high** — Linked via relatedQuestionIds metadata
+8. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+9. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+10. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+11. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+12. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [Who made the final decision when the payments team, Risk and Product disagreed?](qa-80a4e168-83f0-45ba-a9b7-bde17123566a) (`80a4e168-83f0-45ba-a9b7-bde17123566a`)
+
+1. Who had decision authority when Risk and Product disagreed? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What did you own versus the payments team? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Who signed off on the payout controls? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. If AML said no, who made the call? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How did you resolve a disagreement with Financial Operations? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. Walk me through who actually had final say on that payment decision. — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [What exactly did you own versus RBC's payments infrastructure team?](qa-f290b115-770e-4448-82ac-52f4334f34de) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+9. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+10. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+11. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+12. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+
+### Parent: [Why have you moved between several industries and employers?](qa-66530581-f599-40f5-8f97-5bf255953c87) (`66530581-f599-40f5-8f97-5bf255953c87`)
+
+1. Walk me through why you've changed industries. — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What's the thread connecting your career moves? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Why have you worked in airlines, retail, banking and outdoor apparel? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Is there a pattern behind your job changes? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. How do your career moves fit together? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. Why have you switched companies a few times? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+9. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+10. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+11. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+12. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [Why might my available balance be different from my posted balance?](qa-0f093e83-c8de-44bd-9398-e0f186a814df) (`0f093e83-c8de-44bd-9398-e0f186a814df`)
+
+1. Why is my available balance not my account balance? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What's the difference between posted and available funds? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Why can customers see money they can't spend? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. How would you explain an account hold affecting available balance? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. Why would my banking app show two different balance numbers? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. What can cause available funds to differ from posted transactions? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [What if the ledger balance and customer-facing balance don't match?](qa-0c8b1a1c-7290-4b60-8c88-8d978935beae) — **high** — Linked via relatedQuestionIds metadata
+8. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+9. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+10. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+11. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+12. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) (`038f6014-b892-4a64-84d6-e09048b9fea2`)
+
+1. Phased launch — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Payment feature rollout — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Release safeguards — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Integration readiness — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [How would you use feature flags without creating inconsistent financial records?](qa-6635b44b-bd82-4980-8aef-ea67474a075e) — **high** — Linked via relatedQuestionIds metadata
+6. [What would your launch-readiness checklist include for an everyday-banking feature?](qa-606fd4d4-8492-40ac-b65f-099d93621451) — **high** — Linked via relatedQuestionIds metadata
+7. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+8. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+9. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+10. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+11. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **medium** — Same experience module (questrade-payments); typical challenges_lessons probe
+
+### Parent: [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) (`83d6cb34-59ce-42d0-88ca-dfb46a91bfae`)
+
+1. Controls launch checklist — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Transfer launch readiness — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Risk and AML — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Banking compliance — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [How would you design a new payee or recipient verification experience?](qa-4445d2e9-0632-4f42-b1a8-6a60adc01012) — **high** — Linked via relatedQuestionIds metadata
+6. [What should happen if someone loses their phone and tries to access their bank account?](qa-6ffb405d-688b-433e-87c3-a7d992430bad) — **high** — Linked via relatedQuestionIds metadata
+7. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
+8. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
+9. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+10. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+11. [How would you explain a deposit hold to a customer who needs the money tomorrow?](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [What exactly did you own versus RBC's payments infrastructure team?](qa-f290b115-770e-4448-82ac-52f4334f34de) (`f290b115-770e-4448-82ac-52f4334f34de`)
+
+1. Your ownership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Did you build the rails? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Payments team versus product team — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Who did what? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [Who made the final decision when the payments team, Risk and Product disagreed?](qa-80a4e168-83f0-45ba-a9b7-bde17123566a) — **high** — Linked via relatedQuestionIds metadata
+6. [How did you turn regulatory and operations requirements into stories engineers could build?](qa-79d4fa99-20bc-4cff-8c9c-0b25705550ca) — **high** — Linked via relatedQuestionIds metadata
+7. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+8. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+9. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+10. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+11. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+
+### Parent: [What if Risk wants a step that cuts conversion by 20%?](qa-9e7049a3-2fa7-4388-931c-875a7cc4d416) (`9e7049a3-2fa7-4388-931c-875a7cc4d416`)
+
+1. Risk versus conversion — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Compliance friction — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Mandatory KYC step — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Security trade-off — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [How do you reduce fraud without rejecting too many legitimate banking customers?](qa-2c8d4c01-fde5-45f2-83a5-4567c8b9ea00) — **high** — Linked via relatedQuestionIds metadata
+6. [What is the difference between KYC, AML monitoring and transaction fraud prevention?](qa-ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c) — **high** — Linked via relatedQuestionIds metadata
+7. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+8. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+9. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+10. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+11. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [What if someone keeps two banks rather than moving everything to Questbank?](qa-0d2ba56b-828d-4eeb-bbc4-b099d740e800) (`0d2ba56b-828d-4eeb-bbc4-b099d740e800`)
+
+1. Multi-banking — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Split payroll — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Secondary account — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Not all-or-nothing — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. Partial switch — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. [Would you consider a secondary banking relationship a product failure?](qa-adc80bff-8a24-4eaf-9c48-8b050d759ab1) — **high** — Linked via relatedQuestionIds metadata
+7. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
+8. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
+9. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
+10. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+11. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+
+### Parent: [What if the ledger balance and customer-facing balance don't match?](qa-0c8b1a1c-7290-4b60-8c88-8d978935beae) (`0c8b1a1c-7290-4b60-8c88-8d978935beae`)
+
+1. Balance mismatch — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Ledger source of truth — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Banking incident — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Incorrect available balance — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [Why might my available balance be different from my posted balance?](qa-0f093e83-c8de-44bd-9398-e0f186a814df) — **high** — Linked via relatedQuestionIds metadata
+6. [How would you handle events arriving out of order in a customer's transaction history?](qa-25ad6af4-9d72-4ac5-9159-29bceeebfb80) — **high** — Linked via relatedQuestionIds metadata
+7. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+8. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+9. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+10. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+11. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [What if your PM peers own Cards and Money Movement, but your metric depends on both?](qa-c4c44a09-0799-471a-97cb-05e06e8bf8a8) (`c4c44a09-0799-471a-97cb-05e06e8bf8a8`)
+
+1. Shared ownership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Cross-domain dependencies — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Competing roadmaps — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Banking operating model — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [What do you do when a shared dependency is blocking your objective but the other PM has different priorities?](qa-110a4074-4ba6-4eb9-9b8e-4a96b4e223e4) — **high** — Linked via relatedQuestionIds metadata
+6. [How would you set shared OKRs without making ownership ambiguous?](qa-059b883d-ccbf-4e0b-8719-5dbff7c26da6) — **high** — Linked via relatedQuestionIds metadata
+7. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+8. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+9. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+10. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+11. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [Who would you target first for Questbank adoption?](qa-0bcc9c40-011a-4fff-9789-fdad78429b78) (`0bcc9c40-011a-4fff-9789-fdad78429b78`)
+
+1. First customer segment — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Target market — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. ICP — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Early adopters — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. Which investors cross-sell? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. [Which Questrade investing customers would you deliberately not target first for banking?](qa-94fa46b3-57ae-43a9-a217-84dc00d8a565) — **high** — Linked via relatedQuestionIds metadata
+7. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
+8. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
+9. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
+10. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+11. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+
+### Parent: [Why are you looking to leave Arc'teryx?](qa-28571e7f-620f-4880-9cd7-cdfc2e146aa8) (`28571e7f-620f-4880-9cd7-cdfc2e146aa8`)
+
+1. You're leading membership at Arc'teryx, so why explore Questrade? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What would make you leave Arc'teryx for this banking role? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Why make a move now when you're still at Arc'teryx? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Why switch from Arc'teryx membership to everyday banking? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. What's drawing you to Questrade at this stage? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. If you're happy at Arc'teryx, why are we talking? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+8. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+9. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+10. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+11. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+
+### Parent: [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) (`bfd102e5-8b51-47ea-aeea-c84745fa7f64`)
+
+1. You're leading membership at Arc'teryx, so why explore Questrade? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What would make you leave Arc'teryx for this banking role? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Why make a move now when you're still at Arc'teryx? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Why switch from Arc'teryx membership to everyday banking? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. What's drawing you to Questrade at this stage? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. If you're happy at Arc'teryx, why are we talking? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+8. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+9. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+10. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+11. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
+
+### Parent: [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) (`c4343691-6421-47c9-9c1e-8c88f948e0b6`)
+
+1. Competitive differentiation — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Wealthsimple — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Big Five — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Competitor strategy — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. Positioning — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. [How would you differentiate Questbank if Wealthsimple copied your best feature?](qa-67ef7666-80ac-452a-8506-b2375d6abc34) — **high** — Linked via relatedQuestionIds metadata
+7. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
+8. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
+9. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+10. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+11. [How would you prioritize AI features against core banking reliability?](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+
+### Parent: [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) (`96d0d431-bf77-42e5-85b5-1b8106ff1edc`)
+
+1. LTV model — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Bank unit economics — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. CLV drivers — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Revenue model — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card?](qa-23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4) — **high** — Linked via relatedQuestionIds metadata
+6. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+7. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+8. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+9. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+10. [How do you know an increase in DAU isn't just more balance checking?](qa-f7e403b2-26b8-4da4-83c1-ea58c2e3371b) — **medium** — Same experience module (questrade-metrics); typical attribution probe
+
+### Parent: [How are you using AI in your product management work?](qa-7c079cf5-b153-435d-a4b3-e83ad3139a2b) (`7c079cf5-b153-435d-a4b3-e83ad3139a2b`)
+
+1. How are you using AI agents rather than just chatbots? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. How do you measure whether AI is actually making you more effective? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Why use Claude, ChatGPT, Grok and Cursor? Do you need all of them? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. [Explain your interview copilot's semantic matching architecture without using technical jargon.](qa-db88df8e-3a36-4cc6-8b84-4fb24e2136c3) — **high** — Linked via relatedQuestionIds metadata
+5. [How did you know your semantic-search approach was actually better than keyword matching?](qa-c8d4a611-d174-48b1-911c-e2db8f3acc3e) — **high** — Linked via relatedQuestionIds metadata
+6. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+7. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+8. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+9. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+10. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) (`ab850009-b3cc-4b2b-b026-cd9bb28987c3`)
+
+1. How did you know this was a customer problem at Arc'teryx — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What research informed the membership program — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Why would customers want membership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. How did you validate the proposition? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [How would you test whether customers wanted membership benefits before building the full platform?](qa-9b1df81f-65b7-4b77-81af-4ae48b03eb79) — **high** — Linked via relatedQuestionIds metadata
+6. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+7. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+8. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+9. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+10. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
+
+### Parent: [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) (`fb56f902-9f1a-4f18-9f34-dffa2027c038`)
+
+1. Pending versus settled — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Transaction state — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Authorization and clearing — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Available balance — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [A customer sees the same purchase twice, once pending and once posted. How would you fix it?](qa-ec3a7c0b-b921-45be-8548-df8c95b2f713) — **high** — Linked via relatedQuestionIds metadata
+6. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+7. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+8. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+9. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+10. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **medium** — Same experience module (questrade-payments); typical challenges_lessons probe
+
+### Parent: [How do you handle an engineer who strongly disagrees with your roadmap?](qa-309200d8-48f6-4957-8eda-75eb4e3faf62) (`309200d8-48f6-4957-8eda-75eb4e3faf62`)
+
+1. Engineering disagreement — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Challenge PM — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Technical pushback — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Influence without authority — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [What if Engineering says your banking launch plan is unsafe but leadership wants the date?](qa-77caa5b4-817d-47b3-9569-366aa012daf6) — **high** — Linked via relatedQuestionIds metadata
+6. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+7. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+8. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+9. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+10. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) (`6f890192-85ca-45f7-8259-f92001b996cf`)
+
+1. Payroll recognition — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Verify salary — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Qualifying direct deposit — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Recurring deposit classification — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [What if a customer receives one payroll deposit and then stops using Questbank?](qa-c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42) — **high** — Linked via relatedQuestionIds metadata
+6. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+7. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
+8. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+9. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+10. [How would you explain a deposit hold to a customer who needs the money tomorrow?](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [How do you know an increase in DAU isn't just more balance checking?](qa-f7e403b2-26b8-4da4-83c1-ea58c2e3371b) (`f7e403b2-26b8-4da4-83c1-ea58c2e3371b`)
+
+1. Vanity metrics — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. DAU quality — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Financial engagement — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. High DAU low deposits — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [How would you tell healthy banking engagement from anxiety-driven repeat checking?](qa-cb792784-57f0-449a-a12d-76bbbde35b46) — **high** — Linked via relatedQuestionIds metadata
+6. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+7. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+8. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+9. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+10. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [How do you know when to stop investing in a feature?](qa-df6c37ec-3c98-4d5d-b441-30ba78608f56) (`df6c37ec-3c98-4d5d-b441-30ba78608f56`)
+
+1. Kill a feature — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Sunk cost — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Product underperforming — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Sunset decisions — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [When would you shut down a feature your own team spent six months building?](qa-1de87c3a-d693-419c-9ded-b76154af230a) — **high** — Linked via relatedQuestionIds metadata
+6. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+7. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+8. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+9. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+10. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [How do you lead when you don't manage the engineers directly?](qa-20f12afb-0dbb-49eb-821e-01989453d828) (`20f12afb-0dbb-49eb-821e-01989453d828`)
+
+1. Influence without authority — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Matrix organization — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Cross-functional leadership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Squad leadership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [How would you handle an offshore team that doesn't understand the customer impact of a requirement?](qa-a95a3a54-604e-4617-af66-92158c5c2c53) — **high** — Linked via relatedQuestionIds metadata
+6. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+7. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+8. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+9. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+10. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [How do you prevent cohort analysis from becoming a misleading before-and-after story?](qa-629392bb-f39b-414e-b66d-0d879a9c4557) (`629392bb-f39b-414e-b66d-0d879a9c4557`)
+
+1. Seasonality — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Cohort bias — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Attribution — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Comparable groups — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [What is sample ratio mismatch, and why would you care in a banking A/B test?](qa-4a20cf51-7a43-415b-b55d-d01104a46d6f) — **high** — Linked via relatedQuestionIds metadata
+6. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+7. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+8. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+9. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+10. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) (`648015c7-c77e-4d15-87c7-b0c2c688beb0`)
+
+1. Rate versus experience — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Savings APY — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Financial incentive versus product — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Product positioning — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [What happens to your banking growth strategy when interest rates fall?](qa-cfe370bc-2273-4055-b0e2-d1adbb96cbf1) — **high** — Linked via relatedQuestionIds metadata
+6. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
+7. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
+8. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
+9. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+10. [How would you prioritize AI features against core banking reliability?](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+
+### Parent: [How would you select an experiment's primary metric and guardrails?](qa-6441c9f1-738a-4bd4-b819-92ddf2c1de5b) (`6441c9f1-738a-4bd4-b819-92ddf2c1de5b`)
+
+1. Experiment design — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Primary KPI — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Guardrail — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. A/B testing plan — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [How would you experiment on payment reliability if you can't ethically expose customers to worse payments?](qa-cca30fb0-f7be-497e-8e20-2cd349712829) — **high** — Linked via relatedQuestionIds metadata
+6. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+7. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+8. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+9. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+10. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) (`6bf73e61-9653-44ef-b0b3-03f854f27398`)
+
+1. Deposit balances versus profit — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Cost of funds — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Treasury — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Net interest margin — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [Why would a bank not want unlimited deposits if customers are willing to bring them?](qa-86fb0ff0-ee19-402f-bbd3-4d478d902d9e) — **high** — Linked via relatedQuestionIds metadata
+6. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+7. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
+8. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+9. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+10. [How would you explain a deposit hold to a customer who needs the money tomorrow?](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) — **medium** — Same experience module (questrade-deposits); typical general probe
 
 ### Parent: [Should the financial hub automatically transfer extra cash into investments?](qa-2bcf440c-7c6e-4914-8c9d-f6577178c3b8) (`2bcf440c-7c6e-4914-8c9d-f6577178c3b8`)
 
@@ -795,46 +1939,123 @@
 7. [What is the biggest risk in connecting external accounts?](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) — **medium** — Same experience module (questrade-hub); typical tradeoffs probe
 8. [How would you define 'share of wallet' for everyday banking?](qa-a60003e2-1f39-431f-8386-531fc24d711c) — **medium** — Same experience module (questrade-hub); typical general probe
 9. [How would you design a single financial hub across spending, saving and investing?](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) — **medium** — Same experience module (questrade-hub); typical general probe
-10. [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) — **medium** — Same experience module (questrade-hub); typical general probe
+10. [If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?](qa-698c2786-3368-4df3-917e-de3a535d352d) — **medium** — Same experience module (questrade-hub); typical general probe
 
-### Parent: [What if someone keeps two banks rather than moving everything to Questbank?](qa-0d2ba56b-828d-4eeb-bbc4-b099d740e800) (`0d2ba56b-828d-4eeb-bbc4-b099d740e800`)
+### Parent: [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) (`1c3ffb21-7fdd-46b3-832a-57c13b409a34`)
 
-1. Multi-banking — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Split payroll — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Secondary account — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Not all-or-nothing — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. Partial switch — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+1. Saying no — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Scope cut — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Difficult stakeholder — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Pushback example — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [How do you say no without damaging a relationship with a powerful stakeholder?](qa-f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f) — **high** — Linked via relatedQuestionIds metadata
+6. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+7. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+8. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+9. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+10. [How do you work with designers and customer researchers?](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) — **medium** — Same experience module (leadership-general); typical problem_discovery probe
+
+### Parent: [What does 'P&L ownership' at HBC actually mean?](qa-9b0f399e-6750-463a-9570-805c82449eb8) (`9b0f399e-6750-463a-9570-805c82449eb8`)
+
+1. P&L detail — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Revenue responsibility — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. HBC financial ownership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. What did you control? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [What did you control in the HBC card portfolio, and what was controlled by Neo?](qa-4333a9f3-b07d-4d8e-8676-6a7ca9012116) — **high** — Linked via relatedQuestionIds metadata
+6. [Tell me about a customer experience you improved at HBC.](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
+7. [Tell me about improving the HBC Mastercard application journey.](qa-140caed9-55a1-48ac-9190-5d2256afd262) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
+8. [How did you identify the application problem?](qa-04f9a779-8058-4470-8817-beccdcbecf1e) — **medium** — Same experience module (hbc-mastercard-app); typical problem_discovery probe
+9. [Why save-and-resume, and how did you split ownership with Neo?](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) — **medium** — Same experience module (hbc-mastercard-app); typical solution_alternatives probe
+10. [What did you personally decide on the HBC Mastercard application journey?](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) — **high** — Same experience module (hbc-mastercard-app); typical personal_ownership probe
+
+### Parent: [What exactly did you change in the HBC application experience?](qa-e546440d-67eb-4266-8466-0827ccd35e42) (`e546440d-67eb-4266-8466-0827ccd35e42`)
+
+1. Funnel changes — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Which UX screens — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. 15% completion cause — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. High abandonment steps — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [Which step in a credit-card application funnel would you inspect first, and why?](qa-0f41544d-2a2d-4b4b-bb41-f89df44c05d0) — **high** — Linked via relatedQuestionIds metadata
+6. [Tell me about a customer experience you improved at HBC.](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
+7. [Tell me about improving the HBC Mastercard application journey.](qa-140caed9-55a1-48ac-9190-5d2256afd262) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
+8. [How did you identify the application problem?](qa-04f9a779-8058-4470-8817-beccdcbecf1e) — **medium** — Same experience module (hbc-mastercard-app); typical problem_discovery probe
+9. [Why save-and-resume, and how did you split ownership with Neo?](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) — **medium** — Same experience module (hbc-mastercard-app); typical solution_alternatives probe
+10. [What did you personally decide on the HBC Mastercard application journey?](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) — **high** — Same experience module (hbc-mastercard-app); typical personal_ownership probe
+
+### Parent: [What happens if a payout API times out after the request was accepted?](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) (`fb3c9a13-b37d-45df-b095-e14f8e84bed2`)
+
+1. Timeout after acceptance — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Duplicate payout — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Idempotency — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Unknown payment state — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [How would you prevent a customer from receiving the same cashback payout twice?](qa-c864344c-3df9-4f30-b478-278b4e58f8d4) — **high** — Linked via relatedQuestionIds metadata
+6. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+7. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+8. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+9. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+10. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+
+### Parent: [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) (`21cb8214-854d-48a1-a86d-c1d8fd37bf89`)
+
+1. Reconciliation meaning — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Settlement mismatches — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Finance operations — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Reconcile payouts — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [What would you do if the customer sees a successful transfer but settlement hasn't reconciled?](qa-771cc93c-f8fd-4499-90dd-04482b325890) — **high** — Linked via relatedQuestionIds metadata
+6. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+7. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+8. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+9. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+10. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **medium** — Same experience module (questrade-payments); typical challenges_lessons probe
+
+### Parent: [Why did HBC modeled LTV rise 10%, and how certain are you?](qa-3ba24689-dd1a-4428-b018-743f0a8c61af) (`3ba24689-dd1a-4428-b018-743f0a8c61af`)
+
+1. LTV increase provenance — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. LTV sensitivity — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Explain modeled lift — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. HBC economics — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [Could the HBC incentives have increased spending while destroying profitability?](qa-cee35d92-74ae-4d9b-a713-3594c8276e17) — **high** — Linked via relatedQuestionIds metadata
+6. [Tell me about the financial impact of your work at HBC.](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) — **medium** — Same experience module (hbc-portfolio); typical main_story probe
+7. [Why mention 500K+ cardholders if you didn't control the credit book?](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) — **high** — Same experience module (hbc-portfolio); typical personal_ownership probe
+8. [Did you actually run randomized holdouts on the HBC Mastercard programme?](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
+9. [How do you know your incentive program generated incremental spending?](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
+10. [What did you control in the HBC card portfolio, and what was controlled by Neo?](qa-4333a9f3-b07d-4d8e-8676-6a7ca9012116) — **medium** — Same experience module (hbc-portfolio); typical general probe
+
+### Parent: [Why would someone switch their primary bank if their current bank works fine?](qa-dd28e2fe-24d1-4012-98d0-e951276439c6) (`dd28e2fe-24d1-4012-98d0-e951276439c6`)
+
+1. Why change banks? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Incumbent bank good enough — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Switching value proposition — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Why us instead of Big Five? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [How would you win customers without paying an expensive cash sign-up bonus?](qa-855c7ca3-5897-4baa-8c59-99f3c30cdd6e) — **high** — Linked via relatedQuestionIds metadata
 6. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
 7. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
 8. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
 9. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
 10. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
 
-### Parent: [Who would you target first for Questbank adoption?](qa-0bcc9c40-011a-4fff-9789-fdad78429b78) (`0bcc9c40-011a-4fff-9789-fdad78429b78`)
+### Parent: [You secured $5.2M at Arc'teryx. Was the programme launched?](qa-b1eac049-c167-4977-a7bd-55e98d7e3b0b) (`b1eac049-c167-4977-a7bd-55e98d7e3b0b`)
 
-1. First customer segment — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Target market — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. ICP — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Early adopters — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. Which investors cross-sell? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-6. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
-7. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
-8. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
-9. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
-10. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+1. Arc membership launched? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Funding versus shipment — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. 0-to-1 claim — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Capital approval — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?](qa-1c3f6b10-2b62-4807-bffd-ef21beef30d7) — **high** — Linked via relatedQuestionIds metadata
+6. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+7. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+8. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+9. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+10. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
 
-### Parent: [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) (`c4343691-6421-47c9-9c1e-8c88f948e0b6`)
+### Parent: [Did you actually run randomized holdouts on the HBC Mastercard programme?](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) (`af5bd3a4-1b6f-4f1c-a319-15475be31b5d`)
 
-1. Competitive differentiation — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Wealthsimple — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Big Five — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Competitor strategy — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. Positioning — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-6. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
-7. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
-8. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
-9. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
-10. [How would you prioritize AI features against core banking reliability?](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+1. HBC holdout — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Controlled experiment evidence — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. RCT — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Did you A/B test incentives? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [Tell me about the financial impact of your work at HBC.](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) — **medium** — Same experience module (hbc-portfolio); typical main_story probe
+6. [Why mention 500K+ cardholders if you didn't control the credit book?](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) — **high** — Same experience module (hbc-portfolio); typical personal_ownership probe
+7. [How do you know your incentive program generated incremental spending?](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
+8. [Could the HBC incentives have increased spending while destroying profitability?](qa-cee35d92-74ae-4d9b-a713-3594c8276e17) — **medium** — Same experience module (hbc-portfolio); typical general probe
+9. [What did you control in the HBC card portfolio, and what was controlled by Neo?](qa-4333a9f3-b07d-4d8e-8676-6a7ca9012116) — **medium** — Same experience module (hbc-portfolio); typical general probe
 
 ### Parent: [Did your UX redesign cause approvals in under three minutes?](qa-7aafc468-3bf5-48c2-886e-5ca34ce4f660) (`7aafc468-3bf5-48c2-886e-5ca34ce4f660`)
 
@@ -847,18 +2068,6 @@
 7. [How did you identify the application problem?](qa-04f9a779-8058-4470-8817-beccdcbecf1e) — **medium** — Same experience module (hbc-mastercard-app); typical problem_discovery probe
 8. [Why save-and-resume, and how did you split ownership with Neo?](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) — **medium** — Same experience module (hbc-mastercard-app); typical solution_alternatives probe
 9. [What did you personally decide on the HBC Mastercard application journey?](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) — **high** — Same experience module (hbc-mastercard-app); typical personal_ownership probe
-
-### Parent: [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) (`96d0d431-bf77-42e5-85b5-1b8106ff1edc`)
-
-1. LTV model — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Bank unit economics — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. CLV drivers — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Revenue model — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-6. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-7. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-8. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-9. [How do you know an increase in DAU isn't just more balance checking?](qa-f7e403b2-26b8-4da4-83c1-ea58c2e3371b) — **medium** — Same experience module (questrade-metrics); typical attribution probe
 
 ### Parent: [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) (`7ade5d00-b631-4813-bf25-039f6c808fa5`)
 
@@ -896,18 +2105,6 @@
 8. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
 9. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
 
-### Parent: [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) (`ab850009-b3cc-4b2b-b026-cd9bb28987c3`)
-
-1. How did you know this was a customer problem at Arc'teryx — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. What research informed the membership program — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Why would customers want membership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. How did you validate the proposition? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
-6. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-7. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-8. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
-9. [How did you secure $5.2 million in capital funding at Arc'teryx?](qa-439ccf45-857e-431f-ab0e-1312d6998f02) — **medium** — Same experience module (arcteryx-membership); typical technical_implementation probe
-
 ### Parent: [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) (`7df4eff0-1801-4505-afc3-cf652d90eb63`)
 
 1. How did you know this was a customer problem at RBC — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
@@ -920,17 +2117,29 @@
 8. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
 9. [What happens if a payout API times out after the request was accepted?](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) — **medium** — Same experience module (rbc-cashback); typical technical_implementation probe
 
-### Parent: [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) (`fb56f902-9f1a-4f18-9f34-dffa2027c038`)
+### Parent: [How did you measure success for the Avion cashback withdrawal launch?](qa-11375f03-31fa-45da-8557-488a8cc63beb) (`11375f03-31fa-45da-8557-488a8cc63beb`)
 
-1. Pending versus settled — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Transaction state — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Authorization and clearing — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Available balance — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
-6. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-7. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-8. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-9. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **medium** — Same experience module (questrade-payments); typical challenges_lessons probe
+1. What were the KPIs — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What do the 5M settlement events mean — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. How do you know the launch worked? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. [What were the leading indicators before you could measure meaningful payout volume?](qa-14712a6a-881f-4c8c-9f98-9b3359211669) — **high** — Linked via relatedQuestionIds metadata
+5. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+6. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+7. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+8. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+9. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+
+### Parent: [How did you measure the 15% improvement?](qa-3218b561-2159-442e-a3aa-074756f877c0) (`3218b561-2159-442e-a3aa-074756f877c0`)
+
+1. Was that 15 points or 15 percent — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What was the experiment — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What did application completion mean? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. [How do you know the HBC application improvement wasn't caused by a different applicant mix?](qa-2af89a04-ab52-40bd-928d-96a3122fffd1) — **high** — Linked via relatedQuestionIds metadata
+5. [Tell me about a customer experience you improved at HBC.](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
+6. [Tell me about improving the HBC Mastercard application journey.](qa-140caed9-55a1-48ac-9190-5d2256afd262) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
+7. [How did you identify the application problem?](qa-04f9a779-8058-4470-8817-beccdcbecf1e) — **medium** — Same experience module (hbc-mastercard-app); typical problem_discovery probe
+8. [Why save-and-resume, and how did you split ownership with Neo?](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) — **medium** — Same experience module (hbc-mastercard-app); typical solution_alternatives probe
+9. [What did you personally decide on the HBC Mastercard application journey?](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) — **high** — Same experience module (hbc-mastercard-app); typical personal_ownership probe
 
 ### Parent: [How do you challenge a VP who has already promised a launch date?](qa-478cb389-1d3d-43e6-9a9b-71fd8b7c7cd5) (`478cb389-1d3d-43e6-9a9b-71fd8b7c7cd5`)
 
@@ -944,77 +2153,17 @@
 8. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
 9. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
 
-### Parent: [How do you handle an engineer who strongly disagrees with your roadmap?](qa-309200d8-48f6-4957-8eda-75eb4e3faf62) (`309200d8-48f6-4957-8eda-75eb4e3faf62`)
+### Parent: [How exactly did you measure the 40% conversion lift?](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) (`8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4`)
 
-1. Engineering disagreement — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Challenge PM — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Technical pushback — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Influence without authority — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
-6. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
-7. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
-8. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
-9. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
-
-### Parent: [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) (`6f890192-85ca-45f7-8259-f92001b996cf`)
-
-1. Payroll recognition — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Verify salary — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Qualifying direct deposit — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Recurring deposit classification — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
-6. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
-7. [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) — **medium** — Same experience module (questrade-deposits); typical general probe
-8. [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) — **medium** — Same experience module (questrade-deposits); typical general probe
-9. [What if employers aren't supported by an automated payroll switching provider?](qa-d551219e-6540-4760-a132-b27c92c706db) — **medium** — Same experience module (questrade-deposits); typical general probe
-
-### Parent: [How do you know an increase in DAU isn't just more balance checking?](qa-f7e403b2-26b8-4da4-83c1-ea58c2e3371b) (`f7e403b2-26b8-4da4-83c1-ea58c2e3371b`)
-
-1. Vanity metrics — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. DAU quality — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Financial engagement — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. High DAU low deposits — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-6. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-7. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-8. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-9. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-
-### Parent: [How do you know when to stop investing in a feature?](qa-df6c37ec-3c98-4d5d-b441-30ba78608f56) (`df6c37ec-3c98-4d5d-b441-30ba78608f56`)
-
-1. Kill a feature — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Sunk cost — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Product underperforming — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Sunset decisions — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
-6. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
-7. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
-8. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
-9. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
-
-### Parent: [How do you lead when you don't manage the engineers directly?](qa-20f12afb-0dbb-49eb-821e-01989453d828) (`20f12afb-0dbb-49eb-821e-01989453d828`)
-
-1. Influence without authority — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Matrix organization — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Cross-functional leadership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Squad leadership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
-6. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
-7. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
-8. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
-9. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
-
-### Parent: [How do you prevent cohort analysis from becoming a misleading before-and-after story?](qa-629392bb-f39b-414e-b66d-0d879a9c4557) (`629392bb-f39b-414e-b66d-0d879a9c4557`)
-
-1. Seasonality — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Cohort bias — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Attribution — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Comparable groups — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-6. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-7. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-8. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-9. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+1. Was 40% relative — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Did the bank provide conversion data — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. How large was the experiment? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. [What happened after the customer clicked Apply—how did you know they became an approved cardholder?](qa-195a8189-fe48-4c11-9ebe-8f2741146841) — **high** — Linked via relatedQuestionIds metadata
+5. [Tell me about a data-driven product decision at Aeroplan.](qa-c88f487e-e0d1-44c0-ab54-60f1e19fe79d) — **medium** — Same experience module (aeroplan-cobrand); typical main_story probe
+6. [How did you identify the problem?](qa-75fd6429-dc9a-4cd3-b996-ce48af985a7b) — **medium** — Same experience module (aeroplan-cobrand); typical problem_discovery probe
+7. [Why a clearer offer summary instead of a shorter page or bigger apply button?](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) — **medium** — Same experience module (aeroplan-cobrand); typical solution_alternatives probe
+8. [What did you personally decide on the Aeroplan card offer test?](qa-2e58d329-4b40-4142-bf45-67504474f730) — **high** — Same experience module (aeroplan-cobrand); typical personal_ownership probe
+9. [What would you do differently after the Aeroplan offer-summary test?](qa-b810ad2f-f519-4a36-9e96-246c398f9d70) — **medium** — Same experience module (aeroplan-cobrand); typical what_differently probe
 
 ### Parent: [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) (`009d20a6-a8cf-458a-a7ea-9ef696c693e0`)
 
@@ -1027,18 +2176,6 @@
 7. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
 8. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
 9. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **medium** — Same experience module (questrade-payments); typical challenges_lessons probe
-
-### Parent: [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) (`648015c7-c77e-4d15-87c7-b0c2c688beb0`)
-
-1. Rate versus experience — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Savings APY — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Financial incentive versus product — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Product positioning — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
-6. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
-7. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
-8. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
-9. [How would you prioritize AI features against core banking reliability?](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) — **medium** — Same experience module (questrade-primary); typical prioritization probe
 
 ### Parent: [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) (`35d5ff6e-5890-41c9-a4f2-2d48476b7d3d`)
 
@@ -1061,8 +2198,8 @@
 5. [How would you know whether a financial hub truly deepens the customer relationship?](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) — **medium** — Same experience module (questrade-hub); typical measurement_impact probe
 6. [What is the biggest risk in connecting external accounts?](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) — **medium** — Same experience module (questrade-hub); typical tradeoffs probe
 7. [How would you design a single financial hub across spending, saving and investing?](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) — **medium** — Same experience module (questrade-hub); typical general probe
-8. [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) — **medium** — Same experience module (questrade-hub); typical general probe
-9. [Should the financial hub automatically transfer extra cash into investments?](qa-2bcf440c-7c6e-4914-8c9d-f6577178c3b8) — **medium** — Same experience module (questrade-hub); typical general probe
+8. [If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?](qa-698c2786-3368-4df3-917e-de3a535d352d) — **medium** — Same experience module (questrade-hub); typical general probe
+9. [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) — **medium** — Same experience module (questrade-hub); typical general probe
 
 ### Parent: [How would you define payout success rate?](qa-a91d4a5a-19bf-4cd7-8ade-e773f9e83028) (`a91d4a5a-19bf-4cd7-8ade-e773f9e83028`)
 
@@ -1076,41 +2213,17 @@
 8. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
 9. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
 
-### Parent: [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) (`038f6014-b892-4a64-84d6-e09048b9fea2`)
+### Parent: [How would you handle a major payment incident?](qa-2f00fac1-89ff-470f-992d-cd89980a36a9) (`2f00fac1-89ff-470f-992d-cd89980a36a9`)
 
-1. Phased launch — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Payment feature rollout — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Release safeguards — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Integration readiness — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+1. [It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?](qa-2fb1eeab-7958-4099-9216-e2b88d0de5c5) — **high** — Linked via relatedQuestionIds metadata
+2. [Card payments start declining, but the banking app and core ledger are online. Where do you look?](qa-d8be8368-b755-4baf-8494-3cf9a9f8a69e) — **high** — Linked via relatedQuestionIds metadata
+3. [An account was frozen for suspected fraud. How would you handle the customer experience?](qa-2fb50805-1cb9-43f9-a2ba-54b816d3085d) — **high** — Linked via relatedQuestionIds metadata
+4. [What would you tell customers if a major banking partner was down and you didn't know the restoration time?](qa-ab5294e4-b011-43a7-8cb2-432d84014ec7) — **high** — Linked via relatedQuestionIds metadata
 5. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
 6. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-7. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-8. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-9. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **medium** — Same experience module (questrade-payments); typical challenges_lessons probe
-
-### Parent: [How would you select an experiment's primary metric and guardrails?](qa-6441c9f1-738a-4bd4-b819-92ddf2c1de5b) (`6441c9f1-738a-4bd4-b819-92ddf2c1de5b`)
-
-1. Experiment design — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Primary KPI — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Guardrail — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. A/B testing plan — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-6. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-7. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-8. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-9. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-
-### Parent: [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) (`6bf73e61-9653-44ef-b0b3-03f854f27398`)
-
-1. Deposit balances versus profit — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Cost of funds — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Treasury — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Net interest margin — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
-6. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
-7. [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) — **medium** — Same experience module (questrade-deposits); typical general probe
-8. [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) — **medium** — Same experience module (questrade-deposits); typical general probe
-9. [What if employers aren't supported by an automated payroll switching provider?](qa-d551219e-6540-4760-a132-b27c92c706db) — **medium** — Same experience module (questrade-deposits); typical general probe
+7. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+8. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+9. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
 
 ### Parent: [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) (`e32103f8-3c33-4d7f-99ee-4fa46e8049ed`)
 
@@ -1122,31 +2235,19 @@
 6. [What is the biggest risk in connecting external accounts?](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) — **medium** — Same experience module (questrade-hub); typical tradeoffs probe
 7. [How would you define 'share of wallet' for everyday banking?](qa-a60003e2-1f39-431f-8386-531fc24d711c) — **medium** — Same experience module (questrade-hub); typical general probe
 8. [How would you design a single financial hub across spending, saving and investing?](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) — **medium** — Same experience module (questrade-hub); typical general probe
-9. [Should the financial hub automatically transfer extra cash into investments?](qa-2bcf440c-7c6e-4914-8c9d-f6577178c3b8) — **medium** — Same experience module (questrade-hub); typical general probe
+9. [If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?](qa-698c2786-3368-4df3-917e-de3a535d352d) — **medium** — Same experience module (questrade-hub); typical general probe
 
-### Parent: [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) (`1c3ffb21-7fdd-46b3-832a-57c13b409a34`)
+### Parent: [Tell me about a product decision you got wrong.](qa-c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f) (`c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f`)
 
-1. Saying no — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Scope cut — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Difficult stakeholder — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Pushback example — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
-6. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
-7. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
-8. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
-9. [How do you work with designers and customer researchers?](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) — **medium** — Same experience module (leadership-general); typical problem_discovery probe
-
-### Parent: [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) (`83d6cb34-59ce-42d0-88ca-dfb46a91bfae`)
-
-1. Controls launch checklist — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Transfer launch readiness — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Risk and AML — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Banking compliance — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
-6. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
-7. [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) — **medium** — Same experience module (questrade-deposits); typical general probe
-8. [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) — **medium** — Same experience module (questrade-deposits); typical general probe
-9. [What if employers aren't supported by an automated payroll switching provider?](qa-d551219e-6540-4760-a132-b27c92c706db) — **medium** — Same experience module (questrade-deposits); typical general probe
+1. Tell me about a mistake you made as a product manager. — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Describe a product decision you regret. — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. When did you realize your product strategy was wrong? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Tell me about a time you changed your mind. — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. Describe a feature that performed well but didn't create business value. — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+6. What was a product failure you learned from? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+7. [Did Quests reach six million active credit cardholders?](qa-92a7cf55-18dc-4d94-93d7-db3303028b9b) — **high** — Linked via relatedQuestionIds metadata
+8. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **high** — Linked via relatedQuestionIds metadata
+9. [You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?](qa-a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e) — **high** — Linked via relatedQuestionIds metadata
 
 ### Parent: [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) (`27d2a524-6a0d-4a3d-b102-c531d65f368f`)
 
@@ -1160,53 +2261,17 @@
 8. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
 9. [What happens if a payout API times out after the request was accepted?](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) — **medium** — Same experience module (rbc-cashback); typical technical_implementation probe
 
-### Parent: [What does 'P&L ownership' at HBC actually mean?](qa-9b0f399e-6750-463a-9570-805c82449eb8) (`9b0f399e-6750-463a-9570-805c82449eb8`)
+### Parent: [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) (`f9022f65-91fb-4094-ae8f-b4dc87edcca7`)
 
-1. P&L detail — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Revenue responsibility — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. HBC financial ownership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. What did you control? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about a customer experience you improved at HBC.](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
-6. [Tell me about improving the HBC Mastercard application journey.](qa-140caed9-55a1-48ac-9190-5d2256afd262) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
-7. [How did you identify the application problem?](qa-04f9a779-8058-4470-8817-beccdcbecf1e) — **medium** — Same experience module (hbc-mastercard-app); typical problem_discovery probe
-8. [Why save-and-resume, and how did you split ownership with Neo?](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) — **medium** — Same experience module (hbc-mastercard-app); typical solution_alternatives probe
-9. [What did you personally decide on the HBC Mastercard application journey?](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) — **high** — Same experience module (hbc-mastercard-app); typical personal_ownership probe
-
-### Parent: [What exactly did you change in the HBC application experience?](qa-e546440d-67eb-4266-8466-0827ccd35e42) (`e546440d-67eb-4266-8466-0827ccd35e42`)
-
-1. Funnel changes — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Which UX screens — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. 15% completion cause — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. High abandonment steps — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about a customer experience you improved at HBC.](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
-6. [Tell me about improving the HBC Mastercard application journey.](qa-140caed9-55a1-48ac-9190-5d2256afd262) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
-7. [How did you identify the application problem?](qa-04f9a779-8058-4470-8817-beccdcbecf1e) — **medium** — Same experience module (hbc-mastercard-app); typical problem_discovery probe
-8. [Why save-and-resume, and how did you split ownership with Neo?](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) — **medium** — Same experience module (hbc-mastercard-app); typical solution_alternatives probe
-9. [What did you personally decide on the HBC Mastercard application journey?](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) — **high** — Same experience module (hbc-mastercard-app); typical personal_ownership probe
-
-### Parent: [What exactly did you own versus RBC's payments infrastructure team?](qa-f290b115-770e-4448-82ac-52f4334f34de) (`f290b115-770e-4448-82ac-52f4334f34de`)
-
-1. Your ownership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Did you build the rails? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Payments team versus product team — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Who did what? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
-6. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
-7. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
-8. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
-9. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
-
-### Parent: [What happens if a payout API times out after the request was accepted?](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) (`fb3c9a13-b37d-45df-b095-e14f8e84bed2`)
-
-1. Timeout after acceptance — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Duplicate payout — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Idempotency — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Unknown payment state — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
-6. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
-7. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
-8. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
-9. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+1. What was your key MVP trade-off — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. How did you challenge the roadmap — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What did you say no to? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. [What did you cut from the membership MVP, and how did you defend those trade-offs?](qa-31d8ded4-7dc2-4d0b-ad30-009b1f92748b) — **high** — Linked via relatedQuestionIds metadata
+5. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+6. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+7. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+8. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+9. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
 
 ### Parent: [What if an experiment looks positive after two days? Can we ship early?](qa-f95b4bf7-5896-494b-810c-bb4d06393365) (`f95b4bf7-5896-494b-810c-bb4d06393365`)
 
@@ -1229,8 +2294,8 @@
 5. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
 6. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
 7. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
-8. [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) — **medium** — Same experience module (questrade-deposits); typical general probe
-9. [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) — **medium** — Same experience module (questrade-deposits); typical general probe
+8. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+9. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
 
 ### Parent: [What if leadership wants to ship five banking features at once?](qa-1d491196-487e-4282-9a80-15e857190b75) (`1d491196-487e-4282-9a80-15e857190b75`)
 
@@ -1253,56 +2318,8 @@
 5. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
 6. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
 7. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
-8. [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) — **medium** — Same experience module (questrade-deposits); typical general probe
-9. [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) — **medium** — Same experience module (questrade-deposits); typical general probe
-
-### Parent: [What if Risk wants a step that cuts conversion by 20%?](qa-9e7049a3-2fa7-4388-931c-875a7cc4d416) (`9e7049a3-2fa7-4388-931c-875a7cc4d416`)
-
-1. Risk versus conversion — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Compliance friction — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Mandatory KYC step — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Security trade-off — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
-6. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
-7. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
-8. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
-9. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
-
-### Parent: [What if the ledger balance and customer-facing balance don't match?](qa-0c8b1a1c-7290-4b60-8c88-8d978935beae) (`0c8b1a1c-7290-4b60-8c88-8d978935beae`)
-
-1. Balance mismatch — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Ledger source of truth — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Banking incident — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Incorrect available balance — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
-6. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-7. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-8. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-9. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-
-### Parent: [What if your PM peers own Cards and Money Movement, but your metric depends on both?](qa-c4c44a09-0799-471a-97cb-05e06e8bf8a8) (`c4c44a09-0799-471a-97cb-05e06e8bf8a8`)
-
-1. Shared ownership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Cross-domain dependencies — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Competing roadmaps — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Banking operating model — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-6. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-7. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-8. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-9. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-
-### Parent: [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) (`21cb8214-854d-48a1-a86d-c1d8fd37bf89`)
-
-1. Reconciliation meaning — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Settlement mismatches — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Finance operations — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Reconcile payouts — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
-6. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-7. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-8. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-9. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **medium** — Same experience module (questrade-payments); typical challenges_lessons probe
+8. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+9. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
 
 ### Parent: [What is your biggest weakness as a product leader?](qa-39a0bcf9-7d01-4cde-8da4-4ff893da44b3) (`39a0bcf9-7d01-4cde-8da4-4ff893da44b3`)
 
@@ -1327,6 +2344,18 @@
 7. [How did you identify the application problem?](qa-04f9a779-8058-4470-8817-beccdcbecf1e) — **medium** — Same experience module (hbc-mastercard-app); typical problem_discovery probe
 8. [Why save-and-resume, and how did you split ownership with Neo?](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) — **medium** — Same experience module (hbc-mastercard-app); typical solution_alternatives probe
 9. [What did you personally decide on the HBC Mastercard application journey?](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) — **high** — Same experience module (hbc-mastercard-app); typical personal_ownership probe
+
+### Parent: [What would you do differently on the Avion cashback withdrawal launch?](qa-14ad93b1-527c-49e9-b160-e9b22ca0f888) (`14ad93b1-527c-49e9-b160-e9b22ca0f888`)
+
+1. What did you learn — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. What was missing at launch — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What would you improve in version two? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. [If payout failures doubled after launch, how would you investigate the first week?](qa-03065da4-6d80-432b-bca7-c034fdf0ff52) — **high** — Linked via relatedQuestionIds metadata
+5. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+6. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+7. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+8. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+9. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
 
 ### Parent: [What would you do if a new AI feature gave customers incorrect financial advice?](qa-e4952adf-c7af-45fb-955e-169fc91e2f7d) (`e4952adf-c7af-45fb-955e-169fc91e2f7d`)
 
@@ -1385,8 +2414,20 @@
 5. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
 6. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
 7. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
-8. [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) — **medium** — Same experience module (questrade-deposits); typical general probe
-9. [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) — **medium** — Same experience module (questrade-deposits); typical general probe
+8. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+9. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) (`c226bb45-beb6-4162-9628-f16d6660b887`)
+
+1. What alternatives did you consider — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Why reuse a business payment service — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What trade-off did you accept? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. [Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product?](qa-cd39ab59-8574-443c-b78e-a9dfa3010185) — **high** — Linked via relatedQuestionIds metadata
+5. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+6. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+7. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+8. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+9. [What happens if a payout API times out after the request was accepted?](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) — **medium** — Same experience module (rbc-cashback); typical technical_implementation probe
 
 ### Parent: [Why is spend per active cardholder a risky metric?](qa-3c438a5c-c720-4277-a72a-fdcdfd5e156d) (`3c438a5c-c720-4277-a72a-fdcdfd5e156d`)
 
@@ -1400,6 +2441,18 @@
 8. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
 9. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
 
+### Parent: [Why mention 500K+ cardholders if you didn't control the credit book?](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) (`9dbe28fe-5bde-46e2-86a2-2a9381643704`)
+
+1. Card portfolio ownership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Issuer controls — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. 500k scope — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Bank versus retailer P&L — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [Tell me about the financial impact of your work at HBC.](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) — **medium** — Same experience module (hbc-portfolio); typical main_story probe
+6. [Did you actually run randomized holdouts on the HBC Mastercard programme?](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
+7. [How do you know your incentive program generated incremental spending?](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
+8. [Could the HBC incentives have increased spending while destroying profitability?](qa-cee35d92-74ae-4d9b-a713-3594c8276e17) — **medium** — Same experience module (hbc-portfolio); typical general probe
+9. [What did you control in the HBC card portfolio, and what was controlled by Neo?](qa-4333a9f3-b07d-4d8e-8676-6a7ca9012116) — **medium** — Same experience module (hbc-portfolio); typical general probe
+
 ### Parent: [Why use Interac e-Transfer rather than EFT for cashback withdrawals?](qa-3c199d05-67ba-4f4c-aa98-d7f06a2cc3c6) (`3c199d05-67ba-4f4c-aa98-d7f06a2cc3c6`)
 
 1. Rail selection — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
@@ -1411,18 +2464,6 @@
 7. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
 8. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
 9. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
-
-### Parent: [Why would someone switch their primary bank if their current bank works fine?](qa-dd28e2fe-24d1-4012-98d0-e951276439c6) (`dd28e2fe-24d1-4012-98d0-e951276439c6`)
-
-1. Why change banks? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Incumbent bank good enough — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Switching value proposition — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Why us instead of Big Five? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
-6. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
-7. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
-8. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
-9. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
 
 ### Parent: [Would you delay launch over a 0.5% payment failure rate?](qa-17154883-f321-4b28-bee5-6fa80de879db) (`17154883-f321-4b28-bee5-6fa80de879db`)
 
@@ -1445,8 +2486,8 @@
 5. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
 6. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
 7. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
-8. [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) — **medium** — Same experience module (questrade-deposits); typical general probe
-9. [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) — **medium** — Same experience module (questrade-deposits); typical general probe
+8. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+9. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
 
 ### Parent: [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) (`fce9554d-a36d-4085-874f-e842afda538c`)
 
@@ -1460,18 +2501,6 @@
 8. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
 9. [How would you prioritize AI features against core banking reliability?](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) — **medium** — Same experience module (questrade-primary); typical prioritization probe
 
-### Parent: [You secured $5.2M at Arc'teryx. Was the programme launched?](qa-b1eac049-c167-4977-a7bd-55e98d7e3b0b) (`b1eac049-c167-4977-a7bd-55e98d7e3b0b`)
-
-1. Arc membership launched? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Funding versus shipment — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. 0-to-1 claim — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Capital approval — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
-6. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
-7. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-8. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-9. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
-
 ### Parent: [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) (`8150bb81-67d5-48dc-82e0-b8bf223984f0`)
 
 1. Challenge your proposal — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
@@ -1483,28 +2512,6 @@
 7. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
 8. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
 9. [How would you prioritize AI features against core banking reliability?](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) — **medium** — Same experience module (questrade-primary); typical prioritization probe
-
-### Parent: [Did you actually run randomized holdouts on the HBC Mastercard programme?](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) (`af5bd3a4-1b6f-4f1c-a319-15475be31b5d`)
-
-1. HBC holdout — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Controlled experiment evidence — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. RCT — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Did you A/B test incentives? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about the financial impact of your work at HBC.](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) — **medium** — Same experience module (hbc-portfolio); typical main_story probe
-6. [Why mention 500K+ cardholders if you didn't control the credit book?](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) — **high** — Same experience module (hbc-portfolio); typical personal_ownership probe
-7. [How do you know your incentive program generated incremental spending?](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
-8. [Why did HBC modeled LTV rise 10%, and how certain are you?](qa-3ba24689-dd1a-4428-b018-743f0a8c61af) — **medium** — Same experience module (hbc-portfolio); typical general probe
-
-### Parent: [How are you using AI in your product management work?](qa-7c079cf5-b153-435d-a4b3-e83ad3139a2b) (`7c079cf5-b153-435d-a4b3-e83ad3139a2b`)
-
-1. How are you using AI agents rather than just chatbots? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. How do you measure whether AI is actually making you more effective? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Why use Claude, ChatGPT, Grok and Cursor? Do you need all of them? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
-5. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
-6. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
-7. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
-8. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
 
 ### Parent: [How did you identify the application problem?](qa-04f9a779-8058-4470-8817-beccdcbecf1e) (`04f9a779-8058-4470-8817-beccdcbecf1e`)
 
@@ -1534,43 +2541,43 @@
 2. What were the leading indicators — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 3. How did you measure pre-launch success? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 4. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
-5. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
-6. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-7. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-8. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
+5. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+6. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+7. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+8. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
 
-### Parent: [How did you measure success for the Avion cashback withdrawal launch?](qa-11375f03-31fa-45da-8557-488a8cc63beb) (`11375f03-31fa-45da-8557-488a8cc63beb`)
+### Parent: [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) (`cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc`)
 
-1. What were the KPIs — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. What do the 5M settlement events mean — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. How do you know the launch worked? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
-5. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
-6. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
-7. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
-8. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+1. [How would you explain a deposit hold to a customer who needs the money tomorrow?](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **high** — Linked via relatedQuestionIds metadata
+3. [How would you explain CDIC deposit protection versus CIPF investment protection?](qa-dc30e851-19e2-4bc1-8397-e4ab784ef939) — **high** — Linked via relatedQuestionIds metadata
+4. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+5. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+6. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+7. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+8. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
 
-### Parent: [How did you measure the 15% improvement?](qa-3218b561-2159-442e-a3aa-074756f877c0) (`3218b561-2159-442e-a3aa-074756f877c0`)
+### Parent: [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) (`4068ab67-0613-40ae-bb08-f810651d27a0`)
 
-1. Was that 15 points or 15 percent — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. What was the experiment — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. What did application completion mean? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. [Tell me about a customer experience you improved at HBC.](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
-5. [Tell me about improving the HBC Mastercard application journey.](qa-140caed9-55a1-48ac-9190-5d2256afd262) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
-6. [How did you identify the application problem?](qa-04f9a779-8058-4470-8817-beccdcbecf1e) — **medium** — Same experience module (hbc-mastercard-app); typical problem_discovery probe
-7. [Why save-and-resume, and how did you split ownership with Neo?](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) — **medium** — Same experience module (hbc-mastercard-app); typical solution_alternatives probe
-8. [What did you personally decide on the HBC Mastercard application journey?](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) — **high** — Same experience module (hbc-mastercard-app); typical personal_ownership probe
+1. How do you improve straight-through processing and exception resolution? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. [When should an automated retry be prohibited even if it would reduce failures?](qa-d17bc916-0925-4b2f-9904-092499e61920) — **high** — Linked via relatedQuestionIds metadata
+3. [How would you decide when to compensate a customer after a bank payment error?](qa-7fefebb7-44eb-4fa3-80f8-14e6900cba0b) — **high** — Linked via relatedQuestionIds metadata
+4. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+5. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+7. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+8. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
 
-### Parent: [How exactly did you measure the 40% conversion lift?](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) (`8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4`)
+### Parent: [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) (`06e233ae-5d45-42d3-b560-84baf56a8948`)
 
-1. Was 40% relative — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Did the bank provide conversion data — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. How large was the experiment? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. [Tell me about a data-driven product decision at Aeroplan.](qa-c88f487e-e0d1-44c0-ab54-60f1e19fe79d) — **medium** — Same experience module (aeroplan-cobrand); typical main_story probe
-5. [How did you identify the problem?](qa-75fd6429-dc9a-4cd3-b996-ce48af985a7b) — **medium** — Same experience module (aeroplan-cobrand); typical problem_discovery probe
-6. [Why a clearer offer summary instead of a shorter page or bigger apply button?](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) — **medium** — Same experience module (aeroplan-cobrand); typical solution_alternatives probe
-7. [What did you personally decide on the Aeroplan card offer test?](qa-2e58d329-4b40-4142-bf45-67504474f730) — **high** — Same experience module (aeroplan-cobrand); typical personal_ownership probe
-8. [What would you do differently after the Aeroplan offer-summary test?](qa-b810ad2f-f519-4a36-9e96-246c398f9d70) — **medium** — Same experience module (aeroplan-cobrand); typical what_differently probe
+1. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **high** — Linked via relatedQuestionIds metadata
+2. [Should a bank help customers automate savings when they have unpredictable income?](qa-4f6209aa-a000-442c-bbd6-96723a266b9a) — **high** — Linked via relatedQuestionIds metadata
+3. [What would the MVP of a payroll-switching feature actually contain?](qa-8ba596cd-8c2c-456e-bf5e-0681333ab61a) — **high** — Linked via relatedQuestionIds metadata
+4. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+5. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
+6. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
+7. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+8. [How would you explain a deposit hold to a customer who needs the money tomorrow?](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) — **medium** — Same experience module (questrade-deposits); typical general probe
 
 ### Parent: [Tell me about a customer experience you improved at HBC.](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) (`5e92bdca-a458-4e00-9e4f-e5034d641a9b`)
 
@@ -1610,11 +2617,11 @@
 1. Tell me about a zero-to-one platform — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 2. How did you shape the Arc’teryx membership strategy — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 3. What did you own? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
-5. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-6. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-7. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
-8. [How did you secure $5.2 million in capital funding at Arc'teryx?](qa-439ccf45-857e-431f-ab0e-1312d6998f02) — **medium** — Same experience module (arcteryx-membership); typical technical_implementation probe
+4. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+5. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+6. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+7. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+8. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
 
 ### Parent: [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) (`fef2b30f-d115-48fe-be83-cf89c80548de`)
 
@@ -1649,16 +2656,16 @@
 7. [Why save-and-resume, and how did you split ownership with Neo?](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) — **medium** — Same experience module (hbc-mastercard-app); typical solution_alternatives probe
 8. [How did you measure the 15% improvement?](qa-3218b561-2159-442e-a3aa-074756f877c0) — **medium** — Same experience module (hbc-mastercard-app); typical measurement_impact probe
 
-### Parent: [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) (`f9022f65-91fb-4094-ae8f-b4dc87edcca7`)
+### Parent: [What is MCP, and why is it different from putting a chatbot inside a financial app?](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) (`7547195c-f21b-4d86-9d4f-c7dd07f73109`)
 
-1. What was your key MVP trade-off — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. How did you challenge the roadmap — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. What did you say no to? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
-5. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
-6. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-7. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-8. [How did you secure $5.2 million in capital funding at Arc'teryx?](qa-439ccf45-857e-431f-ab0e-1312d6998f02) — **medium** — Same experience module (arcteryx-membership); typical technical_implementation probe
+1. What is MCP? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. MCP versus an in-app chatbot? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. [If MCP standardizes tools, what competitive advantage can Questrade still own?](qa-4fcf44b0-5a66-46be-a57b-0fca89af2d10) — **high** — Linked via relatedQuestionIds metadata
+4. [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
+5. [Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
+6. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+7. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+8. [How would you protect customers from malicious or unauthorized AI-agent actions?](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) — **medium** — Same experience module (questrade-mcp); typical tradeoffs probe
 
 ### Parent: [What would you do differently after the Aeroplan offer-summary test?](qa-b810ad2f-f519-4a36-9e96-246c398f9d70) (`b810ad2f-f519-4a36-9e96-246c398f9d70`)
 
@@ -1670,17 +2677,6 @@
 6. [Why a clearer offer summary instead of a shorter page or bigger apply button?](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) — **medium** — Same experience module (aeroplan-cobrand); typical solution_alternatives probe
 7. [What did you personally decide on the Aeroplan card offer test?](qa-2e58d329-4b40-4142-bf45-67504474f730) — **high** — Same experience module (aeroplan-cobrand); typical personal_ownership probe
 8. [How exactly did you measure the 40% conversion lift?](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) — **medium** — Same experience module (aeroplan-cobrand); typical measurement_impact probe
-
-### Parent: [What would you do differently on the Avion cashback withdrawal launch?](qa-14ad93b1-527c-49e9-b160-e9b22ca0f888) (`14ad93b1-527c-49e9-b160-e9b22ca0f888`)
-
-1. What did you learn — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. What was missing at launch — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. What would you improve in version two? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
-5. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
-6. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
-7. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
-8. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
 
 ### Parent: [What would you do differently on the HBC application experiment?](qa-092b08d1-51ec-4761-a05d-2ccd56724ad5) (`092b08d1-51ec-4761-a05d-2ccd56724ad5`)
 
@@ -1699,10 +2695,10 @@
 2. What would you change in the MVP process — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 3. How would you de-risk the investment earlier? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 4. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
-5. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
-6. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-7. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-8. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
+5. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+6. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+7. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+8. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
 
 ### Parent: [Why a clearer offer summary instead of a shorter page or bigger apply button?](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) (`4fa0697a-ebf8-4c97-a107-946de9e5bf1c`)
 
@@ -1715,17 +2711,6 @@
 7. [How exactly did you measure the 40% conversion lift?](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) — **medium** — Same experience module (aeroplan-cobrand); typical measurement_impact probe
 8. [What would you do differently after the Aeroplan offer-summary test?](qa-b810ad2f-f519-4a36-9e96-246c398f9d70) — **medium** — Same experience module (aeroplan-cobrand); typical what_differently probe
 
-### Parent: [Why did HBC modeled LTV rise 10%, and how certain are you?](qa-3ba24689-dd1a-4428-b018-743f0a8c61af) (`3ba24689-dd1a-4428-b018-743f0a8c61af`)
-
-1. LTV increase provenance — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. LTV sensitivity — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Explain modeled lift — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. HBC economics — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about the financial impact of your work at HBC.](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) — **medium** — Same experience module (hbc-portfolio); typical main_story probe
-6. [Why mention 500K+ cardholders if you didn't control the credit book?](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) — **high** — Same experience module (hbc-portfolio); typical personal_ownership probe
-7. [Did you actually run randomized holdouts on the HBC Mastercard programme?](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
-8. [How do you know your incentive program generated incremental spending?](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
-
 ### Parent: [Why did you prioritize it over other Avion improvements?](qa-3bcaff0a-31cb-447a-b037-889edb579c5d) (`3bcaff0a-31cb-447a-b037-889edb579c5d`)
 
 1. Why now — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
@@ -1737,38 +2722,16 @@
 7. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
 8. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
 
-### Parent: [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) (`c226bb45-beb6-4162-9628-f16d6660b887`)
-
-1. What alternatives did you consider — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Why reuse a business payment service — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. What trade-off did you accept? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
-5. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
-6. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
-7. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
-8. [What happens if a payout API times out after the request was accepted?](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) — **medium** — Same experience module (rbc-cashback); typical technical_implementation probe
-
-### Parent: [Why mention 500K+ cardholders if you didn't control the credit book?](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) (`9dbe28fe-5bde-46e2-86a2-2a9381643704`)
-
-1. Card portfolio ownership — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Issuer controls — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. 500k scope — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Bank versus retailer P&L — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about the financial impact of your work at HBC.](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) — **medium** — Same experience module (hbc-portfolio); typical main_story probe
-6. [Did you actually run randomized holdouts on the HBC Mastercard programme?](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
-7. [How do you know your incentive program generated incremental spending?](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
-8. [Why did HBC modeled LTV rise 10%, and how certain are you?](qa-3ba24689-dd1a-4428-b018-743f0a8c61af) — **medium** — Same experience module (hbc-portfolio); typical general probe
-
 ### Parent: [Why prioritize a membership platform rather than improving service pages?](qa-7d32e566-7779-4fe8-bca5-f9db5c8180d1) (`7d32e566-7779-4fe8-bca5-f9db5c8180d1`)
 
 1. What business problem did it solve — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 2. Why invest $5.2M — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 3. Why was this worth doing? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 4. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
-5. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
-6. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-7. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-8. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
+5. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+6. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+7. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+8. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
 
 ### Parent: [Why prioritize application continuation instead of more acquisition?](qa-d9c4b9aa-5e54-44a8-b246-c99a3a380239) (`d9c4b9aa-5e54-44a8-b246-c99a3a380239`)
 
@@ -1798,10 +2761,10 @@
 2. What alternatives did you consider — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 3. Why not launch globally? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 4. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
-5. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
-6. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-7. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
-8. [How did you secure $5.2 million in capital funding at Arc'teryx?](qa-439ccf45-857e-431f-ab0e-1312d6998f02) — **medium** — Same experience module (arcteryx-membership); typical technical_implementation probe
+5. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+6. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+7. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+8. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
 
 ### Parent: [Why was it worth prioritizing?](qa-f2dabb52-3af6-43eb-ab59-c5934bc3a036) (`f2dabb52-3af6-43eb-ab59-c5934bc3a036`)
 
@@ -1825,15 +2788,85 @@
 7. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
 8. [How do you know an increase in DAU isn't just more balance checking?](qa-f7e403b2-26b8-4da4-83c1-ea58c2e3371b) — **medium** — Same experience module (questrade-metrics); typical attribution probe
 
-### Parent: [What is MCP, and why is it different from putting a chatbot inside a financial app?](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) (`7547195c-f21b-4d86-9d4f-c7dd07f73109`)
+### Parent: [How did you drive credit card acquisition growth at Aeroplan?](qa-e8d13d9e-a98d-4dbc-a596-a178557963b0) (`e8d13d9e-a98d-4dbc-a596-a178557963b0`)
 
-1. What is MCP? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. MCP versus an in-app chatbot? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+1. [How did you align TD, CIBC and Amex when the banks had different priorities?](qa-233f8d5d-fa5a-45a7-a301-39c4e3743edb) — **high** — Linked via relatedQuestionIds metadata
+2. [How did you prevent one card partner's offer from undermining another's?](qa-bb903f25-6886-4106-ab80-1fa344cd8a05) — **high** — Linked via relatedQuestionIds metadata
+3. [Tell me about a data-driven product decision at Aeroplan.](qa-c88f487e-e0d1-44c0-ab54-60f1e19fe79d) — **medium** — Same experience module (aeroplan-cobrand); typical main_story probe
+4. [How did you identify the problem?](qa-75fd6429-dc9a-4cd3-b996-ce48af985a7b) — **medium** — Same experience module (aeroplan-cobrand); typical problem_discovery probe
+5. [Why a clearer offer summary instead of a shorter page or bigger apply button?](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) — **medium** — Same experience module (aeroplan-cobrand); typical solution_alternatives probe
+6. [What did you personally decide on the Aeroplan card offer test?](qa-2e58d329-4b40-4142-bf45-67504474f730) — **high** — Same experience module (aeroplan-cobrand); typical personal_ownership probe
+7. [How exactly did you measure the 40% conversion lift?](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) — **medium** — Same experience module (aeroplan-cobrand); typical measurement_impact probe
+
+### Parent: [How would you convince existing Questrade investors to make Questbank their primary bank?](qa-6844c2e7-03c5-434e-b64c-ca9febec68dd) (`6844c2e7-03c5-434e-b64c-ca9febec68dd`)
+
+1. [What if customers trust Questrade for investments but refuse to deposit their salary?](qa-f21a166b-7a0a-41a9-a919-44781cf782a2) — **high** — Linked via relatedQuestionIds metadata
+2. [What if a customer fails identity verification while trying to open a Questbank account?](qa-cdc38655-878f-4b7f-a49d-109f3b69125e) — **high** — Linked via relatedQuestionIds metadata
+3. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
+4. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
+5. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
+6. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+7. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+
+### Parent: [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) (`a40816ee-67e5-4b52-9228-33132bb5ffb1`)
+
+1. [How should a customer dispute an unfamiliar debit card transaction?](qa-0360f445-9e66-472e-932f-e06050ec3a3e) — **high** — Linked via relatedQuestionIds metadata
+2. [A customer says they sent money to the wrong recipient. What can your product realistically do?](qa-837e7efc-def5-4758-8ca1-627d006ec1ff) — **high** — Linked via relatedQuestionIds metadata
+3. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+4. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+5. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+6. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+7. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [How would you protect customers from malicious or unauthorized AI-agent actions?](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) (`1429b53c-f5fd-4819-bb3b-c116ce1ed889`)
+
+1. How would you prevent prompt injection and unauthorized transfers? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. [What happens if a customer revokes an AI agent's access while it has a request in progress?](qa-2f280387-ca4c-4b94-abdf-a644c1868a4a) — **high** — Linked via relatedQuestionIds metadata
 3. [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
 4. [Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
-5. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
-6. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+5. [What is MCP, and why is it different from putting a chatbot inside a financial app?](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) — **medium** — Same experience module (questrade-mcp); typical technical_implementation probe
+6. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+7. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+
+### Parent: [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) (`df23d3a1-181c-4c9b-9460-42d635d2352d`)
+
+1. How do you evaluate financial AI before launch? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. [What would convince you to stop an AI financial-assistant pilot?](qa-bad7b926-f617-44c4-ab13-ddc78b1e4378) — **high** — Linked via relatedQuestionIds metadata
+3. [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
+4. [Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
+5. [What is MCP, and why is it different from putting a chatbot inside a financial app?](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) — **medium** — Same experience module (questrade-mcp); typical technical_implementation probe
+6. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
 7. [How would you protect customers from malicious or unauthorized AI-agent actions?](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) — **medium** — Same experience module (questrade-mcp); typical tradeoffs probe
+
+### Parent: [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) (`976c189b-f59f-409f-92ea-2648cc5b2f5a`)
+
+1. [Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship?](qa-a27a2489-4944-4faa-b130-5a1a4ab088e9) — **high** — Linked via relatedQuestionIds metadata
+2. [How long would you wait before deciding whether a payroll-switching experiment actually worked?](qa-b995b443-a009-4b4c-b03b-81f53bd6cc67) — **high** — Linked via relatedQuestionIds metadata
+3. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+4. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
+5. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
+6. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+7. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) (`244e239c-2f88-4b6e-968f-ef8ce65daa70`)
+
+1. [What happened if an Avion member didn't have Interac Autodeposit enabled?](qa-5c05a272-9334-44b8-bddd-fdbd4a50f6d3) — **high** — Linked via relatedQuestionIds metadata
+2. [Why did you use the member's email address, and what if that address changed?](qa-c22bc35e-41a0-4bc7-9b53-6d19da3ecfef) — **high** — Linked via relatedQuestionIds metadata
+3. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+4. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+5. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+6. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+7. [What happens if a payout API times out after the request was accepted?](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) — **medium** — Same experience module (rbc-cashback); typical technical_implementation probe
+
+### Parent: [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) (`695ace4a-7c53-415e-9eb2-5f885d680c2b`)
+
+1. What owns the source of truth for account balances and payment statuses? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. [What would the customer see while a cashback payout is pending or being investigated?](qa-bfaa86a1-2c06-4c4f-880a-bf2718e8a330) — **high** — Linked via relatedQuestionIds metadata
+3. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+4. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+5. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+7. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **medium** — Same experience module (questrade-payments); typical challenges_lessons probe
 
 ### Parent: [Why does joining Questrade during its expansion into banking appeal to you?](qa-0accbf98-6b70-462f-9631-d279d5fe3ae5) (`0accbf98-6b70-462f-9631-d279d5fe3ae5`)
 
@@ -1841,9 +2874,137 @@
 2. What excites you about Questbank? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 3. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
 4. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+5. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+6. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+7. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) (`3c961ee8-43cb-4ec8-850f-24e822917f47`)
+
+1. Why build MCP integrations rather than a first-party AI chatbot? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. [When would you choose deterministic software or rules instead of an AI model?](qa-be3e3314-68c5-4f6a-a3d9-7f0b9147e17b) — **high** — Linked via relatedQuestionIds metadata
+3. [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
+4. [What is MCP, and why is it different from putting a chatbot inside a financial app?](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) — **medium** — Same experience module (questrade-mcp); typical technical_implementation probe
+5. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+6. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+7. [How would you protect customers from malicious or unauthorized AI-agent actions?](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) — **medium** — Same experience module (questrade-mcp); typical tradeoffs probe
+
+### Parent: [Would you extend Questrade MCP beyond brokerage into everyday banking?](qa-233b0497-5bff-471f-9617-6abdeca51522) (`233b0497-5bff-471f-9617-6abdeca51522`)
+
+1. Would you build a Questbank MCP server? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. [Would you let an external AI agent read transaction descriptions or merchant details?](qa-7883e373-e58d-460a-bef5-2b89d237c66e) — **high** — Linked via relatedQuestionIds metadata
+3. [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
+4. [Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
+5. [What is MCP, and why is it different from putting a chatbot inside a financial app?](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) — **medium** — Same experience module (questrade-mcp); typical technical_implementation probe
+6. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+7. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+
+### Parent: [An account was frozen for suspected fraud. How would you handle the customer experience?](qa-2fb50805-1cb9-43f9-a2ba-54b816d3085d) (`2fb50805-1cb9-43f9-a2ba-54b816d3085d`)
+
+1. [How would you handle a major payment incident?](qa-2f00fac1-89ff-470f-992d-cd89980a36a9) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+4. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+5. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) (`e3acf896-6e83-4597-aeb6-088aba201987`)
+
+1. [Why move into everyday banking from rewards and loyalty?](qa-c45ce30e-6de2-4164-93bf-8b67902caae0) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+3. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+4. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
 5. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
 6. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-7. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [How did you align TD, CIBC and Amex when the banks had different priorities?](qa-233f8d5d-fa5a-45a7-a301-39c4e3743edb) (`233f8d5d-fa5a-45a7-a301-39c4e3743edb`)
+
+1. [How did you drive credit card acquisition growth at Aeroplan?](qa-e8d13d9e-a98d-4dbc-a596-a178557963b0) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a data-driven product decision at Aeroplan.](qa-c88f487e-e0d1-44c0-ab54-60f1e19fe79d) — **medium** — Same experience module (aeroplan-cobrand); typical main_story probe
+3. [How did you identify the problem?](qa-75fd6429-dc9a-4cd3-b996-ce48af985a7b) — **medium** — Same experience module (aeroplan-cobrand); typical problem_discovery probe
+4. [Why a clearer offer summary instead of a shorter page or bigger apply button?](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) — **medium** — Same experience module (aeroplan-cobrand); typical solution_alternatives probe
+5. [What did you personally decide on the Aeroplan card offer test?](qa-2e58d329-4b40-4142-bf45-67504474f730) — **high** — Same experience module (aeroplan-cobrand); typical personal_ownership probe
+6. [How exactly did you measure the 40% conversion lift?](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) — **medium** — Same experience module (aeroplan-cobrand); typical measurement_impact probe
+
+### Parent: [How did you know your semantic-search approach was actually better than keyword matching?](qa-c8d4a611-d174-48b1-911c-e2db8f3acc3e) (`c8d4a611-d174-48b1-911c-e2db8f3acc3e`)
+
+1. [How are you using AI in your product management work?](qa-7c079cf5-b153-435d-a4b3-e83ad3139a2b) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+3. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+4. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+5. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+6. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [How did you prevent one card partner's offer from undermining another's?](qa-bb903f25-6886-4106-ab80-1fa344cd8a05) (`bb903f25-6886-4106-ab80-1fa344cd8a05`)
+
+1. [How did you drive credit card acquisition growth at Aeroplan?](qa-e8d13d9e-a98d-4dbc-a596-a178557963b0) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a data-driven product decision at Aeroplan.](qa-c88f487e-e0d1-44c0-ab54-60f1e19fe79d) — **medium** — Same experience module (aeroplan-cobrand); typical main_story probe
+3. [How did you identify the problem?](qa-75fd6429-dc9a-4cd3-b996-ce48af985a7b) — **medium** — Same experience module (aeroplan-cobrand); typical problem_discovery probe
+4. [Why a clearer offer summary instead of a shorter page or bigger apply button?](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) — **medium** — Same experience module (aeroplan-cobrand); typical solution_alternatives probe
+5. [What did you personally decide on the Aeroplan card offer test?](qa-2e58d329-4b40-4142-bf45-67504474f730) — **high** — Same experience module (aeroplan-cobrand); typical personal_ownership probe
+6. [How exactly did you measure the 40% conversion lift?](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) — **medium** — Same experience module (aeroplan-cobrand); typical measurement_impact probe
+
+### Parent: [How did you secure $5.2 million in capital funding at Arc'teryx?](qa-439ccf45-857e-431f-ab0e-1312d6998f02) (`439ccf45-857e-431f-ab0e-1312d6998f02`)
+
+1. [What assumptions in the $5.2 million investment case were most sensitive?](qa-efc27de7-507e-4d96-b95d-446de1f5badf) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+3. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+4. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+5. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+6. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+
+### Parent: [How did you turn regulatory and operations requirements into stories engineers could build?](qa-79d4fa99-20bc-4cff-8c9c-0b25705550ca) (`79d4fa99-20bc-4cff-8c9c-0b25705550ca`)
+
+1. [What exactly did you own versus RBC's payments infrastructure team?](qa-f290b115-770e-4448-82ac-52f4334f34de) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+3. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+4. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+5. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+6. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+
+### Parent: [How do you communicate a complex banking trade-off to an executive in two minutes?](qa-d333a258-c050-4f17-a50b-242e5ad5254d) (`d333a258-c050-4f17-a50b-242e5ad5254d`)
+
+1. [How do you manage stakeholders who disagree on priorities?](qa-b4880442-6054-41de-b29b-f89c40e95005) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+3. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+4. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+5. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+6. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [How do you manage stakeholders who disagree on priorities?](qa-b4880442-6054-41de-b29b-f89c40e95005) (`b4880442-6054-41de-b29b-f89c40e95005`)
+
+1. [How do you communicate a complex banking trade-off to an executive in two minutes?](qa-d333a258-c050-4f17-a50b-242e5ad5254d) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+3. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+4. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+5. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+6. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [How do you measure primary-banking adoption versus superficial account opening?](qa-04f3d519-31e2-478e-9083-e60d2bca7818) (`04f3d519-31e2-478e-9083-e60d2bca7818`)
+
+1. [Which three metrics would you put on your first Questbank executive scorecard?](qa-557cbeab-d17e-48bc-99de-1a54625ee37f) — **high** — Linked via relatedQuestionIds metadata
+2. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+3. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+4. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+5. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+6. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [How do you reduce fraud without rejecting too many legitimate banking customers?](qa-2c8d4c01-fde5-45f2-83a5-4567c8b9ea00) (`2c8d4c01-fde5-45f2-83a5-4567c8b9ea00`)
+
+1. [What if Risk wants a step that cuts conversion by 20%?](qa-9e7049a3-2fa7-4388-931c-875a7cc4d416) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+4. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+5. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [How do you say no without damaging a relationship with a powerful stakeholder?](qa-f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f) (`f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f`)
+
+1. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+3. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+4. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+5. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+6. [How do you work with designers and customer researchers?](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) — **medium** — Same experience module (leadership-general); typical problem_discovery probe
 
 ### Parent: [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) (`627cda69-cdae-4941-89d5-fdafba1ac674`)
 
@@ -1854,9 +3015,126 @@
 5. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
 6. [How would you protect customers from malicious or unauthorized AI-agent actions?](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) — **medium** — Same experience module (questrade-mcp); typical tradeoffs probe
 
-### Parent: [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) (`4068ab67-0613-40ae-bb08-f810651d27a0`)
+### Parent: [How long would you wait before deciding whether a payroll-switching experiment actually worked?](qa-b995b443-a009-4b4c-b03b-81f53bd6cc67) (`b995b443-a009-4b4c-b03b-81f53bd6cc67`)
 
-1. How do you improve straight-through processing and exception resolution? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+1. [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) — **high** — Linked via relatedQuestionIds metadata
+2. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+3. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+4. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+5. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+6. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [How should a customer dispute an unfamiliar debit card transaction?](qa-0360f445-9e66-472e-932f-e06050ec3a3e) (`0360f445-9e66-472e-932f-e06050ec3a3e`)
+
+1. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+4. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+5. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant?](qa-e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0) (`e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0`)
+
+1. [You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose?](qa-50313c26-9a05-42e6-b88e-cc571be4b272) — **high** — Linked via relatedQuestionIds metadata
+2. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
+3. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
+4. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
+5. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+6. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+
+### Parent: [How would you decide when to compensate a customer after a bank payment error?](qa-7fefebb7-44eb-4fa3-80f8-14e6900cba0b) (`7fefebb7-44eb-4fa3-80f8-14e6900cba0b`)
+
+1. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+4. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+5. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [How would you design a new payee or recipient verification experience?](qa-4445d2e9-0632-4f42-b1a8-6a60adc01012) (`4445d2e9-0632-4f42-b1a8-6a60adc01012`)
+
+1. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+4. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+5. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [How would you design a single financial hub across spending, saving and investing?](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) (`47a2ee59-f62e-4b8c-a95b-abab90b7891b`)
+
+1. [If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?](qa-698c2786-3368-4df3-917e-de3a535d352d) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you know whether a financial hub truly deepens the customer relationship?](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) — **medium** — Same experience module (questrade-hub); typical measurement_impact probe
+3. [What is the biggest risk in connecting external accounts?](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) — **medium** — Same experience module (questrade-hub); typical tradeoffs probe
+4. [How would you define 'share of wallet' for everyday banking?](qa-a60003e2-1f39-431f-8386-531fc24d711c) — **medium** — Same experience module (questrade-hub); typical general probe
+5. [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) — **medium** — Same experience module (questrade-hub); typical general probe
+6. [Should the financial hub automatically transfer extra cash into investments?](qa-2bcf440c-7c6e-4914-8c9d-f6577178c3b8) — **medium** — Same experience module (questrade-hub); typical general probe
+
+### Parent: [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) (`10c8d63e-14a4-474f-be0c-7a6f5b731600`)
+
+1. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **high** — Linked via relatedQuestionIds metadata
+2. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+3. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
+4. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
+5. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+6. [How would you explain a deposit hold to a customer who needs the money tomorrow?](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [How would you differentiate Questbank if Wealthsimple copied your best feature?](qa-67ef7666-80ac-452a-8506-b2375d6abc34) (`67ef7666-80ac-452a-8506-b2375d6abc34`)
+
+1. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **high** — Linked via relatedQuestionIds metadata
+2. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
+3. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
+4. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+5. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+6. [How would you prioritize AI features against core banking reliability?](qa-14239bac-e0fc-4f29-abfe-3c7a4386539b) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+
+### Parent: [How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card?](qa-23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4) (`23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4`)
+
+1. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **high** — Linked via relatedQuestionIds metadata
+2. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+3. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+4. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+5. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+6. [How do you know an increase in DAU isn't just more balance checking?](qa-f7e403b2-26b8-4da4-83c1-ea58c2e3371b) — **medium** — Same experience module (questrade-metrics); typical attribution probe
+
+### Parent: [How would you experiment on payment reliability if you can't ethically expose customers to worse payments?](qa-cca30fb0-f7be-497e-8e20-2cd349712829) (`cca30fb0-f7be-497e-8e20-2cd349712829`)
+
+1. [How would you select an experiment's primary metric and guardrails?](qa-6441c9f1-738a-4bd4-b819-92ddf2c1de5b) — **high** — Linked via relatedQuestionIds metadata
+2. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+3. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+4. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+5. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+6. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [How would you explain a deposit hold to a customer who needs the money tomorrow?](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) (`b36da9fd-c09c-4202-bc35-aaf2d27afad3`)
+
+1. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **high** — Linked via relatedQuestionIds metadata
+2. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+3. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
+4. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
+5. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+6. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [How would you explain CDIC deposit protection versus CIPF investment protection?](qa-dc30e851-19e2-4bc1-8397-e4ab784ef939) (`dc30e851-19e2-4bc1-8397-e4ab784ef939`)
+
+1. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+4. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+5. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [How would you handle an offshore team that doesn't understand the customer impact of a requirement?](qa-a95a3a54-604e-4617-af66-92158c5c2c53) (`a95a3a54-604e-4617-af66-92158c5c2c53`)
+
+1. [How do you lead when you don't manage the engineers directly?](qa-20f12afb-0dbb-49eb-821e-01989453d828) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+3. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+4. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+5. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+6. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [How would you handle events arriving out of order in a customer's transaction history?](qa-25ad6af4-9d72-4ac5-9159-29bceeebfb80) (`25ad6af4-9d72-4ac5-9159-29bceeebfb80`)
+
+1. [What if the ledger balance and customer-facing balance don't match?](qa-0c8b1a1c-7290-4b60-8c88-8d978935beae) — **high** — Linked via relatedQuestionIds metadata
 2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
 3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
 4. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
@@ -1878,8 +3156,8 @@
 2. [What is the biggest risk in connecting external accounts?](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) — **medium** — Same experience module (questrade-hub); typical tradeoffs probe
 3. [How would you define 'share of wallet' for everyday banking?](qa-a60003e2-1f39-431f-8386-531fc24d711c) — **medium** — Same experience module (questrade-hub); typical general probe
 4. [How would you design a single financial hub across spending, saving and investing?](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) — **medium** — Same experience module (questrade-hub); typical general probe
-5. [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) — **medium** — Same experience module (questrade-hub); typical general probe
-6. [Should the financial hub automatically transfer extra cash into investments?](qa-2bcf440c-7c6e-4914-8c9d-f6577178c3b8) — **medium** — Same experience module (questrade-hub); typical general probe
+5. [If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?](qa-698c2786-3368-4df3-917e-de3a535d352d) — **medium** — Same experience module (questrade-hub); typical general probe
+6. [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) — **medium** — Same experience module (questrade-hub); typical general probe
 
 ### Parent: [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) (`be18eb7a-948b-4a5d-8c5c-4d69faaa418e`)
 
@@ -1908,23 +3186,158 @@
 5. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
 6. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
 
-### Parent: [How would you protect customers from malicious or unauthorized AI-agent actions?](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) (`1429b53c-f5fd-4819-bb3b-c116ce1ed889`)
+### Parent: [How would you set shared OKRs without making ownership ambiguous?](qa-059b883d-ccbf-4e0b-8719-5dbff7c26da6) (`059b883d-ccbf-4e0b-8719-5dbff7c26da6`)
 
-1. How would you prevent prompt injection and unauthorized transfers? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+1. [What if your PM peers own Cards and Money Movement, but your metric depends on both?](qa-c4c44a09-0799-471a-97cb-05e06e8bf8a8) — **high** — Linked via relatedQuestionIds metadata
+2. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+3. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+4. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+5. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+6. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [How would you tell healthy banking engagement from anxiety-driven repeat checking?](qa-cb792784-57f0-449a-a12d-76bbbde35b46) (`cb792784-57f0-449a-a12d-76bbbde35b46`)
+
+1. [How do you know an increase in DAU isn't just more balance checking?](qa-f7e403b2-26b8-4da4-83c1-ea58c2e3371b) — **high** — Linked via relatedQuestionIds metadata
+2. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+3. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+4. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+5. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+6. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [How would you test whether customers wanted membership benefits before building the full platform?](qa-9b1df81f-65b7-4b77-81af-4ae48b03eb79) (`9b1df81f-65b7-4b77-81af-4ae48b03eb79`)
+
+1. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+3. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+4. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+5. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+6. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
+
+### Parent: [How would you use feature flags without creating inconsistent financial records?](qa-6635b44b-bd82-4980-8aef-ea67474a075e) (`6635b44b-bd82-4980-8aef-ea67474a075e`)
+
+1. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+4. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+5. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **medium** — Same experience module (questrade-payments); typical challenges_lessons probe
+
+### Parent: [If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?](qa-698c2786-3368-4df3-917e-de3a535d352d) (`698c2786-3368-4df3-917e-de3a535d352d`)
+
+1. [How would you design a single financial hub across spending, saving and investing?](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you know whether a financial hub truly deepens the customer relationship?](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) — **medium** — Same experience module (questrade-hub); typical measurement_impact probe
+3. [What is the biggest risk in connecting external accounts?](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) — **medium** — Same experience module (questrade-hub); typical tradeoffs probe
+4. [How would you define 'share of wallet' for everyday banking?](qa-a60003e2-1f39-431f-8386-531fc24d711c) — **medium** — Same experience module (questrade-hub); typical general probe
+5. [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) — **medium** — Same experience module (questrade-hub); typical general probe
+6. [Should the financial hub automatically transfer extra cash into investments?](qa-2bcf440c-7c6e-4914-8c9d-f6577178c3b8) — **medium** — Same experience module (questrade-hub); typical general probe
+
+### Parent: [If MCP standardizes tools, what competitive advantage can Questrade still own?](qa-4fcf44b0-5a66-46be-a57b-0fca89af2d10) (`4fcf44b0-5a66-46be-a57b-0fca89af2d10`)
+
+1. [What is MCP, and why is it different from putting a chatbot inside a financial app?](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) — **high** — Linked via relatedQuestionIds metadata
+2. [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
+3. [Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
+4. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+5. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+6. [How would you protect customers from malicious or unauthorized AI-agent actions?](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) — **medium** — Same experience module (questrade-mcp); typical tradeoffs probe
+
+### Parent: [If payout failures doubled after launch, how would you investigate the first week?](qa-03065da4-6d80-432b-bca7-c034fdf0ff52) (`03065da4-6d80-432b-bca7-c034fdf0ff52`)
+
+1. [What would you do differently on the Avion cashback withdrawal launch?](qa-14ad93b1-527c-49e9-b160-e9b22ca0f888) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+3. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+4. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+5. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+6. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+
+### Parent: [Should a bank help customers automate savings when they have unpredictable income?](qa-4f6209aa-a000-442c-bbd6-96723a266b9a) (`4f6209aa-a000-442c-bbd6-96723a266b9a`)
+
+1. [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) — **high** — Linked via relatedQuestionIds metadata
+2. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+3. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
+4. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
+5. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+6. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) (`e09deee1-3efa-4774-9274-2f18848b739f`)
+
+1. [What if Risk still says no after you've presented all your evidence?](qa-458f82bd-542b-4331-92fb-d77bb3645d06) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+3. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+4. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+5. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+6. [How do you work with designers and customer researchers?](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) — **medium** — Same experience module (leadership-general); typical problem_discovery probe
+
+### Parent: [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) (`2f3a780e-6b54-42b8-b56d-8936a471fa68`)
+
+1. [Why have you moved between several industries and employers?](qa-66530581-f599-40f5-8f97-5bf255953c87) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+3. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+4. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+5. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+6. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [Tell me exactly how you defined HBC's 30-day activation and 90-day retention.](qa-4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5) (`4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5`)
+
+1. HBC 8pp — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. HBC 6pp — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Activation definition — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Repeat-spend retention definition — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [How would you explain your approach to customer activation and retention at HBC?](qa-7eb5e7ae-c611-4966-8279-0fcc8d80fc3c) — **medium** — Same experience module (hbc-activation); typical main_story probe
+6. [What's the difference between acquiring a cardholder, activating one and retaining one?](qa-f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1) — **medium** — Same experience module (hbc-activation); typical general probe
+
+### Parent: [What concerns would you have about joining a business that is still establishing its banking offering?](qa-55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1) (`55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1`)
+
+1. [Why Questrade? Why this role?](qa-c1d638b6-1858-487d-9ac2-5b6cc5327eb8) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+3. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+4. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+5. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+6. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [What did you control in the HBC card portfolio, and what was controlled by Neo?](qa-4333a9f3-b07d-4d8e-8676-6a7ca9012116) (`4333a9f3-b07d-4d8e-8676-6a7ca9012116`)
+
+1. [What does 'P&L ownership' at HBC actually mean?](qa-9b0f399e-6750-463a-9570-805c82449eb8) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about the financial impact of your work at HBC.](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) — **medium** — Same experience module (hbc-portfolio); typical main_story probe
+3. [Why mention 500K+ cardholders if you didn't control the credit book?](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) — **high** — Same experience module (hbc-portfolio); typical personal_ownership probe
+4. [Did you actually run randomized holdouts on the HBC Mastercard programme?](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
+5. [How do you know your incentive program generated incremental spending?](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
+6. [Could the HBC incentives have increased spending while destroying profitability?](qa-cee35d92-74ae-4d9b-a713-3594c8276e17) — **medium** — Same experience module (hbc-portfolio); typical general probe
+
+### Parent: [What did you cut from the membership MVP, and how did you defend those trade-offs?](qa-31d8ded4-7dc2-4d0b-ad30-009b1f92748b) (`31d8ded4-7dc2-4d0b-ad30-009b1f92748b`)
+
+1. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+3. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+4. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+5. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+6. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+
+### Parent: [What do you do when a shared dependency is blocking your objective but the other PM has different priorities?](qa-110a4074-4ba6-4eb9-9b8e-4a96b4e223e4) (`110a4074-4ba6-4eb9-9b8e-4a96b4e223e4`)
+
+1. [What if your PM peers own Cards and Money Movement, but your metric depends on both?](qa-c4c44a09-0799-471a-97cb-05e06e8bf8a8) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+3. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+4. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+5. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+6. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [What happened after the customer clicked Apply—how did you know they became an approved cardholder?](qa-195a8189-fe48-4c11-9ebe-8f2741146841) (`195a8189-fe48-4c11-9ebe-8f2741146841`)
+
+1. [How exactly did you measure the 40% conversion lift?](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a data-driven product decision at Aeroplan.](qa-c88f487e-e0d1-44c0-ab54-60f1e19fe79d) — **medium** — Same experience module (aeroplan-cobrand); typical main_story probe
+3. [How did you identify the problem?](qa-75fd6429-dc9a-4cd3-b996-ce48af985a7b) — **medium** — Same experience module (aeroplan-cobrand); typical problem_discovery probe
+4. [Why a clearer offer summary instead of a shorter page or bigger apply button?](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) — **medium** — Same experience module (aeroplan-cobrand); typical solution_alternatives probe
+5. [What did you personally decide on the Aeroplan card offer test?](qa-2e58d329-4b40-4142-bf45-67504474f730) — **high** — Same experience module (aeroplan-cobrand); typical personal_ownership probe
+6. [What would you do differently after the Aeroplan offer-summary test?](qa-b810ad2f-f519-4a36-9e96-246c398f9d70) — **medium** — Same experience module (aeroplan-cobrand); typical what_differently probe
+
+### Parent: [What happens if a customer revokes an AI agent's access while it has a request in progress?](qa-2f280387-ca4c-4b94-abdf-a644c1868a4a) (`2f280387-ca4c-4b94-abdf-a644c1868a4a`)
+
+1. [How would you protect customers from malicious or unauthorized AI-agent actions?](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) — **high** — Linked via relatedQuestionIds metadata
 2. [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
 3. [Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
 4. [What is MCP, and why is it different from putting a chatbot inside a financial app?](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) — **medium** — Same experience module (questrade-mcp); typical technical_implementation probe
 5. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
 6. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
-
-### Parent: [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) (`df23d3a1-181c-4c9b-9460-42d635d2352d`)
-
-1. How do you evaluate financial AI before launch? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
-3. [Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
-4. [What is MCP, and why is it different from putting a chatbot inside a financial app?](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) — **medium** — Same experience module (questrade-mcp); typical technical_implementation probe
-5. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
-6. [How would you protect customers from malicious or unauthorized AI-agent actions?](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) — **medium** — Same experience module (questrade-mcp); typical tradeoffs probe
 
 ### Parent: [What happens if an AI agent gives the customer an incorrect account balance or invents a transaction?](qa-3772aed5-2bdd-43f0-a114-3eb66342d397) (`3772aed5-2bdd-43f0-a114-3eb66342d397`)
 
@@ -1935,6 +3348,24 @@
 5. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
 6. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
 
+### Parent: [What happens to your banking growth strategy when interest rates fall?](qa-cfe370bc-2273-4055-b0e2-d1adbb96cbf1) (`cfe370bc-2273-4055-b0e2-d1adbb96cbf1`)
+
+1. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **high** — Linked via relatedQuestionIds metadata
+2. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+3. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
+4. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
+5. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+6. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [What if a customer fails identity verification while trying to open a Questbank account?](qa-cdc38655-878f-4b7f-a49d-109f3b69125e) (`cdc38655-878f-4b7f-a49d-109f3b69125e`)
+
+1. [How would you convince existing Questrade investors to make Questbank their primary bank?](qa-6844c2e7-03c5-434e-b64c-ca9febec68dd) — **high** — Linked via relatedQuestionIds metadata
+2. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
+3. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
+4. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
+5. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+6. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+
 ### Parent: [What if an AI drafts the wrong trade and the customer approves it?](qa-6c389a15-714e-48e7-bdcc-0576ee78673b) (`6c389a15-714e-48e7-bdcc-0576ee78673b`)
 
 1. How would you prevent AI from proposing the wrong trade? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
@@ -1944,32 +3375,293 @@
 5. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
 6. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
 
-### Parent: [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) (`695ace4a-7c53-415e-9eb2-5f885d680c2b`)
+### Parent: [What if the team ships a feature on time, but adoption is poor?](qa-4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc) (`4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc`)
 
-1. What owns the source of truth for account balances and payment statuses? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+1. [What would you do if post-launch data contradicts the user research that justified the feature?](qa-48f67960-28cb-4d6b-b863-e7cfe2c1ca71) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+3. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+4. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+5. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+6. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [What is sample ratio mismatch, and why would you care in a banking A/B test?](qa-4a20cf51-7a43-415b-b55d-d01104a46d6f) (`4a20cf51-7a43-415b-b55d-d01104a46d6f`)
+
+1. [How do you prevent cohort analysis from becoming a misleading before-and-after story?](qa-629392bb-f39b-414e-b66d-0d879a9c4557) — **high** — Linked via relatedQuestionIds metadata
+2. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+3. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+4. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+5. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+6. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [What is the strongest single reason we should choose you for this job?](qa-de31db47-3aea-4d26-be40-e0fa92423dd1) (`de31db47-3aea-4d26-be40-e0fa92423dd1`)
+
+1. [What makes you different from other Senior PM candidates?](qa-f67032ca-4e2e-4b49-ae44-29b181eab8b6) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+3. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+4. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+5. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+6. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [What makes you different from other Senior PM candidates?](qa-f67032ca-4e2e-4b49-ae44-29b181eab8b6) (`f67032ca-4e2e-4b49-ae44-29b181eab8b6`)
+
+1. [What is the strongest single reason we should choose you for this job?](qa-de31db47-3aea-4d26-be40-e0fa92423dd1) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+3. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+4. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+5. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+6. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [What metrics would you use to measure success in everyday banking?](qa-735da866-20fc-4837-b67d-c91a6b4e2c77) (`735da866-20fc-4837-b67d-c91a6b4e2c77`)
+
+1. [Which early warning indicator would tell you Questbank is losing customer trust?](qa-1f935f03-d796-480c-8e77-2a3c26f156b2) — **high** — Linked via relatedQuestionIds metadata
+2. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+3. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+4. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+5. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+6. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [What should happen if someone loses their phone and tries to access their bank account?](qa-6ffb405d-688b-433e-87c3-a7d992430bad) (`6ffb405d-688b-433e-87c3-a7d992430bad`)
+
+1. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **high** — Linked via relatedQuestionIds metadata
 2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
 3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
 4. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
 5. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [What should the financial hub do if an external bank connection is stale or disconnected?](qa-381e64d9-0684-493b-8e36-9a2a5636966c) (`381e64d9-0684-493b-8e36-9a2a5636966c`)
+
+1. [What is the biggest risk in connecting external accounts?](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you know whether a financial hub truly deepens the customer relationship?](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) — **medium** — Same experience module (questrade-hub); typical measurement_impact probe
+3. [How would you define 'share of wallet' for everyday banking?](qa-a60003e2-1f39-431f-8386-531fc24d711c) — **medium** — Same experience module (questrade-hub); typical general probe
+4. [How would you design a single financial hub across spending, saving and investing?](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) — **medium** — Same experience module (questrade-hub); typical general probe
+5. [If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?](qa-698c2786-3368-4df3-917e-de3a535d352d) — **medium** — Same experience module (questrade-hub); typical general probe
+6. [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) — **medium** — Same experience module (questrade-hub); typical general probe
+
+### Parent: [What were the leading indicators before you could measure meaningful payout volume?](qa-14712a6a-881f-4c8c-9f98-9b3359211669) (`14712a6a-881f-4c8c-9f98-9b3359211669`)
+
+1. [How did you measure success for the Avion cashback withdrawal launch?](qa-11375f03-31fa-45da-8557-488a8cc63beb) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+3. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+4. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+5. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+6. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+
+### Parent: [What would convince you to stop an AI financial-assistant pilot?](qa-bad7b926-f617-44c4-ab13-ddc78b1e4378) (`bad7b926-f617-44c4-ab13-ddc78b1e4378`)
+
+1. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **high** — Linked via relatedQuestionIds metadata
+2. [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
+3. [Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
+4. [What is MCP, and why is it different from putting a chatbot inside a financial app?](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) — **medium** — Same experience module (questrade-mcp); typical technical_implementation probe
+5. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+6. [How would you protect customers from malicious or unauthorized AI-agent actions?](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) — **medium** — Same experience module (questrade-mcp); typical tradeoffs probe
+
+### Parent: [What would have changed your recommendation from buy to build?](qa-73b7a947-02f5-4298-8592-4badfbcbb139) (`73b7a947-02f5-4298-8592-4badfbcbb139`)
+
+1. [Why did you choose a headless membership platform rather than building everything internally?](qa-a85b536e-5e20-468f-87d9-fb447ae796f6) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+3. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+4. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+5. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+6. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+
+### Parent: [What would the MVP of a payroll-switching feature actually contain?](qa-8ba596cd-8c2c-456e-bf5e-0681333ab61a) (`8ba596cd-8c2c-456e-bf5e-0681333ab61a`)
+
+1. [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) — **high** — Linked via relatedQuestionIds metadata
+2. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+3. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
+4. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
+5. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+6. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [What would you actually deliver in your first 30 days?](qa-08bed145-68a4-4f1f-a500-1287247345bc) (`08bed145-68a4-4f1f-a500-1287247345bc`)
+
+1. [What would you do in your first 90 days?](qa-d47c60d3-510e-4373-abf0-0749fcc41ebc) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+3. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+4. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+5. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+6. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [What would you do if post-launch data contradicts the user research that justified the feature?](qa-48f67960-28cb-4d6b-b863-e7cfe2c1ca71) (`48f67960-28cb-4d6b-b863-e7cfe2c1ca71`)
+
+1. [What if the team ships a feature on time, but adoption is poor?](qa-4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+3. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+4. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+5. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+6. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [What would you do if the customer sees a successful transfer but settlement hasn't reconciled?](qa-771cc93c-f8fd-4499-90dd-04482b325890) (`771cc93c-f8fd-4499-90dd-04482b325890`)
+
+1. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+4. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+5. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
 6. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **medium** — Same experience module (questrade-payments); typical challenges_lessons probe
 
-### Parent: [Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) (`3c961ee8-43cb-4ec8-850f-24e822917f47`)
+### Parent: [What would you do in your first 90 days?](qa-d47c60d3-510e-4373-abf0-0749fcc41ebc) (`d47c60d3-510e-4373-abf0-0749fcc41ebc`)
 
-1. Why build MCP integrations rather than a first-party AI chatbot? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+1. [What would you actually deliver in your first 30 days?](qa-08bed145-68a4-4f1f-a500-1287247345bc) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+3. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+4. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+5. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+6. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [What would you tell customers if a major banking partner was down and you didn't know the restoration time?](qa-ab5294e4-b011-43a7-8cb2-432d84014ec7) (`ab5294e4-b011-43a7-8cb2-432d84014ec7`)
+
+1. [How would you handle a major payment incident?](qa-2f00fac1-89ff-470f-992d-cd89980a36a9) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+4. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+5. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [What would your launch-readiness checklist include for an everyday-banking feature?](qa-606fd4d4-8492-40ac-b65f-099d93621451) (`606fd4d4-8492-40ac-b65f-099d93621451`)
+
+1. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+4. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+5. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **medium** — Same experience module (questrade-payments); typical challenges_lessons probe
+
+### Parent: [What's the biggest learning curve for you if you join Questbank?](qa-a5e5c740-637c-4b42-8642-e889de82dcec) (`a5e5c740-637c-4b42-8642-e889de82dcec`)
+
+1. [You haven't owned a traditional chequing account. Why are you qualified?](qa-a292f433-831a-440c-a196-dbf8c38fbddd) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+3. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+4. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+5. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+6. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [When should an automated retry be prohibited even if it would reduce failures?](qa-d17bc916-0925-4b2f-9904-092499e61920) (`d17bc916-0925-4b2f-9904-092499e61920`)
+
+1. [How would you handle payment exceptions and straight-through processing as transaction volume grows?](qa-4068ab67-0613-40ae-bb08-f810651d27a0) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
+3. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+4. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+5. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+6. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
+
+### Parent: [When would you choose deterministic software or rules instead of an AI model?](qa-be3e3314-68c5-4f6a-a3d9-7f0b9147e17b) (`be3e3314-68c5-4f6a-a3d9-7f0b9147e17b`)
+
+1. [Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) — **high** — Linked via relatedQuestionIds metadata
 2. [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
 3. [What is MCP, and why is it different from putting a chatbot inside a financial app?](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) — **medium** — Same experience module (questrade-mcp); typical technical_implementation probe
 4. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
 5. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
 6. [How would you protect customers from malicious or unauthorized AI-agent actions?](qa-1429b53c-f5fd-4819-bb3b-c116ce1ed889) — **medium** — Same experience module (questrade-mcp); typical tradeoffs probe
 
-### Parent: [Would you extend Questrade MCP beyond brokerage into everyday banking?](qa-233b0497-5bff-471f-9617-6abdeca51522) (`233b0497-5bff-471f-9617-6abdeca51522`)
+### Parent: [When would you shut down a feature your own team spent six months building?](qa-1de87c3a-d693-419c-9ded-b76154af230a) (`1de87c3a-d693-419c-9ded-b76154af230a`)
 
-1. Would you build a Questbank MCP server? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+1. [How do you know when to stop investing in a feature?](qa-df6c37ec-3c98-4d5d-b441-30ba78608f56) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
+3. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
+4. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
+5. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
+6. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
+
+### Parent: [Which early warning indicator would tell you Questbank is losing customer trust?](qa-1f935f03-d796-480c-8e77-2a3c26f156b2) (`1f935f03-d796-480c-8e77-2a3c26f156b2`)
+
+1. [What metrics would you use to measure success in everyday banking?](qa-735da866-20fc-4837-b67d-c91a6b4e2c77) — **high** — Linked via relatedQuestionIds metadata
+2. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+3. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+4. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+5. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+6. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
+### Parent: [Which step in a credit-card application funnel would you inspect first, and why?](qa-0f41544d-2a2d-4b4b-bb41-f89df44c05d0) (`0f41544d-2a2d-4b4b-bb41-f89df44c05d0`)
+
+1. [What exactly did you change in the HBC application experience?](qa-e546440d-67eb-4266-8466-0827ccd35e42) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a customer experience you improved at HBC.](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
+3. [Tell me about improving the HBC Mastercard application journey.](qa-140caed9-55a1-48ac-9190-5d2256afd262) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
+4. [How did you identify the application problem?](qa-04f9a779-8058-4470-8817-beccdcbecf1e) — **medium** — Same experience module (hbc-mastercard-app); typical problem_discovery probe
+5. [Why save-and-resume, and how did you split ownership with Neo?](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) — **medium** — Same experience module (hbc-mastercard-app); typical solution_alternatives probe
+6. [What did you personally decide on the HBC Mastercard application journey?](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) — **high** — Same experience module (hbc-mastercard-app); typical personal_ownership probe
+
+### Parent: [Why did you choose a headless membership platform rather than building everything internally?](qa-a85b536e-5e20-468f-87d9-fb447ae796f6) (`a85b536e-5e20-468f-87d9-fb447ae796f6`)
+
+1. [What would have changed your recommendation from buy to build?](qa-73b7a947-02f5-4298-8592-4badfbcbb139) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+3. [What are you currently working on at Arc'teryx?](qa-1fd9478b-7396-4778-bc00-e62aee52de52) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
+4. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
+5. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+6. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
+
+### Parent: [Why did you use the member's email address, and what if that address changed?](qa-c22bc35e-41a0-4bc7-9b53-6d19da3ecfef) (`c22bc35e-41a0-4bc7-9b53-6d19da3ecfef`)
+
+1. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+3. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+4. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
+5. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+6. [What happens if a payout API times out after the request was accepted?](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) — **medium** — Same experience module (rbc-cashback); typical technical_implementation probe
+
+### Parent: [Why mention 5M+ settlement events when Avion payouts were only $1M+?](qa-6eb506c0-03c7-4205-aa2a-ba3662c5b94d) (`6eb506c0-03c7-4205-aa2a-ba3662c5b94d`)
+
+1. 5 million transactions? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Is volume inflated? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. What's the scope of settlement? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Claim attribution — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [Tell me about building Avion Select from zero to one.](qa-6458104e-34c6-430c-8005-aef3a3da9c02) — **medium** — Same experience module (rbc-avion); typical main_story probe
+6. [How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?](qa-0cf5b127-23d5-442e-b968-59bafc1ff0b3) — **medium** — Same experience module (rbc-avion); typical general probe
+
+### Parent: [Why move into everyday banking from rewards and loyalty?](qa-c45ce30e-6de2-4164-93bf-8b67902caae0) (`c45ce30e-6de2-4164-93bf-8b67902caae0`)
+
+1. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+3. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+4. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+5. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+6. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [Why Questrade? Why this role?](qa-c1d638b6-1858-487d-9ac2-5b6cc5327eb8) (`c1d638b6-1858-487d-9ac2-5b6cc5327eb8`)
+
+1. [What concerns would you have about joining a business that is still establishing its banking offering?](qa-55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+3. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+4. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+5. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+6. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [Why would a bank not want unlimited deposits if customers are willing to bring them?](qa-86fb0ff0-ee19-402f-bbd3-4d478d902d9e) (`86fb0ff0-ee19-402f-bbd3-4d478d902d9e`)
+
+1. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **high** — Linked via relatedQuestionIds metadata
+2. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+3. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
+4. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+5. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+6. [How would you explain a deposit hold to a customer who needs the money tomorrow?](qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [Would you consider a secondary banking relationship a product failure?](qa-adc80bff-8a24-4eaf-9c48-8b050d759ab1) (`adc80bff-8a24-4eaf-9c48-8b050d759ab1`)
+
+1. [What if someone keeps two banks rather than moving everything to Questbank?](qa-0d2ba56b-828d-4eeb-bbc4-b099d740e800) — **high** — Linked via relatedQuestionIds metadata
+2. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
+3. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
+4. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
+5. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+6. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
+
+### Parent: [Would you let an external AI agent read transaction descriptions or merchant details?](qa-7883e373-e58d-460a-bef5-2b89d237c66e) (`7883e373-e58d-460a-bef5-2b89d237c66e`)
+
+1. [Would you extend Questrade MCP beyond brokerage into everyday banking?](qa-233b0497-5bff-471f-9617-6abdeca51522) — **high** — Linked via relatedQuestionIds metadata
 2. [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
 3. [Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?](qa-3c961ee8-43cb-4ec8-850f-24e822917f47) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
 4. [What is MCP, and why is it different from putting a chatbot inside a financial app?](qa-7547195c-f21b-4d86-9d4f-c7dd07f73109) — **medium** — Same experience module (questrade-mcp); typical technical_implementation probe
 5. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
 6. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
+
+### Parent: [Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product?](qa-cd39ab59-8574-443c-b78e-a9dfa3010185) (`cd39ab59-8574-443c-b78e-a9dfa3010185`)
+
+1. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+3. [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) — **medium** — Same experience module (rbc-cashback); typical main_story probe
+4. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
+5. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
+6. [What happens if a payout API times out after the request was accepted?](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) — **medium** — Same experience module (rbc-cashback); typical technical_implementation probe
 
 ### Parent: [Would you use AI to recommend how someone should move their money?](qa-ad2fa044-aa66-4016-a587-a812cc94514d) (`ad2fa044-aa66-4016-a587-a812cc94514d`)
 
@@ -1980,29 +3672,57 @@
 5. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
 6. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
 
+### Parent: [Would you use screen scraping or customer-permissioned banking APIs for account aggregation?](qa-c6aa4266-ebca-41df-a32b-99cba4676ffd) (`c6aa4266-ebca-41df-a32b-99cba4676ffd`)
+
+1. [What is the biggest risk in connecting external accounts?](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) — **high** — Linked via relatedQuestionIds metadata
+2. [How would you know whether a financial hub truly deepens the customer relationship?](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) — **medium** — Same experience module (questrade-hub); typical measurement_impact probe
+3. [How would you define 'share of wallet' for everyday banking?](qa-a60003e2-1f39-431f-8386-531fc24d711c) — **medium** — Same experience module (questrade-hub); typical general probe
+4. [How would you design a single financial hub across spending, saving and investing?](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) — **medium** — Same experience module (questrade-hub); typical general probe
+5. [If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?](qa-698c2786-3368-4df3-917e-de3a535d352d) — **medium** — Same experience module (questrade-hub); typical general probe
+6. [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) — **medium** — Same experience module (questrade-hub); typical general probe
+
+### Parent: [You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose?](qa-50313c26-9a05-42e6-b88e-cc571be4b272) (`50313c26-9a05-42e6-b88e-cc571be4b272`)
+
+1. [How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant?](qa-e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0) — **high** — Linked via relatedQuestionIds metadata
+2. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
+3. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
+4. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
+5. [How would you design a safe payroll-switching experience when the employer's first deposit could fail?](qa-e896f79a-bee7-4d99-a673-d337bb38cd38) — **medium** — Same experience module (questrade-deposits); typical general probe
+6. [How would you design recurring bill payments or pre-authorized debits for a new bank?](qa-10c8d63e-14a4-474f-be0c-7a6f5b731600) — **medium** — Same experience module (questrade-deposits); typical general probe
+
+### Parent: [You haven't owned a traditional chequing account. Why are you qualified?](qa-a292f433-831a-440c-a196-dbf8c38fbddd) (`a292f433-831a-440c-a196-dbf8c38fbddd`)
+
+1. [What's the biggest learning curve for you if you join Questbank?](qa-a5e5c740-637c-4b42-8642-e889de82dcec) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
+3. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
+4. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+5. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+6. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+
+### Parent: [Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship?](qa-a27a2489-4944-4faa-b130-5a1a4ab088e9) (`a27a2489-4944-4faa-b130-5a1a4ab088e9`)
+
+1. [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) — **high** — Linked via relatedQuestionIds metadata
+2. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+3. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+4. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+5. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+6. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
+
 ### Parent: [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) (`ecbddc79-ce40-4452-88cc-68b3f56f197a`)
 
 1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
 2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you improve transaction histories?](qa-94d1edb7-2a12-40f6-8145-2a6006c2d682) — **medium** — Same experience module (career-general); typical general probe
+3. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+4. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+5. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
 
-### Parent: [How did you drive credit card acquisition growth at Aeroplan?](qa-e8d13d9e-a98d-4dbc-a596-a178557963b0) (`e8d13d9e-a98d-4dbc-a596-a178557963b0`)
+### Parent: [Did Quests reach six million active credit cardholders?](qa-92a7cf55-18dc-4d94-93d7-db3303028b9b) (`92a7cf55-18dc-4d94-93d7-db3303028b9b`)
 
-1. [Tell me about a data-driven product decision at Aeroplan.](qa-c88f487e-e0d1-44c0-ab54-60f1e19fe79d) — **medium** — Same experience module (aeroplan-cobrand); typical main_story probe
-2. [How did you identify the problem?](qa-75fd6429-dc9a-4cd3-b996-ce48af985a7b) — **medium** — Same experience module (aeroplan-cobrand); typical problem_discovery probe
-3. [Why a clearer offer summary instead of a shorter page or bigger apply button?](qa-4fa0697a-ebf8-4c97-a107-946de9e5bf1c) — **medium** — Same experience module (aeroplan-cobrand); typical solution_alternatives probe
-4. [What did you personally decide on the Aeroplan card offer test?](qa-2e58d329-4b40-4142-bf45-67504474f730) — **high** — Same experience module (aeroplan-cobrand); typical personal_ownership probe
-5. [How exactly did you measure the 40% conversion lift?](qa-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4) — **medium** — Same experience module (aeroplan-cobrand); typical measurement_impact probe
-
-### Parent: [How did you secure $5.2 million in capital funding at Arc'teryx?](qa-439ccf45-857e-431f-ab0e-1312d6998f02) (`439ccf45-857e-431f-ab0e-1312d6998f02`)
-
-1. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
-2. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
-3. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-4. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-5. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
+1. 6M users — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+2. Quests audience — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+3. Cardholder versus mobile user — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+4. Scope challenge — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
+5. [Tell me about a product decision you got wrong.](qa-c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f) — **medium** — Same experience module (hbc-quests); typical what_differently probe
 
 ### Parent: [How do you decide whether to experiment or commit directly to delivery?](qa-03d6326e-9615-4ffc-8464-d9d6c186811d) (`03d6326e-9615-4ffc-8464-d9d6c186811d`)
 
@@ -2020,6 +3740,14 @@
 4. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
 5. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
 
+### Parent: [How do you know your incentive program generated incremental spending?](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) (`6cffb3bc-d87e-45de-a116-f6539d8d23dc`)
+
+1. [Tell me about the financial impact of your work at HBC.](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) — **medium** — Same experience module (hbc-portfolio); typical main_story probe
+2. [Why mention 500K+ cardholders if you didn't control the credit book?](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) — **high** — Same experience module (hbc-portfolio); typical personal_ownership probe
+3. [Did you actually run randomized holdouts on the HBC Mastercard programme?](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
+4. [Could the HBC incentives have increased spending while destroying profitability?](qa-cee35d92-74ae-4d9b-a713-3594c8276e17) — **medium** — Same experience module (hbc-portfolio); typical general probe
+5. [What did you control in the HBC card portfolio, and what was controlled by Neo?](qa-4333a9f3-b07d-4d8e-8676-6a7ca9012116) — **medium** — Same experience module (hbc-portfolio); typical general probe
+
 ### Parent: [How do you make decisions when the data is incomplete?](qa-4f7c15c5-f4ec-40ce-b1df-3e0a7dddfc71) (`4f7c15c5-f4ec-40ce-b1df-3e0a7dddfc71`)
 
 1. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
@@ -2027,22 +3755,6 @@
 3. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
 4. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
 5. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
-
-### Parent: [How do you manage stakeholders who disagree on priorities?](qa-b4880442-6054-41de-b29b-f89c40e95005) (`b4880442-6054-41de-b29b-f89c40e95005`)
-
-1. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
-2. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
-3. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
-4. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
-5. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
-
-### Parent: [How do you measure primary-banking adoption versus superficial account opening?](qa-04f3d519-31e2-478e-9083-e60d2bca7818) (`04f3d519-31e2-478e-9083-e60d2bca7818`)
-
-1. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-2. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-3. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-4. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-5. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
 
 ### Parent: [How do you work with designers and customer researchers?](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) (`c79db9b5-4487-4e2d-b794-624b16332f9e`)
 
@@ -2052,30 +3764,6 @@
 4. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
 5. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
 
-### Parent: [How would you convince existing Questrade investors to make Questbank their primary bank?](qa-6844c2e7-03c5-434e-b64c-ca9febec68dd) (`6844c2e7-03c5-434e-b64c-ca9febec68dd`)
-
-1. [Why would customers choose Questrade over Wealthsimple or a traditional bank?](qa-c4343691-6421-47c9-9c1e-8c88f948e0b6) — **medium** — Same experience module (questrade-primary); typical main_story probe
-2. [You have only a dashboard, no user research. What do you do?](qa-fce9554d-a36d-4085-874f-e842afda538c) — **medium** — Same experience module (questrade-primary); typical problem_discovery probe
-3. [Your idea sounds sensible. Why hasn't Questrade already done it?](qa-8150bb81-67d5-48dc-82e0-b8bf223984f0) — **medium** — Same experience module (questrade-primary); typical tradeoffs probe
-4. [How would you decide between better rates and better switching UX?](qa-648015c7-c77e-4d15-87c7-b0c2c688beb0) — **medium** — Same experience module (questrade-primary); typical prioritization probe
-5. [How would you prioritize a reliable everyday account versus differentiated experiences?](qa-d6e02f71-bdb1-4dbc-b373-4c7958d83e04) — **medium** — Same experience module (questrade-primary); typical prioritization probe
-
-### Parent: [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) (`cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc`)
-
-1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
-2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you improve transaction histories?](qa-94d1edb7-2a12-40f6-8145-2a6006c2d682) — **medium** — Same experience module (career-general); typical general probe
-
-### Parent: [How would you design a single financial hub across spending, saving and investing?](qa-47a2ee59-f62e-4b8c-a95b-abab90b7891b) (`47a2ee59-f62e-4b8c-a95b-abab90b7891b`)
-
-1. [How would you know whether a financial hub truly deepens the customer relationship?](qa-59024cc1-b1e1-4f5b-a146-1936c8c86037) — **medium** — Same experience module (questrade-hub); typical measurement_impact probe
-2. [What is the biggest risk in connecting external accounts?](qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b) — **medium** — Same experience module (questrade-hub); typical tradeoffs probe
-3. [How would you define 'share of wallet' for everyday banking?](qa-a60003e2-1f39-431f-8386-531fc24d711c) — **medium** — Same experience module (questrade-hub); typical general probe
-4. [Isn't Balance Sheet just a dashboard? Where is the actual value?](qa-e32103f8-3c33-4d7f-99ee-4fa46e8049ed) — **medium** — Same experience module (questrade-hub); typical general probe
-5. [Should the financial hub automatically transfer extra cash into investments?](qa-2bcf440c-7c6e-4914-8c9d-f6577178c3b8) — **medium** — Same experience module (questrade-hub); typical general probe
-
 ### Parent: [How would you design MCP or agentic finance connections with consent and human approval?](qa-fb30286a-49ca-4ce1-b54a-4b7c4cea2d58) (`fb30286a-49ca-4ce1-b54a-4b7c4cea2d58`)
 
 1. [How is Questrade MCP different from Flows? How much autonomy should financial AI have?](qa-627cda69-cdae-4941-89d5-fdafba1ac674) — **medium** — Same experience module (questrade-mcp); typical solution_alternatives probe
@@ -2084,69 +3772,37 @@
 4. [How would you measure whether Questrade MCP is successful?](qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
 5. [How would you test an AI-powered financial feature before launching it broadly?](qa-df23d3a1-181c-4c9b-9460-42d635d2352d) — **medium** — Same experience module (questrade-mcp); typical measurement_impact probe
 
-### Parent: [How would you handle a major payment incident?](qa-2f00fac1-89ff-470f-992d-cd89980a36a9) (`2f00fac1-89ff-470f-992d-cd89980a36a9`)
-
-1. [How would you choose between building a payment service and buying one?](qa-009d20a6-a8cf-458a-a7ea-9ef696c693e0) — **medium** — Same experience module (questrade-payments); typical solution_alternatives probe
-2. [How do pending and posted card transactions differ?](qa-fb56f902-9f1a-4f18-9f34-dffa2027c038) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-3. [How would you roll out a critical payments integration?](qa-038f6014-b892-4a64-84d6-e09048b9fea2) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-4. [What is reconciliation, and why does a PM need to understand it?](qa-21cb8214-854d-48a1-a86d-c1d8fd37bf89) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-5. [Where should transaction status, balance calculation and reconciliation responsibilities sit?](qa-695ace4a-7c53-415e-9eb2-5f885d680c2b) — **medium** — Same experience module (questrade-payments); typical technical_implementation probe
-
-### Parent: [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) (`a40816ee-67e5-4b52-9228-33132bb5ffb1`)
-
-1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
-2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you improve transaction histories?](qa-94d1edb7-2a12-40f6-8145-2a6006c2d682) — **medium** — Same experience module (career-general); typical general probe
-
 ### Parent: [How would you improve transaction histories?](qa-94d1edb7-2a12-40f6-8145-2a6006c2d682) (`94d1edb7-2a12-40f6-8145-2a6006c2d682`)
 
 1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
 2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
-
-### Parent: [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) (`06e233ae-5d45-42d3-b560-84baf56a8948`)
-
-1. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
-2. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
-3. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
-4. [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) — **medium** — Same experience module (questrade-deposits); typical general probe
-5. [What if employers aren't supported by an automated payroll switching provider?](qa-d551219e-6540-4760-a132-b27c92c706db) — **medium** — Same experience module (questrade-deposits); typical general probe
+3. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+4. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+5. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
 
 ### Parent: [How would you make saving more engaging without turning it into a gimmick?](qa-aa868026-c8b7-4c7a-9318-a8754cb383af) (`aa868026-c8b7-4c7a-9318-a8754cb383af`)
 
 1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
 2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
+3. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+4. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+5. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
 
 ### Parent: [How would you manage an underperforming banking technology vendor?](qa-176ce1ac-757b-452d-b98c-d8055754808c) (`176ce1ac-757b-452d-b98c-d8055754808c`)
 
 1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
 2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
+3. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+4. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+5. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
 
 ### Parent: [How would you use AI to improve personal financial management?](qa-0977208e-9d2d-40dc-8cfa-d48c79105e79) (`0977208e-9d2d-40dc-8cfa-d48c79105e79`)
 
 1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
 2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
-
-### Parent: [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) (`976c189b-f59f-409f-92ea-2648cc5b2f5a`)
-
-1. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
-2. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
-3. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
-4. [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) — **medium** — Same experience module (questrade-deposits); typical general probe
-5. [What if employers aren't supported by an automated payroll switching provider?](qa-d551219e-6540-4760-a132-b27c92c706db) — **medium** — Same experience module (questrade-deposits); typical general probe
+3. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+4. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+5. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
 
 ### Parent: [MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it?](qa-b51df0d6-2cd1-41cb-b1f6-757f899b8bcc) (`b51df0d6-2cd1-41cb-b1f6-757f899b8bcc`)
 
@@ -2159,10 +3815,10 @@
 ### Parent: [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) (`f8074663-5773-4b95-a25b-1e32a764c1a9`)
 
 1. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-2. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-3. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you improve transaction histories?](qa-94d1edb7-2a12-40f6-8145-2a6006c2d682) — **medium** — Same experience module (career-general); typical general probe
+2. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+3. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+4. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
+5. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
 
 ### Parent: [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) (`15aa03e2-46af-4d60-9d73-90ed342c6ccc`)
 
@@ -2180,14 +3836,6 @@
 4. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
 5. [How do you work with designers and customer researchers?](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) — **medium** — Same experience module (leadership-general); typical problem_discovery probe
 
-### Parent: [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) (`e09deee1-3efa-4774-9274-2f18848b739f`)
-
-1. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
-2. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
-3. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
-4. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
-5. [How do you work with designers and customer researchers?](qa-c79db9b5-4487-4e2d-b794-624b16332f9e) — **medium** — Same experience module (leadership-general); typical problem_discovery probe
-
 ### Parent: [Tell me about improving the HBC Mastercard application journey.](qa-140caed9-55a1-48ac-9190-5d2256afd262) (`140caed9-55a1-48ac-9190-5d2256afd262`)
 
 1. [Tell me about a customer experience you improved at HBC.](qa-5e92bdca-a458-4e00-9e4f-e5034d641a9b) — **medium** — Same experience module (hbc-mastercard-app); typical main_story probe
@@ -2196,37 +3844,21 @@
 4. [What did you personally decide on the HBC Mastercard application journey?](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) — **high** — Same experience module (hbc-mastercard-app); typical personal_ownership probe
 5. [How did you measure the 15% improvement?](qa-3218b561-2159-442e-a3aa-074756f877c0) — **medium** — Same experience module (hbc-mastercard-app); typical measurement_impact probe
 
-### Parent: [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) (`2f3a780e-6b54-42b8-b56d-8936a471fa68`)
+### Parent: [Tell me about the financial impact of your work at HBC.](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) (`89ded97e-dc5a-420c-a4ee-a7372c2937a9`)
 
-1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
-2. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-3. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you improve transaction histories?](qa-94d1edb7-2a12-40f6-8145-2a6006c2d682) — **medium** — Same experience module (career-general); typical general probe
-
-### Parent: [Tell me exactly how you defined HBC's 30-day activation and 90-day retention.](qa-4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5) (`4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5`)
-
-1. HBC 8pp — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. HBC 6pp — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Activation definition — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Repeat-spend retention definition — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [How would you explain your approach to customer activation and retention at HBC?](qa-7eb5e7ae-c611-4966-8279-0fcc8d80fc3c) — **medium** — Same experience module (hbc-activation); typical main_story probe
-
-### Parent: [Walk me through the Interac e-Transfer product you launched at RBC.](qa-244e239c-2f88-4b6e-968f-ef8ce65daa70) (`244e239c-2f88-4b6e-968f-ef8ce65daa70`)
-
-1. [Tell me about a customer problem you solved at RBC.](qa-f1194ecf-438d-422d-a96f-9c9b69a54fe2) — **medium** — Same experience module (rbc-cashback); typical main_story probe
-2. [How did you know the Avion cashback withdrawal was a customer problem?](qa-7df4eff0-1801-4505-afc3-cf652d90eb63) — **medium** — Same experience module (rbc-cashback); typical problem_discovery probe
-3. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
-4. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
-5. [What happens if a payout API times out after the request was accepted?](qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2) — **medium** — Same experience module (rbc-cashback); typical technical_implementation probe
+1. [Why mention 500K+ cardholders if you didn't control the credit book?](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) — **high** — Same experience module (hbc-portfolio); typical personal_ownership probe
+2. [Did you actually run randomized holdouts on the HBC Mastercard programme?](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
+3. [How do you know your incentive program generated incremental spending?](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
+4. [Could the HBC incentives have increased spending while destroying profitability?](qa-cee35d92-74ae-4d9b-a713-3594c8276e17) — **medium** — Same experience module (hbc-portfolio); typical general probe
+5. [What did you control in the HBC card portfolio, and what was controlled by Neo?](qa-4333a9f3-b07d-4d8e-8676-6a7ca9012116) — **medium** — Same experience module (hbc-portfolio); typical general probe
 
 ### Parent: [What are your compensation expectations?](qa-93f1f35c-cd54-49c3-8d6d-6a95d262fd4b) (`93f1f35c-cd54-49c3-8d6d-6a95d262fd4b`)
 
 1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
 2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
+3. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+4. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+5. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
 
 ### Parent: [What if leadership wants to optimize DAU but you believe retained deposits matter more?](qa-868dbf79-c06d-4ed3-83c4-f001b12be2bf) (`868dbf79-c06d-4ed3-83c4-f001b12be2bf`)
 
@@ -2236,53 +3868,21 @@
 4. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
 5. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
 
-### Parent: [What if the team ships a feature on time, but adoption is poor?](qa-4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc) (`4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc`)
-
-1. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
-2. [Tell me about a time you challenged the original product strategy.](qa-011b9f33-e2ea-4063-aa22-446d561e6df1) — **medium** — Same experience module (leadership-general); typical main_story probe
-3. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
-4. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
-5. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
-
-### Parent: [What makes you different from other Senior PM candidates?](qa-f67032ca-4e2e-4b49-ae44-29b181eab8b6) (`f67032ca-4e2e-4b49-ae44-29b181eab8b6`)
-
-1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
-2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
-
-### Parent: [What metrics would you use to measure success in everyday banking?](qa-735da866-20fc-4837-b67d-c91a6b4e2c77) (`735da866-20fc-4837-b67d-c91a6b4e2c77`)
-
-1. [Explain how you would model customer lifetime value in banking.](qa-96d0d431-bf77-42e5-85b5-1b8106ff1edc) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-2. [Give me an exact definition of a monthly active banking customer.](qa-7ade5d00-b631-4813-bf25-039f6c808fa5) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-3. [How would you decide if a 5% incremental spending lift justified an incentive?](qa-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-4. [What would your primary-account north-star metric actually be?](qa-0059c616-ee5b-4b23-a15e-f8af7061fd25) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-5. [Your conversion improved from 10% to 12%. Is that 2% or 20%?](qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a) — **medium** — Same experience module (questrade-metrics); typical measurement_impact probe
-
 ### Parent: [What should happen when a customer initiates a transfer but the payment fails?](qa-93a2100c-050b-4990-9340-00412fb9b507) (`93a2100c-050b-4990-9340-00412fb9b507`)
 
 1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
 2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
+3. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+4. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+5. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
 
 ### Parent: [What would it take for you to leave your current role?](qa-2235a907-b3ae-4899-9b1b-77a47d746119) (`2235a907-b3ae-4899-9b1b-77a47d746119`)
 
 1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
 2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
-
-### Parent: [What would you do in your first 90 days?](qa-d47c60d3-510e-4373-abf0-0749fcc41ebc) (`d47c60d3-510e-4373-abf0-0749fcc41ebc`)
-
-1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
-2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
+3. [How would you manage transitioning away from an ongoing membership initiative?](qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b) — **medium** — Same experience module (career-general); typical challenges_lessons probe
+4. [Are you more interested in building new products or improving existing ones?](qa-e3acf896-6e83-4597-aeb6-088aba201987) — **medium** — Same experience module (career-general); typical general probe
+5. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
 
 ### Parent: [What's the difference between EFT and Interac e-Transfer?](qa-91cd5cac-65b4-41e6-be3b-76ba3c49e9b1) (`91cd5cac-65b4-41e6-be3b-76ba3c49e9b1`)
 
@@ -2292,54 +3892,6 @@
 4. [Why Interac e-Transfer instead of direct bank-account linking?](qa-c226bb45-beb6-4162-9628-f16d6660b887) — **medium** — Same experience module (rbc-cashback); typical solution_alternatives probe
 5. [What did you personally decide on the Avion cashback withdrawal launch?](qa-27d2a524-6a0d-4a3d-b102-c531d65f368f) — **high** — Same experience module (rbc-cashback); typical personal_ownership probe
 
-### Parent: [Why are you looking to leave Arc'teryx?](qa-28571e7f-620f-4880-9cd7-cdfc2e146aa8) (`28571e7f-620f-4880-9cd7-cdfc2e146aa8`)
-
-1. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
-2. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
-3. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-4. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-5. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
-
-### Parent: [Why did you choose a headless membership platform rather than building everything internally?](qa-a85b536e-5e20-468f-87d9-fb447ae796f6) (`a85b536e-5e20-468f-87d9-fb447ae796f6`)
-
-1. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
-2. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
-3. [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-4. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-5. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
-
-### Parent: [Why mention 5M+ settlement events when Avion payouts were only $1M+?](qa-6eb506c0-03c7-4205-aa2a-ba3662c5b94d) (`6eb506c0-03c7-4205-aa2a-ba3662c5b94d`)
-
-1. 5 million transactions? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Is volume inflated? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. What's the scope of settlement? — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Claim attribution — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-5. [Tell me about building Avion Select from zero to one.](qa-6458104e-34c6-430c-8005-aef3a3da9c02) — **medium** — Same experience module (rbc-avion); typical main_story probe
-
-### Parent: [Why move into everyday banking from rewards and loyalty?](qa-c45ce30e-6de2-4164-93bf-8b67902caae0) (`c45ce30e-6de2-4164-93bf-8b67902caae0`)
-
-1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
-2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
-
-### Parent: [Why Questrade instead of continuing at Arc'teryx?](qa-bfd102e5-8b51-47ea-aeea-c84745fa7f64) (`bfd102e5-8b51-47ea-aeea-c84745fa7f64`)
-
-1. [Tell me about something you took from an idea into a product.](qa-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418) — **medium** — Same experience module (arcteryx-membership); typical main_story probe
-2. [How did you know membership was a customer problem at Arc'teryx?](qa-ab850009-b3cc-4b2b-b026-cd9bb28987c3) — **medium** — Same experience module (arcteryx-membership); typical problem_discovery probe
-3. [Why this solution and why start in North America?](qa-d8d2b2a3-94db-456b-b6d2-f94c28429a61) — **medium** — Same experience module (arcteryx-membership); typical solution_alternatives probe
-4. [What did you personally decide or deprioritize?](qa-f9022f65-91fb-4094-ae8f-b4dc87edcca7) — **high** — Same experience module (arcteryx-membership); typical personal_ownership probe
-5. [How did you secure $5.2 million in capital funding at Arc'teryx?](qa-439ccf45-857e-431f-ab0e-1312d6998f02) — **medium** — Same experience module (arcteryx-membership); typical technical_implementation probe
-
-### Parent: [Why Questrade? Why this role?](qa-c1d638b6-1858-487d-9ac2-5b6cc5327eb8) (`c1d638b6-1858-487d-9ac2-5b6cc5327eb8`)
-
-1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
-2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
-
 ### Parent: [Why should we hire you over someone with direct core banking experience?](qa-56065bcd-e97e-4d82-ac21-e35a44296ae7) (`56065bcd-e97e-4d82-ac21-e35a44296ae7`)
 
 1. [Tell me about a product initiative that didn't go according to plan.](qa-15aa03e2-46af-4d60-9d73-90ed342c6ccc) — **medium** — Same experience module (leadership-general); typical main_story probe
@@ -2347,22 +3899,6 @@
 3. [Tell me about a time you had competing priorities with Risk, Compliance or Engineering.](qa-e09deee1-3efa-4774-9274-2f18848b739f) — **medium** — Same experience module (leadership-general); typical main_story probe
 4. [Tell me about a time you said no to a stakeholder.](qa-1c3ffb21-7fdd-46b3-832a-57c13b409a34) — **medium** — Same experience module (leadership-general); typical main_story probe
 5. [Tell me about your first disagreement with a new team's established strategy.](qa-fef2b30f-d115-48fe-be83-cf89c80548de) — **medium** — Same experience module (leadership-general); typical main_story probe
-
-### Parent: [You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose?](qa-50313c26-9a05-42e6-b88e-cc571be4b272) (`50313c26-9a05-42e6-b88e-cc571be4b272`)
-
-1. [What controls would you require before allowing a new transfer type?](qa-83d6cb34-59ce-42d0-88ca-dfb46a91bfae) — **medium** — Same experience module (questrade-deposits); typical technical_implementation probe
-2. [Is a $100 million increase in deposits automatically a win?](qa-6bf73e61-9653-44ef-b0b3-03f854f27398) — **medium** — Same experience module (questrade-deposits); typical measurement_impact probe
-3. [How do you know a customer really switched their paycheque?](qa-6f890192-85ca-45f7-8259-f92001b996cf) — **medium** — Same experience module (questrade-deposits); typical general probe
-4. [How would you increase direct deposit adoption?](qa-06e233ae-5d45-42d3-b560-84baf56a8948) — **medium** — Same experience module (questrade-deposits); typical general probe
-5. [If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?](qa-976c189b-f59f-409f-92ea-2648cc5b2f5a) — **medium** — Same experience module (questrade-deposits); typical general probe
-
-### Parent: [You haven't owned a traditional chequing account. Why are you qualified?](qa-a292f433-831a-440c-a196-dbf8c38fbddd) (`a292f433-831a-440c-a196-dbf8c38fbddd`)
-
-1. [Tell me about a complex integration you led.](qa-f8074663-5773-4b95-a25b-1e32a764c1a9) — **medium** — Same experience module (career-general); typical main_story probe
-2. [Tell me about yourself.](qa-2f3a780e-6b54-42b8-b56d-8936a471fa68) — **medium** — Same experience module (career-general); typical main_story probe
-3. [Build a business case for investing $2 million in account switching.](qa-ecbddc79-ce40-4452-88cc-68b3f56f197a) — **medium** — Same experience module (career-general); typical general probe
-4. [How would you design a reliable account-funding experience?](qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc) — **medium** — Same experience module (career-general); typical general probe
-5. [How would you handle duplicate charges, incorrect balances or transaction discrepancies?](qa-a40816ee-67e5-4b52-9228-33132bb5ffb1) — **medium** — Same experience module (career-general); typical general probe
 
 ### Parent: [You say HBC's modeled lifetime value increased 10%. How would you explain that metric?](qa-333428ab-ba63-4939-a069-a376f0334868) (`333428ab-ba63-4939-a069-a376f0334868`)
 
@@ -2372,13 +3908,6 @@
 4. [Why save-and-resume, and how did you split ownership with Neo?](qa-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9) — **medium** — Same experience module (hbc-mastercard-app); typical solution_alternatives probe
 5. [What did you personally decide on the HBC Mastercard application journey?](qa-b9f349e9-64c8-4308-a221-2004dd8f3038) — **high** — Same experience module (hbc-mastercard-app); typical personal_ownership probe
 
-### Parent: [Did Quests reach six million active credit cardholders?](qa-92a7cf55-18dc-4d94-93d7-db3303028b9b) (`92a7cf55-18dc-4d94-93d7-db3303028b9b`)
-
-1. 6M users — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-2. Quests audience — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-3. Cardholder versus mobile user — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-4. Scope challenge — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
-
 ### Parent: [How do you know the headless option saved two quarters?](qa-1db0b6d1-d7a9-4d2b-b2a4-7758f9c47b3b) (`1db0b6d1-d7a9-4d2b-b2a4-7758f9c47b3b`)
 
 1. Vendor time savings — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
@@ -2386,31 +3915,127 @@
 3. Actual versus forecast — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 4. Build buy calculation — **very_high** — Explicit follow-up stored on parent record (no separate canonical row)
 
-### Parent: [How do you know your incentive program generated incremental spending?](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) (`6cffb3bc-d87e-45de-a116-f6539d8d23dc`)
+### Parent: [How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?](qa-0cf5b127-23d5-442e-b968-59bafc1ff0b3) (`0cf5b127-23d5-442e-b968-59bafc1ff0b3`)
 
-1. [Tell me about the financial impact of your work at HBC.](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) — **medium** — Same experience module (hbc-portfolio); typical main_story probe
-2. [Why mention 500K+ cardholders if you didn't control the credit book?](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) — **high** — Same experience module (hbc-portfolio); typical personal_ownership probe
-3. [Did you actually run randomized holdouts on the HBC Mastercard programme?](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
-4. [Why did HBC modeled LTV rise 10%, and how certain are you?](qa-3ba24689-dd1a-4428-b018-743f0a8c61af) — **medium** — Same experience module (hbc-portfolio); typical general probe
-
-### Parent: [Tell me about the financial impact of your work at HBC.](qa-89ded97e-dc5a-420c-a4ee-a7372c2937a9) (`89ded97e-dc5a-420c-a4ee-a7372c2937a9`)
-
-1. [Why mention 500K+ cardholders if you didn't control the credit book?](qa-9dbe28fe-5bde-46e2-86a2-2a9381643704) — **high** — Same experience module (hbc-portfolio); typical personal_ownership probe
-2. [Did you actually run randomized holdouts on the HBC Mastercard programme?](qa-af5bd3a4-1b6f-4f1c-a319-15475be31b5d) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
-3. [How do you know your incentive program generated incremental spending?](qa-6cffb3bc-d87e-45de-a116-f6539d8d23dc) — **medium** — Same experience module (hbc-portfolio); typical attribution probe
-4. [Why did HBC modeled LTV rise 10%, and how certain are you?](qa-3ba24689-dd1a-4428-b018-743f0a8c61af) — **medium** — Same experience module (hbc-portfolio); typical general probe
+1. [Tell me about building Avion Select from zero to one.](qa-6458104e-34c6-430c-8005-aef3a3da9c02) — **high** — Linked via relatedQuestionIds metadata
+2. [Why mention 5M+ settlement events when Avion payouts were only $1M+?](qa-6eb506c0-03c7-4205-aa2a-ba3662c5b94d) — **medium** — Same experience module (rbc-avion); typical technical_implementation probe
 
 ### Parent: [How would you explain your approach to customer activation and retention at HBC?](qa-7eb5e7ae-c611-4966-8279-0fcc8d80fc3c) (`7eb5e7ae-c611-4966-8279-0fcc8d80fc3c`)
 
-1. [Tell me exactly how you defined HBC's 30-day activation and 90-day retention.](qa-4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5) — **medium** — Same experience module (hbc-activation); typical measurement_impact probe
+1. [What's the difference between acquiring a cardholder, activating one and retaining one?](qa-f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me exactly how you defined HBC's 30-day activation and 90-day retention.](qa-4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5) — **medium** — Same experience module (hbc-activation); typical measurement_impact probe
 
 ### Parent: [Tell me about building Avion Select from zero to one.](qa-6458104e-34c6-430c-8005-aef3a3da9c02) (`6458104e-34c6-430c-8005-aef3a3da9c02`)
 
-1. [Why mention 5M+ settlement events when Avion payouts were only $1M+?](qa-6eb506c0-03c7-4205-aa2a-ba3662c5b94d) — **medium** — Same experience module (rbc-avion); typical technical_implementation probe
+1. [How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?](qa-0cf5b127-23d5-442e-b968-59bafc1ff0b3) — **high** — Linked via relatedQuestionIds metadata
+2. [Why mention 5M+ settlement events when Avion payouts were only $1M+?](qa-6eb506c0-03c7-4205-aa2a-ba3662c5b94d) — **medium** — Same experience module (rbc-avion); typical technical_implementation probe
+
+### Parent: [What's the difference between acquiring a cardholder, activating one and retaining one?](qa-f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1) (`f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1`)
+
+1. [How would you explain your approach to customer activation and retention at HBC?](qa-7eb5e7ae-c611-4966-8279-0fcc8d80fc3c) — **high** — Linked via relatedQuestionIds metadata
+2. [Tell me exactly how you defined HBC's 30-day activation and 90-day retention.](qa-4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5) — **medium** — Same experience module (hbc-activation); typical measurement_impact probe
 
 ## 7. Complete Canonical Answer Reference
 
 Full verbatim answers (active library).
+
+<a id="qa-837e7efc-def5-4758-8ca1-627d006ec1ff"></a>
+
+### A customer says they sent money to the wrong recipient. What can your product realistically do?
+
+- **ID:** `837e7efc-def5-4758-8ca1-627d006ec1ff`
+- **Section:** leadership_behavioural | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "What do you do when a customer transfers money to the wrong person?"; "Can a customer reverse a payment sent to the wrong recipient?"; "How do you help someone who entered the wrong payee?"; "What can the bank promise after an incorrect transfer?"; "How would you handle an Interac payment sent to the wrong email address?"; "What product safeguards prevent misdirected transfers?"
+- **Import key:** followup-expansion-2026-10-ed30a21945cc58cb
+
+**Answer:**
+
+I'd first establish the rail, the actual transaction state and whether the instruction is still cancellable. I wouldn't promise an instant reversal just because the customer made a mistake; what is possible depends on how the payment was processed and the applicable rules.
+
+The product should make destination and amount confirmation clear before sending and provide a fast support path when an error is reported. I'd want operations to be able to trace the instruction, explain what can be investigated and communicate outcomes accurately.
+
+Prevention is often more controllable than recovery, so I'd examine why the mistake happened and whether recipient verification or clearer confirmations would reduce it.
+
+**Embedded follow-ups (on this record):**
+- What do you do when a customer transfers money to the wrong person?
+- Can a customer reverse a payment sent to the wrong recipient?
+- How do you help someone who entered the wrong payee?
+- What can the bank promise after an incorrect transfer?
+- How would you handle an Interac payment sent to the wrong email address?
+- What product safeguards prevent misdirected transfers?
+
+---
+
+<a id="qa-ec3a7c0b-b921-45be-8548-df8c95b2f713"></a>
+
+### A customer sees the same purchase twice, once pending and once posted. How would you fix it?
+
+- **ID:** `ec3a7c0b-b921-45be-8548-df8c95b2f713`
+- **Section:** questrade_cases | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "Why does the same debit purchase appear twice?"; "How do you handle a pending and settled charge for one purchase?"; "What if my card transaction is duplicated in the app?"; "Is the customer charged twice or is one entry just a hold?"; "How would you link card authorization to posting?"; "How do you prevent duplicate-looking card transactions?"
+- **Import key:** followup-expansion-2026-10-81f59cee90ddc479
+
+**Answer:**
+
+I'd first make sure we're not looking at two actual financial events. A pending authorization and a later posted clearing transaction can represent stages of the same purchase, but their identifiers and amounts may differ.
+
+The experience should link them where we have reliable evidence and replace or resolve the pending presentation when the posted record arrives, rather than showing both as separate settled spending. I'd ask engineering how we correlate those events and what exceptions exist for tips, fuel or adjusted amounts.
+
+I'd also give Support a way to see the underlying states. The goal is accurate display without hiding a genuine duplicate charge.
+
+**Embedded follow-ups (on this record):**
+- Why does the same debit purchase appear twice?
+- How do you handle a pending and settled charge for one purchase?
+- What if my card transaction is duplicated in the app?
+- Is the customer charged twice or is one entry just a hold?
+- How would you link card authorization to posting?
+- How do you prevent duplicate-looking card transactions?
+
+---
+
+<a id="qa-2fb50805-1cb9-43f9-a2ba-54b816d3085d"></a>
+
+### An account was frozen for suspected fraud. How would you handle the customer experience?
+
+- **ID:** `2fb50805-1cb9-43f9-a2ba-54b816d3085d`
+- **Section:** leadership_behavioural | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-783964890115ecc2
+
+**Answer:**
+
+I'd treat protecting funds and complying with the control as non-negotiable, but I'd also recognize how disruptive an unexpected restriction can be.
+
+The customer needs a clear explanation of what we can disclose, how to verify their identity, how the review progresses and where they can get help. We shouldn't promise a release time the Risk team hasn't authorized, and we shouldn't reveal sensitive fraud-detection methods.
+
+Internally, I'd track time in restricted state, legitimate-customer false positives, escalations and downstream financial harm. The experience should be humane and predictable without compromising the review.
+
+---
+
+<a id="qa-e3acf896-6e83-4597-aeb6-088aba201987"></a>
+
+### Are you more interested in building new products or improving existing ones?
+
+- **ID:** `e3acf896-6e83-4597-aeb6-088aba201987`
+- **Section:** career_motivation | **Module:** career-general | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=high, hiring_manager=high, panel=—
+- **Import key:** followup-expansion-2026-10-07aa78c3f0321f51
+
+**Answer:**
+
+Both, but I care more about the nature of the problem than the label. A new product is interesting because you have to establish the proposition and make hard scope decisions. An existing product can be just as challenging when there's a meaningful adoption, economics or reliability problem to solve.
+
+I've done the early platform and business-case work at Arc'teryx, and I've also optimized live financial experiences at RBC, HBC and Aeroplan. For Questbank, the likely reality is a blend: establishing new everyday-banking habits while making the core journeys more reliable and useful over time.
+
+That's the combination that appeals to me.
+
+---
 
 <a id="qa-ecbddc79-ce40-4452-88cc-68b3f56f197a"></a>
 
@@ -2442,6 +4067,66 @@ For a $2 million investment, I'd want to show the expected payback period and pr
 If the assumptions were uncertain, I'd propose a smaller initial investment to validate the biggest drivers before scaling.
 
 That would give leadership a clearer picture of both the upside and the risks.
+
+---
+
+<a id="qa-d8be8368-b755-4baf-8494-3cf9a9f8a69e"></a>
+
+### Card payments start declining, but the banking app and core ledger are online. Where do you look?
+
+- **ID:** `d8be8368-b755-4baf-8494-3cf9a9f8a69e`
+- **Section:** questrade_cases | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "Cards are declining while the app stays up. How do you troubleshoot?"; "Where do you look when debit transactions start failing?"; "What if the core banking system is fine but authorization fails?"; "Card acceptance falls but balances still work. What's the cause?"; "How do you separate fraud declines from technical card failures?"; "What would you check first during a spike in debit-card declines?"
+- **Import key:** followup-expansion-2026-10-538e221cc463571b
+
+**Answer:**
+
+I'd treat card authorization as its own end-to-end service, not assume the whole banking product is healthy because account login works.
+
+I'd break declines down by merchant category, processor response, card status, geography, balance state and time. Are we seeing legitimate insufficient-funds decisions, new fraud rules, a card-network problem or an integration outage?
+
+I wouldn't suggest disabling risk controls broadly just to improve approval rates. I'd bring the card processor, Risk, Operations and engineering owners together, focus on the affected cohort and distinguish genuine declines from technical failures.
+
+For customers, we'd want a clear, safe support path and communication that doesn't disclose sensitive fraud logic.
+
+**Embedded follow-ups (on this record):**
+- Cards are declining while the app stays up. How do you troubleshoot?
+- Where do you look when debit transactions start failing?
+- What if the core banking system is fine but authorization fails?
+- Card acceptance falls but balances still work. What's the cause?
+- How do you separate fraud declines from technical card failures?
+- What would you check first during a spike in debit-card declines?
+
+---
+
+<a id="qa-cee35d92-74ae-4d9b-a713-3594c8276e17"></a>
+
+### Could the HBC incentives have increased spending while destroying profitability?
+
+- **ID:** `cee35d92-74ae-4d9b-a713-3594c8276e17`
+- **Section:** product_experience | **Module:** hbc-portfolio | **Intent:** general
+- **Evidence:** resume_supported | **Review:** needs_review
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "Did the Quests incentive program actually make money?"; "Could rewards have increased spend but hurt contribution?"; "What if the cardholder incentives cost more than the lift?"; "How did you think about incremental spending versus rewarding existing spending?"; "Were the HBC promotion economics actually positive?"; "How do you know cardholder spending growth wasn't just subsidized?"
+- **Import key:** followup-expansion-2026-10-43490de1e099ede8
+
+**Answer:**
+
+Absolutely. A lift in card spend by itself is not the same as value creation. We'd want to distinguish incremental spend from spend that would have happened anyway, then subtract rewards or incentive expense and consider the economics of the portfolio.
+
+I'd also worry about customers timing purchases to earn a reward without changing longer-term habits. The right evaluation looks at margin or contribution, repeat behaviour and the duration of the effect, ideally against a comparison group.
+
+That's why I describe the 10% LTV change as modeled and the spending effect separately. Neither should be taken as proof that every individual promotion was profitable.
+
+**Embedded follow-ups (on this record):**
+- Did the Quests incentive program actually make money?
+- Could rewards have increased spend but hurt contribution?
+- What if the cardholder incentives cost more than the lift?
+- How did you think about incremental spending versus rewarding existing spending?
+- Were the HBC promotion economics actually positive?
+- How do you know cardholder spending growth wasn't just subsidized?
 
 ---
 
@@ -2535,6 +4220,35 @@ I'd model expected contribution over the customer relationship, not simply futur
 
 ---
 
+<a id="qa-db88df8e-3a36-4cc6-8b84-4fb24e2136c3"></a>
+
+### Explain your interview copilot's semantic matching architecture without using technical jargon.
+
+- **ID:** `db88df8e-3a36-4cc6-8b84-4fb24e2136c3`
+- **Section:** leadership_behavioural | **Module:** leadership-general | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=very_high, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "Explain how your interview copilot matches questions without the jargon."; "How does your AI copilot find the right prepared answer?"; "What's the simple explanation for your semantic search?"; "How did you make your Q and A library searchable by meaning?"; "Explain what embeddings do in your product like I'm a non-technical stakeholder."; "Why doesn't your interview tool just search exact keywords?"
+- **Import key:** followup-expansion-2026-10-410906da823f7878
+
+**Answer:**
+
+I had a library of prepared interview answers, but the same question can be asked in dozens of ways. Searching by exact words wasn't good enough.
+
+So I explored a small embedding model through Supabase. It turns each question into a numerical representation of its meaning, then retrieves prepared answers whose questions have similar meanings. I combine that with the conversation topic, because 'How did you measure that?' could mean RBC, HBC or Arc'teryx depending on what we were just discussing.
+
+I deliberately chose retrieval over generating a new answer each time. It keeps the response tied to material I've reviewed and lets me manage cost and reliability. I'd only describe the hosted implementation as deployed if I've verified the live pipeline is running.
+
+**Embedded follow-ups (on this record):**
+- Explain how your interview copilot matches questions without the jargon.
+- How does your AI copilot find the right prepared answer?
+- What's the simple explanation for your semantic search?
+- How did you make your Q and A library searchable by meaning?
+- Explain what embeddings do in your product like I'm a non-technical stakeholder.
+- Why doesn't your interview tool just search exact keywords?
+
+---
+
 <a id="qa-7ade5d00-b631-4813-bf25-039f6c808fa5"></a>
 
 ### Give me an exact definition of a monthly active banking customer.
@@ -2603,6 +4317,65 @@ I wouldn't claim the conversion improvement alone produced the entire 427% year-
 - 427% versus 40%
 - Corporate growth
 - Did product cause growth?
+
+---
+
+<a id="qa-233f8d5d-fa5a-45a7-a301-39c4e3743edb"></a>
+
+### How did you align TD, CIBC and Amex when the banks had different priorities?
+
+- **ID:** `233f8d5d-fa5a-45a7-a301-39c4e3743edb`
+- **Section:** product_experience | **Module:** aeroplan-cobrand | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-2aeba274e494fdf2
+
+**Answer:**
+
+I'd start from the shared customer journey and be explicit about where issuer priorities diverged. Different banks could have different offers, eligibility rules, application experiences or operational constraints, so one blanket implementation wasn't necessarily sensible.
+
+The product role is to establish what the customer needs to understand before the handoff, agree on the data and measurement boundaries, and make trade-offs visible to the partners.
+
+My Aeroplan work involved co-brand acquisition across these issuer relationships. I wouldn't imply I controlled their underwriting or internal roadmaps. What I can speak to is using product and analytics to improve the acquisition journeys we influenced and coordinating the bank-dependent pieces.
+
+---
+
+<a id="qa-7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30"></a>
+
+### How did you decide what to include in the smaller Sperro SV release?
+
+- **ID:** `7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30`
+- **Section:** product_experience | **Module:** arcteryx-membership | **Intent:** prioritization
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=medium, hiring_manager=very_high, panel=high
+- **Alt phrasings:** "How did you prioritize the Sperro SV launch?"; "What did you cut from the MVP?"; "Why didn't you wait for the full membership platform?"; "How did you decide which benefits were essential?"; "What trade-offs did you make for the circularity launch?"; "How did you manage dependencies across teams?"
+- **Import key:** sperro-five-qa-2026-q02
+
+**Answer:**
+
+I think the key was separating the benefits customers would actually receive from the infrastructure we eventually wanted to deliver them through.
+
+The broader membership roadmap included things like enrollment, a member dashboard, gear registration, events and different ways for customers to engage with the brand.
+
+But for Sperro SV, we didn't need to launch that entire experience to make the jacket's benefits meaningful.
+
+So I looked at what was essential for that specific customer journey: what benefits were we promising, how would customers understand and access them, and could the teams responsible actually fulfil those promises?
+
+That's where we focused.
+
+We also had to be careful about dependencies. For example, the digital product passport registration was being delivered by another team, so we needed to coordinate around that rather than pull it into our scope.
+
+The principle was to keep the customer promise intact while reducing the amount of new technology and cross-team coordination required for the launch.
+
+I think that's an important distinction. A smaller MVP shouldn't just mean fewer features. It should mean a more focused experience that still solves the problem properly.
+
+**Embedded follow-ups (on this record):**
+- How did you prioritize the Sperro SV launch?
+- What did you cut from the MVP?
+- Why didn't you wait for the full membership platform?
+- How did you decide which benefits were essential?
+- What trade-offs did you make for the circularity launch?
+- How did you manage dependencies across teams?
 
 ---
 
@@ -2788,6 +4561,26 @@ So the support evidence told us what was frustrating people, and the eligible-me
 
 ---
 
+<a id="qa-c8d4a611-d174-48b1-911c-e2db8f3acc3e"></a>
+
+### How did you know your semantic-search approach was actually better than keyword matching?
+
+- **ID:** `c8d4a611-d174-48b1-911c-e2db8f3acc3e`
+- **Section:** leadership_behavioural | **Module:** leadership-general | **Intent:** general
+- **Evidence:** resume_supported | **Review:** needs_review
+- **Round relevance (existing):** recruiter=high, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-1f2320a19a45d757
+
+**Answer:**
+
+I'd compare both systems against a fixed set of realistic questions, including paraphrases, short follow-ups, employer switches and deliberately unrelated prompts. For each case, I'd define which prepared Q&A should appear.
+
+I'd measure top-one accuracy, whether the right answer is in the top three, latency and the rate of wrong-context matches. I'd also test whether manually reanalyzing a missed transcript can recover the answer.
+
+The key is not to assume embeddings are better just because they sound more sophisticated. If the hybrid matcher doesn't improve retrieval in those cases, I'd tune the context logic or simplify the system. I wouldn't claim a percentage improvement until I'd run that benchmark.
+
+---
+
 <a id="qa-11375f03-31fa-45da-8557-488a8cc63beb"></a>
 
 ### How did you measure success for the Avion cashback withdrawal launch?
@@ -2844,6 +4637,46 @@ I'd also monitor duplicate starts, support contacts and any disruption to the sh
 
 ---
 
+<a id="qa-0cf5b127-23d5-442e-b968-59bafc1ff0b3"></a>
+
+### How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?
+
+- **ID:** `0cf5b127-23d5-442e-b968-59bafc1ff0b3`
+- **Section:** product_experience | **Module:** rbc-avion | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-55d503d1ee7ba2f4
+
+**Answer:**
+
+I wouldn't assume the two entry points should look identical because their authentication and account relationships are different. But the value proposition and the next step should feel equally understandable.
+
+For non-RBC members, a clear sign-up path, identity capture, terms and a reliable way to access the product become especially important. I'd compare conversion and first-value completion across the two segments, while accounting for their different journeys.
+
+If one group struggled, I'd look at authentication friction, missing information and confusing eligibility rules before adding incentives. The important point from Avion Select was opening a financial-services-adjacent product to an audience that wasn't already inside the bank's usual sign-in flow.
+
+---
+
+<a id="qa-bb903f25-6886-4106-ab80-1fa344cd8a05"></a>
+
+### How did you prevent one card partner's offer from undermining another's?
+
+- **ID:** `bb903f25-6886-4106-ab80-1fa344cd8a05`
+- **Section:** product_experience | **Module:** aeroplan-cobrand | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-a0d40d083ec744ef
+
+**Answer:**
+
+I'd want a clear set of merchandising rules and a customer-first way to explain each offer. When a customer is comparing cards, the goal isn't to make every bank look identical. It's to make trade-offs understandable and ensure the experience is accurate for the partner's terms.
+
+I'd also agree with the business and issuer teams on what we were optimizing: total qualified acquisition, offer relevance and long-term economics, not simply shifting the same customer from one bank partner to another.
+
+A controlled test and partner-level reporting could help reveal whether one treatment generated truly incremental applications or just redistributed demand across offers.
+
+---
+
 <a id="qa-439ccf45-857e-431f-ab0e-1312d6998f02"></a>
 
 ### How did you secure $5.2 million in capital funding at Arc'teryx?
@@ -2868,6 +4701,26 @@ My role was shaping the product strategy, identifying the capabilities we needed
 We also evaluated different platform options, which was important because the architectural decision had implications for cost, flexibility and delivery speed.
 
 For me, it reinforced that senior product leadership is partly about making investment decisions easier. Leadership needs to understand what we're building, what business outcome we're pursuing, what trade-offs we're accepting and how we'll know whether the investment is working.
+
+---
+
+<a id="qa-79d4fa99-20bc-4cff-8c9c-0b25705550ca"></a>
+
+### How did you turn regulatory and operations requirements into stories engineers could build?
+
+- **ID:** `79d4fa99-20bc-4cff-8c9c-0b25705550ca`
+- **Section:** product_experience | **Module:** rbc-cashback | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-0ee11c5bb2049c12
+
+**Answer:**
+
+I'd start by translating each requirement into an observable customer or system behaviour. For example: when is a customer eligible, what limits apply, what state should the UI show, and what information must Operations have to reconcile or investigate a payout?
+
+The stories then need acceptance criteria for more than the happy path. What happens when eligibility changes, a request is repeated, the provider is slow or a settlement entry doesn't match?
+
+The best requirements give engineering enough clarity on the intended behaviour while leaving room for the team to choose the implementation. I'd validate those cases with Risk, Finance and the payments service owners before committing to launch.
 
 ---
 
@@ -2910,6 +4763,26 @@ I'd avoid a vague message that 'the team is concerned.' I'd bring a clear assess
 - Committed date
 - Senior stakeholder conflict
 - Difficult conversation
+
+---
+
+<a id="qa-d333a258-c050-4f17-a50b-242e5ad5254d"></a>
+
+### How do you communicate a complex banking trade-off to an executive in two minutes?
+
+- **ID:** `d333a258-c050-4f17-a50b-242e5ad5254d`
+- **Section:** leadership_behavioural | **Module:** leadership-general | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-929f1b51201c0ddb
+
+**Answer:**
+
+I'd start with the decision we need, not a technical history lesson. For example: 'We can launch the new transfer experience this quarter, but only if we reduce scope or accept a specific operational risk. Here are the choices.'
+
+Then I'd give the customer and business impact, the non-negotiable controls, and my recommendation with the main uncertainty. If there are three options, I'd make the consequences explicit rather than ask the executive to infer them from a detailed roadmap.
+
+I'd keep the technical evidence available for follow-up. The goal is to help leadership make a responsible decision quickly without losing the nuance that matters.
 
 ---
 
@@ -3014,6 +4887,35 @@ C. Payments, technical architecture, reliability and controls
 - DAU quality
 - Financial engagement
 - High DAU low deposits
+
+---
+
+<a id="qa-2af89a04-ab52-40bd-928d-96a3122fffd1"></a>
+
+### How do you know the HBC application improvement wasn't caused by a different applicant mix?
+
+- **ID:** `2af89a04-ab52-40bd-928d-96a3122fffd1`
+- **Section:** product_experience | **Module:** hbc-mastercard-app | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "How did you know the HBC application lift was real?"; "Could the fifteen percent conversion increase be from a different customer mix?"; "How did you separate better UX from a change in applicants?"; "What did you control for in the credit-card application funnel?"; "Could the HBC results just reflect different marketing traffic?"; "How did you establish attribution for application completions?"
+- **Import key:** followup-expansion-2026-10-59161acf4bf0b119
+
+**Answer:**
+
+I'd want the comparison to use a consistent definition of application start and completion, and I'd look at who entered the funnel in each period. Changes in campaign source, device, credit profile or promotions can make the conversion rate move even when the experience doesn't improve.
+
+The strongest approach is a randomized experiment where the applicant mix should be balanced. If we couldn't do that, I'd segment cohorts and be much more conservative about attribution.
+
+I can speak to the reported 15% improvement in completions. I'd avoid claiming a specific experimental design or statistical result unless it's supported by what the team actually measured.
+
+**Embedded follow-ups (on this record):**
+- How did you know the HBC application lift was real?
+- Could the fifteen percent conversion increase be from a different customer mix?
+- How did you separate better UX from a change in applicants?
+- What did you control for in the credit-card application funnel?
+- Could the HBC results just reflect different marketing traffic?
+- How did you establish attribution for application completions?
 
 ---
 
@@ -3199,6 +5101,46 @@ I'd check whether the cohorts were comparable before attributing the change to o
 
 ---
 
+<a id="qa-2c8d4c01-fde5-45f2-83a5-4567c8b9ea00"></a>
+
+### How do you reduce fraud without rejecting too many legitimate banking customers?
+
+- **ID:** `2c8d4c01-fde5-45f2-83a5-4567c8b9ea00`
+- **Section:** questrade_cases | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-56175462d6794fa6
+
+**Answer:**
+
+I'd separate confirmed fraud loss from friction and false positives. A risk control has to prevent harm, but broad rules can disproportionately hurt good customers.
+
+I'd ask Risk for the underlying threat model and test whether controls can be targeted by risk signals rather than applied identically to everyone. Where appropriate, we could use additional verification for higher-risk cases while keeping lower-risk journeys simpler.
+
+I'd monitor prevented loss, verified fraud, false-positive rate, completion rate and customer support burden together. I wouldn't optimize conversion by simply removing critical controls. The goal is a better overall risk-adjusted experience, not choosing Risk or Growth as the winner.
+
+---
+
+<a id="qa-f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f"></a>
+
+### How do you say no without damaging a relationship with a powerful stakeholder?
+
+- **ID:** `f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f`
+- **Section:** leadership_behavioural | **Module:** leadership-general | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-4f824187fbbff65a
+
+**Answer:**
+
+I'd make it clear that I'm saying no to a proposed solution or timing, not dismissing the underlying problem. I'd first ask what outcome they're trying to achieve and whether our current roadmap already addresses it.
+
+Then I'd explain the trade-off in concrete terms: what we'd delay, what customer or operational risk we'd introduce, and what evidence would change my recommendation. Where possible I'd suggest a smaller test or an alternative that preserves the underlying goal.
+
+I also think consistency matters. If I change my position later because new evidence emerges, I'd explain why. That makes the decision feel principled rather than personal.
+
+---
+
 <a id="qa-c79db9b5-4487-4e2d-b794-624b16332f9e"></a>
 
 ### How do you work with designers and customer researchers?
@@ -3288,6 +5230,46 @@ To me, the important question isn't whether the AI is capable of acting autonomo
 
 ---
 
+<a id="qa-b995b443-a009-4b4c-b03b-81f53bd6cc67"></a>
+
+### How long would you wait before deciding whether a payroll-switching experiment actually worked?
+
+- **ID:** `b995b443-a009-4b4c-b03b-81f53bd6cc67`
+- **Section:** leadership_behavioural | **Module:** questrade-metrics | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-13246270dc5fb057
+
+**Answer:**
+
+I'd align the measurement window to the behaviour. A completed setup form can be measured quickly, but payroll often follows an employer's own cycle. I'd need enough time to observe the first actual deposit and, ideally, repeated deposits.
+
+I'd define the evaluation period before launching the test, based on expected payroll frequency and a meaningful sample. I'd also watch support contacts and failed deposits while the experiment runs.
+
+If early setup conversion rises but deposits haven't occurred yet, I'd call that a promising leading signal, not proof of primary-banking adoption. The decision to scale should reflect the delay between a user action and the outcome we really care about.
+
+---
+
+<a id="qa-0360f445-9e66-472e-932f-e06050ec3a3e"></a>
+
+### How should a customer dispute an unfamiliar debit card transaction?
+
+- **ID:** `0360f445-9e66-472e-932f-e06050ec3a3e`
+- **Section:** questrade_cases | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-011534bf24455032
+
+**Answer:**
+
+I'd want the customer to be able to identify the transaction, see the relevant details and reach the correct dispute path without guessing whether it is an authorization hold or a settled purchase.
+
+If the card may be compromised, immediate protective controls such as card locking and appropriate support escalation matter. The investigation and provisional-credit process must follow the relevant product and network requirements, so I'd work with card operations and Risk rather than inventing an instant-refund promise.
+
+I'd measure dispute initiation success, customer time to resolution and repeat contacts while protecting the accuracy of the underlying financial record.
+
+---
+
 <a id="qa-a8fe6bd5-ecc2-4c0f-95d5-63bb51f0c20c"></a>
 
 ### How would you build product on top of Temenos core banking without owning the ledger?
@@ -3316,6 +5298,26 @@ I'd also avoid abstracting everything upfront. I'd start with the account and tr
 At the same time, I'd be explicit about system boundaries in production. Core banking owns balances, postings and product rules; Questbank owns customer experience, orchestration and the read models product teams need. I'd map payment and deposit states end-to-end — pending, posted, available — and define reconciliation handoffs, SLAs and exception queues before promising features in the hub. Integrations through extensibility APIs still need idempotency, observability and partner escalation paths. I wouldn't blur 'we shipped a UI' with 'money moved correctly.'
 
 I've worked with similar integration challenges across identity, loyalty and payments, and I've found that clear ownership between systems is just as important as the technology itself. My RBC payments work taught me that operational truth matters as much as feature delivery.
+
+---
+
+<a id="qa-e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0"></a>
+
+### How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant?
+
+- **ID:** `e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0`
+- **Section:** leadership_behavioural | **Module:** questrade-primary | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-0ffeac83b074227c
+
+**Answer:**
+
+If card reliability is genuinely meeting the required customer and operational guardrails, I'd stop treating it as an automatic reason to defer every growth initiative.
+
+I'd diagnose why payroll adoption is stagnant: weak value proposition, high switching friction, missing employer support, low awareness or a failure to retain activity after the first deposit. Then I'd prioritize the bottleneck we can credibly move.
+
+The decision would still depend on severity and impact, not just a headline uptime figure. But a mature reliability baseline should create room to invest in sustained primary-account growth rather than endlessly optimizing a metric that's already healthy.
 
 ---
 
@@ -3422,6 +5424,26 @@ I'd first establish whether the 5% is truly incremental relative to comparable c
 
 ---
 
+<a id="qa-7fefebb7-44eb-4fa3-80f8-14e6900cba0b"></a>
+
+### How would you decide when to compensate a customer after a bank payment error?
+
+- **ID:** `7fefebb7-44eb-4fa3-80f8-14e6900cba0b`
+- **Section:** leadership_behavioural | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-65e520e78893619f
+
+**Answer:**
+
+I'd first establish the facts and the customer's actual harm. Was money unavailable, did a bill fail, were fees incurred or did the customer simply see a delayed status?
+
+The response needs to follow the bank's legal obligations, policies and incident-remediation framework, so I wouldn't invent a flat compensation promise. But I'd want consistent criteria, fast escalation for urgent hardship and a clear path to correct the financial record.
+
+I'd look for patterns where repeated incidents are generating both customer harm and remediation cost. The product lesson is to prevent the failures, not treat goodwill credits as the primary solution.
+
+---
+
 <a id="qa-a60003e2-1f39-431f-8386-531fc24d711c"></a>
 
 ### How would you define 'share of wallet' for everyday banking?
@@ -3464,6 +5486,26 @@ I'd start by defining the lifecycle and eligible population. For example, comple
 
 ---
 
+<a id="qa-4445d2e9-0632-4f42-b1a8-6a60adc01012"></a>
+
+### How would you design a new payee or recipient verification experience?
+
+- **ID:** `4445d2e9-0632-4f42-b1a8-6a60adc01012`
+- **Section:** questrade_cases | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-0de6e24c3ec72748
+
+**Answer:**
+
+I'd start with the harm we're trying to prevent: customers sending money to the wrong destination or fraudsters changing payout details. Verification should be proportional to the action and the risk.
+
+I'd want clear recipient information, appropriate authentication or step-up checks for sensitive changes, and a final review before execution. We should not rely on an attractive confirmation screen if the underlying authorization is weak.
+
+I'd work with Risk and engineering to make sure the rules are enforced server-side. Then I'd measure both sides: prevented errors and fraud, but also abandonment, false positives and support contacts. A control that blocks legitimate customers unnecessarily still has a product cost.
+
+---
+
 <a id="qa-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc"></a>
 
 ### How would you design a reliable account-funding experience?
@@ -3488,6 +5530,35 @@ I'd also distinguish between funds that have been requested, received, settled a
 For measurement, I'd look at successful funding per eligible attempt, time to available funds, return rates, support contacts and fraud or loss metrics.
 
 If the experience has a high drop-off rate, I'd diagnose whether the problem is customer confusion, account linking, risk rules or the underlying payment service before deciding what to change.
+
+---
+
+<a id="qa-e896f79a-bee7-4d99-a673-d337bb38cd38"></a>
+
+### How would you design a safe payroll-switching experience when the employer's first deposit could fail?
+
+- **ID:** `e896f79a-bee7-4d99-a673-d337bb38cd38`
+- **Section:** questrade_cases | **Module:** questrade-deposits | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "How would you make payroll switching safe for the first paycheque?"; "What if the employer doesn't switch direct deposit in time?"; "How do you design the first payroll deposit experience?"; "What would you do if a customer's first salary doesn't arrive?"; "How do you help someone move salary without missing bill payments?"; "How do you handle employer-side delays when switching payroll?"
+- **Import key:** followup-expansion-2026-10-3eaa68220372868b
+
+**Answer:**
+
+I wouldn't treat switching payroll as a single click. It's a process with an employer dependency and potentially serious consequences if it goes wrong.
+
+I'd give customers clear instructions or supported switching assistance, explain that an employer may need time to update details, and avoid implying the switch is complete before we have evidence. I'd encourage a transitional period where customers can verify the first successful deposit before relying entirely on the new account for bills.
+
+Internally, I'd define how we recognize successful recurring income and what support should do when a deposit is missing. The goal is to reduce switching friction without giving customers false certainty about their next payday.
+
+**Embedded follow-ups (on this record):**
+- How would you make payroll switching safe for the first paycheque?
+- What if the employer doesn't switch direct deposit in time?
+- How do you design the first payroll deposit experience?
+- What would you do if a customer's first salary doesn't arrive?
+- How do you help someone move salary without missing bill payments?
+- How do you handle employer-side delays when switching payroll?
 
 ---
 
@@ -3536,6 +5607,126 @@ To me, the goal isn't to make the app look like a financial super-app. It's to s
 **Answer:**
 
 I'd start from customer-controlled consent: OAuth-style authorization, least privilege, read-only by default, and clear listing of what an agent can see versus do. Draft insights and proposed actions should be separable from execution — especially trades, transfers or bill payments. Questrade's public MCP materials emphasize customer approval for trades; I'd extend that pattern to any material money movement. Logging, revocation, rate limits and error surfaces matter as much as the demo. I would not describe autonomous agents moving money without an explicit confirmation step and audit trail.
+
+---
+
+<a id="qa-10c8d63e-14a4-474f-be0c-7a6f5b731600"></a>
+
+### How would you design recurring bill payments or pre-authorized debits for a new bank?
+
+- **ID:** `10c8d63e-14a4-474f-be0c-7a6f5b731600`
+- **Section:** questrade_cases | **Module:** questrade-deposits | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-565de636656ef238
+
+**Answer:**
+
+I'd map the full lifecycle: setting up a payee or authorization, scheduling the debit, notifying the customer, handling insufficient funds and correcting errors or returns.
+
+The customer needs clarity about when a payment is scheduled versus actually processed, and which balance is safe to rely on. I'd make cancellation and change rules understandable because an update made too close to the processing window may not stop an instruction already in flight.
+
+Before scaling, I'd test timing boundaries, duplicate requests and return scenarios with banking operations. Reliable recurring payments are a major part of earning someone's primary-bank relationship, so I'd treat them as a foundation rather than a secondary feature.
+
+---
+
+<a id="qa-67ef7666-80ac-452a-8506-b2375d6abc34"></a>
+
+### How would you differentiate Questbank if Wealthsimple copied your best feature?
+
+- **ID:** `67ef7666-80ac-452a-8506-b2375d6abc34`
+- **Section:** leadership_behavioural | **Module:** questrade-primary | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-deb9bcd3c95dfd17
+
+**Answer:**
+
+I wouldn't assume a single feature is a durable moat. Another fintech can often copy a visible workflow, rate or design pattern.
+
+I'd focus on the broader customer job and the operational experience behind it: trusted money movement, investing integration, useful context and consistent service. I'd also examine whether Questrade can serve customer segments with more complex investment and banking needs better than a general-purpose alternative.
+
+I'd keep testing actual customer switching behaviour rather than relying on feature-comparison slides. If a competitor copied one capability, we should still know what combination of convenience, trust and relationships makes customers stay.
+
+---
+
+<a id="qa-23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4"></a>
+
+### How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card?
+
+- **ID:** `23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4`
+- **Section:** questrade_cases | **Module:** questrade-metrics | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-10ec3c7fab699446
+
+**Answer:**
+
+I'd start with the actual economics of those deposits, not assume the $5,000 balance is revenue. Finance and Treasury would help estimate what the bank earns from deploying or funding against that balance, net of interest paid, liquidity cost and servicing expenses.
+
+I'd then consider balance stability and how long the relationship lasts. A steady operating balance can be more valuable than a promotional balance that disappears after a few weeks.
+
+I'd separate that from debit-card revenue and cross-product benefits, since the customer doesn't generate those just by holding cash. The result would be a contribution estimate with sensitivity to deposit duration and rate assumptions.
+
+---
+
+<a id="qa-cca30fb0-f7be-497e-8e20-2cd349712829"></a>
+
+### How would you experiment on payment reliability if you can't ethically expose customers to worse payments?
+
+- **ID:** `cca30fb0-f7be-497e-8e20-2cd349712829`
+- **Section:** questrade_cases | **Module:** questrade-metrics | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-41def4e541d32b60
+
+**Answer:**
+
+I'd never deliberately degrade real payment reliability just to create a control group. We can test improvements without putting one group at unacceptable risk.
+
+Before rollout, I'd use simulation, sandbox scenarios, replayed test cases and controlled operational verification to establish safety. Then I might gradually expose customers to a validated change while monitoring completion, duplicate handling, latency and reconciliation exceptions.
+
+If a change is essential for safety or regulatory compliance, it may not need a standard randomized experiment. The product decision becomes whether the system meets agreed acceptance criteria and whether the staged rollout exposes new failure modes. Experimentation should support judgment, not override customer protection.
+
+---
+
+<a id="qa-b36da9fd-c09c-4202-bc35-aaf2d27afad3"></a>
+
+### How would you explain a deposit hold to a customer who needs the money tomorrow?
+
+- **ID:** `b36da9fd-c09c-4202-bc35-aaf2d27afad3`
+- **Section:** questrade_cases | **Module:** questrade-deposits | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-333f2eb84c1d211b
+
+**Answer:**
+
+I'd be explicit about the distinction between money received, money posted and money available to use. Customers shouldn't have to discover a hold only when a payment is declined.
+
+The experience should show what amount is currently available, what's on hold, the known release timing or conditions where available, and what support can and cannot change. I'd avoid promising that a hold will clear early unless the underlying system supports it.
+
+I'd also examine whether we can communicate the hold before the customer initiates the deposit. The outcome to track is fewer surprise shortfalls and support contacts, alongside compliance with the actual funds-availability policy.
+
+---
+
+<a id="qa-dc30e851-19e2-4bc1-8397-e4ab784ef939"></a>
+
+### How would you explain CDIC deposit protection versus CIPF investment protection?
+
+- **ID:** `dc30e851-19e2-4bc1-8397-e4ab784ef939`
+- **Section:** leadership_behavioural | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** needs_review
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-43130d1fc58052a7
+
+**Answer:**
+
+I'd start by saying they protect different things and shouldn't be presented as interchangeable. Eligible deposits at CDIC member institutions have deposit insurance subject to the applicable rules and limits. CIPF is a different protection framework associated with investment-dealer insolvency and eligible customer property; it doesn't protect against investment losses from the market.
+
+In the product, I'd make the relevant legal entity and product type clear. Customers shouldn't have to infer which protections apply based on the Questrade name alone.
+
+I'd work with Legal and Compliance on precise wording and link to the applicable official coverage details rather than offering a sweeping statement that every account or balance is protected the same way.
 
 ---
 
@@ -3595,6 +5786,26 @@ The important thing is not just getting the service back online. It's restoring 
 
 ---
 
+<a id="qa-a95a3a54-604e-4617-af66-92158c5c2c53"></a>
+
+### How would you handle an offshore team that doesn't understand the customer impact of a requirement?
+
+- **ID:** `a95a3a54-604e-4617-af66-92158c5c2c53`
+- **Section:** leadership_behavioural | **Module:** leadership-general | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-b85d72575972a2e5
+
+**Answer:**
+
+I'd avoid treating that as a motivation problem before checking whether I've supplied enough context. A ticket that only describes a field or API change doesn't help an engineer make good decisions.
+
+I'd walk through the customer journey, explain what goes wrong if the requirement fails, and include examples of both the expected and exceptional states. I'd also create a quick feedback loop where engineers can challenge unclear assumptions before work proceeds too far.
+
+I've worked with geographically distributed engineering teams, so I'm conscious that written communication and explicit acceptance criteria matter. The aim is to create shared product understanding, not just hand out detailed instructions.
+
+---
+
 <a id="qa-a40816ee-67e5-4b52-9228-33132bb5ffb1"></a>
 
 ### How would you handle duplicate charges, incorrect balances or transaction discrepancies?
@@ -3619,6 +5830,26 @@ I'd want a controlled remediation process, reconciliation against the authoritat
 After resolution, I'd look at the root cause and preventive controls, not just whether the incident ticket was closed.
 
 For a financial product, correctness is part of the customer experience. It's not just a back-office concern.
+
+---
+
+<a id="qa-25ad6af4-9d72-4ac5-9159-29bceeebfb80"></a>
+
+### How would you handle events arriving out of order in a customer's transaction history?
+
+- **ID:** `25ad6af4-9d72-4ac5-9159-29bceeebfb80`
+- **Section:** leadership_behavioural | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-190f2fbd4b39dfdf
+
+**Answer:**
+
+I'd want financial systems to remain authoritative about posted entries while the app handles presentation carefully. If events arrive late or out of order, we shouldn't assume the arrival order is the financial order.
+
+I'd work with engineering on stable identifiers, event timestamps, versions and reconciliation against the source of truth. The customer view may need to update an earlier pending item when a final status becomes available rather than append another unrelated row.
+
+I'd test delayed, duplicated and missing events explicitly. If we can't establish an accurate status, it's better to acknowledge uncertainty than show a confident but incorrect sequence of money movements.
 
 ---
 
@@ -3846,6 +6077,54 @@ The key is to be firm about the required outcomes while maintaining a productive
 
 ---
 
+<a id="qa-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b"></a>
+
+### How would you manage transitioning away from an ongoing membership initiative?
+
+- **ID:** `b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b`
+- **Section:** leadership_behavioural | **Module:** career-general | **Intent:** challenges_lessons
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=medium, hiring_manager=high, panel=medium
+- **Alt phrasings:** "What would your transition plan look like?"; "How would you hand over the membership program?"; "How would you ensure the project continues without you?"; "How would you transfer ownership of the roadmap?"; "What would happen to your team if you left?"; "How do you prevent knowledge loss when a PM leaves?"; "How would you manage a transition to Questrade?"; "How would you make sure the team could continue without you?"; "What happens to the membership program if you leave?"; "What happens to membership if you take another job?"; "Who owns the roadmap if you're not there?"; "Would the membership rollout suffer if you moved to Questrade?"; "What happens to the Sperro and membership work if you're gone?"
+- **Import key:** sperro-five-qa-2026-q05
+
+**Answer:**
+
+I'd take that responsibility pretty seriously, especially given the scale of the membership initiative and the number of teams involved.
+
+I think the biggest risk when a product manager leaves isn't necessarily that the roadmap disappears. It's that a lot of the context behind the decisions leaves with them.
+
+Why did we choose this platform? Why is one capability in the MVP and another deferred? What commitments have we made to different teams? Those are the things that aren't always obvious from looking at a Jira board.
+
+So my first priority would be to make sure that context is documented properly.
+
+I'd work with my manager to identify someone who could take ownership of the product, then walk them through the strategy, the major decisions we've made, the dependencies and any unresolved risks.
+
+I'd also make sure there was a clear view of the upcoming milestones, particularly where teams like Commerce, Identity and ReBIRD are depending on us.
+
+And I wouldn't want to just hand over documentation and disappear. Where possible, I'd have the incoming owner participate in key meetings and decisions so they could build those relationships directly.
+
+Obviously, the timing would need to be worked out with my leadership team. But I think a good product leader should be building clarity and shared ownership throughout the initiative anyway, not only when they're preparing to leave.
+
+My goal would be to leave the team in a position where they can keep making good decisions and moving forward without being dependent on me personally.
+
+**Embedded follow-ups (on this record):**
+- What would your transition plan look like?
+- How would you hand over the membership program?
+- How would you ensure the project continues without you?
+- How would you transfer ownership of the roadmap?
+- What would happen to your team if you left?
+- How do you prevent knowledge loss when a PM leaves?
+- How would you manage a transition to Questrade?
+- How would you make sure the team could continue without you?
+- What happens to the membership program if you leave?
+- What happens to membership if you take another job?
+- Who owns the roadmap if you're not there?
+- Would the membership rollout suffer if you moved to Questrade?
+- What happens to the Sperro and membership work if you're gone?
+
+---
+
 <a id="qa-be18eb7a-948b-4a5d-8c5c-4d69faaa418e"></a>
 
 ### How would you measure whether Questrade MCP is successful?
@@ -3879,6 +6158,35 @@ Ultimately, I'd measure whether MCP makes Questrade more useful to customers whi
 
 **Embedded follow-ups (on this record):**
 - What is the north star for Questrade MCP?
+
+---
+
+<a id="qa-c864344c-3df9-4f30-b478-278b4e58f8d4"></a>
+
+### How would you prevent a customer from receiving the same cashback payout twice?
+
+- **ID:** `c864344c-3df9-4f30-b478-278b4e58f8d4`
+- **Section:** product_experience | **Module:** rbc-cashback | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "How did you stop customers getting paid twice?"; "What stops duplicate cashback withdrawals?"; "What happens if someone hits withdraw two times?"; "How would you handle a timeout without issuing a second payout?"; "How do you make the cash-out request idempotent?"; "What's your duplicate-payment prevention strategy?"
+- **Import key:** followup-expansion-2026-10-47da105a5246e62e
+
+**Answer:**
+
+I'd make the withdrawal request uniquely identifiable and ensure that retrying it doesn't create a new financial instruction. An idempotency key tied to the logical payout is one implementation pattern I'd discuss with engineering.
+
+The important distinction is between a new request and a retry of the same request. If the API times out after acceptance, the app should investigate the existing transaction state rather than blindly submit another transfer.
+
+I'd also want limits and payout eligibility checked against the financial record, with reconciliation finding any mismatch between our request history and settlement activity. The product requirement is simple: a customer can recover from a timeout without getting paid twice or losing track of their money.
+
+**Embedded follow-ups (on this record):**
+- How did you stop customers getting paid twice?
+- What stops duplicate cashback withdrawals?
+- What happens if someone hits withdraw two times?
+- How would you handle a timeout without issuing a second payout?
+- How do you make the cash-out request idempotent?
+- What's your duplicate-payment prevention strategy?
 
 ---
 
@@ -4026,6 +6334,46 @@ I'd start from the customer behaviour the experiment is meant to change and choo
 
 ---
 
+<a id="qa-059b883d-ccbf-4e0b-8719-5dbff7c26da6"></a>
+
+### How would you set shared OKRs without making ownership ambiguous?
+
+- **ID:** `059b883d-ccbf-4e0b-8719-5dbff7c26da6`
+- **Section:** leadership_behavioural | **Module:** questrade-metrics | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-02ff8d0c1a2d62e6
+
+**Answer:**
+
+I'd separate the customer outcome that teams jointly influence from the capabilities each team directly owns. For example, sustained active primary accounts might be shared, while one team owns reliable payroll funding and another owns card transaction success.
+
+I'd define lead measures and service-level guardrails for the dependencies, then agree on a regular decision forum where cross-team trade-offs are resolved. Shared outcomes should encourage collaboration, but they shouldn't become a way for everyone to blame someone else when performance misses.
+
+I'd want clear escalation paths and a common view of the customer journey so the organization optimizes for the relationship rather than isolated feature deliveries.
+
+---
+
+<a id="qa-cb792784-57f0-449a-a12d-76bbbde35b46"></a>
+
+### How would you tell healthy banking engagement from anxiety-driven repeat checking?
+
+- **ID:** `cb792784-57f0-449a-a12d-76bbbde35b46`
+- **Section:** questrade_cases | **Module:** questrade-metrics | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-5b3cacfbf9d7ec58
+
+**Answer:**
+
+I'd look at the reason people are returning. More sessions can mean the product is valuable, but they can also mean customers are unsure whether a deposit arrived or a payment cleared.
+
+I'd compare visits against successful customer jobs: completed payments, recurring funding, savings actions and resolution of outstanding questions. I'd also look at support contacts, complaints, repeated visits to the same unresolved transaction and qualitative feedback.
+
+If DAU rises while money-movement completion and retention are flat, that's a diagnostic signal, not necessarily good news. The experience should reduce uncertainty and improve financial control, even if that means fewer frantic balance checks.
+
+---
+
 <a id="qa-df23d3a1-181c-4c9b-9460-42d635d2352d"></a>
 
 ### How would you test an AI-powered financial feature before launching it broadly?
@@ -4060,6 +6408,26 @@ The key is to evaluate it as a financial product with real consequences, not sim
 
 ---
 
+<a id="qa-9b1df81f-65b7-4b77-81af-4ae48b03eb79"></a>
+
+### How would you test whether customers wanted membership benefits before building the full platform?
+
+- **ID:** `9b1df81f-65b7-4b77-81af-4ae48b03eb79`
+- **Section:** product_experience | **Module:** arcteryx-membership | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-bea4a6b41c5964d6
+
+**Answer:**
+
+I'd test the specific customer job before testing a big membership proposition. For example, do jacket owners struggle to understand repair eligibility or discover how to maintain a product they intend to keep for years?
+
+I'd compare a simpler guided experience against the existing service journey, measure successful task completion and support contacts, and ask customers whether the benefits were genuinely useful. I'd also look for repeated behaviour rather than relying only on stated interest.
+
+If a small test showed customers valued clearer access to existing services, that would strengthen the case for an integrated program. If it didn't, I'd challenge whether a broad membership platform was solving the right problem.
+
+---
+
 <a id="qa-0977208e-9d2d-40dc-8cfa-d48c79105e79"></a>
 
 ### How would you use AI to improve personal financial management?
@@ -4089,6 +6457,75 @@ I see AI as a way to reduce complexity, not as something we should introduce jus
 
 ---
 
+<a id="qa-6635b44b-bd82-4980-8aef-ea67474a075e"></a>
+
+### How would you use feature flags without creating inconsistent financial records?
+
+- **ID:** `6635b44b-bd82-4980-8aef-ea67474a075e`
+- **Section:** questrade_cases | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-2d5216038eb7201f
+
+**Answer:**
+
+I'd use feature flags to control customer exposure and routing, not as an excuse to let two systems maintain contradictory financial truth.
+
+For a new payment path, I'd plan a small rollout with clear eligibility, transaction correlation, observability and rollback conditions. Any in-flight instruction has to finish safely on the path it started; switching a flag shouldn't resubmit or lose it.
+
+I'd rehearse failure cases such as timeouts and duplicate submissions before scaling. In the rollout review, I'd compare successful end-to-end completion, exceptions, support demand and reconciliation, not merely whether the front-end feature loads for users.
+
+---
+
+<a id="qa-855c7ca3-5897-4baa-8c59-99f3c30cdd6e"></a>
+
+### How would you win customers without paying an expensive cash sign-up bonus?
+
+- **ID:** `855c7ca3-5897-4baa-8c59-99f3c30cdd6e`
+- **Section:** questrade_cases | **Module:** questrade-primary | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "How would you grow Questbank without a big sign-up incentive?"; "What if we don't offer a cash bonus?"; "How do you compete without paying people to open an account?"; "What would make investors choose our bank without a promotion?"; "How would you build adoption with a limited acquisition budget?"; "What's the organic value proposition for Questbank?"
+- **Import key:** followup-expansion-2026-10-0f5c5a1cd82b4f3d
+
+**Answer:**
+
+I'd focus on a proposition that makes a repeated customer task materially easier. For Questrade, an obvious area to test is moving money between everyday cash needs and investments, with accurate balances and predictable availability.
+
+I'd look for customer segments with existing friction, then test the value proposition before spending heavily on broad incentives. Better cash visibility, simpler recurring contributions or fewer steps to move funds may matter more than an offer that expires after the first deposit.
+
+I'd still model the economics. If customers only join for the bonus and leave, we've bought a temporary metric rather than a durable relationship. I'd optimize for retention and contribution, not merely the cost per opened account.
+
+**Embedded follow-ups (on this record):**
+- How would you grow Questbank without a big sign-up incentive?
+- What if we don't offer a cash bonus?
+- How do you compete without paying people to open an account?
+- What would make investors choose our bank without a promotion?
+- How would you build adoption with a limited acquisition budget?
+- What's the organic value proposition for Questbank?
+
+---
+
+<a id="qa-698c2786-3368-4df3-917e-de3a535d352d"></a>
+
+### If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do?
+
+- **ID:** `698c2786-3368-4df3-917e-de3a535d352d`
+- **Section:** questrade_cases | **Module:** questrade-hub | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-1b11b5880756e558
+
+**Answer:**
+
+I'd start with jobs that connect directly to the actions Questrade can actually enable, rather than another view of spending categories.
+
+An investing customer may want to know what cash is genuinely available for a contribution, what bills are coming up, and what happens to their liquidity if they transfer funds. A financial hub could make those decisions more understandable, but only if the data is accurate and the next action is convenient.
+
+I'd test whether the hub changes useful customer behaviour, such as successful recurring contributions or fewer avoidable cash shortages, rather than only whether people open a dashboard. The differentiator has to be actionability and trust, not prettier charts.
+
+---
+
 <a id="qa-976c189b-f59f-409f-92ea-2648cc5b2f5a"></a>
 
 ### If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?
@@ -4115,6 +6552,46 @@ And I'd consider whether the result was economically worthwhile, particularly if
 If we increased direct deposit adoption but customers stopped using the account after collecting a bonus, I wouldn't call that a complete success.
 
 I'd want to see a sustained change in primary banking behaviour.
+
+---
+
+<a id="qa-4fcf44b0-5a66-46be-a57b-0fca89af2d10"></a>
+
+### If MCP standardizes tools, what competitive advantage can Questrade still own?
+
+- **ID:** `4fcf44b0-5a66-46be-a57b-0fca89af2d10`
+- **Section:** questrade_cases | **Module:** questrade-mcp | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-aa3d0e2b91ac1b17
+
+**Answer:**
+
+I think the competitive advantage sits in the trusted financial capabilities and customer relationship behind those tools. A standard protocol can make integrations easier, but it doesn't make account information accurate or establish safe trading permissions by itself.
+
+Questrade still owns the quality of the underlying product, the authorization experience, the reliability of the data and the customer outcomes enabled by each capability. It can also choose which workflows are genuinely useful and which are too risky to expose.
+
+So I'd see MCP as a distribution and integration mechanism rather than the product's entire moat. The differentiator is making those authorized financial actions dependable and valuable regardless of which assistant a customer prefers.
+
+---
+
+<a id="qa-03065da4-6d80-432b-bca7-c034fdf0ff52"></a>
+
+### If payout failures doubled after launch, how would you investigate the first week?
+
+- **ID:** `03065da4-6d80-432b-bca7-c034fdf0ff52`
+- **Section:** product_experience | **Module:** rbc-cashback | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-baa87ecc283d509e
+
+**Answer:**
+
+I'd first break failures down by stage and reason: eligibility, request initiation, provider acceptance, delivery, return and reconciliation. I'd compare the increase by app version, customer segment and any payment-service or partner changes.
+
+I'd also ask whether the denominator changed. A growth campaign might bring in more first-time or ineligible customers, so the raw count alone could mislead us.
+
+For customer impact, I'd distinguish money actually at risk from requests that were safely rejected. Then I'd prioritize containment for the harmful cases, communicate clearly, and work with payment operations on a root-cause fix. I'd keep an eye on repeat attempts so the investigation doesn't accidentally create duplicate transfers.
 
 ---
 
@@ -4160,6 +6637,35 @@ A consolidated view can be useful, but I agree that visibility alone isn't enoug
 
 ---
 
+<a id="qa-2fb1eeab-7958-4099-9216-e2b88d0de5c5"></a>
+
+### It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?
+
+- **ID:** `2fb1eeab-7958-4099-9216-e2b88d0de5c5`
+- **Section:** questrade_cases | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "It's payroll day and customer paycheques are missing. What's your first move?"; "What would you do in the first fifteen minutes of a salary outage?"; "A hundred employees say direct deposit hasn't landed. Where do you start?"; "How do you triage a major payroll deposit incident?"; "What's your immediate response when customer salaries are delayed?"; "How do you determine if a payroll problem is with the app or payment rail?"
+- **Import key:** followup-expansion-2026-10-2aae75bc9cff3ab9
+
+**Answer:**
+
+First I need to establish whether the money is delayed, rejected, posted but not visible, or missing upstream. Those require different responses, and I wouldn't let the app tell customers their payroll failed until we've confirmed it.
+
+I'd convene the incident owners across Engineering, Operations, payments and the banking core, establish impact and an incident lead, and preserve accurate transaction tracing. If there's customer harm, we'd prioritize containment and communication rather than feature work.
+
+I'd also ask Support for a consistent message that clearly distinguishes confirmed facts from what we're still investigating. The immediate goal is protecting customers and restoring a reliable picture of their funds, not racing to a premature root-cause explanation.
+
+**Embedded follow-ups (on this record):**
+- It's payroll day and customer paycheques are missing. What's your first move?
+- What would you do in the first fifteen minutes of a salary outage?
+- A hundred employees say direct deposit hasn't landed. Where do you start?
+- How do you triage a major payroll deposit incident?
+- What's your immediate response when customer salaries are delayed?
+- How do you determine if a payroll problem is with the app or payment rail?
+
+---
+
 <a id="qa-b51df0d6-2cd1-41cb-b1f6-757f899b8bcc"></a>
 
 ### MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it?
@@ -4186,6 +6692,26 @@ If first funding is weak, the issue might be onboarding or transfer friction. If
 I'd also compare cohorts rather than relying entirely on averages, because a change in customer mix could explain the apparent disconnect.
 
 The key is not to jump straight into building engagement features. I'd want to understand whether the issue is product awareness, funding friction, everyday utility or reliability before deciding what to change.
+
+---
+
+<a id="qa-4f6209aa-a000-442c-bbd6-96723a266b9a"></a>
+
+### Should a bank help customers automate savings when they have unpredictable income?
+
+- **ID:** `4f6209aa-a000-442c-bbd6-96723a266b9a`
+- **Section:** leadership_behavioural | **Module:** questrade-deposits | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-d2542b5d18b6f8eb
+
+**Answer:**
+
+Yes, but I'd avoid a fixed recurring transfer that assumes everyone receives the same paycheque every two weeks.
+
+For someone with variable income, I'd explore flexible triggers, clear minimum-balance safeguards and the ability to pause or adjust transfers. I'd prioritize transparent rules and explicit consent before more ambitious AI-led automation.
+
+I'd test whether the feature actually helps people accumulate savings without triggering failed payments, overdrafts or repeated manual reversals. A savings automation that creates cash shortages isn't a successful savings product, even if the transfer count looks healthy.
 
 ---
 
@@ -4319,6 +6845,49 @@ That convinced me we were improving real progression through the funnel rather t
 - Walk me through the 40% conversion increase
 - What did you do for TD/CIBC/Amex card acquisition
 - Describe an experiment with an unexpected result.
+
+---
+
+<a id="qa-c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f"></a>
+
+### Tell me about a product decision you got wrong.
+
+- **ID:** `c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f`
+- **Section:** leadership_behavioural | **Module:** hbc-quests | **Intent:** what_differently
+- **Evidence:** unverified_detail | **Review:** ok
+- **Round relevance (existing):** recruiter=medium, hiring_manager=very_high, panel=high
+- **Alt phrasings:** "Tell me about a mistake you made as a product manager."; "Describe a product decision you regret."; "When did you realize your product strategy was wrong?"; "Tell me about a time you changed your mind."; "Describe a feature that performed well but didn't create business value."; "What was a product failure you learned from?"; "Tell me about a product decision you got wrong. What changed your mind?"
+- **Import key:** sperro-five-qa-2026-q03
+
+**Answer:**
+
+One example that comes to mind is when I was working on cardholder engagement at HBC.
+
+We were exploring ways to get customers to use their HBC Mastercard more frequently, and one of the approaches was introducing spending challenges through our Quests platform.
+
+My initial thinking was that if we made the challenges relatively accessible, we'd get more people participating, build a habit around using the card and ultimately drive more spend.
+
+And we did see engagement. The problem was, when we started looking more closely at the behaviour, I realized I'd been putting too much weight on participation itself.
+
+Some of the customers completing those challenges were already fairly active cardholders. So we were potentially rewarding spending that would have happened anyway, which isn't a great use of incentive dollars.
+
+That was the part I got wrong. I had focused too much on making the experience engaging without being disciplined enough upfront about what incremental behaviour we were actually trying to create.
+
+So I pushed us to rethink how we were targeting the challenges. Instead of treating all cardholders the same, we'd look at where there was a genuine opportunity to change behaviour, like getting newer cardholders to make their next purchase or bringing back customers whose activity had declined.
+
+We also needed to be much more deliberate about measurement, looking beyond completions to changes in spending behaviour and the cost of generating that activity.
+
+The biggest lesson for me was that a product can look successful from an engagement standpoint and still be a poor business decision.
+
+Since then, I've been much more careful about agreeing on the behaviour we're trying to change before we start debating features or incentives.
+
+**Embedded follow-ups (on this record):**
+- Tell me about a mistake you made as a product manager.
+- Describe a product decision you regret.
+- When did you realize your product strategy was wrong?
+- Tell me about a time you changed your mind.
+- Describe a feature that performed well but didn't create business value.
+- What was a product failure you learned from?
 
 ---
 
@@ -4648,6 +7217,50 @@ What I took away from that experience is that launching a payment feature isn't 
 
 ---
 
+<a id="qa-1fd9478b-7396-4778-bc00-e62aee52de52"></a>
+
+### What are you currently working on at Arc'teryx?
+
+- **ID:** `1fd9478b-7396-4778-bc00-e62aee52de52`
+- **Section:** product_experience | **Module:** arcteryx-membership | **Intent:** main_story
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=very_high, hiring_manager=very_high, panel=high
+- **Alt phrasings:** "What are you working on right now?"; "Tell me about your current role."; "What's the latest product initiative you're leading?"; "Can you tell me more about your time at Arc'teryx?"; "What's happening with the membership program?"; "Tell me about the Sperro SV launch."; "What have you been focused on recently?"
+- **Import key:** sperro-five-qa-2026-q01
+
+**Answer:**
+
+One of the more interesting things I've been working on recently is tied to the launch of the Sperro SV, which is Arc'teryx's first circular hardshell.
+
+For context, I've been leading the development of a broader membership program at Arc'teryx. The vision is to build a deeper relationship with customers beyond the initial purchase, particularly around gear ownership, product care, repairs and community experiences.
+
+We'd secured about $5.2 million in funding for that program, but it's a fairly substantial platform build with dependencies across commerce, identity, customer service and our ReBIRD circularity operations.
+
+The interesting challenge came when we needed to support the Sperro SV launch. The full membership platform wasn't going to be ready in time, but there were some genuinely valuable benefits we still wanted to offer customers buying the jacket.
+
+So rather than trying to accelerate the entire membership roadmap, we made the decision to carve out a smaller, more focused release.
+
+That included three years of unlimited out-of-warranty repairs, access to exclusive community events and an opportunity to win a Global Academy experience.
+
+My focus was figuring out how to deliver those benefits independently of the larger platform, while making sure the customer experience and the operational teams behind it were actually ready.
+
+That meant working closely with ReBIRD, customer service and the teams responsible for the jacket's digital product passport, while being really deliberate about what we owned and what needed to remain part of the longer-term membership roadmap.
+
+We were able to support the September launch without having to wait for the entire membership platform.
+
+For me, it was a good example of something that comes up quite often in product management. You can have a compelling long-term vision, but sometimes the right decision is to reduce scope, isolate the most valuable experience and deliver that well rather than trying to do everything at once.
+
+**Embedded follow-ups (on this record):**
+- What are you working on right now?
+- Tell me about your current role.
+- What's the latest product initiative you're leading?
+- Can you tell me more about your time at Arc'teryx?
+- What's happening with the membership program?
+- Tell me about the Sperro SV launch.
+- What have you been focused on recently?
+
+---
+
 <a id="qa-93f1f35c-cd54-49c3-8d6d-6a95d262fd4b"></a>
 
 ### What are your compensation expectations?
@@ -4664,6 +7277,55 @@ Based on the scope of the position, my experience and the published range, I'd b
 I'm also interested in understanding the overall compensation package, particularly the bonus structure.
 
 The role and the opportunity to own a meaningful product outcome are important to me, so I'm open to discussing the right package if there's a strong mutual fit.
+
+---
+
+<a id="qa-efc27de7-507e-4d96-b95d-446de1f5badf"></a>
+
+### What assumptions in the $5.2 million investment case were most sensitive?
+
+- **ID:** `efc27de7-507e-4d96-b95d-446de1f5badf`
+- **Section:** product_experience | **Module:** arcteryx-membership | **Intent:** general
+- **Evidence:** resume_supported | **Review:** needs_review
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "What drove the assumptions behind the five point two million business case?"; "Which assumptions mattered most in the membership funding case?"; "What would put the $5.2 million investment return at risk?"; "What did you stress-test in the Arc'teryx membership financial model?"; "How sensitive was the membership case to adoption?"; "Which forecast assumption would you challenge first?"
+- **Import key:** followup-expansion-2026-10-22362777e51489a8
+
+**Answer:**
+
+I'd distinguish the investment decision from a proven return, because much of the value was still forecast. For a membership platform, the sensitive assumptions are likely adoption, incremental engagement with services, long-term retention, and the cost and sequencing of integrations.
+
+I would want Finance to see a range, not a single precise-looking outcome. What happens if member adoption is slower, integration costs rise, or the value comes later than expected?
+
+Our work established enough confidence to obtain approval, but I wouldn't present those forecasts as realized benefits. In a panel discussion, I'd focus on how we made the trade-offs visible and what we'd need to validate after launch.
+
+**Embedded follow-ups (on this record):**
+- What drove the assumptions behind the five point two million business case?
+- Which assumptions mattered most in the membership funding case?
+- What would put the $5.2 million investment return at risk?
+- What did you stress-test in the Arc'teryx membership financial model?
+- How sensitive was the membership case to adoption?
+- Which forecast assumption would you challenge first?
+
+---
+
+<a id="qa-55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1"></a>
+
+### What concerns would you have about joining a business that is still establishing its banking offering?
+
+- **ID:** `55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1`
+- **Section:** career_motivation | **Module:** career-general | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=high, hiring_manager=high, panel=—
+- **Import key:** followup-expansion-2026-10-a186e0487d072c84
+
+**Answer:**
+
+The main uncertainty I'd want to understand is how much of the foundational operating model is established and how much is still being built: decision rights, service reliability, payments ownership and the handoffs between the core bank and customer-facing teams.
+
+That's not a reason to avoid the role. It's part of why I find the opportunity interesting. But I would want a realistic view of the sequence: what must be dependable first, what is differentiated, and where the team has the ability to make decisions.
+
+I'd rather join knowing those trade-offs and help solve them than assume the work is only about adding attractive features to a new account.
 
 ---
 
@@ -4685,6 +7347,46 @@ I'd start with eligibility, account ownership where relevant, authentication, tr
 - Transfer launch readiness
 - Risk and AML
 - Banking compliance
+
+---
+
+<a id="qa-4333a9f3-b07d-4d8e-8676-6a7ca9012116"></a>
+
+### What did you control in the HBC card portfolio, and what was controlled by Neo?
+
+- **ID:** `4333a9f3-b07d-4d8e-8676-6a7ca9012116`
+- **Section:** product_experience | **Module:** hbc-portfolio | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-4bf5985a1de015b1
+
+**Answer:**
+
+I owned the product growth roadmap and commercial decisions within the digital ecosystem, not the bank's credit underwriting or the entire lending balance sheet.
+
+Our Neo partnership meant decisions needed clear boundaries: what the retailer could change in acquisition and engagement, what the issuing partner owned in credit decisioning and operational controls, and where we had to coordinate changes.
+
+When I talk about financial impact, I'm referring to the cardholder growth and engagement initiatives we influenced. I wouldn't suggest I personally set credit policy or that the approval speed came from my UX redesign. That distinction is important when translating the experience into everyday banking.
+
+---
+
+<a id="qa-31d8ded4-7dc2-4d0b-ad30-009b1f92748b"></a>
+
+### What did you cut from the membership MVP, and how did you defend those trade-offs?
+
+- **ID:** `31d8ded4-7dc2-4d0b-ad30-009b1f92748b`
+- **Section:** product_experience | **Module:** arcteryx-membership | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-037002a66f7c0bea
+
+**Answer:**
+
+I was trying to protect a coherent first member experience without making the platform dependent on every possible channel and operational integration. The essential journey was enrollment, a view of membership and gear, clear benefits and a practical way for service teams to support members.
+
+Capabilities like deeper store enrollment, full native-app parity and advanced service workflows could come later if their dependencies weren't ready. That's a different decision from saying they had no value.
+
+I'd explain the trade-off in terms of customer journeys enabled, dependency risk and whether the MVP could actually be measured. The useful lesson was that 'smaller' only works if the remaining experience is still complete enough to create value.
 
 ---
 
@@ -4793,6 +7495,26 @@ To me, that was a better MVP decision than spreading the team across more front-
 
 ---
 
+<a id="qa-110a4074-4ba6-4eb9-9b8e-4a96b4e223e4"></a>
+
+### What do you do when a shared dependency is blocking your objective but the other PM has different priorities?
+
+- **ID:** `110a4074-4ba6-4eb9-9b8e-4a96b4e223e4`
+- **Section:** leadership_behavioural | **Module:** leadership-general | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-809d4ac5fe16d18c
+
+**Answer:**
+
+I'd start with the shared outcome and the actual cost of the dependency, rather than arguing whose roadmap is more important.
+
+If Everyday Banking needs a money-movement change to improve primary-account adoption, I'd quantify the expected value, the customer impact of delay and the effort or risk involved. Then I'd work with the other PM to see whether there's a smaller shared milestone or sequencing option that helps both teams.
+
+If we still can't resolve it, leadership should make an explicit portfolio trade-off with the facts available. I'd want clear ownership, dates and interim customer workarounds, not an indefinite dependency in a roadmap spreadsheet.
+
+---
+
 <a id="qa-9b0f399e-6750-463a-9570-805c82449eb8"></a>
 
 ### What does 'P&L ownership' at HBC actually mean?
@@ -4856,6 +7578,75 @@ I owned the consumer cashback withdrawal experience and the product requirements
 
 ---
 
+<a id="qa-195a8189-fe48-4c11-9ebe-8f2741146841"></a>
+
+### What happened after the customer clicked Apply—how did you know they became an approved cardholder?
+
+- **ID:** `195a8189-fe48-4c11-9ebe-8f2741146841`
+- **Section:** product_experience | **Module:** aeroplan-cobrand | **Intent:** general
+- **Evidence:** resume_supported | **Review:** needs_review
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-6155efde5e65801e
+
+**Answer:**
+
+I'd separate our digital funnel from the issuer's application and approval funnel. An application click or redirect isn't an approved new cardholder, and reporting them as the same outcome would overstate impact.
+
+Where partner reporting made it possible, I'd reconcile downstream acquisition outcomes back to the source and offer experience, with the right privacy and aggregation controls. Where it didn't, I'd label the upstream measure honestly and avoid claiming the full effect through approval.
+
+The important distinction is that the acquisition growth and conversion improvements are related but not interchangeable. I'd always explain which denominator and stage a metric refers to.
+
+---
+
+<a id="qa-5c05a272-9334-44b8-bddd-fdbd4a50f6d3"></a>
+
+### What happened if an Avion member didn't have Interac Autodeposit enabled?
+
+- **ID:** `5c05a272-9334-44b8-bddd-fdbd4a50f6d3`
+- **Section:** product_experience | **Module:** rbc-cashback | **Intent:** general
+- **Evidence:** resume_supported | **Review:** needs_review
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "What if an Avion customer didn't use Interac Autodeposit?"; "How did you handle cashback withdrawals without Autodeposit?"; "Could someone cash out without Interac Autodeposit enabled?"; "What happened when a cashback member wasn't eligible for Autodeposit?"; "Walk me through the payout eligibility requirement for Autodeposit."; "If their Interac auto deposit wasn't set up, what did the member see?"
+- **Import key:** followup-expansion-2026-10-783641cec16f6188
+
+**Answer:**
+
+Autodeposit was an important eligibility consideration because we were sending cashback to the email associated with the member. I wouldn't frame the experience as though every customer with an email address could automatically receive funds.
+
+From a product standpoint, the question is whether we can establish eligibility before offering the withdrawal and give an understandable path if the member isn't eligible. We'd rather explain the requirement clearly than accept a request we know can't complete through the intended flow.
+
+In an interview I'd separate the actual Avion rules from a general recommendation: verify eligibility, don't promise delivery prematurely, and make failure and support states clear.
+
+**Embedded follow-ups (on this record):**
+- What if an Avion customer didn't use Interac Autodeposit?
+- How did you handle cashback withdrawals without Autodeposit?
+- Could someone cash out without Interac Autodeposit enabled?
+- What happened when a cashback member wasn't eligible for Autodeposit?
+- Walk me through the payout eligibility requirement for Autodeposit.
+- If their Interac auto deposit wasn't set up, what did the member see?
+
+---
+
+<a id="qa-2f280387-ca4c-4b94-abdf-a644c1868a4a"></a>
+
+### What happens if a customer revokes an AI agent's access while it has a request in progress?
+
+- **ID:** `2f280387-ca4c-4b94-abdf-a644c1868a4a`
+- **Section:** questrade_cases | **Module:** questrade-mcp | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-6c7a1a15e3964650
+
+**Answer:**
+
+I'd want permissions checked at the actual moment each sensitive action is authorized, not only when the agent initially connects. Revoking access should stop new data retrieval and new instructions through that authorization.
+
+If an operation has already been accepted by a payment or trading system, revocation may not undo it. The experience has to distinguish stopping future access from cancelling an in-flight financial instruction.
+
+I'd design clear audit records, revocation feedback and safe handling for queued requests. The principle is that customer control needs to be enforced by the financial platform, not just acknowledged politely by the AI model.
+
+---
+
 <a id="qa-fb3c9a13-b37d-45df-b095-e14f8e84bed2"></a>
 
 ### What happens if a payout API times out after the request was accepted?
@@ -4906,6 +7697,75 @@ And if a customer reports an incorrect answer, I'd want enough traceability to u
 
 **Embedded follow-ups (on this record):**
 - What if the AI hallucinates a bank transaction?
+
+---
+
+<a id="qa-cfe370bc-2273-4055-b0e2-d1adbb96cbf1"></a>
+
+### What happens to your banking growth strategy when interest rates fall?
+
+- **ID:** `cfe370bc-2273-4055-b0e2-d1adbb96cbf1`
+- **Section:** questrade_cases | **Module:** questrade-deposits | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-8034ad0461d8c4d2
+
+**Answer:**
+
+I'd avoid building the entire value proposition around one temporarily attractive savings rate. A rate can help customers try the account, but it can also attract people who move their money as soon as someone else pays more.
+
+I'd look at how sensitive each segment is to rates versus convenience, reliable payments, integrations and service. If rates fall, I'd update the economics with Treasury and examine whether customers continue to use the product for real everyday activity.
+
+The longer-term opportunity is to become useful in a customer's routine, not win an endless bidding contest for promotional balances. I'd measure retained relationships and contribution through different rate environments.
+
+---
+
+<a id="qa-cdc38655-878f-4b7f-a49d-109f3b69125e"></a>
+
+### What if a customer fails identity verification while trying to open a Questbank account?
+
+- **ID:** `cdc38655-878f-4b7f-a49d-109f3b69125e`
+- **Section:** leadership_behavioural | **Module:** questrade-primary | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-90f9fbcc4c70655e
+
+**Answer:**
+
+I'd make the failure recoverable when policy allows, without revealing sensitive verification logic. A generic 'something went wrong' message is frustrating, but exposing all the signals we use could help attackers.
+
+I'd distinguish missing or incorrect information from a higher-risk case that needs manual review or can't proceed. The customer should understand the next legitimate step, what documents may be needed, or how to contact support.
+
+I'd measure false-positive rates, abandonment, manual-review time and eventual successful onboarding. The goal is strong identity controls with understandable and fair recovery paths for genuine customers.
+
+---
+
+<a id="qa-c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42"></a>
+
+### What if a customer receives one payroll deposit and then stops using Questbank?
+
+- **ID:** `c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42`
+- **Section:** questrade_cases | **Module:** questrade-deposits | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "What if the customer only deposits their salary once?"; "How do you know payroll switching will stick?"; "What if someone gets one paycheque and stops using the account?"; "Does the first direct deposit count as primary banking?"; "How do you measure sustained payroll activity rather than one-time setup?"; "What if the customer opens a banking account just for a first deposit bonus?"
+- **Import key:** followup-expansion-2026-10-a6c3f582931f677c
+
+**Answer:**
+
+I'd call that an initial conversion, not a successful primary-bank relationship. One income event could be a test, a split deposit or even an incentive-driven behaviour.
+
+I'd define sustained payroll use across several expected cycles and look for connected activity: bill payments, card spending, retained balances and repeated customer use. For people with irregular income, I'd use a more flexible classification so the metric doesn't unfairly exclude them.
+
+I'd also look at why the relationship stopped. If people deposit salary and immediately transfer it elsewhere, that may tell us the account is functioning as a pass-through rather than becoming useful for everyday banking.
+
+**Embedded follow-ups (on this record):**
+- What if the customer only deposits their salary once?
+- How do you know payroll switching will stick?
+- What if someone gets one paycheque and stops using the account?
+- Does the first direct deposit count as primary banking?
+- How do you measure sustained payroll activity rather than one-time setup?
+- What if the customer opens a banking account just for a first deposit bonus?
 
 ---
 
@@ -4964,6 +7824,35 @@ I'd be cautious. Early results can be noisy, especially when banking behaviours 
 
 ---
 
+<a id="qa-f21a166b-7a0a-41a9-a919-44781cf782a2"></a>
+
+### What if customers trust Questrade for investments but refuse to deposit their salary?
+
+- **ID:** `f21a166b-7a0a-41a9-a919-44781cf782a2`
+- **Section:** questrade_cases | **Module:** questrade-primary | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "What if brokerage customers won't move their paycheque to Questrade?"; "How do you earn customers' trust for payroll, not just investments?"; "Why would an investor choose to deposit salary into Questbank?"; "What if someone likes Questrade investing but keeps their main bank?"; "How do you get from an investing relationship to primary banking?"; "What if customers refuse to switch direct deposit?"
+- **Import key:** followup-expansion-2026-10-8fc7cbfb4ebf7de3
+
+**Answer:**
+
+I wouldn't assume an investment relationship automatically earns a banking relationship. I'd find out what specifically makes customers hesitant: uncertainty around bill payments, access to cash, service reliability, switching effort or simply no compelling benefit.
+
+Then I'd segment the problem. People who frequently move money between bank and brokerage may have a natural first use case, even if they aren't ready to switch payroll. I'd solve that reliably before trying to persuade everyone to move their entire financial life.
+
+I'd measure progression from trial to funded account to recurring activity. The product has to earn primary-account behaviour over time; it's not something we get just because the customer already has a TFSA.
+
+**Embedded follow-ups (on this record):**
+- What if brokerage customers won't move their paycheque to Questrade?
+- How do you earn customers' trust for payroll, not just investments?
+- Why would an investor choose to deposit salary into Questbank?
+- What if someone likes Questrade investing but keeps their main bank?
+- How do you get from an investing relationship to primary banking?
+- What if customers refuse to switch direct deposit?
+
+---
+
 <a id="qa-d551219e-6540-4760-a132-b27c92c706db"></a>
 
 ### What if employers aren't supported by an automated payroll switching provider?
@@ -4982,6 +7871,35 @@ I wouldn't make employer integration a requirement for the whole experience. I'd
 - Employer not integrated
 - Manual switch
 - Edge cases employer HR
+
+---
+
+<a id="qa-77caa5b4-817d-47b3-9569-366aa012daf6"></a>
+
+### What if Engineering says your banking launch plan is unsafe but leadership wants the date?
+
+- **ID:** `77caa5b4-817d-47b3-9569-366aa012daf6`
+- **Section:** leadership_behavioural | **Module:** leadership-general | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "Engineering says the banking launch is risky but the deadline is fixed. What do you do?"; "Would you ship a payment feature if the engineers say it's unsafe?"; "How do you push back when leadership demands an unsafe launch?"; "What if you have to choose between launch date and financial integrity?"; "What would you tell an executive who won't move the banking release date?"; "If the team finds a critical money-movement risk before launch, then what?"
+- **Import key:** followup-expansion-2026-10-eb5a7a85707df703
+
+**Answer:**
+
+I'd want to understand the specific failure mode before turning it into a date negotiation. Is the concern data integrity, double payment, reconciliation, untested load or an incomplete operational process?
+
+I'd bring the engineering owner and relevant controls teams together to define the minimum safe conditions for launch. Then I'd give leadership clear choices: reduce scope, stage rollout, change sequencing or move the date, with the risks of each option visible.
+
+A date can be a business commitment, but it doesn't make an unsafe money-movement path safe. I'd rather explain the trade-off early than have customers discover it after launch.
+
+**Embedded follow-ups (on this record):**
+- Engineering says the banking launch is risky but the deadline is fixed. What do you do?
+- Would you ship a payment feature if the engineers say it's unsafe?
+- How do you push back when leadership demands an unsafe launch?
+- What if you have to choose between launch date and financial integrity?
+- What would you tell an executive who won't move the banking release date?
+- If the team finds a critical money-movement risk before launch, then what?
 
 ---
 
@@ -5051,6 +7969,35 @@ I'd consider that an incentive design problem, not necessarily a marketing succe
 - Bonus abuse
 - Promo churn
 - Deposit campaign ROI
+
+---
+
+<a id="qa-458f82bd-542b-4331-92fb-d77bb3645d06"></a>
+
+### What if Risk still says no after you've presented all your evidence?
+
+- **ID:** `458f82bd-542b-4331-92fb-d77bb3645d06`
+- **Section:** leadership_behavioural | **Module:** leadership-general | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=very_high, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "What if Risk won't sign off even after you explain the benefits?"; "How do you move forward when Compliance rejects the proposal?"; "What do you do when the Risk team still says no?"; "Would you escalate if AML refuses to approve the change?"; "How do you balance a growth opportunity against a hard risk control?"; "What's your next step after Risk rejects your product recommendation?"
+- **Import key:** followup-expansion-2026-10-463e16f913ccff8d
+
+**Answer:**
+
+I'd make sure I understand whether it's a non-negotiable requirement, a decision within their mandate or a concern we might solve in another way.
+
+If it's a hard control, the product needs to work within it. The question then is whether we can change the customer flow, add targeted verification or reduce scope without undermining the objective.
+
+If it's a genuine judgment call, I'd document the options, impact and decision owner, and escalate through the agreed governance when appropriate. I wouldn't treat escalation as a way to bully Risk into approving a launch. In financial products, you need to build a working relationship where disagreement improves the decision.
+
+**Embedded follow-ups (on this record):**
+- What if Risk won't sign off even after you explain the benefits?
+- How do you move forward when Compliance rejects the proposal?
+- What do you do when the Risk team still says no?
+- Would you escalate if AML refuses to approve the change?
+- How do you balance a growth opportunity against a hard risk control?
+- What's your next step after Risk rejects your product recommendation?
 
 ---
 
@@ -5166,6 +8113,33 @@ I'd make the joint outcome explicit and separate what each team owns. If my goal
 
 ---
 
+<a id="qa-1c3f6b10-2b62-4807-bffd-ef21beef30d7"></a>
+
+### What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?
+
+- **ID:** `1c3f6b10-2b62-4807-bffd-ef21beef30d7`
+- **Section:** product_experience | **Module:** arcteryx-membership | **Intent:** general
+- **Evidence:** resume_supported | **Review:** needs_review
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "What's actually launched from the membership plan so far?"; "Which Arc'teryx membership capabilities are live versus planned?"; "What delivered for Sperro SV, and what's still on the roadmap?"; "What's shipping now versus later on the Arc teryx membership program?"; "Has the full membership platform launched yet?"; "What was in the September Sperro launch versus the full membership MVP?"
+- **Import key:** followup-expansion-2026-10-c8a85beb577449d9
+
+**Answer:**
+
+I'd separate the smaller Sperro SV benefits release from the broader membership platform we're building. For the September jacket launch, our work supported the customer benefits, including three years of unlimited out-of-warranty repairs, access to exclusive community events and a chance to win a Global Academy experience. The digital product passport registration was delivered by a separate team; we coordinated with them rather than claiming that work as ours.
+
+The wider membership program is a different scope. We secured $5.2 million in approved funding, defined the MVP and its integration direction, but I wouldn't describe those milestones as proof that the full platform has launched or generated adoption or ROI. What matters is being precise about what customers can use today versus what we're still building.
+
+**Embedded follow-ups (on this record):**
+- What's actually launched from the membership plan so far?
+- Which Arc'teryx membership capabilities are live versus planned?
+- What delivered for Sperro SV, and what's still on the roadmap?
+- What's shipping now versus later on the Arc teryx membership program?
+- Has the full membership platform launched yet?
+- What was in the September Sperro launch versus the full membership MVP?
+
+---
+
 <a id="qa-7547195c-f21b-4d86-9d4f-c7dd07f73109"></a>
 
 ### What is MCP, and why is it different from putting a chatbot inside a financial app?
@@ -5220,6 +8194,26 @@ Reconciliation is how we confirm that the payments we believe we initiated and c
 
 ---
 
+<a id="qa-4a20cf51-7a43-415b-b55d-d01104a46d6f"></a>
+
+### What is sample ratio mismatch, and why would you care in a banking A/B test?
+
+- **ID:** `4a20cf51-7a43-415b-b55d-d01104a46d6f`
+- **Section:** questrade_cases | **Module:** questrade-metrics | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-cd8ddf2374aab188
+
+**Answer:**
+
+Sample ratio mismatch means the observed split between experiment groups differs materially from the allocation we expected. That can indicate something went wrong with randomization, eligibility, exposure tracking or logging.
+
+It's important because an apparent conversion lift may be unreliable if the underlying groups aren't comparable. In banking, issues can also arise if a risk rule or technical problem disproportionately prevents one group from reaching the measured step.
+
+I'd check the assignment and exposure data before interpreting the outcome, then review segment balance and instrumentation with Analytics and Engineering. I wouldn't celebrate a lift until the experiment itself was trustworthy.
+
+---
+
 <a id="qa-6a8c3993-05ae-456b-8750-2b6778b6ee6b"></a>
 
 ### What is the biggest risk in connecting external accounts?
@@ -5240,6 +8234,55 @@ My biggest product concern would be trust in the data. If the customer sees a st
 - Wealthica
 - Data stale
 - Privacy
+
+---
+
+<a id="qa-ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c"></a>
+
+### What is the difference between KYC, AML monitoring and transaction fraud prevention?
+
+- **ID:** `ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c`
+- **Section:** leadership_behavioural | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "How is KYC different from AML and transaction fraud?"; "Explain know your customer versus fraud prevention."; "What's the difference between anti money laundering and fraud detection?"; "Why isn't identity verification the same thing as transaction monitoring?"; "How do KYC, AML and payment fraud controls fit together?"; "What role does each financial crime control actually play?"
+- **Import key:** followup-expansion-2026-10-3556d63635e0e2ae
+
+**Answer:**
+
+I think of them as related but different controls. KYC is about identifying and understanding the customer and meeting applicable onboarding requirements. AML monitoring looks for patterns and activity that require review under financial-crime controls. Transaction fraud prevention focuses on whether a specific action appears unauthorized or deceptive.
+
+They share data but aren't interchangeable. A customer can be legitimately onboarded and still experience an account takeover or suspicious payment attempt.
+
+As a PM, I'd work with the right control owners to design clear workflows and measure legitimate-customer friction and false positives, while keeping mandatory decisions with the regulated risk and compliance teams.
+
+**Embedded follow-ups (on this record):**
+- How is KYC different from AML and transaction fraud?
+- Explain know your customer versus fraud prevention.
+- What's the difference between anti money laundering and fraud detection?
+- Why isn't identity verification the same thing as transaction monitoring?
+- How do KYC, AML and payment fraud controls fit together?
+- What role does each financial crime control actually play?
+
+---
+
+<a id="qa-de31db47-3aea-4d26-be40-e0fa92423dd1"></a>
+
+### What is the strongest single reason we should choose you for this job?
+
+- **ID:** `de31db47-3aea-4d26-be40-e0fa92423dd1`
+- **Section:** career_motivation | **Module:** career-general | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=high, hiring_manager=high, panel=—
+- **Import key:** followup-expansion-2026-10-67f356d158e5db0f
+
+**Answer:**
+
+I'd say it's that I've worked across several parts of the financial customer journey, not just one feature category.
+
+At Aeroplan I worked on acquiring credit-card customers, at HBC on conversion and ongoing cardholder economics, and at RBC on making an actual money-movement capability available to non-bank customers. At Arc'teryx I led substantial platform and membership planning, including the investment case.
+
+That combination helps me think about Questbank as more than a collection of banking screens. It's a customer relationship that has to work commercially, operationally and technically. I also bring enough analytics experience to challenge whether the behaviours we're measuring are creating real value.
 
 ---
 
@@ -5320,6 +8363,26 @@ I'd use these metrics by cohort rather than just looking at top-line averages, b
 
 ---
 
+<a id="qa-6ffb405d-688b-433e-87c3-a7d992430bad"></a>
+
+### What should happen if someone loses their phone and tries to access their bank account?
+
+- **ID:** `6ffb405d-688b-433e-87c3-a7d992430bad`
+- **Section:** leadership_behavioural | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-5401967e0f935946
+
+**Answer:**
+
+I'd separate account recovery from payment authorization. Someone who has lost their phone needs a way back in, but that is also a moment when an attacker might impersonate them.
+
+I'd work with identity and security teams on a recovery path with appropriate alternative verification, additional checks when credentials or devices change, and strong restrictions around sensitive actions until the account is trusted again.
+
+I'd also measure recovery success, time to regain access and fraud linked to recovery flows. Fast recovery is valuable, but it can't be so easy that changing devices becomes a shortcut around security controls.
+
+---
+
 <a id="qa-93a2100c-050b-4990-9340-00412fb9b507"></a>
 
 ### What should happen when a customer initiates a transfer but the payment fails?
@@ -5349,6 +8412,26 @@ The main principle is that money movement needs to be correct before it needs to
 
 ---
 
+<a id="qa-381e64d9-0684-493b-8e36-9a2a5636966c"></a>
+
+### What should the financial hub do if an external bank connection is stale or disconnected?
+
+- **ID:** `381e64d9-0684-493b-8e36-9a2a5636966c`
+- **Section:** questrade_cases | **Module:** questrade-hub | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-aee698b800a5a0c3
+
+**Answer:**
+
+It should make that limitation obvious before customers act on the information. I'd show the last successful refresh, identify which accounts are unavailable and avoid quietly presenting an incomplete financial picture as current.
+
+If an insight depends on missing account data, the app should qualify the conclusion or withhold it. For example, it shouldn't confidently say someone can invest extra cash if we can't see obligations from a disconnected account.
+
+I'd give the customer a clear reconnect path and continue to show verified Questrade data normally. The core design principle is that a partial view can still be useful, but it must never masquerade as a complete one.
+
+---
+
 <a id="qa-b0d58fdf-bced-41f7-b878-1b158fc89643"></a>
 
 ### What was your most important HBC product decision?
@@ -5367,6 +8450,66 @@ One important decision was treating cardholder value as a lifecycle problem rath
 - Product judgment card
 - One decision
 - Prioritization examples
+
+---
+
+<a id="qa-14712a6a-881f-4c8c-9f98-9b3359211669"></a>
+
+### What were the leading indicators before you could measure meaningful payout volume?
+
+- **ID:** `14712a6a-881f-4c8c-9f98-9b3359211669`
+- **Section:** product_experience | **Module:** rbc-cashback | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-992afcd16dd5ffcb
+
+**Answer:**
+
+Before looking at annualized volume, I'd want to know whether the flow was usable and operationally safe. Leading indicators would include how many eligible members reached the withdrawal option, how many initiated a request, how many completed the required steps and where they dropped off.
+
+Alongside conversion, I'd watch failed or returned transfers, support contact reasons and settlement exceptions. Those are particularly important because a payment feature can look popular while creating hidden operational work.
+
+I'd be careful not to claim historical values I haven't verified. The broader outcome I can support is that the capability enabled more than $1 million in annualized consumer cashback withdrawals.
+
+---
+
+<a id="qa-bad7b926-f617-44c4-ab13-ddc78b1e4378"></a>
+
+### What would convince you to stop an AI financial-assistant pilot?
+
+- **ID:** `bad7b926-f617-44c4-ab13-ddc78b1e4378`
+- **Section:** questrade_cases | **Module:** questrade-mcp | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-f9c0dbb7c57fb56a
+
+**Answer:**
+
+I'd define stop conditions before launch, including any demonstrated pattern of materially incorrect balances, unsafe transaction interpretations, unauthorized data access or high-severity customer confusion.
+
+A great satisfaction score wouldn't compensate for a smaller number of serious financial errors. I'd classify failures by severity and investigate whether they're coming from stale source data, tool permissions, prompt handling or the model's explanation layer.
+
+I'd also monitor customer corrections and whether the system handles uncertainty properly. In a pilot, stopping or narrowing scope is a useful learning outcome if we discover a risk we can't yet control. The aim is a trustworthy product, not proving AI should ship at any cost.
+
+---
+
+<a id="qa-73b7a947-02f5-4298-8592-4badfbcbb139"></a>
+
+### What would have changed your recommendation from buy to build?
+
+- **ID:** `73b7a947-02f5-4298-8592-4badfbcbb139`
+- **Section:** product_experience | **Module:** arcteryx-membership | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-490b32859c4684f4
+
+**Answer:**
+
+I'd reconsider the recommendation if the vendor created more long-term constraint than leverage. For example, if its core data model couldn't support the customer journeys, the integration cost erased the time advantage, or important capabilities were so proprietary that we'd struggle to evolve them.
+
+I'd also weigh how strategically differentiating the capability really was. There are some experiences we should own closely, but that doesn't mean building commodity loyalty infrastructure from scratch.
+
+At Arc'teryx, we evaluated five vendors and chose a headless direction. The reported delivery-time benefit was an estimate against the custom-build alternative, not a realized saving from a launched platform.
 
 ---
 
@@ -5390,6 +8533,75 @@ What's compelling about Questrade is that everyday banking is a meaningful busin
 I'd want to understand the team's priorities, how much ownership this role has over the product direction and how success is measured.
 
 If there's a strong fit on those things, it's definitely an opportunity I'd be excited about.
+
+---
+
+<a id="qa-bfaa86a1-2c06-4c4f-880a-bf2718e8a330"></a>
+
+### What would the customer see while a cashback payout is pending or being investigated?
+
+- **ID:** `bfaa86a1-2c06-4c4f-880a-bf2718e8a330`
+- **Section:** product_experience | **Module:** rbc-cashback | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "What does a customer see when their cash-out is still processing?"; "What status do you show for a pending Interac payout?"; "How do you communicate a delayed cashback withdrawal?"; "What if the transfer's outcome is unknown?"; "How would customers know their cashback was on the way?"; "What would the Avion app say while a payout was under review?"
+- **Import key:** followup-expansion-2026-10-723124b41a88671e
+
+**Answer:**
+
+I'd distinguish a request being received from the money being sent or confirmed. The customer should see a plain-language status, the amount, when they requested it and what happens next.
+
+If a payout is under investigation, I'd avoid telling them it failed or succeeded before we know. I'd rather say we're confirming its status, give a realistic expectation if one is available, and make the support path easy to find.
+
+The status should come from the actual payments and settlement workflow rather than a front-end timer. A good experience here reduces duplicate withdrawal attempts and support anxiety while keeping the financial record accurate.
+
+**Embedded follow-ups (on this record):**
+- What does a customer see when their cash-out is still processing?
+- What status do you show for a pending Interac payout?
+- How do you communicate a delayed cashback withdrawal?
+- What if the transfer's outcome is unknown?
+- How would customers know their cashback was on the way?
+- What would the Avion app say while a payout was under review?
+
+---
+
+<a id="qa-8ba596cd-8c2c-456e-bf5e-0681333ab61a"></a>
+
+### What would the MVP of a payroll-switching feature actually contain?
+
+- **ID:** `8ba596cd-8c2c-456e-bf5e-0681333ab61a`
+- **Section:** leadership_behavioural | **Module:** questrade-deposits | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-fe3aaf8b0a104ebd
+
+**Answer:**
+
+I'd define the smallest end-to-end journey that helps an eligible customer move income safely. That could include clear account details, simple employer instructions or supported switching assistance, confirmation of what the customer submitted and a way to verify the first successful deposit.
+
+I'd also make the failure and support paths part of the MVP, not phase-two surprises. Customers need to understand what is and isn't confirmed, and what to do if their next paycheque doesn't arrive.
+
+I wouldn't start with every employer integration. I'd choose a segment with a credible route to adoption and measure sustained deposits and support burden after the first cycle.
+
+---
+
+<a id="qa-08bed145-68a4-4f1f-a500-1287247345bc"></a>
+
+### What would you actually deliver in your first 30 days?
+
+- **ID:** `08bed145-68a4-4f1f-a500-1287247345bc`
+- **Section:** career_motivation | **Module:** career-general | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=high, hiring_manager=high, panel=—
+- **Import key:** followup-expansion-2026-10-c28bf6e58efb1cc2
+
+**Answer:**
+
+I wouldn't promise a major launch before understanding the banking dependencies, but I would aim to deliver something tangible.
+
+By day 30, I'd want a shared map of the highest-value customer journeys, their owners and their biggest friction points. That would come from looking at the funnel, support reasons, payment exceptions and talking directly with the teams that operate the product.
+
+I'd also propose a first measurement baseline: funded-account rate, recurring deposit behaviour, successful money movement and the most important reliability guardrails. If we discovered a contained issue we could safely fix quickly, I'd pursue it. The deliverable is shared clarity and a prioritized decision, not just a stack of introductory meetings.
 
 ---
 
@@ -5541,6 +8753,46 @@ First I'd try to understand what's driving the estimate. Is it foundational arch
 
 ---
 
+<a id="qa-48f67960-28cb-4d6b-b863-e7cfe2c1ca71"></a>
+
+### What would you do if post-launch data contradicts the user research that justified the feature?
+
+- **ID:** `48f67960-28cb-4d6b-b863-e7cfe2c1ca71`
+- **Section:** leadership_behavioural | **Module:** leadership-general | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-818789ec0c4cf2bb
+
+**Answer:**
+
+I'd treat that as an opportunity to learn which assumption was wrong. Research can accurately describe customer frustration while still failing to predict whether a particular solution changes behaviour.
+
+I'd check whether the target segment was actually reached, whether the feature worked as intended and whether the metric captured the job we hoped to improve. I'd also follow up with customers who tried it and those who ignored it.
+
+Depending on the evidence, I might improve discoverability, change the workflow, test a narrower segment or stop investing. I wouldn't defend the original research or the feature just because we'd already committed to it.
+
+---
+
+<a id="qa-771cc93c-f8fd-4499-90dd-04482b325890"></a>
+
+### What would you do if the customer sees a successful transfer but settlement hasn't reconciled?
+
+- **ID:** `771cc93c-f8fd-4499-90dd-04482b325890`
+- **Section:** questrade_cases | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-35b5658e122b27ca
+
+**Answer:**
+
+I'd avoid assuming that a customer-facing 'success' label proves every financial event has been reconciled. I'd investigate exactly what success was meant to indicate: instruction accepted, funds posted or final settlement confirmed.
+
+The first step is preserving the accurate transaction history and identifying the discrepancy with Finance, Operations and the payment service. If funds are genuinely at risk or duplicated, that becomes an incident.
+
+Longer term, I'd tighten the product's status definitions and monitoring so we don't prematurely label an operation as final. Customers need a trustworthy status, and internal teams need an exception path that connects the operational record to the financial one.
+
+---
+
 <a id="qa-d47c60d3-510e-4373-abf0-0749fcc41ebc"></a>
 
 ### What would you do in your first 90 days?
@@ -5565,6 +8817,46 @@ By the end of 90 days, I'd want to have a clear view of the primary-account grow
 I wouldn't come in promising to completely change the roadmap in my first month. I'd want to earn enough context to know what deserves changing.
 
 But I also wouldn't spend three months only observing. I'd look for a contained improvement or experiment that could deliver useful learning early.
+
+---
+
+<a id="qa-ab5294e4-b011-43a7-8cb2-432d84014ec7"></a>
+
+### What would you tell customers if a major banking partner was down and you didn't know the restoration time?
+
+- **ID:** `ab5294e4-b011-43a7-8cb2-432d84014ec7`
+- **Section:** leadership_behavioural | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-d9a7e448477c9d46
+
+**Answer:**
+
+I'd communicate the confirmed impact, the affected journeys and the next planned update without inventing a recovery estimate. It's tempting to say 'we'll be back shortly,' but that can undermine trust if we don't know.
+
+I'd coordinate with incident command and Support so every channel tells the same story. If there's a safe alternative path for customers, we'd explain it clearly without encouraging repeated submissions that could duplicate payments.
+
+Once service returns, we'd verify financial consistency and any unresolved transactions before announcing that everything is complete. Reliability includes honest status communication and a real recovery process, not just an uptime banner.
+
+---
+
+<a id="qa-606fd4d4-8492-40ac-b65f-099d93621451"></a>
+
+### What would your launch-readiness checklist include for an everyday-banking feature?
+
+- **ID:** `606fd4d4-8492-40ac-b65f-099d93621451`
+- **Section:** leadership_behavioural | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-25dbf0548b118c22
+
+**Answer:**
+
+I'd want explicit ownership and evidence across the customer journey, integration, risk controls and operations—not just a feature checklist.
+
+For a money-movement feature, that means the happy path, authorization, exception states, transaction tracing, reconciliations, support training, monitoring and rollback or containment procedures. I'd also check that customer-facing claims are accurate about timing and availability.
+
+I'd run realistic failure scenarios, confirm launch guardrails with the control owners and stage exposure where possible. The release decision should answer whether we can operate the experience safely when things go wrong, not simply whether the UI works in a demo.
 
 ---
 
@@ -5607,6 +8899,46 @@ I think financial products sometimes overvalue engagement for its own sake. A cu
 - Product philosophy
 - Strong opinion
 - Radical candor
+
+---
+
+<a id="qa-a5e5c740-637c-4b42-8642-e889de82dcec"></a>
+
+### What's the biggest learning curve for you if you join Questbank?
+
+- **ID:** `a5e5c740-637c-4b42-8642-e889de82dcec`
+- **Section:** career_motivation | **Module:** career-general | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=high, hiring_manager=high, panel=—
+- **Import key:** followup-expansion-2026-10-e875f9d64c5a9e6a
+
+**Answer:**
+
+I think it's the depth of deposit-account operations and the exact constraints of Questrade's banking stack. I've worked with money movement, eligibility, risk and financial operations, but I wouldn't pretend that's identical to owning the full lifecycle of a chequing account.
+
+I'd close the gap deliberately: understand the core ledger and payment rails, walk through customer and operations journeys, map the controls with Risk and Treasury, and study the failure modes in actual data. In the first few weeks I'd want to know which decisions sit with Everyday Banking versus the core platform or payment teams.
+
+The thing I can contribute immediately is product judgment around customer behaviour, regulated integration work and commercial trade-offs.
+
+---
+
+<a id="qa-f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1"></a>
+
+### What's the difference between acquiring a cardholder, activating one and retaining one?
+
+- **ID:** `f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1`
+- **Section:** product_experience | **Module:** hbc-activation | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-d33952d1ddef7236
+
+**Answer:**
+
+They represent different steps in the relationship. Acquisition means we've gained a new customer or account. Activation means that customer has taken the first meaningful behaviour, such as a qualifying purchase, within a defined period. Retention means that useful behaviour continues over later periods.
+
+For a card product, treating all three as one number hides very different problems. A strong application funnel with weak first purchase may point to onboarding or proposition issues; good activation with poor repeat spend may point to value or habit formation.
+
+At HBC, that distinction informed how I thought about the cardholder lifecycle rather than optimizing application conversion in isolation.
 
 ---
 
@@ -5658,6 +8990,66 @@ Assuming the account, payment rails and reliability are ready, I'd start with a 
 
 ---
 
+<a id="qa-d17bc916-0925-4b2f-9904-092499e61920"></a>
+
+### When should an automated retry be prohibited even if it would reduce failures?
+
+- **ID:** `d17bc916-0925-4b2f-9904-092499e61920`
+- **Section:** questrade_cases | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-1a10ff8457e116b4
+
+**Answer:**
+
+When we can't establish whether the original financial instruction actually executed, an automatic retry can be dangerous. It could send money twice.
+
+I'd separate safe technical retries from new business instructions. With a stable transaction identifier and idempotent service contract, some operations can be retried safely. If the downstream outcome is uncertain, I would first query the transaction's authoritative status or route it into an exception workflow.
+
+I'd also prohibit blind retries for failures that require customer action, risk review or corrected recipient information. The operational metric shouldn't reward us for making the system look faster while increasing financial harm.
+
+---
+
+<a id="qa-be3e3314-68c5-4f6a-a3d9-7f0b9147e17b"></a>
+
+### When would you choose deterministic software or rules instead of an AI model?
+
+- **ID:** `be3e3314-68c5-4f6a-a3d9-7f0b9147e17b`
+- **Section:** questrade_cases | **Module:** questrade-mcp | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-820f4090df4a3dc6
+
+**Answer:**
+
+Whenever the required behaviour can be specified reliably and failure has a clear cost. Balance calculations, eligibility rules, permissions, transfer limits and execution controls should be deterministic and validated server-side.
+
+I'd use AI where natural language or unstructured information adds value, such as helping customers find an explanation or helping an operations team categorize exception descriptions. Even there, I want authoritative inputs and a safe fallback.
+
+The decision isn't AI versus no AI as an identity statement. It's whether a probabilistic model improves the actual customer job enough to justify its latency, error rate, monitoring and security complexity.
+
+---
+
+<a id="qa-1de87c3a-d693-419c-9ded-b76154af230a"></a>
+
+### When would you shut down a feature your own team spent six months building?
+
+- **ID:** `1de87c3a-d693-419c-9ded-b76154af230a`
+- **Section:** leadership_behavioural | **Module:** leadership-general | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-ff778946b3ce4c07
+
+**Answer:**
+
+I'd separate sunk cost from future value. Six months of work tells us what we've invested, but it doesn't by itself justify another six months.
+
+I'd examine whether the feature solves a meaningful customer problem, whether adoption and quality are improving, whether the economics work and what we'd give up by continuing. Sometimes a contained iteration or repositioning test is appropriate. Sometimes the better decision is to stop.
+
+I'd also consider contractual, operational and customer obligations before shutting anything off. I'd explain the decision to the team through what we've learned and where their effort will create more value, rather than framing it as their work having been wasted.
+
+---
+
 <a id="qa-695ace4a-7c53-415e-9eb2-5f885d680c2b"></a>
 
 ### Where should transaction status, balance calculation and reconciliation responsibilities sit?
@@ -5687,6 +9079,133 @@ From my perspective, the product requirement is straightforward: customers need 
 
 **Embedded follow-ups (on this record):**
 - What owns the source of truth for account balances and payment statuses?
+
+---
+
+<a id="qa-1f935f03-d796-480c-8e77-2a3c26f156b2"></a>
+
+### Which early warning indicator would tell you Questbank is losing customer trust?
+
+- **ID:** `1f935f03-d796-480c-8e77-2a3c26f156b2`
+- **Section:** questrade_cases | **Module:** questrade-metrics | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-c1c6a9724d86f74e
+
+**Answer:**
+
+I'd watch for a rise in failed or unexplained financial events, especially when paired with repeat support contacts or customers withdrawing their recurring activity. A single metric won't fully capture trust, but those behaviours are meaningful.
+
+For example, people who successfully received payroll for several cycles and then move it away after an incident are a more serious signal than a transient drop in app sessions. I'd combine reliability incidents, time to resolution, complaint themes and reductions in retained primary relationships.
+
+I'd segment by affected journey so we can tell whether a problem is concentrated in payroll, cards or account funding and act on the right root cause.
+
+---
+
+<a id="qa-94fa46b3-57ae-43a9-a217-84dc00d8a565"></a>
+
+### Which Questrade investing customers would you deliberately not target first for banking?
+
+- **ID:** `94fa46b3-57ae-43a9-a217-84dc00d8a565`
+- **Section:** questrade_cases | **Module:** questrade-primary | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "Which investors would you exclude from your first banking target segment?"; "Who shouldn't we target for Questbank first?"; "Would you prioritize every Questrade customer for banking?"; "Which existing brokerage cohorts are least likely to adopt everyday banking?"; "Are high-AUA investors always the best banking prospects?"; "How would you choose who not to market the bank account to?"
+- **Import key:** followup-expansion-2026-10-bf436c9433d0107c
+
+**Answer:**
+
+I'd avoid making an early acquisition bet on customers who have little reason to move cash through the platform or who would be disproportionately costly to serve for the expected value.
+
+For example, a very passive long-term investor with no regular funding activity might love their brokerage account but have no immediate banking pain point. That doesn't mean we exclude them forever. It means our first proposition should focus on people where a connected cash-and-investing experience solves something observable.
+
+I'd test segment economics and actual behaviours rather than simply targeting the largest asset balances. A high-AUA client isn't automatically the best candidate for sustained daily banking use.
+
+**Embedded follow-ups (on this record):**
+- Which investors would you exclude from your first banking target segment?
+- Who shouldn't we target for Questbank first?
+- Would you prioritize every Questrade customer for banking?
+- Which existing brokerage cohorts are least likely to adopt everyday banking?
+- Are high-AUA investors always the best banking prospects?
+- How would you choose who not to market the bank account to?
+
+---
+
+<a id="qa-0f41544d-2a2d-4b4b-bb41-f89df44c05d0"></a>
+
+### Which step in a credit-card application funnel would you inspect first, and why?
+
+- **ID:** `0f41544d-2a2d-4b4b-bb41-f89df44c05d0`
+- **Section:** product_experience | **Module:** hbc-mastercard-app | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-4b0212c6f3f74d1f
+
+**Answer:**
+
+I'd inspect the highest-friction step where we could plausibly improve the experience without weakening underwriting or compliance requirements. I'd look at drop-off by device, traffic source and field-level error patterns rather than assume the longest screen is the problem.
+
+For a partner-issued credit card, I'd also separate the part of the application we own from the handoff and approval journey the issuer owns. A better-looking landing page doesn't help much if customers get lost at the transition.
+
+I'd prioritize a hypothesis we can actually test, such as clearer eligibility information or saving progress, and define the outcome as completed applications rather than clicks alone.
+
+---
+
+<a id="qa-557cbeab-d17e-48bc-99de-1a54625ee37f"></a>
+
+### Which three metrics would you put on your first Questbank executive scorecard?
+
+- **ID:** `557cbeab-d17e-48bc-99de-1a54625ee37f`
+- **Section:** questrade_cases | **Module:** questrade-metrics | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "What would be on your first executive dashboard for Questbank?"; "Which three KPIs matter most for the bank?"; "What would you measure first in Everyday Banking?"; "How would you design a simple banking leadership scorecard?"; "What are the core growth and reliability metrics for Questbank?"; "If you only had three banking measures, what are they?"
+- **Import key:** followup-expansion-2026-10-3df9c94b9ea49d8f
+
+**Answer:**
+
+I'd choose one outcome, one behavioural diagnostic and one non-negotiable reliability guardrail.
+
+For the outcome, I'd use sustained active primary-banking relationships, defined through recurring income and meaningful financial activity over an appropriate window. For the diagnostic, I'd track conversion from funded account to recurring deposit and payment use. For the guardrail, I'd want successful money movement and significant customer-impacting exceptions.
+
+I'd add retained deposits and contribution economics in the deeper view, but I wouldn't put twenty charts on the executive scorecard. The question it should answer is whether more people are genuinely relying on the product and whether we're earning that trust safely.
+
+**Embedded follow-ups (on this record):**
+- What would be on your first executive dashboard for Questbank?
+- Which three KPIs matter most for the bank?
+- What would you measure first in Everyday Banking?
+- How would you design a simple banking leadership scorecard?
+- What are the core growth and reliability metrics for Questbank?
+- If you only had three banking measures, what are they?
+
+---
+
+<a id="qa-80a4e168-83f0-45ba-a9b7-bde17123566a"></a>
+
+### Who made the final decision when the payments team, Risk and Product disagreed?
+
+- **ID:** `80a4e168-83f0-45ba-a9b7-bde17123566a`
+- **Section:** product_experience | **Module:** rbc-cashback | **Intent:** general
+- **Evidence:** resume_supported | **Review:** needs_review
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "Who had decision authority when Risk and Product disagreed?"; "What did you own versus the payments team?"; "Who signed off on the payout controls?"; "If AML said no, who made the call?"; "How did you resolve a disagreement with Financial Operations?"; "Walk me through who actually had final say on that payment decision."
+- **Import key:** followup-expansion-2026-10-301fb13e986ed4d0
+
+**Answer:**
+
+I wouldn't imply I had unilateral authority over Risk controls or enterprise payment infrastructure. My role was to own the consumer product requirements and coordinate the decisions needed for the customer experience to work.
+
+If teams disagreed, I'd make the decision explicit: what control is mandatory, what implementation choices are flexible, what customer harm we're trying to avoid and who has authority over each part. Sometimes the right outcome is to change the product flow rather than ask a control owner to waive a requirement.
+
+At RBC, that cross-functional alignment was a big part of the work. It taught me to distinguish influencing a decision from formally owning another team's risk acceptance.
+
+**Embedded follow-ups (on this record):**
+- Who had decision authority when Risk and Product disagreed?
+- What did you own versus the payments team?
+- Who signed off on the payout controls?
+- If AML said no, who made the call?
+- How did you resolve a disagreement with Financial Operations?
+- Walk me through who actually had final say on that payment decision.
 
 ---
 
@@ -5746,6 +9265,7 @@ The real question was whether a higher share of offer-page visitors went on to b
 - **Section:** product_experience | **Module:** arcteryx-membership | **Intent:** general
 - **Evidence:** resume_supported | **Review:** ok
 - **Round relevance (recommended):** recruiter=very_high, hiring_manager=medium, panel=low
+- **Alt phrasings:** "You're leading membership at Arc'teryx, so why explore Questrade?"; "What would make you leave Arc'teryx for this banking role?"; "Why make a move now when you're still at Arc'teryx?"; "Why switch from Arc'teryx membership to everyday banking?"; "What's drawing you to Questrade at this stage?"; "If you're happy at Arc'teryx, why are we talking?"
 
 **Answer:**
 
@@ -5758,6 +9278,14 @@ What caught my attention about Questrade is the opportunity to return to financi
 I also like that the challenge is bigger than launching a new product. You're trying to change how customers manage their money and build a relationship that becomes part of their everyday lives.
 
 That combination of the industry, the product challenge and the opportunity to have a meaningful impact is what makes this role particularly interesting to me.
+
+**Embedded follow-ups (on this record):**
+- You're leading membership at Arc'teryx, so why explore Questrade?
+- What would make you leave Arc'teryx for this banking role?
+- Why make a move now when you're still at Arc'teryx?
+- Why switch from Arc'teryx membership to everyday banking?
+- What's drawing you to Questrade at this stage?
+- If you're happy at Arc'teryx, why are we talking?
 
 ---
 
@@ -5837,6 +9365,26 @@ That made it a practical priority with a clear outcome: could an eligible non-RB
 
 ---
 
+<a id="qa-c22bc35e-41a0-4bc7-9b53-6d19da3ecfef"></a>
+
+### Why did you use the member's email address, and what if that address changed?
+
+- **ID:** `c22bc35e-41a0-4bc7-9b53-6d19da3ecfef`
+- **Section:** product_experience | **Module:** rbc-cashback | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-d17b8d965332251b
+
+**Answer:**
+
+The member's email was part of how we identified the destination for an eligible Interac payout. That meant the quality of the customer identity and contact information was operationally important, not just a communications detail.
+
+If the address changed, I'd want to know which email was authorized and evaluated for eligibility at the moment of payout, and whether changes require revalidation. A payout shouldn't silently switch destinations because a profile field changed during processing.
+
+I wouldn't invent the exact production rule without checking it, but the product principle is to bind the payment instruction to a validated destination and keep an auditable record of what was authorized.
+
+---
+
 <a id="qa-0accbf98-6b70-462f-9631-d279d5fe3ae5"></a>
 
 ### Why does joining Questrade during its expansion into banking appeal to you?
@@ -5863,6 +9411,35 @@ I also like the stage Questrade is at. There's an established financial-services
 **Embedded follow-ups (on this record):**
 - Why Questrade now?
 - What excites you about Questbank?
+
+---
+
+<a id="qa-66530581-f599-40f5-8f97-5bf255953c87"></a>
+
+### Why have you moved between several industries and employers?
+
+- **ID:** `66530581-f599-40f5-8f97-5bf255953c87`
+- **Section:** career_motivation | **Module:** career-general | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=very_high, hiring_manager=very_high, panel=—
+- **Alt phrasings:** "Walk me through why you've changed industries."; "What's the thread connecting your career moves?"; "Why have you worked in airlines, retail, banking and outdoor apparel?"; "Is there a pattern behind your job changes?"; "How do your career moves fit together?"; "Why have you switched companies a few times?"
+- **Import key:** followup-expansion-2026-10-9aa86e6ed4991be8
+
+**Answer:**
+
+The common thread hasn't really been the industry label. It's been building consumer products that connect acquisition, engagement and the platforms underneath.
+
+At Aeroplan, that meant credit-card acquisition with bank partners. At HBC, it meant cardholder growth and commercial performance. At RBC, I worked on expanding Avion to non-bank customers and enabling payouts. Arc'teryx broadened that into a zero-to-one membership platform and substantial technology investment.
+
+Each role let me work on a different part of the customer and business problem. At this stage, I'm looking to bring those experiences together in one place, and everyday banking is a particularly good fit.
+
+**Embedded follow-ups (on this record):**
+- Walk me through why you've changed industries.
+- What's the thread connecting your career moves?
+- Why have you worked in airlines, retail, banking and outdoor apparel?
+- Is there a pattern behind your job changes?
+- How do your career moves fit together?
+- Why have you switched companies a few times?
 
 ---
 
@@ -5955,6 +9532,35 @@ Those are deliberately two different numbers. The $1 million-plus figure refers 
 
 ---
 
+<a id="qa-0f093e83-c8de-44bd-9398-e0f186a814df"></a>
+
+### Why might my available balance be different from my posted balance?
+
+- **ID:** `0f093e83-c8de-44bd-9398-e0f186a814df`
+- **Section:** questrade_cases | **Module:** questrade-payments | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=very_high, panel=very_high
+- **Alt phrasings:** "Why is my available balance not my account balance?"; "What's the difference between posted and available funds?"; "Why can customers see money they can't spend?"; "How would you explain an account hold affecting available balance?"; "Why would my banking app show two different balance numbers?"; "What can cause available funds to differ from posted transactions?"
+- **Import key:** followup-expansion-2026-10-52438287a208eb8e
+
+**Answer:**
+
+A posted balance reflects entries recorded on the account ledger, while available funds may account for things like pending holds or restrictions that affect what the customer can spend right now.
+
+The key is not to present one number as universally correct for every customer decision. The app should make clear what is posted, what is pending and what is available, using data from authoritative systems.
+
+I'd test tricky scenarios: a pending card authorization, a released hold, a returned deposit or a delayed state update. If the systems disagree, the customer experience should acknowledge the uncertainty rather than manufacture a precise-looking available amount.
+
+**Embedded follow-ups (on this record):**
+- Why is my available balance not my account balance?
+- What's the difference between posted and available funds?
+- Why can customers see money they can't spend?
+- How would you explain an account hold affecting available balance?
+- Why would my banking app show two different balance numbers?
+- What can cause available funds to differ from posted transactions?
+
+---
+
 <a id="qa-c45ce30e-6de2-4164-93bf-8b67902caae0"></a>
 
 ### Why move into everyday banking from rewards and loyalty?
@@ -6038,6 +9644,7 @@ That combination of customer benefit, commercial potential and a focused experim
 - **Section:** product_experience | **Module:** arcteryx-membership | **Intent:** solution_alternatives
 - **Evidence:** rehearsal_framework | **Review:** ok
 - **Round relevance (existing):** recruiter=very_high, hiring_manager=—, panel=—
+- **Alt phrasings:** "You're leading membership at Arc'teryx, so why explore Questrade?"; "What would make you leave Arc'teryx for this banking role?"; "Why make a move now when you're still at Arc'teryx?"; "Why switch from Arc'teryx membership to everyday banking?"; "What's drawing you to Questrade at this stage?"; "If you're happy at Arc'teryx, why are we talking?"
 
 **Answer:**
 
@@ -6052,6 +9659,14 @@ What makes Questrade particularly appealing is the ambition to become someone's 
 I think there's a really interesting difference between getting someone to open a banking account and convincing them to move their paycheque, everyday spending and recurring payments.
 
 I've worked on different parts of that problem at RBC, HBC and Aeroplan, so this feels like a natural opportunity to bring those experiences together while continuing to grow as a product leader.
+
+**Embedded follow-ups (on this record):**
+- You're leading membership at Arc'teryx, so why explore Questrade?
+- What would make you leave Arc'teryx for this banking role?
+- Why make a move now when you're still at Arc'teryx?
+- Why switch from Arc'teryx membership to everyday banking?
+- What's drawing you to Questrade at this stage?
+- If you're happy at Arc'teryx, why are we talking?
 
 ---
 
@@ -6214,6 +9829,26 @@ I also liked that it tested something more meaningful than button design: whethe
 
 ---
 
+<a id="qa-86fb0ff0-ee19-402f-bbd3-4d478d902d9e"></a>
+
+### Why would a bank not want unlimited deposits if customers are willing to bring them?
+
+- **ID:** `86fb0ff0-ee19-402f-bbd3-4d478d902d9e`
+- **Section:** questrade_cases | **Module:** questrade-deposits | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-7348fb24d0cce3df
+
+**Answer:**
+
+Deposits are a funding source, but they aren't automatically profitable. The bank has to consider the rate it pays, how stable those balances are, how the funds can be deployed, liquidity and capital constraints, and the cost of servicing the customers.
+
+A large promotional inflow that disappears as soon as the offer ends may be far less useful than smaller, stable operating balances from customers who transact regularly.
+
+I'd partner with Finance and Treasury to understand the marginal contribution of the deposits we're attracting. As a PM, I'd want to know whether our incentives are drawing in the right kind of relationship, not just making the balance chart look impressive.
+
+---
+
 <a id="qa-c4343691-6421-47c9-9c1e-8c88f948e0b6"></a>
 
 ### Why would customers choose Questrade over Wealthsimple or a traditional bank?
@@ -6291,6 +9926,26 @@ That's the hardest part of this opportunity. Most customers aren't actively look
 
 ---
 
+<a id="qa-adc80bff-8a24-4eaf-9c48-8b050d759ab1"></a>
+
+### Would you consider a secondary banking relationship a product failure?
+
+- **ID:** `adc80bff-8a24-4eaf-9c48-8b050d759ab1`
+- **Section:** questrade_cases | **Module:** questrade-primary | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-7dc542ebf39e6dc6
+
+**Answer:**
+
+No. I would distinguish the customer's current stage from the long-term opportunity. For someone who's had the same primary bank for years, using Questbank for a recurring contribution or a portion of pay may be a rational first step.
+
+I'd measure the behaviour we actually earned and whether it deepens over time. A customer who consistently funds an investment account through Questbank may have a valuable relationship even if their rent still comes out of another bank.
+
+The risk is declaring victory too early. I'd keep primary banking as a meaningful ambition, but recognize that a secondary relationship can be a profitable and useful stage on the way there.
+
+---
+
 <a id="qa-17154883-f321-4b28-bee5-6fa80de879db"></a>
 
 ### Would you delay launch over a 0.5% payment failure rate?
@@ -6348,6 +10003,46 @@ I'd expand based on demonstrated customer value and operational readiness, rathe
 
 ---
 
+<a id="qa-7883e373-e58d-460a-bef5-2b89d237c66e"></a>
+
+### Would you let an external AI agent read transaction descriptions or merchant details?
+
+- **ID:** `7883e373-e58d-460a-bef5-2b89d237c66e`
+- **Section:** questrade_cases | **Module:** questrade-mcp | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-7c4c12feaff15b1c
+
+**Answer:**
+
+Only for a clearly useful customer-authorized purpose, and I wouldn't treat all transaction information as equally harmless. Merchant details can reveal sensitive personal behaviour, and a broad permission can disclose far more than a customer expects.
+
+I'd start with narrow scopes and a read-only use case. The customer should understand what data is shared, with which provider, how long access lasts and how to revoke it. I'd also think about whether some useful insights could be produced inside Questrade without passing raw details externally.
+
+The central product question is whether the value justifies the disclosure. Technical ability to expose a field is not a reason to expose it by default.
+
+---
+
+<a id="qa-cd39ab59-8574-443c-b78e-a9dfa3010185"></a>
+
+### Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product?
+
+- **ID:** `cd39ab59-8574-443c-b78e-a9dfa3010185`
+- **Section:** product_experience | **Module:** rbc-cashback | **Intent:** general
+- **Evidence:** resume_supported | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-c106931a80bdaba7
+
+**Answer:**
+
+Not automatically. The best payment rail depends on the use case, frequency, cost, customer experience and operational constraints.
+
+For an occasional consumer cashback payout, Interac offered a practical path using infrastructure that already existed at RBC. That doesn't mean it's the right rail for recurring payroll deposits or pre-authorized bill payments. Those have different initiation patterns, returns, timing and customer expectations.
+
+I'd start by mapping the user journey and the actual money movement, then compare the available rails on reliability, economics, eligibility and exception handling. The lesson from RBC wasn't to prefer Interac everywhere. It was to reuse proven capabilities when they genuinely fit the problem.
+
+---
+
 <a id="qa-75a6db9c-b40c-44d3-b7b7-3edd17933d54"></a>
 
 ### Would you optimize account openings, funded accounts or payroll adoption?
@@ -6400,6 +10095,26 @@ I think AI can help people make better financial decisions. But I wouldn't want 
 
 **Embedded follow-ups (on this record):**
 - Should AI tell customers how much money to move into savings?
+
+---
+
+<a id="qa-c6aa4266-ebca-41df-a32b-99cba4676ffd"></a>
+
+### Would you use screen scraping or customer-permissioned banking APIs for account aggregation?
+
+- **ID:** `c6aa4266-ebca-41df-a32b-99cba4676ffd`
+- **Section:** leadership_behavioural | **Module:** questrade-hub | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-704b687b4abdb2cf
+
+**Answer:**
+
+I'd start with the coverage and reliability required for the customer job, then assess the actual data-access methods available in Canada and the bank connections we're targeting.
+
+Where secure permissioned APIs are available, they can provide clearer access control and revocation than sharing credentials. But I'd still validate data freshness, completeness, authentication journeys and vendor operations rather than assuming an API solves the product problem automatically.
+
+I'd involve Security and Privacy early, show customers what they're connecting and how to disconnect, and never suggest that a linked account gives us a complete or always-current view of their finances.
 
 ---
 
@@ -6530,6 +10245,49 @@ The $5.2 million refers to capital funding approved for the membership programme
 
 ---
 
+<a id="qa-a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e"></a>
+
+### You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?
+
+- **ID:** `a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e`
+- **Section:** career_motivation | **Module:** career-general | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=high, hiring_manager=high, panel=low
+- **Alt phrasings:** "Why would you leave Arc'teryx before completing membership?"; "Why leave a $5.2 million project?"; "Don't you want to see the membership program launch?"; "Why are you considering Questrade now?"; "Why move on when you're leading such an important initiative?"; "Are you concerned about leaving your current team mid-project?"; "So why would you leave before seeing that launch?"; "Why would you leave before seeing it launch?"; "You're leading membership at Arc'teryx, so why explore Questrade?"; "What would make you leave Arc'teryx for this banking role?"; "Why make a move now when you're still at Arc'teryx?"; "Why switch from Arc'teryx membership to everyday banking?"; "What's drawing you to Questrade at this stage?"; "If you're happy at Arc'teryx, why are we talking?"
+- **Import key:** sperro-five-qa-2026-q04
+
+**Answer:**
+
+That's a fair question, and it's something I have thought about.
+
+I'm proud of the work we've done to get the program to this point. Going from an initial idea to an approved investment and a clear delivery plan has been a meaningful part of my experience.
+
+Of course, I'd like to see the program succeed. But I also recognize that a product initiative should be bigger than any one person.
+
+What attracts me to Questrade isn't that I'm trying to walk away from the work at Arc'teryx. It's that the opportunity brings together a lot of the areas I've enjoyed most throughout my career: financial products, customer growth, payments and platform strategy.
+
+I see everyday banking as a space where I could apply that experience to a much broader customer relationship.
+
+So I'd want to make sure I left Arc'teryx in a good position, but I also think it's reasonable to consider a role that aligns this closely with where I want to grow professionally.
+
+**Embedded follow-ups (on this record):**
+- Why would you leave Arc'teryx before completing membership?
+- Why leave a $5.2 million project?
+- Don't you want to see the membership program launch?
+- Why are you considering Questrade now?
+- Why move on when you're leading such an important initiative?
+- Are you concerned about leaving your current team mid-project?
+- So why would you leave before seeing that launch?
+- Why would you leave before seeing it launch?
+- You're leading membership at Arc'teryx, so why explore Questrade?
+- What would make you leave Arc'teryx for this banking role?
+- Why make a move now when you're still at Arc'teryx?
+- Why switch from Arc'teryx membership to everyday banking?
+- What's drawing you to Questrade at this stage?
+- If you're happy at Arc'teryx, why are we talking?
+
+---
+
 <a id="qa-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a"></a>
 
 ### Your conversion improved from 10% to 12%. Is that 2% or 20%?
@@ -6547,6 +10305,26 @@ It's a two-percentage-point increase and a 20% relative improvement. I'd always 
 - Relative versus absolute change
 - Percentage points
 - Conversion math
+
+---
+
+<a id="qa-a27a2489-4944-4faa-b130-5a1a4ab088e9"></a>
+
+### Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship?
+
+- **ID:** `a27a2489-4944-4faa-b130-5a1a4ab088e9`
+- **Section:** questrade_cases | **Module:** questrade-metrics | **Intent:** general
+- **Evidence:** rehearsal_framework | **Review:** ok
+- **Round relevance (existing):** recruiter=—, hiring_manager=high, panel=high
+- **Import key:** followup-expansion-2026-10-6c1f0276be1cda04
+
+**Answer:**
+
+I wouldn't make the decision from the conversion number alone. I'd first establish whether the 20% is relative or absolute, whether the result is credible, and which customers and support issues are driving the increase.
+
+If the extra calls are short, temporary setup questions, that is different from customers whose first paycheque is missing or who misunderstood whether switching was complete.
+
+I'd segment the support contacts, quantify customer harm and the cost to serve, and look at sustained successful payroll deposits rather than just setup completion. I might revise the experience or roll it out selectively. A conversion lift that damages trust could be a bad trade.
 
 ---
 
@@ -6577,23 +10355,72 @@ B. Metrics, experiments and business economics
 No exact duplicate canonical question text among active rows.
 
 
+### Orphaned relatedQuestionIds
+- `7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30` references missing id `e8638ed2-3f9a-4c58-bc6b-5cfae62df074`
+- `439ccf45-857e-431f-ab0e-1312d6998f02` references missing id `e8638ed2-3f9a-4c58-bc6b-5cfae62df074`
+- `b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b` references missing id `e8638ed2-3f9a-4c58-bc6b-5cfae62df074`
+- `2a1ed160-bfa6-4f2a-91ea-d280a3ef0418` references missing id `e8638ed2-3f9a-4c58-bc6b-5cfae62df074`
+- `2f3a780e-6b54-42b8-b56d-8936a471fa68` references missing id `e8638ed2-3f9a-4c58-bc6b-5cfae62df074`
+- `f9022f65-91fb-4094-ae8f-b4dc87edcca7` references missing id `e8638ed2-3f9a-4c58-bc6b-5cfae62df074`
+- `a85b536e-5e20-468f-87d9-fb447ae796f6` references missing id `e8638ed2-3f9a-4c58-bc6b-5cfae62df074`
+- `a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e` references missing id `e8638ed2-3f9a-4c58-bc6b-5cfae62df074`
 
 ## 9. Weak or Missing Answers
 
+- **REFINE** — `cee35d92-74ae-4d9b-a713-3594c8276e17` — Could the HBC incentives have increased spending while destroying profitability?
+  - Marked needs_review in navigator metadata
+- **REFINE** — `c8d4a611-d174-48b1-911c-e2db8f3acc3e` — How did you know your semantic-search approach was actually better than keyword matching?
+  - Marked needs_review in navigator metadata
 - **REFINE** — `eb393097-3860-4697-a24d-dd0a0cbaaf1d` — How do you ensure financial data shown to customers — or AI tools — is accurate enough to act on?
   - May lack technical depth for panel on banking/architecture topic
+- **REFINE** — `dc30e851-19e2-4bc1-8397-e4ab784ef939` — How would you explain CDIC deposit protection versus CIPF investment protection?
+  - Marked needs_review in navigator metadata
 - **REFINE** — `59024cc1-b1e1-4f5b-a146-1936c8c86037` — How would you know whether a financial hub truly deepens the customer relationship?
   - Measurement answer without numeric example
+- **REFINE** — `efc27de7-507e-4d96-b95d-446de1f5badf` — What assumptions in the $5.2 million investment case were most sensitive?
+  - Marked needs_review in navigator metadata
+- **REFINE** — `195a8189-fe48-4c11-9ebe-8f2741146841` — What happened after the customer clicked Apply—how did you know they became an approved cardholder?
+  - Marked needs_review in navigator metadata
+- **REFINE** — `5c05a272-9334-44b8-bddd-fdbd4a50f6d3` — What happened if an Avion member didn't have Interac Autodeposit enabled?
+  - Marked needs_review in navigator metadata
+- **REFINE** — `1c3f6b10-2b62-4807-bffd-ef21beef30d7` — What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?
+  - Marked needs_review in navigator metadata
+- **REFINE** — `80a4e168-83f0-45ba-a9b7-bde17123566a` — Who made the final decision when the payments team, Risk and Product disagreed?
+  - Marked needs_review in navigator metadata
 - **REFINE** — `0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a` — Your conversion improved from 10% to 12%. Is that 2% or 20%?
   - May lack technical depth for panel on banking/architecture topic
 
 ## 10. Recommended Content Improvements
 
+### Could the HBC incentives have increased spending while destroying profitability?
+- Resolve review flag after verifying facts and framing
+
+### How did you know your semantic-search approach was actually better than keyword matching?
+- Resolve review flag after verifying facts and framing
+
 ### How do you ensure financial data shown to customers — or AI tools — is accurate enough to act on?
 - Add one concrete boundary, metric, or failure mode if probed
 
+### How would you explain CDIC deposit protection versus CIPF investment protection?
+- Resolve review flag after verifying facts and framing
+
 ### How would you know whether a financial hub truly deepens the customer relationship?
 - Add one illustrative metric target or guardrail
+
+### What assumptions in the $5.2 million investment case were most sensitive?
+- Resolve review flag after verifying facts and framing
+
+### What happened after the customer clicked Apply—how did you know they became an approved cardholder?
+- Resolve review flag after verifying facts and framing
+
+### What happened if an Avion member didn't have Interac Autodeposit enabled?
+- Resolve review flag after verifying facts and framing
+
+### What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?
+- Resolve review flag after verifying facts and framing
+
+### Who made the final decision when the payments team, Risk and Product disagreed?
+- Resolve review flag after verifying facts and framing
 
 ### Your conversion improved from 10% to 12%. Is that 2% or 20%?
 - Add one concrete boundary, metric, or failure mode if probed
@@ -6603,26 +10430,26 @@ No exact duplicate canonical question text among active rows.
 
 | Rank | ID | Composite score | Question |
 | ---: | --- | ---: | --- |
-| 1 | 96d0d431… | 8 | Explain how you would model customer lifetime value in banking. |
-| 2 | 7ade5d00… | 8 | Give me an exact definition of a monthly active banking customer. |
-| 3 | 7c079cf5… | 8 | How are you using AI in your product management work? |
-| 4 | 11375f03… | 8 | How did you measure success for the Avion cashback withdrawal launch? |
-| 5 | fb56f902… | 8 | How do pending and posted card transactions differ? |
-| 6 | a8fe6bd5… | 8 | How would you build product on top of Temenos core banking without owning the ledger? |
-| 7 | 009d20a6… | 8 | How would you choose between building a payment service and buying one? |
-| 8 | 6844c2e7… | 8 | How would you convince existing Questrade investors to make Questbank their primary bank? |
-| 9 | 35d5ff6e… | 8 | How would you decide if a 5% incremental spending lift justified an incentive? |
-| 10 | fb30286a… | 8 | How would you design MCP or agentic finance connections with consent and human approval? |
-| 11 | d616c1d2… | 8 | How would you introduce AI-assisted account insights while preserving consent, accuracy and user control? |
-| 12 | 59024cc1… | 8 | How would you know whether a financial hub truly deepens the customer relationship? |
-| 13 | d6e02f71… | 8 | How would you prioritize a reliable everyday account versus differentiated experiences? |
-| 14 | 038f6014… | 8 | How would you roll out a critical payments integration? |
-| 15 | df23d3a1… | 8 | How would you test an AI-powered financial feature before launching it broadly? |
-| 16 | 2f3a780e… | 8 | Tell me about yourself. |
-| 17 | 244e239c… | 8 | Walk me through the Interac e-Transfer product you launched at RBC. |
-| 18 | 83d6cb34… | 8 | What controls would you require before allowing a new transfer type? |
-| 19 | 0c8b1a1c… | 8 | What if the ledger balance and customer-facing balance don't match? |
-| 20 | 21cb8214… | 8 | What is reconciliation, and why does a PM need to understand it? |
+| 1 | db88df8e… | 12 | Explain your interview copilot's semantic matching architecture without using technical jargon. |
+| 2 | 458f82bd… | 12 | What if Risk still says no after you've presented all your evidence? |
+| 3 | 1fd9478b… | 11 | What are you currently working on at Arc'teryx? |
+| 4 | 837e7efc… | 9 | A customer says they sent money to the wrong recipient. What can your product realistically do? |
+| 5 | ec3a7c0b… | 9 | A customer sees the same purchase twice, once pending and once posted. How would you fix it? |
+| 6 | d8be8368… | 9 | Card payments start declining, but the banking app and core ledger are online. Where do you look? |
+| 7 | cee35d92… | 9 | Could the HBC incentives have increased spending while destroying profitability? |
+| 8 | 7c4b9e12… | 9 | How did you decide what to include in the smaller Sperro SV release? |
+| 9 | c8d4a611… | 9 | How did you know your semantic-search approach was actually better than keyword matching? |
+| 10 | 2af89a04… | 9 | How do you know the HBC application improvement wasn't caused by a different applicant mix? |
+| 11 | e896f79a… | 9 | How would you design a safe payroll-switching experience when the employer's first deposit could fail? |
+| 12 | c864344c… | 9 | How would you prevent a customer from receiving the same cashback payout twice? |
+| 13 | 855c7ca3… | 9 | How would you win customers without paying an expensive cash sign-up bonus? |
+| 14 | 2fb1eeab… | 9 | It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes? |
+| 15 | c8d9e0f1… | 9 | Tell me about a product decision you got wrong. |
+| 16 | efc27de7… | 9 | What assumptions in the $5.2 million investment case were most sensitive? |
+| 17 | 5c05a272… | 9 | What happened if an Avion member didn't have Interac Autodeposit enabled? |
+| 18 | c4eabdaa… | 9 | What if a customer receives one payroll deposit and then stops using Questbank? |
+| 19 | f21a166b… | 9 | What if customers trust Questrade for investments but refuse to deposit their salary? |
+| 20 | 77caa5b4… | 9 | What if Engineering says your banking launch plan is unsafe but leadership wants the date? |
 
 ## 12. Appendix — Every Active Q&A Record ID
 
@@ -6631,50 +10458,75 @@ No exact duplicate canonical question text among active rows.
 | `0059c616-ee5b-4b23-a15e-f8af7061fd25` | What would your primary-account north-star metric actually be? | questrade_cases |
 | `009d20a6-a8cf-458a-a7ea-9ef696c693e0` | How would you choose between building a payment service and buying one? | product_banking_knowledge |
 | `011b9f33-e2ea-4063-aa22-446d561e6df1` | Tell me about a time you challenged the original product strategy. | leadership_behavioural |
+| `03065da4-6d80-432b-bca7-c034fdf0ff52` | If payout failures doubled after launch, how would you investigate the first week? | product_experience |
+| `0360f445-9e66-472e-932f-e06050ec3a3e` | How should a customer dispute an unfamiliar debit card transaction? | questrade_cases |
 | `038f6014-b892-4a64-84d6-e09048b9fea2` | How would you roll out a critical payments integration? | product_banking_knowledge |
 | `03d6326e-9615-4ffc-8464-d9d6c186811d` | How do you decide whether to experiment or commit directly to delivery? | questrade_cases |
 | `04f3d519-31e2-478e-9083-e60d2bca7818` | How do you measure primary-banking adoption versus superficial account opening? | career_motivation |
 | `04f9a779-8058-4470-8817-beccdcbecf1e` | How did you identify the application problem? | product_experience |
+| `059b883d-ccbf-4e0b-8719-5dbff7c26da6` | How would you set shared OKRs without making ownership ambiguous? | leadership_behavioural |
 | `06e233ae-5d45-42d3-b560-84baf56a8948` | How would you increase direct deposit adoption? | questrade_cases |
+| `08bed145-68a4-4f1f-a500-1287247345bc` | What would you actually deliver in your first 30 days? | career_motivation |
 | `092b08d1-51ec-4761-a05d-2ccd56724ad5` | What would you do differently on the HBC application experiment? | product_experience |
 | `0977208e-9d2d-40dc-8cfa-d48c79105e79` | How would you use AI to improve personal financial management? | career_motivation |
 | `09b7fdec-df53-4a0a-a6af-592fe54cbe57` | How can you claim 427% acquisition growth when you only improved conversion by 40%? | product_experience |
 | `0accbf98-6b70-462f-9631-d279d5fe3ae5` | Why does joining Questrade during its expansion into banking appeal to you? | career_motivation |
 | `0bcc9c40-011a-4fff-9789-fdad78429b78` | Who would you target first for Questbank adoption? | questrade_cases |
 | `0c8b1a1c-7290-4b60-8c88-8d978935beae` | What if the ledger balance and customer-facing balance don't match? | questrade_cases |
+| `0cf5b127-23d5-442e-b968-59bafc1ff0b3` | How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer? | product_experience |
 | `0d2ba56b-828d-4eeb-bbc4-b099d740e800` | What if someone keeps two banks rather than moving everything to Questbank? | questrade_cases |
 | `0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a` | Your conversion improved from 10% to 12%. Is that 2% or 20%? | product_banking_knowledge |
+| `0f093e83-c8de-44bd-9398-e0f186a814df` | Why might my available balance be different from my posted balance? | questrade_cases |
+| `0f41544d-2a2d-4b4b-bb41-f89df44c05d0` | Which step in a credit-card application funnel would you inspect first, and why? | product_experience |
 | `0f4d097c-a03a-4123-9e70-37c642139843` | What would you do if Engineering said your top feature was six months of work? | leadership_behavioural |
+| `10c8d63e-14a4-474f-be0c-7a6f5b731600` | How would you design recurring bill payments or pre-authorized debits for a new bank? | questrade_cases |
+| `110a4074-4ba6-4eb9-9b8e-4a96b4e223e4` | What do you do when a shared dependency is blocking your objective but the other PM has different priorities? | leadership_behavioural |
 | `11375f03-31fa-45da-8557-488a8cc63beb` | How did you measure success for the Avion cashback withdrawal launch? | product_experience |
 | `1161687d-c6f7-4dd4-9c47-39354f254b09` | How did you experiment when the bank owned the application form? | questrade_cases |
 | `140caed9-55a1-48ac-9190-5d2256afd262` | Tell me about improving the HBC Mastercard application journey. | product_experience |
 | `14239bac-e0fc-4f29-abfe-3c7a4386539b` | How would you prioritize AI features against core banking reliability? | questrade_cases |
 | `1429b53c-f5fd-4819-bb3b-c116ce1ed889` | How would you protect customers from malicious or unauthorized AI-agent actions? | product_banking_knowledge |
+| `14712a6a-881f-4c8c-9f98-9b3359211669` | What were the leading indicators before you could measure meaningful payout volume? | product_experience |
 | `14ad93b1-527c-49e9-b160-e9b22ca0f888` | What would you do differently on the Avion cashback withdrawal launch? | product_experience |
 | `15aa03e2-46af-4d60-9d73-90ed342c6ccc` | Tell me about a product initiative that didn't go according to plan. | leadership_behavioural |
 | `17154883-f321-4b28-bee5-6fa80de879db` | Would you delay launch over a 0.5% payment failure rate? | leadership_behavioural |
 | `176ce1ac-757b-452d-b98c-d8055754808c` | How would you manage an underperforming banking technology vendor? | career_motivation |
+| `195a8189-fe48-4c11-9ebe-8f2741146841` | What happened after the customer clicked Apply—how did you know they became an approved cardholder? | product_experience |
+| `1c3f6b10-2b62-4807-bffd-ef21beef30d7` | What is live from Arc'teryx's membership and Sperro SV work, and what remains planned? | product_experience |
 | `1c3ffb21-7fdd-46b3-832a-57c13b409a34` | Tell me about a time you said no to a stakeholder. | leadership_behavioural |
 | `1d491196-487e-4282-9a80-15e857190b75` | What if leadership wants to ship five banking features at once? | leadership_behavioural |
 | `1db0b6d1-d7a9-4d2b-b2a4-7758f9c47b3b` | How do you know the headless option saved two quarters? | product_experience |
+| `1de87c3a-d693-419c-9ded-b76154af230a` | When would you shut down a feature your own team spent six months building? | leadership_behavioural |
+| `1f935f03-d796-480c-8e77-2a3c26f156b2` | Which early warning indicator would tell you Questbank is losing customer trust? | questrade_cases |
+| `1fd9478b-7396-4778-bc00-e62aee52de52` | What are you currently working on at Arc'teryx? | product_experience |
 | `20f12afb-0dbb-49eb-821e-01989453d828` | How do you lead when you don't manage the engineers directly? | leadership_behavioural |
 | `21cb8214-854d-48a1-a86d-c1d8fd37bf89` | What is reconciliation, and why does a PM need to understand it? | questrade_cases |
 | `2235a907-b3ae-4899-9b1b-77a47d746119` | What would it take for you to leave your current role? | career_motivation |
 | `233b0497-5bff-471f-9617-6abdeca51522` | Would you extend Questrade MCP beyond brokerage into everyday banking? | questrade_cases |
+| `233f8d5d-fa5a-45a7-a301-39c4e3743edb` | How did you align TD, CIBC and Amex when the banks had different priorities? | product_experience |
+| `23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4` | How would you estimate the value of a customer who keeps $5,000 in deposits but never uses the debit card? | questrade_cases |
 | `244e239c-2f88-4b6e-968f-ef8ce65daa70` | Walk me through the Interac e-Transfer product you launched at RBC. | product_experience |
+| `25ad6af4-9d72-4ac5-9159-29bceeebfb80` | How would you handle events arriving out of order in a customer's transaction history? | leadership_behavioural |
 | `27d2a524-6a0d-4a3d-b102-c531d65f368f` | What did you personally decide on the Avion cashback withdrawal launch? | product_experience |
 | `28571e7f-620f-4880-9cd7-cdfc2e146aa8` | Why are you looking to leave Arc'teryx? | product_experience |
 | `2a1ed160-bfa6-4f2a-91ea-d280a3ef0418` | Tell me about something you took from an idea into a product. | product_experience |
+| `2af89a04-ab52-40bd-928d-96a3122fffd1` | How do you know the HBC application improvement wasn't caused by a different applicant mix? | product_experience |
 | `2b7b68cd-d7ae-4358-b609-405c36f1f6b6` | What's one product opinion you hold strongly that others might disagree with? | leadership_behavioural |
 | `2bcf440c-7c6e-4914-8c9d-f6577178c3b8` | Should the financial hub automatically transfer extra cash into investments? | questrade_cases |
+| `2c8d4c01-fde5-45f2-83a5-4567c8b9ea00` | How do you reduce fraud without rejecting too many legitimate banking customers? | questrade_cases |
 | `2e58d329-4b40-4142-bf45-67504474f730` | What did you personally decide on the Aeroplan card offer test? | product_experience |
 | `2f00fac1-89ff-470f-992d-cd89980a36a9` | How would you handle a major payment incident? | questrade_cases |
+| `2f280387-ca4c-4b94-abdf-a644c1868a4a` | What happens if a customer revokes an AI agent's access while it has a request in progress? | questrade_cases |
 | `2f3a780e-6b54-42b8-b56d-8936a471fa68` | Tell me about yourself. | career_motivation |
+| `2fb1eeab-7958-4099-9216-e2b88d0de5c5` | It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes? | questrade_cases |
+| `2fb50805-1cb9-43f9-a2ba-54b816d3085d` | An account was frozen for suspected fraud. How would you handle the customer experience? | leadership_behavioural |
 | `309200d8-48f6-4957-8eda-75eb4e3faf62` | How do you handle an engineer who strongly disagrees with your roadmap? | leadership_behavioural |
+| `31d8ded4-7dc2-4d0b-ad30-009b1f92748b` | What did you cut from the membership MVP, and how did you defend those trade-offs? | product_experience |
 | `3218b561-2159-442e-a3aa-074756f877c0` | How did you measure the 15% improvement? | product_experience |
 | `333428ab-ba63-4939-a069-a376f0334868` | You say HBC's modeled lifetime value increased 10%. How would you explain that metric? | product_experience |
 | `35d5ff6e-5890-41c9-a4f2-2d48476b7d3d` | How would you decide if a 5% incremental spending lift justified an incentive? | product_banking_knowledge |
 | `3772aed5-2bdd-43f0-a114-3eb66342d397` | What happens if an AI agent gives the customer an incorrect account balance or invents a transaction? | product_banking_knowledge |
+| `381e64d9-0684-493b-8e36-9a2a5636966c` | What should the financial hub do if an external bank connection is stale or disconnected? | questrade_cases |
 | `39a0bcf9-7d01-4cde-8da4-4ff893da44b3` | What is your biggest weakness as a product leader? | leadership_behavioural |
 | `3ba24689-dd1a-4428-b018-743f0a8c61af` | Why did HBC modeled LTV rise 10%, and how certain are you? | product_experience |
 | `3bcaff0a-31cb-447a-b037-889edb579c5d` | Why did you prioritize it over other Avion improvements? | product_experience |
@@ -6682,45 +10534,73 @@ No exact duplicate canonical question text among active rows.
 | `3c438a5c-c720-4277-a72a-fdcdfd5e156d` | Why is spend per active cardholder a risky metric? | questrade_cases |
 | `3c961ee8-43cb-4ec8-850f-24e822917f47` | Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant? | questrade_cases |
 | `4068ab67-0613-40ae-bb08-f810651d27a0` | How would you handle payment exceptions and straight-through processing as transaction volume grows? | product_banking_knowledge |
+| `4333a9f3-b07d-4d8e-8676-6a7ca9012116` | What did you control in the HBC card portfolio, and what was controlled by Neo? | product_experience |
 | `439ccf45-857e-431f-ab0e-1312d6998f02` | How did you secure $5.2 million in capital funding at Arc'teryx? | product_experience |
+| `4445d2e9-0632-4f42-b1a8-6a60adc01012` | How would you design a new payee or recipient verification experience? | questrade_cases |
+| `458f82bd-542b-4331-92fb-d77bb3645d06` | What if Risk still says no after you've presented all your evidence? | leadership_behavioural |
 | `4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc` | What if the team ships a feature on time, but adoption is poor? | leadership_behavioural |
 | `478cb389-1d3d-43e6-9a9b-71fd8b7c7cd5` | How do you challenge a VP who has already promised a launch date? | leadership_behavioural |
 | `47a2ee59-f62e-4b8c-a95b-abab90b7891b` | How would you design a single financial hub across spending, saving and investing? | questrade_cases |
+| `48f67960-28cb-4d6b-b863-e7cfe2c1ca71` | What would you do if post-launch data contradicts the user research that justified the feature? | leadership_behavioural |
+| `4a20cf51-7a43-415b-b55d-d01104a46d6f` | What is sample ratio mismatch, and why would you care in a banking A/B test? | questrade_cases |
 | `4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5` | Tell me exactly how you defined HBC's 30-day activation and 90-day retention. | product_experience |
+| `4f6209aa-a000-442c-bbd6-96723a266b9a` | Should a bank help customers automate savings when they have unpredictable income? | leadership_behavioural |
 | `4f7c15c5-f4ec-40ce-b1df-3e0a7dddfc71` | How do you make decisions when the data is incomplete? | leadership_behavioural |
 | `4fa0697a-ebf8-4c97-a107-946de9e5bf1c` | Why a clearer offer summary instead of a shorter page or bigger apply button? | product_experience |
+| `4fcf44b0-5a66-46be-a57b-0fca89af2d10` | If MCP standardizes tools, what competitive advantage can Questrade still own? | questrade_cases |
 | `50313c26-9a05-42e6-b88e-cc571be4b272` | You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose? | questrade_cases |
+| `557cbeab-d17e-48bc-99de-1a54625ee37f` | Which three metrics would you put on your first Questbank executive scorecard? | questrade_cases |
+| `55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1` | What concerns would you have about joining a business that is still establishing its banking offering? | career_motivation |
 | `56065bcd-e97e-4d82-ac21-e35a44296ae7` | Why should we hire you over someone with direct core banking experience? | leadership_behavioural |
 | `59024cc1-b1e1-4f5b-a146-1936c8c86037` | How would you know whether a financial hub truly deepens the customer relationship? | questrade_cases |
+| `5c05a272-9334-44b8-bddd-fdbd4a50f6d3` | What happened if an Avion member didn't have Interac Autodeposit enabled? | product_experience |
 | `5e92bdca-a458-4e00-9e4f-e5034d641a9b` | Tell me about a customer experience you improved at HBC. | product_experience |
+| `606fd4d4-8492-40ac-b65f-099d93621451` | What would your launch-readiness checklist include for an everyday-banking feature? | leadership_behavioural |
 | `627cda69-cdae-4941-89d5-fdafba1ac674` | How is Questrade MCP different from Flows? How much autonomy should financial AI have? | product_banking_knowledge |
 | `629392bb-f39b-414e-b66d-0d879a9c4557` | How do you prevent cohort analysis from becoming a misleading before-and-after story? | questrade_cases |
 | `6441c9f1-738a-4bd4-b819-92ddf2c1de5b` | How would you select an experiment's primary metric and guardrails? | questrade_cases |
 | `6458104e-34c6-430c-8005-aef3a3da9c02` | Tell me about building Avion Select from zero to one. | product_experience |
 | `648015c7-c77e-4d15-87c7-b0c2c688beb0` | How would you decide between better rates and better switching UX? | questrade_cases |
+| `6635b44b-bd82-4980-8aef-ea67474a075e` | How would you use feature flags without creating inconsistent financial records? | questrade_cases |
+| `66530581-f599-40f5-8f97-5bf255953c87` | Why have you moved between several industries and employers? | career_motivation |
+| `67ef7666-80ac-452a-8506-b2375d6abc34` | How would you differentiate Questbank if Wealthsimple copied your best feature? | leadership_behavioural |
 | `6844c2e7-03c5-434e-b64c-ca9febec68dd` | How would you convince existing Questrade investors to make Questbank their primary bank? | questrade_cases |
 | `695ace4a-7c53-415e-9eb2-5f885d680c2b` | Where should transaction status, balance calculation and reconciliation responsibilities sit? | product_banking_knowledge |
+| `698c2786-3368-4df3-917e-de3a535d352d` | If customers already have budgeting apps, what uniquely useful job should Questrade's financial hub do? | questrade_cases |
 | `6a8c3993-05ae-456b-8750-2b6778b6ee6b` | What is the biggest risk in connecting external accounts? | product_banking_knowledge |
 | `6bf73e61-9653-44ef-b0b3-03f854f27398` | Is a $100 million increase in deposits automatically a win? | questrade_cases |
 | `6c389a15-714e-48e7-bdcc-0576ee78673b` | What if an AI drafts the wrong trade and the customer approves it? | product_banking_knowledge |
 | `6cffb3bc-d87e-45de-a116-f6539d8d23dc` | How do you know your incentive program generated incremental spending? | product_experience |
 | `6eb506c0-03c7-4205-aa2a-ba3662c5b94d` | Why mention 5M+ settlement events when Avion payouts were only $1M+? | product_experience |
 | `6f890192-85ca-45f7-8259-f92001b996cf` | How do you know a customer really switched their paycheque? | questrade_cases |
+| `6ffb405d-688b-433e-87c3-a7d992430bad` | What should happen if someone loses their phone and tries to access their bank account? | leadership_behavioural |
 | `735da866-20fc-4837-b67d-c91a6b4e2c77` | What metrics would you use to measure success in everyday banking? | questrade_cases |
+| `73b7a947-02f5-4298-8592-4badfbcbb139` | What would have changed your recommendation from buy to build? | product_experience |
 | `73c5726c-d892-4f7b-895c-59a71c29080b` | What if payroll bonuses bring in customers who leave immediately afterward? | questrade_cases |
 | `7547195c-f21b-4d86-9d4f-c7dd07f73109` | What is MCP, and why is it different from putting a chatbot inside a financial app? | product_banking_knowledge |
 | `75a6db9c-b40c-44d3-b7b7-3edd17933d54` | Would you optimize account openings, funded accounts or payroll adoption? | questrade_cases |
 | `75fd6429-dc9a-4cd3-b996-ce48af985a7b` | How did you identify the problem? | product_experience |
+| `771cc93c-f8fd-4499-90dd-04482b325890` | What would you do if the customer sees a successful transfer but settlement hasn't reconciled? | questrade_cases |
+| `77caa5b4-817d-47b3-9569-366aa012daf6` | What if Engineering says your banking launch plan is unsafe but leadership wants the date? | leadership_behavioural |
+| `7883e373-e58d-460a-bef5-2b89d237c66e` | Would you let an external AI agent read transaction descriptions or merchant details? | questrade_cases |
+| `79d4fa99-20bc-4cff-8c9c-0b25705550ca` | How did you turn regulatory and operations requirements into stories engineers could build? | product_experience |
 | `7aafc468-3bf5-48c2-886e-5ca34ce4f660` | Did your UX redesign cause approvals in under three minutes? | product_experience |
 | `7ade5d00-b631-4813-bf25-039f6c808fa5` | Give me an exact definition of a monthly active banking customer. | product_banking_knowledge |
 | `7c079cf5-b153-435d-a4b3-e83ad3139a2b` | How are you using AI in your product management work? | leadership_behavioural |
+| `7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30` | How did you decide what to include in the smaller Sperro SV release? | product_experience |
 | `7d32e566-7779-4fe8-bca5-f9db5c8180d1` | Why prioritize a membership platform rather than improving service pages? | product_experience |
 | `7df4eff0-1801-4505-afc3-cf652d90eb63` | How did you know the Avion cashback withdrawal was a customer problem? | product_experience |
 | `7eb5e7ae-c611-4966-8279-0fcc8d80fc3c` | How would you explain your approach to customer activation and retention at HBC? | product_experience |
+| `7fefebb7-44eb-4fa3-80f8-14e6900cba0b` | How would you decide when to compensate a customer after a bank payment error? | leadership_behavioural |
+| `80a4e168-83f0-45ba-a9b7-bde17123566a` | Who made the final decision when the payments team, Risk and Product disagreed? | product_experience |
 | `8150bb81-67d5-48dc-82e0-b8bf223984f0` | Your idea sounds sensible. Why hasn't Questrade already done it? | questrade_cases |
+| `837e7efc-def5-4758-8ca1-627d006ec1ff` | A customer says they sent money to the wrong recipient. What can your product realistically do? | leadership_behavioural |
 | `83d6cb34-59ce-42d0-88ca-dfb46a91bfae` | What controls would you require before allowing a new transfer type? | product_banking_knowledge |
+| `855c7ca3-5897-4baa-8c59-99f3c30cdd6e` | How would you win customers without paying an expensive cash sign-up bonus? | questrade_cases |
 | `868dbf79-c06d-4ed3-83c4-f001b12be2bf` | What if leadership wants to optimize DAU but you believe retained deposits matter more? | leadership_behavioural |
+| `86fb0ff0-ee19-402f-bbd3-4d478d902d9e` | Why would a bank not want unlimited deposits if customers are willing to bring them? | questrade_cases |
 | `89ded97e-dc5a-420c-a4ee-a7372c2937a9` | Tell me about the financial impact of your work at HBC. | product_experience |
+| `8ba596cd-8c2c-456e-bf5e-0681333ab61a` | What would the MVP of a payroll-switching feature actually contain? | leadership_behavioural |
 | `8efd1a27-85fe-41e7-a279-d79a07bda1d4` | What would you do differently on the ReBIRD membership platform? | product_experience |
 | `8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4` | How exactly did you measure the 40% conversion lift? | product_experience |
 | `91cd5cac-65b4-41e6-be3b-76ba3c49e9b1` | What's the difference between EFT and Interac e-Transfer? | product_experience |
@@ -6728,59 +10608,101 @@ No exact duplicate canonical question text among active rows.
 | `93a2100c-050b-4990-9340-00412fb9b507` | What should happen when a customer initiates a transfer but the payment fails? | career_motivation |
 | `93f1f35c-cd54-49c3-8d6d-6a95d262fd4b` | What are your compensation expectations? | career_motivation |
 | `94d1edb7-2a12-40f6-8145-2a6006c2d682` | How would you improve transaction histories? | career_motivation |
+| `94fa46b3-57ae-43a9-a217-84dc00d8a565` | Which Questrade investing customers would you deliberately not target first for banking? | questrade_cases |
 | `96d0d431-bf77-42e5-85b5-1b8106ff1edc` | Explain how you would model customer lifetime value in banking. | product_banking_knowledge |
 | `976c189b-f59f-409f-92ea-2648cc5b2f5a` | If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded? | questrade_cases |
 | `9b0f399e-6750-463a-9570-805c82449eb8` | What does 'P&L ownership' at HBC actually mean? | product_experience |
+| `9b1df81f-65b7-4b77-81af-4ae48b03eb79` | How would you test whether customers wanted membership benefits before building the full platform? | product_experience |
 | `9dbe28fe-5bde-46e2-86a2-2a9381643704` | Why mention 500K+ cardholders if you didn't control the credit book? | product_experience |
 | `9e7049a3-2fa7-4388-931c-875a7cc4d416` | What if Risk wants a step that cuts conversion by 20%? | leadership_behavioural |
+| `a27a2489-4944-4faa-b130-5a1a4ab088e9` | Your experiment improves payroll setup by 20% but increases support calls by 30%. Do you ship? | questrade_cases |
 | `a292f433-831a-440c-a196-dbf8c38fbddd` | You haven't owned a traditional chequing account. Why are you qualified? | career_motivation |
+| `a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e` | You've secured a significant investment and are still building the product. Why would you leave before seeing it launch? | career_motivation |
 | `a40816ee-67e5-4b52-9228-33132bb5ffb1` | How would you handle duplicate charges, incorrect balances or transaction discrepancies? | career_motivation |
 | `a412c28e-815d-42b5-91fa-ad7bc4e444b6` | How did you know it worked if the full membership platform hadn't launched? | product_experience |
+| `a5e5c740-637c-4b42-8642-e889de82dcec` | What's the biggest learning curve for you if you join Questbank? | career_motivation |
 | `a60003e2-1f39-431f-8386-531fc24d711c` | How would you define 'share of wallet' for everyday banking? | questrade_cases |
 | `a85b536e-5e20-468f-87d9-fb447ae796f6` | Why did you choose a headless membership platform rather than building everything internally? | product_experience |
 | `a8fe6bd5-ecc2-4c0f-95d5-63bb51f0c20c` | How would you build product on top of Temenos core banking without owning the ledger? | product_banking_knowledge |
 | `a91d4a5a-19bf-4cd7-8ade-e773f9e83028` | How would you define payout success rate? | product_experience |
+| `a95a3a54-604e-4617-af66-92158c5c2c53` | How would you handle an offshore team that doesn't understand the customer impact of a requirement? | leadership_behavioural |
 | `aa868026-c8b7-4c7a-9318-a8754cb383af` | How would you make saving more engaging without turning it into a gimmick? | career_motivation |
+| `ab5294e4-b011-43a7-8cb2-432d84014ec7` | What would you tell customers if a major banking partner was down and you didn't know the restoration time? | leadership_behavioural |
 | `ab850009-b3cc-4b2b-b026-cd9bb28987c3` | How did you know membership was a customer problem at Arc'teryx? | product_experience |
 | `ad2fa044-aa66-4016-a587-a812cc94514d` | Would you use AI to recommend how someone should move their money? | questrade_cases |
+| `adc80bff-8a24-4eaf-9c48-8b050d759ab1` | Would you consider a secondary banking relationship a product failure? | questrade_cases |
 | `af5bd3a4-1b6f-4f1c-a319-15475be31b5d` | Did you actually run randomized holdouts on the HBC Mastercard programme? | product_experience |
 | `b0d58fdf-bced-41f7-b878-1b158fc89643` | What was your most important HBC product decision? | product_experience |
 | `b1eac049-c167-4977-a7bd-55e98d7e3b0b` | You secured $5.2M at Arc'teryx. Was the programme launched? | product_experience |
+| `b36da9fd-c09c-4202-bc35-aaf2d27afad3` | How would you explain a deposit hold to a customer who needs the money tomorrow? | questrade_cases |
 | `b4880442-6054-41de-b29b-f89c40e95005` | How do you manage stakeholders who disagree on priorities? | leadership_behavioural |
 | `b51df0d6-2cd1-41cb-b1f6-757f899b8bcc` | MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it? | questrade_cases |
 | `b810ad2f-f519-4a36-9e96-246c398f9d70` | What would you do differently after the Aeroplan offer-summary test? | product_experience |
+| `b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b` | How would you manage transitioning away from an ongoing membership initiative? | leadership_behavioural |
+| `b995b443-a009-4b4c-b03b-81f53bd6cc67` | How long would you wait before deciding whether a payroll-switching experiment actually worked? | leadership_behavioural |
 | `b9f349e9-64c8-4308-a221-2004dd8f3038` | What did you personally decide on the HBC Mastercard application journey? | product_experience |
+| `ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c` | What is the difference between KYC, AML monitoring and transaction fraud prevention? | leadership_behavioural |
+| `bad7b926-f617-44c4-ab13-ddc78b1e4378` | What would convince you to stop an AI financial-assistant pilot? | questrade_cases |
+| `bb903f25-6886-4106-ab80-1fa344cd8a05` | How did you prevent one card partner's offer from undermining another's? | product_experience |
 | `be18eb7a-948b-4a5d-8c5c-4d69faaa418e` | How would you measure whether Questrade MCP is successful? | questrade_cases |
+| `be3e3314-68c5-4f6a-a3d9-7f0b9147e17b` | When would you choose deterministic software or rules instead of an AI model? | questrade_cases |
+| `bfaa86a1-2c06-4c4f-880a-bf2718e8a330` | What would the customer see while a cashback payout is pending or being investigated? | product_experience |
 | `bfd102e5-8b51-47ea-aeea-c84745fa7f64` | Why Questrade instead of continuing at Arc'teryx? | product_experience |
 | `c1d638b6-1858-487d-9ac2-5b6cc5327eb8` | Why Questrade? Why this role? | career_motivation |
 | `c226bb45-beb6-4162-9628-f16d6660b887` | Why Interac e-Transfer instead of direct bank-account linking? | product_experience |
+| `c22bc35e-41a0-4bc7-9b53-6d19da3ecfef` | Why did you use the member's email address, and what if that address changed? | product_experience |
 | `c4343691-6421-47c9-9c1e-8c88f948e0b6` | Why would customers choose Questrade over Wealthsimple or a traditional bank? | questrade_cases |
 | `c45ce30e-6de2-4164-93bf-8b67902caae0` | Why move into everyday banking from rewards and loyalty? | career_motivation |
 | `c4c44a09-0799-471a-97cb-05e06e8bf8a8` | What if your PM peers own Cards and Money Movement, but your metric depends on both? | questrade_cases |
+| `c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42` | What if a customer receives one payroll deposit and then stops using Questbank? | questrade_cases |
 | `c60f747c-fd04-49d7-821c-1ed3e4a0d4c9` | Why save-and-resume, and how did you split ownership with Neo? | product_experience |
+| `c6aa4266-ebca-41df-a32b-99cba4676ffd` | Would you use screen scraping or customer-permissioned banking APIs for account aggregation? | leadership_behavioural |
 | `c79db9b5-4487-4e2d-b794-624b16332f9e` | How do you work with designers and customer researchers? | leadership_behavioural |
+| `c864344c-3df9-4f30-b478-278b4e58f8d4` | How would you prevent a customer from receiving the same cashback payout twice? | product_experience |
 | `c88f487e-e0d1-44c0-ab54-60f1e19fe79d` | Tell me about a data-driven product decision at Aeroplan. | product_experience |
+| `c8d4a611-d174-48b1-911c-e2db8f3acc3e` | How did you know your semantic-search approach was actually better than keyword matching? | leadership_behavioural |
+| `c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f` | Tell me about a product decision you got wrong. | leadership_behavioural |
+| `cb792784-57f0-449a-a12d-76bbbde35b46` | How would you tell healthy banking engagement from anxiety-driven repeat checking? | questrade_cases |
+| `cca30fb0-f7be-497e-8e20-2cd349712829` | How would you experiment on payment reliability if you can't ethically expose customers to worse payments? | questrade_cases |
+| `cd39ab59-8574-443c-b78e-a9dfa3010185` | Would you make the same Interac versus EFT decision for a recurring payroll or bill-payment product? | product_experience |
+| `cdc38655-878f-4b7f-a49d-109f3b69125e` | What if a customer fails identity verification while trying to open a Questbank account? | leadership_behavioural |
+| `cee35d92-74ae-4d9b-a713-3594c8276e17` | Could the HBC incentives have increased spending while destroying profitability? | product_experience |
 | `cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc` | How would you design a reliable account-funding experience? | career_motivation |
+| `cfe370bc-2273-4055-b0e2-d1adbb96cbf1` | What happens to your banking growth strategy when interest rates fall? | questrade_cases |
+| `d17bc916-0925-4b2f-9904-092499e61920` | When should an automated retry be prohibited even if it would reduce failures? | questrade_cases |
+| `d333a258-c050-4f17-a50b-242e5ad5254d` | How do you communicate a complex banking trade-off to an executive in two minutes? | leadership_behavioural |
 | `d47c60d3-510e-4373-abf0-0749fcc41ebc` | What would you do in your first 90 days? | career_motivation |
 | `d551219e-6540-4760-a132-b27c92c706db` | What if employers aren't supported by an automated payroll switching provider? | questrade_cases |
 | `d616c1d2-a2f7-49f4-a246-47feeacdf169` | How would you introduce AI-assisted account insights while preserving consent, accuracy and user control? | questrade_cases |
 | `d6e02f71-bdb1-4dbc-b373-4c7958d83e04` | How would you prioritize a reliable everyday account versus differentiated experiences? | questrade_cases |
+| `d8be8368-b755-4baf-8494-3cf9a9f8a69e` | Card payments start declining, but the banking app and core ledger are online. Where do you look? | questrade_cases |
 | `d8d2b2a3-94db-456b-b6d2-f94c28429a61` | Why this solution and why start in North America? | product_experience |
 | `d9c4b9aa-5e54-44a8-b246-c99a3a380239` | Why prioritize application continuation instead of more acquisition? | product_experience |
+| `db88df8e-3a36-4cc6-8b84-4fb24e2136c3` | Explain your interview copilot's semantic matching architecture without using technical jargon. | leadership_behavioural |
+| `dc30e851-19e2-4bc1-8397-e4ab784ef939` | How would you explain CDIC deposit protection versus CIPF investment protection? | leadership_behavioural |
 | `dd28e2fe-24d1-4012-98d0-e951276439c6` | Why would someone switch their primary bank if their current bank works fine? | questrade_cases |
+| `de31db47-3aea-4d26-be40-e0fa92423dd1` | What is the strongest single reason we should choose you for this job? | career_motivation |
 | `df23d3a1-181c-4c9b-9460-42d635d2352d` | How would you test an AI-powered financial feature before launching it broadly? | product_banking_knowledge |
 | `df6c37ec-3c98-4d5d-b441-30ba78608f56` | How do you know when to stop investing in a feature? | leadership_behavioural |
 | `e09deee1-3efa-4774-9274-2f18848b739f` | Tell me about a time you had competing priorities with Risk, Compliance or Engineering. | leadership_behavioural |
 | `e32103f8-3c33-4d7f-99ee-4fa46e8049ed` | Isn't Balance Sheet just a dashboard? Where is the actual value? | questrade_cases |
+| `e3acf896-6e83-4597-aeb6-088aba201987` | Are you more interested in building new products or improving existing ones? | career_motivation |
+| `e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0` | How would you change your priority if card reliability is at 99.99% but payroll adoption is stagnant? | leadership_behavioural |
 | `e481df79-5778-46dc-8292-e381da7845d6` | What's the one feature you'd build first to win payroll? | questrade_cases |
 | `e4952adf-c7af-45fb-955e-169fc91e2f7d` | What would you do if a new AI feature gave customers incorrect financial advice? | leadership_behavioural |
 | `e546440d-67eb-4266-8466-0827ccd35e42` | What exactly did you change in the HBC application experience? | product_experience |
+| `e896f79a-bee7-4d99-a673-d337bb38cd38` | How would you design a safe payroll-switching experience when the employer's first deposit could fail? | questrade_cases |
 | `e8d13d9e-a98d-4dbc-a596-a178557963b0` | How did you drive credit card acquisition growth at Aeroplan? | product_experience |
 | `eb393097-3860-4697-a24d-dd0a0cbaaf1d` | How do you ensure financial data shown to customers — or AI tools — is accurate enough to act on? | product_banking_knowledge |
+| `ec3a7c0b-b921-45be-8548-df8c95b2f713` | A customer sees the same purchase twice, once pending and once posted. How would you fix it? | questrade_cases |
 | `ecbddc79-ce40-4452-88cc-68b3f56f197a` | Build a business case for investing $2 million in account switching. | career_motivation |
+| `efc27de7-507e-4d96-b95d-446de1f5badf` | What assumptions in the $5.2 million investment case were most sensitive? | product_experience |
 | `f1194ecf-438d-422d-a96f-9c9b69a54fe2` | Tell me about a customer problem you solved at RBC. | product_experience |
+| `f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1` | What's the difference between acquiring a cardholder, activating one and retaining one? | product_experience |
+| `f21a166b-7a0a-41a9-a919-44781cf782a2` | What if customers trust Questrade for investments but refuse to deposit their salary? | questrade_cases |
 | `f290b115-770e-4448-82ac-52f4334f34de` | What exactly did you own versus RBC's payments infrastructure team? | product_experience |
 | `f2dabb52-3af6-43eb-ab59-c5934bc3a036` | Why was it worth prioritizing? | product_experience |
+| `f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f` | How do you say no without damaging a relationship with a powerful stakeholder? | leadership_behavioural |
 | `f67032ca-4e2e-4b49-ae44-29b181eab8b6` | What makes you different from other Senior PM candidates? | career_motivation |
 | `f7e403b2-26b8-4da4-83c1-ea58c2e3371b` | How do you know an increase in DAU isn't just more balance checking? | questrade_cases |
 | `f8074663-5773-4b95-a25b-1e32a764c1a9` | Tell me about a complex integration you led. | career_motivation |
