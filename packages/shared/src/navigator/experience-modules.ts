@@ -109,6 +109,18 @@ export const EXPERIENCE_MODULES: Record<string, ExperienceModule> = {
     company: "Questrade",
     libraryCategory: "banking_technical",
   },
+  "questrade-temenos": {
+    id: "questrade-temenos",
+    label: "Questbank — Temenos Core Integration",
+    company: "Questrade",
+    libraryCategory: "banking_technical",
+  },
+  "questrade-mcp": {
+    id: "questrade-mcp",
+    label: "Agentic Finance & MCP",
+    company: "Questrade",
+    libraryCategory: "banking_technical",
+  },
   "career-general": {
     id: "career-general",
     label: "Career & Motivation",

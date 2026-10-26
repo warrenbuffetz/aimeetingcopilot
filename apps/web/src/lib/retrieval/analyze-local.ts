@@ -3,7 +3,8 @@ import {
   LEXICAL_MATCH_THRESHOLD_PREPARED,
   LEXICAL_MATCH_THRESHOLD_WEAK,
   enrichLibrary,
-  rankPreparedQaWithContext,
+  isRetrievalExcluded,
+  rankPreparedQaHybrid,
   type AnalyzeQuestionResult,
   type InterviewSessionContext,
   type LexicalQaRow,
@@ -11,6 +12,8 @@ import {
   type PersistedNavigatorMeta,
   type RetrievalMatch,
 } from "@interview-copilot/shared";
+import { isSemanticSearchEnabled } from "@/lib/env";
+import { semanticSearchPrepared } from "@/lib/retrieval/semantic";
 import { sanitizeUserContent } from "@/lib/sanitize";
 
 function parseFollowUps(raw: unknown): PreparedFollowUp[] {
@@ -25,6 +28,18 @@ function parseFollowUps(raw: unknown): PreparedFollowUp[] {
       };
     })
     .filter((x) => x.question.length >= 3 && x.answer.length >= 1);
+}
+
+function spokenPreview(
+  enriched: ReturnType<typeof enrichLibrary>[number] | undefined,
+  fullAnswer: string
+): string[] {
+  const spoken =
+    enriched?.navigator.spokenAnswer?.trim() ||
+    enriched?.navigator.shortAnswer?.trim();
+  if (spoken) return [spoken];
+  const words = fullAnswer.split(/\s+/).slice(0, 85).join(" ");
+  return words.length > 20 ? [words] : [];
 }
 
 export async function analyzeQuestionLocal(
@@ -58,8 +73,22 @@ export async function analyzeQuestionLocal(
 
   if (error) throw error;
 
+  const allRows = rows ?? [];
+  const activeRows = allRows.filter((r) => {
+    const meta = (r.navigator_meta ?? {}) as PersistedNavigatorMeta;
+    const enriched = enrichLibrary([
+      {
+        id: r.id,
+        question: r.question,
+        answer: r.answer,
+        navigatorMeta: meta,
+      },
+    ])[0];
+    return !isRetrievalExcluded(enriched.navigator);
+  });
+
   const enriched = enrichLibrary(
-    (rows ?? []).map((r) => ({
+    activeRows.map((r) => ({
       id: r.id,
       question: r.question,
       answer: r.answer,
@@ -70,7 +99,7 @@ export async function analyzeQuestionLocal(
     }))
   );
 
-  const library: LexicalQaRow[] = (rows ?? []).map((r) => ({
+  const library: LexicalQaRow[] = activeRows.map((r) => ({
     id: r.id,
     question: r.question,
     answer: r.answer,
@@ -78,6 +107,12 @@ export async function analyzeQuestionLocal(
     followUps: parseFollowUps(r.follow_ups),
     category: r.category,
   }));
+
+  let semanticBySourceId: Map<string, number> | null = null;
+  let matchMethod: AnalyzeQuestionResult["matchMethod"] = "lexical";
+  let semanticStatus: AnalyzeQuestionResult["semanticStatus"] = isSemanticSearchEnabled()
+    ? "unavailable"
+    : "lexical_only";
 
   if (library.length === 0) {
     return {
@@ -90,10 +125,42 @@ export async function analyzeQuestionLocal(
       talkingPoints: [],
       matches: [],
       matchMethod: "lexical",
+      semanticStatus,
     };
   }
 
-  const ranked = rankPreparedQaWithContext(question, library, enriched, opts.sessionContext ?? null);
+  if (isSemanticSearchEnabled()) {
+    try {
+      const { matches: semantic, status } = await semanticSearchPrepared(
+        supabase,
+        question,
+        opts.profileId
+      );
+      semanticStatus = status;
+      if (semantic.length > 0) {
+        semanticBySourceId = new Map(
+          semantic
+            .filter((m) => m.contentType === "prepared_qa")
+            .map((m) => [m.sourceId, m.similarity])
+        );
+        if (semanticBySourceId.size > 0) matchMethod = "hybrid";
+      }
+    } catch (e) {
+      console.warn("semantic search unavailable, lexical only", e);
+      semanticStatus = "error";
+    }
+  }
+
+  const activeRound = opts.sessionContext?.activeInterviewRound ?? null;
+  const ranked = rankPreparedQaHybrid(
+    question,
+    library,
+    enriched,
+    opts.sessionContext ?? null,
+    semanticBySourceId,
+    activeRound
+  );
+
   const best = ranked[0];
   const matches: RetrievalMatch[] = ranked.slice(0, 8).map((r) => ({
     id: r.rowId,
@@ -112,7 +179,7 @@ export async function analyzeQuestionLocal(
       confidence: best?.score ?? 0,
       answer:
         "No close prepared match. Try manual analyze with shorter wording, or add this question to your library.",
-      sourceLabel: "Local match",
+      sourceLabel: matchMethod === "hybrid" ? "Hybrid match" : "Local match",
       talkingPoints: [],
       closestSuggestion: best
         ? {
@@ -123,7 +190,8 @@ export async function analyzeQuestionLocal(
           }
         : undefined,
       matches,
-      matchMethod: "lexical",
+      matchMethod,
+      semanticStatus,
     };
   }
 
@@ -143,12 +211,13 @@ export async function analyzeQuestionLocal(
       ? "Closest prepared answer — confirm before speaking"
       : isFollowUp
         ? "Prepared follow-up (verbatim)"
-        : "Your prepared answer (verbatim)",
-    talkingPoints: enrichedBest?.navigator.shortAnswer
-      ? [enrichedBest.navigator.shortAnswer]
-      : [],
+        : matchMethod === "hybrid"
+          ? "Your prepared answer (hybrid match)"
+          : "Your prepared answer (verbatim)",
+    talkingPoints: spokenPreview(enrichedBest, best.answer),
     followUps: (best.followUps ?? []).filter((fu) => fu.answer.trim() !== best.answer.trim()),
     matches,
-    matchMethod: "lexical",
+    matchMethod,
+    semanticStatus,
   };
 }

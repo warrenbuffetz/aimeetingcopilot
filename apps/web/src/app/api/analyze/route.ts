@@ -10,6 +10,10 @@ const sessionContextSchema = z
     activeIntent: z.string().nullable().optional(),
     askedQuestionIds: z.array(z.string()).optional(),
     manualExperienceOverrideId: z.string().nullable().optional(),
+    activeInterviewRound: z
+      .enum(["recruiter", "hiring_manager", "cross_functional_panel"])
+      .nullable()
+      .optional(),
   })
   .optional();
 
@@ -50,6 +54,7 @@ export async function POST(req: Request) {
             askedQuestionTexts: [],
             manualExperienceOverrideId: parsed.data.sessionContext.manualExperienceOverrideId ?? null,
             lastDetectedQuestion: null,
+            activeInterviewRound: parsed.data.sessionContext.activeInterviewRound ?? null,
           }
         : null,
     });

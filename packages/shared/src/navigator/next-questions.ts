@@ -3,6 +3,7 @@ import { librarySectionForModule } from "./library-sections";
 import { experienceModule } from "./experience-modules";
 import type { EnrichedQaRow, FollowUpSuggestion, InterviewSessionContext, QuestionIntent } from "./types";
 import { intentLabel } from "./follow-ups";
+import { isRetrievalExcluded } from "./revision-retrieval";
 
 const ANALYTICAL_INTENTS: QuestionIntent[] = [
   "measurement_impact",
@@ -28,6 +29,7 @@ export function suggestNextQuestions(
   const activeSection = librarySectionForModule(experienceModule(moduleId));
 
   for (const row of catalog) {
+    if (isRetrievalExcluded(row.navigator)) continue;
     if (ctx.askedQuestionIds.includes(row.id)) continue;
 
     const tScore = transitionScore(ctx.activeIntent, row.navigator.intent);

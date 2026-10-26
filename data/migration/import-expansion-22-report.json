@@ -1,0 +1,195 @@
+{
+  "appliedAt": "2026-10-26T16:09:53.022Z",
+  "seedCount": 166,
+  "processed": 22,
+  "created": [],
+  "matched": [],
+  "followUpsAttached": [
+    "questrade-expansion-ai-2026-q09",
+    "questrade-expansion-ai-2026-q10",
+    "questrade-expansion-ai-2026-q22"
+  ],
+  "proposedAnswerUpdates": [],
+  "superseded": [],
+  "unresolved": [],
+  "roundAssignments": [
+    {
+      "importKey": "questrade-expansion-ai-2026-q01",
+      "roundRelevance": {
+        "recruiter": "very_high",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "low"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q02",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q03",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "high",
+        "cross_functional_panel": "very_high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q04",
+      "roundRelevance": {
+        "recruiter": "medium",
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "medium"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q05",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "very_high",
+        "cross_functional_panel": "high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q06",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "very_high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q07",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "very_high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q08",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "high",
+        "cross_functional_panel": "very_high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q09",
+      "roundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "high",
+        "cross_functional_panel": "medium"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q10",
+      "roundRelevance": {
+        "recruiter": "medium",
+        "hiring_manager": "high",
+        "cross_functional_panel": "medium"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q11",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q12",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "very_high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q13",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q14",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q15",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q16",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "very_high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q17",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "very_high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q18",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q19",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q20",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "high",
+        "cross_functional_panel": "high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q21",
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "high",
+        "cross_functional_panel": "very_high"
+      }
+    },
+    {
+      "importKey": "questrade-expansion-ai-2026-q22",
+      "roundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "medium"
+      }
+    }
+  ],
+  "registryKeys": 23,
+  "remainingReviewItems": 0
+}

@@ -165,7 +165,33 @@ export default function LiveInterviewPage() {
     return <Badge variant="outline">No match</Badge>;
   }
 
+  function semanticStatusBadge(status: string | undefined) {
+    if (status === "ready") {
+      return (
+        <Badge variant="outline" className="text-[10px] text-emerald-600/90">
+          Semantic matching ready
+        </Badge>
+      );
+    }
+    if (status === "unavailable") {
+      return (
+        <Badge variant="outline" className="text-[10px] text-amber-600/90">
+          Semantic unavailable — lexical fallback
+        </Badge>
+      );
+    }
+    if (status === "error") {
+      return (
+        <Badge variant="outline" className="text-[10px] text-red-500/90">
+          Semantic matching error
+        </Badge>
+      );
+    }
+    return null;
+  }
+
   function matchBadge(method: string | undefined) {
+    if (method === "hybrid") return <Badge variant="secondary" className="text-[10px]">Hybrid match</Badge>;
     if (method === "lexical") return <Badge variant="outline" className="text-[10px]">Local match</Badge>;
     return null;
   }
@@ -264,6 +290,17 @@ export default function LiveInterviewPage() {
             <p className="text-xs text-muted-foreground">
               Listening is explicit — inform participants and comply with local rules.
             </p>
+            <div className="mt-1 flex flex-wrap gap-1">
+              <Badge variant="outline" className="text-[10px] font-normal">
+                Session: {session.listening ? (session.paused ? "Paused" : "On") : "Off"}
+              </Badge>
+              <Badge variant="outline" className="text-[10px] font-normal">
+                Capture: {sttBackend ? (capture.health.hasAudioTrack ? "Connected" : "Connecting") : "Idle"}
+              </Badge>
+              <Badge variant="outline" className="text-[10px] font-normal">
+                STT: {sttBackend ?? "none"}
+              </Badge>
+            </div>
           </div>
           <div className="flex flex-wrap items-center gap-2">
             <Select
@@ -418,6 +455,7 @@ export default function LiveInterviewPage() {
             )}
             {session.result && outcomeBadge(session.result.outcome)}
             {session.result && matchBadge(session.result.matchMethod)}
+            {session.result && semanticStatusBadge(session.result.semanticStatus)}
             {session.result && (
               <span className="text-xs text-muted-foreground">
                 {(session.result.confidence * 100).toFixed(0)}% · {session.result.sourceLabel}
@@ -634,6 +672,7 @@ export default function LiveInterviewPage() {
             onOpenInMainPanel={openInMainPanel}
             onPin={pinRow}
             onSetExperience={interviewNav.setManualExperience}
+            onSetInterviewRound={interviewNav.setActiveInterviewRound}
             onClearContext={interviewNav.clearContext}
             onSearchOpen={() => setPaletteOpen(true)}
             practiceFooter={

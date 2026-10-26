@@ -70,7 +70,7 @@
     },
     {
       "question": "How would you convince existing Questrade investors to make Questbank their primary bank?",
-      "answer": "I think Questrade has an interesting starting advantage because there's already a financial relationship and a level of trust with existing investing customers.\n\nBut I wouldn't assume that trust automatically translates into everyday banking adoption.\n\nThe first thing I'd want to understand is why customers aren't making the switch today. Is it because their existing bank is good enough? Are they worried about moving their payroll and bill payments? Or do they simply not see a compelling reason to change?\n\nI'd segment customers based on their existing relationship with Questrade and how they currently use financial products. Someone who makes regular contributions to an investment account might have a very different motivation from someone who trades occasionally.\n\nFrom there, I'd focus on the behaviours that actually indicate someone is becoming a primary banking customer.\n\nFunding the account is a good start, but it's not enough. I'd want to see recurring payroll deposits, regular purchases, bill payments and sustained account activity.\n\nMy initial product hypothesis would be that making the switch easier is more valuable than adding another feature. I'd explore things like guided direct deposit setup, clear instructions for moving recurring payments, and better visibility into what has and hasn't been transferred.\n\nI'd also test whether there's a compelling benefit to managing spending, saving and investing together. That benefit needs to feel practical, not just like another dashboard.\n\nThe north-star outcome I'd focus on is sustained primary-account adoption, rather than account openings alone.\n\nUltimately, the customer has to feel that moving to Questbank makes their financial life easier, not more complicated.",
+      "answer": "I think the existing investing relationship is a real advantage, but I wouldn't assume someone who trusts Questrade with their investments automatically wants to move their paycheque there.\n\nThe first thing I'd want to understand is why customers aren't making the switch today. Is it because their existing bank is good enough? Are they worried about moving their payroll and bill payments? Or do they simply not see a compelling reason to change?\n\nI'd start by identifying customers who already have a reason to move money between their everyday finances and investments.\n\nFor example, someone who regularly transfers money into their TFSA might value an easier way to manage the cash they're setting aside to invest. Someone who frequently withdraws investment proceeds may care more about access to those funds.\n\nI'd segment customers based on their existing relationship with Questrade and how they currently use financial products, then look at those behaviours and interview customers to understand where the current experience creates friction.\n\nThen I'd test a focused proposition with one or two segments, rather than offering everyone a switching bonus.\n\nFrom there, I'd focus on the behaviours that actually indicate someone is becoming a primary banking customer. Funding the account is a good start, but it's not enough. I'd want to see recurring payroll deposits, regular purchases, bill payments and sustained account activity.\n\nMy initial product hypothesis would be that making the switch easier is more valuable than adding another feature. I'd explore things like guided direct deposit setup, clear instructions for moving recurring payments, and better visibility into what has and hasn't been transferred.\n\nI'd want the experience to make moving money understandable, predictable and genuinely convenient. Over time, we could introduce broader banking behaviours once customers have a reason to keep more of their financial activity with us.\n\nI'd also test whether there's a compelling benefit to managing spending, saving and investing together. That benefit needs to feel practical, not just like another dashboard.\n\nThe interesting metrics would be cross-product adoption, recurring funding, retained balances and active payment behaviour, not simply the number of existing brokerage customers who open another account. The north-star outcome I'd focus on is sustained primary-account adoption, rather than account openings alone.\n\nThe opportunity is to build a deeper relationship, not just cross-sell another product. Ultimately, the customer has to feel that moving to Questbank makes their financial life easier, not more complicated.",
       "category": "Case strategy",
       "part": 2,
       "isPreferred": true
@@ -297,10 +297,24 @@
     },
     {
       "question": "How are you using AI in your product management work?",
-      "answer": "I use AI regularly, but I try to be practical about where it genuinely helps.\n\nFor research and discovery, I'll use tools like ChatGPT to help organize information, compare approaches or challenge assumptions.\n\nI also use AI-assisted development tools like Cursor to build prototypes. One example is Bench, a side project where I've been experimenting with computer vision for exercise rep counting and human video verification.\n\nIt's useful because I can take an idea further than a static mock-up. I can build something functional, test it and learn where the assumptions break down.\n\nBut I'm also careful about treating AI output as correct by default.\n\nIf it generates code, analysis or a recommendation, I still need to validate the result, especially when I'm working with data or technical assumptions.\n\nI don't see AI as replacing product judgment. I see it as reducing the time between having a hypothesis and being able to investigate or test it.\n\nI think that's where it has been most useful for me.",
+      "answer": "I use AI regularly, but I separate what I actually use today from what I'm exploring and what would stay hypothetical in a regulated bank.\n\n**Tools I use today:** ChatGPT and Claude for structuring research, drafting interview guides and stress-testing product assumptions. Cursor for prototyping — including Bench, a side project where I've experimented with computer vision for exercise rep counting and human video verification. Those help me go from hypothesis to something testable faster than static mocks alone.\n\n**Workflows I'm exploring:** summarizing customer feedback themes, generating experiment variants to review, and using AI-assisted code search to understand unfamiliar payment or core-banking integrations — always with human review before anything customer-facing.\n\n**What I would not claim as deployed:** automated Slack bots, unsupervised customer messaging, or agent actions on money movement without explicit consent, least-privilege scopes, read-only defaults, draft-vs-execute separation and human approval. At Questrade-scale banking, I'd treat AI outputs as inputs to judgment, not authoritative financial facts.\n\nI don't see AI replacing product ownership. It shortens the loop between a question and an evidence-backed answer — with validation, especially for data, compliance and customer impact.",
       "category": "Leadership",
       "part": 5,
-      "isPreferred": false
+      "isPreferred": false,
+      "followUps": [
+        {
+          "question": "How are you using AI agents rather than just chatbots?",
+          "answer": "I've been getting more interested in repeatable AI workflows rather than starting a new chat every time I need something done.\n\nFor example, if I'm exploring a product problem, I don't just want a model to summarize a bunch of information. I want a process that can pull together the relevant context, identify recurring themes, flag assumptions and produce something I can actually work with.\n\nI've been exploring that with tools like Claude and ChatGPT, and using Cursor on the development side.\n\nOne project I've been building is an interview copilot. It combines live transcription with a structured answer library, and one of the interesting problems is keeping track of the conversation so a follow-up question retrieves the right context rather than an unrelated answer.\n\nThat's taught me quite a bit about the difference between a model that generates a plausible response and a workflow that's actually dependable.\n\nThe direction I'd like to take that further is with agents that can handle recurring research or product-triage tasks using approved data sources, while keeping the evidence and proposed actions visible for review.\n\nI think the interesting part isn't having an agent do more things. It's deciding which tasks are predictable enough to automate and where human judgment still matters."
+        },
+        {
+          "question": "How do you measure whether AI is actually making you more effective?",
+          "answer": "I try not to measure it by how much content AI produces for me. Generating ten documents instead of two doesn't necessarily make me a better product manager.\n\nWhat I care more about is how much faster I can get to a useful decision or something I can validate.\n\nFor example, if I'm exploring three approaches to a product problem, can I build and evaluate working versions before committing engineering resources? Can I uncover an integration constraint earlier? Can I catch a flawed assumption before it becomes an expensive delivery problem?\n\nWith the applications I've been building in Cursor, that's the biggest change I've noticed. I can test an idea directly instead of relying entirely on a written specification.\n\nI'd also factor in rework. If AI helps me produce something in half the time but I spend twice as long correcting mistakes, that's not much of a gain.\n\nIn a team, I'd look at cycle time, output quality, rework and whether people are making better decisions with the time they've saved.\n\nFor me, the goal isn't to maximize AI usage. It's to improve the quality and speed of the product development process."
+        },
+        {
+          "question": "Why use Claude, ChatGPT, Grok and Cursor? Do you need all of them?",
+          "answer": "I don't think there's much value in using different models just for the sake of saying I use them.\n\nI tend to choose the tool based on the problem.\n\nChatGPT and Claude are useful for thinking through product problems, challenging assumptions and structuring research. Grok can be useful when I'm interested in what people are discussing publicly, although I'd treat that as a signal rather than verified customer insight.\n\nCursor is where things become more tangible for me because I'm actually building and testing software.\n\nWhere I think this gets more interesting is connecting those capabilities into repeatable workflows. Instead of manually starting from scratch, the system can gather approved context, perform a defined analysis and produce something for review.\n\nI'm also conscious of the risks. I wouldn't put confidential customer information into an unapproved tool, and I wouldn't automatically trust a model's analysis because it sounds convincing.\n\nFor me, the tools are interchangeable to some extent. What matters is the workflow, the quality of the evidence and whether it helps me make a better product decision."
+        }
+      ]
     },
     {
       "question": "How would you handle a major payment incident?",
@@ -1604,6 +1618,240 @@
       ],
       "notes": "HBC-X2. Rehearsal framework only until validated against real data; resume activation/retention/holdout metrics from hypothetical exercises are not established historical results.",
       "isPreferred": false
+    },
+    {
+      "question": "Why is Questbank expanding into everyday banking now, and what changes for product?",
+      "answer": "Questrade already has investing relationships and trust with a large customer base. Everyday banking is a different promise: payroll, bill pay and balances customers rely on weekly. I'd anchor on why existing investors might adopt Questbank as a primary relationship — recurring deposits, transactional activity and retained balances — not just opening another account. Publicly, Questbank has moved toward regulated everyday banking with partners like Temenos for core capabilities. My job would be to translate that ambition into sequenced customer value, reliability and economics without pretending brokerage trust automatically transfers.",
+      "category": "Questrade Product Cases",
+      "part": 3,
+      "isPreferred": false,
+      "detect": [],
+      "notes": "audit-2026-10-22 prep"
+    },
+    {
+      "question": "How would you build product on top of Temenos core banking without owning the ledger?",
+      "answer": "I'd want the core banking platform to do what it's designed to do well, while keeping us flexible in how we build customer experiences on top of it.\n\nFor example, I wouldn't want every change to an onboarding screen or financial dashboard to depend directly on how Temenos represents an account internally.\n\nI'd work with engineering on a clear integration layer that exposes the capabilities our products actually need, like account information, balances, transactions and payment status. That layer would give us a stable contract while allowing the core and the customer experience to evolve separately.\n\nI'd be careful not to create a second banking core by accident, though. The underlying financial records and authoritative transaction states still need a clear owner.\n\nFrom a product perspective, I'd focus on where that separation gives us real value. Can we launch a new customer journey without changing core banking logic? Can we add another channel without rebuilding the integration? Can we handle an unavailable dependency gracefully?\n\nI'd also avoid abstracting everything upfront. I'd start with the account and transaction capabilities we know we'll reuse, then expand the contracts as actual product needs emerge.\n\nAt the same time, I'd be explicit about system boundaries in production. Core banking owns balances, postings and product rules; Questbank owns customer experience, orchestration and the read models product teams need. I'd map payment and deposit states end-to-end — pending, posted, available — and define reconciliation handoffs, SLAs and exception queues before promising features in the hub. Integrations through extensibility APIs still need idempotency, observability and partner escalation paths. I wouldn't blur 'we shipped a UI' with 'money moved correctly.'\n\nI've worked with similar integration challenges across identity, loyalty and payments, and I've found that clear ownership between systems is just as important as the technology itself. My RBC payments work taught me that operational truth matters as much as feature delivery.",
+      "category": "Product & Banking Knowledge",
+      "part": 9,
+      "isPreferred": false,
+      "detect": [],
+      "notes": "audit-2026-10-22 prep"
+    },
+    {
+      "question": "How would you design MCP or agentic finance connections with consent and human approval?",
+      "answer": "I'd start from customer-controlled consent: OAuth-style authorization, least privilege, read-only by default, and clear listing of what an agent can see versus do. Draft insights and proposed actions should be separable from execution — especially trades, transfers or bill payments. Questrade's public MCP materials emphasize customer approval for trades; I'd extend that pattern to any material money movement. Logging, revocation, rate limits and error surfaces matter as much as the demo. I would not describe autonomous agents moving money without an explicit confirmation step and audit trail.",
+      "category": "Product & Banking Knowledge",
+      "part": 9,
+      "isPreferred": false,
+      "detect": [],
+      "notes": "audit-2026-10-22 prep"
+    },
+    {
+      "question": "How do you measure primary-banking adoption versus superficial account opening?",
+      "answer": "Opening is not primacy. I'd track recurring qualifying deposits, bill-pay or payroll setup, monthly transacting customers, repeat deposit behaviour and 90-day retained activity — alongside guardrails on failed payments, fraud and complaints. Share-of-wallet is often estimated; I'd separate observable Questbank behaviours from inferred external balances unless customers permission data with clear consent. This parallels how I separated HBC activation, repeat spend and portfolio activity rather than treating one metric as the whole story.",
+      "category": "Questrade Product Cases",
+      "part": 3,
+      "isPreferred": false,
+      "detect": [],
+      "notes": "audit-2026-10-22 prep"
+    },
+    {
+      "question": "How do you ensure financial data shown to customers — or AI tools — is accurate enough to act on?",
+      "answer": "I'd define freshness, source of truth and fallback copy for pending versus posted amounts. Product surfaces should not present inferred balances as settled money. For AI-assisted insights, I'd require labelled uncertainty, link back to source transactions, and block automated actions when reconciliation is incomplete. Human review paths and kill switches matter for incidents. Accuracy is a cross-functional requirement among core banking, payments ops, risk and product — not a front-end polish item.",
+      "category": "Product & Banking Knowledge",
+      "part": 9,
+      "isPreferred": false,
+      "detect": [],
+      "notes": "audit-2026-10-22 prep"
+    },
+    {
+      "question": "Why does joining Questrade during its expansion into banking appeal to you?",
+      "answer": "What interests me is that Questrade has an opportunity to build on a customer relationship that already exists, rather than trying to establish one from scratch.\n\nYou've already got customers who trust Questrade with their investments. The interesting challenge is figuring out how you become relevant to the rest of their financial lives, particularly the things they do every day.\n\nThat's a problem I find really interesting because opening a banking account is relatively easy compared with getting someone to change their habits. Getting them to move their paycheque, pay bills and eventually treat you as their primary bank is a very different level of commitment.\n\nA lot of my experience has been around those kinds of customer behaviours. At RBC, I worked on opening Avion to customers outside the bank and making cashback withdrawals possible through Interac. At HBC, I worked on cardholder acquisition, engagement and long-term value.\n\nI also like the stage Questrade is at. There's an established financial-services business, but still an opportunity to influence what the everyday banking experience becomes. That combination of scale and building something new is particularly appealing to me.",
+      "category": "career motivation",
+      "part": 1,
+      "isPreferred": false,
+      "detect": [
+        "Why Questrade now?",
+        "What excites you about Questbank?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q01"
+    },
+    {
+      "question": "How would you prioritize a reliable everyday account versus differentiated experiences?",
+      "answer": "I'd start with a pretty simple principle: customers need a reason to try a new bank, but they need to trust it before they'll make it their primary bank.\n\nSo I wouldn't frame reliability and differentiation as completely separate priorities. You need enough of both, but I'd be very deliberate about sequencing.\n\nI'd define a small set of journeys that absolutely have to work: opening an account, funding it, receiving income, making payments, understanding available balances and getting help when something goes wrong.\n\nThose would have very clear reliability and operational requirements before we start scaling adoption.\n\nAt the same time, I'd want one compelling reason for an existing Questrade customer to use the account. Maybe that's a genuinely useful connection between everyday cash and investments, rather than launching another generic budgeting dashboard.\n\nI'd make the trade-offs based on risk and customer value. If a core payment journey has unresolved issues, I'm not putting a cosmetic feature ahead of it. But if the basics are meeting our guardrails, I'd absolutely invest in something that makes Questrade meaningfully different.\n\nI'd measure both sides: payment success, exceptions and support contacts alongside activation, recurring transactions and retained deposits.\n\nThe goal isn't to build the most features. It's to give customers a reason to switch and the confidence to stay.",
+      "category": "questrade cases",
+      "part": 3,
+      "isPreferred": false,
+      "detect": [
+        "How do you balance reliability and innovation in a new bank?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q02"
+    },
+    {
+      "question": "How would you know whether a financial hub truly deepens the customer relationship?",
+      "answer": "I'd be careful about using dashboard engagement as the main measure of success.\n\nSomeone opening the financial hub five times a week might be finding it valuable, or they might be confused and repeatedly checking whether their money is available.\n\nI'd first define the customer behaviours we actually want to influence.\n\nAre people making more informed decisions about their cash? Are they establishing recurring savings contributions? Are they keeping an appropriate balance for upcoming expenses? Are they successfully using more than one Questrade product?\n\nI'd distinguish product engagement from financial relationship depth. Views and return visits are useful diagnostic metrics, but I'd want to see changes in recurring activity, retention and the actual value customers get.\n\nI'd also be thoughtful about attribution. Customers who already use multiple financial products may be more likely to try a hub, so comparing users against non-users wouldn't necessarily prove it caused anything.\n\nWhere practical, I'd test specific experiences against a comparable group and look at the downstream behaviour over a meaningful period.\n\nI'd also include guardrails like incorrect financial information, customer confusion and support contacts.\n\nA financial hub should make someone's finances easier to manage. If people are simply looking at more charts, we haven't necessarily achieved much.",
+      "category": "questrade cases",
+      "part": 3,
+      "isPreferred": false,
+      "detect": [
+        "How would you measure relationship depth and share of wallet?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q05"
+    },
+    {
+      "question": "Where should transaction status, balance calculation and reconciliation responsibilities sit?",
+      "answer": "I'd want one clear source of truth for the financial record, but I wouldn't necessarily expect one system to own every part of the customer experience.\n\nThe core banking platform would typically be authoritative for account balances and posted ledger entries. Payment services might own the processing status of a transfer, including whether it was accepted, pending, rejected or returned.\n\nThen the customer-facing product needs to translate those different states into something understandable.\n\nWhere I think teams get into trouble is when they start maintaining their own versions of the truth. You end up with one system saying a payment completed, another saying it's pending and a customer who doesn't know which balance they can spend.\n\nI'd work with engineering and Finance to define ownership of each state, how updates are communicated, how we handle delayed or out-of-order events and what happens when systems disagree.\n\nReconciliation should independently confirm that the financial records match the underlying payment and settlement activity.\n\nFrom my perspective, the product requirement is straightforward: customers need accurate information and a dependable way to resolve exceptions. The architecture needs to support that, not just the happy path.",
+      "category": "product banking knowledge",
+      "part": 9,
+      "isPreferred": false,
+      "detect": [
+        "What owns the source of truth for account balances and payment statuses?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q06"
+    },
+    {
+      "question": "How would you handle payment exceptions and straight-through processing as transaction volume grows?",
+      "answer": "I'd focus on making the normal payment journey as automated and predictable as possible, while making exceptions easy to identify and resolve.\n\nAs volume grows, you can't have operations teams manually investigating every delayed transaction. So I'd start by understanding the types of exceptions we're seeing.\n\nSome might be temporary network or partner failures. Others could be rejected account details, returns, reconciliation differences or transactions that need a Risk review.\n\nThose shouldn't all follow the same recovery process.\n\nI'd work with engineering and operations to define which issues can be retried safely, which need manual intervention and which should never be retried automatically because we might accidentally move money twice.\n\nI'd also make sure every transaction has a traceable reference and enough information for Support and Finance to understand what happened.\n\nThe metrics I'd care about are straight-through processing rate, exception rate by reason, time to resolution, reconciliation breaks and customer impact.\n\nI'd prioritize the highest-volume, repeatable exceptions for automation. But I wouldn't try to automate unusual or potentially high-risk situations just to improve a processing metric.\n\nThe goal is fewer manual interventions without creating new financial or operational risk.",
+      "category": "product banking knowledge",
+      "part": 9,
+      "isPreferred": false,
+      "detect": [
+        "How do you improve straight-through processing and exception resolution?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q07"
+    },
+    {
+      "question": "How would you introduce AI-assisted account insights while preserving consent, accuracy and user control?",
+      "answer": "I'd start with a fairly constrained use case rather than asking AI to become someone's financial adviser on day one.\n\nFor example, helping a customer understand where their money went last month, identify recurring expenses or explain why their available balance differs from what they expected.\n\nThose are useful problems, and we can ground the answers in actual account data.\n\nI'd want a clear separation between the information retrieved from our systems and the explanation the AI generates. Balances, posted transactions and payment status should come from authoritative sources, not something the model estimates.\n\nI'd also make consent explicit. Customers should understand which information is being accessed, for what purpose and whether it's being shared with an external provider.\n\nThen I'd measure answer accuracy, task completion, customer trust and how often someone needs to correct or challenge the result.\n\nI'd keep money movement out of the first release. Once we have evidence that the read-only experience is reliable, we could explore preparing actions for customer approval.\n\nI like the potential of AI in banking, but I think you earn the right to introduce more autonomy by first proving the simpler experiences are dependable.",
+      "category": "questrade cases",
+      "part": 3,
+      "isPreferred": false,
+      "detect": [
+        "How would you safely ship AI account insights?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q08"
+    },
+    {
+      "question": "Would you use AI to recommend how someone should move their money?",
+      "answer": "Potentially, but I'd separate helping someone understand their situation from actually telling them what financial decision to make.\n\nLet's say a customer asks whether they can afford to move $1,000 into savings.\n\nBefore I'd want AI giving them an answer, we'd need reliable information about their available balance, upcoming payments, recurring expenses and any limitations in the data we can see.\n\nEven then, I'd be careful about presenting a confident recommendation. We might not know about a rent payment coming from another institution or an expense the customer hasn't told us about.\n\nI'd start with something more transparent, like showing the available balance, known upcoming obligations and what would remain after a proposed transfer.\n\nThe customer could use that information to make their own decision.\n\nIf we eventually supported an AI-assisted transfer, I'd want explicit authorization, clear limits and a confirmation showing exactly what's happening.\n\nI think AI can help people make better financial decisions. But I wouldn't want it creating the impression that it knows their entire financial situation when it doesn't.",
+      "category": "questrade cases",
+      "part": 3,
+      "isPreferred": false,
+      "detect": [
+        "Should AI tell customers how much money to move into savings?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q11"
+    },
+    {
+      "question": "What is MCP, and why is it different from putting a chatbot inside a financial app?",
+      "answer": "The way I think about MCP is that it gives AI tools a standardized way to interact with external systems.\n\nWithout that connection, an AI assistant might give you a very polished answer about your investments, but it doesn't necessarily know what's actually in your account.\n\nWith an MCP connection, it can request information from Questrade through defined tools, subject to the permissions the customer grants.\n\nThe important distinction is that MCP isn't the AI model itself. It's a way to give the model access to specific capabilities and data.\n\nFrom a product perspective, that's interesting because you can let customers use the AI assistants they're already comfortable with instead of requiring everyone to adopt another interface.\n\nBut you're also introducing dependencies on third-party AI providers, so you need to be thoughtful about data access, permissions, reliability and which actions the agent is actually allowed to perform.\n\nI think the opportunity is significant, but the safeguards around those integrations are just as much part of the product as the AI experience itself.",
+      "category": "product banking knowledge",
+      "part": 9,
+      "isPreferred": false,
+      "detect": [
+        "What is MCP?",
+        "MCP versus an in-app chatbot?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q12"
+    },
+    {
+      "question": "Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?",
+      "answer": "I actually think that's an interesting product strategy.\n\nBuilding your own assistant gives you more control over the experience, but you're also asking customers to adopt another interface, and you're taking on the cost of developing and maintaining the AI layer yourself.\n\nBy supporting MCP, Questrade can meet customers in tools they may already be using.\n\nI'd ask where Questrade has the strongest competitive advantage. To me, it's the financial relationship, trusted account information, market-data access and the ability to safely facilitate transactions. It isn't necessarily building the best general-purpose language model.\n\nSo I'd invest heavily in making those underlying capabilities accurate, secure and easy for approved tools to consume.\n\nI wouldn't necessarily abandon a native AI experience either. There may be customers who prefer everything inside Questrade, particularly for more sensitive workflows.\n\nI'd see it as a distribution and product-architecture decision: expose useful capabilities through a controlled platform, while retaining the option to build differentiated experiences on top.\n\nThe measure of success would be whether customers actually complete valuable tasks, not simply how many AI providers we've connected.",
+      "category": "questrade cases",
+      "part": 3,
+      "isPreferred": false,
+      "detect": [
+        "Why build MCP integrations rather than a first-party AI chatbot?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q13"
+    },
+    {
+      "question": "Would you extend Questrade MCP beyond brokerage into everyday banking?",
+      "answer": "I'd definitely explore it, but I wouldn't assume that something appropriate for brokerage accounts automatically makes sense for everyday banking.\n\nBanking information is more operationally sensitive. People depend on it to pay bills, receive income and understand what money they can actually spend.\n\nI'd start with read-only capabilities where the value is clear.\n\nFor example, a customer could ask why their account balance changed, whether a bill payment has posted, or how much they've spent on recurring expenses.\n\nI'd want to validate those use cases before exposing more capabilities.\n\nThe permissions would need to be granular, and I'd be particularly careful about whether a third-party AI could access transaction descriptions or other sensitive information.\n\nI would also separate account information from money-movement actions. Reading a balance is very different from initiating a transfer.\n\nOver time, I could see value in letting an agent prepare a transfer for the customer's review, but that would require additional controls, limits and appropriate authorization.\n\nI'd expand based on demonstrated customer value and operational readiness, rather than connecting everything simply because the technology makes it possible.",
+      "category": "questrade cases",
+      "part": 3,
+      "isPreferred": false,
+      "detect": [
+        "Would you build a Questbank MCP server?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q14"
+    },
+    {
+      "question": "How would you measure whether Questrade MCP is successful?",
+      "answer": "I wouldn't use the number of connected agents as the primary success metric.\n\nThat tells us there's interest, but it doesn't tell us whether customers are getting value.\n\nI'd start by defining the tasks customers are trying to accomplish. Are they understanding their portfolio more easily? Completing research? Preparing a trade? Saving time compared with the existing workflow?\n\nI'd then look at the funnel from connection to successful task completion.\n\nI'd want to understand how many customers authorize access, how many complete a useful action, whether they come back and where they encounter friction.\n\nFor trading-related workflows, I'd look at how often customers understand and approve an order preview, but I'd also monitor corrections, rejected drafts, errors and complaints.\n\nThere are important guardrails too: inaccurate account information, unintended tool access, permission problems and unsuccessful transaction attempts.\n\nI'd also want to know whether the feature brings incremental engagement or simply moves existing activity into a different interface.\n\nUltimately, I'd measure whether MCP makes Questrade more useful to customers while maintaining a high level of trust and control.",
+      "category": "questrade cases",
+      "part": 3,
+      "isPreferred": false,
+      "detect": [
+        "What is the north star for Questrade MCP?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q15"
+    },
+    {
+      "question": "What happens if an AI agent gives the customer an incorrect account balance or invents a transaction?",
+      "answer": "I'd want to distinguish between bad source data and the AI misrepresenting good source data, because the solutions are different.\n\nIf the underlying balance is incorrect, that's a banking data-integrity problem. If the balance returned by the system is correct but the model states a different number, that's an AI reliability problem.\n\nFor something as sensitive as a balance, I wouldn't want the model calculating or inventing the value.\n\nI'd retrieve it from the authoritative system and, where possible, render the actual amount and timestamp through a controlled interface. AI can explain the context, but the financial value itself should remain grounded in the source.\n\nI'd also handle unavailable or delayed data explicitly. If we can't confirm the current balance, the experience should say that rather than give a confident estimate.\n\nI'd test common failure modes before launch, including stale information, conflicting transaction states and ambiguous account names.\n\nAnd if a customer reports an incorrect answer, I'd want enough traceability to understand the source response, what the agent said and whether the issue could have affected other users.",
+      "category": "product banking knowledge",
+      "part": 9,
+      "isPreferred": false,
+      "detect": [
+        "What if the AI hallucinates a bank transaction?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q16"
+    },
+    {
+      "question": "How would you protect customers from malicious or unauthorized AI-agent actions?",
+      "answer": "I'd approach it as a permissions and system-design problem, not something we solve just by telling the AI to behave.\n\nThe model might be useful, but it shouldn't be the authority deciding which accounts it can access or what transactions it can execute.\n\nI'd want the financial platform enforcing authentication, account-level authorization and the specific permissions the customer has granted.\n\nI'd also consider attacks where untrusted information contains instructions meant to manipulate the agent. For example, a transaction description or retrieved document might include text that tells the agent to reveal information or perform an unrelated action.\n\nThat content needs to remain data, not become an instruction with authority over the workflow.\n\nFor consequential actions, I'd use narrow capabilities, strong server-side validation and explicit customer approval.\n\nI'd also make access easy to review and revoke, and keep an audit trail of what the agent requested and what the system actually did.\n\nThe principle is that AI can propose actions, but the trusted financial infrastructure determines what's authorized and what actually happens.",
+      "category": "product banking knowledge",
+      "part": 9,
+      "isPreferred": false,
+      "detect": [
+        "How would you prevent prompt injection and unauthorized transfers?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q17"
+    },
+    {
+      "question": "How is Questrade MCP different from Flows? How much autonomy should financial AI have?",
+      "answer": "I think they're solving related but different problems.\n\nMCP is about connecting a customer's chosen AI assistant to Questrade's data and available tools. The assistant can help research or prepare an order, but the customer approves each trade.\n\nFlows is more about a customer defining an investment strategy that the platform can then automate according to the agreed rules.\n\nI wouldn't necessarily use the same approval model for both because the customer intent is different.\n\nIf someone explicitly configures an automation, they may expect it to operate without approving every individual step. But that means the original authorization needs to be very clear about what can happen.\n\nI'd want limits, understandable conditions, visibility into what the automation has done and the ability to pause or stop it.\n\nFor a general-purpose AI assistant, I'd be much more conservative about allowing it to independently initiate financial actions.\n\nTo me, the important question isn't whether the AI is capable of acting autonomously. It's whether the customer has clearly authorized that specific behaviour and whether we can keep it within predictable boundaries.",
+      "category": "product banking knowledge",
+      "part": 9,
+      "isPreferred": false,
+      "detect": [
+        "How do Questrade Flows and MCP differ?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q18"
+    },
+    {
+      "question": "What if an AI drafts the wrong trade and the customer approves it?",
+      "answer": "I'd treat that as a serious product-design problem even if the customer technically approved the trade.\n\nAn approval step is important, but it doesn't automatically mean the customer understood what they were approving.\n\nI'd want the preview to make the critical information unmistakable: the security, buy or sell direction, quantity, order type, price assumptions and estimated cost.\n\nI'd also think about mistakes people could make when translating natural language into an order. Maybe the customer meant a dollar amount but the model interpreted it as a share quantity, or selected a similarly named security.\n\nWe should catch as many of those ambiguities as possible before asking for approval.\n\nI'd look at confirmation errors, cancellations, customer complaints and whether certain request types repeatedly produce misunderstandings.\n\nI'd also want a clear investigation process and an audit trail showing the original instruction, proposed order and customer confirmation.\n\nI wouldn't rely on a disclaimer as the primary defence. The customer is responsible for reviewing their instructions, but we should still design the experience to prevent foreseeable mistakes.",
+      "category": "product banking knowledge",
+      "part": 9,
+      "isPreferred": false,
+      "detect": [
+        "How would you prevent AI from proposing the wrong trade?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q19"
+    },
+    {
+      "question": "How would you prioritize AI features against core banking reliability?",
+      "answer": "I'd evaluate them against the same customer and business outcomes rather than assuming AI deserves its own protected roadmap.\n\nIf we have a core payment reliability issue that's affecting customers' ability to access their money, that takes priority over launching an AI feature.\n\nBut I wouldn't automatically deprioritize all AI work either. Sometimes AI might be the most practical way to solve an existing operational or customer problem.\n\nFor example, if Support is spending a lot of time manually classifying payment exceptions, an internal AI-assisted triage tool might improve resolution times without touching financial transaction execution.\n\nI'd compare that investment against other ways to solve the problem, including simpler automation and process changes.\n\nThe decision would depend on customer impact, expected benefit, implementation cost, risk and how quickly we can validate the result.\n\nI think AI should compete for investment on the value it creates, not on how interesting the technology is.\n\nIn banking, trust and reliability are prerequisites. The best AI features should strengthen those fundamentals, not distract from them.",
+      "category": "questrade cases",
+      "part": 3,
+      "isPreferred": false,
+      "detect": [
+        "Would you prioritize AI over banking reliability?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q20"
+    },
+    {
+      "question": "How would you test an AI-powered financial feature before launching it broadly?",
+      "answer": "I wouldn't start by measuring how impressive the answers sound.\n\nI'd define a fairly narrow set of jobs the product is supposed to perform, then build a test set based on real scenarios and the kinds of mistakes that would actually matter.\n\nFor an account-insights feature, I'd include simple questions, but also harder cases: pending transactions, returned payments, duplicate merchant descriptions, unavailable data and ambiguous customer requests.\n\nI'd want to measure factual accuracy, whether the system used the right source, when it declined to answer and how often it incorrectly gave a confident response.\n\nI'd also separate harmless errors from high-impact ones. Misclassifying a coffee purchase is different from telling someone they have enough money to cover a payment when they don't.\n\nI'd start with internal evaluation, move to a limited customer pilot and expand only when accuracy and operational guardrails are acceptable.\n\nI'd monitor customer corrections, complaints and unexpected failure patterns after launch.\n\nThe key is to evaluate it as a financial product with real consequences, not simply as a chatbot that produces good-sounding responses.",
+      "category": "product banking knowledge",
+      "part": 9,
+      "isPreferred": false,
+      "detect": [
+        "How do you evaluate financial AI before launch?"
+      ],
+      "notes": "questrade-expansion-ai-2026-q21"
     }
   ]
 }

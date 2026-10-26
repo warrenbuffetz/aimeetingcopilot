@@ -2,7 +2,16 @@ import { inferNavigatorMeta, type InferMetaInput } from "./meta-inference";
 import { librarySectionForModule, librarySectionFromCategory } from "./library-sections";
 import { experienceModule, EXPERIENCE_MODULES } from "./experience-modules";
 import { canonicalModuleId, canonicalQuestionIntent } from "./module-id-map";
-import type { EvidenceStatus, NavigatorQaMeta, QuestionIntent, ReviewStatus } from "./types";
+import type {
+  EvidenceStatus,
+  InterviewRound,
+  NavigatorQaMeta,
+  PanelDiscipline,
+  QuestionIntent,
+  ReviewStatus,
+  RevisionStatus,
+  RoundPriority,
+} from "./types";
 
 export type PersistedNavigatorMeta = {
   seedKey?: string;
@@ -22,6 +31,17 @@ export type PersistedNavigatorMeta = {
   relatedQuestionIds?: string[];
   sourceFile?: string;
   reviewStatus?: ReviewStatus;
+  revisionStatus?: RevisionStatus;
+  retrievalExcluded?: boolean;
+  supersededByQuestion?: string;
+  canonicalQuestionId?: string;
+  roundRelevance?: Partial<Record<InterviewRound, RoundPriority>>;
+  panelDiscipline?: PanelDiscipline;
+  spokenAnswer?: string;
+  importKey?: string;
+  primaryInterviewRound?: string;
+  proposedAnswerUpdate?: string;
+  supplementalTalkingPoints?: { label: string; content: string; importKey?: string }[];
 };
 
 export function navigatorMetaToPersisted(meta: NavigatorQaMeta): PersistedNavigatorMeta {
@@ -43,6 +63,17 @@ export function navigatorMetaToPersisted(meta: NavigatorQaMeta): PersistedNaviga
     relatedQuestionIds: meta.relatedQuestionIds,
     sourceFile: meta.sourceFile,
     reviewStatus: meta.reviewStatus,
+    revisionStatus: meta.revisionStatus,
+    retrievalExcluded: meta.retrievalExcluded,
+    supersededByQuestion: meta.supersededByQuestion,
+    canonicalQuestionId: meta.canonicalQuestionId,
+    roundRelevance: meta.roundRelevance,
+    panelDiscipline: meta.panelDiscipline,
+    spokenAnswer: meta.spokenAnswer,
+    importKey: meta.importKey,
+    primaryInterviewRound: meta.primaryInterviewRound,
+    proposedAnswerUpdate: meta.proposedAnswerUpdate,
+    supplementalTalkingPoints: meta.supplementalTalkingPoints,
   };
 }
 
@@ -96,6 +127,17 @@ export function navigatorMetaFromPersisted(
     relatedQuestionIds: raw.relatedQuestionIds ?? [],
     sourceFile: raw.sourceFile,
     reviewStatus: raw.reviewStatus ?? inferred.reviewStatus,
+    revisionStatus: (raw.revisionStatus as RevisionStatus) ?? "current",
+    retrievalExcluded: raw.retrievalExcluded ?? false,
+    supersededByQuestion: raw.supersededByQuestion,
+    canonicalQuestionId: raw.canonicalQuestionId,
+    roundRelevance: raw.roundRelevance,
+    panelDiscipline: raw.panelDiscipline as PanelDiscipline | undefined,
+    spokenAnswer: raw.spokenAnswer,
+    importKey: raw.importKey,
+    primaryInterviewRound: raw.primaryInterviewRound as NavigatorQaMeta["primaryInterviewRound"],
+    proposedAnswerUpdate: raw.proposedAnswerUpdate,
+    supplementalTalkingPoints: raw.supplementalTalkingPoints,
   };
 }
 

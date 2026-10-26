@@ -1,7 +1,17 @@
 import type { PreparedFollowUp } from "./lexical-match";
 
-export const EMBEDDING_MODEL = "text-embedding-3-small";
-export const EMBEDDING_DIMENSIONS = 1536;
+/** Legacy OpenAI embeddings (search_embeddings table). */
+export const EMBEDDING_MODEL_OPENAI = "text-embedding-3-small";
+export const EMBEDDING_DIMENSIONS_OPENAI = 1536;
+
+/** Supabase Edge gte-small (prepared_qa_embeddings table). */
+export const EMBEDDING_MODEL_GTE = "gte-small";
+export const EMBEDDING_DIMENSIONS_GTE = 384;
+
+/** @deprecated Use EMBEDDING_MODEL_OPENAI */
+export const EMBEDDING_MODEL = EMBEDDING_MODEL_OPENAI;
+/** @deprecated Use EMBEDDING_DIMENSIONS_OPENAI */
+export const EMBEDDING_DIMENSIONS = EMBEDDING_DIMENSIONS_OPENAI;
 
 /** Minimum cosine similarity (0–1) to treat as a direct prepared match */
 export const MATCH_THRESHOLD_PREPARED = 0.78;
@@ -26,7 +36,7 @@ export interface RetrievalMatch {
   metadata?: Record<string, unknown>;
 }
 
-export type MatchMethod = "lexical" | "semantic";
+export type MatchMethod = "lexical" | "semantic" | "hybrid";
 
 export interface ClosestLibrarySuggestion {
   /** Canonical prepared_qa question to re-run analyze */
@@ -53,6 +63,8 @@ export interface AnalyzeQuestionResult {
   /** When a follow-up script matched more closely than the parent */
   matchedFollowUpQuestion?: string;
   matchMethod?: MatchMethod;
+  /** Semantic layer status (separate from STT / mic connectivity). */
+  semanticStatus?: "ready" | "unavailable" | "error" | "lexical_only";
 }
 
 export { isLikelyQuestion } from "./question-heuristics";

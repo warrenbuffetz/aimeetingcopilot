@@ -18,6 +18,9 @@
     "desktop:build": "npm run build -w @interview-copilot/desktop",
     "seed:questrade": "node scripts/seed-library.mjs data/seed/questrade-interview.json",
     "seed:questrade:full": "node scripts/seed-library.mjs data/seed/questrade-interview-full.json",
+    "audit:questrade:qa": "node scripts/generate-questrade-qa-audit.mjs",
+    "embed:qa:gte": "node scripts/embed-qa-gte.mjs",
+    "eval:retrieval": "npm run test -w @interview-copilot/web -- retrieval-eval",
     "seed:questrade:q48": "node scripts/seed-library.mjs data/seed/questrade-q48-q112.json",
     "seed:questrade:resume": "node scripts/seed-library.mjs data/seed/questrade-resume-deepdives.json",
     "merge:questrade:full": "node scripts/merge-questrade-full.mjs",
@@ -27,6 +30,8 @@
     "migrate:library": "npx tsx scripts/migrate-library-taxonomy.ts",
     "apply:56-classifications": "npx tsx scripts/apply-56-classifications.ts",
     "apply:39-review-resolutions": "npx tsx scripts/apply-39-review-resolutions.ts",
+    "apply:audit-improvements": "npx tsx scripts/apply-audit-improvements.ts",
+    "import:expansion-22": "npx tsx scripts/import-expansion-22.ts",
     "whisper:server": ".venv-whisper/bin/python3 scripts/mac-whisper-server.py"
   }
 }

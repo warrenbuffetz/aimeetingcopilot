@@ -30,6 +30,21 @@ export type QuestionIntent =
 
 export type ReviewStatus = "ok" | "needs_review" | "duplicate_candidate";
 
+export type RevisionStatus = "current" | "superseded" | "archived";
+
+export type InterviewRound = "recruiter" | "hiring_manager" | "cross_functional_panel";
+
+export type RoundPriority = "very_high" | "high" | "medium" | "low";
+
+export type PanelDiscipline =
+  | "payments_ops"
+  | "risk_compliance"
+  | "finance_economics"
+  | "engineering_platform"
+  | "data_experimentation"
+  | "ai_agentic"
+  | "general";
+
 export type EvidenceStatus =
   | "verified_accomplishment"
   | "resume_supported"
@@ -61,6 +76,17 @@ export interface NavigatorQaMeta {
   relatedQuestionIds: string[];
   sourceFile?: string;
   reviewStatus?: ReviewStatus;
+  revisionStatus?: RevisionStatus;
+  retrievalExcluded?: boolean;
+  supersededByQuestion?: string;
+  canonicalQuestionId?: string;
+  roundRelevance?: Partial<Record<InterviewRound, RoundPriority>>;
+  panelDiscipline?: PanelDiscipline;
+  spokenAnswer?: string;
+  importKey?: string;
+  primaryInterviewRound?: InterviewRound;
+  proposedAnswerUpdate?: string;
+  supplementalTalkingPoints?: { label: string; content: string; importKey?: string }[];
 }
 
 export interface EnrichedQaRow {
@@ -82,6 +108,7 @@ export interface InterviewSessionContext {
   askedQuestionTexts: string[];
   manualExperienceOverrideId: string | null;
   lastDetectedQuestion: string | null;
+  activeInterviewRound: InterviewRound | null;
 }
 
 export function emptyInterviewContext(): InterviewSessionContext {
@@ -95,6 +122,7 @@ export function emptyInterviewContext(): InterviewSessionContext {
     askedQuestionTexts: [],
     manualExperienceOverrideId: null,
     lastDetectedQuestion: null,
+    activeInterviewRound: null,
   };
 }
 

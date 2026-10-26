@@ -1,0 +1,915 @@
+{
+  "at": "2026-10-26T16:41:03.944Z",
+  "profile": "Questrade — Senior PM, Everyday Banking",
+  "profileId": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
+  "activeQa": 163,
+  "variantTotal": 226,
+  "skippedUnchanged": 0,
+  "embedded": 0,
+  "failed": [
+    {
+      "variant": "Why move into everyday banking from rewards and loyalty?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What are your compensation expectations?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why are you looking to leave Arc'teryx?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you convince existing Questrade investors to make ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How can Questrade turn investing clients into banking custom",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I think the existing investing relationship is a real advant",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you increase direct deposit adoption?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "MAU is increasing, but transaction frequency and deposits ar",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you improve transaction histories?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Walk me through the Interac e-Transfer product you launched ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What's the difference between EFT and Interac e-Transfer?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you design a reliable account-funding experience?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you handle duplicate charges, incorrect balances o",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about the financial impact of your work at HBC.",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "At HBC, I was responsible for the growth roadmap and commerc",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you manage an underperforming banking technology v",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you explain your approach to customer activation a",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How did you secure $5.2 million in capital funding at Arc'te",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you manage stakeholders who disagree on priorities?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How are you using AI in your product management work?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How are you using AI at work?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you use AI as a PM?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about AI in your workflow.",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How are you using AI agents rather than just chatbots?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Are you using AI agents or just chatbots?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you measure whether AI is actually making you more ef",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How has AI improved your productivity as a PM?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why use Claude, ChatGPT, Grok and Cursor? Do you need all of",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why do you use different AI models?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What tools are in your AI stack?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I use AI regularly, but I separate what I actually use today",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "You say HBC's modeled lifetime value increased 10%. How woul",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What if employers aren't supported by an automated payroll s",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How did you drive credit card acquisition growth at Aeroplan",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why did you choose a headless membership platform rather tha",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Isn't Balance Sheet just a dashboard? Where is the actual va",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you handle a major payment incident?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "My first priority would be protecting customers and understa",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What would it take for you to leave your current role?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Your conversion improved from 10% to 12%. Is that 2% or 20%?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about a time you had competing priorities with Risk,",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you work with designers and customer researchers?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What happens if a payout API times out after the request was",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What exactly did you change in the HBC application experienc",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What would you do if Engineering said your top feature was s",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about a data-driven product decision at Aeroplan.",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about a time you said no to a stakeholder.",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why Questrade? Why this role?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What caught my attention was the ambition behind everyday ba",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What if leadership wants to optimize DAU but you believe ret",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about your first disagreement with a new team's esta",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What would you do differently on the HBC application experim",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How did you know the Avion cashback withdrawal was a custome",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What would you do differently on the Avion cashback withdraw",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you make saving more engaging without turning it i",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How did you know it worked if the full membership platform h",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about yourself.",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Sure. I've spent the last nine-plus years in product, mostly",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you prevent cohort analysis from becoming a misleadin",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Build a business case for investing $2 million in account sw",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What if someone keeps two banks rather than moving everythin",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why Questrade instead of continuing at Arc'teryx?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I think the two opportunities are interesting for different ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "You haven't owned a traditional chequing account. Why are yo",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you make decisions when the data is incomplete?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you define 'share of wallet' for everyday banking?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How did you identify the application problem?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why prioritize application continuation instead of more acqu",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you decide whether to experiment or commit directly t",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Is a $100 million increase in deposits automatically a win?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why was it worth prioritizing?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "You have only a dashboard, no user research. What do you do?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What would your primary-account north-star metric actually b",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you select an experiment's primary metric and guar",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Explain how you would model customer lifetime value in banki",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do pending and posted card transactions differ?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you know an increase in DAU isn't just more balance c",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why use Interac e-Transfer rather than EFT for cashback with",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you define payout success rate?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you build product on top of Temenos core banking w",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you integrate Temenos without coupling your front ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd want the core banking platform to do what it's designed ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "You can prioritize only one: payroll switching, transaction ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What would you do in your first 90 days?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you design MCP or agentic finance connections with",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd start from customer-controlled consent: OAuth-style auth",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you measure primary-banking adoption versus superfici",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Opening is not primacy. I'd track recurring qualifying depos",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you ensure financial data shown to customers — or AI ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd define freshness, source of truth and fallback copy for ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What should happen when a customer initiates a transfer but ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why does joining Questrade during its expansion into banking",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why Questrade now?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What excites you about Questbank?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What interests me is that Questrade has an opportunity to bu",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about improving the HBC Mastercard application journ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you prioritize a reliable everyday account versus ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you balance reliability and innovation in a new bank?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd start with a pretty simple principle: customers need a r",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What does 'P&L ownership' at HBC actually mean?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Did you actually run randomized holdouts on the HBC Masterca",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you know whether a financial hub truly deepens the",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you measure relationship depth and share of wallet",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd be careful about using dashboard engagement as the main ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Where should transaction status, balance calculation and rec",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What owns the source of truth for account balances and payme",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd want one clear source of truth for the financial record,",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about building Avion Select from zero to one.",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why mention 500K+ cardholders if you didn't control the cred",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you handle an engineer who strongly disagrees with yo",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why should we hire you over someone with direct core banking",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I think someone with direct core banking experience could br",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How did you experiment when the bank owned the application f",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you handle payment exceptions and straight-through",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you improve straight-through processing and exception",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd focus on making the normal payment journey as automated ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you introduce AI-assisted account insights while p",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you safely ship AI account insights?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd start with a fairly constrained use case rather than ask",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What is your biggest weakness as a product leader?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Would you delay launch over a 0.5% payment failure rate?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Would you use AI to recommend how someone should move their ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Should AI tell customers how much money to move into savings",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Potentially, but I'd separate helping someone understand the",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What is MCP, and why is it different from putting a chatbot ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What is MCP?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "MCP versus an in-app chatbot?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "The way I think about MCP is that it gives AI tools a standa",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you challenge a VP who has already promised a launch ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you know when to stop investing in a feature?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What if your PM peers own Cards and Money Movement, but your",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What's one product opinion you hold strongly that others mig",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why would Questrade expose brokerage capabilities to Claude ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why build MCP integrations rather than a first-party AI chat",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I actually think that's an interesting product strategy. Bui",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What makes you different from other Senior PM candidates?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What metrics would you use to measure success in everyday ba",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you design a single financial hub across spending,",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Should the financial hub automatically transfer extra cash i",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Would you extend Questrade MCP beyond brokerage into everyda",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Would you build a Questbank MCP server?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd definitely explore it, but I wouldn't assume that someth",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you measure whether Questrade MCP is successful?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What is the north star for Questrade MCP?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I wouldn't use the number of connected agents as the primary",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What happens if an AI agent gives the customer an incorrect ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What if the AI hallucinates a bank transaction?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd want to distinguish between bad source data and the AI m",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What's the one feature you'd build first to win payroll?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What is the biggest risk in connecting external accounts?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What if leadership wants to ship five banking features at on",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Your idea sounds sensible. Why hasn't Questrade already done",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you choose between building a payment service and ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you protect customers from malicious or unauthoriz",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you prevent prompt injection and unauthorized tran",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd approach it as a permissions and system-design problem, ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How is Questrade MCP different from Flows? How much autonomy",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do Questrade Flows and MCP differ?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I think they're solving related but different problems. MCP ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you prioritize AI features against core banking re",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Would you prioritize AI over banking reliability?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd evaluate them against the same customer and business out",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What if an AI drafts the wrong trade and the customer approv",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you prevent AI from proposing the wrong trade?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd treat that as a serious product-design problem even if t",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why did HBC modeled LTV rise 10%, and how certain are you?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Give me an exact definition of a monthly active banking cust",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you test an AI-powered financial feature before la",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you evaluate financial AI before launch?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I wouldn't start by measuring how impressive the answers sou",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What is reconciliation, and why does a PM need to understand",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you roll out a critical payments integration?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you know the headless option saved two quarters?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about a product initiative that didn't go according ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "You secured $5.2M at Arc'teryx. Was the programme launched?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you know your incentive program generated incremental",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why Interac e-Transfer instead of direct bank-account linkin",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What if the team ships a feature on time, but adoption is po",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Who would you target first for Questbank adoption?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "I'd start with existing Questrade customers who already have",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you know a customer really switched their paycheque?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What if payroll bonuses bring in customers who leave immedia",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What did you personally decide on the HBC Mastercard applica",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you decide between better rates and better switchi",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about a customer experience you improved at HBC.",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why is spend per active cardholder a risky metric?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What did you personally decide on the Aeroplan card offer te",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What exactly did you own versus RBC's payments infrastructur",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What would you do if a new AI feature gave customers incorre",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What if Risk wants a step that cuts conversion by 20%?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Did Quests reach six million active credit cardholders?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What if an experiment looks positive after two days? Can we ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What was your most important HBC product decision?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why would customers choose Questrade over Wealthsimple or a ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Would you optimize account openings, funded accounts or payr",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about something you took from an idea into a product",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What if the ledger balance and customer-facing balance don't",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How did you measure success for the Avion cashback withdrawa",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "The main measure was whether eligible members who submitted ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How did you know membership was a customer problem at Arc'te",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Did your UX redesign cause approvals in under three minutes?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why prioritize a membership platform rather than improving s",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How can you claim 427% acquisition growth when you only impr",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How do you lead when you don't manage the engineers directly",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about a customer problem you solved at RBC.",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "A good example is the cashback withdrawal experience at Avio",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What did you personally decide on the Avion cashback withdra",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why this solution and why start in North America?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why did you prioritize it over other Avion improvements?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What did you personally decide or deprioritize?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What would you do differently on the ReBIRD membership platf",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about a complex integration you led.",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you use AI to improve personal financial managemen",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me about a time you challenged the original product str",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "If direct deposit conversion improved by 20%, how would you ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why would someone switch their primary bank if their current",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How would you decide if a 5% incremental spending lift justi",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why mention 5M+ settlement events when Avion payouts were on",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What controls would you require before allowing a new transf",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Tell me exactly how you defined HBC's 30-day activation and ",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why save-and-resume, and how did you split ownership with Ne",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How did you measure the 15% improvement?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How did you identify the problem?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "Why a clearer offer summary instead of a shorter page or big",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "How exactly did you measure the 40% conversion lift?",
+      "error": "gte-embed HTTP 404"
+    },
+    {
+      "variant": "What would you do differently after the Aeroplan offer-summa",
+      "error": "gte-embed HTTP 404"
+    }
+  ]
+}

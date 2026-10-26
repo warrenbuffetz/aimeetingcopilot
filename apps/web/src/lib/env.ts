@@ -45,7 +45,21 @@ export function isOpenAIConfigured(): boolean {
   return Boolean(key && key.length > 0 && !key.startsWith("sk-..."));
 }
 
-/** Default: local word-match on prepared Q&A (no OpenAI). Set USE_OPENAI_SEMANTIC=true to use embeddings + generation. */
+export type SemanticProvider = "lexical_only" | "supabase_gte" | "openai_legacy";
+
+/** Semantic retrieval provider. Default: supabase_gte when Supabase is configured. */
+export function getSemanticProvider(): SemanticProvider {
+  const raw = (process.env.SEMANTIC_PROVIDER ?? "supabase_gte").toLowerCase();
+  if (raw === "lexical_only" || raw === "none" || raw === "off") return "lexical_only";
+  if (raw === "openai" || raw === "openai_legacy") return "openai_legacy";
+  return "supabase_gte";
+}
+
 export function isSemanticSearchEnabled(): boolean {
-  return process.env.USE_OPENAI_SEMANTIC === "true" && isOpenAIConfigured();
+  const provider = getSemanticProvider();
+  if (provider === "lexical_only") return false;
+  if (provider === "openai_legacy") {
+    return isOpenAIConfigured();
+  }
+  return isSupabaseConfigured();
 }

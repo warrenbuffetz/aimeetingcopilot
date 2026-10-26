@@ -39,12 +39,32 @@ type Props = {
   audioWarning?: boolean;
 };
 
-function statusLabel(listening: boolean, paused: boolean, voiceActive: boolean, hasAudioTrack: boolean) {
-  if (!listening) return "Not listening";
-  if (paused) return "Paused";
-  if (voiceActive && hasAudioTrack) return "Speech detected";
-  if (hasAudioTrack) return "Listening";
-  return "Connecting…";
+function captureStatusLabel(hasAudioTrack: boolean, listening: boolean) {
+  if (!listening) return "Capture off";
+  if (hasAudioTrack) return "Mic/tab connected";
+  return "Connecting capture…";
+}
+
+function transcriptionStatusLabel(
+  listening: boolean,
+  paused: boolean,
+  sttBackend: SttEngine | null,
+  localWhisperOnline: boolean | null,
+  webSpeechSupported: boolean
+) {
+  if (!listening) return "Engine idle";
+  if (paused) return "Transcription paused";
+  if (sttBackend === "web-speech") return webSpeechSupported ? "Web Speech active" : "Web Speech unavailable";
+  if (sttBackend === "whisper") {
+    return localWhisperOnline ? "Whisper active" : "Whisper unavailable";
+  }
+  return "Starting engine…";
+}
+
+function sessionStatusLabel(listening: boolean, paused: boolean) {
+  if (!listening) return "Session off";
+  if (paused) return "Session paused";
+  return "Session listening";
 }
 
 function SourceOption({
@@ -110,7 +130,16 @@ export function AudioSetupPanel({
   const [engine, setEngine] = useState<SttEngine>("whisper");
   const [showAdvanced, setShowAdvanced] = useState(false);
 
-  const status = statusLabel(listening, paused, voiceActive, hasAudioTrack);
+  const sessionStatus = sessionStatusLabel(listening, paused);
+  const captureStatus = captureStatusLabel(hasAudioTrack, listening);
+  const transcriptionStatus = transcriptionStatusLabel(
+    listening,
+    paused,
+    sttBackend,
+    localWhisperOnline,
+    webSpeechSupported
+  );
+  const status = listening ? (paused ? "Paused" : "Live") : "Off";
   const dotClass = !listening
     ? "bg-muted-foreground/60"
     : paused
@@ -170,14 +199,12 @@ export function AudioSetupPanel({
           <div className="flex items-start gap-2">
             <span className={cn("mt-1.5 h-2 w-2 shrink-0 rounded-full", dotClass)} />
             <div>
-              <p className="text-sm font-medium">{status}</p>
-              <p className="text-xs text-muted-foreground">
-                {listening
-                  ? sttBackend === "web-speech"
-                    ? "Web Speech · microphone"
-                    : `Whisper · ${captureSource === "display" ? "meeting tab" : "microphone"}`
-                  : "Select a source and start to begin."}
-              </p>
+              <p className="text-sm font-medium">Audio · {status}</p>
+              <ul className="mt-1 space-y-0.5 text-xs text-muted-foreground">
+                <li>Session: {sessionStatus}</li>
+                <li>Capture: {captureStatus}</li>
+                <li>Transcription: {transcriptionStatus}</li>
+              </ul>
             </div>
           </div>
 

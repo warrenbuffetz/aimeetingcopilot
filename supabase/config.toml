@@ -1,0 +1,5 @@
+[functions.gte-embed]
+verify_jwt = false
+
+[functions.match-prepared-qa]
+verify_jwt = false

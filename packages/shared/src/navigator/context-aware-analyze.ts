@@ -24,6 +24,10 @@ export function rankPreparedQaWithContext(
     const row = enriched.find((r) => r.id === match.rowId);
     if (!row) return match;
     let score = match.score;
+    for (const alt of row.navigator.altPhrasings ?? []) {
+      const altScore = scoreLexicalSimilarity(spoken, alt);
+      if (altScore > score) score = Math.min(1, altScore + 0.02);
+    }
     if (row.navigator.experienceModuleId === targetModule) score += 0.12;
     if (targetIntent && row.navigator.intent === targetIntent) score += 0.1;
     if (resolution.rowId === row.id) score += 0.15;

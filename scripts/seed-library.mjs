@@ -115,6 +115,10 @@ async function embed(text) {
 }
 
 async function upsertEmbedding(userId, profileId, row) {
+  const semanticProvider = (process.env.SEMANTIC_PROVIDER ?? "supabase_gte").toLowerCase();
+  if (semanticProvider === "supabase_gte" || semanticProvider === "none") {
+    return;
+  }
   const content = `${row.question}\n\n${row.answer}`;
   const embedding = await embed(content);
   if (!embedding) return;

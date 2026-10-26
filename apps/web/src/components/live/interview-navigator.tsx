@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import {
   EXPERIENCE_MODULES,
+  INTERVIEW_ROUND_LABELS,
   LIBRARY_SECTION_LABELS,
   LIBRARY_SECTION_ORDER,
   buildProductExperienceTree,
@@ -10,6 +11,7 @@ import {
   searchLibrary,
   type EnrichedQaRow,
   type FollowUpSuggestion,
+  type InterviewRound,
   type InterviewSessionContext,
   type LibrarySection,
 } from "@interview-copilot/shared";
@@ -31,6 +33,7 @@ type Props = {
   onOpenInMainPanel: (row: EnrichedQaRow, opts?: { fromBrowse?: boolean }) => void;
   onPin: (row: EnrichedQaRow) => void;
   onSetExperience: (moduleId: string | null, label?: string) => void;
+  onSetInterviewRound: (round: InterviewRound | null) => void;
   onClearContext: () => void;
   onSearchOpen: () => void;
   practiceFooter: React.ReactNode;
@@ -92,6 +95,7 @@ export function InterviewNavigator({
   onOpenInMainPanel,
   onPin,
   onSetExperience,
+  onSetInterviewRound,
   onClearContext,
   onSearchOpen,
   practiceFooter,
@@ -164,11 +168,27 @@ export function InterviewNavigator({
           </div>
 
           <div className="space-y-3 p-2">
-            <ActiveExperienceCard
-              context={context}
-              onSetExperience={onSetExperience}
-              onClearContext={onClearContext}
-            />
+          <ActiveExperienceCard
+            context={context}
+            onSetExperience={onSetExperience}
+            onClearContext={onClearContext}
+          />
+          <section className="mx-2 mb-2 rounded-md border border-border/70 bg-muted/5 px-2 py-2">
+            <p className="text-[10px] font-medium uppercase text-muted-foreground">Interview round (editorial)</p>
+            <select
+              className="mt-1 h-7 w-full rounded border border-border bg-background px-1 text-[10px]"
+              value={context.activeInterviewRound ?? ""}
+              onChange={(e) => {
+                const v = e.target.value as InterviewRound | "";
+                onSetInterviewRound(v ? v : null);
+              }}
+            >
+              <option value="">No round filter</option>
+              {(Object.entries(INTERVIEW_ROUND_LABELS) as [InterviewRound, string][]).map(([id, label]) => (
+                <option key={id} value={id}>{label}</option>
+              ))}
+            </select>
+          </section>
 
             {tab === "next" && (
               <section>

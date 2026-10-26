@@ -90,6 +90,9 @@ export function useLiveSession(
   resultRef.current = result;
   const currentQuestionRef = useRef(currentQuestion);
   currentQuestionRef.current = currentQuestion;
+  const analyzeSeqRef = useRef(0);
+  const analyzeCacheRef = useRef<Map<string, { at: number; data: AnalyzeQuestionResult }>>(new Map());
+  const ANALYZE_CACHE_MS = 45_000;
 
   useEffect(() => {
     void (async () => {
@@ -202,6 +205,19 @@ export function useLiveSession(
         sessionContext?: InterviewSessionContext;
       }
     ): Promise<AnalyzeQuestionResult | null> => {
+      const normalizedKey = question.trim().toLowerCase().replace(/\s+/g, " ");
+      const cached = analyzeCacheRef.current.get(normalizedKey);
+      const now = Date.now();
+      if (cached && now - cached.at < ANALYZE_CACHE_MS) {
+        const data = cached.data;
+        if (!options?.respectMainPanelLock) {
+          setResult(data);
+          setCurrentQuestion(question);
+        }
+        return data;
+      }
+
+      const seq = ++analyzeSeqRef.current;
       setLoading(true);
       try {
         const res = await fetch("/api/analyze", {
@@ -216,6 +232,7 @@ export function useLiveSession(
                   activeIntent: options.sessionContext.activeIntent,
                   askedQuestionIds: options.sessionContext.askedQuestionIds,
                   manualExperienceOverrideId: options.sessionContext.manualExperienceOverrideId,
+                  activeInterviewRound: options.sessionContext.activeInterviewRound,
                 }
               : undefined,
           }),
@@ -231,6 +248,12 @@ export function useLiveSession(
           throw new Error(message);
         }
         const data = (await res.json()) as AnalyzeQuestionResult;
+        if (seq !== analyzeSeqRef.current) {
+          return null;
+        }
+
+        analyzeCacheRef.current.set(normalizedKey, { at: Date.now(), data });
+
         const lowConfidence = data.confidence < LEXICAL_MATCH_THRESHOLD_PREPARED;
         const skipMainUpdate =
           !options?.forceMainPanel && options?.respectMainPanelLock && lowConfidence;

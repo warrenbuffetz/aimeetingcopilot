@@ -1,0 +1,117 @@
+{
+  "questrade-expansion-ai-2026-q01": {
+    "question": "Why does joining Questrade during its expansion into banking appeal to you?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.019Z"
+  },
+  "questrade-expansion-ai-2026-q02": {
+    "question": "How would you prioritize a reliable everyday account versus differentiated experiences?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.020Z"
+  },
+  "questrade-expansion-ai-2026-q03": {
+    "question": "How would you build product on top of Temenos core banking without owning the ledger?",
+    "action": "matched_existing",
+    "at": "2026-10-26T16:09:53.020Z"
+  },
+  "questrade-expansion-ai-2026-q04": {
+    "question": "How would you convince existing Questrade investors to make Questbank their primary bank?",
+    "action": "matched_existing",
+    "at": "2026-10-26T16:09:53.020Z"
+  },
+  "questrade-expansion-ai-2026-q05": {
+    "question": "How would you know whether a financial hub truly deepens the customer relationship?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.020Z"
+  },
+  "questrade-expansion-ai-2026-q06": {
+    "question": "Where should transaction status, balance calculation and reconciliation responsibilities sit?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.020Z"
+  },
+  "questrade-expansion-ai-2026-q07": {
+    "question": "How would you handle payment exceptions and straight-through processing as transaction volume grows?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.020Z"
+  },
+  "questrade-expansion-ai-2026-q08": {
+    "question": "How would you introduce AI-assisted account insights while preserving consent, accuracy and user control?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.020Z"
+  },
+  "questrade-expansion-ai-2026-q09": {
+    "question": "How are you using AI in your product management work?",
+    "action": "follow_up_attached",
+    "at": "2026-10-26T16:09:53.020Z"
+  },
+  "questrade-expansion-ai-2026-q10": {
+    "question": "How are you using AI in your product management work?",
+    "action": "follow_up_attached",
+    "at": "2026-10-26T16:09:53.020Z"
+  },
+  "questrade-expansion-ai-2026-q11": {
+    "question": "Would you use AI to recommend how someone should move their money?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.021Z"
+  },
+  "questrade-expansion-ai-2026-q12": {
+    "question": "What is MCP, and why is it different from putting a chatbot inside a financial app?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.021Z"
+  },
+  "questrade-expansion-ai-2026-q13": {
+    "question": "Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.021Z"
+  },
+  "questrade-expansion-ai-2026-q14": {
+    "question": "Would you extend Questrade MCP beyond brokerage into everyday banking?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.021Z"
+  },
+  "questrade-expansion-ai-2026-q15": {
+    "question": "How would you measure whether Questrade MCP is successful?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.021Z"
+  },
+  "questrade-expansion-ai-2026-q16": {
+    "question": "What happens if an AI agent gives the customer an incorrect account balance or invents a transaction?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.021Z"
+  },
+  "questrade-expansion-ai-2026-q17": {
+    "question": "How would you protect customers from malicious or unauthorized AI-agent actions?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.021Z"
+  },
+  "questrade-expansion-ai-2026-q18": {
+    "question": "How is Questrade MCP different from Flows? How much autonomy should financial AI have?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.021Z"
+  },
+  "questrade-expansion-ai-2026-q19": {
+    "question": "What if an AI drafts the wrong trade and the customer approves it?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.021Z"
+  },
+  "questrade-expansion-ai-2026-q20": {
+    "question": "How would you prioritize AI features against core banking reliability?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.021Z"
+  },
+  "questrade-expansion-ai-2026-q21": {
+    "question": "How would you test an AI-powered financial feature before launching it broadly?",
+    "action": "created",
+    "at": "2026-10-26T16:09:53.021Z"
+  },
+  "questrade-expansion-ai-2026-q22": {
+    "question": "How are you using AI in your product management work?",
+    "action": "follow_up_attached",
+    "at": "2026-10-26T16:09:53.021Z"
+  },
+  "questrade-expansion-ai-2026-mcp-motivation-bridge": {
+    "question": "Why Questrade? Why this role?",
+    "action": "supplemental_attached",
+    "at": "2026-10-26T16:09:53.021Z"
+  }
+}

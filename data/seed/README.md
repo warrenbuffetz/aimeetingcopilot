@@ -20,6 +20,6 @@
 3. Run Supabase migration `20251022190000_prepared_qa_follow_ups.sql` if not applied.
 4. Run: `npm run import:follow-ups`
 
-Live **Analyze** uses **local lexical match** by default (`USE_OPENAI_SEMANTIC=false`). Matched answers show **Likely follow-ups** read-ahead on the Live page.
+Live **Analyze** uses **hybrid lexical + context** matching by default. With `SEMANTIC_PROVIDER=supabase_gte`, add vectors via **`npm run embed:qa:gte`** (not the seed script). See `docs/SEMANTIC-SEARCH-GTE.md`.
 
 Or override draft guard: `FORCE_SEED=1 npm run seed:questrade:full`

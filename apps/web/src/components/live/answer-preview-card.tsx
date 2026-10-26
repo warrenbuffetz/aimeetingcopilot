@@ -86,6 +86,12 @@ export function AnswerPreviewCard({
               <ScriptText text={answer} className={cn("mt-1 max-h-48 overflow-y-auto", expandedAnswerCopyClass)} />
             </details>
           )}
+          {row?.navigator.supplementalTalkingPoints?.map((block) => (
+            <details key={block.label} className="mt-2 rounded border border-border/60 bg-muted/10 px-2 py-1">
+              <summary className="cursor-pointer text-[10px] font-medium text-primary">{block.label}</summary>
+              <ScriptText text={block.content} className={cn("mt-1 max-h-40 overflow-y-auto text-xs", expandedAnswerCopyClass)} />
+            </details>
+          ))}
           <div className="mt-2 flex flex-wrap gap-1">
             <Button type="button" size="sm" variant="secondary" className="h-7 text-xs" onClick={onOpenMain}>
               Open in main panel

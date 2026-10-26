@@ -77,12 +77,20 @@ export function useInterviewContext(library: LibraryRow[]) {
     sessionStorage.removeItem(STORAGE_KEY);
   }, []);
 
+  const setActiveInterviewRound = useCallback(
+    (round: InterviewSessionContext["activeInterviewRound"]) => {
+      setContext((prev) => ({ ...prev, activeInterviewRound: round }));
+    },
+    []
+  );
+
   return {
     context,
     catalog,
     nextSuggestions,
     registerDetection,
     setManualExperience,
+    setActiveInterviewRound,
     clearContext,
   };
 }
