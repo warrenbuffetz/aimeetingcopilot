@@ -91,6 +91,7 @@ export {
   spokenTokenCoverageInCorpus,
   surfaceTurnSuggestion,
   turnSilenceMs,
+  shouldFinalizeTurnImmediately,
 } from "./turn-classify";
 export type { ClassifyTurnOptions, SurfaceTurnOptions, TurnAction, TurnClassification } from "./turn-classify";
 

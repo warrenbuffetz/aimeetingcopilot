@@ -8,11 +8,21 @@ import {
   type LexicalQaRow,
 } from "./lexical-match";
 import { isInterviewPrompt, isLikelyQuestion } from "./question-heuristics";
+import { utteranceLooksComplete } from "./transcript-merge";
 
 /** Default pause after last speech fragment before classifying the turn (~human reaction time). */
 export const TURN_SILENCE_MS = 2000;
 /** Shorter finalize when the buffer already looks like a finished question. */
-export const TURN_SILENCE_MS_QUESTION_END = 850;
+export const TURN_SILENCE_MS_QUESTION_END = 450;
+
+/** Live UI: finalize and analyze without waiting for silence when the turn is clearly complete. */
+export function shouldFinalizeTurnImmediately(text: string): boolean {
+  const t = text.trim();
+  if (!t) return false;
+  if (t.endsWith("?")) return true;
+  if (utteranceLooksComplete(t) && isInterviewPrompt(t)) return true;
+  return false;
+}
 
 /** How often to flush audio to Whisper while one continuous recording is open. */
 export const AUDIO_CHUNK_MS = 1000;

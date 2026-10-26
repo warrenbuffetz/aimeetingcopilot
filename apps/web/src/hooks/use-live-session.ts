@@ -7,6 +7,7 @@ import {
   classifyTurn,
   isInterviewPrompt,
   mergeTranscriptFragments,
+  shouldFinalizeTurnImmediately,
   turnSilenceMs,
   type AnalyzeQuestionResult,
   type InterviewSessionContext,
@@ -96,6 +97,8 @@ export function useLiveSession(
   const simIndexRef = useRef(0);
   const turnBufferRef = useRef("");
   const silenceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const interimFinalizeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const latestWebSpeechInterimRef = useRef("");
   const lastPromoteAtRef = useRef<number | null>(null);
   const lastTranscribeErrorToastAtRef = useRef(0);
   const listeningRef = useRef(false);
@@ -153,6 +156,11 @@ export function useLiveSession(
   const clearSilenceTimer = useCallback(() => {
     if (silenceTimerRef.current) clearTimeout(silenceTimerRef.current);
     silenceTimerRef.current = null;
+  }, []);
+
+  const clearInterimFinalizeTimer = useCallback(() => {
+    if (interimFinalizeTimerRef.current) clearTimeout(interimFinalizeTimerRef.current);
+    interimFinalizeTimerRef.current = null;
   }, []);
 
   const clearLiveSttLine = useCallback(() => {
@@ -414,12 +422,13 @@ export function useLiveSession(
 
   const finalizeTurn = useCallback(() => {
     clearSilenceTimer();
+    clearInterimFinalizeTimer();
     const text = turnBufferRef.current.trim();
     turnBufferRef.current = "";
     setInterimTurn("");
     clearLiveSttLine();
     if (text) processFinalizedTurn(text);
-  }, [clearLiveSttLine, clearSilenceTimer, processFinalizedTurn]);
+  }, [clearInterimFinalizeTimer, clearLiveSttLine, clearSilenceTimer, processFinalizedTurn]);
 
   finalizeTurnRef.current = finalizeTurn;
 
@@ -431,15 +440,33 @@ export function useLiveSession(
   const ingestWebSpeechInterim = useCallback(
     (interim: string) => {
       if (paused) return;
+      latestWebSpeechInterimRef.current = interim;
       const preview = [turnBufferRef.current.trim(), interim.trim()].filter(Boolean).join(" ").replace(/\s+/g, " ").trim();
       if (!preview) {
         clearLiveSttLine();
+        clearInterimFinalizeTimer();
         return;
       }
       setInterimTurn(preview);
       syncLiveSttLine(preview);
+
+      if (shouldFinalizeTurnImmediately(preview)) {
+        clearInterimFinalizeTimer();
+        interimFinalizeTimerRef.current = setTimeout(() => {
+          const current = [turnBufferRef.current.trim(), latestWebSpeechInterimRef.current.trim()]
+            .filter(Boolean)
+            .join(" ")
+            .replace(/\s+/g, " ")
+            .trim();
+          if (!shouldFinalizeTurnImmediately(current)) return;
+          turnBufferRef.current = current;
+          finalizeTurnRef.current();
+        }, 280);
+      } else {
+        clearInterimFinalizeTimer();
+      }
     },
-    [clearLiveSttLine, paused, syncLiveSttLine]
+    [clearInterimFinalizeTimer, clearLiveSttLine, paused, syncLiveSttLine]
   );
 
   const ingestSpeechFragment = useCallback(
@@ -468,7 +495,7 @@ export function useLiveSession(
       setInterimTurn(merged);
       syncLiveSttLine(merged);
 
-      if (options?.finalizeImmediately) {
+      if (options?.finalizeImmediately || shouldFinalizeTurnImmediately(merged)) {
         finalizeTurn();
       } else {
         scheduleSilenceFinalize();
@@ -567,13 +594,14 @@ export function useLiveSession(
     if (simTimerRef.current) clearInterval(simTimerRef.current);
     simTimerRef.current = null;
     clearSilenceTimer();
+    clearInterimFinalizeTimer();
     if (turnBufferRef.current.trim()) {
       finalizeTurnRef.current();
     } else {
       setInterimTurn("");
       clearLiveSttLine();
     }
-  }, [clearLiveSttLine, clearSilenceTimer]);
+  }, [clearInterimFinalizeTimer, clearLiveSttLine, clearSilenceTimer]);
 
   const setListeningActive = useCallback((active: boolean) => {
     listeningRef.current = active;

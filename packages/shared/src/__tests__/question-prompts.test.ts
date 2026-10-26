@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { isInterviewPrompt, isLikelyQuestion } from "../question-heuristics";
+import { shouldFinalizeTurnImmediately } from "../turn-classify";
 import { normalizeInterviewQuery } from "../query-normalize";
 
 describe("isInterviewPrompt", () => {
@@ -16,6 +17,22 @@ describe("isInterviewPrompt", () => {
 
   it("recognizes expand prompts", () => {
     expect(isInterviewPrompt("Can you expand on that?")).toBe(true);
+  });
+});
+
+describe("shouldFinalizeTurnImmediately", () => {
+  it("finalizes questions with question marks immediately", () => {
+    expect(shouldFinalizeTurnImmediately("Why Questrade?")).toBe(true);
+  });
+
+  it("finalizes statement-style interview prompts when complete", () => {
+    expect(shouldFinalizeTurnImmediately("Walk me through your most recent work at Arc'teryx.")).toBe(
+      true
+    );
+  });
+
+  it("does not finalize mid-answer speech", () => {
+    expect(shouldFinalizeTurnImmediately("So I started by talking to engineering about")).toBe(false);
   });
 });
 
