@@ -19,7 +19,6 @@ import {
   Monitor,
   Settings,
 } from "lucide-react";
-
 export type AudioSource = "microphone" | "meeting-tab";
 export type SttEngine = "whisper" | "web-speech";
 
@@ -127,7 +126,7 @@ export function AudioSetupPanel({
 }: Props) {
   const [open, setOpen] = useState(false);
   const [source, setSource] = useState<AudioSource>("microphone");
-  const [engine, setEngine] = useState<SttEngine>("whisper");
+  const [engine, setEngine] = useState<SttEngine>("web-speech");
   const [showAdvanced, setShowAdvanced] = useState(false);
 
   const sessionStatus = sessionStatusLabel(listening, paused);
@@ -250,7 +249,7 @@ export function AudioSetupPanel({
             <Select
               value={engine}
               onValueChange={(v) => {
-                const next = (v ?? "whisper") as SttEngine;
+                const next = (v ?? "web-speech") as SttEngine;
                 setEngine(next);
                 if (next === "web-speech") setSource("microphone");
               }}
@@ -327,6 +326,7 @@ export function AudioSetupPanel({
             </Select>
           </div>
         )}
+
       </DropdownMenuContent>
     </DropdownMenu>
   );

@@ -61,7 +61,7 @@ export function TranscriptLineItem({
     const preview =
       line.text.length > 64 ? `${line.text.slice(0, 64).trim()}…` : line.text;
     return (
-      <li>
+      <div>
         <details className={cn(transcriptLineClass(line.kind, line.isFinal, selected), "group py-1.5")}>
           <summary className="cursor-pointer list-none outline-none [&::-webkit-details-marker]:hidden">
             <span className="flex items-start gap-1.5">
@@ -82,25 +82,25 @@ export function TranscriptLineItem({
             {line.text}
           </p>
         </details>
-      </li>
+      </div>
     );
   }
 
   if (line.kind === "readback") {
     return (
-      <li className={transcriptLineClass(line.kind, line.isFinal, selected)}>
+      <div className={transcriptLineClass(line.kind, line.isFinal, selected)}>
         <span className="font-medium text-sky-100/80">Reading answer · </span>
         {line.text}
-      </li>
+      </div>
     );
   }
 
   if (!interactive) {
-    return <li className={transcriptLineClass(line.kind, line.isFinal, selected)}>{line.text}</li>;
+    return <div className={transcriptLineClass(line.kind, line.isFinal, selected)}>{line.text}</div>;
   }
 
   return (
-    <li className="group relative">
+    <div className="group relative">
       <button
         type="button"
         className={cn("w-full text-left", transcriptLineClass(line.kind, line.isFinal, selected))}
@@ -143,6 +143,6 @@ export function TranscriptLineItem({
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-    </li>
+    </div>
   );
 }

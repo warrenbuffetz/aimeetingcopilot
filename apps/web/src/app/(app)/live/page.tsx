@@ -29,6 +29,7 @@ import { clamp, useHorizontalResize } from "@/hooks/use-horizontal-resize";
 import { usePersistedBoolean, usePersistedNumber } from "@/hooks/use-persisted-state";
 import { toast } from "sonner";
 import { AudioSetupPanel, type AudioSource, type SttEngine } from "@/components/live/audio-setup-panel";
+import { SessionRecordingControl } from "@/components/live/session-recording-control";
 import { DetectedQuestionConcepts } from "@/components/live/detected-question-concepts";
 import { AlternativeAnswerOption } from "@/components/live/alternative-answer-option";
 import { MatchedLibraryQuestionBlock } from "@/components/live/matched-library-question";
@@ -49,6 +50,7 @@ import {
 import { useLibraryCommandPalette } from "@/components/live/library-command-palette";
 import { ScriptText } from "@/components/live/script-text";
 import { useInterviewContext } from "@/hooks/use-interview-context";
+import { useSessionRecording } from "@/hooks/use-session-recording";
 import type {
   AnalyzeQuestionResult,
   ConceptSpan,
@@ -93,6 +95,14 @@ export default function LiveInterviewPage() {
   const interviewNav = useInterviewContext(session.library);
   sessionContextRef.current = interviewNav.context;
   const capture = useBrowserAudioCapture();
+  const profileNameForRecording =
+    profileId == null ? null : profiles.find((p) => p.id === profileId)?.name ?? null;
+  const sessionRecording = useSessionRecording({
+    profileName: profileNameForRecording,
+    micDeviceId,
+    getSttStream: capture.getStream,
+    sttCaptureSource: capture.source,
+  });
   const webSpeech = useWebSpeechTranscription({
     onFinalSegment: (segment) =>
       session.ingestSpeechFragment(segment, { finalizeImmediately: true }),
@@ -491,6 +501,14 @@ export default function LiveInterviewPage() {
                 <Square className="h-4 w-4" /> Stop
               </Button>
             </div>
+            <SessionRecordingControl
+              view={sessionRecording.view}
+              onStart={(mode) => void sessionRecording.start(mode)}
+              onPause={sessionRecording.pause}
+              onResume={sessionRecording.resume}
+              onStop={() => void sessionRecording.stop()}
+              onDiscard={() => void sessionRecording.discard()}
+            />
             {!layout.fitsFourColumns && (
               <Button
                 type="button"
