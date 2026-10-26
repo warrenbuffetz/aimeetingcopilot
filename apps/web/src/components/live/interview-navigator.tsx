@@ -22,6 +22,7 @@ import { AnswerPreviewCard } from "@/components/live/answer-preview-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
 import { ArrowLeft, Search } from "lucide-react";
 
@@ -249,8 +250,10 @@ export function InterviewNavigator({
                   Clear
                 </Button>
               </div>
-              <p className="mt-1 text-[10px] font-medium uppercase text-muted-foreground">Question map</p>
-              <p className="text-sm font-medium leading-tight">{activeMapFocus.title}</p>
+              <p className={cn("mt-1 text-[10px] font-medium uppercase", liveSemantic.labelDetected)}>
+                Question map
+              </p>
+              <p className={cn("text-sm font-medium leading-tight", liveSemantic.textAnswer)}>{activeMapFocus.title}</p>
               <p className="mt-0.5 text-[10px] text-muted-foreground">
                 Browse only — does not change live context.
               </p>
@@ -270,7 +273,9 @@ export function InterviewNavigator({
                   className={cn(
                     "flex-1 border-b-2 px-1 py-1.5 text-[10px] font-medium uppercase tracking-wide",
                     tab === id
-                      ? "border-primary text-foreground"
+                      ? id === "next"
+                        ? liveSemantic.navTabNextActive
+                        : "border-primary text-foreground"
                       : "border-transparent text-muted-foreground hover:text-foreground/80"
                   )}
                   onClick={() => setTab(id)}
@@ -346,6 +351,7 @@ export function InterviewNavigator({
                                       <AnswerPreviewCard
                                         source={row}
                                         catalog={catalog}
+                                        semanticAccent="library"
                                         expanded={Boolean(expanded[row.id])}
                                         onToggle={() => toggleExpanded(row.id)}
                                         onOpenMain={() => onOpenInMainPanel(row, { fromBrowse: true })}
@@ -368,7 +374,7 @@ export function InterviewNavigator({
 
             {!activeMapFocus && tab === "next" && (
               <section>
-                <h3 className="mb-1 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+                <h3 className={cn("mb-1 text-[10px] font-medium uppercase tracking-wide", liveSemantic.labelSuggested)}>
                   Likely next questions
                 </h3>
                 <div className="space-y-1.5">
@@ -377,6 +383,7 @@ export function InterviewNavigator({
                       key={s.rowId}
                       source={s}
                       catalog={catalog}
+                      semanticAccent="suggested"
                       expanded={Boolean(expanded[s.rowId])}
                       onToggle={() => toggleExpanded(s.rowId)}
                       onOpenMain={() => {
@@ -424,6 +431,7 @@ export function InterviewNavigator({
                                       <AnswerPreviewCard
                                         source={row}
                                         catalog={catalog}
+                                        semanticAccent="library"
                                         expanded={Boolean(expanded[row.id])}
                                         onToggle={() => toggleExpanded(row.id)}
                                         onOpenMain={() => onOpenInMainPanel(row, { fromBrowse: true })}
@@ -474,6 +482,7 @@ export function InterviewNavigator({
                           <AnswerPreviewCard
                             source={row}
                             catalog={catalog}
+                            semanticAccent="library"
                             expanded={Boolean(expanded[row.id])}
                             onToggle={() => toggleExpanded(row.id)}
                             onOpenMain={() => onOpenInMainPanel(row, { fromBrowse: true })}
@@ -497,6 +506,7 @@ export function InterviewNavigator({
                         key={row.id}
                         source={row}
                         catalog={catalog}
+                        semanticAccent="library"
                         expanded={Boolean(expanded[row.id])}
                         onToggle={() => toggleExpanded(row.id)}
                         onOpenMain={() => onOpenInMainPanel(row, { fromBrowse: true })}

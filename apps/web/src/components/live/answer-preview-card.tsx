@@ -3,12 +3,26 @@
 import { intentLabel, type EnrichedQaRow, type FollowUpSuggestion } from "@interview-copilot/shared";
 import { Button } from "@/components/ui/button";
 import { ScriptText } from "@/components/live/script-text";
+import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
 import { Copy, Pin } from "lucide-react";
 import { toast } from "sonner";
 
-const expandedAnswerCopyClass =
-  "rounded-md border border-white/20 bg-secondary px-3 py-2.5 text-xs leading-[1.55] text-secondary-foreground shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] border-l-[3px] border-l-sky-500/90 [&_p]:text-secondary-foreground";
+function expandedAnswerCopyClass(accent: "suggested" | "library" | "alternative" | "neutral") {
+  const border =
+    accent === "suggested"
+      ? "border-l-ic-suggested/75"
+      : accent === "library"
+        ? "border-l-ic-library/70"
+        : accent === "alternative"
+          ? "border-l-ic-alternative/55"
+          : "border-l-border";
+  return cn(
+    "rounded-md border border-white/20 bg-secondary px-3 py-2.5 text-xs leading-[1.55] text-ic-answer shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] border-l-[3px]",
+    border,
+    "[&_p]:text-ic-answer"
+  );
+}
 
 function evidenceWarning(status: EnrichedQaRow["navigator"]["evidenceStatus"]): string | null {
   switch (status) {
@@ -38,6 +52,7 @@ export function AnswerPreviewCard({
   onOpenMain,
   onPin,
   showShortFirst = false,
+  semanticAccent = "neutral",
 }: {
   source: PreviewSource;
   catalog: EnrichedQaRow[];
@@ -46,6 +61,7 @@ export function AnswerPreviewCard({
   onOpenMain: () => void;
   onPin: () => void;
   showShortFirst?: boolean;
+  semanticAccent?: "suggested" | "library" | "alternative" | "neutral";
 }) {
   const row = rowFromSource(source, catalog);
   const question = "question" in source && !("navigator" in source) ? source.question : source.question;
@@ -58,11 +74,19 @@ export function AnswerPreviewCard({
   const displayBody =
     showShortFirst && short && !expanded ? short : answer;
 
+  const copyClass = expandedAnswerCopyClass(semanticAccent);
+
   return (
-    <div className="rounded-md border border-border/80 bg-muted/10">
+    <div
+      className={cn(
+        "rounded-md border border-border/80 bg-muted/10",
+        semanticAccent === "suggested" && "hover:border-ic-suggested/25",
+        semanticAccent === "library" && "hover:border-ic-library/25"
+      )}
+    >
       <button type="button" className="flex w-full items-start gap-1 px-2 py-1.5 text-left" onClick={onToggle}>
         <div className="min-w-0 flex-1">
-          <p className="text-xs font-medium leading-snug">{question}</p>
+          <p className={cn("text-xs font-medium leading-snug", liveSemantic.textAnswer)}>{question}</p>
           <p className="text-[10px] text-muted-foreground">
             {label} · {intentLabel(intent)}
           </p>
@@ -76,20 +100,17 @@ export function AnswerPreviewCard({
               Quick reference
             </p>
           )}
-          <ScriptText
-            text={displayBody}
-            className={cn("max-h-40 overflow-y-auto", expandedAnswerCopyClass)}
-          />
+          <ScriptText text={displayBody} className={cn("max-h-40 overflow-y-auto", copyClass)} />
           {short && expanded && (
             <details className="mt-2">
               <summary className="cursor-pointer text-[10px] text-primary">Full prepared answer</summary>
-              <ScriptText text={answer} className={cn("mt-1 max-h-48 overflow-y-auto", expandedAnswerCopyClass)} />
+              <ScriptText text={answer} className={cn("mt-1 max-h-48 overflow-y-auto", copyClass)} />
             </details>
           )}
           {row?.navigator.supplementalTalkingPoints?.map((block) => (
             <details key={block.label} className="mt-2 rounded border border-border/60 bg-muted/10 px-2 py-1">
               <summary className="cursor-pointer text-[10px] font-medium text-primary">{block.label}</summary>
-              <ScriptText text={block.content} className={cn("mt-1 max-h-40 overflow-y-auto text-xs", expandedAnswerCopyClass)} />
+              <ScriptText text={block.content} className={cn("mt-1 max-h-40 overflow-y-auto text-xs", copyClass)} />
             </details>
           ))}
           <div className="mt-2 flex flex-wrap gap-1">

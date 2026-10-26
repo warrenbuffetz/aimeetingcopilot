@@ -1,12 +1,11 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { useLiveSession } from "@/hooks/use-live-session";
 import { useBrowserAudioCapture } from "@/hooks/use-browser-audio-capture";
 import { useWebSpeechTranscription } from "@/hooks/use-web-speech-transcription";
 import { Button } from "@/components/ui/button";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -19,20 +18,27 @@ import {
 import {
   Copy,
   MoreHorizontal,
-  PanelLeftClose,
   PanelLeftOpen,
   Pause,
   Play,
+  ScrollText,
   Square,
 } from "lucide-react";
 import { PanelResizeHandle } from "@/components/live/panel-resize-handle";
 import { clamp, useHorizontalResize } from "@/hooks/use-horizontal-resize";
 import { usePersistedBoolean, usePersistedNumber } from "@/hooks/use-persisted-state";
 import { toast } from "sonner";
-import { AudioInputMeter } from "@/components/live/audio-input-meter";
 import { AudioSetupPanel, type AudioSource, type SttEngine } from "@/components/live/audio-setup-panel";
-import { TranscriptLineItem } from "@/components/live/transcript-line";
 import { DetectedQuestionConcepts } from "@/components/live/detected-question-concepts";
+import { MatchedLibraryQuestionBlock } from "@/components/live/matched-library-question";
+import { RawTranscriptPanel } from "@/components/live/raw-transcript-panel";
+import { DetectedQuestionsPanel } from "@/components/live/detected-questions-panel";
+import {
+  computeLiveWorkspaceLayout,
+  LIVE_DETECTED_QUESTIONS_WIDTH,
+  LIVE_NAVIGATOR_WIDTH,
+  LIVE_RAW_TRANSCRIPT_WIDTH,
+} from "@/lib/live-layout";
 import {
   InterviewNavigator,
   focusForWholeQuestion,
@@ -48,7 +54,9 @@ import type {
   EnrichedQaRow,
   InterviewSessionContext,
 } from "@interview-copilot/shared";
-import { intentLabel, LEXICAL_MATCH_THRESHOLD_PREPARED } from "@interview-copilot/shared";
+import { LEXICAL_MATCH_THRESHOLD_PREPARED } from "@interview-copilot/shared";
+import { liveSemantic } from "@/lib/live-semantic";
+import { cn } from "@/lib/utils";
 import type { TranscriptLine } from "@/hooks/use-live-session";
 
 const SELECTABLE_TRANSCRIPT_KINDS = new Set<TranscriptLine["kind"]>(["speech", "question", "candidate"]);
@@ -63,9 +71,12 @@ export default function LiveInterviewPage() {
   const [localWhisperOnline, setLocalWhisperOnline] = useState<boolean | null>(null);
   const [micDeviceId, setMicDeviceId] = useState<string>("default");
   const [sttBackend, setSttBackend] = useState<"whisper" | "web-speech" | null>(null);
-  const [transcriptCollapsed, setTranscriptCollapsed] = usePersistedBoolean("ic-live-transcript-collapsed", false);
-  const [transcriptWidth, setTranscriptWidth] = usePersistedNumber("ic-live-transcript-width", 268);
-  const [navigatorWidth, setNavigatorWidth] = usePersistedNumber("ic-live-navigator-width", 400);
+  const [rawTranscriptCollapsed, setRawTranscriptCollapsed] = usePersistedBoolean("ic-live-transcript-collapsed", false);
+  const [rawDrawerOpen, setRawDrawerOpen] = usePersistedBoolean("ic-live-raw-drawer-open", false);
+  const [rawTranscriptWidth, setRawTranscriptWidth] = usePersistedNumber("ic-live-transcript-width", LIVE_RAW_TRANSCRIPT_WIDTH);
+  const [questionsWidth, setQuestionsWidth] = usePersistedNumber("ic-live-questions-width", LIVE_DETECTED_QUESTIONS_WIDTH);
+  const [navigatorWidth, setNavigatorWidth] = usePersistedNumber("ic-live-navigator-width", LIVE_NAVIGATOR_WIDTH);
+  const [workspaceWidth, setWorkspaceWidth] = useState(1400);
   const workspaceRef = useRef<HTMLDivElement>(null);
   const skipContextUpdateRef = useRef(false);
   const sessionContextRef = useRef<InterviewSessionContext | undefined>(undefined);
@@ -125,7 +136,13 @@ export default function LiveInterviewPage() {
 
   async function runAnalyze(
     question: string,
-    options?: { announce?: boolean; forceMainPanel?: boolean; respectLock?: boolean }
+    options?: {
+      announce?: boolean;
+      forceMainPanel?: boolean;
+      respectLock?: boolean;
+      analysisSource?: import("@/hooks/use-live-session").QuestionAnalyzeSource;
+      preserveDetectedQuestion?: boolean;
+    }
   ) {
     const locked = Boolean(pinned) || session.answerLocked;
     const respectLock = options?.respectLock ?? locked;
@@ -134,6 +151,7 @@ export default function LiveInterviewPage() {
       forceMainPanel: options?.forceMainPanel ?? !respectLock,
       respectMainPanelLock: respectLock,
       sessionContext: interviewNav.context,
+      analysisSource: options?.analysisSource ?? "auto",
     });
   }
 
@@ -198,7 +216,7 @@ export default function LiveInterviewPage() {
 
   function openInMainPanel(row: EnrichedQaRow, opts?: { fromBrowse?: boolean }) {
     if (opts?.fromBrowse) skipContextUpdateRef.current = true;
-    void runAnalyze(row.question, { forceMainPanel: true });
+    void runAnalyze(row.question, { forceMainPanel: true, analysisSource: "browse" });
   }
 
   function pinRow(row: EnrichedQaRow) {
@@ -213,13 +231,31 @@ export default function LiveInterviewPage() {
     return Math.max(320, Math.floor(w * 0.45));
   }, []);
 
-  const transcriptResize = useHorizontalResize((dx) => {
-    setTranscriptWidth((w) => clamp(w + dx, 220, 360));
+  const layout = useMemo(() => computeLiveWorkspaceLayout(workspaceWidth), [workspaceWidth]);
+
+  const rawResize = useHorizontalResize((dx) => {
+    setRawTranscriptWidth((w) => clamp(w + dx, 200, 320));
+  });
+
+  const questionsResize = useHorizontalResize((dx) => {
+    setQuestionsWidth((w) => clamp(w + dx, 220, 340));
   });
 
   const navigatorResize = useHorizontalResize((dx) => {
-    setNavigatorWidth((w) => clamp(w + dx, 320, maxNavigatorWidth()));
+    setNavigatorWidth((w) => clamp(w + dx, 280, maxNavigatorWidth()));
   });
+
+  useEffect(() => {
+    const el = workspaceRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver((entries) => {
+      const w = entries[0]?.contentRect.width;
+      if (w && w > 0) setWorkspaceWidth(w);
+    });
+    ro.observe(el);
+    setWorkspaceWidth(el.clientWidth);
+    return () => ro.disconnect();
+  }, []);
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -227,11 +263,15 @@ export default function LiveInterviewPage() {
       const t = e.target as HTMLElement;
       if (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable) return;
       e.preventDefault();
-      setTranscriptCollapsed((c) => !c);
+      if (layout.fitsFourColumns) {
+        setRawTranscriptCollapsed((c) => !c);
+      } else {
+        setRawDrawerOpen((c) => !c);
+      }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [setTranscriptCollapsed]);
+  }, [layout.fitsFourColumns, setRawDrawerOpen, setRawTranscriptCollapsed]);
 
   useEffect(() => {
     const onResize = () => {
@@ -357,6 +397,58 @@ export default function LiveInterviewPage() {
   const historyPosition = historyCount > 0 ? session.historyIndex + 1 : 0;
   const centerNotice = session.result ? centerStatusNotice(session.result) : null;
 
+  const showRawColumn = layout.fitsFourColumns && !rawTranscriptCollapsed;
+  const sttError =
+    (webSpeech.error && sttBackend === "web-speech" ? webSpeech.error : null) ??
+    (localWhisperOnline === false && session.listening && sttBackend === "whisper"
+      ? "Whisper offline"
+      : capture.health.error && sttBackend !== "web-speech"
+        ? capture.health.error
+        : null);
+
+  const captureSourceLabel =
+    sttBackend === "web-speech" ? "microphone (all speakers unknown)" : capture.source || "none";
+
+  function handleFindAnswerLine(line: TranscriptLine) {
+    if (selectedTranscriptIds.includes(line.id) && selectedTranscriptIds.length > 1) {
+      void findAnswerFromTranscript(selectedTranscriptIds);
+      return;
+    }
+    void session.manualAnalyzeTranscript(line.text);
+  }
+
+  const rawPanel = (
+    <RawTranscriptPanel
+      lines={session.lines}
+      listening={session.listening}
+      voiceLevel={capture.health.voiceLevel}
+      voiceActive={capture.health.voiceActive}
+      hasAudioTrack={capture.health.hasAudioTrack || sttBackend === "web-speech"}
+      sttLabel={sourceLabel}
+      captureSourceLabel={captureSourceLabel}
+      sttError={sttError}
+      selectedTranscriptIds={selectedTranscriptIds}
+      editRetryDraft={editRetryDraft}
+      onCollapse={
+        layout.fitsFourColumns ? () => setRawTranscriptCollapsed(true) : () => setRawDrawerOpen(false)
+      }
+      onToggleSelect={toggleTranscriptSelect}
+      onFindAnswer={handleFindAnswerLine}
+      onExploreRelated={openQuestionMap}
+      onEditRetry={(line) => setEditRetryDraft({ lineId: line.id, text: line.text })}
+      onEditRetryChange={(text) => editRetryDraft && setEditRetryDraft({ ...editRetryDraft, text })}
+      onEditRetrySubmit={() => {
+        if (!editRetryDraft) return;
+        void session.manualAnalyzeTranscript(editRetryDraft.text);
+        setEditRetryDraft(null);
+      }}
+      onEditRetryCancel={() => setEditRetryDraft(null)}
+      onAnalyzeCombined={() => void findAnswerFromTranscript(selectedTranscriptIds)}
+      onClearSelection={() => setSelectedTranscriptIds([])}
+      combinedSelectionText={combinedTranscriptText(selectedTranscriptIds)}
+    />
+  );
+
   return (
     <div className="flex h-[calc(100vh)] max-h-[calc(100vh)] flex-col overflow-hidden">
       <header className="border-b border-border px-4 py-3">
@@ -397,6 +489,18 @@ export default function LiveInterviewPage() {
                 <Square className="h-4 w-4" /> Stop
               </Button>
             </div>
+            {!layout.fitsFourColumns && (
+              <Button
+                type="button"
+                size="sm"
+                variant="outline"
+                className="h-9 gap-1.5"
+                onClick={() => setRawDrawerOpen(true)}
+              >
+                <ScrollText className="h-4 w-4" />
+                Transcript
+              </Button>
+            )}
             <AudioSetupPanel
               listening={session.listening}
               paused={session.paused}
@@ -416,8 +520,24 @@ export default function LiveInterviewPage() {
         </div>
       </header>
 
-      <div ref={workspaceRef} className="flex min-h-0 flex-1 flex-row">
-        {transcriptCollapsed ? (
+      <div ref={workspaceRef} className="relative flex min-h-0 flex-1 flex-row overflow-hidden">
+        {!layout.fitsFourColumns && rawDrawerOpen && (
+          <>
+            <button
+              type="button"
+              className="absolute inset-0 z-10 bg-black/50"
+              aria-label="Close raw transcript"
+              onClick={() => setRawDrawerOpen(false)}
+            />
+            <div
+              className="absolute inset-y-0 left-0 z-20 flex min-h-0 w-[min(320px,92vw)] flex-col border-r border-border bg-background shadow-xl"
+            >
+              {rawPanel}
+            </div>
+          </>
+        )}
+
+        {layout.fitsFourColumns && rawTranscriptCollapsed ? (
           <aside
             className="flex w-10 shrink-0 flex-col items-center gap-2 border-r border-border bg-card/20 py-2"
             aria-label="Transcript collapsed"
@@ -428,7 +548,7 @@ export default function LiveInterviewPage() {
               size="sm"
               className="h-8 w-8 p-0"
               title="Expand transcript (⌘⇧T)"
-              onClick={() => setTranscriptCollapsed(false)}
+              onClick={() => setRawTranscriptCollapsed(false)}
             >
               <PanelLeftOpen className="h-4 w-4" />
             </Button>
@@ -442,142 +562,45 @@ export default function LiveInterviewPage() {
               <span className="h-2 w-2 rounded-full bg-emerald-500" title="Voice detected" />
             )}
           </aside>
-        ) : (
+        ) : showRawColumn ? (
           <>
             <section
               className="flex min-h-0 shrink-0 flex-col border-r border-border"
-              style={{ width: transcriptWidth, minWidth: 220, maxWidth: 360 }}
+              style={{ width: rawTranscriptWidth, minWidth: 200, maxWidth: 320 }}
             >
-              <div className="flex items-start justify-between gap-1 border-b border-border px-2 py-2">
-                <div className="min-w-0 flex-1 space-y-2">
-                  <AudioInputMeter
-                    listening={session.listening}
-                    voiceLevel={capture.health.voiceLevel}
-                    voiceActive={capture.health.voiceActive}
-                    hasAudioTrack={capture.health.hasAudioTrack}
-                  />
-                  <p className="text-xs text-muted-foreground">
-                    {session.listening && (
-                      <>
-                        <span className="font-medium text-foreground/80">STT:</span> {sourceLabel}
-                        {session.interimTurn ? " · buffering…" : ""}
-                      </>
-                    )}
-                    {!session.listening && <span>Start audio to transcribe</span>}
-                    {capture.health.error && sttBackend !== "web-speech" && (
-                      <span className="text-amber-400"> · {capture.health.error}</span>
-                    )}
-                    {localWhisperOnline === false && session.listening && sttBackend === "whisper" && (
-                      <span className="text-amber-400"> · Whisper offline</span>
-                    )}
-                    {webSpeech.error && sttBackend === "web-speech" && (
-                      <span className="text-amber-400"> · {webSpeech.error}</span>
-                    )}
-                  </p>
-                </div>
-                <Button
-                  type="button"
-                  variant="ghost"
-                  size="sm"
-                  className="h-8 w-8 shrink-0 p-0"
-                  title="Collapse transcript (⌘⇧T)"
-                  onClick={() => setTranscriptCollapsed(true)}
-                >
-                  <PanelLeftClose className="h-4 w-4" />
-                </Button>
-              </div>
-              <ScrollArea className="min-h-0 flex-1 p-3">
-                {selectedTranscriptIds.length >= 2 && (
-                  <div className="mb-3 rounded-md border border-sky-500/40 bg-sky-500/10 px-2 py-2">
-                    <p className="text-[10px] font-medium text-sky-100/90">
-                      {selectedTranscriptIds.length} bubbles selected
-                    </p>
-                    <p className="mt-0.5 line-clamp-2 text-[11px] text-muted-foreground">
-                      {combinedTranscriptText(selectedTranscriptIds)}
-                    </p>
-                    <div className="mt-2 flex flex-wrap gap-1">
-                      <Button
-                        size="sm"
-                        className="h-7 text-xs"
-                        onClick={() => void findAnswerFromTranscript(selectedTranscriptIds)}
-                      >
-                        Analyze as one question
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        className="h-7 text-xs"
-                        onClick={() => setSelectedTranscriptIds([])}
-                      >
-                        Clear
-                      </Button>
-                    </div>
-                  </div>
-                )}
-                {editRetryDraft && (
-                  <div className="mb-3 space-y-2 rounded-md border border-border px-2 py-2">
-                    <Label className="text-[10px] text-muted-foreground">Edit transcript and retry</Label>
-                    <Input
-                      value={editRetryDraft.text}
-                      onChange={(e) => setEditRetryDraft({ ...editRetryDraft, text: e.target.value })}
-                      className="h-8 text-xs"
-                    />
-                    <div className="flex gap-1">
-                      <Button
-                        size="sm"
-                        className="h-7 text-xs"
-                        onClick={() => {
-                          void session.manualAnalyzeTranscript(editRetryDraft.text);
-                          setEditRetryDraft(null);
-                        }}
-                      >
-                        Retry
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        className="h-7 text-xs"
-                        onClick={() => setEditRetryDraft(null)}
-                      >
-                        Cancel
-                      </Button>
-                    </div>
-                  </div>
-                )}
-                <p className="mb-2 text-[10px] text-muted-foreground">
-                  Click a line to find an answer. Shift+click to combine adjacent lines. Speaker is not
-                  separated — verify interviewer lines before selecting.
-                </p>
-                <ul className="space-y-2 text-sm">
-                  {session.lines.map((line) => (
-                    <TranscriptLineItem
-                      key={line.id}
-                      line={line}
-                      selected={selectedTranscriptIds.includes(line.id)}
-                      onFindAnswer={() => {
-                        if (selectedTranscriptIds.includes(line.id) && selectedTranscriptIds.length > 1) {
-                          void findAnswerFromTranscript(selectedTranscriptIds);
-                          return;
-                        }
-                        void session.manualAnalyzeTranscript(line.text);
-                      }}
-                      onToggleSelect={(shift) => toggleTranscriptSelect(line.id, shift)}
-                      onExploreRelated={() => openQuestionMap(line.text)}
-                      onEditRetry={() => setEditRetryDraft({ lineId: line.id, text: line.text })}
-                    />
-                  ))}
-                </ul>
-              </ScrollArea>
+              {rawPanel}
             </section>
-            <PanelResizeHandle
-              label="Resize transcript"
-              onPointerDown={transcriptResize.onPointerDown}
-            />
+            <PanelResizeHandle label="Resize raw transcript" onPointerDown={rawResize.onPointerDown} />
+          </>
+        ) : null}
+
+        {layout.fitsQuestionsColumn && (
+          <>
+            <section
+              className="flex min-h-0 shrink-0 flex-col border-r border-border"
+              style={{ width: questionsWidth, minWidth: 220, maxWidth: 340 }}
+            >
+              <DetectedQuestionsPanel
+                questionHistory={session.questionHistory}
+                historyIndex={session.historyIndex}
+                historySources={session.historySources}
+                loading={session.loading}
+                candidateText={session.candidate?.text ?? null}
+                onSelectIndex={session.goToHistoryIndex}
+                onJumpToLatest={session.jumpToLatestHistory}
+                onReanalyze={(q) => void runAnalyze(q, { forceMainPanel: !(pinned || session.answerLocked), respectLock: Boolean(pinned) || session.answerLocked })}
+                onExplore={openQuestionMap}
+              />
+            </section>
+            <PanelResizeHandle label="Resize detected questions" onPointerDown={questionsResize.onPointerDown} />
           </>
         )}
 
-        {/* Center: answer */}
-        <section className="flex min-h-0 min-w-0 flex-1 flex-col">
+        {/* Prepared answer */}
+        <section
+          className="flex min-h-0 min-w-0 flex-1 flex-col"
+          style={{ minWidth: layout.minAnswerWidth }}
+        >
           <div className="flex min-h-[2.25rem] flex-wrap items-center gap-x-3 gap-y-1 border-b border-border bg-muted/10 px-4 py-2">
             {session.result && preparedAnswerLabel(session.result)}
             {session.candidate && (
@@ -684,9 +707,9 @@ export default function LiveInterviewPage() {
             </DropdownMenu>
           </div>
           <div className="flex-1 overflow-auto px-4 py-3 md:px-5 md:py-4">
-            <div className="flex flex-wrap items-baseline justify-between gap-2">
+            <div className={cn("flex flex-wrap items-baseline justify-between gap-2", liveSemantic.blockDetected)}>
               <div className="flex flex-wrap items-center gap-2">
-                <h2 className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+                <h2 className={cn("text-[10px] font-medium uppercase tracking-wide", liveSemantic.labelDetected)}>
                   Detected question
                 </h2>
                 {session.currentQuestion && (
@@ -701,7 +724,7 @@ export default function LiveInterviewPage() {
                   </Button>
                 )}
               </div>
-              {historyCount > 1 && (
+              {!layout.fitsQuestionsColumn && historyCount > 1 && (
                 <div className="flex items-center gap-1 text-xs text-muted-foreground">
                   <Button
                     type="button"
@@ -727,7 +750,7 @@ export default function LiveInterviewPage() {
                 </div>
               )}
             </div>
-            <p className="mt-1 text-base font-semibold leading-tight">
+            <p className={cn("mt-1 text-base font-semibold leading-tight", liveSemantic.textAnswer)}>
               {session.currentQuestion ? (
                 <DetectedQuestionConcepts
                   question={session.currentQuestion}
@@ -743,39 +766,18 @@ export default function LiveInterviewPage() {
                 Retrieval interpretation: {session.result.queryCorrections.join(" · ")} (transcript unchanged)
               </p>
             )}
-            {matchedMeta && (
-              <p className="mt-1 text-[11px] text-muted-foreground">
-                {matchedMeta.experienceLabel}
-                {matchedMeta.intent !== "general" && ` · ${intentLabel(matchedMeta.intent)}`}
-                {matchedMeta.evidenceStatus === "illustrative_scenario" && (
-                  <span className="text-amber-400/90"> · illustrative</span>
-                )}
-              </p>
-            )}
+            <MatchedLibraryQuestionBlock
+              detectedQuestion={session.currentQuestion}
+              result={session.result}
+              matchedMeta={matchedMeta}
+              onInspectLibraryQuestion={openQuestionMap}
+            />
             <div className="mt-3 max-w-3xl">
-              <ScriptText text={displayAnswer} clamp={!showFull} />
+              <ScriptText text={displayAnswer} clamp={!showFull} className={liveSemantic.textAnswer} />
             </div>
-            {session.result?.preparedQuestion &&
-              session.result.preparedQuestion.trim() !== (session.currentQuestion ?? "").trim() && (
-                <div className="mt-2 rounded-md border border-border/80 bg-muted/20 px-2.5 py-2">
-                  <p className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
-                    Library question for this answer
-                  </p>
-                  <p className="mt-0.5 text-sm font-medium leading-snug text-foreground">
-                    {session.result.preparedQuestion}
-                  </p>
-                  {session.result.matchedFollowUpQuestion &&
-                    session.result.matchedFollowUpQuestion !== session.result.preparedQuestion && (
-                      <p className="mt-1 text-[11px] text-muted-foreground">
-                        Matched via alias:{" "}
-                        <span className="text-foreground/90">{session.result.matchedFollowUpQuestion}</span>
-                      </p>
-                    )}
-                </div>
-              )}
             {session.result?.alternativeMatches && session.result.alternativeMatches.length > 0 && (
               <div className="mt-4 max-w-3xl border-t border-border pt-3">
-                <h3 className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+                <h3 className={cn("text-[10px] font-medium uppercase tracking-wide", liveSemantic.labelAlternative)}>
                   Alternative answers
                 </h3>
                 <ul className="mt-2 space-y-1.5">
@@ -783,16 +785,21 @@ export default function LiveInterviewPage() {
                     <li key={alt.sourceId}>
                       <button
                         type="button"
-                        className="w-full rounded-md border border-border/80 bg-muted/20 px-2.5 py-2 text-left text-xs hover:bg-muted/40"
+                        className={cn(
+                          "w-full px-2.5 py-2 text-left text-xs hover:bg-ic-alternative-surface",
+                          liveSemantic.surfaceAlternative
+                        )}
                         onClick={() =>
                           void runAnalyze(alt.libraryQuestion, {
                             forceMainPanel: !(pinned || session.answerLocked),
                             respectLock: Boolean(pinned) || session.answerLocked,
                             announce: true,
+                            preserveDetectedQuestion: true,
+                            analysisSource: "manual",
                           })
                         }
                       >
-                        <span className="font-medium text-foreground/95">{alt.matchedLabel}</span>
+                        <span className={cn("font-medium", liveSemantic.textAnswer)}>{alt.matchedLabel}</span>
                       </button>
                     </li>
                   ))}
@@ -804,7 +811,10 @@ export default function LiveInterviewPage() {
                 <span className="text-foreground/70">Closest: </span>
                 <button
                   type="button"
-                  className="text-left font-medium text-emerald-400/95 underline-offset-2 hover:underline"
+                  className={cn(
+                    "text-left font-medium underline-offset-2 hover:underline",
+                    liveSemantic.labelAlternative
+                  )}
                   onClick={() =>
                     void runAnalyze(session.result!.closestSuggestion!.libraryQuestion, {
                       forceMainPanel: true,
@@ -818,13 +828,13 @@ export default function LiveInterviewPage() {
             )}
             {session.result?.followUps && session.result.followUps.length > 0 && (
               <div className="mt-4 max-w-3xl border-t border-border pt-3">
-                <h3 className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+                <h3 className={cn("text-[10px] font-medium uppercase tracking-wide", liveSemantic.labelSuggested)}>
                   Likely follow-ups (read-ahead)
                 </h3>
                 <ul className="mt-2 space-y-2">
                   {session.result.followUps.map((fu) => (
-                    <li key={fu.question} className="rounded-md border border-border/80 bg-muted/25 px-2.5 py-2">
-                      <p className="text-xs font-medium leading-snug">{fu.question}</p>
+                    <li key={fu.question} className={cn("px-2.5 py-2", liveSemantic.surfaceSuggested)}>
+                      <p className={cn("text-xs font-medium leading-snug", liveSemantic.textAnswer)}>{fu.question}</p>
                       <ScriptText text={fu.answer} className="mt-1 text-muted-foreground" />
                     </li>
                   ))}
@@ -849,7 +859,7 @@ export default function LiveInterviewPage() {
         {/* Right: Interview Navigator */}
         <section
           className="flex min-h-0 shrink-0 flex-col overflow-hidden border-l border-border"
-          style={{ width: navigatorWidth, minWidth: 320, maxWidth: maxNavigatorWidth() }}
+          style={{ width: navigatorWidth, minWidth: 280, maxWidth: maxNavigatorWidth() }}
         >
           {palette}
           <InterviewNavigator

@@ -1,6 +1,7 @@
 "use client";
 
 import type { TranscriptLine } from "@/hooks/use-live-session";
+import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
 import { ChevronRight, MoreHorizontal } from "lucide-react";
 import {
@@ -19,15 +20,15 @@ function transcriptLineClass(
   return cn(
     "rounded-md px-2 py-1 transition-colors",
     !isFinal && "opacity-60 italic",
-    selected && "ring-1 ring-sky-500/60 bg-sky-500/10",
+    selected && liveSemantic.transcriptSelected,
     kind === "filler" && "text-muted-foreground/70 text-xs",
-    kind === "speech" && "text-foreground/80",
+    kind === "speech" && "text-ic-answer/90",
     kind === "candidate" && "border border-amber-500/50 bg-amber-500/10 text-amber-50/90",
-    kind === "question" && "border border-emerald-500/40 bg-emerald-500/10",
-    kind === "readback" && "border border-sky-500/25 bg-sky-500/10 text-foreground/75 text-xs",
+    kind === "question" && liveSemantic.transcriptQuestion,
+    kind === "readback" && "border border-border/60 bg-muted/20 text-foreground/75 text-xs",
     (kind === "speech" || kind === "question" || kind === "candidate") &&
       isFinal &&
-      "cursor-pointer hover:bg-muted/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/50"
+      "cursor-pointer hover:bg-muted/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ic-detected/40"
   );
 }
 

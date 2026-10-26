@@ -26,7 +26,10 @@ export type TranscriptLine = {
   isFinal: boolean;
   isQuestion: boolean;
   kind: TranscriptLineKind;
+  createdAt?: number;
 };
+
+export type QuestionAnalyzeSource = "auto" | "manual" | "candidate" | "browse";
 
 export type TurnCandidate = {
   text: string;
@@ -73,6 +76,7 @@ export function useLiveSession(
   const [loading, setLoading] = useState(false);
   const [questionHistory, setQuestionHistory] = useState<AnalyzeQuestionResult[]>([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
+  const [historySources, setHistorySources] = useState<QuestionAnalyzeSource[]>([]);
   const [library, setLibrary] = useState<LexicalQaRow[]>([]);
   const [candidate, setCandidate] = useState<TurnCandidate | null>(null);
   const [answerLocked, setAnswerLocked] = useState(false);
@@ -175,6 +179,7 @@ export function useLiveSession(
           isFinal: false,
           isQuestion: false,
           kind: "speech" as TranscriptLineKind,
+          createdAt: Date.now(),
         },
       ];
     });
@@ -193,6 +198,7 @@ export function useLiveSession(
         isFinal: true,
         isQuestion,
         kind,
+        createdAt: Date.now(),
       };
       setLines((prev) => {
         const last = prev[prev.length - 1];
@@ -212,6 +218,9 @@ export function useLiveSession(
         respectMainPanelLock?: boolean;
         forceMainPanel?: boolean;
         sessionContext?: InterviewSessionContext;
+        analysisSource?: QuestionAnalyzeSource;
+        /** Keep center-panel detected question when swapping prepared answer (e.g. alternatives). */
+        preserveDetectedQuestion?: boolean;
       }
     ): Promise<AnalyzeQuestionResult | null> => {
       const normalizedKey = question.trim().toLowerCase().replace(/\s+/g, " ");
@@ -268,11 +277,15 @@ export function useLiveSession(
         const skipMainUpdate =
           !options?.forceMainPanel && options?.respectMainPanelLock && lowConfidence;
 
+        const source = options?.analysisSource ?? "auto";
         if (!skipMainUpdate) {
           setResult(data);
-          setCurrentQuestion(question);
-          setQuestionHistory((h) => [...h, data]);
-          setHistoryIndex((h) => h + 1);
+          if (!options?.preserveDetectedQuestion) {
+            setCurrentQuestion(question);
+            setQuestionHistory((h) => [...h, data]);
+            setHistorySources((s) => [...s, source]);
+            setHistoryIndex((h) => h + 1);
+          }
           setAnswerLocked(true);
           setMatchPreview(null);
         } else {
@@ -304,6 +317,7 @@ export function useLiveSession(
     setResult(data);
     setCurrentQuestion(question);
     setQuestionHistory((h) => [...h, data]);
+    setHistorySources((s) => [...s, "manual"]);
     setHistoryIndex((h) => h + 1);
     setAnswerLocked(true);
     setMatchPreview(null);
@@ -354,6 +368,7 @@ export function useLiveSession(
         void analyze(trimmed, {
           announce: true,
           respectMainPanelLock: Boolean(pinnedAnswer) || answerLocked,
+          analysisSource: "auto",
         });
         return;
       }
@@ -453,7 +468,7 @@ export function useLiveSession(
       )
     );
     setCandidate(null);
-    void analyze(text, { announce: true, forceMainPanel: true });
+    void analyze(text, { announce: true, forceMainPanel: true, analysisSource: "candidate" });
   }, [analyze, candidate]);
 
   const dismissCandidate = useCallback(() => setCandidate(null), []);
@@ -479,6 +494,7 @@ export function useLiveSession(
         announce: true,
         forceMainPanel: options?.forceMainPanel ?? !respectLock,
         respectMainPanelLock: respectLock,
+        analysisSource: "manual",
       });
     },
     [analyze, answerLocked, pinnedAnswer]
@@ -574,6 +590,7 @@ export function useLiveSession(
     setHistoryIndex((i) => {
       const next = Math.max(0, i - 1);
       setResult(questionHistory[next] ?? null);
+      setCurrentQuestion(questionHistory[next]?.question ?? null);
       return next;
     });
   }, [questionHistory]);
@@ -582,8 +599,28 @@ export function useLiveSession(
     setHistoryIndex((i) => {
       const next = Math.min(questionHistory.length - 1, i + 1);
       setResult(questionHistory[next] ?? null);
+      setCurrentQuestion(questionHistory[next]?.question ?? null);
       return next;
     });
+  }, [questionHistory]);
+
+  const goToHistoryIndex = useCallback(
+    (index: number) => {
+      if (questionHistory.length === 0) return;
+      const next = Math.max(0, Math.min(index, questionHistory.length - 1));
+      setHistoryIndex(next);
+      setResult(questionHistory[next] ?? null);
+      setCurrentQuestion(questionHistory[next]?.question ?? null);
+    },
+    [questionHistory]
+  );
+
+  const jumpToLatestHistory = useCallback(() => {
+    if (questionHistory.length === 0) return;
+    const last = questionHistory.length - 1;
+    setHistoryIndex(last);
+    setResult(questionHistory[last] ?? null);
+    setCurrentQuestion(questionHistory[last]?.question ?? null);
   }, [questionHistory]);
 
   useEffect(() => () => clearSilenceTimer(), [clearSilenceTimer]);
@@ -625,6 +662,9 @@ export function useLiveSession(
     goNext,
     questionHistory,
     historyIndex,
+    historySources,
+    goToHistoryIndex,
+    jumpToLatestHistory,
     library,
   };
 }

@@ -46,6 +46,15 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --color-ic-detected: var(--ic-detected);
+  --color-ic-library: var(--ic-library);
+  --color-ic-suggested: var(--ic-suggested);
+  --color-ic-alternative: var(--ic-alternative);
+  --color-ic-answer: var(--ic-answer);
+  --color-ic-detected-surface: var(--ic-detected-surface);
+  --color-ic-library-surface: var(--ic-library-surface);
+  --color-ic-suggested-surface: var(--ic-suggested-surface);
+  --color-ic-alternative-surface: var(--ic-alternative-surface);
 }
 
 :root {
@@ -117,6 +126,16 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  /* Live interview semantic accents (labels / borders — not full fills) */
+  --ic-detected: #67e8f9;
+  --ic-library: #c4b5fd;
+  --ic-suggested: #fcd34d;
+  --ic-alternative: #a1a1aa;
+  --ic-answer: #f4f4f5;
+  --ic-detected-surface: rgb(103 232 249 / 0.09);
+  --ic-library-surface: rgb(196 181 253 / 0.1);
+  --ic-suggested-surface: rgb(252 211 77 / 0.07);
+  --ic-alternative-surface: rgb(161 161 170 / 0.1);
 }
 
 @layer base {

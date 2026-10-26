@@ -72,6 +72,7 @@ export interface AnalyzeQuestionResult {
 }
 
 export { isInterviewPrompt, isLikelyQuestion } from "./question-heuristics";
+export { questionsEquivalentForDisplay } from "./question-display-equiv";
 export { normalizeInterviewQuery } from "./query-normalize";
 export type { QueryNormalization } from "./query-normalize";
 export { findConceptSpans, moduleIdsForConcept } from "./concept-spans";

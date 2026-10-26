@@ -2,6 +2,8 @@
 
 import type { ReactNode } from "react";
 import { findConceptSpans, type ConceptSpan } from "@interview-copilot/shared";
+import { liveSemantic } from "@/lib/live-semantic";
+import { cn } from "@/lib/utils";
 import type { EnrichedQaRow } from "@interview-copilot/shared";
 
 export function DetectedQuestionConcepts({
@@ -15,7 +17,7 @@ export function DetectedQuestionConcepts({
 }) {
   const spans = findConceptSpans(question, catalog);
   if (!spans.length) {
-    return <span>{question}</span>;
+    return <span className={liveSemantic.textAnswer}>{question}</span>;
   }
 
   const parts: ReactNode[] = [];
@@ -28,7 +30,11 @@ export function DetectedQuestionConcepts({
       <button
         key={`${span.start}-${span.label}`}
         type="button"
-        className="rounded-sm bg-muted/40 px-0.5 text-foreground underline decoration-dotted underline-offset-2 hover:bg-sky-500/20"
+        className={cn(
+          "rounded-sm bg-muted/40 px-0.5 underline decoration-dotted underline-offset-2",
+          liveSemantic.textAnswer,
+          liveSemantic.conceptLink
+        )}
         onClick={() => onExploreConcept(span)}
         title={`Explore ${span.label} in Question Map`}
       >
