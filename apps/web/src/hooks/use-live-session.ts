@@ -15,6 +15,7 @@ import {
   type TurnClassification,
 } from "@interview-copilot/shared";
 import { createClient } from "@/lib/supabase/client";
+import { segmentTranscriptForDisplay } from "@/lib/transcript-display";
 import { toast } from "sonner";
 
 export type TranscriptLineKind = "filler" | "speech" | "candidate" | "question" | "readback";
@@ -27,6 +28,12 @@ export type TranscriptLine = {
   isQuestion: boolean;
   kind: TranscriptLineKind;
   createdAt?: number;
+  /** Multiple display rows from one finalized STT turn */
+  speechGroupId?: string;
+  segmentIndex?: number;
+  segmentTotal?: number;
+  /** Full utterance when split across segments (for expand / question matching) */
+  fullText?: string;
 };
 
 export type QuestionAnalyzeSource = "auto" | "manual" | "candidate" | "browse";
@@ -186,7 +193,11 @@ export function useLiveSession(
   }, [clearLiveSttLine]);
 
   const addTranscriptLine = useCallback(
-    (text: string, kind: TranscriptLineKind) => {
+    (
+      text: string,
+      kind: TranscriptLineKind,
+      meta?: Pick<TranscriptLine, "speechGroupId" | "segmentIndex" | "segmentTotal" | "fullText">
+    ) => {
       const trimmed = text.trim();
       if (!trimmed) return;
       seqRef.current += 1;
@@ -199,10 +210,18 @@ export function useLiveSession(
         isQuestion,
         kind,
         createdAt: Date.now(),
+        ...meta,
       };
       setLines((prev) => {
         const last = prev[prev.length - 1];
-        if (last?.isFinal && last.text === trimmed && last.kind === kind) return prev;
+        if (
+          last?.isFinal &&
+          last.text === trimmed &&
+          last.kind === kind &&
+          last.speechGroupId === meta?.speechGroupId
+        ) {
+          return prev;
+        }
         return [...prev, line];
       });
     },
@@ -355,7 +374,17 @@ export function useLiveSession(
 
       const promptLike = classification.isQuestionLike || isInterviewPrompt(trimmed);
       const lineKind = promptLike ? "question" : "speech";
-      addTranscriptLine(trimmed, lineKind);
+
+      const displaySegments = segmentTranscriptForDisplay(trimmed);
+      const speechGroupId = displaySegments.length > 1 ? crypto.randomUUID() : undefined;
+      displaySegments.forEach((seg, index) => {
+        addTranscriptLine(seg, lineKind, {
+          speechGroupId,
+          segmentIndex: index,
+          segmentTotal: displaySegments.length,
+          fullText: speechGroupId ? trimmed : undefined,
+        });
+      });
 
       const autoRetrieve =
         classification.action === "promote" ||

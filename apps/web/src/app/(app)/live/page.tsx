@@ -104,8 +104,7 @@ export default function LiveInterviewPage() {
     sttCaptureSource: capture.source,
   });
   const webSpeech = useWebSpeechTranscription({
-    onFinalSegment: (segment) =>
-      session.ingestSpeechFragment(segment, { finalizeImmediately: true }),
+    onFinalSegment: (segment) => session.ingestSpeechFragment(segment),
     onInterim: (text) => session.ingestWebSpeechInterim(text),
     onError: (message) => toast.error(message),
   });
@@ -458,6 +457,7 @@ export default function LiveInterviewPage() {
       onAnalyzeCombined={() => void findAnswerFromTranscript(selectedTranscriptIds)}
       onClearSelection={() => setSelectedTranscriptIds([])}
       combinedSelectionText={combinedTranscriptText(selectedTranscriptIds)}
+      highlightQuestion={session.currentQuestion}
     />
   );
 

@@ -1,8 +1,14 @@
 "use client";
 
+import { useCallback, useMemo, useState } from "react";
 import type { TranscriptLine } from "@/hooks/use-live-session";
 import { useStickToBottom } from "@/hooks/use-stick-to-bottom";
 import { TranscriptLineItem } from "@/components/live/transcript-line";
+import {
+  buildTranscriptDisplayUnits,
+  stickToBottomKey,
+} from "@/components/live/transcript-display-units";
+import { TranscriptSpeechGroup } from "@/components/live/transcript-speech-group";
 import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
 import { AudioInputMeter } from "@/components/live/audio-input-meter";
@@ -38,6 +44,7 @@ export type RawTranscriptPanelProps = {
   onAnalyzeCombined: () => void;
   onClearSelection: () => void;
   combinedSelectionText: string;
+  highlightQuestion?: string | null;
 };
 
 export function RawTranscriptPanel({
@@ -62,15 +69,22 @@ export function RawTranscriptPanel({
   onAnalyzeCombined,
   onClearSelection,
   combinedSelectionText,
+  highlightQuestion = null,
 }: RawTranscriptPanelProps) {
-  const lastLine = lines.length > 0 ? lines[lines.length - 1] : null;
-  const scrollKey =
-    lastLine == null
-      ? "0"
-      : lastLine.isFinal
-        ? `${lines.length}:${lastLine.id}:${lastLine.text.length}`
-        : `${lines.length}:${lastLine.id}:interim`;
+  const scrollKey = useMemo(() => stickToBottomKey(lines), [lines]);
   const { containerRef, onScroll, showJumpLatest, jumpToLatest } = useStickToBottom<HTMLDivElement>(scrollKey);
+  const [expandedKeys, setExpandedKeys] = useState<Set<string>>(() => new Set());
+
+  const toggleExpanded = useCallback((key: string) => {
+    setExpandedKeys((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }, []);
+
+  const displayUnits = useMemo(() => buildTranscriptDisplayUnits(lines), [lines]);
 
   return (
     <div className="flex min-h-0 flex-1 flex-col">
@@ -137,22 +151,61 @@ export function RawTranscriptPanel({
             Click Find answer · Shift+click adjacent segments to combine
           </p>
           <ul className="space-y-2 text-sm">
-            {lines.map((line) => (
-              <li key={line.id} className="rounded-md border border-border/40 bg-card/30 px-0.5">
-                <div className="flex items-center gap-2 px-1.5 pt-1 text-[10px] text-muted-foreground">
-                  {formatLineTime(line.createdAt) && <span className="tabular-nums">{formatLineTime(line.createdAt)}</span>}
-                  {line.kind === "readback" && <span>reading answer</span>}
-                </div>
-                <TranscriptLineItem
-                  line={line}
-                  selected={selectedTranscriptIds.includes(line.id)}
-                  onFindAnswer={() => onFindAnswer(line)}
-                  onToggleSelect={(shift) => onToggleSelect(line.id, shift)}
-                  onExploreRelated={() => onExploreRelated(line.text)}
-                  onEditRetry={() => onEditRetry(line)}
-                />
-              </li>
-            ))}
+            {displayUnits.map((unit) => {
+              if (unit.type === "group") {
+                const head = unit.lines[0];
+                return (
+                  <li
+                    key={unit.groupId}
+                    className="rounded-md border border-border/40 bg-card/30 px-0.5"
+                  >
+                    <div className="flex items-center gap-2 px-1.5 pt-1 text-[10px] text-muted-foreground">
+                      {formatLineTime(head.createdAt) && (
+                        <span className="tabular-nums">{formatLineTime(head.createdAt)}</span>
+                      )}
+                      <span>speech · {unit.wordCount} words</span>
+                    </div>
+                    <TranscriptSpeechGroup
+                      lines={unit.lines}
+                      fullText={unit.fullText}
+                      wordCount={unit.wordCount}
+                      expanded={expandedKeys.has(unit.groupId)}
+                      onToggleExpand={() => toggleExpanded(unit.groupId)}
+                      highlightQuestion={highlightQuestion}
+                      selectedTranscriptIds={selectedTranscriptIds}
+                      onToggleSelect={onToggleSelect}
+                      onFindAnswer={onFindAnswer}
+                      onExploreRelated={onExploreRelated}
+                      onEditRetry={onEditRetry}
+                    />
+                  </li>
+                );
+              }
+
+              const line = unit.line;
+              return (
+                <li key={line.id} className="rounded-md border border-border/40 bg-card/30 px-0.5">
+                  <div className="flex items-center gap-2 px-1.5 pt-1 text-[10px] text-muted-foreground">
+                    {formatLineTime(line.createdAt) && (
+                      <span className="tabular-nums">{formatLineTime(line.createdAt)}</span>
+                    )}
+                    {!line.isFinal && <span className="text-sky-400/90">live</span>}
+                    {line.kind === "readback" && <span>reading answer</span>}
+                  </div>
+                  <TranscriptLineItem
+                    line={line}
+                    selected={selectedTranscriptIds.includes(line.id)}
+                    highlightQuestion={highlightQuestion}
+                    expanded={expandedKeys.has(line.id)}
+                    onToggleExpand={() => toggleExpanded(line.id)}
+                    onFindAnswer={() => onFindAnswer(line)}
+                    onToggleSelect={(shift) => onToggleSelect(line.id, shift)}
+                    onExploreRelated={() => onExploreRelated(line.fullText ?? line.text)}
+                    onEditRetry={() => onEditRetry(line)}
+                  />
+                </li>
+              );
+            })}
           </ul>
         </div>
         {showJumpLatest && (

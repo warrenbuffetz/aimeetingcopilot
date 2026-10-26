@@ -1,11 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import type { TranscriptLine } from "@/hooks/use-live-session";
-import {
-  interimPreviewIsTruncated,
-  tailInterimPreview,
-} from "@/lib/interim-transcript-preview";
+import { countWords, excerptWords, lineMatchesQuestionHighlight, tailLines } from "@/lib/transcript-display";
 import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
 import { ChevronRight, MoreHorizontal } from "lucide-react";
@@ -17,15 +13,20 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 
+const LIVE_INTERIM_PREVIEW_LINES = 5;
+const LONG_LINE_COLLAPSE_WORDS = 55;
+
 function transcriptLineClass(
   kind: TranscriptLine["kind"],
   isFinal: boolean,
-  selected: boolean
+  selected: boolean,
+  questionHighlight?: boolean
 ) {
   return cn(
     "rounded-md px-2 py-1 transition-colors",
-    !isFinal && "opacity-60 italic",
+    !isFinal && "opacity-90",
     selected && liveSemantic.transcriptSelected,
+    questionHighlight && "ring-1 ring-cyan-400/50 bg-cyan-500/10",
     kind === "filler" && "text-muted-foreground/70 text-xs",
     kind === "speech" && "text-ic-answer/90",
     kind === "candidate" && "border border-amber-500/50 bg-amber-500/10 text-amber-50/90",
@@ -39,37 +40,12 @@ function transcriptLineClass(
 
 const READBACK_COLLAPSE_MIN_WORDS = 12;
 
-function LiveInterimTranscript({ text }: { text: string }) {
-  const [expanded, setExpanded] = useState(false);
-  const preview = tailInterimPreview(text);
-  const truncated = interimPreviewIsTruncated(text, preview);
-  const display = expanded ? text : preview;
-
-  return (
-    <div
-      className={cn(
-        "rounded-md border border-sky-500/25 bg-sky-500/5 px-2 py-1.5",
-        !expanded && "max-h-[7.5rem] overflow-hidden"
-      )}
-    >
-      <p className="text-[10px] font-medium text-sky-300/90">Live speech</p>
-      <p className="mt-1 text-sm leading-snug text-foreground/90 whitespace-pre-wrap">{display}</p>
-      {truncated && (
-        <button
-          type="button"
-          className="mt-1.5 text-[10px] font-medium text-sky-300/80 hover:text-sky-200"
-          onClick={() => setExpanded((v) => !v)}
-        >
-          {expanded ? "Show less" : "Expand live preview"}
-        </button>
-      )}
-    </div>
-  );
-}
-
 export type TranscriptLineItemProps = {
   line: TranscriptLine;
   selected?: boolean;
+  highlightQuestion?: string | null;
+  expanded?: boolean;
+  onToggleExpand?: () => void;
   onFindAnswer: () => void;
   onToggleSelect?: (shiftKey: boolean) => void;
   onExploreRelated?: () => void;
@@ -79,6 +55,9 @@ export type TranscriptLineItemProps = {
 export function TranscriptLineItem({
   line,
   selected = false,
+  highlightQuestion = null,
+  expanded = false,
+  onToggleExpand,
   onFindAnswer,
   onToggleSelect,
   onExploreRelated,
@@ -87,19 +66,48 @@ export function TranscriptLineItem({
   const interactive =
     line.isFinal && (line.kind === "speech" || line.kind === "question" || line.kind === "candidate");
 
-  const wordCount = line.text.split(/\s+/).filter(Boolean).length;
-  const collapsibleReadback = line.kind === "readback" && wordCount >= READBACK_COLLAPSE_MIN_WORDS;
+  const wordCount = countWords(line.text);
+  const questionHighlight =
+    line.kind === "question" ||
+    lineMatchesQuestionHighlight(line.fullText ?? line.text, highlightQuestion);
 
   if (!line.isFinal) {
-    return <LiveInterimTranscript text={line.text} />;
+    const preview = expanded ? line.text : tailLines(line.text, LIVE_INTERIM_PREVIEW_LINES);
+    const hidden = countWords(line.text) > countWords(preview) + 8;
+    return (
+      <div
+        className={cn(
+          "rounded-md border border-sky-500/25 bg-sky-500/5 px-2 py-1.5",
+          !expanded && "max-h-[7.5rem] overflow-hidden"
+        )}
+      >
+        <p className="text-[10px] font-medium text-sky-300/90">Live speech</p>
+        <p className="mt-1 text-sm leading-snug text-foreground/90 whitespace-pre-wrap">{preview}</p>
+        {hidden && onToggleExpand && (
+          <button
+            type="button"
+            className="mt-1.5 text-[10px] font-medium text-sky-300/80 hover:text-sky-200"
+            onClick={onToggleExpand}
+          >
+            {expanded ? "Show less" : "Expand live preview"}
+          </button>
+        )}
+      </div>
+    );
   }
+
+  const collapsibleReadback = line.kind === "readback" && wordCount >= READBACK_COLLAPSE_MIN_WORDS;
+  const collapsibleLongSpeech =
+    line.isFinal && wordCount >= LONG_LINE_COLLAPSE_WORDS && line.kind !== "readback";
 
   if (collapsibleReadback) {
     const preview =
       line.text.length > 64 ? `${line.text.slice(0, 64).trim()}…` : line.text;
     return (
       <div>
-        <details className={cn(transcriptLineClass(line.kind, line.isFinal, selected), "group py-1.5")}>
+        <details
+          className={cn(transcriptLineClass(line.kind, line.isFinal, selected, questionHighlight), "group py-1.5")}
+        >
           <summary className="cursor-pointer list-none outline-none [&::-webkit-details-marker]:hidden">
             <span className="flex items-start gap-1.5">
               <ChevronRight
@@ -123,9 +131,27 @@ export function TranscriptLineItem({
     );
   }
 
+  if (collapsibleLongSpeech && !expanded) {
+    const preview = excerptWords(line.text, 42);
+    return (
+      <div className={transcriptLineClass(line.kind, line.isFinal, selected, questionHighlight)}>
+        <p className="text-sm leading-snug">{preview}</p>
+        {onToggleExpand && (
+          <button
+            type="button"
+            className="mt-1 text-[10px] font-medium text-muted-foreground hover:text-foreground"
+            onClick={onToggleExpand}
+          >
+            {wordCount} words · Expand
+          </button>
+        )}
+      </div>
+    );
+  }
+
   if (line.kind === "readback") {
     return (
-      <div className={transcriptLineClass(line.kind, line.isFinal, selected)}>
+      <div className={transcriptLineClass(line.kind, line.isFinal, selected, questionHighlight)}>
         <span className="font-medium text-sky-100/80">Reading answer · </span>
         {line.text}
       </div>
@@ -133,14 +159,19 @@ export function TranscriptLineItem({
   }
 
   if (!interactive) {
-    return <div className={transcriptLineClass(line.kind, line.isFinal, selected)}>{line.text}</div>;
+    return (
+      <div className={transcriptLineClass(line.kind, line.isFinal, selected, questionHighlight)}>{line.text}</div>
+    );
   }
 
   return (
     <div className="group relative">
       <button
         type="button"
-        className={cn("w-full text-left", transcriptLineClass(line.kind, line.isFinal, selected))}
+        className={cn(
+          "w-full text-left",
+          transcriptLineClass(line.kind, line.isFinal, selected, questionHighlight)
+        )}
         onClick={(e) => {
           if (e.shiftKey && onToggleSelect) {
             onToggleSelect(true);
