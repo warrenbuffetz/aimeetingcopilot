@@ -63,7 +63,13 @@ export function RawTranscriptPanel({
   onClearSelection,
   combinedSelectionText,
 }: RawTranscriptPanelProps) {
-  const scrollKey = lines.length > 0 ? `${lines.length}:${lines[lines.length - 1]?.id}:${lines[lines.length - 1]?.text.length}` : "0";
+  const lastLine = lines.length > 0 ? lines[lines.length - 1] : null;
+  const scrollKey =
+    lastLine == null
+      ? "0"
+      : lastLine.isFinal
+        ? `${lines.length}:${lastLine.id}:${lastLine.text.length}`
+        : `${lines.length}:${lastLine.id}:interim`;
   const { containerRef, onScroll, showJumpLatest, jumpToLatest } = useStickToBottom<HTMLDivElement>(scrollKey);
 
   return (
@@ -135,7 +141,6 @@ export function RawTranscriptPanel({
               <li key={line.id} className="rounded-md border border-border/40 bg-card/30 px-0.5">
                 <div className="flex items-center gap-2 px-1.5 pt-1 text-[10px] text-muted-foreground">
                   {formatLineTime(line.createdAt) && <span className="tabular-nums">{formatLineTime(line.createdAt)}</span>}
-                  {!line.isFinal && <span className="text-sky-400/90">interim</span>}
                   {line.kind === "readback" && <span>reading answer</span>}
                 </div>
                 <TranscriptLineItem

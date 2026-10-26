@@ -1,6 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import type { TranscriptLine } from "@/hooks/use-live-session";
+import {
+  interimPreviewIsTruncated,
+  tailInterimPreview,
+} from "@/lib/interim-transcript-preview";
 import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
 import { ChevronRight, MoreHorizontal } from "lucide-react";
@@ -34,6 +39,34 @@ function transcriptLineClass(
 
 const READBACK_COLLAPSE_MIN_WORDS = 12;
 
+function LiveInterimTranscript({ text }: { text: string }) {
+  const [expanded, setExpanded] = useState(false);
+  const preview = tailInterimPreview(text);
+  const truncated = interimPreviewIsTruncated(text, preview);
+  const display = expanded ? text : preview;
+
+  return (
+    <div
+      className={cn(
+        "rounded-md border border-sky-500/25 bg-sky-500/5 px-2 py-1.5",
+        !expanded && "max-h-[7.5rem] overflow-hidden"
+      )}
+    >
+      <p className="text-[10px] font-medium text-sky-300/90">Live speech</p>
+      <p className="mt-1 text-sm leading-snug text-foreground/90 whitespace-pre-wrap">{display}</p>
+      {truncated && (
+        <button
+          type="button"
+          className="mt-1.5 text-[10px] font-medium text-sky-300/80 hover:text-sky-200"
+          onClick={() => setExpanded((v) => !v)}
+        >
+          {expanded ? "Show less" : "Expand live preview"}
+        </button>
+      )}
+    </div>
+  );
+}
+
 export type TranscriptLineItemProps = {
   line: TranscriptLine;
   selected?: boolean;
@@ -56,6 +89,10 @@ export function TranscriptLineItem({
 
   const wordCount = line.text.split(/\s+/).filter(Boolean).length;
   const collapsibleReadback = line.kind === "readback" && wordCount >= READBACK_COLLAPSE_MIN_WORDS;
+
+  if (!line.isFinal) {
+    return <LiveInterimTranscript text={line.text} />;
+  }
 
   if (collapsibleReadback) {
     const preview =
