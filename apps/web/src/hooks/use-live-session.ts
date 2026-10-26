@@ -6,6 +6,7 @@ import {
   LEXICAL_MATCH_THRESHOLD_WEAK,
   classifyTurn,
   isInterviewPrompt,
+  isLikelyReadingDisplayedAnswer,
   mergeTranscriptFragments,
   turnSilenceMs,
   type AnalyzeQuestionResult,
@@ -15,6 +16,8 @@ import {
   type TurnClassification,
 } from "@interview-copilot/shared";
 import { createClient } from "@/lib/supabase/client";
+import { segmentTranscriptForDisplay } from "@/lib/transcript-display";
+import { stitchWebSpeechLive } from "@/lib/web-speech-results";
 import { toast } from "sonner";
 
 export type TranscriptLineKind = "filler" | "speech" | "candidate" | "question" | "readback";
@@ -27,6 +30,12 @@ export type TranscriptLine = {
   isQuestion: boolean;
   kind: TranscriptLineKind;
   createdAt?: number;
+  /** Multiple display rows from one finalized STT turn */
+  speechGroupId?: string;
+  segmentIndex?: number;
+  segmentTotal?: number;
+  /** Full utterance when split across segments (for expand / question matching) */
+  fullText?: string;
 };
 
 export type QuestionAnalyzeSource = "auto" | "manual" | "candidate" | "browse";
@@ -96,6 +105,7 @@ export function useLiveSession(
   const pausedRef = useRef(false);
   pausedRef.current = paused;
   const liveSttLineIdRef = useRef<string | null>(null);
+  const readingAnswerStreamRef = useRef(false);
   const finalizeTurnRef = useRef<() => void>(() => {});
   const libraryRef = useRef(library);
   libraryRef.current = library;
@@ -155,38 +165,91 @@ export function useLiveSession(
     setLines((prev) => prev.filter((l) => l.id !== id));
   }, []);
 
-  const syncLiveSttLine = useCallback((text: string) => {
-    const trimmed = text.trim();
-    if (!trimmed) {
-      clearLiveSttLine();
-      return;
-    }
-    setLines((prev) => {
-      if (liveSttLineIdRef.current) {
-        return prev.map((l) =>
-          l.id === liveSttLineIdRef.current ? { ...l, text: trimmed, isFinal: false, kind: "speech" } : l
-        );
+  const displayAnswerForStt = useCallback(() => {
+    return pinnedAnswer ?? resultRef.current?.answer ?? null;
+  }, [pinnedAnswer]);
+
+  const inferLiveLineKind = useCallback(
+    (text: string): TranscriptLineKind => {
+      const answer = displayAnswerForStt();
+      if (!answer?.trim()) return "speech";
+      const { reading } = isLikelyReadingDisplayedAnswer(text, answer, currentQuestionRef.current);
+      if (reading) {
+        readingAnswerStreamRef.current = true;
+        return "readback";
       }
-      const id = crypto.randomUUID();
-      liveSttLineIdRef.current = id;
+      return "speech";
+    },
+    [displayAnswerForStt]
+  );
+
+  const appendReadbackChunk = useCallback((chunk: string) => {
+    const trimmed = chunk.trim();
+    if (!trimmed) return;
+    setLines((prev) => {
+      const last = prev[prev.length - 1];
+      if (last?.isFinal && last.kind === "readback") {
+        const merged = mergeTranscriptFragments(last.text, trimmed);
+        if (merged === last.text) return prev;
+        return prev.map((l, i) => (i === prev.length - 1 ? { ...l, text: merged } : l));
+      }
       seqRef.current += 1;
       return [
         ...prev,
         {
-          id,
+          id: crypto.randomUUID(),
           sequenceId: seqRef.current,
           text: trimmed,
-          isFinal: false,
+          isFinal: true,
           isQuestion: false,
-          kind: "speech" as TranscriptLineKind,
+          kind: "readback" as TranscriptLineKind,
           createdAt: Date.now(),
         },
       ];
     });
-  }, [clearLiveSttLine]);
+    setCandidate(null);
+  }, []);
+
+  const syncLiveSttLine = useCallback(
+    (text: string) => {
+      const trimmed = text.trim();
+      if (!trimmed) {
+        clearLiveSttLine();
+        return;
+      }
+      const kind = inferLiveLineKind(trimmed);
+      setLines((prev) => {
+        if (liveSttLineIdRef.current) {
+          return prev.map((l) =>
+            l.id === liveSttLineIdRef.current ? { ...l, text: trimmed, isFinal: false, kind } : l
+          );
+        }
+        const id = crypto.randomUUID();
+        liveSttLineIdRef.current = id;
+        seqRef.current += 1;
+        return [
+          ...prev,
+          {
+            id,
+            sequenceId: seqRef.current,
+            text: trimmed,
+            isFinal: false,
+            isQuestion: false,
+            kind,
+            createdAt: Date.now(),
+          },
+        ];
+      });
+    },
+    [clearLiveSttLine, inferLiveLineKind]
+  );
 
   const addTranscriptLine = useCallback(
-    (text: string, kind: TranscriptLineKind) => {
+    (
+      text: string,
+      kind: TranscriptLineKind,
+      meta?: Pick<TranscriptLine, "speechGroupId" | "segmentIndex" | "segmentTotal" | "fullText">
+    ) => {
       const trimmed = text.trim();
       if (!trimmed) return;
       seqRef.current += 1;
@@ -199,10 +262,18 @@ export function useLiveSession(
         isQuestion,
         kind,
         createdAt: Date.now(),
+        ...meta,
       };
       setLines((prev) => {
         const last = prev[prev.length - 1];
-        if (last?.isFinal && last.text === trimmed && last.kind === kind) return prev;
+        if (
+          last?.isFinal &&
+          last.text === trimmed &&
+          last.kind === kind &&
+          last.speechGroupId === meta?.speechGroupId
+        ) {
+          return prev;
+        }
         return [...prev, line];
       });
     },
@@ -348,14 +419,25 @@ export function useLiveSession(
       });
 
       if (classification.reason === "reading_displayed_answer") {
-        addTranscriptLine(trimmed, "readback");
-        setCandidate(null);
+        readingAnswerStreamRef.current = true;
+        appendReadbackChunk(trimmed);
         return;
       }
+      readingAnswerStreamRef.current = false;
 
       const promptLike = classification.isQuestionLike || isInterviewPrompt(trimmed);
       const lineKind = promptLike ? "question" : "speech";
-      addTranscriptLine(trimmed, lineKind);
+
+      const displaySegments = segmentTranscriptForDisplay(trimmed);
+      const speechGroupId = displaySegments.length > 1 ? crypto.randomUUID() : undefined;
+      displaySegments.forEach((seg, index) => {
+        addTranscriptLine(seg, lineKind, {
+          speechGroupId,
+          segmentIndex: index,
+          segmentTotal: displaySegments.length,
+          fullText: speechGroupId ? trimmed : undefined,
+        });
+      });
 
       const autoRetrieve =
         classification.action === "promote" ||
@@ -380,7 +462,7 @@ export function useLiveSession(
 
       setCandidate(null);
     },
-    [addTranscriptLine, analyze, answerLocked, paused, pinnedAnswer]
+    [addTranscriptLine, analyze, answerLocked, appendReadbackChunk, paused, pinnedAnswer]
   );
 
   const finalizeTurn = useCallback(() => {
@@ -396,13 +478,19 @@ export function useLiveSession(
 
   const scheduleSilenceFinalize = useCallback(() => {
     clearSilenceTimer();
-    silenceTimerRef.current = setTimeout(() => finalizeTurn(), turnSilenceMs(turnBufferRef.current));
-  }, [clearSilenceTimer, finalizeTurn]);
+    silenceTimerRef.current = setTimeout(
+      () => finalizeTurn(),
+      turnSilenceMs(turnBufferRef.current, {
+        displayAnswer: displayAnswerForStt(),
+        activeQuestion: currentQuestionRef.current,
+      })
+    );
+  }, [clearSilenceTimer, displayAnswerForStt, finalizeTurn]);
 
   const ingestWebSpeechInterim = useCallback(
     (interim: string) => {
       if (paused) return;
-      const preview = [turnBufferRef.current.trim(), interim.trim()].filter(Boolean).join(" ").replace(/\s+/g, " ").trim();
+      const preview = stitchWebSpeechLive(turnBufferRef.current, interim);
       if (!preview) {
         clearLiveSttLine();
         return;
@@ -432,12 +520,28 @@ export function useLiveSession(
       const merged = mergeTranscriptFragments(turnBufferRef.current, t);
       if (merged === turnBufferRef.current.trim()) {
         scheduleSilenceFinalize();
+        syncLiveSttLine(stitchWebSpeechLive(merged, ""));
         return;
       }
 
       turnBufferRef.current = merged;
       setInterimTurn(merged);
       syncLiveSttLine(merged);
+
+      const answer = displayAnswerForStt();
+      const reading =
+        readingAnswerStreamRef.current ||
+        Boolean(
+          answer &&
+            isLikelyReadingDisplayedAnswer(merged, answer, currentQuestionRef.current).reading
+        );
+
+      if (options?.finalizeImmediately && reading) {
+        appendReadbackChunk(t);
+        turnBufferRef.current = "";
+        setInterimTurn("");
+        return;
+      }
 
       if (options?.finalizeImmediately) {
         finalizeTurn();
@@ -447,7 +551,9 @@ export function useLiveSession(
     },
     [
       clearLiveSttLine,
+      appendReadbackChunk,
       clearSilenceTimer,
+      displayAnswerForStt,
       finalizeTurn,
       paused,
       processFinalizedTurn,

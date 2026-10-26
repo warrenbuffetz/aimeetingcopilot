@@ -1,6 +1,13 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import {
+  interimHypothesisFromResults,
+  sliceWebSpeechResults,
+  stitchWebSpeechLive,
+} from "@/lib/web-speech-results";
+
+export { stitchWebSpeechLive };
 
 const RESTART_DELAY_MS = 250;
 const MAX_NETWORK_RETRIES = 3;
@@ -44,10 +51,6 @@ function getSpeechRecognitionCtor(): (new () => SpeechRecognitionInstance) | nul
   return window.SpeechRecognition ?? window.webkitSpeechRecognition ?? null;
 }
 
-export function stitchWebSpeechLive(confirmed: string, interim: string): string {
-  return [confirmed.trim(), interim.trim()].filter(Boolean).join(" ").replace(/\s+/g, " ").trim();
-}
-
 export type UseWebSpeechTranscriptionOptions = {
   lang?: string;
   onFinalSegment: (text: string) => void;
@@ -72,7 +75,6 @@ export function useWebSpeechTranscription(options: UseWebSpeechTranscriptionOpti
   const activeRef = useRef(false);
   const restartTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const networkRetryCountRef = useRef(0);
-  const confirmedRef = useRef("");
 
   const SpeechRecognitionCtor = getSpeechRecognitionCtor();
   const isSupported = SpeechRecognitionCtor !== null;
@@ -112,21 +114,11 @@ export function useWebSpeechTranscription(options: UseWebSpeechTranscriptionOpti
     recognition.onresult = (event: SpeechRecognitionEvent) => {
       if (!activeRef.current) return;
 
-      let interim = "";
-      for (let i = event.resultIndex; i < event.results.length; i++) {
-        const result = event.results[i];
-        const text = result[0]?.transcript ?? "";
-        if (!text.trim()) continue;
-        if (result.isFinal) {
-          const segment = text.trim();
-          confirmedRef.current = stitchWebSpeechLive(confirmedRef.current, segment);
-          onFinalRef.current(segment);
-        } else {
-          interim += text;
-        }
+      const { finals } = sliceWebSpeechResults(event.results, event.resultIndex);
+      for (const segment of finals) {
+        onFinalRef.current(segment);
       }
-
-      onInterimRef.current(stitchWebSpeechLive(confirmedRef.current, interim));
+      onInterimRef.current(interimHypothesisFromResults(event.results));
     };
 
     recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
@@ -172,7 +164,6 @@ export function useWebSpeechTranscription(options: UseWebSpeechTranscriptionOpti
 
   const start = useCallback(() => {
     if (!recognitionRef.current) return;
-    confirmedRef.current = "";
     activeRef.current = true;
     setActive(true);
     setError(null);
@@ -191,7 +182,6 @@ export function useWebSpeechTranscription(options: UseWebSpeechTranscriptionOpti
     setActive(false);
     clearRestartTimer();
     recognitionRef.current?.abort();
-    confirmedRef.current = "";
     onInterimRef.current("");
   }, [clearRestartTimer]);
 
