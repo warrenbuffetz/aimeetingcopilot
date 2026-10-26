@@ -458,7 +458,6 @@ export default function LiveInterviewPage() {
       onAnalyzeCombined={() => void findAnswerFromTranscript(selectedTranscriptIds)}
       onClearSelection={() => setSelectedTranscriptIds([])}
       combinedSelectionText={combinedTranscriptText(selectedTranscriptIds)}
-      highlightQuestion={session.currentQuestion}
     />
   );
 

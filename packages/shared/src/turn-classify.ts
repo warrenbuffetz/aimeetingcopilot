@@ -10,28 +10,18 @@ import {
 import { isInterviewPrompt, isLikelyQuestion } from "./question-heuristics";
 
 /** Default pause after last speech fragment before classifying the turn (~human reaction time). */
-export const TURN_SILENCE_MS = 1500;
+export const TURN_SILENCE_MS = 2000;
 /** Shorter finalize when the buffer already looks like a finished question. */
-export const TURN_SILENCE_MS_QUESTION_END = 650;
-/** Fast commit while the candidate is reading the on-screen answer aloud. */
-export const TURN_SILENCE_MS_READBACK = 400;
+export const TURN_SILENCE_MS_QUESTION_END = 850;
 
 /** How often to flush audio to Whisper while one continuous recording is open. */
 export const AUDIO_CHUNK_MS = 1000;
 
-export function turnSilenceMs(
-  bufferText: string,
-  opts?: { displayAnswer?: string | null; activeQuestion?: string | null }
-): number {
+export function turnSilenceMs(bufferText: string): number {
   const t = bufferText.trim();
   if (!t) return TURN_SILENCE_MS;
-  const answer = opts?.displayAnswer?.trim();
-  if (answer) {
-    const { reading } = isLikelyReadingDisplayedAnswer(t, answer, opts?.activeQuestion);
-    if (reading) return TURN_SILENCE_MS_READBACK;
-  }
   if (t.endsWith("?")) return TURN_SILENCE_MS_QUESTION_END;
-  if (/[.!]["']?\s*$/.test(t)) return 900;
+  if (/[.!]["']?\s*$/.test(t)) return 1200;
   return TURN_SILENCE_MS;
 }
 export const PROMOTE_COOLDOWN_MS = 5_000;

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { stitchWebSpeechLive } from "@/lib/web-speech-results";
+import { stitchWebSpeechLive } from "@/hooks/use-web-speech-transcription";
 
 describe("stitchWebSpeechLive", () => {
   it("joins confirmed and interim", () => {
