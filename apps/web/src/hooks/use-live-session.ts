@@ -3,8 +3,10 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
   LEXICAL_MATCH_THRESHOLD_PREPARED,
+  LEXICAL_MATCH_THRESHOLD_WEAK,
+  classifyTurn,
+  isInterviewPrompt,
   mergeTranscriptFragments,
-  surfaceTurnSuggestion,
   turnSilenceMs,
   type AnalyzeQuestionResult,
   type InterviewSessionContext,
@@ -52,11 +54,17 @@ const SIMULATION_SCRIPT = [
   "What metrics would you use to measure success for a new onboarding flow?",
 ];
 
+export type MatchPreview = { question: string; result: AnalyzeQuestionResult };
+
 export function useLiveSession(
   profileId: string | null,
-  options?: { pinnedAnswer?: string | null }
+  options?: {
+    pinnedAnswer?: string | null;
+    getSessionContext?: () => InterviewSessionContext | undefined;
+  }
 ) {
   const pinnedAnswer = options?.pinnedAnswer ?? null;
+  const getSessionContext = options?.getSessionContext;
   const [listening, setListening] = useState(false);
   const [paused, setPaused] = useState(false);
   const [lines, setLines] = useState<TranscriptLine[]>([]);
@@ -70,6 +78,7 @@ export function useLiveSession(
   const [answerLocked, setAnswerLocked] = useState(false);
   const [interimTurn, setInterimTurn] = useState("");
   const [statusAnnouncement, setStatusAnnouncement] = useState<string | null>(null);
+  const [matchPreview, setMatchPreview] = useState<MatchPreview | null>(null);
 
   const seqRef = useRef(0);
   const simTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -220,19 +229,20 @@ export function useLiveSession(
       const seq = ++analyzeSeqRef.current;
       setLoading(true);
       try {
+        const ctx = options?.sessionContext ?? getSessionContext?.();
         const res = await fetch("/api/analyze", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             question,
             profileId,
-            sessionContext: options?.sessionContext
+            sessionContext: ctx
               ? {
-                  activeExperienceModuleId: options.sessionContext.activeExperienceModuleId,
-                  activeIntent: options.sessionContext.activeIntent,
-                  askedQuestionIds: options.sessionContext.askedQuestionIds,
-                  manualExperienceOverrideId: options.sessionContext.manualExperienceOverrideId,
-                  activeInterviewRound: options.sessionContext.activeInterviewRound,
+                  activeExperienceModuleId: ctx.activeExperienceModuleId,
+                  activeIntent: ctx.activeIntent,
+                  askedQuestionIds: ctx.askedQuestionIds,
+                  manualExperienceOverrideId: ctx.manualExperienceOverrideId,
+                  activeInterviewRound: ctx.activeInterviewRound,
                 }
               : undefined,
           }),
@@ -264,6 +274,9 @@ export function useLiveSession(
           setQuestionHistory((h) => [...h, data]);
           setHistoryIndex((h) => h + 1);
           setAnswerLocked(true);
+          setMatchPreview(null);
+        } else {
+          setMatchPreview({ question, result: data });
         }
         setCandidate(null);
         lastPromoteAtRef.current = Date.now();
@@ -282,8 +295,21 @@ export function useLiveSession(
         setLoading(false);
       }
     },
-    [profileId]
+    [getSessionContext, profileId]
   );
+
+  const applyMatchPreview = useCallback(() => {
+    if (!matchPreview) return;
+    const { question, result: data } = matchPreview;
+    setResult(data);
+    setCurrentQuestion(question);
+    setQuestionHistory((h) => [...h, data]);
+    setHistoryIndex((h) => h + 1);
+    setAnswerLocked(true);
+    setMatchPreview(null);
+  }, [matchPreview]);
+
+  const dismissMatchPreview = useCallback(() => setMatchPreview(null), []);
 
   const processFinalizedTurn = useCallback(
     (text: string) => {
@@ -299,21 +325,47 @@ export function useLiveSession(
       }
 
       const displayAnswer = pinnedAnswer ?? resultRef.current?.answer ?? null;
-      const classification = surfaceTurnSuggestion(trimmed, libraryRef.current, {
+      const classification = classifyTurn(trimmed, {
+        library: libraryRef.current,
         displayAnswer,
-        activeQuestion: currentQuestionRef.current,
+        currentPreparedQuestion: currentQuestionRef.current,
+        lastPromoteAt: lastPromoteAtRef.current,
+        conservative: false,
       });
 
-      if (classification.action === "ignore" && classification.reason === "reading_displayed_answer") {
+      if (classification.reason === "reading_displayed_answer") {
         addTranscriptLine(trimmed, "readback");
         setCandidate(null);
         return;
       }
 
-      addTranscriptLine(trimmed, "speech");
-      setCandidate({ text: trimmed, classification });
+      const promptLike = classification.isQuestionLike || isInterviewPrompt(trimmed);
+      const lineKind = promptLike ? "question" : "speech";
+      addTranscriptLine(trimmed, lineKind);
+
+      const autoRetrieve =
+        classification.action === "promote" ||
+        (promptLike &&
+          (classification.score >= LEXICAL_MATCH_THRESHOLD_WEAK ||
+            classification.reason === "unmatched_question"));
+
+      if (autoRetrieve) {
+        setCandidate(null);
+        void analyze(trimmed, {
+          announce: true,
+          respectMainPanelLock: Boolean(pinnedAnswer) || answerLocked,
+        });
+        return;
+      }
+
+      if (classification.action === "candidate" || promptLike) {
+        setCandidate({ text: trimmed, classification });
+        return;
+      }
+
+      setCandidate(null);
     },
-    [addTranscriptLine, paused, pinnedAnswer]
+    [addTranscriptLine, analyze, answerLocked, paused, pinnedAnswer]
   );
 
   const finalizeTurn = useCallback(() => {
@@ -405,6 +457,32 @@ export function useLiveSession(
   }, [analyze, candidate]);
 
   const dismissCandidate = useCallback(() => setCandidate(null), []);
+
+  const manualAnalyzeTranscript = useCallback(
+    (
+      text: string,
+      options?: { forceMainPanel?: boolean; respectLock?: boolean }
+    ) => {
+      const trimmed = text.trim().replace(/\s+/g, " ");
+      if (trimmed.length < 3) return Promise.resolve(null);
+      setLines((prev) =>
+        prev.map((line) =>
+          line.text === trimmed && (line.kind === "speech" || line.kind === "candidate")
+            ? { ...line, kind: "question" as TranscriptLineKind, isQuestion: true }
+            : line
+        )
+      );
+      setCandidate(null);
+      const locked = Boolean(pinnedAnswer) || answerLocked;
+      const respectLock = options?.respectLock ?? locked;
+      return analyze(trimmed, {
+        announce: true,
+        forceMainPanel: options?.forceMainPanel ?? !respectLock,
+        respectMainPanelLock: respectLock,
+      });
+    },
+    [analyze, answerLocked, pinnedAnswer]
+  );
 
   const promoteNextQuestion = useCallback(() => {
     if (candidate) {
@@ -532,6 +610,10 @@ export function useLiveSession(
     acceptCandidate,
     dismissCandidate,
     promoteNextQuestion,
+    manualAnalyzeTranscript,
+    matchPreview,
+    applyMatchPreview,
+    dismissMatchPreview,
     analyze,
     startSimulation,
     stopListening,

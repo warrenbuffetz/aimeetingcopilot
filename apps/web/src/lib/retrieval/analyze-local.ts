@@ -4,6 +4,7 @@ import {
   LEXICAL_MATCH_THRESHOLD_WEAK,
   enrichLibrary,
   isRetrievalExcluded,
+  normalizeInterviewQuery,
   rankPreparedQaHybrid,
   type AnalyzeQuestionResult,
   type InterviewSessionContext,
@@ -50,7 +51,8 @@ export async function analyzeQuestionLocal(
     sessionContext?: InterviewSessionContext | null;
   }
 ): Promise<AnalyzeQuestionResult> {
-  const question = sanitizeUserContent(opts.question, 2000);
+  const sanitized = sanitizeUserContent(opts.question, 2000);
+  const { query: question, corrections: queryCorrections } = normalizeInterviewQuery(sanitized);
 
   const baseCols = "id, question, answer, is_preferred, category";
   const colsWithMeta = `${baseCols}, follow_ups, navigator_meta`;
@@ -116,7 +118,8 @@ export async function analyzeQuestionLocal(
 
   if (library.length === 0) {
     return {
-      question,
+      question: sanitized,
+      queryCorrections,
       outcome: "GENERATED",
       confidence: 0,
       answer:
@@ -162,6 +165,12 @@ export async function analyzeQuestionLocal(
   );
 
   const best = ranked[0];
+  const alternatives = ranked.slice(1, 4).map((r) => ({
+    libraryQuestion: r.parentQuestion,
+    matchedLabel: r.matchQuestion,
+    score: r.score,
+    sourceId: r.rowId,
+  }));
   const matches: RetrievalMatch[] = ranked.slice(0, 8).map((r) => ({
     id: r.rowId,
     contentType: "prepared_qa",
@@ -174,7 +183,8 @@ export async function analyzeQuestionLocal(
 
   if (!best || best.score < LEXICAL_MATCH_THRESHOLD_WEAK) {
     return {
-      question,
+      question: sanitized,
+      queryCorrections,
       outcome: "GENERATED",
       confidence: best?.score ?? 0,
       answer:
@@ -200,7 +210,8 @@ export async function analyzeQuestionLocal(
   const enrichedBest = enriched.find((r) => r.id === best.rowId);
 
   return {
-    question,
+    question: sanitized,
+    queryCorrections,
     outcome: "PREPARED",
     confidence: best.score,
     preparedQuestion: best.parentQuestion,
@@ -219,5 +230,6 @@ export async function analyzeQuestionLocal(
     matches,
     matchMethod,
     semanticStatus,
+    alternativeMatches: alternatives.length > 0 ? alternatives : undefined,
   };
 }

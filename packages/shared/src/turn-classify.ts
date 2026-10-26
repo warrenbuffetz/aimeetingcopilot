@@ -7,7 +7,7 @@ import {
   type LexicalMatchResult,
   type LexicalQaRow,
 } from "./lexical-match";
-import { isLikelyQuestion } from "./question-heuristics";
+import { isInterviewPrompt, isLikelyQuestion } from "./question-heuristics";
 
 /** Default pause after last speech fragment before classifying the turn (~human reaction time). */
 export const TURN_SILENCE_MS = 2000;
@@ -15,7 +15,7 @@ export const TURN_SILENCE_MS = 2000;
 export const TURN_SILENCE_MS_QUESTION_END = 850;
 
 /** How often to flush audio to Whisper while one continuous recording is open. */
-export const AUDIO_CHUNK_MS = 2000;
+export const AUDIO_CHUNK_MS = 1000;
 
 export function turnSilenceMs(bufferText: string): number {
   const t = bufferText.trim();
@@ -343,7 +343,8 @@ export function classifyTurn(text: string, opts: ClassifyTurnOptions): TurnClass
     };
   }
 
-  if (questionLike && wordCount >= MIN_WORDS_FOR_SPEECH) {
+  const promptLike = questionLike || isInterviewPrompt(trimmed);
+  if (promptLike && wordCount >= MIN_WORDS_FOR_SPEECH) {
     return {
       action: "candidate",
       reason: "unmatched_question",

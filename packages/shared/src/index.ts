@@ -65,9 +65,17 @@ export interface AnalyzeQuestionResult {
   matchMethod?: MatchMethod;
   /** Semantic layer status (separate from STT / mic connectivity). */
   semanticStatus?: "ready" | "unavailable" | "error" | "lexical_only";
+  /** Entity alias fixes applied for retrieval (raw transcript unchanged). */
+  queryCorrections?: string[];
+  /** Top alternative matches for manual disambiguation */
+  alternativeMatches?: ClosestLibrarySuggestion[];
 }
 
-export { isLikelyQuestion } from "./question-heuristics";
+export { isInterviewPrompt, isLikelyQuestion } from "./question-heuristics";
+export { normalizeInterviewQuery } from "./query-normalize";
+export type { QueryNormalization } from "./query-normalize";
+export { findConceptSpans, moduleIdsForConcept } from "./concept-spans";
+export type { ConceptSpan } from "./concept-spans";
 export { mergeTranscriptFragments, utteranceLooksComplete } from "./transcript-merge";
 export {
   AUDIO_CHUNK_MS,

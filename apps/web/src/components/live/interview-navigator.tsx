@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   EXPERIENCE_MODULES,
   INTERVIEW_ROUND_LABELS,
@@ -8,21 +8,61 @@ import {
   LIBRARY_SECTION_ORDER,
   buildProductExperienceTree,
   intentLabel,
+  moduleIdsForConcept,
   searchLibrary,
+  type ConceptSpan,
   type EnrichedQaRow,
   type FollowUpSuggestion,
   type InterviewRound,
   type InterviewSessionContext,
   type LibrarySection,
+  type QuestionIntent,
 } from "@interview-copilot/shared";
 import { AnswerPreviewCard } from "@/components/live/answer-preview-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
-import { Search } from "lucide-react";
+import { ArrowLeft, Search } from "lucide-react";
 
 type NavigatorTab = "next" | "experiences" | "all";
+
+export type QuestionMapFocus = {
+  title: string;
+  moduleIds?: string[];
+  intent?: QuestionIntent;
+  /** Narrow map rows via library search (browse-only). */
+  searchQuery?: string;
+};
+
+export function focusFromConceptSpan(span: ConceptSpan, catalog: EnrichedQaRow[]): QuestionMapFocus {
+  const moduleIds = span.moduleId
+    ? [span.moduleId]
+    : moduleIdsForConcept(span.label, catalog);
+  return { title: span.label, moduleIds: moduleIds.length ? moduleIds : undefined };
+}
+
+export function focusForWholeQuestion(question: string, _catalog: EnrichedQaRow[]): QuestionMapFocus {
+  const trimmed = question.trim();
+  return { title: trimmed.length > 72 ? `${trimmed.slice(0, 72)}…` : trimmed, searchQuery: trimmed };
+}
+
+function filterCatalogForMap(catalog: EnrichedQaRow[], focus: QuestionMapFocus): EnrichedQaRow[] {
+  let rows = catalog;
+  if (focus.moduleIds?.length) {
+    const ids = new Set(focus.moduleIds);
+    rows = rows.filter((r) => ids.has(r.navigator.experienceModuleId));
+  }
+  if (focus.intent) {
+    rows = rows.filter((r) => r.navigator.intent === focus.intent);
+  }
+  if (focus.searchQuery && focus.searchQuery.length >= 3) {
+    const hits = searchLibrary(catalog, focus.searchQuery, 48);
+    const hitIds = new Set(hits.map((h) => h.rowId));
+    rows = rows.filter((r) => hitIds.has(r.id));
+  }
+  return rows;
+}
 
 type Props = {
   className?: string;
@@ -30,6 +70,8 @@ type Props = {
   context: InterviewSessionContext;
   nextSuggestions: FollowUpSuggestion[];
   pinnedQuestion: string | null;
+  mapFocus: QuestionMapFocus | null;
+  onMapFocusChange: (focus: QuestionMapFocus | null) => void;
   onOpenInMainPanel: (row: EnrichedQaRow, opts?: { fromBrowse?: boolean }) => void;
   onPin: (row: EnrichedQaRow) => void;
   onSetExperience: (moduleId: string | null, label?: string) => void;
@@ -92,6 +134,8 @@ export function InterviewNavigator({
   context,
   nextSuggestions,
   pinnedQuestion,
+  mapFocus,
+  onMapFocusChange,
   onOpenInMainPanel,
   onPin,
   onSetExperience,
@@ -104,8 +148,30 @@ export function InterviewNavigator({
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [browseQuery, setBrowseQuery] = useState("");
   const [sectionFilter, setSectionFilter] = useState<LibrarySection | "all">("all");
+  const [mapStack, setMapStack] = useState<QuestionMapFocus[]>([]);
+
+  const activeMapFocus = mapStack.length > 0 ? mapStack[mapStack.length - 1] : mapFocus;
+
+  const mapFocusKey = mapFocus
+    ? `${mapFocus.title}|${mapFocus.searchQuery ?? ""}|${mapFocus.moduleIds?.join(",") ?? ""}|${mapFocus.intent ?? ""}`
+    : "";
+  const prevMapFocusKeyRef = useRef<string | undefined>(undefined);
+  useEffect(() => {
+    if (prevMapFocusKeyRef.current === undefined) {
+      prevMapFocusKeyRef.current = mapFocusKey;
+      return;
+    }
+    if (prevMapFocusKeyRef.current !== mapFocusKey) {
+      prevMapFocusKeyRef.current = mapFocusKey;
+      setMapStack([]);
+    }
+  }, [mapFocusKey]);
 
   const experienceTree = useMemo(() => buildProductExperienceTree(catalog), [catalog]);
+  const mapTree = useMemo(
+    () => buildProductExperienceTree(activeMapFocus ? filterCatalogForMap(catalog, activeMapFocus) : []),
+    [activeMapFocus, catalog]
+  );
   const searchResults = useMemo(
     () => (browseQuery.length >= 2 ? searchLibrary(catalog, browseQuery, 20) : []),
     [catalog, browseQuery]
@@ -129,6 +195,13 @@ export function InterviewNavigator({
     setExpanded((prev) => ({ ...prev, [id]: !prev[id] }));
   }
 
+  function drillMap(focus: QuestionMapFocus) {
+    setMapStack((s) => {
+      const base = s.length > 0 ? s : mapFocus ? [mapFocus] : [];
+      return [...base, focus];
+    });
+  }
+
   return (
     <div className={cn("flex min-h-0 flex-1 flex-col overflow-hidden", className)}>
       <ScrollArea className="min-h-0 flex-1">
@@ -143,36 +216,80 @@ export function InterviewNavigator({
             </Button>
           </div>
 
-          <div className="flex border-b border-border px-2 pt-1">
-            {(
-              [
-                ["next", "Next"],
-                ["experiences", "Experiences"],
-                ["all", "All Answers"],
-              ] as const
-            ).map(([id, label]) => (
-              <button
-                key={id}
-                type="button"
-                className={cn(
-                  "flex-1 border-b-2 px-1 py-1.5 text-[10px] font-medium uppercase tracking-wide",
-                  tab === id
-                    ? "border-primary text-foreground"
-                    : "border-transparent text-muted-foreground hover:text-foreground/80"
-                )}
-                onClick={() => setTab(id)}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
+          {activeMapFocus ? (
+            <div className="border-b border-border px-2 py-2">
+              <div className="flex items-center gap-1">
+                <Button
+                  type="button"
+                  size="sm"
+                  variant="ghost"
+                  className="h-7 px-2 text-[10px]"
+                  onClick={() => {
+                    if (mapStack.length > 1) {
+                      setMapStack((s) => s.slice(0, -1));
+                    } else {
+                      setMapStack([]);
+                      onMapFocusChange(null);
+                    }
+                  }}
+                >
+                  <ArrowLeft className="mr-1 h-3 w-3" />
+                  Back
+                </Button>
+                <Button
+                  type="button"
+                  size="sm"
+                  variant="ghost"
+                  className="h-7 px-2 text-[10px]"
+                  onClick={() => {
+                    setMapStack([]);
+                    onMapFocusChange(null);
+                  }}
+                >
+                  Clear
+                </Button>
+              </div>
+              <p className="mt-1 text-[10px] font-medium uppercase text-muted-foreground">Question map</p>
+              <p className="text-sm font-medium leading-tight">{activeMapFocus.title}</p>
+              <p className="mt-0.5 text-[10px] text-muted-foreground">
+                Browse only — does not change live context.
+              </p>
+            </div>
+          ) : (
+            <div className="flex border-b border-border px-2 pt-1">
+              {(
+                [
+                  ["next", "Next"],
+                  ["experiences", "Experiences"],
+                  ["all", "All Answers"],
+                ] as const
+              ).map(([id, label]) => (
+                <button
+                  key={id}
+                  type="button"
+                  className={cn(
+                    "flex-1 border-b-2 px-1 py-1.5 text-[10px] font-medium uppercase tracking-wide",
+                    tab === id
+                      ? "border-primary text-foreground"
+                      : "border-transparent text-muted-foreground hover:text-foreground/80"
+                  )}
+                  onClick={() => setTab(id)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          )}
 
           <div className="space-y-3 p-2">
+          {!activeMapFocus && (
           <ActiveExperienceCard
             context={context}
             onSetExperience={onSetExperience}
             onClearContext={onClearContext}
           />
+          )}
+          {!activeMapFocus && (
           <section className="mx-2 mb-2 rounded-md border border-border/70 bg-muted/5 px-2 py-2">
             <p className="text-[10px] font-medium uppercase text-muted-foreground">Interview round (editorial)</p>
             <select
@@ -189,8 +306,67 @@ export function InterviewNavigator({
               ))}
             </select>
           </section>
+          )}
 
-            {tab === "next" && (
+            {activeMapFocus && (
+              <section className="space-y-2">
+                {mapTree.length === 0 && (
+                  <p className="text-xs text-muted-foreground">No prepared answers match this topic.</p>
+                )}
+                {mapTree.map((co) => (
+                  <details key={co.company} className="rounded-md border border-border/60" open>
+                    <summary className="cursor-pointer px-2 py-1.5 text-xs font-medium">{co.company}</summary>
+                    <div className="space-y-1 border-t border-border/50 px-1 py-1">
+                      {co.modules.map((mod) => (
+                        <details key={mod.moduleId} className="rounded border border-border/40">
+                          <summary className="flex cursor-pointer items-center justify-between gap-1 px-2 py-1 text-[11px] text-muted-foreground">
+                            <span>{mod.label}</span>
+                            <Button
+                              type="button"
+                              size="sm"
+                              variant="ghost"
+                              className="h-6 px-1.5 text-[9px]"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                drillMap({ title: mod.label, moduleIds: [mod.moduleId] });
+                              }}
+                            >
+                              Focus
+                            </Button>
+                          </summary>
+                          <div className="space-y-1 px-1 pb-1">
+                            {mod.intents.map((ig) => (
+                              <details key={ig.intent} className="rounded border border-border/30 bg-muted/5">
+                                <summary className="cursor-pointer px-2 py-1 text-[10px] font-medium">
+                                  {ig.intentLabel} ({ig.rows.length})
+                                </summary>
+                                <ul className="space-y-1 p-1">
+                                  {ig.rows.map((row) => (
+                                    <li key={row.id}>
+                                      <AnswerPreviewCard
+                                        source={row}
+                                        catalog={catalog}
+                                        expanded={Boolean(expanded[row.id])}
+                                        onToggle={() => toggleExpanded(row.id)}
+                                        onOpenMain={() => onOpenInMainPanel(row, { fromBrowse: true })}
+                                        onPin={() => onPin(row)}
+                                        showShortFirst
+                                      />
+                                    </li>
+                                  ))}
+                                </ul>
+                              </details>
+                            ))}
+                          </div>
+                        </details>
+                      ))}
+                    </div>
+                  </details>
+                ))}
+              </section>
+            )}
+
+            {!activeMapFocus && tab === "next" && (
               <section>
                 <h3 className="mb-1 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
                   Likely next questions
@@ -222,7 +398,7 @@ export function InterviewNavigator({
               </section>
             )}
 
-            {tab === "experiences" && (
+            {!activeMapFocus && tab === "experiences" && (
               <section className="space-y-2">
                 <p className="text-[10px] text-muted-foreground">
                   Browse only — does not change live interview context.
@@ -268,7 +444,7 @@ export function InterviewNavigator({
               </section>
             )}
 
-            {tab === "all" && (
+            {!activeMapFocus && tab === "all" && (
               <section>
                 <Input
                   value={browseQuery}
