@@ -1,6 +1,6 @@
 {
-  "at": "2026-10-26T19:47:25.316Z",
-  "mode": "dry-run",
+  "at": "2026-10-26T19:47:30.230Z",
+  "mode": "apply",
   "inputPath": "/Users/johnlee/Documents/Cursor/ai meeting copilot/imports/simplii_final_qa.json",
   "validation": {
     "valid": true,
@@ -23,5 +23,8 @@
   },
   "relationshipIssues": [],
   "semanticDuplicates": [],
-  "questradeIntegrity": null
+  "questradeIntegrity": {
+    "unchanged": true,
+    "hash": "50d377eaa2750119c97364a89bb214336d20bcf0bae5f7bc5dab542d4cee2e3e"
+  }
 }

@@ -1,21 +1,674 @@
 {
-  "at": "2026-10-26T19:26:08.670Z",
+  "at": "2026-10-26T19:50:45.322Z",
   "questradeIntegrity": {
     "baselineHash": "6e1c04b4b1dce49c8bf536963c1a05952c863c50d59465f866cc306df3cb380b",
-    "currentHash": "6e1c04b4b1dce49c8bf536963c1a05952c863c50d59465f866cc306df3cb380b",
-    "unchanged": true,
+    "currentHash": "50d377eaa2750119c97364a89bb214336d20bcf0bae5f7bc5dab542d4cee2e3e",
+    "unchanged": false,
     "rowCount": 261
   },
   "simplii": {
     "profileId": "1aff0813-6615-4a12-bfd6-ce7603604f6b",
-    "totalRows": 0,
-    "activeRows": 0,
+    "totalRows": 257,
+    "activeRows": 257,
     "duplicateActiveQuestions": 0,
     "forbiddenTermHits": 0,
     "withCloneSourceId": 0,
-    "p0Count": 0
+    "p0Count": 163
   },
   "forbiddenHits": [],
   "duplicateSamples": [],
-  "p0Questions": []
+  "p0Questions": [
+    {
+      "question": "How do you know the HBC application improvement wasn't caused by a different applicant mix?",
+      "tier": "P1"
+    },
+    {
+      "question": "What would you do in your first 90 days?",
+      "tier": "P0"
+    },
+    {
+      "question": "How would you increase direct deposit adoption?",
+      "tier": "P1"
+    },
+    {
+      "question": "Walk me through the Interac e-Transfer product you launched at RBC.",
+      "tier": "P0"
+    },
+    {
+      "question": "What makes you different from other Senior PM candidates?",
+      "tier": "P1"
+    },
+    {
+      "question": "What is motivating you to consider a move to Simplii?",
+      "tier": "P0"
+    },
+    {
+      "question": "How would you help a Simplii customer make their chequing account part of their everyday financial routine?",
+      "tier": "P1"
+    },
+    {
+      "question": "Tell me about building Avion Select from zero to one.",
+      "tier": "P0"
+    },
+    {
+      "question": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering.",
+      "tier": "P0"
+    },
+    {
+      "question": "Tell me about improving the HBC Mastercard application journey.",
+      "tier": "P0"
+    },
+    {
+      "question": "How did you help secure $5.2 million in funding for Arc'teryx membership?",
+      "tier": "P0"
+    },
+    {
+      "question": "Tell me about a time you challenged the original product strategy.",
+      "tier": "P0"
+    },
+    {
+      "question": "How do you manage stakeholders who disagree on priorities?",
+      "tier": "P0"
+    },
+    {
+      "question": "Tell me about a product initiative that didn't go according to plan.",
+      "tier": "P0"
+    },
+    {
+      "question": "How do you know your incentive program generated incremental spending?",
+      "tier": "P1"
+    },
+    {
+      "question": "Which Arc'teryx membership capabilities were actually delivered, and which remained planned?",
+      "tier": "P1"
+    },
+    {
+      "question": "Why should we hire you instead of someone with direct core-banking experience?",
+      "tier": "P0"
+    },
+    {
+      "question": "Why would someone move everyday banking activity to Simplii if their existing bank works fine?",
+      "tier": "P1"
+    },
+    {
+      "question": "What if payroll bonuses bring in customers who leave immediately afterward?",
+      "tier": "P1"
+    },
+    {
+      "question": "How do you know a customer really switched their paycheque?",
+      "tier": "P1"
+    },
+    {
+      "question": "How would you explain Simplii's value against other Canadian banking options?",
+      "tier": "P1"
+    },
+    {
+      "question": "What if an experiment looks positive after two days? Can we ship early?",
+      "tier": "P1"
+    },
+    {
+      "question": "If a Simplii customer also maintains an account at another bank, is that a problem?",
+      "tier": "P1"
+    },
+    {
+      "question": "What is the biggest risk in connecting external accounts?",
+      "tier": "P2"
+    },
+    {
+      "question": "How would you define a customer's share of everyday banking activity at Simplii?",
+      "tier": "P1"
+    },
+    {
+      "question": "Your conversion improved from 10% to 12%. Is that 2% or 20%?",
+      "tier": "P1"
+    },
+    {
+      "question": "Give me an exact definition of a monthly active banking customer.",
+      "tier": "P1"
+    },
+    {
+      "question": "How do you prevent cohort analysis from becoming a misleading before-and-after story?",
+      "tier": "P1"
+    },
+    {
+      "question": "Why is spend per active cardholder a risky metric?",
+      "tier": "P1"
+    },
+    {
+      "question": "Would you optimize account openings, funded accounts or payroll adoption?",
+      "tier": "P1"
+    },
+    {
+      "question": "What would you use as a north-star measure for deeper everyday-banking engagement?",
+      "tier": "P1"
+    },
+    {
+      "question": "How would you select an experiment's primary metric and guardrails?",
+      "tier": "P1"
+    },
+    {
+      "question": "Explain how you would model customer lifetime value in banking.",
+      "tier": "P2"
+    },
+    {
+      "question": "How did you measure success for the Avion cashback withdrawal launch?",
+      "tier": "P0"
+    },
+    {
+      "question": "You have only a dashboard, no user research. What do you do?",
+      "tier": "P1"
+    },
+    {
+      "question": "Why mention 5M+ settlement events when Avion payouts were only $1M+?",
+      "tier": "P1"
+    },
+    {
+      "question": "What is reconciliation, and why does a PM need to understand it?",
+      "tier": "P1"
+    },
+    {
+      "question": "What if Risk wants a step that cuts conversion by 20%?",
+      "tier": "P1"
+    },
+    {
+      "question": "What exactly did you own versus RBC's payments infrastructure team?",
+      "tier": "P0"
+    },
+    {
+      "question": "What happens if a payout API times out after the request was accepted?",
+      "tier": "P1"
+    },
+    {
+      "question": "What controls would you require before allowing a new transfer type?",
+      "tier": "P1"
+    },
+    {
+      "question": "Tell me about a data-driven product decision at Aeroplan.",
+      "tier": "P0"
+    },
+    {
+      "question": "Why use Interac e-Transfer rather than EFT for cashback withdrawals?",
+      "tier": "P0"
+    },
+    {
+      "question": "How would you define payout success rate?",
+      "tier": "P1"
+    },
+    {
+      "question": "How do pending and posted card transactions differ?",
+      "tier": "P1"
+    },
+    {
+      "question": "How did you experiment when the bank owned the application form?",
+      "tier": "P1"
+    },
+    {
+      "question": "What does 'P&L ownership' at HBC actually mean?",
+      "tier": "P1"
+    },
+    {
+      "question": "How can you claim 427% acquisition growth when you only improved conversion by 40%?",
+      "tier": "P1"
+    },
+    {
+      "question": "What was your most important HBC product decision?",
+      "tier": "P1"
+    },
+    {
+      "question": "Why did HBC modeled LTV rise 10%, and how certain are you?",
+      "tier": "P1"
+    },
+    {
+      "question": "Did your UX redesign cause approvals in under three minutes?",
+      "tier": "P1"
+    },
+    {
+      "question": "How do you know the headless option saved two quarters?",
+      "tier": "P1"
+    },
+    {
+      "question": "Did Quests reach six million active credit cardholders?",
+      "tier": "P2"
+    },
+    {
+      "question": "You secured $5.2M at Arc'teryx. Was the programme launched?",
+      "tier": "P1"
+    },
+    {
+      "question": "How do you handle an engineer who strongly disagrees with your roadmap?",
+      "tier": "P1"
+    },
+    {
+      "question": "How do you lead when you don't manage the engineers directly?",
+      "tier": "P0"
+    },
+    {
+      "question": "What would you do if a new AI feature gave customers incorrect financial advice?",
+      "tier": "P2"
+    },
+    {
+      "question": "Tell me about a customer problem you solved at RBC.",
+      "tier": "P0"
+    },
+    {
+      "question": "How do you know when to stop investing in a feature?",
+      "tier": "P2"
+    },
+    {
+      "question": "What if your PM peers own Cards and Money Movement, but your metric depends on both?",
+      "tier": "P1"
+    },
+    {
+      "question": "What's one product opinion you hold strongly that others might disagree with?",
+      "tier": "P1"
+    },
+    {
+      "question": "Why Interac e-Transfer instead of direct bank-account linking?",
+      "tier": "P1"
+    },
+    {
+      "question": "What is your biggest weakness as a product leader?",
+      "tier": "P1"
+    },
+    {
+      "question": "Would you delay launch over a 0.5% payment failure rate?",
+      "tier": "P1"
+    },
+    {
+      "question": "Tell me about your first disagreement with a new team's established strategy.",
+      "tier": "P2"
+    },
+    {
+      "question": "Why did you prioritize it over other Avion improvements?",
+      "tier": "P1"
+    },
+    {
+      "question": "What did you personally decide on the Avion cashback withdrawal launch?",
+      "tier": "P0"
+    },
+    {
+      "question": "Tell me about something you took from an idea into a product.",
+      "tier": "P0"
+    },
+    {
+      "question": "Why prioritize a membership platform rather than improving service pages?",
+      "tier": "P1"
+    },
+    {
+      "question": "How did you know it worked if the full membership platform hadn't launched?",
+      "tier": "P1"
+    },
+    {
+      "question": "How did you identify the application problem?",
+      "tier": "P1"
+    },
+    {
+      "question": "What did you personally decide on the HBC Mastercard application journey?",
+      "tier": "P0"
+    },
+    {
+      "question": "What did you personally decide or deprioritize?",
+      "tier": "P0"
+    },
+    {
+      "question": "Tell me about a customer experience you improved at HBC.",
+      "tier": "P0"
+    },
+    {
+      "question": "Why prioritize application continuation instead of more acquisition?",
+      "tier": "P1"
+    },
+    {
+      "question": "How did you measure the 15% improvement?",
+      "tier": "P0"
+    },
+    {
+      "question": "How did you identify the problem?",
+      "tier": "P1"
+    },
+    {
+      "question": "Why was it worth prioritizing?",
+      "tier": "P1"
+    },
+    {
+      "question": "What did you cut from the membership MVP, and how did you defend those trade-offs?",
+      "tier": "P0"
+    },
+    {
+      "question": "Why have you moved between several industries and employers?",
+      "tier": "P1"
+    },
+    {
+      "question": "How would you prevent a customer from receiving the same cashback payout twice?",
+      "tier": "P1"
+    },
+    {
+      "question": "Walk me through your most recent work on the Arc'teryx membership platform.",
+      "tier": "P0"
+    },
+    {
+      "question": "What's the strongest reason to hire you for this Simplii role?",
+      "tier": "P0"
+    },
+    {
+      "question": "What happened if an Avion member didn't have Interac Autodeposit enabled?",
+      "tier": "P1"
+    },
+    {
+      "question": "Who made the final decision when the payments team, Risk and Product disagreed?",
+      "tier": "P1"
+    },
+    {
+      "question": "What would you actually deliver in your first 30 days?",
+      "tier": "P0"
+    },
+    {
+      "question": "What would the customer see while a cashback payout is pending or being investigated?",
+      "tier": "P1"
+    },
+    {
+      "question": "How did you turn regulatory and operations requirements into stories engineers could build?",
+      "tier": "P0"
+    },
+    {
+      "question": "What assumptions in the $5.2 million investment case were most sensitive?",
+      "tier": "P1"
+    },
+    {
+      "question": "Could the HBC incentives have increased spending while destroying profitability?",
+      "tier": "P1"
+    },
+    {
+      "question": "How would you design a safe payroll-switching experience when the employer's first deposit could fail?",
+      "tier": "P1"
+    },
+    {
+      "question": "It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?",
+      "tier": "P1"
+    },
+    {
+      "question": "Card payments start declining, but the banking app and core ledger are online. Where do you look?",
+      "tier": "P1"
+    },
+    {
+      "question": "How would you attract customers to Simplii without relying mainly on cash sign-up bonuses?",
+      "tier": "P1"
+    },
+    {
+      "question": "A customer sees the same purchase twice, once pending and once posted. How would you fix it?",
+      "tier": "P1"
+    },
+    {
+      "question": "Why might my available balance be different from my posted balance?",
+      "tier": "P1"
+    },
+    {
+      "question": "Which three metrics would you put on a Simplii everyday-banking product scorecard?",
+      "tier": "P1"
+    },
+    {
+      "question": "Explain your interview copilot's semantic matching architecture without using technical jargon.",
+      "tier": "P2"
+    },
+    {
+      "question": "What if Engineering says your banking launch plan is unsafe but leadership wants the date?",
+      "tier": "P0"
+    },
+    {
+      "question": "A customer says they sent money to the wrong recipient. What can your product realistically do?",
+      "tier": "P2"
+    },
+    {
+      "question": "What if Risk still says no after you've presented all your evidence?",
+      "tier": "P0"
+    },
+    {
+      "question": "What is the difference between KYC, AML monitoring and transaction fraud prevention?",
+      "tier": "P2"
+    },
+    {
+      "question": "How do you decide whether a backlog item is ready for a sprint?",
+      "tier": "P0"
+    },
+    {
+      "question": "What would you measure after changing a digital banking onboarding experience?",
+      "tier": "P0"
+    },
+    {
+      "question": "Tell me about a time you used customer data to define a problem before proposing a solution.",
+      "tier": "P0"
+    },
+    {
+      "question": "Walk me through a user story for a failed Interac e-Transfer or cashback withdrawal.",
+      "tier": "P0"
+    },
+    {
+      "question": "How would you improve a Simplii account-opening funnel with high abandonment?",
+      "tier": "P0"
+    },
+    {
+      "question": "What do you do when requirements change after engineering has started?",
+      "tier": "P0"
+    },
+    {
+      "question": "How do you measure success when a feature ships on time but customers don't adopt it?",
+      "tier": "P0"
+    },
+    {
+      "question": "How do you keep the backlog tied to customer outcomes instead of stakeholder requests?",
+      "tier": "P0"
+    },
+    {
+      "question": "Tell me about a time you cut scope while protecting customer value.",
+      "tier": "P0"
+    },
+    {
+      "question": "How do you explain a product tradeoff to senior stakeholders and to engineers differently?",
+      "tier": "P0"
+    },
+    {
+      "question": "How would you work with Risk when a control adds friction to a customer journey?",
+      "tier": "P0"
+    },
+    {
+      "question": "How would you run a healthy product squad day to day?",
+      "tier": "P0"
+    },
+    {
+      "question": "Tell me about yourself.",
+      "tier": "P0"
+    },
+    {
+      "question": "You haven't owned a traditional chequing account. Why are you qualified for Simplii?",
+      "tier": "P0"
+    },
+    {
+      "question": "How would you handle a growing number of complaints about missing or delayed transfers?",
+      "tier": "P0"
+    },
+    {
+      "question": "How do you make sure acceptance criteria remain aligned to customer intent during delivery?",
+      "tier": "P0"
+    },
+    {
+      "question": "Why move into everyday banking from rewards and loyalty?",
+      "tier": "P0"
+    },
+    {
+      "question": "You can prioritize only one: direct-deposit setup, transaction clarity, automatic savings, or debit-card reliability. How do you decide?",
+      "tier": "P1"
+    },
+    {
+      "question": "Why Simplii Financial, and why this Senior Product Manager role?",
+      "tier": "P0"
+    },
+    {
+      "question": "How would you work with designers, engineers, analysts and researchers who disagree on a solution?",
+      "tier": "P0"
+    },
+    {
+      "question": "What metrics would you use to measure success in everyday banking?",
+      "tier": "P1"
+    },
+    {
+      "question": "What should happen when a customer initiates a transfer but the payment fails?",
+      "tier": "P1"
+    },
+    {
+      "question": "Tell me about the financial impact of your work at HBC.",
+      "tier": "P1"
+    },
+    {
+      "question": "You say HBC's modeled lifetime value increased 10%. How would you explain that metric?",
+      "tier": "P1"
+    },
+    {
+      "question": "Which customer segment would you prioritize to deepen Simplii chequing-account adoption?",
+      "tier": "P1"
+    },
+    {
+      "question": "How do you work with designers and customer researchers?",
+      "tier": "P0"
+    },
+    {
+      "question": "What if employers aren't supported by an automated payroll switching provider?",
+      "tier": "P1"
+    },
+    {
+      "question": "How would you decide between better rates and better switching UX?",
+      "tier": "P2"
+    },
+    {
+      "question": "How do you know an increase in DAU isn't just more balance checking?",
+      "tier": "P1"
+    },
+    {
+      "question": "How would you choose between building a payment service and buying one?",
+      "tier": "P2"
+    },
+    {
+      "question": "What's the one feature you'd build first to win payroll?",
+      "tier": "P1"
+    },
+    {
+      "question": "Is a $100 million increase in deposits automatically a win?",
+      "tier": "P2"
+    },
+    {
+      "question": "How would you roll out a critical payments integration?",
+      "tier": "P2"
+    },
+    {
+      "question": "What would you do if Engineering said your top feature was six months of work?",
+      "tier": "P1"
+    },
+    {
+      "question": "What if leadership wants to ship five banking features at once?",
+      "tier": "P1"
+    },
+    {
+      "question": "How would you decide if a 5% incremental spending lift justified an incentive?",
+      "tier": "P2"
+    },
+    {
+      "question": "What if the ledger balance and customer-facing balance don't match?",
+      "tier": "P1"
+    },
+    {
+      "question": "What exactly did you change in the HBC application experience?",
+      "tier": "P1"
+    },
+    {
+      "question": "Why mention 500K+ cardholders if you didn't control the credit book?",
+      "tier": "P2"
+    },
+    {
+      "question": "How do you challenge a VP who has already promised a launch date?",
+      "tier": "P2"
+    },
+    {
+      "question": "How did you know the Avion cashback withdrawal was a customer problem?",
+      "tier": "P1"
+    },
+    {
+      "question": "Why this solution and why start in North America?",
+      "tier": "P0"
+    },
+    {
+      "question": "What would you do differently on the ReBIRD membership platform?",
+      "tier": "P1"
+    },
+    {
+      "question": "Tell me about a time you said no to a stakeholder.",
+      "tier": "P1"
+    },
+    {
+      "question": "How did you know membership was a customer problem at Arc'teryx?",
+      "tier": "P1"
+    },
+    {
+      "question": "Why save-and-resume, and how did you split ownership with Neo?",
+      "tier": "P1"
+    },
+    {
+      "question": "What would you do differently on the HBC application experiment?",
+      "tier": "P1"
+    },
+    {
+      "question": "What would you do differently on the Avion cashback withdrawal launch?",
+      "tier": "P1"
+    },
+    {
+      "question": "Why a clearer offer summary instead of a shorter page or bigger apply button?",
+      "tier": "P2"
+    },
+    {
+      "question": "What would you do differently after the Aeroplan offer-summary test?",
+      "tier": "P1"
+    },
+    {
+      "question": "What if someone sets up a direct deposit with Simplii once and then stops using the account?",
+      "tier": "P1"
+    },
+    {
+      "question": "What did you personally decide on the Aeroplan card offer test?",
+      "tier": "P1"
+    },
+    {
+      "question": "How did you decide what to include in the smaller Sperro SV release?",
+      "tier": "P0"
+    },
+    {
+      "question": "How exactly did you measure the 40% conversion lift?",
+      "tier": "P1"
+    },
+    {
+      "question": "What would you do if customer research supports a feature but post-launch data contradicts it?",
+      "tier": "P0"
+    },
+    {
+      "question": "What would your launch-readiness checklist include for an everyday-banking feature?",
+      "tier": "P0"
+    },
+    {
+      "question": "Walk me through how you would run discovery for an unfamiliar Simplii product area.",
+      "tier": "P0"
+    },
+    {
+      "question": "What is the most important product detail you've had to insist on?",
+      "tier": "P0"
+    },
+    {
+      "question": "How do you write a user story and acceptance criteria that engineering can actually use?",
+      "tier": "P0"
+    },
+    {
+      "question": "How would you define a business case for fixing a common banking-service issue?",
+      "tier": "P0"
+    },
+    {
+      "question": "Tell me about a time you influenced teams that did not report to you.",
+      "tier": "P0"
+    }
+  ]
 }
