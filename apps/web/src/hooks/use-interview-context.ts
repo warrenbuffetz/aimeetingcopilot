@@ -6,7 +6,8 @@ import {
   emptyInterviewContext,
   enrichLibrary,
   resolveInterviewContext,
-  suggestNextQuestions,
+  editorialTopQuestionLimit,
+  suggestTopInterviewQuestions,
   type EnrichedQaRow,
   type InterviewSessionContext,
   type LexicalQaRow,
@@ -54,10 +55,12 @@ export function useInterviewContext(library: LibraryRow[]) {
     });
   }, [library]);
 
-  const nextSuggestions = useMemo(
-    () => suggestNextQuestions(catalog, context, 3),
-    [catalog, context]
-  );
+  const topInterviewQuestions = useMemo(() => {
+    const round = context.activeInterviewRound ?? "recruiter";
+    return suggestTopInterviewQuestions(catalog, context, {
+      limit: editorialTopQuestionLimit(round),
+    });
+  }, [catalog, context.activeInterviewRound]);
 
   const registerDetection = useCallback(
     (spoken: string, matchedRowId?: string | null) => {
@@ -95,7 +98,7 @@ export function useInterviewContext(library: LibraryRow[]) {
   return {
     context,
     catalog,
-    nextSuggestions,
+    topInterviewQuestions,
     registerDetection,
     setManualExperience,
     setActiveInterviewRound,

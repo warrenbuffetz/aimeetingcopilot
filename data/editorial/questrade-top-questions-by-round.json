@@ -1,0 +1,583 @@
+{
+  "recruiter": [
+    {
+      "rank": 1,
+      "tier": "VH",
+      "question": "Tell me about yourself."
+    },
+    {
+      "rank": 2,
+      "tier": "VH",
+      "question": "Why Questrade? Why this role?"
+    },
+    {
+      "rank": 3,
+      "tier": "VH",
+      "question": "Why are you looking to leave Arc'teryx?"
+    },
+    {
+      "rank": 4,
+      "tier": "VH",
+      "question": "What are you currently working on at Arc'teryx?"
+    },
+    {
+      "rank": 5,
+      "tier": "VH",
+      "question": "Why does joining Questrade during its expansion into banking appeal to you?"
+    },
+    {
+      "rank": 6,
+      "tier": "VH",
+      "question": "Why move into everyday banking from rewards and loyalty?"
+    },
+    {
+      "rank": 7,
+      "tier": "VH",
+      "question": "You haven't owned a traditional chequing account. Why are you qualified?"
+    },
+    {
+      "rank": 8,
+      "tier": "VH",
+      "question": "What makes you different from other Senior PM candidates?"
+    },
+    {
+      "rank": 9,
+      "tier": "VH",
+      "question": "Walk me through the Interac e-Transfer product you launched at RBC."
+    },
+    {
+      "rank": 10,
+      "tier": "VH",
+      "question": "What are your compensation expectations?"
+    },
+    {
+      "rank": 11,
+      "tier": "H",
+      "question": "Why Questrade instead of continuing at Arc'teryx?"
+    },
+    {
+      "rank": 12,
+      "tier": "H",
+      "question": "You've secured a significant investment. Why leave before the membership platform launches?"
+    },
+    {
+      "rank": 13,
+      "tier": "H",
+      "question": "What would it take for you to leave your current role?"
+    },
+    {
+      "rank": 14,
+      "tier": "H",
+      "question": "Tell me about a complex integration you led."
+    },
+    {
+      "rank": 15,
+      "tier": "H",
+      "question": "Tell me about a customer problem you solved at RBC."
+    },
+    {
+      "rank": 16,
+      "tier": "H",
+      "question": "Tell me about building Avion Select from zero to one."
+    },
+    {
+      "rank": 17,
+      "tier": "H",
+      "question": "Tell me about improving the HBC Mastercard application journey."
+    },
+    {
+      "rank": 18,
+      "tier": "H",
+      "question": "How did you drive credit card acquisition growth at Aeroplan?"
+    },
+    {
+      "rank": 19,
+      "tier": "H",
+      "question": "Why should we hire you over someone with direct core banking experience?"
+    },
+    {
+      "rank": 20,
+      "tier": "H",
+      "question": "Why have you moved between several industries and employers?"
+    },
+    {
+      "rank": 21,
+      "tier": "H",
+      "question": "What's the biggest learning curve for you if you join Questbank?"
+    },
+    {
+      "rank": 22,
+      "tier": "H",
+      "question": "What's the strongest reason we should choose you?"
+    },
+    {
+      "rank": 23,
+      "tier": "H",
+      "question": "What would you do in your first 90 days?"
+    },
+    {
+      "rank": 24,
+      "tier": "H",
+      "question": "How would you transition the ongoing membership initiative?"
+    },
+    {
+      "rank": 25,
+      "tier": "H",
+      "question": "What's your biggest weakness as a product leader?"
+    },
+    {
+      "rank": 26,
+      "tier": "H",
+      "question": "How are you using AI in your product management work?"
+    },
+    {
+      "rank": 27,
+      "tier": "H",
+      "question": "Tell me about competing priorities with Risk, Compliance or Engineering."
+    },
+    {
+      "rank": 28,
+      "tier": "H",
+      "question": "Tell me about something you took from an idea into a product."
+    },
+    {
+      "rank": 29,
+      "tier": "H",
+      "question": "What does P&L ownership at HBC actually mean?"
+    },
+    {
+      "rank": 30,
+      "tier": "H",
+      "question": "How did you secure $5.2M in capital funding at Arc'teryx?"
+    },
+    {
+      "rank": 31,
+      "tier": "H",
+      "question": "Why choose a headless membership platform rather than building internally?"
+    },
+    {
+      "rank": 32,
+      "tier": "H",
+      "question": "Why would customers choose Questrade over Wealthsimple or a traditional bank?"
+    },
+    {
+      "rank": 33,
+      "tier": "H",
+      "question": "What concerns would you have about joining a newer banking offering?"
+    },
+    {
+      "rank": 34,
+      "tier": "H",
+      "question": "Do you prefer building new products or improving existing ones?"
+    },
+    {
+      "rank": 35,
+      "tier": "H",
+      "question": "What would you deliver in your first 30 days?"
+    }
+  ],
+  "hiring_manager": [
+    {
+      "rank": 1,
+      "tier": "VH",
+      "question": "Tell me about yourself."
+    },
+    {
+      "rank": 2,
+      "tier": "VH",
+      "question": "What are you currently working on at Arc'teryx?"
+    },
+    {
+      "rank": 3,
+      "tier": "VH",
+      "question": "Why Questrade? Why this role?"
+    },
+    {
+      "rank": 4,
+      "tier": "VH",
+      "question": "Walk me through the Interac e-Transfer product you launched at RBC."
+    },
+    {
+      "rank": 5,
+      "tier": "VH",
+      "question": "Tell me about a customer problem you solved at RBC."
+    },
+    {
+      "rank": 6,
+      "tier": "VH",
+      "question": "How would you convince existing Questrade investors to make Questbank their primary bank?"
+    },
+    {
+      "rank": 7,
+      "tier": "VH",
+      "question": "How would you increase direct deposit adoption?"
+    },
+    {
+      "rank": 8,
+      "tier": "VH",
+      "question": "What metrics would you use to measure success in everyday banking?"
+    },
+    {
+      "rank": 9,
+      "tier": "VH",
+      "question": "What would your primary-account north-star metric be?"
+    },
+    {
+      "rank": 10,
+      "tier": "VH",
+      "question": "How would you design a financial hub across spending, saving and investing?"
+    },
+    {
+      "rank": 11,
+      "tier": "VH",
+      "question": "You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. Which?"
+    },
+    {
+      "rank": 12,
+      "tier": "VH",
+      "question": "How would you prioritize banking reliability versus differentiated features?"
+    },
+    {
+      "rank": 13,
+      "tier": "H",
+      "question": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering."
+    },
+    {
+      "rank": 14,
+      "tier": "H",
+      "question": "How did you decide what to include in the smaller Sperro SV release?"
+    },
+    {
+      "rank": 15,
+      "tier": "H",
+      "question": "How did you secure $5.2M in capital funding at Arc'teryx?"
+    },
+    {
+      "rank": 16,
+      "tier": "H",
+      "question": "Why did you choose a headless membership platform?"
+    },
+    {
+      "rank": 17,
+      "tier": "H",
+      "question": "Tell me about a complex integration you led."
+    },
+    {
+      "rank": 18,
+      "tier": "H",
+      "question": "What did you personally decide on the Avion cashback withdrawal launch?"
+    },
+    {
+      "rank": 19,
+      "tier": "H",
+      "question": "What exactly did you own versus RBC's payments infrastructure team?"
+    },
+    {
+      "rank": 20,
+      "tier": "H",
+      "question": "How did you measure success for Avion cashback withdrawals?"
+    },
+    {
+      "rank": 21,
+      "tier": "H",
+      "question": "What if customers keep two banks rather than switching completely?"
+    },
+    {
+      "rank": 22,
+      "tier": "H",
+      "question": "Why choose Questrade over Wealthsimple or a traditional bank?"
+    },
+    {
+      "rank": 23,
+      "tier": "H",
+      "question": "Who would you target first for Questbank adoption?"
+    },
+    {
+      "rank": 24,
+      "tier": "H",
+      "question": "Would you optimize account openings, funded accounts or payroll adoption?"
+    },
+    {
+      "rank": 25,
+      "tier": "H",
+      "question": "How would you know whether a financial hub deepens the customer relationship?"
+    },
+    {
+      "rank": 26,
+      "tier": "H",
+      "question": "How do you distinguish primary-banking adoption from superficial account openings?"
+    },
+    {
+      "rank": 27,
+      "tier": "H",
+      "question": "How do you know DAU growth isn't simply more balance checking?"
+    },
+    {
+      "rank": 28,
+      "tier": "H",
+      "question": "Why are you looking to leave Arc'teryx?"
+    },
+    {
+      "rank": 29,
+      "tier": "H",
+      "question": "Why leave before the full membership platform launches?"
+    },
+    {
+      "rank": 30,
+      "tier": "H",
+      "question": "What if Cards and Money Movement own dependencies critical to your metrics?"
+    },
+    {
+      "rank": 31,
+      "tier": "H",
+      "question": "What if a feature ships on time but adoption is poor?"
+    },
+    {
+      "rank": 32,
+      "tier": "H",
+      "question": "Tell me about an initiative that didn't go according to plan."
+    },
+    {
+      "rank": 33,
+      "tier": "H",
+      "question": "Tell me about a product decision you got wrong."
+    },
+    {
+      "rank": 34,
+      "tier": "H",
+      "question": "Tell me about something you built from zero to one."
+    },
+    {
+      "rank": 35,
+      "tier": "H",
+      "question": "Direct deposit conversion improved 20%. How do you know the experiment succeeded?"
+    },
+    {
+      "rank": 36,
+      "tier": "H",
+      "question": "What if payroll bonuses attract customers who leave immediately?"
+    },
+    {
+      "rank": 37,
+      "tier": "H",
+      "question": "What if customers trust Questrade for investing but refuse to deposit their salary?"
+    },
+    {
+      "rank": 38,
+      "tier": "H",
+      "question": "How would you design payroll switching when the employer's first deposit could fail?"
+    },
+    {
+      "rank": 39,
+      "tier": "H",
+      "question": "Hundreds of customers haven't received their paycheques. What do you do first?"
+    },
+    {
+      "rank": 40,
+      "tier": "H",
+      "question": "Which three metrics would you put on your Questbank executive scorecard?"
+    }
+  ],
+  "cross_functional_panel": [
+    {
+      "rank": 1,
+      "tier": "VH",
+      "question": "Tell me about yourself."
+    },
+    {
+      "rank": 2,
+      "tier": "VH",
+      "question": "Why Questrade? Why this role?"
+    },
+    {
+      "rank": 3,
+      "tier": "VH",
+      "question": "Walk me through the Interac e-Transfer product you launched at RBC."
+    },
+    {
+      "rank": 4,
+      "tier": "VH",
+      "question": "Tell me about competing priorities with Risk, Compliance or Engineering."
+    },
+    {
+      "rank": 5,
+      "tier": "VH",
+      "question": "Tell me about a complex integration you led."
+    },
+    {
+      "rank": 6,
+      "tier": "VH",
+      "question": "What did you personally decide on the Avion cashback launch?"
+    },
+    {
+      "rank": 7,
+      "tier": "VH",
+      "question": "What did you own versus RBC's payments infrastructure team?"
+    },
+    {
+      "rank": 8,
+      "tier": "VH",
+      "question": "How do you work with designers and customer researchers?"
+    },
+    {
+      "rank": 9,
+      "tier": "VH",
+      "question": "Why Interac e-Transfer instead of EFT for cashback withdrawals?"
+    },
+    {
+      "rank": 10,
+      "tier": "VH",
+      "question": "What's the difference between EFT and Interac e-Transfer?"
+    },
+    {
+      "rank": 11,
+      "tier": "VH",
+      "question": "What happens if a payout API times out after a request was accepted?"
+    },
+    {
+      "rank": 12,
+      "tier": "VH",
+      "question": "How would you prevent duplicate cashback payouts?"
+    },
+    {
+      "rank": 13,
+      "tier": "H",
+      "question": "What is reconciliation, and why must a PM understand it?"
+    },
+    {
+      "rank": 14,
+      "tier": "H",
+      "question": "How would you handle payment exceptions as volume grows?"
+    },
+    {
+      "rank": 15,
+      "tier": "H",
+      "question": "What if the ledger and customer-facing balances don't match?"
+    },
+    {
+      "rank": 16,
+      "tier": "H",
+      "question": "Where should transaction status, balances and reconciliation responsibilities sit?"
+    },
+    {
+      "rank": 17,
+      "tier": "H",
+      "question": "What controls would you require before enabling a new transfer type?"
+    },
+    {
+      "rank": 18,
+      "tier": "H",
+      "question": "How would you roll out a critical payments integration?"
+    },
+    {
+      "rank": 19,
+      "tier": "H",
+      "question": "How would you prioritize core account reliability against differentiated features?"
+    },
+    {
+      "rank": 20,
+      "tier": "H",
+      "question": "What metrics would you use to measure everyday banking success?"
+    },
+    {
+      "rank": 21,
+      "tier": "H",
+      "question": "Hundreds of customers haven't received their salaries. What do you do first?"
+    },
+    {
+      "rank": 22,
+      "tier": "H",
+      "question": "Why might available balance differ from posted balance?"
+    },
+    {
+      "rank": 23,
+      "tier": "H",
+      "question": "A purchase appears twice, pending and posted. How would you fix it?"
+    },
+    {
+      "rank": 24,
+      "tier": "H",
+      "question": "Card payments are declining but the banking app and ledger are online. Where do you investigate?"
+    },
+    {
+      "rank": 25,
+      "tier": "H",
+      "question": "Why choose a headless membership platform instead of building internally?"
+    },
+    {
+      "rank": 26,
+      "tier": "H",
+      "question": "How would you build on Temenos core banking without owning the ledger?"
+    },
+    {
+      "rank": 27,
+      "tier": "H",
+      "question": "How would you choose between building and buying a payment service?"
+    },
+    {
+      "rank": 28,
+      "tier": "H",
+      "question": "How would you test an AI-powered financial feature before broad launch?"
+    },
+    {
+      "rank": 29,
+      "tier": "H",
+      "question": "How would you choose an experiment's primary metric and guardrails?"
+    },
+    {
+      "rank": 30,
+      "tier": "H",
+      "question": "How did you measure success for Avion cashback withdrawals?"
+    },
+    {
+      "rank": 31,
+      "tier": "H",
+      "question": "How would you determine whether a 5% spending lift justified an incentive?"
+    },
+    {
+      "rank": 32,
+      "tier": "H",
+      "question": "Conversion moved from 10% to 12%. Is that a 2% or 20% improvement?"
+    },
+    {
+      "rank": 33,
+      "tier": "H",
+      "question": "How would you protect customers from unauthorized AI-agent actions?"
+    },
+    {
+      "rank": 34,
+      "tier": "H",
+      "question": "What if an AI agent provides an incorrect account balance?"
+    },
+    {
+      "rank": 35,
+      "tier": "H",
+      "question": "How would you design agentic finance connections with consent and approval?"
+    },
+    {
+      "rank": 36,
+      "tier": "H",
+      "question": "What is MCP, and how is it different from a chatbot?"
+    },
+    {
+      "rank": 37,
+      "tier": "H",
+      "question": "What's the difference between KYC, AML monitoring and fraud prevention?"
+    },
+    {
+      "rank": 38,
+      "tier": "H",
+      "question": "What if Risk requires a step that reduces conversion by 20%?"
+    },
+    {
+      "rank": 39,
+      "tier": "H",
+      "question": "What if Risk still says no after you've presented your evidence?"
+    },
+    {
+      "rank": 40,
+      "tier": "H",
+      "question": "What if Engineering says the launch is unsafe but leadership wants the original date?"
+    }
+  ]
+}

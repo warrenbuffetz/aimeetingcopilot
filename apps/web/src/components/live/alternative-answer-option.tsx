@@ -18,7 +18,6 @@ export function AlternativeAnswerOption({ alt, catalog, isPending, onSelect }: P
   const meta = row?.navigator;
   const showCanonical =
     alt.libraryQuestion.trim().toLowerCase() !== alt.matchedLabel.trim().toLowerCase();
-  const rankPct = (alt.score * 100).toFixed(1);
   const shortPreview = row?.navigator.shortAnswer?.slice(0, 120);
 
   return (
@@ -44,13 +43,13 @@ export function AlternativeAnswerOption({ alt, catalog, isPending, onSelect }: P
         ) : (
           <span
             className={cn(
-              "shrink-0 tabular-nums text-[10px] transition-opacity",
+              "shrink-0 text-[9px] uppercase tracking-wide",
               liveSemantic.labelAlternative,
-              "opacity-70 group-hover:opacity-100"
+              "opacity-60 group-hover:opacity-100"
             )}
-            title="Hybrid rank (uncalibrated, not probability)"
+            title="Alternative library match (rank is not a probability)"
           >
-            {rankPct}%
+            Alt
           </span>
         )}
       </div>

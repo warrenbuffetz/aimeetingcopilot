@@ -87,6 +87,14 @@ export interface NavigatorQaMeta {
   primaryInterviewRound?: InterviewRound;
   proposedAnswerUpdate?: string;
   supplementalTalkingPoints?: { label: string; content: string; importKey?: string }[];
+  /** Round-ordered contextual follow-up child IDs (optional DB copy; runtime uses bundled resolved map). */
+  curatedContextualFollowUpsByRound?: Partial<
+    Record<
+      InterviewRound,
+      { questionId: string; order: number; intent?: string; reason: string }[]
+    >
+  >;
+  curatedContextualFollowUpsVersion?: string;
 }
 
 export interface EnrichedQaRow {

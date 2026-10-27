@@ -57,7 +57,14 @@ import type {
   EnrichedQaRow,
   InterviewSessionContext,
 } from "@interview-copilot/shared";
-import { LEXICAL_MATCH_THRESHOLD_PREPARED } from "@interview-copilot/shared";
+import {
+  CONTEXTUAL_FOLLOW_UP_DEFAULT_LIMIT,
+  CONTEXTUAL_FOLLOW_UP_EXPANDED_LIMIT,
+  interviewProfileKeyFromLabel,
+  LEXICAL_MATCH_THRESHOLD_PREPARED,
+  suggestContextualFollowUps,
+} from "@interview-copilot/shared";
+import { AnswerPreviewCard } from "@/components/live/answer-preview-card";
 import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
 import type { TranscriptLine } from "@/hooks/use-live-session";
@@ -87,6 +94,8 @@ export default function LiveInterviewPage() {
   const [selectedTranscriptIds, setSelectedTranscriptIds] = useState<string[]>([]);
   const [editRetryDraft, setEditRetryDraft] = useState<{ lineId: string; text: string } | null>(null);
   const [pendingAltId, setPendingAltId] = useState<string | null>(null);
+  const [contextualExpanded, setContextualExpanded] = useState<Record<string, boolean>>({});
+  const [contextualShowMore, setContextualShowMore] = useState(false);
 
   const session = useLiveSession(profileId, {
     pinnedAnswer: pinned,
@@ -388,6 +397,54 @@ export default function LiveInterviewPage() {
   const displayAnswer = pinned ?? session.result?.answer ?? "Start listening or run simulation to detect questions.";
   const matchedRowId = session.result?.matches[0]?.sourceId;
   const matchedMeta = interviewNav.catalog.find((r) => r.id === matchedRowId)?.navigator;
+  const activePreparedRow = useMemo(
+    () => interviewNav.catalog.find((r) => r.id === matchedRowId) ?? null,
+    [interviewNav.catalog, matchedRowId]
+  );
+  const recentDetectedQuestions = useMemo(
+    () => session.questionHistory.map((h) => h.question).filter((q) => q && q.length > 2).slice(-5),
+    [session.questionHistory]
+  );
+  const interviewProfileKey = interviewProfileKeyFromLabel(
+    profileId == null ? null : profiles.find((p) => p.id === profileId)?.name ?? null
+  );
+  const contextualFollowUpPool = useMemo(
+    () =>
+      suggestContextualFollowUps(
+        interviewNav.catalog,
+        {
+          ...interviewNav.context,
+          lastDetectedQuestion: session.currentQuestion ?? interviewNav.context.lastDetectedQuestion,
+        },
+        activePreparedRow,
+        recentDetectedQuestions,
+        {
+          limit: contextualShowMore ? CONTEXTUAL_FOLLOW_UP_EXPANDED_LIMIT : CONTEXTUAL_FOLLOW_UP_DEFAULT_LIMIT,
+          interviewProfile: interviewProfileKey,
+          anchorQuestionLabel: activePreparedRow?.question,
+        }
+      ),
+    [
+      interviewNav.catalog,
+      interviewNav.context.askedQuestionIds,
+      interviewNav.context.manualExperienceOverrideId,
+      interviewNav.context.activeInterviewRound,
+      activePreparedRow,
+      recentDetectedQuestions,
+      session.currentQuestion,
+      contextualShowMore,
+      interviewProfileKey,
+    ]
+  );
+  const contextualFollowUps = contextualFollowUpPool;
+
+  useEffect(() => {
+    setContextualShowMore(false);
+  }, [matchedRowId]);
+  const ambiguousAnswerMatch =
+    Boolean(session.result?.alternativeMatches?.length) &&
+    ((session.result?.confidence ?? 1) < LEXICAL_MATCH_THRESHOLD_PREPARED ||
+      (session.result?.alternativeMatches?.length ?? 0) >= 2);
 
   const profileLabel =
     profileId == null
@@ -795,11 +852,80 @@ export default function LiveInterviewPage() {
             <div className="mt-3 max-w-3xl">
               <ScriptText text={displayAnswer} clamp={!showFull} className={liveSemantic.textAnswer} />
             </div>
-            {session.result?.alternativeMatches && session.result.alternativeMatches.length > 0 && (
+            {session.result && activePreparedRow && (
               <div className="mt-4 max-w-3xl border-t border-border pt-3">
-                <h3 className={cn("text-[10px] font-medium uppercase tracking-wide", liveSemantic.labelAlternative)}>
-                  Alternative answers
+                <h3 className={cn("text-[10px] font-medium uppercase tracking-wide", liveSemantic.labelSuggested)}>
+                  Contextual follow-ups
                 </h3>
+                <p className="mt-0.5 text-[10px] text-muted-foreground">
+                  Based on: {activePreparedRow.question.length > 72
+                    ? `${activePreparedRow.question.slice(0, 72)}…`
+                    : activePreparedRow.question}
+                </p>
+                {contextualFollowUps.length > 0 ? (
+                  <>
+                    <ul className="mt-2 space-y-1.5">
+                      {contextualFollowUps.map((fu) => (
+                        <li key={`${fu.reason}-${fu.rowId}`}>
+                          <AnswerPreviewCard
+                            source={fu}
+                            catalog={interviewNav.catalog}
+                            semanticAccent="suggested"
+                            expanded={Boolean(contextualExpanded[fu.rowId])}
+                            onToggle={() =>
+                              setContextualExpanded((prev) => ({ ...prev, [fu.rowId]: !prev[fu.rowId] }))
+                            }
+                            onOpenMain={() => {
+                              const row = interviewNav.catalog.find((r) => r.id === fu.rowId);
+                              if (row) openInMainPanel(row, { fromBrowse: true });
+                            }}
+                            onPin={() => {
+                              const row = interviewNav.catalog.find((r) => r.id === fu.rowId);
+                              if (row) pinRow(row);
+                            }}
+                            showShortFirst
+                          />
+                          <p className="px-1 pt-0.5 text-[9px] text-muted-foreground">{fu.reason}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    {contextualFollowUpPool.length >= CONTEXTUAL_FOLLOW_UP_DEFAULT_LIMIT && (
+                      <Button
+                        type="button"
+                        size="sm"
+                        variant="ghost"
+                        className="mt-2 h-7 text-[10px]"
+                        onClick={() => setContextualShowMore((v) => !v)}
+                      >
+                        {contextualShowMore ? "Show fewer follow-ups" : "Show more"}
+                      </Button>
+                    )}
+                  </>
+                ) : (
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    No strong follow-ups identified for this answer.
+                  </p>
+                )}
+              </div>
+            )}
+            {session.result?.alternativeMatches && session.result.alternativeMatches.length > 0 && (
+              <details
+                className="mt-4 max-w-3xl border-t border-border pt-3"
+                open={ambiguousAnswerMatch}
+              >
+                <summary
+                  className={cn(
+                    "cursor-pointer text-[10px] font-medium uppercase tracking-wide",
+                    liveSemantic.labelAlternative
+                  )}
+                >
+                  Other answer matches
+                  {!ambiguousAnswerMatch && (
+                    <span className="ml-1 font-normal normal-case text-muted-foreground">
+                      (retrieval recovery)
+                    </span>
+                  )}
+                </summary>
                 <ul className="mt-2 space-y-1.5">
                   {session.result.alternativeMatches.map((alt) => (
                     <li key={alt.sourceId}>
@@ -821,7 +947,7 @@ export default function LiveInterviewPage() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </details>
             )}
             {session.result?.closestSuggestion && (
               <p className="mt-4 text-sm text-muted-foreground">
@@ -842,21 +968,6 @@ export default function LiveInterviewPage() {
                   {session.result.closestSuggestion.matchedLabel}
                 </button>
               </p>
-            )}
-            {session.result?.followUps && session.result.followUps.length > 0 && (
-              <div className="mt-4 max-w-3xl border-t border-border pt-3">
-                <h3 className={cn("text-[10px] font-medium uppercase tracking-wide", liveSemantic.labelSuggested)}>
-                  Likely follow-ups (read-ahead)
-                </h3>
-                <ul className="mt-2 space-y-2">
-                  {session.result.followUps.map((fu) => (
-                    <li key={fu.question} className={cn("px-2.5 py-2", liveSemantic.surfaceSuggested)}>
-                      <p className={cn("text-xs font-medium leading-snug", liveSemantic.textAnswer)}>{fu.question}</p>
-                      <ScriptText text={fu.answer} className="mt-1 text-muted-foreground" />
-                    </li>
-                  ))}
-                </ul>
-              </div>
             )}
           </div>
           {!session.candidate && (
@@ -883,7 +994,7 @@ export default function LiveInterviewPage() {
             className="min-h-0 flex-1"
             catalog={interviewNav.catalog}
             context={interviewNav.context}
-            nextSuggestions={interviewNav.nextSuggestions}
+            topInterviewQuestions={interviewNav.topInterviewQuestions}
             pinnedQuestion={pinnedQuestion}
             mapFocus={mapFocus}
             onMapFocusChange={setMapFocus}

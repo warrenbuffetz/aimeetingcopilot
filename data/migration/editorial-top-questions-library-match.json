@@ -1,0 +1,965 @@
+{
+  "at": "2026-10-27T00:59:38.585Z",
+  "libraryRecordCount": 258,
+  "matchThreshold": 0.55,
+  "recruiterLogisticsNotInEditorialList": [
+    "What is your required notice period?",
+    "What are your hybrid-work expectations?",
+    "What is your target total compensation?",
+    "Are you interviewing elsewhere?"
+  ],
+  "rounds": {
+    "recruiter": {
+      "resolved": [
+        {
+          "rank": 1,
+          "tier": "VH",
+          "editorial": "Tell me about yourself.",
+          "matchedQuestion": "Tell me about yourself.",
+          "rowId": "2f3a780e-6b54-42b8-b56d-8936a471fa68",
+          "score": 1
+        },
+        {
+          "rank": 2,
+          "tier": "VH",
+          "editorial": "Why Questrade? Why this role?",
+          "matchedQuestion": "Why Questrade? Why this role?",
+          "rowId": "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+          "score": 1
+        },
+        {
+          "rank": 3,
+          "tier": "VH",
+          "editorial": "Why are you looking to leave Arc'teryx?",
+          "matchedQuestion": "Why are you looking to leave Arc'teryx?",
+          "rowId": "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+          "score": 1
+        },
+        {
+          "rank": 4,
+          "tier": "VH",
+          "editorial": "What are you currently working on at Arc'teryx?",
+          "matchedQuestion": "What are you currently working on at Arc'teryx?",
+          "rowId": "1fd9478b-7396-4778-bc00-e62aee52de52",
+          "score": 1
+        },
+        {
+          "rank": 5,
+          "tier": "VH",
+          "editorial": "Why does joining Questrade during its expansion into banking appeal to you?",
+          "matchedQuestion": "Why does joining Questrade during its expansion into banking appeal to you?",
+          "rowId": "0accbf98-6b70-462f-9631-d279d5fe3ae5",
+          "score": 1
+        },
+        {
+          "rank": 6,
+          "tier": "VH",
+          "editorial": "Why move into everyday banking from rewards and loyalty?",
+          "matchedQuestion": "Why move into everyday banking from rewards and loyalty?",
+          "rowId": "c45ce30e-6de2-4164-93bf-8b67902caae0",
+          "score": 1
+        },
+        {
+          "rank": 7,
+          "tier": "VH",
+          "editorial": "You haven't owned a traditional chequing account. Why are you qualified?",
+          "matchedQuestion": "You haven't owned a traditional chequing account. Why are you qualified?",
+          "rowId": "a292f433-831a-440c-a196-dbf8c38fbddd",
+          "score": 1
+        },
+        {
+          "rank": 8,
+          "tier": "VH",
+          "editorial": "What makes you different from other Senior PM candidates?",
+          "matchedQuestion": "What makes you different from other Senior PM candidates?",
+          "rowId": "f67032ca-4e2e-4b49-ae44-29b181eab8b6",
+          "score": 1
+        },
+        {
+          "rank": 9,
+          "tier": "VH",
+          "editorial": "Walk me through the Interac e-Transfer product you launched at RBC.",
+          "matchedQuestion": "Walk me through the Interac e-Transfer product you launched at RBC.",
+          "rowId": "244e239c-2f88-4b6e-968f-ef8ce65daa70",
+          "score": 1
+        },
+        {
+          "rank": 10,
+          "tier": "VH",
+          "editorial": "What are your compensation expectations?",
+          "matchedQuestion": "What are your compensation expectations?",
+          "rowId": "93f1f35c-cd54-49c3-8d6d-6a95d262fd4b",
+          "score": 1
+        },
+        {
+          "rank": 11,
+          "tier": "H",
+          "editorial": "Why Questrade instead of continuing at Arc'teryx?",
+          "matchedQuestion": "Why Questrade instead of continuing at Arc'teryx?",
+          "rowId": "bfd102e5-8b51-47ea-aeea-c84745fa7f64",
+          "score": 1
+        },
+        {
+          "rank": 12,
+          "tier": "H",
+          "editorial": "You've secured a significant investment. Why leave before the membership platform launches?",
+          "matchedQuestion": "You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?",
+          "rowId": "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 13,
+          "tier": "H",
+          "editorial": "What would it take for you to leave your current role?",
+          "matchedQuestion": "What would it take for you to leave your current role?",
+          "rowId": "2235a907-b3ae-4899-9b1b-77a47d746119",
+          "score": 1
+        },
+        {
+          "rank": 14,
+          "tier": "H",
+          "editorial": "Tell me about a complex integration you led.",
+          "matchedQuestion": "Tell me about a complex integration you led.",
+          "rowId": "f8074663-5773-4b95-a25b-1e32a764c1a9",
+          "score": 1
+        },
+        {
+          "rank": 15,
+          "tier": "H",
+          "editorial": "Tell me about a customer problem you solved at RBC.",
+          "matchedQuestion": "Tell me about a customer problem you solved at RBC.",
+          "rowId": "f1194ecf-438d-422d-a96f-9c9b69a54fe2",
+          "score": 1
+        },
+        {
+          "rank": 16,
+          "tier": "H",
+          "editorial": "Tell me about building Avion Select from zero to one.",
+          "matchedQuestion": "Tell me about building Avion Select from zero to one.",
+          "rowId": "6458104e-34c6-430c-8005-aef3a3da9c02",
+          "score": 1
+        },
+        {
+          "rank": 17,
+          "tier": "H",
+          "editorial": "Tell me about improving the HBC Mastercard application journey.",
+          "matchedQuestion": "Tell me about improving the HBC Mastercard application journey.",
+          "rowId": "140caed9-55a1-48ac-9190-5d2256afd262",
+          "score": 1
+        },
+        {
+          "rank": 18,
+          "tier": "H",
+          "editorial": "How did you drive credit card acquisition growth at Aeroplan?",
+          "matchedQuestion": "How did you drive credit card acquisition growth at Aeroplan?",
+          "rowId": "e8d13d9e-a98d-4dbc-a596-a178557963b0",
+          "score": 1
+        },
+        {
+          "rank": 19,
+          "tier": "H",
+          "editorial": "Why should we hire you over someone with direct core banking experience?",
+          "matchedQuestion": "Why should we hire you over someone with direct core banking experience?",
+          "rowId": "56065bcd-e97e-4d82-ac21-e35a44296ae7",
+          "score": 1
+        },
+        {
+          "rank": 20,
+          "tier": "H",
+          "editorial": "Why have you moved between several industries and employers?",
+          "matchedQuestion": "Why have you moved between several industries and employers?",
+          "rowId": "66530581-f599-40f5-8f97-5bf255953c87",
+          "score": 1
+        },
+        {
+          "rank": 21,
+          "tier": "H",
+          "editorial": "What's the biggest learning curve for you if you join Questbank?",
+          "matchedQuestion": "What's the biggest learning curve for you if you join Questbank?",
+          "rowId": "a5e5c740-637c-4b42-8642-e889de82dcec",
+          "score": 1
+        },
+        {
+          "rank": 22,
+          "tier": "H",
+          "editorial": "What's the strongest reason we should choose you?",
+          "matchedQuestion": "What is the strongest single reason we should choose you for this job?",
+          "rowId": "de31db47-3aea-4d26-be40-e0fa92423dd1",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 23,
+          "tier": "H",
+          "editorial": "What would you do in your first 90 days?",
+          "matchedQuestion": "What would you do in your first 90 days?",
+          "rowId": "d47c60d3-510e-4373-abf0-0749fcc41ebc",
+          "score": 1
+        },
+        {
+          "rank": 24,
+          "tier": "H",
+          "editorial": "How would you transition the ongoing membership initiative?",
+          "matchedQuestion": "How would you manage transitioning away from an ongoing membership initiative?",
+          "rowId": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 25,
+          "tier": "H",
+          "editorial": "What's your biggest weakness as a product leader?",
+          "matchedQuestion": "What is your biggest weakness as a product leader?",
+          "rowId": "39a0bcf9-7d01-4cde-8da4-4ff893da44b3",
+          "score": 0.714
+        },
+        {
+          "rank": 26,
+          "tier": "H",
+          "editorial": "How are you using AI in your product management work?",
+          "matchedQuestion": "How are you using AI in your product management work?",
+          "rowId": "7c079cf5-b153-435d-a4b3-e83ad3139a2b",
+          "score": 1
+        },
+        {
+          "rank": 27,
+          "tier": "H",
+          "editorial": "Tell me about competing priorities with Risk, Compliance or Engineering.",
+          "matchedQuestion": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering.",
+          "rowId": "e09deee1-3efa-4774-9274-2f18848b739f",
+          "score": 0.727
+        },
+        {
+          "rank": 28,
+          "tier": "H",
+          "editorial": "Tell me about something you took from an idea into a product.",
+          "matchedQuestion": "Tell me about something you took from an idea into a product.",
+          "rowId": "2a1ed160-bfa6-4f2a-91ea-d280a3ef0418",
+          "score": 1
+        },
+        {
+          "rank": 29,
+          "tier": "H",
+          "editorial": "What does P&L ownership at HBC actually mean?",
+          "matchedQuestion": "What does 'P&L ownership' at HBC actually mean?",
+          "rowId": "9b0f399e-6750-463a-9570-805c82449eb8",
+          "score": 0.714
+        },
+        {
+          "rank": 30,
+          "tier": "H",
+          "editorial": "How did you secure $5.2M in capital funding at Arc'teryx?",
+          "matchedQuestion": "How did you secure $5.2 million in capital funding at Arc'teryx?",
+          "rowId": "439ccf45-857e-431f-ab0e-1312d6998f02",
+          "score": 0.875
+        },
+        {
+          "rank": 31,
+          "tier": "H",
+          "editorial": "Why choose a headless membership platform rather than building internally?",
+          "matchedQuestion": "Why did you choose a headless membership platform rather than building everything internally?",
+          "rowId": "a85b536e-5e20-468f-87d9-fb447ae796f6",
+          "score": 0.75
+        },
+        {
+          "rank": 32,
+          "tier": "H",
+          "editorial": "Why would customers choose Questrade over Wealthsimple or a traditional bank?",
+          "matchedQuestion": "Why would customers choose Questrade over Wealthsimple or a traditional bank?",
+          "rowId": "c4343691-6421-47c9-9c1e-8c88f948e0b6",
+          "score": 1
+        },
+        {
+          "rank": 33,
+          "tier": "H",
+          "editorial": "What concerns would you have about joining a newer banking offering?",
+          "matchedQuestion": "What concerns would you have about joining a business that is still establishing its banking offering?",
+          "rowId": "55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1",
+          "score": 0.6
+        },
+        {
+          "rank": 34,
+          "tier": "H",
+          "editorial": "Do you prefer building new products or improving existing ones?",
+          "matchedQuestion": "Are you more interested in building new products or improving existing ones?",
+          "rowId": "e3acf896-6e83-4597-aeb6-088aba201987",
+          "score": 0.636
+        },
+        {
+          "rank": 35,
+          "tier": "H",
+          "editorial": "What would you deliver in your first 30 days?",
+          "matchedQuestion": "What would you actually deliver in your first 30 days?",
+          "rowId": "08bed145-68a4-4f1f-a500-1287247345bc",
+          "score": 0.875
+        }
+      ],
+      "missing": [],
+      "total": 35
+    },
+    "hiring_manager": {
+      "resolved": [
+        {
+          "rank": 1,
+          "tier": "VH",
+          "editorial": "Tell me about yourself.",
+          "matchedQuestion": "Tell me about yourself.",
+          "rowId": "2f3a780e-6b54-42b8-b56d-8936a471fa68",
+          "score": 1
+        },
+        {
+          "rank": 2,
+          "tier": "VH",
+          "editorial": "What are you currently working on at Arc'teryx?",
+          "matchedQuestion": "What are you currently working on at Arc'teryx?",
+          "rowId": "1fd9478b-7396-4778-bc00-e62aee52de52",
+          "score": 1
+        },
+        {
+          "rank": 3,
+          "tier": "VH",
+          "editorial": "Why Questrade? Why this role?",
+          "matchedQuestion": "Why Questrade? Why this role?",
+          "rowId": "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+          "score": 1
+        },
+        {
+          "rank": 4,
+          "tier": "VH",
+          "editorial": "Walk me through the Interac e-Transfer product you launched at RBC.",
+          "matchedQuestion": "Walk me through the Interac e-Transfer product you launched at RBC.",
+          "rowId": "244e239c-2f88-4b6e-968f-ef8ce65daa70",
+          "score": 1
+        },
+        {
+          "rank": 5,
+          "tier": "VH",
+          "editorial": "Tell me about a customer problem you solved at RBC.",
+          "matchedQuestion": "Tell me about a customer problem you solved at RBC.",
+          "rowId": "f1194ecf-438d-422d-a96f-9c9b69a54fe2",
+          "score": 1
+        },
+        {
+          "rank": 6,
+          "tier": "VH",
+          "editorial": "How would you convince existing Questrade investors to make Questbank their primary bank?",
+          "matchedQuestion": "How would you convince existing Questrade investors to make Questbank their primary bank?",
+          "rowId": "6844c2e7-03c5-434e-b64c-ca9febec68dd",
+          "score": 1
+        },
+        {
+          "rank": 7,
+          "tier": "VH",
+          "editorial": "How would you increase direct deposit adoption?",
+          "matchedQuestion": "How would you increase direct deposit adoption?",
+          "rowId": "06e233ae-5d45-42d3-b560-84baf56a8948",
+          "score": 1
+        },
+        {
+          "rank": 8,
+          "tier": "VH",
+          "editorial": "What metrics would you use to measure success in everyday banking?",
+          "matchedQuestion": "What metrics would you use to measure success in everyday banking?",
+          "rowId": "735da866-20fc-4837-b67d-c91a6b4e2c77",
+          "score": 1
+        },
+        {
+          "rank": 9,
+          "tier": "VH",
+          "editorial": "What would your primary-account north-star metric be?",
+          "matchedQuestion": "What would your primary-account north-star metric actually be?",
+          "rowId": "0059c616-ee5b-4b23-a15e-f8af7061fd25",
+          "score": 0.889
+        },
+        {
+          "rank": 10,
+          "tier": "VH",
+          "editorial": "How would you design a financial hub across spending, saving and investing?",
+          "matchedQuestion": "How would you design a single financial hub across spending, saving and investing?",
+          "rowId": "47a2ee59-f62e-4b8c-a95b-abab90b7891b",
+          "score": 0.917
+        },
+        {
+          "rank": 11,
+          "tier": "VH",
+          "editorial": "You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. Which?",
+          "matchedQuestion": "You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose?",
+          "rowId": "50313c26-9a05-42e6-b88e-cc571be4b272",
+          "score": 0.813
+        },
+        {
+          "rank": 12,
+          "tier": "VH",
+          "editorial": "How would you prioritize banking reliability versus differentiated features?",
+          "matchedQuestion": "How would you prioritize AI features against core banking reliability?",
+          "rowId": "14239bac-e0fc-4f29-abfe-3c7a4386539b",
+          "score": 0.636
+        },
+        {
+          "rank": 13,
+          "tier": "H",
+          "editorial": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering.",
+          "matchedQuestion": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering.",
+          "rowId": "e09deee1-3efa-4774-9274-2f18848b739f",
+          "score": 1
+        },
+        {
+          "rank": 14,
+          "tier": "H",
+          "editorial": "How did you decide what to include in the smaller Sperro SV release?",
+          "matchedQuestion": "How did you decide what to include in the smaller Sperro SV release?",
+          "rowId": "7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30",
+          "score": 1
+        },
+        {
+          "rank": 15,
+          "tier": "H",
+          "editorial": "How did you secure $5.2M in capital funding at Arc'teryx?",
+          "matchedQuestion": "How did you secure $5.2 million in capital funding at Arc'teryx?",
+          "rowId": "439ccf45-857e-431f-ab0e-1312d6998f02",
+          "score": 0.875
+        },
+        {
+          "rank": 16,
+          "tier": "H",
+          "editorial": "Why did you choose a headless membership platform?",
+          "matchedQuestion": "Why did you choose a headless membership platform rather than building everything internally?",
+          "rowId": "a85b536e-5e20-468f-87d9-fb447ae796f6",
+          "score": 0.92
+        },
+        {
+          "rank": 17,
+          "tier": "H",
+          "editorial": "Tell me about a complex integration you led.",
+          "matchedQuestion": "Tell me about a complex integration you led.",
+          "rowId": "f8074663-5773-4b95-a25b-1e32a764c1a9",
+          "score": 1
+        },
+        {
+          "rank": 18,
+          "tier": "H",
+          "editorial": "What did you personally decide on the Avion cashback withdrawal launch?",
+          "matchedQuestion": "What did you personally decide on the Avion cashback withdrawal launch?",
+          "rowId": "27d2a524-6a0d-4a3d-b102-c531d65f368f",
+          "score": 1
+        },
+        {
+          "rank": 19,
+          "tier": "H",
+          "editorial": "What exactly did you own versus RBC's payments infrastructure team?",
+          "matchedQuestion": "What exactly did you own versus RBC's payments infrastructure team?",
+          "rowId": "f290b115-770e-4448-82ac-52f4334f34de",
+          "score": 1
+        },
+        {
+          "rank": 20,
+          "tier": "H",
+          "editorial": "How did you measure success for Avion cashback withdrawals?",
+          "matchedQuestion": "How did you measure success for the Avion cashback withdrawal launch?",
+          "rowId": "11375f03-31fa-45da-8557-488a8cc63beb",
+          "score": 0.667
+        },
+        {
+          "rank": 21,
+          "tier": "H",
+          "editorial": "What if customers keep two banks rather than switching completely?",
+          "matchedQuestion": "What if someone keeps two banks rather than moving everything to Questbank?",
+          "rowId": "0d2ba56b-828d-4eeb-bbc4-b099d740e800",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 22,
+          "tier": "H",
+          "editorial": "Why choose Questrade over Wealthsimple or a traditional bank?",
+          "matchedQuestion": "Why would customers choose Questrade over Wealthsimple or a traditional bank?",
+          "rowId": "c4343691-6421-47c9-9c1e-8c88f948e0b6",
+          "score": 0.778
+        },
+        {
+          "rank": 23,
+          "tier": "H",
+          "editorial": "Who would you target first for Questbank adoption?",
+          "matchedQuestion": "Who would you target first for Questbank adoption?",
+          "rowId": "0bcc9c40-011a-4fff-9789-fdad78429b78",
+          "score": 1
+        },
+        {
+          "rank": 24,
+          "tier": "H",
+          "editorial": "Would you optimize account openings, funded accounts or payroll adoption?",
+          "matchedQuestion": "Would you optimize account openings, funded accounts or payroll adoption?",
+          "rowId": "75a6db9c-b40c-44d3-b7b7-3edd17933d54",
+          "score": 1
+        },
+        {
+          "rank": 25,
+          "tier": "H",
+          "editorial": "How would you know whether a financial hub deepens the customer relationship?",
+          "matchedQuestion": "How would you know whether a financial hub truly deepens the customer relationship?",
+          "rowId": "59024cc1-b1e1-4f5b-a146-1936c8c86037",
+          "score": 0.917
+        },
+        {
+          "rank": 26,
+          "tier": "H",
+          "editorial": "How do you distinguish primary-banking adoption from superficial account openings?",
+          "matchedQuestion": "How do you measure primary-banking adoption versus superficial account opening?",
+          "rowId": "04f3d519-31e2-478e-9083-e60d2bca7818",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 27,
+          "tier": "H",
+          "editorial": "How do you know DAU growth isn't simply more balance checking?",
+          "matchedQuestion": "How do you know an increase in DAU isn't just more balance checking?",
+          "rowId": "f7e403b2-26b8-4da4-83c1-ea58c2e3371b",
+          "score": 0.667
+        },
+        {
+          "rank": 28,
+          "tier": "H",
+          "editorial": "Why are you looking to leave Arc'teryx?",
+          "matchedQuestion": "Why are you looking to leave Arc'teryx?",
+          "rowId": "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+          "score": 1
+        },
+        {
+          "rank": 29,
+          "tier": "H",
+          "editorial": "Why leave before the full membership platform launches?",
+          "matchedQuestion": "You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?",
+          "rowId": "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 30,
+          "tier": "H",
+          "editorial": "What if Cards and Money Movement own dependencies critical to your metrics?",
+          "matchedQuestion": "What if your PM peers own Cards and Money Movement, but your metric depends on both?",
+          "rowId": "c4c44a09-0799-471a-97cb-05e06e8bf8a8",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 31,
+          "tier": "H",
+          "editorial": "What if a feature ships on time but adoption is poor?",
+          "matchedQuestion": "What if the team ships a feature on time, but adoption is poor?",
+          "rowId": "4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc",
+          "score": 0.778
+        },
+        {
+          "rank": 32,
+          "tier": "H",
+          "editorial": "Tell me about an initiative that didn't go according to plan.",
+          "matchedQuestion": "Tell me about a product initiative that didn't go according to plan.",
+          "rowId": "15aa03e2-46af-4d60-9d73-90ed342c6ccc",
+          "score": 0.875
+        },
+        {
+          "rank": 33,
+          "tier": "H",
+          "editorial": "Tell me about a product decision you got wrong.",
+          "matchedQuestion": "Tell me about a product decision you got wrong.",
+          "rowId": "c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+          "score": 1
+        },
+        {
+          "rank": 34,
+          "tier": "H",
+          "editorial": "Tell me about something you built from zero to one.",
+          "matchedQuestion": "Tell me about building Avion Select from zero to one.",
+          "rowId": "6458104e-34c6-430c-8005-aef3a3da9c02",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 35,
+          "tier": "H",
+          "editorial": "Direct deposit conversion improved 20%. How do you know the experiment succeeded?",
+          "matchedQuestion": "If direct deposit conversion improved by 20%, how would you determine whether the experiment succeeded?",
+          "rowId": "976c189b-f59f-409f-92ea-2648cc5b2f5a",
+          "score": 0.692
+        },
+        {
+          "rank": 36,
+          "tier": "H",
+          "editorial": "What if payroll bonuses attract customers who leave immediately?",
+          "matchedQuestion": "What if payroll bonuses bring in customers who leave immediately afterward?",
+          "rowId": "73c5726c-d892-4f7b-895c-59a71c29080b",
+          "score": 0.7
+        },
+        {
+          "rank": 37,
+          "tier": "H",
+          "editorial": "What if customers trust Questrade for investing but refuse to deposit their salary?",
+          "matchedQuestion": "What if customers trust Questrade for investments but refuse to deposit their salary?",
+          "rowId": "f21a166b-7a0a-41a9-a919-44781cf782a2",
+          "score": 0.833
+        },
+        {
+          "rank": 38,
+          "tier": "H",
+          "editorial": "How would you design payroll switching when the employer's first deposit could fail?",
+          "matchedQuestion": "How would you design a safe payroll-switching experience when the employer's first deposit could fail?",
+          "rowId": "e896f79a-bee7-4d99-a673-d337bb38cd38",
+          "score": 0.867
+        },
+        {
+          "rank": 39,
+          "tier": "H",
+          "editorial": "Hundreds of customers haven't received their paycheques. What do you do first?",
+          "matchedQuestion": "It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?",
+          "rowId": "2fb1eeab-7958-4099-9216-e2b88d0de5c5",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 40,
+          "tier": "H",
+          "editorial": "Which three metrics would you put on your Questbank executive scorecard?",
+          "matchedQuestion": "Which three metrics would you put on your first Questbank executive scorecard?",
+          "rowId": "557cbeab-d17e-48bc-99de-1a54625ee37f",
+          "score": 0.909
+        }
+      ],
+      "missing": [],
+      "total": 40
+    },
+    "cross_functional_panel": {
+      "resolved": [
+        {
+          "rank": 1,
+          "tier": "VH",
+          "editorial": "Tell me about yourself.",
+          "matchedQuestion": "Tell me about yourself.",
+          "rowId": "2f3a780e-6b54-42b8-b56d-8936a471fa68",
+          "score": 1
+        },
+        {
+          "rank": 2,
+          "tier": "VH",
+          "editorial": "Why Questrade? Why this role?",
+          "matchedQuestion": "Why Questrade? Why this role?",
+          "rowId": "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+          "score": 1
+        },
+        {
+          "rank": 3,
+          "tier": "VH",
+          "editorial": "Walk me through the Interac e-Transfer product you launched at RBC.",
+          "matchedQuestion": "Walk me through the Interac e-Transfer product you launched at RBC.",
+          "rowId": "244e239c-2f88-4b6e-968f-ef8ce65daa70",
+          "score": 1
+        },
+        {
+          "rank": 4,
+          "tier": "VH",
+          "editorial": "Tell me about competing priorities with Risk, Compliance or Engineering.",
+          "matchedQuestion": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering.",
+          "rowId": "e09deee1-3efa-4774-9274-2f18848b739f",
+          "score": 0.727
+        },
+        {
+          "rank": 5,
+          "tier": "VH",
+          "editorial": "Tell me about a complex integration you led.",
+          "matchedQuestion": "Tell me about a complex integration you led.",
+          "rowId": "f8074663-5773-4b95-a25b-1e32a764c1a9",
+          "score": 1
+        },
+        {
+          "rank": 6,
+          "tier": "VH",
+          "editorial": "What did you personally decide on the Avion cashback launch?",
+          "matchedQuestion": "What did you personally decide on the Avion cashback withdrawal launch?",
+          "rowId": "27d2a524-6a0d-4a3d-b102-c531d65f368f",
+          "score": 0.9
+        },
+        {
+          "rank": 7,
+          "tier": "VH",
+          "editorial": "What did you own versus RBC's payments infrastructure team?",
+          "matchedQuestion": "What exactly did you own versus RBC's payments infrastructure team?",
+          "rowId": "f290b115-770e-4448-82ac-52f4334f34de",
+          "score": 0.9
+        },
+        {
+          "rank": 8,
+          "tier": "VH",
+          "editorial": "How do you work with designers and customer researchers?",
+          "matchedQuestion": "How do you work with designers and customer researchers?",
+          "rowId": "c79db9b5-4487-4e2d-b794-624b16332f9e",
+          "score": 1
+        },
+        {
+          "rank": 9,
+          "tier": "VH",
+          "editorial": "Why Interac e-Transfer instead of EFT for cashback withdrawals?",
+          "matchedQuestion": "Why use Interac e-Transfer rather than EFT for cashback withdrawals?",
+          "rowId": "3c199d05-67ba-4f4c-aa98-d7f06a2cc3c6",
+          "score": 0.636
+        },
+        {
+          "rank": 10,
+          "tier": "VH",
+          "editorial": "What's the difference between EFT and Interac e-Transfer?",
+          "matchedQuestion": "What's the difference between EFT and Interac e-Transfer?",
+          "rowId": "91cd5cac-65b4-41e6-be3b-76ba3c49e9b1",
+          "score": 1
+        },
+        {
+          "rank": 11,
+          "tier": "VH",
+          "editorial": "What happens if a payout API times out after a request was accepted?",
+          "matchedQuestion": "What happens if a payout API times out after the request was accepted?",
+          "rowId": "fb3c9a13-b37d-45df-b095-e14f8e84bed2",
+          "score": 0.909
+        },
+        {
+          "rank": 12,
+          "tier": "VH",
+          "editorial": "How would you prevent duplicate cashback payouts?",
+          "matchedQuestion": "How would you prevent a customer from receiving the same cashback payout twice?",
+          "rowId": "c864344c-3df9-4f30-b478-278b4e58f8d4",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 13,
+          "tier": "H",
+          "editorial": "What is reconciliation, and why must a PM understand it?",
+          "matchedQuestion": "What is reconciliation, and why does a PM need to understand it?",
+          "rowId": "21cb8214-854d-48a1-a86d-c1d8fd37bf89",
+          "score": 0.625
+        },
+        {
+          "rank": 14,
+          "tier": "H",
+          "editorial": "How would you handle payment exceptions as volume grows?",
+          "matchedQuestion": "How would you handle payment exceptions and straight-through processing as transaction volume grows?",
+          "rowId": "4068ab67-0613-40ae-bb08-f810651d27a0",
+          "score": 0.615
+        },
+        {
+          "rank": 15,
+          "tier": "H",
+          "editorial": "What if the ledger and customer-facing balances don't match?",
+          "matchedQuestion": "What if the ledger balance and customer-facing balance don't match?",
+          "rowId": "0c8b1a1c-7290-4b60-8c88-8d978935beae",
+          "score": 0.8
+        },
+        {
+          "rank": 16,
+          "tier": "H",
+          "editorial": "Where should transaction status, balances and reconciliation responsibilities sit?",
+          "matchedQuestion": "Where should transaction status, balance calculation and reconciliation responsibilities sit?",
+          "rowId": "695ace4a-7c53-415e-9eb2-5f885d680c2b",
+          "score": 0.727
+        },
+        {
+          "rank": 17,
+          "tier": "H",
+          "editorial": "What controls would you require before enabling a new transfer type?",
+          "matchedQuestion": "What controls would you require before allowing a new transfer type?",
+          "rowId": "83d6cb34-59ce-42d0-88ca-dfb46a91bfae",
+          "score": 0.818
+        },
+        {
+          "rank": 18,
+          "tier": "H",
+          "editorial": "How would you roll out a critical payments integration?",
+          "matchedQuestion": "How would you roll out a critical payments integration?",
+          "rowId": "038f6014-b892-4a64-84d6-e09048b9fea2",
+          "score": 1
+        },
+        {
+          "rank": 19,
+          "tier": "H",
+          "editorial": "How would you prioritize core account reliability against differentiated features?",
+          "matchedQuestion": "How would you prioritize AI features against core banking reliability?",
+          "rowId": "14239bac-e0fc-4f29-abfe-3c7a4386539b",
+          "score": 0.727
+        },
+        {
+          "rank": 20,
+          "tier": "H",
+          "editorial": "What metrics would you use to measure everyday banking success?",
+          "matchedQuestion": "What metrics would you use to measure success in everyday banking?",
+          "rowId": "735da866-20fc-4837-b67d-c91a6b4e2c77",
+          "score": 1
+        },
+        {
+          "rank": 21,
+          "tier": "H",
+          "editorial": "Hundreds of customers haven't received their salaries. What do you do first?",
+          "matchedQuestion": "It's payday and hundreds of customers say their salary hasn't arrived. What do you do in the first 15 minutes?",
+          "rowId": "2fb1eeab-7958-4099-9216-e2b88d0de5c5",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 22,
+          "tier": "H",
+          "editorial": "Why might available balance differ from posted balance?",
+          "matchedQuestion": "Why might my available balance be different from my posted balance?",
+          "rowId": "0f093e83-c8de-44bd-9398-e0f186a814df",
+          "score": 0.75
+        },
+        {
+          "rank": 23,
+          "tier": "H",
+          "editorial": "A purchase appears twice, pending and posted. How would you fix it?",
+          "matchedQuestion": "A customer sees the same purchase twice, once pending and once posted. How would you fix it?",
+          "rowId": "ec3a7c0b-b921-45be-8548-df8c95b2f713",
+          "score": 0.6
+        },
+        {
+          "rank": 24,
+          "tier": "H",
+          "editorial": "Card payments are declining but the banking app and ledger are online. Where do you investigate?",
+          "matchedQuestion": "Card payments start declining, but the banking app and core ledger are online. Where do you look?",
+          "rowId": "d8be8368-b755-4baf-8494-3cf9a9f8a69e",
+          "score": 0.765
+        },
+        {
+          "rank": 25,
+          "tier": "H",
+          "editorial": "Why choose a headless membership platform instead of building internally?",
+          "matchedQuestion": "Why did you choose a headless membership platform rather than building everything internally?",
+          "rowId": "a85b536e-5e20-468f-87d9-fb447ae796f6",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 26,
+          "tier": "H",
+          "editorial": "How would you build on Temenos core banking without owning the ledger?",
+          "matchedQuestion": "How would you build product on top of Temenos core banking without owning the ledger?",
+          "rowId": "a8fe6bd5-ecc2-4c0f-95d5-63bb51f0c20c",
+          "score": 0.846
+        },
+        {
+          "rank": 27,
+          "tier": "H",
+          "editorial": "How would you choose between building and buying a payment service?",
+          "matchedQuestion": "How would you choose between building a payment service and buying one?",
+          "rowId": "009d20a6-a8cf-458a-a7ea-9ef696c693e0",
+          "score": 0.909
+        },
+        {
+          "rank": 28,
+          "tier": "H",
+          "editorial": "How would you test an AI-powered financial feature before broad launch?",
+          "matchedQuestion": "How would you test an AI-powered financial feature before launching it broadly?",
+          "rowId": "df23d3a1-181c-4c9b-9460-42d635d2352d",
+          "score": 0.667
+        },
+        {
+          "rank": 29,
+          "tier": "H",
+          "editorial": "How would you choose an experiment's primary metric and guardrails?",
+          "matchedQuestion": "How would you select an experiment's primary metric and guardrails?",
+          "rowId": "6441c9f1-738a-4bd4-b819-92ddf2c1de5b",
+          "score": 0.8
+        },
+        {
+          "rank": 30,
+          "tier": "H",
+          "editorial": "How did you measure success for Avion cashback withdrawals?",
+          "matchedQuestion": "How did you measure success for the Avion cashback withdrawal launch?",
+          "rowId": "11375f03-31fa-45da-8557-488a8cc63beb",
+          "score": 0.667
+        },
+        {
+          "rank": 31,
+          "tier": "H",
+          "editorial": "How would you determine whether a 5% spending lift justified an incentive?",
+          "matchedQuestion": "How would you decide if a 5% incremental spending lift justified an incentive?",
+          "rowId": "35d5ff6e-5890-41c9-a4f2-2d48476b7d3d",
+          "score": 0.636
+        },
+        {
+          "rank": 32,
+          "tier": "H",
+          "editorial": "Conversion moved from 10% to 12%. Is that a 2% or 20% improvement?",
+          "matchedQuestion": "Your conversion improved from 10% to 12%. Is that 2% or 20%?",
+          "rowId": "0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 33,
+          "tier": "H",
+          "editorial": "How would you protect customers from unauthorized AI-agent actions?",
+          "matchedQuestion": "How would you protect customers from malicious or unauthorized AI-agent actions?",
+          "rowId": "1429b53c-f5fd-4819-bb3b-c116ce1ed889",
+          "score": 0.9
+        },
+        {
+          "rank": 34,
+          "tier": "H",
+          "editorial": "What if an AI agent provides an incorrect account balance?",
+          "matchedQuestion": "What happens if an AI agent gives the customer an incorrect account balance or invents a transaction?",
+          "rowId": "3772aed5-2bdd-43f0-a114-3eb66342d397",
+          "score": 1,
+          "via": "manual_override"
+        },
+        {
+          "rank": 35,
+          "tier": "H",
+          "editorial": "How would you design agentic finance connections with consent and approval?",
+          "matchedQuestion": "How would you design MCP or agentic finance connections with consent and human approval?",
+          "rowId": "fb30286a-49ca-4ce1-b54a-4b7c4cea2d58",
+          "score": 0.846
+        },
+        {
+          "rank": 36,
+          "tier": "H",
+          "editorial": "What is MCP, and how is it different from a chatbot?",
+          "matchedQuestion": "What is MCP, and why is it different from putting a chatbot inside a financial app?",
+          "rowId": "7547195c-f21b-4d86-9d4f-c7dd07f73109",
+          "score": 0.92
+        },
+        {
+          "rank": 37,
+          "tier": "H",
+          "editorial": "What's the difference between KYC, AML monitoring and fraud prevention?",
+          "matchedQuestion": "What is the difference between KYC, AML monitoring and transaction fraud prevention?",
+          "rowId": "ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c",
+          "score": 0.75
+        },
+        {
+          "rank": 38,
+          "tier": "H",
+          "editorial": "What if Risk requires a step that reduces conversion by 20%?",
+          "matchedQuestion": "What if Risk wants a step that cuts conversion by 20%?",
+          "rowId": "9e7049a3-2fa7-4388-931c-875a7cc4d416",
+          "score": 0.556
+        },
+        {
+          "rank": 39,
+          "tier": "H",
+          "editorial": "What if Risk still says no after you've presented your evidence?",
+          "matchedQuestion": "What if Risk still says no after you've presented all your evidence?",
+          "rowId": "458f82bd-542b-4331-92fb-d77bb3645d06",
+          "score": 0.9
+        },
+        {
+          "rank": 40,
+          "tier": "H",
+          "editorial": "What if Engineering says the launch is unsafe but leadership wants the original date?",
+          "matchedQuestion": "What if Engineering says your banking launch plan is unsafe but leadership wants the date?",
+          "rowId": "77caa5b4-817d-47b3-9569-366aa012daf6",
+          "score": 0.714
+        }
+      ],
+      "missing": [],
+      "total": 40
+    }
+  }
+}

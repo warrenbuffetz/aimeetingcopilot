@@ -74,7 +74,7 @@ type Props = {
   className?: string;
   catalog: EnrichedQaRow[];
   context: InterviewSessionContext;
-  nextSuggestions: FollowUpSuggestion[];
+  topInterviewQuestions: FollowUpSuggestion[];
   pinnedQuestion: string | null;
   mapFocus: QuestionMapFocus | null;
   onMapFocusChange: (focus: QuestionMapFocus | null) => void;
@@ -86,6 +86,8 @@ type Props = {
   onSearchOpen: () => void;
   practiceFooter: React.ReactNode;
 };
+
+const TOP_INITIAL_VISIBLE = 5;
 
 function ActiveExperienceCard({
   context,
@@ -138,7 +140,7 @@ export function InterviewNavigator({
   className,
   catalog,
   context,
-  nextSuggestions,
+  topInterviewQuestions,
   pinnedQuestion,
   mapFocus,
   onMapFocusChange,
@@ -155,6 +157,12 @@ export function InterviewNavigator({
   const [browseQuery, setBrowseQuery] = useState("");
   const [sectionFilter, setSectionFilter] = useState<LibrarySection | "all">("all");
   const [mapStack, setMapStack] = useState<QuestionMapFocus[]>([]);
+  const [topExpanded, setTopExpanded] = useState(false);
+
+  useEffect(() => {
+    setTopExpanded(false);
+  }, [context.activeInterviewRound]);
+  const [hideAskedTop, setHideAskedTop] = useState(false);
 
   const activeMapFocus = mapStack.length > 0 ? mapStack[mapStack.length - 1] : mapFocus;
 
@@ -379,34 +387,75 @@ export function InterviewNavigator({
 
             {!activeMapFocus && tab === "next" && (
               <section>
-                <h3 className={cn("mb-1 text-[10px] font-medium uppercase tracking-wide", liveSemantic.labelSuggested)}>
-                  Likely next questions
-                </h3>
-                <div className="space-y-1.5">
-                  {nextSuggestions.map((s) => (
-                    <AnswerPreviewCard
-                      key={s.rowId}
-                      source={s}
-                      catalog={catalog}
-                      semanticAccent="suggested"
-                      expanded={Boolean(expanded[s.rowId])}
-                      onToggle={() => toggleExpanded(s.rowId)}
-                      onOpenMain={() => {
-                        const row = catalog.find((r) => r.id === s.rowId);
-                        if (row) onOpenInMainPanel(row);
-                      }}
-                      onPin={() => {
-                        const row = catalog.find((r) => r.id === s.rowId);
-                        if (row) onPin(row);
-                      }}
+                <div className="mb-1 flex items-center justify-between gap-2">
+                  <h3 className={cn("text-[10px] font-medium uppercase tracking-wide", liveSemantic.labelSuggested)}>
+                    Top interview questions
+                  </h3>
+                  <label className="flex items-center gap-1 text-[9px] text-muted-foreground">
+                    <input
+                      type="checkbox"
+                      className="h-3 w-3 rounded border-border"
+                      checked={hideAskedTop}
+                      onChange={(e) => setHideAskedTop(e.target.checked)}
                     />
-                  ))}
-                  {nextSuggestions.length === 0 && (
-                    <p className="text-xs text-muted-foreground">
-                      Start a topic or load an answer to see follow-ups.
-                    </p>
+                    Hide asked
+                  </label>
+                </div>
+                <p className="mb-2 text-[10px] leading-snug text-muted-foreground">
+                  Full ranked list for this round ({topInterviewQuestions.length}) — stable while you interview.
+                </p>
+                <div className="max-h-[min(52vh,28rem)] space-y-1.5 overflow-y-auto pr-0.5">
+                  {(() => {
+                    const filtered = hideAskedTop
+                      ? topInterviewQuestions.filter((s) => !context.askedQuestionIds.includes(s.rowId))
+                      : topInterviewQuestions;
+                    const visible = topExpanded ? filtered : filtered.slice(0, TOP_INITIAL_VISIBLE);
+                    return visible.map((s) => {
+                      const asked = context.askedQuestionIds.includes(s.rowId);
+                      return (
+                        <div
+                          key={s.reason}
+                          className={cn(asked && "opacity-55")}
+                          title={asked ? "Marked asked when a prepared answer was matched" : undefined}
+                        >
+                          <AnswerPreviewCard
+                            source={s}
+                            catalog={catalog}
+                            semanticAccent="suggested"
+                            expanded={Boolean(expanded[s.rowId])}
+                            onToggle={() => toggleExpanded(s.rowId)}
+                            onOpenMain={() => {
+                              const row = catalog.find((r) => r.id === s.rowId);
+                              if (row) onOpenInMainPanel(row, { fromBrowse: true });
+                            }}
+                            onPin={() => {
+                              const row = catalog.find((r) => r.id === s.rowId);
+                              if (row) onPin(row);
+                            }}
+                            showShortFirst
+                          />
+                          {asked && (
+                            <p className="px-1 text-[9px] uppercase tracking-wide text-muted-foreground">Asked</p>
+                          )}
+                        </div>
+                      );
+                    });
+                  })()}
+                  {topInterviewQuestions.length === 0 && (
+                    <p className="text-xs text-muted-foreground">No prepared questions for this profile.</p>
                   )}
                 </div>
+                {topInterviewQuestions.length > TOP_INITIAL_VISIBLE && (
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant="ghost"
+                    className="mt-2 h-7 w-full text-[10px]"
+                    onClick={() => setTopExpanded((v) => !v)}
+                  >
+                    {topExpanded ? "Show fewer" : `Show all ${topInterviewQuestions.length}`}
+                  </Button>
+                )}
               </section>
             )}
 
