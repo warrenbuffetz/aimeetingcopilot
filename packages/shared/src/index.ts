@@ -69,6 +69,15 @@ export interface AnalyzeQuestionResult {
   queryCorrections?: string[];
   /** Top alternative matches for manual disambiguation */
   alternativeMatches?: ClosestLibrarySuggestion[];
+  /** Client staged match before hybrid confirm (optional). */
+  matchPhase?: "optimistic" | "confirmed";
+  /** Server-side analyze breakdown (optional, for tuning). */
+  analyzeTimingMs?: {
+    fetchMs: number;
+    semanticMs: number;
+    rankMs: number;
+    totalMs: number;
+  };
 }
 
 export { isInterviewPrompt, isLikelyQuestion } from "./question-heuristics";

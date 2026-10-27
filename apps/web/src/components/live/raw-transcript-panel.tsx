@@ -9,6 +9,7 @@ import {
   stickToBottomKey,
 } from "@/components/live/transcript-display-units";
 import { TranscriptSpeechGroup } from "@/components/live/transcript-speech-group";
+import { TranscriptReadbackGroup } from "@/components/live/transcript-readback-group";
 import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
 import { AudioInputMeter } from "@/components/live/audio-input-meter";
@@ -152,6 +153,29 @@ export function RawTranscriptPanel({
           </p>
           <ul className="space-y-2 text-sm">
             {displayUnits.map((unit) => {
+              if (unit.type === "readback_group") {
+                const head = unit.lines[0];
+                return (
+                  <li
+                    key={unit.groupId}
+                    className="rounded-md border border-border/40 bg-card/30 px-0.5"
+                  >
+                    <div className="flex items-center gap-2 px-1.5 pt-1 text-[10px] text-muted-foreground">
+                      {formatLineTime(head.createdAt) && (
+                        <span className="tabular-nums">{formatLineTime(head.createdAt)}</span>
+                      )}
+                      <span>reading answer · {unit.wordCount} words</span>
+                    </div>
+                    <TranscriptReadbackGroup
+                      lines={unit.lines}
+                      fullText={unit.fullText}
+                      expanded={expandedKeys.has(unit.groupId)}
+                      onToggleExpand={() => toggleExpanded(unit.groupId)}
+                    />
+                  </li>
+                );
+              }
+
               if (unit.type === "group") {
                 const head = unit.lines[0];
                 return (

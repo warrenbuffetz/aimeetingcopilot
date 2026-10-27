@@ -725,7 +725,11 @@ export default function LiveInterviewPage() {
               <span className="text-xs text-amber-200/90">New question waiting</span>
             )}
             {centerNotice && <span className="text-xs text-amber-200/85">{centerNotice}</span>}
-            {session.loading && <span className="text-xs text-muted-foreground">Retrieving…</span>}
+            {session.loading && (
+              <span className="text-xs text-muted-foreground">
+                {session.result?.matchPhase === "optimistic" ? "Confirming match…" : "Retrieving…"}
+              </span>
+            )}
           </div>
           {session.matchPreview && (
             <div className="flex flex-wrap items-center justify-between gap-2 border-b border-sky-500/30 bg-sky-500/10 px-4 py-3">

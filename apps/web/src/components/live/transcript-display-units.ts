@@ -9,7 +9,23 @@ export type TranscriptDisplayUnit =
       lines: TranscriptLine[];
       fullText: string;
       wordCount: number;
+    }
+  | {
+      type: "readback_group";
+      groupId: string;
+      lines: TranscriptLine[];
+      fullText: string;
+      wordCount: number;
     };
+
+function joinReadbackTexts(groupLines: TranscriptLine[]): string {
+  return groupLines
+    .map((l) => l.text.trim())
+    .filter(Boolean)
+    .join(" ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
 
 export function buildTranscriptDisplayUnits(lines: TranscriptLine[]): TranscriptDisplayUnit[] {
   const units: TranscriptDisplayUnit[] = [];
@@ -32,10 +48,36 @@ export function buildTranscriptDisplayUnits(lines: TranscriptLine[]): Transcript
         fullText,
         wordCount: countWords(fullText),
       });
-    } else {
-      units.push({ type: "single", line });
-      i += 1;
+      continue;
     }
+
+    if (line.kind === "readback" && line.isFinal) {
+      const groupLines: TranscriptLine[] = [line];
+      i += 1;
+      while (
+        i < lines.length &&
+        lines[i].kind === "readback" &&
+        lines[i].isFinal &&
+        !lines[i].speechGroupId
+      ) {
+        groupLines.push(lines[i]);
+        i += 1;
+      }
+      if (groupLines.length > 1) {
+        const fullText = joinReadbackTexts(groupLines);
+        units.push({
+          type: "readback_group",
+          groupId: `readback:${groupLines[0].id}`,
+          lines: groupLines,
+          fullText,
+          wordCount: countWords(fullText),
+        });
+        continue;
+      }
+    }
+
+    units.push({ type: "single", line });
+    i += 1;
   }
   return units;
 }

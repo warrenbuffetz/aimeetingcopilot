@@ -2,38 +2,19 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 import {
   LEXICAL_MATCH_THRESHOLD_PREPARED,
   LEXICAL_MATCH_THRESHOLD_WEAK,
-  enrichLibrary,
-  isRetrievalExcluded,
-  lexicalRowsFromEnriched,
   normalizeInterviewQuery,
   rankPreparedQaHybrid,
   type AnalyzeQuestionResult,
   type InterviewSessionContext,
-  type LexicalQaRow,
-  type PreparedFollowUp,
-  type PersistedNavigatorMeta,
   type RetrievalMatch,
 } from "@interview-copilot/shared";
 import { isSemanticSearchEnabled } from "@/lib/env";
+import { getPreparedLibraryForAnalyze } from "@/lib/retrieval/analyze-library-cache";
 import { semanticSearchPrepared } from "@/lib/retrieval/semantic";
 import { sanitizeUserContent } from "@/lib/sanitize";
 
-function parseFollowUps(raw: unknown): PreparedFollowUp[] {
-  if (!Array.isArray(raw)) return [];
-  return raw
-    .filter((x) => x && typeof x === "object")
-    .map((x) => {
-      const o = x as { question?: string; answer?: string };
-      return {
-        question: String(o.question ?? "").trim(),
-        answer: String(o.answer ?? "").trim(),
-      };
-    })
-    .filter((x) => x.question.length >= 3 && x.answer.length >= 1);
-}
-
 function spokenPreview(
-  enriched: ReturnType<typeof enrichLibrary>[number] | undefined,
+  enriched: Awaited<ReturnType<typeof getPreparedLibraryForAnalyze>>["enriched"][number] | undefined,
   fullAnswer: string
 ): string[] {
   const spoken =
@@ -52,65 +33,41 @@ export async function analyzeQuestionLocal(
     sessionContext?: InterviewSessionContext | null;
   }
 ): Promise<AnalyzeQuestionResult> {
+  const totalStart = performance.now();
   const sanitized = sanitizeUserContent(opts.question, 2000);
   const { query: question, corrections: queryCorrections } = normalizeInterviewQuery(sanitized);
 
-  const baseCols = "id, question, answer, is_preferred, category";
-  const colsWithMeta = `${baseCols}, follow_ups, navigator_meta`;
+  let fetchMs = 0;
+  let semanticMs = 0;
+  let rankMs = 0;
 
-  let query = supabase.from("prepared_qa").select(colsWithMeta);
-  if (opts.profileId) {
-    query = query.eq("profile_id", opts.profileId);
-  }
-  let { data: rows, error } = await query;
-
-  if (error && /follow_ups|navigator_meta/i.test(error.message)) {
-    let fallback = supabase.from("prepared_qa").select(baseCols);
-    if (opts.profileId) {
-      fallback = fallback.eq("profile_id", opts.profileId);
-    }
-    const res = await fallback;
-    rows = res.data?.map((r) => ({ ...r, follow_ups: [], navigator_meta: {} })) ?? null;
-    error = res.error;
-  }
-
-  if (error) throw error;
-
-  const allRows = rows ?? [];
-  const activeRows = allRows.filter((r) => {
-    const meta = (r.navigator_meta ?? {}) as PersistedNavigatorMeta;
-    const enriched = enrichLibrary([
-      {
-        id: r.id,
-        question: r.question,
-        answer: r.answer,
-        navigatorMeta: meta,
-      },
-    ])[0];
-    return !isRetrievalExcluded(enriched.navigator);
+  const fetchStart = performance.now();
+  const libraryPromise = getPreparedLibraryForAnalyze(supabase, opts.profileId).then((lib) => {
+    fetchMs = performance.now() - fetchStart;
+    return lib;
   });
 
-  const enriched = enrichLibrary(
-    activeRows.map((r) => ({
-      id: r.id,
-      question: r.question,
-      answer: r.answer,
-      isPreferred: r.is_preferred,
-      followUps: parseFollowUps(r.follow_ups),
-      category: r.category,
-      navigatorMeta: (r.navigator_meta ?? {}) as PersistedNavigatorMeta,
-    }))
-  );
+  const semanticStart = performance.now();
+  const semanticPromise = (
+    isSemanticSearchEnabled()
+      ? semanticSearchPrepared(supabase, question, opts.profileId).catch((e) => {
+          console.warn("semantic search unavailable, lexical only", e);
+          return { matches: [], status: "error" as const };
+        })
+      : Promise.resolve({ matches: [], status: "lexical_only" as const })
+  ).then((pack) => {
+    semanticMs = performance.now() - semanticStart;
+    return pack;
+  });
 
-  const dbFollowUpsById = new Map(
-    activeRows.map((r) => [r.id, parseFollowUps(r.follow_ups)])
-  );
-  const library: LexicalQaRow[] = lexicalRowsFromEnriched(enriched, dbFollowUpsById);
+  const [libPack, semanticPack] = await Promise.all([libraryPromise, semanticPromise]);
+
+  const { enriched, library } = libPack;
 
   let semanticBySourceId: Map<string, number> | null = null;
   let matchMethod: AnalyzeQuestionResult["matchMethod"] = "lexical";
   let semanticStatus: AnalyzeQuestionResult["semanticStatus"] = isSemanticSearchEnabled()
-    ? "unavailable"
+    ? semanticPack.status
     : "lexical_only";
 
   if (library.length === 0) {
@@ -126,31 +83,26 @@ export async function analyzeQuestionLocal(
       matches: [],
       matchMethod: "lexical",
       semanticStatus,
+      matchPhase: "confirmed",
+      analyzeTimingMs: {
+        fetchMs: Math.round(fetchMs),
+        semanticMs: Math.round(semanticMs),
+        rankMs: 0,
+        totalMs: Math.round(performance.now() - totalStart),
+      },
     };
   }
 
-  if (isSemanticSearchEnabled()) {
-    try {
-      const { matches: semantic, status } = await semanticSearchPrepared(
-        supabase,
-        question,
-        opts.profileId
-      );
-      semanticStatus = status;
-      if (semantic.length > 0) {
-        semanticBySourceId = new Map(
-          semantic
-            .filter((m) => m.contentType === "prepared_qa")
-            .map((m) => [m.sourceId, m.similarity])
-        );
-        if (semanticBySourceId.size > 0) matchMethod = "hybrid";
-      }
-    } catch (e) {
-      console.warn("semantic search unavailable, lexical only", e);
-      semanticStatus = "error";
-    }
+  if (semanticPack.matches.length > 0) {
+    semanticBySourceId = new Map(
+      semanticPack.matches
+        .filter((m) => m.contentType === "prepared_qa")
+        .map((m) => [m.sourceId, m.similarity])
+    );
+    if (semanticBySourceId.size > 0) matchMethod = "hybrid";
   }
 
+  const rankStart = performance.now();
   const activeRound = opts.sessionContext?.activeInterviewRound ?? null;
   const ranked = rankPreparedQaHybrid(
     question,
@@ -160,6 +112,18 @@ export async function analyzeQuestionLocal(
     semanticBySourceId,
     activeRound
   );
+  rankMs = performance.now() - rankStart;
+
+  const timing = {
+    fetchMs: Math.round(fetchMs),
+    semanticMs: Math.round(semanticMs),
+    rankMs: Math.round(rankMs),
+    totalMs: Math.round(performance.now() - totalStart),
+  };
+
+  if (process.env.NODE_ENV === "development") {
+    console.debug("[analyze]", { profileId: opts.profileId, ...timing });
+  }
 
   const best = ranked[0];
   const alternatives = ranked.slice(1, 4).map((r) => ({
@@ -199,6 +163,8 @@ export async function analyzeQuestionLocal(
       matches,
       matchMethod,
       semanticStatus,
+      matchPhase: "confirmed",
+      analyzeTimingMs: timing,
     };
   }
 
@@ -227,6 +193,8 @@ export async function analyzeQuestionLocal(
     matches,
     matchMethod,
     semanticStatus,
+    matchPhase: "confirmed",
     alternativeMatches: alternatives.length > 0 ? alternatives : undefined,
+    analyzeTimingMs: timing,
   };
 }

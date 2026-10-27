@@ -3,11 +3,17 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { analyzeResultFromPreparedRow } from "@/lib/prepared-row-result";
 import {
+  analyzeResultFromLexicalRank,
+  shouldReplaceOptimisticWithHybrid,
+} from "@/lib/retrieval/analyze-result-from-lexical";
+import {
   LEXICAL_MATCH_THRESHOLD_PREPARED,
   LEXICAL_MATCH_THRESHOLD_WEAK,
   classifyTurn,
   isInterviewPrompt,
   mergeTranscriptFragments,
+  normalizeInterviewQuery,
+  rankPreparedQaLexical,
   shouldFinalizeTurnImmediately,
   turnSilenceMs,
   type AnalyzeQuestionResult,
@@ -116,6 +122,7 @@ export function useLiveSession(
   currentQuestionRef.current = currentQuestion;
   const analyzeSeqRef = useRef(0);
   const analyzeCacheRef = useRef<Map<string, { at: number; data: AnalyzeQuestionResult }>>(new Map());
+  const optimisticResultRef = useRef<{ seq: number; result: AnalyzeQuestionResult } | null>(null);
   const ANALYZE_CACHE_MS = 45_000;
 
   useEffect(() => {
@@ -273,6 +280,26 @@ export function useLiveSession(
       }
 
       const seq = ++analyzeSeqRef.current;
+      optimisticResultRef.current = null;
+
+      const canShowOptimisticMain =
+        (!options?.respectMainPanelLock || options?.forceMainPanel) && libraryRef.current.length > 0;
+      let optimistic: AnalyzeQuestionResult | null = null;
+      if (canShowOptimisticMain) {
+        const { query, corrections } = normalizeInterviewQuery(question.trim());
+        const ranked = rankPreparedQaLexical(query, libraryRef.current);
+        optimistic = analyzeResultFromLexicalRank(question.trim(), ranked, corrections);
+        if (optimistic) {
+          optimisticResultRef.current = { seq, result: optimistic };
+          setResult(optimistic);
+          if (!options?.preserveDetectedQuestion) {
+            setCurrentQuestion(question);
+          }
+          setAnswerLocked(true);
+          setMatchPreview(null);
+        }
+      }
+
       setLoading(true);
       try {
         const ctx = options?.sessionContext ?? getSessionContext?.();
@@ -306,38 +333,57 @@ export function useLiveSession(
           throw new Error(message);
         }
         const data = (await res.json()) as AnalyzeQuestionResult;
+        const confirmed: AnalyzeQuestionResult = { ...data, matchPhase: "confirmed" };
         if (seq !== analyzeSeqRef.current) {
           return null;
         }
 
-        analyzeCacheRef.current.set(normalizedKey, { at: Date.now(), data });
+        analyzeCacheRef.current.set(normalizedKey, { at: Date.now(), data: confirmed });
 
-        const lowConfidence = data.confidence < LEXICAL_MATCH_THRESHOLD_PREPARED;
+        if (process.env.NODE_ENV === "development" && confirmed.analyzeTimingMs) {
+          console.debug("[analyze] server", confirmed.analyzeTimingMs);
+        }
+
+        const lowConfidence = confirmed.confidence < LEXICAL_MATCH_THRESHOLD_PREPARED;
         const skipMainUpdate =
           !options?.forceMainPanel && options?.respectMainPanelLock && lowConfidence;
 
         const source = options?.analysisSource ?? "auto";
+        const pendingOptimistic =
+          optimisticResultRef.current?.seq === seq ? optimisticResultRef.current.result : null;
+        optimisticResultRef.current = null;
+
         if (!skipMainUpdate) {
-          setResult(data);
+          const swapTop =
+            pendingOptimistic && shouldReplaceOptimisticWithHybrid(pendingOptimistic, confirmed);
+          if (!pendingOptimistic || swapTop || pendingOptimistic.answer !== confirmed.answer) {
+            setResult(confirmed);
+          } else {
+            setResult({
+              ...confirmed,
+              answer: pendingOptimistic.answer,
+              matchPhase: "confirmed",
+            });
+          }
           if (!options?.preserveDetectedQuestion) {
             setCurrentQuestion(question);
-            setQuestionHistory((h) => [...h, data]);
+            setQuestionHistory((h) => [...h, confirmed]);
             setHistorySources((s) => [...s, source]);
             setHistoryIndex((h) => h + 1);
           }
           setAnswerLocked(true);
           setMatchPreview(null);
         } else {
-          setMatchPreview({ question, result: data });
+          setMatchPreview({ question, result: confirmed });
         }
         setCandidate(null);
         lastPromoteAtRef.current = Date.now();
         if (options?.announce) {
           setStatusAnnouncement(
-            skipMainUpdate ? `Low-confidence match — see navigator` : `Matched: ${data.question}`
+            skipMainUpdate ? `Low-confidence match — see navigator` : `Matched: ${confirmed.question}`
           );
         }
-        return data;
+        return confirmed;
       } catch (e) {
         const message = e instanceof Error ? e.message : "Analyze failed";
         console.error(e);

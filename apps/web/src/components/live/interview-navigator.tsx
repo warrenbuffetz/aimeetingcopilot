@@ -21,7 +21,6 @@ import {
 import { AnswerPreviewCard } from "@/components/live/answer-preview-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
 import { ArrowLeft, ChevronDown, RotateCcw, Search } from "lucide-react";
@@ -247,9 +246,8 @@ export function InterviewNavigator({
 
   return (
     <div className={cn("flex min-h-0 flex-1 flex-col overflow-hidden", className)}>
-      <ScrollArea className="min-h-0 flex-1">
-        <div className="flex min-h-0 flex-col">
-          <div className="flex items-center justify-between gap-2 border-b border-border px-2 py-2">
+      <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
+          <div className="flex shrink-0 items-center justify-between gap-2 border-b border-border px-2 py-2">
             <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
               Interview Navigator
             </span>
@@ -260,7 +258,7 @@ export function InterviewNavigator({
           </div>
 
           {activeMapFocus ? (
-            <div className="border-b border-border px-2 py-2">
+            <div className="shrink-0 border-b border-border px-2 py-2">
               <div className="flex items-center gap-1">
                 <Button
                   type="button"
@@ -301,7 +299,7 @@ export function InterviewNavigator({
               </p>
             </div>
           ) : (
-            <div className="flex border-b border-border px-2 pt-1">
+            <div className="flex shrink-0 border-b border-border px-2 pt-1">
               {(
                 [
                   ["next", "Next"],
@@ -328,16 +326,15 @@ export function InterviewNavigator({
             </div>
           )}
 
-          <div className="space-y-3 p-2">
+          <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden p-2">
           {!activeMapFocus && (
+          <div className="shrink-0 space-y-3">
           <ActiveExperienceCard
             context={context}
             onSetExperience={onSetExperience}
             onClearContext={onClearContext}
           />
-          )}
-          {!activeMapFocus && (
-          <section className="mx-2 mb-2 rounded-md border border-border/70 bg-muted/5 px-2 py-2">
+          <section className="rounded-md border border-border/70 bg-muted/5 px-2 py-2">
             <p className="text-[10px] font-medium uppercase text-muted-foreground">Interview round (editorial)</p>
             <select
               className="mt-1 h-7 w-full rounded border border-border bg-background px-1 text-[10px]"
@@ -353,10 +350,11 @@ export function InterviewNavigator({
               ))}
             </select>
           </section>
+          </div>
           )}
 
             {activeMapFocus && (
-              <section className="space-y-2">
+              <section className="min-h-0 flex-1 space-y-2 overflow-y-auto">
                 {mapTree.length === 0 && (
                   <p className="text-xs text-muted-foreground">No prepared answers match this topic.</p>
                 )}
@@ -415,8 +413,8 @@ export function InterviewNavigator({
             )}
 
             {!activeMapFocus && tab === "next" && (
-              <section>
-                <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
+              <section className="flex min-h-0 flex-1 flex-col">
+                <div className="mb-1 flex shrink-0 flex-wrap items-center justify-between gap-2">
                   <h3 className={cn("text-[10px] font-medium uppercase tracking-wide", liveSemantic.labelSuggested)}>
                     Top interview questions
                   </h3>
@@ -443,10 +441,10 @@ export function InterviewNavigator({
                     </label>
                   </div>
                 </div>
-                <p className="mb-2 text-[10px] leading-snug text-muted-foreground">
+                <p className="mb-2 shrink-0 text-[10px] leading-snug text-muted-foreground">
                   Full ranked list for this round ({topInterviewQuestions.length}) — stable while you interview.
                 </p>
-                <div className="max-h-[min(52vh,28rem)] space-y-1.5 overflow-y-auto pr-0.5">
+                <div className="min-h-0 flex-1 space-y-1.5 overflow-y-auto pr-0.5">
                   {(() => {
                     const filtered = hideAskedTop
                       ? topInterviewQuestions.filter((s) => !context.askedQuestionIds.includes(s.rowId))
@@ -497,7 +495,7 @@ export function InterviewNavigator({
                     type="button"
                     size="sm"
                     variant="ghost"
-                    className="mt-2 h-7 w-full text-[10px]"
+                    className="mt-2 h-7 w-full shrink-0 text-[10px]"
                     onClick={() => setTopExpanded((v) => !v)}
                   >
                     {topExpanded ? "Show fewer" : `Show all ${topInterviewQuestions.length}`}
@@ -507,7 +505,7 @@ export function InterviewNavigator({
             )}
 
             {!activeMapFocus && tab === "experiences" && (
-              <section className="space-y-2">
+              <section className="min-h-0 flex-1 space-y-2 overflow-y-auto">
                 <p className="text-[10px] text-muted-foreground">
                   Browse only — does not change live interview context.
                 </p>
@@ -554,7 +552,7 @@ export function InterviewNavigator({
             )}
 
             {!activeMapFocus && tab === "all" && (
-              <section>
+              <section className="min-h-0 flex-1 overflow-y-auto">
                 <Input
                   value={browseQuery}
                   onChange={(e) => setBrowseQuery(e.target.value)}
@@ -622,13 +620,12 @@ export function InterviewNavigator({
           </div>
 
           {pinnedQuestion && (
-            <div className="border-t border-amber-500/30 bg-amber-500/10 px-2 py-1.5 text-[10px] text-amber-100/90">
+            <div className="shrink-0 border-t border-amber-500/30 bg-amber-500/10 px-2 py-1.5 text-[10px] text-amber-100/90">
               Pinned: {pinnedQuestion.slice(0, 80)}
               {pinnedQuestion.length > 80 ? "…" : ""}
             </div>
           )}
-        </div>
-      </ScrollArea>
+      </div>
 
       <PanelResizeHandle
         orientation="horizontal"
