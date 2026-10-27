@@ -66,7 +66,7 @@ export async function analyzeQuestionLocal(
 
   let semanticBySourceId: Map<string, number> | null = null;
   let matchMethod: AnalyzeQuestionResult["matchMethod"] = "lexical";
-  let semanticStatus: AnalyzeQuestionResult["semanticStatus"] = isSemanticSearchEnabled()
+  const semanticStatus: AnalyzeQuestionResult["semanticStatus"] = isSemanticSearchEnabled()
     ? semanticPack.status
     : "lexical_only";
 
