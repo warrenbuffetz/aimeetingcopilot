@@ -23,6 +23,7 @@
     "reset:simplii-content": "node scripts/reset-simplii-profile-content.mjs",
     "reset:simplii-content:apply": "node scripts/reset-simplii-profile-content.mjs --apply",
     "export:questrade-library": "node scripts/export-questrade-library.mjs",
+    "export:questrade:gpt-review": "node scripts/generate-questrade-gpt-review-pack.mjs",
     "import:simplii:final": "node scripts/import-simplii-final-qa.mjs imports/simplii_final_qa.json",
     "import:simplii:final:apply": "node scripts/import-simplii-final-qa.mjs imports/simplii_final_qa.json --apply",
     "import:simplii:final:apply:embed": "node scripts/import-simplii-final-qa.mjs imports/simplii_final_qa.json --apply --embed",

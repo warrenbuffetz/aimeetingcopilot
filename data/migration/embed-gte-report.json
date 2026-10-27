@@ -1,10 +1,10 @@
 {
-  "at": "2026-10-27T03:08:40.123Z",
+  "at": "2026-10-27T03:51:12.240Z",
   "profile": "Questrade — Senior PM, Everyday Banking",
   "profileId": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
-  "activeQa": 1,
-  "variantTotal": 8,
-  "skippedUnchanged": 7,
-  "embedded": 1,
+  "activeQa": 4,
+  "variantTotal": 12,
+  "skippedUnchanged": 8,
+  "embedded": 4,
   "failed": []
 }

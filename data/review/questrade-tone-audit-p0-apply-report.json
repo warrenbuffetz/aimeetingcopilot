@@ -1,0 +1,131 @@
+{
+  "at": "2026-10-27T03:47:34.680Z",
+  "mode": "apply",
+  "actions": [
+    {
+      "id": "93f1f35c-cd54-49c3-8d6d-6a95d262fd4b",
+      "question": "What are your compensation expectations?",
+      "fields": [
+        "navigator_meta"
+      ],
+      "reembed": false
+    },
+    {
+      "id": "009d20a6-a8cf-458a-a7ea-9ef696c693e0",
+      "question": "How would you choose between building a payment service and buying one?",
+      "fields": [
+        "navigator_meta",
+        "answer",
+        "follow_ups"
+      ],
+      "reembed": true
+    },
+    {
+      "id": "f7e403b2-26b8-4da4-83c1-ea58c2e3371b",
+      "question": "How do you know an increase in DAU isn't just more balance checking?",
+      "fields": [
+        "navigator_meta",
+        "answer",
+        "follow_ups"
+      ],
+      "reembed": true
+    },
+    {
+      "id": "8150bb81-67d5-48dc-82e0-b8bf223984f0",
+      "question": "Your idea sounds sensible. Why hasn't Questrade already done it?",
+      "fields": [
+        "navigator_meta",
+        "answer",
+        "follow_ups"
+      ],
+      "reembed": true
+    },
+    {
+      "id": "db88df8e-3a36-4cc6-8b84-4fb24e2136c3",
+      "question": "Explain your interview copilot's semantic matching architecture without using technical jargon.",
+      "fields": [
+        "navigator_meta",
+        "answer",
+        "follow_ups"
+      ],
+      "reembed": true
+    },
+    {
+      "id": "c8d4a611-d174-48b1-911c-e2db8f3acc3e",
+      "question": "How did you know your semantic-search approach was actually better than keyword matching?",
+      "fields": [
+        "navigator_meta",
+        "answer"
+      ],
+      "reembed": true
+    },
+    {
+      "id": "7c079cf5-b153-435d-a4b3-e83ad3139a2b",
+      "question": "How are you using AI in your product management work?",
+      "fields": [
+        "navigator_meta",
+        "answer"
+      ],
+      "reembed": true
+    },
+    {
+      "id": "a8fe6bd5-ecc2-4c0f-95d5-63bb51f0c20c",
+      "question": "How would you build product on top of Temenos core banking without owning the ledger?",
+      "fields": [
+        "navigator_meta"
+      ],
+      "reembed": false
+    },
+    {
+      "id": "6844c2e7-03c5-434e-b64c-ca9febec68dd",
+      "question": "How would you convince existing Questrade investors to make Questbank their primary bank?",
+      "fields": [
+        "navigator_meta"
+      ],
+      "reembed": false
+    },
+    {
+      "id": "0e33272e-0d91-49a8-8d6d-e74881372454",
+      "question": "How did you measure the 40% conversion improvement at Aeroplan?",
+      "fields": [
+        "navigator_meta"
+      ],
+      "reembed": false
+    },
+    {
+      "id": "722da43e-9883-44ce-800c-97a0aafbc694",
+      "question": "How did you measure the 15% improvement in application completions?",
+      "fields": [
+        "navigator_meta"
+      ],
+      "reembed": false
+    },
+    {
+      "id": "af5bd3a4-1b6f-4f1c-a319-15475be31b5d",
+      "question": "Did you actually run randomized holdouts on the HBC Mastercard programme?",
+      "fields": [
+        "navigator_meta",
+        "answer"
+      ],
+      "reembed": true
+    },
+    {
+      "id": "c88f487e-e0d1-44c0-ab54-60f1e19fe79d",
+      "question": "Tell me about a data-driven product decision at Aeroplan.",
+      "fields": [
+        "navigator_meta"
+      ],
+      "reembed": false
+    }
+  ],
+  "embedIds": [
+    "009d20a6-a8cf-458a-a7ea-9ef696c693e0",
+    "f7e403b2-26b8-4da4-83c1-ea58c2e3371b",
+    "8150bb81-67d5-48dc-82e0-b8bf223984f0",
+    "db88df8e-3a36-4cc6-8b84-4fb24e2136c3",
+    "c8d4a611-d174-48b1-911c-e2db8f3acc3e",
+    "7c079cf5-b153-435d-a4b3-e83ad3139a2b",
+    "af5bd3a4-1b6f-4f1c-a319-15475be31b5d"
+  ],
+  "missing": []
+}

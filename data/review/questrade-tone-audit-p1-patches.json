@@ -1,0 +1,34 @@
+{
+  "de31db47-3aea-4d26-be40-e0fa92423dd1": {
+    "spokenAnswer": "The strongest reason is that I can connect the commercial side of a financial product with the systems that make it work. At RBC, for example, expanding Avion to non-bank customers wasn't only an onboarding problem. We also needed a reliable way for people to withdraw the cashback they'd earned, which meant working through payments, risk and operations. I've worked on the acquisition and engagement side at Aeroplan and HBC too. So when I think about everyday banking, I'm thinking about the whole customer relationship, not just whether we can ship a good-looking feature.",
+    "protect": false
+  },
+  "2f3a780e-6b54-42b8-b56d-8936a471fa68": {
+    "spokenAnswer": "Sure. I've spent a little over nine years building consumer products, much of it in financial services. Right now I'm leading membership work at Arc'teryx, including the $5.2 million investment case and the smaller Sperro SV benefits launch. Before that, at RBC Avion, I helped open the platform to non-RBC customers and launched cashback withdrawals using Interac e-Transfer. At HBC and Aeroplan, my focus was more on credit-card acquisition, engagement and commercial performance. What ties those roles together is helping customers adopt financial products, use them regularly and trust the systems behind them. That's what makes Questrade's everyday-banking opportunity appealing to me. You're trying to become part of someone's regular financial life, not just get them to open another account.",
+    "protect": false
+  },
+  "a292f433-831a-440c-a196-dbf8c38fbddd": {
+    "spokenAnswer": "I haven't owned the core ledger for a chequing product, but I have worked on several of the journeys that determine whether everyday banking succeeds. At RBC, I helped make consumer payouts work for non-bank customers, including eligibility, payment integration, risk and operations. At HBC and Aeroplan, I worked on credit-product acquisition, engagement and the economics of sustained usage. So the strengths I'd bring immediately are customer adoption, cross-functional delivery and practical judgment around financial-product constraints. I'd get up to speed quickly on Questrade's deposit operations and ownership boundaries, just as I've done when moving into new technical domains before.",
+    "protect": false
+  },
+  "140caed9-55a1-48ac-9190-5d2256afd262": {
+    "spokenAnswer": "At HBC, we were losing customers partway through the Mastercard application experience. My focus was on understanding the drop-off and improving the journey with Neo without weakening the issuer's required checks. We reviewed the funnel, prioritized the points where the experience was confusing or difficult to complete and worked across the HBC-to-Neo boundary on the changes. The reported result was a 15% improvement in application completions. Neo's underlying credit infrastructure also supported decisions in under three minutes, but I'd keep that separate from the conversion improvement. The product lesson was that you can make a regulated journey much easier without pretending the controls don't exist.",
+    "protect": false
+  },
+  "47a2ee59-f62e-4b8c-a95b-abab90b7891b": {
+    "spokenAnswer": "I'd start with one job that actually benefits from connecting spending, saving and investing: helping someone understand how much cash they can move without putting upcoming bills at risk. Today that information is scattered across accounts and apps. A first version could show available cash, known recurring expenses and what's already committed, with clear data freshness and account coverage. I wouldn't start by automating transfers or giving investment advice, because inaccurate information could lead to a bad financial decision. I'd test whether customers understand and trust the view and whether it helps them make an informed transfer or savings decision. If it does, we can broaden the hub from there.",
+    "protect": false
+  },
+  "735da866-20fc-4837-b67d-c91a6b4e2c77": {
+    "spokenAnswer": "I'd anchor success on retained primary-banking customers, not simply new accounts or app activity. To make that measurable, I'd look for recurring income, regular payments and sustained transactions over time. Then I'd use the funnel to understand where we're losing people: account opening, first funding, payroll setup or repeat use. On the business side, I'd look at retained deposit balances and contribution after the relevant costs, working with Finance and Treasury on definitions. And because it's banking, payment reliability, fraud and support contacts are guardrails, not optional side metrics. I'd break it down by customer cohort so fast acquisition doesn't hide weak long-term adoption.",
+    "protect": false
+  },
+  "06e233ae-5d45-42d3-b560-84baf56a8948": {
+    "spokenAnswer": "I'd focus first on making payroll switching feel safe and manageable. People may like a new bank but still hesitate to move their salary because they're worried about a missed paycheque or a bill coming out of the wrong account. I'd use funnel data and customer conversations to distinguish uncertainty from actual setup friction. Then I'd test a guided flow with clear employer instructions and confirmation of what has and hasn't happened. I'd rather remove that uncertainty before spending heavily on sign-up incentives. The main success metric wouldn't be completed setup forms; it would be customers who receive a first qualifying deposit and keep receiving deposits over subsequent pay cycles. I'd monitor failed deposits, support contacts and drop-off as closely as conversion.",
+    "protect": false
+  },
+  "50313c26-9a05-42e6-b88e-cc571be4b272": {
+    "spokenAnswer": "Assuming card reliability is at an acceptable level, I'd prioritize payroll switching. If Questrade wants to become someone's primary bank, recurring income is a stronger signal than another dashboard feature. I'd first look at how many eligible customers try to switch, where they get stuck, and whether the first paycheque actually arrives. Then I'd test a guided setup and confirmation experience for a focused customer segment. The exception is reliability: if cards or payments are failing in a way that puts customers at risk, I'd fix that first. But with the basics stable, payroll switching is the bet I'd make because it has the clearest connection to sustained everyday use.",
+    "protect": false
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "at": "2026-10-27T03:51:49.721Z",
+  "mode": "apply",
+  "count": 33,
+  "actions": [
+    {
+      "id": "de31db47-3aea-4d26-be40-e0fa92423dd1",
+      "auditId": "de31db47-3aea-4d26-be40-e0fa92423dd1",
+      "question": "What is the strongest single reason we should choose you for this job?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "08bed145-68a4-4f1f-a500-1287247345bc",
+      "auditId": "08bed145-68a4-4f1f-a500-1287247345bc",
+      "question": "What would you actually deliver in your first 30 days?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "ecbddc79-ce40-4452-88cc-68b3f56f197a",
+      "auditId": "ecbddc79-ce40-4452-88cc-68b3f56f197a",
+      "question": "Build a business case for investing $2 million in account switching.",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "f8074663-5773-4b95-a25b-1e32a764c1a9",
+      "auditId": "f8074663-5773-4b95-a25b-1e32a764c1a9",
+      "question": "Tell me about a complex integration you led.",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "2f3a780e-6b54-42b8-b56d-8936a471fa68",
+      "auditId": "2f3a780e-6b54-42b8-b56d-8936a471fa68",
+      "question": "Tell me about yourself.",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "f67032ca-4e2e-4b49-ae44-29b181eab8b6",
+      "auditId": "f67032ca-4e2e-4b49-ae44-29b181eab8b6",
+      "question": "What makes you different from other Senior PM candidates?",
+      "protect": false,
+      "answerUpdated": true
+    },
+    {
+      "id": "d47c60d3-510e-4373-abf0-0749fcc41ebc",
+      "auditId": "d47c60d3-510e-4373-abf0-0749fcc41ebc",
+      "question": "What would you do in your first 90 days?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "a292f433-831a-440c-a196-dbf8c38fbddd",
+      "auditId": "a292f433-831a-440c-a196-dbf8c38fbddd",
+      "question": "You haven't owned a traditional chequing account. Why are you qualified?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+      "auditId": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+      "question": "How would you manage transitioning away from an ongoing membership initiative?",
+      "protect": true,
+      "answerUpdated": false
+    },
+    {
+      "id": "c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+      "auditId": "c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+      "question": "Tell me about a product decision you got wrong.",
+      "protect": true,
+      "answerUpdated": false
+    },
+    {
+      "id": "15aa03e2-46af-4d60-9d73-90ed342c6ccc",
+      "auditId": "15aa03e2-46af-4d60-9d73-90ed342c6ccc",
+      "question": "Tell me about a product initiative that didn't go according to plan.",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "e09deee1-3efa-4774-9274-2f18848b739f",
+      "auditId": "e09deee1-3efa-4774-9274-2f18848b739f",
+      "question": "Tell me about a time you had competing priorities with Risk, Compliance or Engineering.",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "2b7b68cd-d7ae-4358-b609-405c36f1f6b6",
+      "auditId": "2b7b68cd-d7ae-4358-b609-405c36f1f6b6",
+      "question": "What's one product opinion you hold strongly that others might disagree with?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "56065bcd-e97e-4d82-ac21-e35a44296ae7",
+      "auditId": "56065bcd-e97e-4d82-ac21-e35a44296ae7",
+      "question": "Why should we hire you over someone with direct core banking experience?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "1fd9478b-7396-4778-bc00-e62aee52de52",
+      "auditId": "1fd9478b-7396-4778-bc00-e62aee52de52",
+      "question": "What are you currently working on at Arc'teryx?",
+      "protect": true,
+      "answerUpdated": false
+    },
+    {
+      "id": "4e7a2a67-6db1-4a5b-b4c1-31e4d2a0ed26",
+      "auditId": "4e7a2a67-6db1-4a5b-b4c1-31e4d2a0ed26",
+      "question": "How would you compare potential partners such as Uber and Starbucks?",
+      "protect": false,
+      "answerUpdated": true
+    },
+    {
+      "id": "3d530a40-14f7-4280-a6fb-5bb968df099c",
+      "auditId": "3d530a40-14f7-4280-a6fb-5bb968df099c",
+      "question": "What did you personally own in the CRM reliability improvement?",
+      "protect": false,
+      "answerUpdated": true
+    },
+    {
+      "id": "439ccf45-857e-431f-ab0e-1312d6998f02",
+      "auditId": "439ccf45-857e-431f-ab0e-1312d6998f02",
+      "question": "How did you secure $5.2 million in capital funding at Arc'teryx?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "89ded97e-dc5a-420c-a4ee-a7372c2937a9",
+      "auditId": "89ded97e-dc5a-420c-a4ee-a7372c2937a9",
+      "question": "Tell me about the financial impact of your work at HBC.",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "140caed9-55a1-48ac-9190-5d2256afd262",
+      "auditId": "140caed9-55a1-48ac-9190-5d2256afd262",
+      "question": "Tell me about improving the HBC Mastercard application journey.",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "9b0f399e-6750-463a-9570-805c82449eb8",
+      "auditId": "9b0f399e-6750-463a-9570-805c82449eb8",
+      "question": "What does 'P&L ownership' at HBC actually mean?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "244e239c-2f88-4b6e-968f-ef8ce65daa70",
+      "auditId": "244e239c-2f88-4b6e-968f-ef8ce65daa70",
+      "question": "Walk me through the Interac e-Transfer product you launched at RBC.",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "91cd5cac-65b4-41e6-be3b-76ba3c49e9b1",
+      "auditId": "91cd5cac-65b4-41e6-be3b-76ba3c49e9b1",
+      "question": "What's the difference between EFT and Interac e-Transfer?",
+      "protect": false,
+      "answerUpdated": true
+    },
+    {
+      "id": "b86b9a96-2c61-446e-b101-879f969e2080",
+      "auditId": "b86b9a96-2c61-446e-b101-879f969e2080",
+      "question": "Tell me about the native travel booking work at RBC.",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "be18eb7a-948b-4a5d-8c5c-4d69faaa418e",
+      "auditId": "be18eb7a-948b-4a5d-8c5c-4d69faaa418e",
+      "question": "How would you measure whether Questrade MCP is successful?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "d6e02f71-bdb1-4dbc-b373-4c7958d83e04",
+      "auditId": "d6e02f71-bdb1-4dbc-b373-4c7958d83e04",
+      "question": "How would you prioritize a reliable everyday account versus differentiated experiences?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "3c961ee8-43cb-4ec8-850f-24e822917f47",
+      "auditId": "3c961ee8-43cb-4ec8-850f-24e822917f47",
+      "question": "Why would Questrade expose brokerage capabilities to Claude and ChatGPT instead of building its own AI assistant?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "233b0497-5bff-471f-9617-6abdeca51522",
+      "auditId": "233b0497-5bff-471f-9617-6abdeca51522",
+      "question": "Would you extend Questrade MCP beyond brokerage into everyday banking?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "47a2ee59-f62e-4b8c-a95b-abab90b7891b",
+      "auditId": "47a2ee59-f62e-4b8c-a95b-abab90b7891b",
+      "question": "How would you design a single financial hub across spending, saving and investing?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "b51df0d6-2cd1-41cb-b1f6-757f899b8bcc",
+      "auditId": "b51df0d6-2cd1-41cb-b1f6-757f899b8bcc",
+      "question": "MAU is increasing, but transaction frequency and deposits are flat. How would you diagnose it?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "735da866-20fc-4837-b67d-c91a6b4e2c77",
+      "auditId": "735da866-20fc-4837-b67d-c91a6b4e2c77",
+      "question": "What metrics would you use to measure success in everyday banking?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "06e233ae-5d45-42d3-b560-84baf56a8948",
+      "auditId": "06e233ae-5d45-42d3-b560-84baf56a8948",
+      "question": "How would you increase direct deposit adoption?",
+      "protect": false,
+      "answerUpdated": false
+    },
+    {
+      "id": "50313c26-9a05-42e6-b88e-cc571be4b272",
+      "auditId": "50313c26-9a05-42e6-b88e-cc571be4b272",
+      "question": "You can prioritize only one: payroll switching, transaction enrichment, automated savings or card reliability. What do you choose?",
+      "protect": false,
+      "answerUpdated": false
+    }
+  ],
+  "embedIds": [
+    "f67032ca-4e2e-4b49-ae44-29b181eab8b6",
+    "4e7a2a67-6db1-4a5b-b4c1-31e4d2a0ed26",
+    "3d530a40-14f7-4280-a6fb-5bb968df099c",
+    "91cd5cac-65b4-41e6-be3b-76ba3c49e9b1"
+  ],
+  "missing": []
+}
