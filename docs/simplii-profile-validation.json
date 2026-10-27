@@ -1,15 +1,15 @@
 {
-  "at": "2026-10-27T01:08:24.123Z",
+  "at": "2026-10-27T19:21:34.640Z",
   "questradeIntegrity": {
-    "baselineHash": "6e1c04b4b1dce49c8bf536963c1a05952c863c50d59465f866cc306df3cb380b",
-    "currentHash": "4182dfa86eabfe92a11f722351b8412a815f02575e52655bbdfb9b679f1795b9",
-    "unchanged": false,
-    "rowCount": 322
+    "baselineHash": "8c8808f7a901c37edd032f64ba216f92164d1496320cd9f6b0c394b0329379ee",
+    "currentHash": "8c8808f7a901c37edd032f64ba216f92164d1496320cd9f6b0c394b0329379ee",
+    "unchanged": true,
+    "rowCount": 328
   },
   "simplii": {
     "profileId": "1aff0813-6615-4a12-bfd6-ce7603604f6b",
-    "totalRows": 318,
-    "activeRows": 315,
+    "totalRows": 355,
+    "activeRows": 352,
     "duplicateActiveQuestions": 0,
     "forbiddenTermHits": 0,
     "withCloneSourceId": 0,
@@ -59,11 +59,15 @@
       "tier": "P2"
     },
     {
+      "question": "What is motivating you to consider a move to Simplii?",
+      "tier": "P0"
+    },
+    {
       "question": "Walk me through how you would run discovery for an unfamiliar Simplii product area.",
       "tier": "P0"
     },
     {
-      "question": "What is motivating you to consider a move to Simplii?",
+      "question": "What would you measure after changing a digital banking onboarding experience?",
       "tier": "P0"
     },
     {
@@ -71,11 +75,7 @@
       "tier": "P0"
     },
     {
-      "question": "Tell me about a time you cut scope while protecting customer value.",
-      "tier": "P0"
-    },
-    {
-      "question": "What would you measure after changing a digital banking onboarding experience?",
+      "question": "How would you run a healthy product squad day to day?",
       "tier": "P0"
     },
     {
@@ -151,10 +151,6 @@
       "tier": "P1"
     },
     {
-      "question": "How did you measure success for the Avion cashback withdrawal launch?",
-      "tier": "P0"
-    },
-    {
       "question": "What would you use as a north-star measure for deeper everyday-banking engagement?",
       "tier": "P1"
     },
@@ -195,12 +191,12 @@
       "tier": "P1"
     },
     {
-      "question": "Why use Interac e-Transfer rather than EFT for cashback withdrawals?",
-      "tier": "P0"
-    },
-    {
       "question": "How do pending and posted card transactions differ?",
       "tier": "P1"
+    },
+    {
+      "question": "Why use Interac e-Transfer rather than EFT for cashback withdrawals?",
+      "tier": "P0"
     },
     {
       "question": "Did your UX redesign cause approvals in under three minutes?",
@@ -209,6 +205,10 @@
     {
       "question": "How do you know the headless option saved two quarters?",
       "tier": "P1"
+    },
+    {
+      "question": "Tell me about a time you cut scope while protecting customer value.",
+      "tier": "P0"
     },
     {
       "question": "Did Quests reach six million active credit cardholders?",
@@ -279,11 +279,11 @@
       "tier": "P1"
     },
     {
-      "question": "What would the customer see while a cashback payout is pending or being investigated?",
+      "question": "What assumptions in the $5.2 million investment case were most sensitive?",
       "tier": "P1"
     },
     {
-      "question": "What assumptions in the $5.2 million investment case were most sensitive?",
+      "question": "What would the customer see while a cashback payout is pending or being investigated?",
       "tier": "P1"
     },
     {
@@ -323,6 +323,10 @@
       "tier": "P1"
     },
     {
+      "question": "How did you measure success for the Avion cashback withdrawal launch?",
+      "tier": "P0"
+    },
+    {
       "question": "What happened if an Avion member didn't have Interac Autodeposit enabled?",
       "tier": "P1"
     },
@@ -352,14 +356,14 @@
     },
     {
       "question": "Which three metrics would you put on a Simplii everyday-banking product scorecard?",
-      "tier": "P1"
+      "tier": "P0"
     },
     {
       "question": "How did you lead the 14-person cross-functional team at RBC?",
       "tier": "P0"
     },
     {
-      "question": "Walk me through a user story for a failed Interac e-Transfer or cashback withdrawal.",
+      "question": "Tell me about a time you used customer data to define a problem before proposing a solution.",
       "tier": "P0"
     },
     {
@@ -375,7 +379,7 @@
       "tier": "P0"
     },
     {
-      "question": "Tell me about a time you used customer data to define a problem before proposing a solution.",
+      "question": "Walk me through a user story for a failed Interac e-Transfer or cashback withdrawal.",
       "tier": "P0"
     },
     {
@@ -391,15 +395,15 @@
       "tier": "P0"
     },
     {
-      "question": "How would you handle a growing number of complaints about missing or delayed transfers?",
-      "tier": "P0"
-    },
-    {
       "question": "How do you make sure acceptance criteria remain aligned to customer intent during delivery?",
       "tier": "P0"
     },
     {
       "question": "You haven't owned a traditional chequing account. Why are you qualified for Simplii?",
+      "tier": "P0"
+    },
+    {
+      "question": "How would you handle a growing number of complaints about missing or delayed transfers?",
       "tier": "P0"
     },
     {
@@ -503,6 +507,10 @@
       "tier": "P0"
     },
     {
+      "question": "What is the most important product detail you've had to insist on?",
+      "tier": "P0"
+    },
+    {
       "question": "What does 100,000 ShopPlus downloads tell you, and what doesn't it tell you?",
       "tier": "P0"
     },
@@ -511,7 +519,7 @@
       "tier": "P0"
     },
     {
-      "question": "What is the most important product detail you've had to insist on?",
+      "question": "How did you identify the customer problem behind RBC cashback withdrawals?",
       "tier": "P0"
     },
     {
@@ -519,15 +527,11 @@
       "tier": "P0"
     },
     {
-      "question": "How did you identify the customer problem behind RBC cashback withdrawals?",
+      "question": "Tell me about a time you influenced teams that did not report to you.",
       "tier": "P0"
     },
     {
       "question": "How would you define a business case for fixing a common banking-service issue?",
-      "tier": "P0"
-    },
-    {
-      "question": "Tell me about a time you influenced teams that did not report to you.",
       "tier": "P0"
     },
     {
@@ -764,10 +768,6 @@
     },
     {
       "question": "How did you decide what to include in the smaller Sperro SV release?",
-      "tier": "P0"
-    },
-    {
-      "question": "How would you run a healthy product squad day to day?",
       "tier": "P0"
     }
   ]

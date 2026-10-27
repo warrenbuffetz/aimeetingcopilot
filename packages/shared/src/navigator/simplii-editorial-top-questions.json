@@ -1,0 +1,46 @@
+{
+  "recruiter": [
+    { "rank": 1, "tier": "VH", "question": "Tell me about yourself." },
+    { "rank": 2, "tier": "VH", "question": "What interests you about Simplii Financial, and why does this Senior Product Manager role make sense for you?" },
+    { "rank": 3, "tier": "VH", "question": "Why Simplii Financial instead of continuing at Arc'teryx?" },
+    { "rank": 4, "tier": "H", "question": "What is motivating you to consider a move to Simplii?" },
+    { "rank": 5, "tier": "H", "question": "You haven't owned a traditional chequing account. Why are you qualified?" },
+    { "rank": 6, "tier": "M", "question": "What are your compensation expectations?" }
+  ],
+  "hiring_manager": [
+    { "rank": 1, "tier": "VH", "question": "Tell me about yourself." },
+    { "rank": 2, "tier": "VH", "question": "How do you prioritize your product backlog?" },
+    { "rank": 3, "tier": "VH", "question": "How do you decide what goes into a sprint?" },
+    { "rank": 4, "tier": "VH", "question": "Tell me about a difficult product prioritization decision." },
+    { "rank": 5, "tier": "VH", "question": "Tell me about a time you cut scope while protecting customer value." },
+    { "rank": 6, "tier": "VH", "question": "How do you run discovery for an unfamiliar product area?" },
+    { "rank": 7, "tier": "VH", "question": "How do you define and measure product success?" },
+    { "rank": 8, "tier": "H", "question": "How would you work with Risk when a control adds friction?" },
+    { "rank": 9, "tier": "H", "question": "Tell me about influencing teams that didn't report to you." },
+    { "rank": 10, "tier": "H", "question": "How would you run a healthy product squad day to day?" },
+    { "rank": 11, "tier": "H", "question": "What would you improve first in the Simplii mobile app?" },
+    { "rank": 12, "tier": "M", "question": "How do you develop a business case for a product improvement?" }
+  ],
+  "cross_functional_panel": [
+    { "rank": 1, "tier": "VH", "question": "Tell me about yourself." },
+    { "rank": 2, "tier": "VH", "question": "What interests you about Simplii Financial, and why does this Senior Product Manager role make sense for you?" },
+    { "rank": 3, "tier": "VH", "question": "What's the strongest reason to hire you for this Simplii role?" },
+    { "rank": 4, "tier": "VH", "question": "How do you prioritize your product backlog?" },
+    { "rank": 5, "tier": "VH", "question": "How do you decide what goes into a sprint?" },
+    { "rank": 6, "tier": "VH", "question": "How do you work with Risk, Legal and Compliance?" },
+    { "rank": 7, "tier": "VH", "question": "Tell me about a genuine disagreement with another stakeholder." },
+    { "rank": 8, "tier": "VH", "question": "How do you write a user story and acceptance criteria that engineering can actually use?" },
+    { "rank": 9, "tier": "VH", "question": "How do you partner with a BA or Scrum Master without overlapping roles?" },
+    { "rank": 10, "tier": "VH", "question": "How do you handle a mid-sprint requirement change?" },
+    { "rank": 11, "tier": "VH", "question": "Tell me about using customer data to define a problem before proposing a solution." },
+    { "rank": 12, "tier": "VH", "question": "How do you define a metric precisely, including its numerator, denominator and time window?" },
+    { "rank": 13, "tier": "VH", "question": "Tell me about a time you cut scope while protecting customer value." },
+    { "rank": 14, "tier": "VH", "question": "What would you improve first in the Simplii mobile app?" },
+    { "rank": 15, "tier": "VH", "question": "How do you know whether a launch was successful?" },
+    { "rank": 16, "tier": "H", "question": "What exactly did you own versus the enterprise payments team at RBC?" },
+    { "rank": 17, "tier": "H", "question": "How would you handle growing complaints about missing or delayed transfers?" },
+    { "rank": 18, "tier": "H", "question": "How would you work with a BA, QA and engineers who disagree on a solution?" },
+    { "rank": 19, "tier": "M", "question": "How would you diagnose abandonment during digital account opening?" },
+    { "rank": 20, "tier": "M", "question": "How would you approach recurring failures in a money-transfer journey?" }
+  ]
+}

@@ -35,6 +35,8 @@
     "experience-gap:practice-all": "node scripts/promote-experience-gap-practice.mjs --package-all --apply",
     "audit:experience-gap-proof": "node scripts/audit-experience-gap-proof-points.mjs",
     "validate:simplii": "node scripts/validate-simplii-profile.mjs",
+    "apply:simplii:cross-panel": "node scripts/apply-simplii-cross-panel-master.mjs",
+    "apply:simplii:cross-panel:apply": "node scripts/apply-simplii-cross-panel-master.mjs --apply --embed",
     "validate:profile-isolation": "node scripts/validate-profile-isolation.mjs",
     "dedupe:prepared-qa": "node scripts/archive-duplicate-prepared-qa.mjs",
     "reconcile:questrade-curated-followups": "node scripts/reconcile-questrade-curated-followups.mjs",

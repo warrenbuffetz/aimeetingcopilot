@@ -1,8 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { buildProductExperienceTree, dedupeExperienceRowsForBrowse } from "../experience-tree";
-import type { EnrichedQaRow } from "../types";
+import type { EnrichedQaRow, NavigatorQaMeta } from "../types";
 
-function row(partial: Partial<EnrichedQaRow> & Pick<EnrichedQaRow, "id" | "question">): EnrichedQaRow {
+function row(
+  partial: Omit<Partial<EnrichedQaRow>, "navigator"> &
+    Pick<EnrichedQaRow, "id" | "question"> & { navigator?: Partial<NavigatorQaMeta> }
+): EnrichedQaRow {
   const { id, question, navigator: navPatch, ...rest } = partial;
   return {
     answer: "Answer.",

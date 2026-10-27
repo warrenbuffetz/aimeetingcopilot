@@ -53,12 +53,17 @@ function rowHash(row) {
 }
 
 async function main() {
+  const qtBaselinePath = resolve(root, "data/migration/baselines/questrade-pre-cross-panel.json");
   const auditPath = resolve(root, "data/migration/simplii-clone-audit.json");
-  const baselineHash = existsSync(auditPath)
-    ? JSON.parse(readFileSync(auditPath, "utf8")).questradeIntegrityHash
-    : null;
+  const baselineHash = existsSync(qtBaselinePath)
+    ? JSON.parse(readFileSync(qtBaselinePath, "utf8")).hash
+    : existsSync(auditPath)
+      ? JSON.parse(readFileSync(auditPath, "utf8")).questradeIntegrityHash
+      : null;
 
-  const { data: qRows } = await admin.from("prepared_qa").select("*").eq("profile_id", QUESTRADE_PROFILE_ID);
+  const { data: qRows, error: qErr } = await admin.from("prepared_qa").select("*").eq("profile_id", QUESTRADE_PROFILE_ID);
+  if (qErr) throw new Error(`Questrade fetch failed: ${qErr.message}`);
+  if (!qRows?.length) throw new Error("Questrade prepared_qa rows missing (check Supabase credentials)");
   const qHash = createHash("sha256").update(qRows.map((r) => rowHash(r)).sort().join("|")).digest("hex");
 
   const { data: profiles } = await admin.from("interview_profiles").select("id, name").ilike("name", "%Simplii%");

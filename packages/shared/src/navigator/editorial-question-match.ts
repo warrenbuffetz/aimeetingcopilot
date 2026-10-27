@@ -1,7 +1,10 @@
 import overrides from "./questrade-editorial-question-overrides.json";
+import simpliiOverrides from "./simplii-editorial-question-overrides.json";
+import type { InterviewProfileKey } from "./profile-content-eligibility";
 import type { EnrichedQaRow } from "./types";
 
 const EDITORIAL_ROW_ID_OVERRIDES = overrides as Record<string, string>;
+const SIMPLII_EDITORIAL_IMPORT_KEY_OVERRIDES = simpliiOverrides as Record<string, string>;
 
 export function normalizeEditorialQuestion(s: string): string {
   return (s ?? "")
@@ -49,10 +52,22 @@ export function editorialRowIdOverride(editorialQuestion: string): string | unde
 export function findBestCatalogMatchForEditorial(
   editorialQuestion: string,
   catalog: EnrichedQaRow[],
-  opts?: { minScore?: number; excludeRowIds?: Set<string> }
+  opts?: { minScore?: number; excludeRowIds?: Set<string>; interviewProfile?: InterviewProfileKey }
 ): { row: EnrichedQaRow; score: number; matchedText: string } | null {
   const minScore = opts?.minScore ?? 0.55;
   const exclude = opts?.excludeRowIds;
+  const profile = opts?.interviewProfile ?? "questrade";
+
+  if (profile === "simplii") {
+    const importKey = SIMPLII_EDITORIAL_IMPORT_KEY_OVERRIDES[editorialQuestion.trim()];
+    if (importKey) {
+      const row = catalog.find((r) => r.navigator.importKey === importKey);
+      if (row && !exclude?.has(row.id)) {
+        return { row, score: 1, matchedText: row.question };
+      }
+    }
+  }
+
   const overrideId = editorialRowIdOverride(editorialQuestion);
   if (overrideId && !exclude?.has(overrideId)) {
     const row = catalog.find((r) => r.id === overrideId);

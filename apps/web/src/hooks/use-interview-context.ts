@@ -7,6 +7,7 @@ import {
   enrichLibrary,
   resolveInterviewContext,
   editorialTopQuestionLimit,
+  interviewProfileKeyFromLabel,
   suggestTopInterviewQuestions,
   type EnrichedQaRow,
   type InterviewSessionContext,
@@ -34,7 +35,8 @@ function loadStoredContext(): InterviewSessionContext {
   }
 }
 
-export function useInterviewContext(library: LibraryRow[]) {
+export function useInterviewContext(library: LibraryRow[], profileName?: string | null) {
+  const interviewProfile = interviewProfileKeyFromLabel(profileName);
   const [context, setContext] = useState<InterviewSessionContext>(emptyInterviewContext);
 
   useEffect(() => {
@@ -58,9 +60,10 @@ export function useInterviewContext(library: LibraryRow[]) {
   const topInterviewQuestions = useMemo(() => {
     const round = context.activeInterviewRound ?? "recruiter";
     return suggestTopInterviewQuestions(catalog, context, {
-      limit: editorialTopQuestionLimit(round),
+      limit: editorialTopQuestionLimit(round, interviewProfile),
+      interviewProfile,
     });
-  }, [catalog, context.activeInterviewRound]);
+  }, [catalog, context.activeInterviewRound, interviewProfile]);
 
   const registerDetection = useCallback(
     (spoken: string, matchedRowId?: string | null) => {

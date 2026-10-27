@@ -102,7 +102,10 @@ export default function LiveInterviewPage() {
     pinnedAnswer: pinned,
     getSessionContext: () => sessionContextRef.current,
   });
-  const interviewNav = useInterviewContext(session.library);
+  const interviewNav = useInterviewContext(
+    session.library,
+    profiles.find((p) => p.id === profileId)?.name ?? null
+  );
   sessionContextRef.current = interviewNav.context;
 
   const startFreshInterview = useCallback(() => {

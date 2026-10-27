@@ -3,6 +3,7 @@ import {
   getCuratedContextualChildren,
   type CuratedContextualChild,
 } from "./questrade-curated-contextual-paths";
+import { simpliiHpChildrenForParentImportKey } from "./simplii-hp-paths";
 import {
   type InterviewProfileKey,
   isPreparedRowEligibleForProfile,
@@ -154,6 +155,38 @@ export function suggestContextualFollowUps(
   ].filter(Boolean);
 
   const anchorId = canonicalAnchorId(activeRow);
+
+  if (profile === "simplii") {
+    const hpKeys = simpliiHpChildrenForParentImportKey(activeRow.navigator.importKey);
+    if (hpKeys.length) {
+      const children: CuratedContextualChild[] = [];
+      let order = 0;
+      for (const hpKey of hpKeys) {
+        const row = catalog.find((r) => r.navigator.importKey === hpKey);
+        if (!row || !isPreparedRowEligibleForProfile(row, profile)) continue;
+        children.push({
+          questionId: row.id,
+          order: order++,
+          reason: "High-pressure follow-up (panel drill)",
+          intent: row.navigator.intent,
+        });
+      }
+      if (children.length) {
+        const curated = curatedSuggestions(
+          catalog,
+          activeRow,
+          round,
+          ctx,
+          profile,
+          excludeTexts,
+          children,
+          limit
+        );
+        if (curated.length) return curated;
+      }
+    }
+    return narrowRelatedFallback(catalog, activeRow, ctx, profile, excludeTexts, limit);
+  }
 
   if (profile === "questrade" || profile === "unknown") {
     const children = getCuratedContextualChildren(anchorId, round);

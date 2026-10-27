@@ -1,10 +1,11 @@
 import {
-  EDITORIAL_TOP_QUESTIONS_BY_ROUND,
   editorialReasonLabel,
   editorialTierRankBoost,
   editorialTopQuestionLimit,
+  editorialTopQuestionsForProfile,
 } from "./editorial-top-questions";
 import { findBestCatalogMatchForEditorial } from "./editorial-question-match";
+import type { InterviewProfileKey } from "./profile-content-eligibility";
 import { isRetrievalExcluded } from "./revision-retrieval";
 import type { EnrichedQaRow, FollowUpSuggestion, InterviewRound, InterviewSessionContext, RoundPriority } from "./types";
 
@@ -43,6 +44,20 @@ const PANEL_TOPIC_BOOSTS: { pattern: RegExp; weight: number }[] = [
   { pattern: /ai|agent|mcp/i, weight: 6 },
 ];
 
+const SIMPLII_PANEL_TOPIC_BOOSTS: { pattern: RegExp; weight: number; label: string }[] = [
+  { pattern: /tell me about yourself|why simplii|strongest reason to hire/i, weight: 12, label: "Panel opener" },
+  { pattern: /backlog|prioritiz|sprint|acceptance criteria|user story|refinement/i, weight: 11, label: "Delivery & backlog" },
+  { pattern: /risk|legal|compliance|control/i, weight: 10, label: "Controls partnership" },
+  { pattern: /stakeholder|disagree|influence|say no/i, weight: 10, label: "Stakeholder judgment" },
+  { pattern: /discovery|hypothesis|customer data|experiment/i, weight: 9, label: "Discovery & evidence" },
+  { pattern: /simplii|mobile app|folders|bill.payment|redesign/i, weight: 9, label: "Simplii product" },
+  { pattern: /metric|numerator|denominator|launch|scorecard/i, weight: 8, label: "Metrics" },
+  { pattern: /scope|cut scope|defer/i, weight: 8, label: "Prioritization trade-off" },
+];
+
+const SIMPLII_TECH_DEEP_PATTERN =
+  /\b(idempoten|reconcil|settlement rail|5m\+|ledger posting|enterprise settlement events)\b/i;
+
 function roundWeight(priority: RoundPriority | undefined): number {
   if (priority === "very_high") return 4;
   if (priority === "high") return 3;
@@ -60,14 +75,17 @@ function preparationBoost(tags: string[]): number {
 function topicBoost(
   round: InterviewRound,
   question: string,
-  importKey?: string
+  importKey?: string,
+  profile: InterviewProfileKey = "questrade"
 ): { score: number; label: string } {
   const boosts =
-    round === "hiring_manager"
-      ? HM_TOPIC_BOOSTS
-      : round === "cross_functional_panel"
-        ? PANEL_TOPIC_BOOSTS
-        : RECRUITER_TOPIC_BOOSTS;
+    profile === "simplii" && round === "cross_functional_panel"
+      ? SIMPLII_PANEL_TOPIC_BOOSTS
+      : round === "hiring_manager"
+        ? HM_TOPIC_BOOSTS
+        : round === "cross_functional_panel"
+          ? PANEL_TOPIC_BOOSTS
+          : RECRUITER_TOPIC_BOOSTS;
   let best = 0;
   let label = "Editorial priority";
   for (const b of boosts) {
@@ -76,7 +94,21 @@ function topicBoost(
       label = "label" in b ? (b as { label: string }).label : "Role-relevant topic";
     }
   }
-  if (importKey?.startsWith("simplii-jd-")) return { score: -2, label: "JD practice (lower recruiter priority)" };
+  if (
+    profile !== "simplii" &&
+    importKey?.startsWith("simplii-jd-")
+  ) {
+    return { score: -2, label: "JD practice (lower recruiter priority)" };
+  }
+  if (
+    profile === "simplii" &&
+    round === "cross_functional_panel" &&
+    SIMPLII_TECH_DEEP_PATTERN.test(question) &&
+    !/timeout|duplicate|status|pending/i.test(question)
+  ) {
+    best = Math.min(best, 3);
+    label = "Technical deep-dive (conditional)";
+  }
   if (/walk me through how you would run discovery for an unfamiliar/i.test(question) && round === "recruiter") {
     return { score: Math.min(best, 2), label: "Generic discovery (lower recruiter priority)" };
   }
@@ -89,13 +121,19 @@ function canonicalDedupeKey(row: EnrichedQaRow): string {
   return `q:${row.question.toLowerCase().replace(/\s+/g, " ").slice(0, 120)}`;
 }
 
-function curatedSuggestions(catalog: EnrichedQaRow[], round: InterviewRound): FollowUpSuggestion[] {
-  const list = EDITORIAL_TOP_QUESTIONS_BY_ROUND[round] ?? [];
+function curatedSuggestions(
+  catalog: EnrichedQaRow[],
+  round: InterviewRound,
+  profile: InterviewProfileKey
+): FollowUpSuggestion[] {
+  const list = editorialTopQuestionsForProfile(profile, round);
   const pool = catalog.filter((r) => !isRetrievalExcluded(r.navigator));
   const out: FollowUpSuggestion[] = [];
 
   for (const entry of list) {
-    const match = findBestCatalogMatchForEditorial(entry.question, pool);
+    const match = findBestCatalogMatchForEditorial(entry.question, pool, {
+      interviewProfile: profile,
+    });
     if (!match) continue;
 
     const editorialScore = 10_000 - entry.rank + editorialTierRankBoost(entry.tier);
@@ -119,7 +157,8 @@ function heuristicSuggestions(
   round: InterviewRound,
   askedIds: Set<string>,
   alreadyPicked: Set<string>,
-  limit: number
+  limit: number,
+  profile: InterviewProfileKey
 ): FollowUpSuggestion[] {
   const pool = catalog.filter((r) => !isRetrievalExcluded(r.navigator));
   const roundSorted = [...pool].sort(
@@ -138,7 +177,7 @@ function heuristicSuggestions(
     const rr = row.navigator.roundRelevance?.[round];
     const rw = roundWeight(rr);
     const prep = preparationBoost(row.navigator.topicTags ?? []);
-    const topic = topicBoost(round, row.question, row.navigator.importKey);
+    const topic = topicBoost(round, row.question, row.navigator.importKey, profile);
     const preferred = row.isPreferred ? 0.35 : 0;
     const section =
       row.navigator.librarySection === "career_motivation" && round === "recruiter" ? 0.4 : 0;
@@ -170,18 +209,19 @@ function heuristicSuggestions(
 export function suggestTopInterviewQuestions(
   catalog: EnrichedQaRow[],
   ctx: InterviewSessionContext,
-  opts?: { limit?: number }
+  opts?: { limit?: number; interviewProfile?: InterviewProfileKey }
 ): FollowUpSuggestion[] {
+  const profile = opts?.interviewProfile ?? "questrade";
   const round = ctx.activeInterviewRound ?? DEFAULT_ROUND;
-  const limit = opts?.limit ?? editorialTopQuestionLimit(round);
+  const limit = opts?.limit ?? editorialTopQuestionLimit(round, profile);
   const askedIds = new Set(ctx.askedQuestionIds);
 
-  const curated = curatedSuggestions(catalog, round);
+  const curated = curatedSuggestions(catalog, round, profile);
   const picked = new Set(curated.map((c) => c.rowId));
   const remaining = limit - curated.length;
   const fill =
     remaining > 0
-      ? heuristicSuggestions(catalog, round, askedIds, picked, remaining)
+      ? heuristicSuggestions(catalog, round, askedIds, picked, remaining, profile)
       : [];
 
   return [...curated, ...fill].slice(0, limit);
