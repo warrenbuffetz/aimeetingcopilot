@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-10-27T02:49:32.654Z",
+  "source": "/Users/johnlee/Documents/Cursor/ai meeting copilot/exports/questrade_interview_library.json",
+  "userDecision": "confirm_later_on_measurement_math",
+  "families": [
+    {
+      "id": "aeroplan-40-measurement",
+      "label": "Aeroplan 40% conversion measurement",
+      "recordIds": [
+        "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4",
+        "0e33272e-0d91-49a8-8d6d-e74881372454"
+      ],
+      "risk": "Panel cross-exam may surface contradictory cohort math or design claims.",
+      "recommendedWhenReady": "Pick one primary measurement answer; archive or alias the other with supplemental talking points.",
+      "entries": [
+        {
+          "id": "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4",
+          "question": "How exactly did you measure the 40% conversion lift?",
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "ok",
+          "answerExcerpt": "In the experiment, we split 8,000 unique logged-in mobile visitors evenly across two offer-page variants. Enrollment ran for four weeks, and we allowed seven days after each visitor's first exposure to see whether they b…",
+          "metricSnippets": [
+            "10%",
+            "14%",
+            "40%",
+            "70%",
+            "427%"
+          ]
+        },
+        {
+          "id": "0e33272e-0d91-49a8-8d6d-e74881372454",
+          "question": "How did you measure the 40% conversion improvement at Aeroplan?",
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "needs_review",
+          "answerExcerpt": "The headline outcome on my resume is a 40% improvement in application conversion. I would be careful about the event definition because reaching an issuer, starting an application and completing an application are differ…",
+          "metricSnippets": [
+            "40%",
+            "40%",
+            "427%"
+          ]
+        }
+      ],
+      "conflictSignals": [
+        "multiple_active_answers_same_intent"
+      ]
+    },
+    {
+      "id": "hbc-15-measurement",
+      "label": "HBC 15% measurement",
+      "recordIds": [
+        "3218b561-2159-442e-a3aa-074756f877c0"
+      ],
+      "extraMatch": {},
+      "risk": "Detailed vs cautious measurement stories may alternate on follow-ups.",
+      "recommendedWhenReady": "Same pattern as Aeroplan after per-metric confirmation.",
+      "entries": [
+        {
+          "id": "3218b561-2159-442e-a3aa-074756f877c0",
+          "question": "How did you measure the 15% improvement?",
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "ok",
+          "answerExcerpt": "In the test, we randomly assigned new application starters to the original or revised experience and kept that assignment stable if they returned. Each person had fourteen days to complete, and we waited for the final co…",
+          "metricSnippets": [
+            "50%",
+            "5%",
+            "15%"
+          ]
+        },
+        {
+          "id": "722da43e-9883-44ce-800c-97a0aafbc694",
+          "question": "How did you measure the 15% improvement in application completions?",
+          "evidenceStatus": "unverified_detail",
+          "reviewStatus": "needs_review",
+          "answerExcerpt": "The reported result was a 15% relative improvement in application completions. That is different from a 15-percentage-point increase. The measurement question is whether more people who started an application went on to …",
+          "metricSnippets": [
+            "15%",
+            "15%"
+          ]
+        }
+      ],
+      "conflictSignals": [
+        "multiple_active_answers_same_intent"
+      ]
+    },
+    {
+      "id": "failure-weakness",
+      "label": "Failure / weakness",
+      "extraMatch": {},
+      "risk": "Wrong story or missing illustrative label in main view.",
+      "recommendedWhenReady": "One canonical weakness/failure for Questrade; evidence visible everywhere.",
+      "entries": [
+        {
+          "id": "39a0bcf9-7d01-4cde-8da4-4ff893da44b3",
+          "question": "What is your biggest weakness as a product leader?",
+          "evidenceStatus": "resume_supported",
+          "reviewStatus": "ok",
+          "answerExcerpt": "Earlier in my career I sometimes spent too much time trying to resolve every open question before taking a recommendation forward. I like understanding the data and technical implications, which is useful, but it can slo…",
+          "metricSnippets": []
+        }
+      ],
+      "conflictSignals": []
+    }
+  ],
+  "arcteryxTense": [],
+  "notes": [
+    "No prose was modified by this script.",
+    "Resolve measurement families only after you confirm cohort numbers per metric."
+  ]
+}

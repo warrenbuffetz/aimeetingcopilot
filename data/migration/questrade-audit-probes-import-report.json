@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-27T02:49:34.267Z",
+  "apply": true,
+  "inserted": [
+    {
+      "id": "7a4e8b2c-3f1d-4a9e-b6c5-d8e7f9012345",
+      "question": "If an approved trade request times out, how would you prevent a duplicate order?",
+      "importKey": "questrade-probe-2026-trade-timeout"
+    },
+    {
+      "id": "8b5f9c3d-4e2a-5b0f-c7d6-e9f812345678",
+      "question": "What specific handover artifacts would you prepare during your notice period?",
+      "importKey": "questrade-probe-2026-handover-artifacts"
+    }
+  ],
+  "updated": [],
+  "skipped": [],
+  "relationships": [
+    {
+      "anchorId": "fb30286a-49ca-4ce1-b54a-4b7c4cea2d58",
+      "anchor": "How would you design MCP or agentic finance connections with consent and human approval?",
+      "added": 1
+    },
+    {
+      "anchorId": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+      "anchor": "How would you manage transitioning away from an ongoing membership initiative?",
+      "added": 1
+    },
+    {
+      "anchorId": "93f1f35c-cd54-49c3-8d6d-6a95d262fd4b",
+      "anchor": "What are your compensation expectations?",
+      "added": 3
+    }
+  ],
+  "ids": {
+    "questrade-probe-2026-trade-timeout": "7a4e8b2c-3f1d-4a9e-b6c5-d8e7f9012345",
+    "questrade-probe-2026-handover-artifacts": "8b5f9c3d-4e2a-5b0f-c7d6-e9f812345678"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "at": "2026-10-27T03:09:06.798Z",
+  "apply": true,
+  "actions": [
+    {
+      "type": "primary_patch",
+      "id": "0e33272e-0d91-49a8-8d6d-e74881372454"
+    },
+    {
+      "id": "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4",
+      "question": "How exactly did you measure the 40% conversion lift?",
+      "supersededById": "0e33272e-0d91-49a8-8d6d-e74881372454"
+    },
+    {
+      "type": "primary_patch",
+      "id": "722da43e-9883-44ce-800c-97a0aafbc694"
+    },
+    {
+      "id": "3218b561-2159-442e-a3aa-074756f877c0",
+      "question": "How did you measure the 15% improvement?",
+      "supersededById": "722da43e-9883-44ce-800c-97a0aafbc694"
+    },
+    {
+      "type": "hbc_attribution_parent_repoint",
+      "id": "2af89a04-ab52-40bd-928d-96a3122fffd1"
+    },
+    {
+      "type": "arc_body_replace",
+      "id": "1c3f6b10-2b62-4807-bffd-ef21beef30d7"
+    },
+    {
+      "type": "didnt_go_supplemental",
+      "id": "15aa03e2-46af-4d60-9d73-90ed342c6ccc"
+    },
+    {
+      "type": "mistake_unchanged",
+      "id": "c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+      "evidenceStatus": "unverified_detail"
+    }
+  ],
+  "embedIds": [
+    "1c3f6b10-2b62-4807-bffd-ef21beef30d7"
+  ]
+}

@@ -2,6 +2,7 @@ import type { LexicalMatchResult, LexicalQaRow } from "../lexical-match";
 import { LEXICAL_MATCH_THRESHOLD_PREPARED } from "../lexical-match";
 import { rankPreparedQaWithContext } from "./context-aware-analyze";
 import { isAmbiguousFollowUp, resolveInterviewContext } from "./context";
+import { applyConversationalBoost, conversationalBoostForQuery } from "./conversational-retrieval";
 import type { EnrichedQaRow, InterviewSessionContext } from "./types";
 import { roundRelevanceBoost } from "./interview-rounds";
 import type { InterviewRound } from "./interview-rounds";
@@ -27,9 +28,21 @@ export function rankPreparedQaHybrid(
   activeRound?: InterviewRound | null
 ): LexicalMatchResult[] {
   const ambiguous = Boolean(session?.activeExperienceModuleId && isAmbiguousFollowUp(spoken));
+  const convBoost = conversationalBoostForQuery(spoken, session, enriched);
   const lexicalRanked = rankPreparedQaWithContext(spoken, library, enriched, session);
   if (!semanticBySourceId || semanticBySourceId.size === 0) {
-    return applyRoundBoost(lexicalRanked, enriched, activeRound, ambiguous);
+    let ranked = lexicalRanked;
+    if (convBoost) {
+      ranked = lexicalRanked
+        .map((m) => {
+          const row = enriched.find((r) => r.id === m.rowId);
+          if (!row) return m;
+          const score = applyConversationalBoost(m.score, row, convBoost);
+          return { ...m, score: Math.min(1, score) };
+        })
+        .sort((a, b) => b.score - a.score);
+    }
+    return applyRoundBoost(ranked, enriched, activeRound, ambiguous);
   }
 
   const lexicalById = new Map(lexicalRanked.map((r) => [r.rowId, r]));
@@ -91,6 +104,15 @@ export function rankPreparedQaHybrid(
       if (row.navigator.experienceModuleId === targetModule) score += 0.12;
       if (targetIntent && row.navigator.intent === targetIntent) score += 0.1;
       if (resolution.rowId === row.id) score += 0.15;
+      score = applyConversationalBoost(score, row, convBoost);
+      merged[i] = { ...merged[i], score: Math.min(1, score) };
+    }
+    merged.sort((a, b) => b.score - a.score);
+  } else if (convBoost) {
+    for (let i = 0; i < merged.length; i++) {
+      const row = enriched.find((r) => r.id === merged[i].rowId);
+      if (!row) continue;
+      const score = applyConversationalBoost(merged[i].score, row, convBoost);
       merged[i] = { ...merged[i], score: Math.min(1, score) };
     }
     merged.sort((a, b) => b.score - a.score);

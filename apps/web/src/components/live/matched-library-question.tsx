@@ -1,7 +1,12 @@
 "use client";
 
 import type { AnalyzeQuestionResult } from "@interview-copilot/shared";
-import { intentLabel, questionsEquivalentForDisplay, type EnrichedQaRow } from "@interview-copilot/shared";
+import {
+  evidenceStatusLabel,
+  intentLabel,
+  questionsEquivalentForDisplay,
+  type EnrichedQaRow,
+} from "@interview-copilot/shared";
 import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
 
@@ -35,24 +40,31 @@ export function MatchedLibraryQuestionBlock({
       ? result.matchedFollowUpQuestion.trim()
       : null;
 
+  const evidenceNote = evidenceStatusLabel(matchedMeta?.evidenceStatus);
+
   if (collapsed) {
     return (
-      <p className="mt-2 text-[11px] text-muted-foreground">
-        Matched prepared answer
-        {matchedMeta?.experienceLabel && (
-          <>
-            {" "}
-            ·{" "}
-            <button
-              type="button"
-              className={cn(liveSemantic.labelLibrary, "underline-offset-2 hover:underline")}
-              onClick={() => onInspectLibraryQuestion(libraryQuestion)}
-            >
-              {matchedMeta.experienceLabel}
-            </button>
-          </>
+      <div className="mt-2 space-y-1">
+        <p className="text-[11px] text-muted-foreground">
+          Matched prepared answer
+          {matchedMeta?.experienceLabel && (
+            <>
+              {" "}
+              ·{" "}
+              <button
+                type="button"
+                className={cn(liveSemantic.labelLibrary, "underline-offset-2 hover:underline")}
+                onClick={() => onInspectLibraryQuestion(libraryQuestion)}
+              >
+                {matchedMeta.experienceLabel}
+              </button>
+            </>
+          )}
+        </p>
+        {evidenceNote && (
+          <p className="text-[11px] font-medium text-amber-400/95">{evidenceNote}</p>
         )}
-      </p>
+      </div>
     );
   }
 
@@ -82,10 +94,10 @@ export function MatchedLibraryQuestionBlock({
         <p className="mt-1 text-[11px] text-muted-foreground">
           {matchedMeta.experienceLabel}
           {matchedMeta.intent !== "general" && ` · ${intentLabel(matchedMeta.intent)}`}
-          {matchedMeta.evidenceStatus === "illustrative_scenario" && (
-            <span className="text-amber-400/90"> · illustrative</span>
-          )}
         </p>
+      )}
+      {evidenceNote && (
+        <p className="mt-1.5 text-[11px] font-medium text-amber-400/95">{evidenceNote}</p>
       )}
     </div>
   );

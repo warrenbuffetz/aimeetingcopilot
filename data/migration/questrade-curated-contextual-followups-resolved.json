@@ -1,24 +1,18 @@
 {
-  "generatedAt": "2026-10-27T01:16:12.483Z",
+  "generatedAt": "2026-10-27T02:49:38.168Z",
   "profileId": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
   "sourceFile": "data/editorial/questrade-top115-curated-contextual-followups.json",
   "stats": {
     "placementsExamined": 115,
     "uniqueAnchorKeys": 115,
-    "edgesExamined": 557,
-    "edgesResolved": 557,
+    "edgesExamined": 561,
+    "edgesResolved": 561,
     "unresolvedAnchors": [],
     "unresolvedTargets": [],
     "skippedDedup": 0,
     "excludedInactive": 0,
     "duplicateEdgesAvoided": 0,
-    "anchorsWithNoChildren": [
-      {
-        "round": "recruiter",
-        "anchorId": "93f1f35c-cd54-49c3-8d6d-6a95d262fd4b",
-        "question": "What are your compensation expectations?"
-      }
-    ]
+    "anchorsWithNoChildren": []
   },
   "paths": [
     {
@@ -210,7 +204,7 @@
           "order": 2,
           "intent": "technical_or_architecture",
           "reason": "Technical deep dive",
-          "question": "What was actually live when you left Arc'teryx, and what was still planned?",
+          "question": "What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?",
           "provenance": [
             "registry:followup-expansion-2026-10-c8a85beb577449d9"
           ]
@@ -548,7 +542,38 @@
       "round": "recruiter",
       "anchorRoundRank": 10,
       "anchorTier": "VH",
-      "children": []
+      "children": [
+        {
+          "questionId": "ec501229-d290-41b4-8afb-39fb22d2bedb",
+          "order": 1,
+          "intent": "general",
+          "reason": "Curated follow-up · Career & Motivation",
+          "question": "What is your required notice period?",
+          "provenance": [
+            "text:unique"
+          ]
+        },
+        {
+          "questionId": "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
+          "order": 2,
+          "intent": "general",
+          "reason": "Curated follow-up · Career & Motivation",
+          "question": "What are your hybrid-work expectations?",
+          "provenance": [
+            "text:unique"
+          ]
+        },
+        {
+          "questionId": "5c8ca4e3-7857-4084-bc87-eaa91b178fad",
+          "order": 3,
+          "intent": "general",
+          "reason": "Curated follow-up · Career & Motivation",
+          "question": "Are you interviewing elsewhere?",
+          "provenance": [
+            "text:unique"
+          ]
+        }
+      ]
     },
     {
       "anchorQuestionId": "bfd102e5-8b51-47ea-aeea-c84745fa7f64",
@@ -651,7 +676,7 @@
           "order": 5,
           "intent": "technical_or_architecture",
           "reason": "Technical deep dive",
-          "question": "What was actually live when you left Arc'teryx, and what was still planned?",
+          "question": "What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?",
           "provenance": [
             "registry:followup-expansion-2026-10-c8a85beb577449d9"
           ]
@@ -1309,7 +1334,7 @@
           "order": 4,
           "intent": "technical_or_architecture",
           "reason": "Technical deep dive",
-          "question": "What was actually live when you left Arc'teryx, and what was still planned?",
+          "question": "What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?",
           "provenance": [
             "registry:followup-expansion-2026-10-c8a85beb577449d9"
           ]
@@ -2016,7 +2041,7 @@
           "order": 2,
           "intent": "technical_or_architecture",
           "reason": "Technical deep dive",
-          "question": "What was actually live when you left Arc'teryx, and what was still planned?",
+          "question": "What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?",
           "provenance": [
             "registry:followup-expansion-2026-10-c8a85beb577449d9"
           ]
@@ -2714,7 +2739,7 @@
           "order": 2,
           "intent": "technical_or_architecture",
           "reason": "Technical deep dive",
-          "question": "What was actually live when you left Arc'teryx, and what was still planned?",
+          "question": "What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?",
           "provenance": [
             "registry:followup-expansion-2026-10-c8a85beb577449d9"
           ]
@@ -3629,7 +3654,7 @@
           "order": 5,
           "intent": "technical_or_architecture",
           "reason": "Technical deep dive",
-          "question": "What was actually live when you left Arc'teryx, and what was still planned?",
+          "question": "What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?",
           "provenance": [
             "registry:followup-expansion-2026-10-c8a85beb577449d9"
           ]
@@ -6326,6 +6351,16 @@
           "question": "How is Questrade MCP different from Flows? How much autonomy should financial AI have?",
           "provenance": [
             "uuid:627cda69-cdae-4941-89d5-fdafba1ac674"
+          ]
+        },
+        {
+          "questionId": "7a4e8b2c-3f1d-4a9e-b6c5-d8e7f9012345",
+          "order": 6,
+          "intent": "challenges_lessons",
+          "reason": "Curated follow-up · Questrade — MCP & agentic finance",
+          "question": "If an approved trade request times out, how would you prevent a duplicate order?",
+          "provenance": [
+            "text:unique"
           ]
         }
       ]

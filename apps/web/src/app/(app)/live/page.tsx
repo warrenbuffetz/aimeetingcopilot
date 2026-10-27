@@ -60,6 +60,7 @@ import type {
 import {
   CONTEXTUAL_FOLLOW_UP_DEFAULT_LIMIT,
   CONTEXTUAL_FOLLOW_UP_EXPANDED_LIMIT,
+  evidenceStatusLabel,
   interviewProfileKeyFromLabel,
   LEXICAL_MATCH_THRESHOLD_PREPARED,
   suggestContextualFollowUps,
@@ -440,7 +441,7 @@ export default function LiveInterviewPage() {
         activePreparedRow,
         recentDetectedQuestions,
         {
-          limit: contextualShowMore ? CONTEXTUAL_FOLLOW_UP_EXPANDED_LIMIT : CONTEXTUAL_FOLLOW_UP_DEFAULT_LIMIT,
+          limit: CONTEXTUAL_FOLLOW_UP_EXPANDED_LIMIT,
           interviewProfile: interviewProfileKey,
           anchorQuestionLabel: activePreparedRow?.question,
         }
@@ -453,15 +454,34 @@ export default function LiveInterviewPage() {
       activePreparedRow,
       recentDetectedQuestions,
       session.currentQuestion,
-      contextualShowMore,
       interviewProfileKey,
     ]
   );
-  const contextualFollowUps = contextualFollowUpPool;
+  const contextualFollowUps = useMemo(
+    () =>
+      contextualShowMore
+        ? contextualFollowUpPool
+        : contextualFollowUpPool.slice(0, CONTEXTUAL_FOLLOW_UP_DEFAULT_LIMIT),
+    [contextualFollowUpPool, contextualShowMore]
+  );
+  const hasMoreContextualFollowUps =
+    contextualFollowUpPool.length > CONTEXTUAL_FOLLOW_UP_DEFAULT_LIMIT;
 
   useEffect(() => {
     setContextualShowMore(false);
   }, [matchedRowId]);
+
+  const prevProfileIdRef = useRef<string | null>(null);
+  useEffect(() => {
+    if (prevProfileIdRef.current != null && prevProfileIdRef.current !== profileId) {
+      skipContextUpdateRef.current = true;
+      session.resetPracticeSession();
+      interviewNav.clearContext();
+      setPinned(null);
+      setPinnedQuestion(null);
+    }
+    prevProfileIdRef.current = profileId;
+  }, [profileId, interviewNav, session]);
   const ambiguousAnswerMatch =
     Boolean(session.result?.alternativeMatches?.length) &&
     ((session.result?.confidence ?? 1) < LEXICAL_MATCH_THRESHOLD_PREPARED ||
@@ -870,6 +890,11 @@ export default function LiveInterviewPage() {
               matchedMeta={matchedMeta}
               onInspectLibraryQuestion={openQuestionMap}
             />
+            {matchedMeta && evidenceStatusLabel(matchedMeta.evidenceStatus) && (
+              <p className="mt-2 max-w-3xl text-[11px] font-medium text-amber-400/95">
+                {evidenceStatusLabel(matchedMeta.evidenceStatus)}
+              </p>
+            )}
             <div className="mt-3 max-w-3xl">
               <ScriptText text={displayAnswer} clamp={!showFull} className={liveSemantic.textAnswer} />
             </div>
@@ -910,7 +935,7 @@ export default function LiveInterviewPage() {
                         </li>
                       ))}
                     </ul>
-                    {contextualFollowUpPool.length >= CONTEXTUAL_FOLLOW_UP_DEFAULT_LIMIT && (
+                    {hasMoreContextualFollowUps && (
                       <Button
                         type="button"
                         size="sm"

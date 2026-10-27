@@ -14,7 +14,7 @@ const TOPIC_SWITCH =
   /\b(switch gears|different topic|let'?s (talk|move) about|move on to|change (topics|subjects)|instead, tell me about)\b/i;
 
 const AMBIGUOUS_FOLLOW_UP =
-  /\b(what would you do differently|how did you measure|how exactly did you measure|what did you (personally )?decide|what did you own|what was your role|what would you change|was that incremental|how did you attribute|why did you use|why interac|what if it failed|how would the customer know|how did you prevent|how did you know it worked|what went wrong|how would you handle|why didn't you|whole membership platform|continue without you|leave before seeing)\b/i;
+  /\b(what would you do differently|how did you measure|how exactly did you measure|what did you (personally )?decide|what did you own|what was your role|what would you change|was that incremental|how did you attribute|why did you use|why interac|what if it failed|how would the customer know|how did you prevent|how did you know it worked|what went wrong|how would you handle|why didn't you|whole membership platform|continue without you|leave before seeing|those 14|the 14|14 people|direct reports?|what actually shipped|still planned|what is live from|what would you put in the mvp|what goes in the mvp|approved trade|duplicate order|times? out)\b/i;
 
 const BROAD_EMPLOYER_QUESTION =
   /\b(tell me more about your time at|walk me through your (role|experience) at|what did you work on at|give me an overview of your|tell me about your experience at)\b/i;
@@ -133,9 +133,11 @@ function intentFromAmbiguous(spoken: string): QuestionIntent {
   if (/incremental|attribut/.test(q)) return "attribution";
   if (/differently|change/.test(q)) return "what_differently";
   if (/measure|know it worked|prevent/.test(q)) return "measurement_impact";
-  if (/decide|own/.test(q)) return "personal_ownership";
+  if (/decide|own|direct report|those 14|the 14/.test(q)) return "personal_ownership";
+  if (/shipped|still planned|what is live/.test(q)) return "main_story";
+  if (/mvp/.test(q)) return "solution_alternatives";
   if (/why did you use|why interac|technical|integrat/.test(q)) return "technical_implementation";
-  if (/what if|failed|went wrong|customer know/.test(q)) return "challenges_lessons";
+  if (/what if|failed|went wrong|customer know|timeout|duplicate/.test(q)) return "challenges_lessons";
   return "general";
 }
 

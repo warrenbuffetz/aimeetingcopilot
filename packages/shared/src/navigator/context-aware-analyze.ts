@@ -4,6 +4,7 @@ import {
   isAmbiguousFollowUp,
   resolveInterviewContext,
 } from "./context";
+import { applyConversationalBoost, conversationalBoostForQuery } from "./conversational-retrieval";
 import type { EnrichedQaRow, InterviewSessionContext, QuestionIntent } from "./types";
 import { emptyInterviewContext } from "./types";
 
@@ -29,10 +30,12 @@ export function rankPreparedQaWithContext(
   const targetIntent = resolution.intent;
 
   const ambiguous = Boolean(session?.activeExperienceModuleId && isAmbiguousFollowUp(spoken));
+  const convBoost = conversationalBoostForQuery(spoken, session, enriched);
   const boosted = base.map((match) => {
     const row = enriched.find((r) => r.id === match.rowId);
     if (!row) return match;
     let score = match.score;
+    score = applyConversationalBoost(score, row, convBoost);
     for (const alt of row.navigator.altPhrasings ?? []) {
       const altScore = scoreLexicalSimilarity(spoken, alt);
       if (altScore > score) score = Math.min(1, altScore + 0.02);

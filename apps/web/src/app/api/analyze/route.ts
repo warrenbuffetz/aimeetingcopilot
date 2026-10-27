@@ -10,6 +10,8 @@ const sessionContextSchema = z
     activeIntent: z.string().nullable().optional(),
     askedQuestionIds: z.array(z.string()).optional(),
     manualExperienceOverrideId: z.string().nullable().optional(),
+    activeQuestionId: z.string().nullable().optional(),
+    lastDetectedQuestion: z.string().nullable().optional(),
     activeInterviewRound: z
       .enum(["recruiter", "hiring_manager", "cross_functional_panel"])
       .nullable()
@@ -48,12 +50,12 @@ export async function POST(req: Request) {
             activeExperienceModuleId: parsed.data.sessionContext.activeExperienceModuleId ?? null,
             activeExperienceLabel: null,
             activeIntent: (parsed.data.sessionContext.activeIntent as import("@interview-copilot/shared").QuestionIntent) ?? null,
-            activeQuestionId: null,
+            activeQuestionId: parsed.data.sessionContext.activeQuestionId ?? null,
             previousExperienceModuleId: null,
             askedQuestionIds: parsed.data.sessionContext.askedQuestionIds ?? [],
             askedQuestionTexts: [],
             manualExperienceOverrideId: parsed.data.sessionContext.manualExperienceOverrideId ?? null,
-            lastDetectedQuestion: null,
+            lastDetectedQuestion: parsed.data.sessionContext.lastDetectedQuestion ?? null,
             activeInterviewRound: parsed.data.sessionContext.activeInterviewRound ?? null,
           }
         : null,

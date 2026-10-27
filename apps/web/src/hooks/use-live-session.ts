@@ -286,6 +286,8 @@ export function useLiveSession(
               ? {
                   activeExperienceModuleId: ctx.activeExperienceModuleId,
                   activeIntent: ctx.activeIntent,
+                  activeQuestionId: ctx.activeQuestionId,
+                  lastDetectedQuestion: ctx.lastDetectedQuestion,
                   askedQuestionIds: ctx.askedQuestionIds,
                   manualExperienceOverrideId: ctx.manualExperienceOverrideId,
                   activeInterviewRound: ctx.activeInterviewRound,

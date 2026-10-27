@@ -131,13 +131,15 @@ describe("Top115 curated contextual follow-ups", () => {
     expect(joined).toMatch(/payroll|deposit|primary|funded|failure/i);
   });
 
-  it("9 — Compensation anchor shows no contextual cards", () => {
+  it("9 — Compensation anchor links recruiter logistics follow-ups", () => {
     const main = rowByQuestion(catalog, /what are your compensation expectations/i);
     const fu = suggestContextualFollowUps(catalog, ctxFor(main, "recruiter"), main, [], {
       limit: 4,
       interviewProfile: profile,
     });
-    expect(fu.length).toBe(0);
+    expect(fu.length).toBe(3);
+    const joined = fu.map((f) => f.question).join("\n");
+    expect(joined).toMatch(/notice period|hybrid|interviewing elsewhere/i);
   });
 
   it("10 — Profile separation filters Simplii poison", () => {

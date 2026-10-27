@@ -662,11 +662,44 @@
         "anchorSource": "original-163",
         "anchorSourceId": "93f1f35c-cd54-49c3-8d6d-6a95d262fd4b",
         "anchorExperienceModuleId": "career-general",
-        "followUps": [],
+        "followUps": [
+          {
+            "order": 1,
+            "targetLocalKey": "L001",
+            "targetCanonicalQuestion": "What is your required notice period?",
+            "targetSource": "imports/questrade_recruiter_logistics_qa.json",
+            "targetSourceId": "questrade-logistics-2026-notice-period",
+            "intent": "general",
+            "targetExperienceModuleId": "career-general",
+            "relationship": "curated_immediate_followup",
+            "matchStatus": "snapshot_candidate_requires_live_id_reconciliation"
+          },
+          {
+            "order": 2,
+            "targetLocalKey": "L002",
+            "targetCanonicalQuestion": "What are your hybrid-work expectations?",
+            "targetSource": "imports/questrade_recruiter_logistics_qa.json",
+            "targetSourceId": "questrade-logistics-2026-hybrid-work",
+            "intent": "general",
+            "targetExperienceModuleId": "career-general",
+            "relationship": "curated_immediate_followup",
+            "matchStatus": "snapshot_candidate_requires_live_id_reconciliation"
+          },
+          {
+            "order": 3,
+            "targetLocalKey": "L003",
+            "targetCanonicalQuestion": "Are you interviewing elsewhere?",
+            "targetSource": "imports/questrade_recruiter_logistics_qa.json",
+            "targetSourceId": "questrade-logistics-2026-interviewing-elsewhere",
+            "intent": "general",
+            "targetExperienceModuleId": "career-general",
+            "relationship": "curated_immediate_followup",
+            "matchStatus": "snapshot_candidate_requires_live_id_reconciliation"
+          }
+        ],
         "coverageGaps": [
           "Is that your base-salary expectation or total compensation?",
-          "What bonus, equity, or signing compensation would make an offer competitive?",
-          "What is your notice period and preferred start date?"
+          "What bonus, equity, or signing compensation would make an offer competitive?"
         ],
         "editorialStatus": "curated_draft",
         "notes": "No fallback: show fewer cards if live targets are unavailable. Follow-ups belong to the current selected canonical answer and remain preview-only."
@@ -7554,6 +7587,17 @@
             "targetSource": "original-163",
             "targetSourceId": "627cda69-cdae-4941-89d5-fdafba1ac674",
             "intent": "technical_or_architecture",
+            "targetExperienceModuleId": "questrade-mcp",
+            "relationship": "curated_immediate_followup",
+            "matchStatus": "snapshot_candidate_requires_live_id_reconciliation"
+          },
+          {
+            "order": 6,
+            "targetLocalKey": "P001",
+            "targetCanonicalQuestion": "If an approved trade request times out, how would you prevent a duplicate order?",
+            "targetSource": "imports/questrade_audit_probes_qa.json",
+            "targetSourceId": "questrade-probe-2026-trade-timeout",
+            "intent": "challenges_lessons",
             "targetExperienceModuleId": "questrade-mcp",
             "relationship": "curated_immediate_followup",
             "matchStatus": "snapshot_candidate_requires_live_id_reconciliation"

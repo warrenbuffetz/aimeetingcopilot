@@ -286,6 +286,11 @@ async function main() {
   mkdirSync(resolve(root, "data/migration"), { recursive: true });
   const outPath = resolve(root, "data/migration/questrade-curated-contextual-followups-resolved.json");
   writeFileSync(outPath, JSON.stringify(out, null, 2));
+  const bundlePath = resolve(
+    root,
+    "packages/shared/src/navigator/questrade-curated-contextual-followups-resolved.json"
+  );
+  writeFileSync(bundlePath, JSON.stringify(out, null, 2));
 
   const md = [
     "# Questrade curated contextual follow-ups — reconciliation",

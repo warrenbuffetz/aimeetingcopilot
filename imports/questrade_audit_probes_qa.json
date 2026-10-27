@@ -1,0 +1,64 @@
+{
+  "profileName": "Questrade — Senior PM, Everyday Banking",
+  "packageVersion": "questrade-audit-probes-2026-10",
+  "records": [
+    {
+      "importKey": "questrade-probe-2026-trade-timeout",
+      "presetId": "7a4e8b2c-3f1d-4a9e-b6c5-d8e7f9012345",
+      "question": "If an approved trade request times out, how would you prevent a duplicate order?",
+      "answer": "I'd treat the result as unknown, rather than assume the trade failed. The customer should see that we're checking the status, and the agent shouldn't create a fresh order just to get a response.\n\nI'd want the approved instruction tied to a durable request identifier and the execution service's documented retry contract. We'd check the authoritative order state and reconcile delayed responses before deciding whether another submission is safe. If retries are supported, they must refer to the same logical request and unchanged parameters; changing the order is a new decision that needs fresh approval.\n\nIf we still can't establish the state, I'd stop automated retries and give Operations the request, approval and attempt history. The product goal is that uncertainty creates a visible recovery process, never a second financial action.",
+      "category": "Product & Banking Knowledge",
+      "isPreferred": false,
+      "experienceModuleId": "questrade-mcp",
+      "experienceLabel": "Questrade — MCP & agentic finance",
+      "altPhrasings": [
+        "An approved trade times out — how do you avoid a duplicate order?",
+        "How would you handle execution uncertainty after a trade timeout?",
+        "What if the trade submission times out but might have succeeded?"
+      ],
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "very_high"
+      }
+    },
+    {
+      "importKey": "questrade-probe-2026-handover-artifacts",
+      "presetId": "8b5f9c3d-4e2a-5b0f-c7d6-e9f812345678",
+      "question": "What specific handover artifacts would you prepare during your notice period?",
+      "answer": "I'd organize the handover around decisions and risks, not a long list of documents. I'd leave a clear view of the customer problem, what has shipped, what remains planned and the next decisions that need an owner.\n\nThat would include the current roadmap and backlog, the reasoning behind the major scope choices, dependency and vendor contacts, launch criteria, measurement definitions and open operational risks. For a financial journey, I'd also make sure the exception paths and support or reconciliation responsibilities were explicit.\n\nThen I'd walk the incoming owner through the work and use a few realistic scenarios to check that they can make the next decision without me. A handover is successful when ownership has transferred, not when the document has been sent.",
+      "category": "Motivation",
+      "isPreferred": false,
+      "experienceModuleId": "arcteryx-membership",
+      "experienceLabel": "Arc'teryx — Membership transition",
+      "altPhrasings": [
+        "What would you leave behind when transitioning off the membership program?",
+        "What handover materials would you prepare before leaving Arc'teryx?"
+      ],
+      "roundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "low"
+      }
+    }
+  ],
+  "appendRelatedOnAnchors": [
+    {
+      "anchorQuestion": "How would you design MCP or agentic finance connections with consent and human approval?",
+      "appendRelatedImportKeys": ["questrade-probe-2026-trade-timeout"]
+    },
+    {
+      "anchorQuestion": "How would you manage transitioning away from an ongoing membership initiative?",
+      "appendRelatedImportKeys": ["questrade-probe-2026-handover-artifacts"]
+    },
+    {
+      "anchorQuestion": "What are your compensation expectations?",
+      "appendRelatedImportKeys": [
+        "questrade-logistics-2026-notice-period",
+        "questrade-logistics-2026-hybrid-work",
+        "questrade-logistics-2026-interviewing-elsewhere"
+      ]
+    }
+  ],
+  "relatedQuestionIdsOnNewRecords": []
+}

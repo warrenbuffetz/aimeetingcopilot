@@ -1,6 +1,6 @@
 {
   "exportVersion": "1.0.0",
-  "exportedAt": "2026-10-27T02:16:53.325Z",
+  "exportedAt": "2026-10-27T03:08:41.124Z",
   "source": {
     "system": "supabase.prepared_qa",
     "profileId": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
@@ -8,15 +8,15 @@
     "userEmail": "poc-demo@interviewcopilot.app"
   },
   "summary": {
-    "totalRecords": 326,
+    "totalRecords": 328,
     "activeCount": 318,
-    "inactiveCount": 8,
-    "parentsWithEmbeddedFollowUps": 142,
-    "embeddedFollowUpSnippets": 575,
-    "standaloneFollowUpLinkedRecords": 218,
+    "inactiveCount": 10,
+    "parentsWithEmbeddedFollowUps": 140,
+    "embeddedFollowUpSnippets": 569,
+    "standaloneFollowUpLinkedRecords": 219,
     "duplicateActiveQuestionGroups": 0,
-    "withRoundRelevance": 187,
-    "withImportKey": 174
+    "withRoundRelevance": 189,
+    "withImportKey": 176
   },
   "records": [
     {
@@ -402,7 +402,7 @@
       "isPreferred": false,
       "isAuthoritative": true,
       "createdAt": "2026-10-22T18:04:13.285734+00:00",
-      "updatedAt": "2026-10-27T02:16:51.501+00:00",
+      "updatedAt": "2026-10-27T02:49:34.838+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -426,14 +426,22 @@
         "libraryCategory": "career_recruiter",
         "canonicalQuestion": "What are your compensation expectations?",
         "experienceModuleId": "career-general",
-        "relatedQuestionIds": []
+        "relatedQuestionIds": [
+          "ec501229-d290-41b4-8afb-39fb22d2bedb",
+          "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
+          "5c8ca4e3-7857-4084-bc87-eaa91b178fad"
+        ]
       },
       "aliases": [],
       "spokenAnswer": null,
       "shortAnswer": null,
       "canonicalQuestion": "What are your compensation expectations?",
       "canonicalQuestionId": null,
-      "relatedQuestionIds": [],
+      "relatedQuestionIds": [
+        "ec501229-d290-41b4-8afb-39fb22d2bedb",
+        "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
+        "5c8ca4e3-7857-4084-bc87-eaa91b178fad"
+      ],
       "experienceModuleId": "career-general",
       "experienceLabel": "Career & Motivation",
       "librarySection": "career_motivation",
@@ -2568,7 +2576,7 @@
       "isPreferred": true,
       "isAuthoritative": true,
       "createdAt": "2026-10-22T18:10:43.240032+00:00",
-      "updatedAt": "2026-10-27T00:17:22.782+00:00",
+      "updatedAt": "2026-10-27T03:08:38.839+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -2594,14 +2602,25 @@
         "libraryCategory": "resume_deep_dive",
         "canonicalQuestion": "Tell me about a product initiative that didn't go according to plan.",
         "experienceModuleId": "leadership-general",
-        "relatedQuestionIds": []
+        "relatedQuestionIds": [
+          "1fd9478b-7396-4778-bc00-e62aee52de52"
+        ],
+        "supplementalTalkingPoints": [
+          {
+            "label": "Sperro SV scope trade-off",
+            "content": "For Sperro SV we carved out a smaller benefits release to support a fixed September launch rather than forcing the full membership platform. That protected the customer promise while reducing technology and operational dependencies.",
+            "importKey": "tier2-didnt-go-sperro-scope"
+          }
+        ]
       },
       "aliases": [],
       "spokenAnswer": "One example would be the membership program I'm working on at Arc'teryx.\n\nIt's a fairly ambitious initiative involving different customer experiences, technology platforms and teams, and one of the challenges has been managing the dependencies across all of those areas.\n\nAs we got deeper into the planning, it became clear that some capabilities were more dependent on the broader platform than we'd initially anticipated.\n\nRather than trying to force everything into one launch, we had to revisit the sequencing and distinguish between what was essential for the MVP and what could be delivered separately or later.\n\nThat meant working with business and technology stakeholders to explain the trade-offs and make sure we were still solving the right customer problem.\n\nOne thing I've learned is that there's a difference between being committed to a product outcome and being committed to the original roadmap.\n\nI think a good PM needs to be willing to challenge the plan when new information comes to light, even if that means having some difficult conversations.\n\nI'd rather be transparent about the constraints and find a more realistic path to delivering value than continue pushing toward a launch that carries unnecessary risk.",
       "shortAnswer": "The Arc'teryx membership work is a good example. We had an ambitious proposition connecting a number of customer and service experiences, but the dependencies across technology, operations and partner teams were more complicated than a single roadmap slide suggested.",
       "canonicalQuestion": "Tell me about a product initiative that didn't go according to plan.",
       "canonicalQuestionId": null,
-      "relatedQuestionIds": [],
+      "relatedQuestionIds": [
+        "1fd9478b-7396-4778-bc00-e62aee52de52"
+      ],
       "experienceModuleId": "leadership-general",
       "experienceLabel": "Leadership & Judgment",
       "librarySection": "leadership_behavioural",
@@ -2618,7 +2637,13 @@
       "importKey": null,
       "sourceFile": "questrade-interview-full.json",
       "seedKey": null,
-      "supplementalTalkingPoints": [],
+      "supplementalTalkingPoints": [
+        {
+          "label": "Sperro SV scope trade-off",
+          "content": "For Sperro SV we carved out a smaller benefits release to support a fixed September launch rather than forcing the full membership platform. That protected the customer promise while reducing technology and operational dependencies.",
+          "importKey": "tier2-didnt-go-sperro-scope"
+        }
+      ],
       "embeddedFollowUps": [],
       "embeddedFollowUpCount": 0
     },
@@ -11140,9 +11165,9 @@
       "isPreferred": true,
       "isAuthoritative": true,
       "createdAt": "2026-10-22T20:20:00.541676+00:00",
-      "updatedAt": "2026-10-27T00:17:21.151+00:00",
-      "status": "active",
-      "inactiveReason": null,
+      "updatedAt": "2026-10-27T03:08:37.836+00:00",
+      "status": "inactive",
+      "inactiveReason": "superseded",
       "navigatorMeta": {
         "part": 12,
         "notes": "HBC",
@@ -11160,17 +11185,21 @@
           "Resume deep dive — HBC",
           "alias:hbc-mastercard-application"
         ],
+        "archivedAt": "2026-10-27T03:08:37.836Z",
         "sourceFile": "questrade-interview-full.json",
         "shortAnswer": "In the test, we randomly assigned new application starters to the original or revised experience and kept that assignment stable if they returned. Each person had fourteen days to complete, and we waited for the final cohort's window to close.",
         "altPhrasings": [],
         "reviewStatus": "ok",
         "spokenAnswer": "In the test, we randomly assigned new application starters to the original or revised experience and kept that assignment stable if they returned. Each person had fourteen days to complete, and we waited for the final cohort's window to close.\n\nCompletion meant the application had been submitted to Neo for a decision, not that the customer was approved or had activated their card.\n\nIn the original group, 2,000 of 4,000 starters completed, or 50%. In the revised group, 2,300 of 4,000 did, or 57.5%.\n\nThat's a 7.5-percentage-point improvement, or a 15% relative lift. The denominator was application starters, so we weren't just counting more submissions caused by more advertising traffic.\n\nI'd also monitor duplicate starts, support contacts and any disruption to the shopping experience. Approval and card activation would be separate downstream outcomes that we'd want to understand before making broader profitability claims.",
         "evidenceStatus": "resume_supported",
+        "inactiveReason": "illustrative_measurement_archived",
         "librarySection": "product_experience",
+        "revisionStatus": "superseded",
         "experienceLabel": "HBC — Mastercard Acquisition",
         "libraryCategory": "resume_deep_dive",
         "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
         "canonicalQuestion": "How did you measure the 15% improvement?",
+        "retrievalExcluded": true,
         "experienceModuleId": "hbc-mastercard-app",
         "relatedQuestionIds": [
           "2af89a04-ab52-40bd-928d-96a3122fffd1"
@@ -11178,7 +11207,9 @@
         "classificationNumber": 17,
         "classificationSource": "questrade-56-library-assignments.json",
         "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
-        "reviewResolutionNumber": 24
+        "reviewResolutionNumber": 24,
+        "tier2ConsistencyArchive": true,
+        "supersededByPreparedQaId": "722da43e-9883-44ce-800c-97a0aafbc694"
       },
       "aliases": [],
       "spokenAnswer": "In the test, we randomly assigned new application starters to the original or revised experience and kept that assignment stable if they returned. Each person had fourteen days to complete, and we waited for the final cohort's window to close.\n\nCompletion meant the application had been submitted to Neo for a decision, not that the customer was approved or had activated their card.\n\nIn the original group, 2,000 of 4,000 starters completed, or 50%. In the revised group, 2,300 of 4,000 did, or 57.5%.\n\nThat's a 7.5-percentage-point improvement, or a 15% relative lift. The denominator was application starters, so we weren't just counting more submissions caused by more advertising traffic.\n\nI'd also monitor duplicate starts, support contacts and any disruption to the shopping experience. Approval and card activation would be separate downstream outcomes that we'd want to understand before making broader profitability claims.",
@@ -11194,7 +11225,7 @@
       "libraryCategory": "resume_deep_dive",
       "questionIntent": "measurement_impact",
       "evidenceStatus": "resume_supported",
-      "revisionStatus": "current",
+      "revisionStatus": "superseded",
       "reviewStatus": "ok",
       "supersededByQuestion": null,
       "roundRelevance": null,
@@ -11769,9 +11800,9 @@
       "isPreferred": true,
       "isAuthoritative": true,
       "createdAt": "2026-10-22T20:20:04.299129+00:00",
-      "updatedAt": "2026-10-27T00:17:11.875+00:00",
-      "status": "active",
-      "inactiveReason": null,
+      "updatedAt": "2026-10-27T03:08:37.096+00:00",
+      "status": "inactive",
+      "inactiveReason": "superseded",
       "navigatorMeta": {
         "part": 12,
         "notes": "AERO",
@@ -11788,17 +11819,21 @@
           "Aeroplan",
           "Resume deep dive — Aeroplan"
         ],
+        "archivedAt": "2026-10-27T03:08:37.096Z",
         "sourceFile": "questrade-interview-full.json",
         "shortAnswer": "In the experiment, we split 8,000 unique logged-in mobile visitors evenly across two offer-page variants. Enrollment ran for four weeks, and we allowed seven days after each visitor's first exposure to see whether they began the bank application.",
         "altPhrasings": [],
         "reviewStatus": "ok",
         "spokenAnswer": "In the experiment, we split 8,000 unique logged-in mobile visitors evenly across two offer-page variants. Enrollment ran for four weeks, and we allowed seven days after each visitor's first exposure to see whether they began the bank application.\n\nWe defined a start as completing the first required application step at the bank. Landing on the bank's page didn't count.\n\nIn the original experience, 400 of 4,000 visitors started, or 10%. In the revised one, it was 560 of 4,000, or 14%.\n\nThat's a four-percentage-point lift, or 40% relative improvement in starts per offer-page visitor. Completion among starters held at 70%, so the additional starts also translated into more submitted applications.\n\nThat result applied to the tested audience and offer. It did not, on its own, explain the broader 427% year-over-year acquisition growth or prove a lift in approved, activated cardholders.",
         "evidenceStatus": "resume_supported",
+        "inactiveReason": "illustrative_measurement_archived",
         "librarySection": "product_experience",
+        "revisionStatus": "superseded",
         "experienceLabel": "Aeroplan — Co-brand Card Acquisition",
         "libraryCategory": "resume_deep_dive",
         "reviewResolvedAt": "2026-10-22T21:47:15.613Z",
         "canonicalQuestion": "How exactly did you measure the 40% conversion lift?",
+        "retrievalExcluded": true,
         "experienceModuleId": "aeroplan-cobrand",
         "relatedQuestionIds": [
           "195a8189-fe48-4c11-9ebe-8f2741146841"
@@ -11806,7 +11841,9 @@
         "classificationNumber": 2,
         "classificationSource": "questrade-56-library-assignments.json",
         "reviewResolutionBasis": "User-directed assumption that the cited metrics, research, implementation and ownership details are substantiated for this rehearsal scenario; not independently verified by the assistant.",
-        "reviewResolutionNumber": 6
+        "reviewResolutionNumber": 6,
+        "tier2ConsistencyArchive": true,
+        "supersededByPreparedQaId": "0e33272e-0d91-49a8-8d6d-e74881372454"
       },
       "aliases": [],
       "spokenAnswer": "In the experiment, we split 8,000 unique logged-in mobile visitors evenly across two offer-page variants. Enrollment ran for four weeks, and we allowed seven days after each visitor's first exposure to see whether they began the bank application.\n\nWe defined a start as completing the first required application step at the bank. Landing on the bank's page didn't count.\n\nIn the original experience, 400 of 4,000 visitors started, or 10%. In the revised one, it was 560 of 4,000, or 14%.\n\nThat's a four-percentage-point lift, or 40% relative improvement in starts per offer-page visitor. Completion among starters held at 70%, so the additional starts also translated into more submitted applications.\n\nThat result applied to the tested audience and offer. It did not, on its own, explain the broader 427% year-over-year acquisition growth or prove a lift in approved, activated cardholders.",
@@ -11822,7 +11859,7 @@
       "libraryCategory": "resume_deep_dive",
       "questionIntent": "measurement_impact",
       "evidenceStatus": "resume_supported",
-      "revisionStatus": "current",
+      "revisionStatus": "superseded",
       "reviewStatus": "ok",
       "supersededByQuestion": null,
       "roundRelevance": null,
@@ -12259,7 +12296,7 @@
       "isPreferred": false,
       "isAuthoritative": true,
       "createdAt": "2026-10-26T16:17:05.159759+00:00",
-      "updatedAt": "2026-10-26T19:42:43.653+00:00",
+      "updatedAt": "2026-10-27T02:49:34.647+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -12276,14 +12313,19 @@
           "cross_functional_panel": "very_high"
         },
         "panelDiscipline": "ai_agentic",
-        "experienceModuleId": "questrade-mcp"
+        "experienceModuleId": "questrade-mcp",
+        "relatedQuestionIds": [
+          "7a4e8b2c-3f1d-4a9e-b6c5-d8e7f9012345"
+        ]
       },
       "aliases": [],
       "spokenAnswer": "I'd start from customer-controlled consent: OAuth-style authorization, least privilege, read-only by default, and clear listing of what an agent can see versus do. Draft insights and proposed actions should be separable from execution — especially trades, transfers or bill payments. Questrade's public MCP materials emphasize customer approval for trades; I'd extend that pattern to any material money movement. Logging, revocation, rate limits and error surfaces matter as much as the demo. I would not describe autonomous agents moving money without an explicit confirmation step and audit trail.",
       "shortAnswer": "I'd start from customer-controlled consent: OAuth-style authorization, least privilege, read-only by default, and clear listing of what an agent can see versus do. Draft insights and proposed actions should be separable from execution — especially trades, transfers or bill payments. Questrade's public MCP materials emphasize customer approval for trades; I'd extend that pattern to any…",
       "canonicalQuestion": null,
       "canonicalQuestionId": null,
-      "relatedQuestionIds": [],
+      "relatedQuestionIds": [
+        "7a4e8b2c-3f1d-4a9e-b6c5-d8e7f9012345"
+      ],
       "experienceModuleId": "questrade-mcp",
       "experienceLabel": null,
       "librarySection": "product_banking_knowledge",
@@ -14417,7 +14459,7 @@
       "isPreferred": false,
       "isAuthoritative": true,
       "createdAt": "2026-10-26T19:07:32.756748+00:00",
-      "updatedAt": "2026-10-27T01:22:42.843+00:00",
+      "updatedAt": "2026-10-27T02:49:34.742+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -14461,7 +14503,8 @@
         "relatedQuestionIds": [
           "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
           "e8638ed2-3f9a-4c58-bc6b-5cfae62df074",
-          "ec501229-d290-41b4-8afb-39fb22d2bedb"
+          "ec501229-d290-41b4-8afb-39fb22d2bedb",
+          "8b5f9c3d-4e2a-5b0f-c7d6-e9f812345678"
         ],
         "canonicalQuestionId": "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
         "primaryInterviewRound": "hiring_manager"
@@ -14488,7 +14531,8 @@
       "relatedQuestionIds": [
         "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
         "e8638ed2-3f9a-4c58-bc6b-5cfae62df074",
-        "ec501229-d290-41b4-8afb-39fb22d2bedb"
+        "ec501229-d290-41b4-8afb-39fb22d2bedb",
+        "8b5f9c3d-4e2a-5b0f-c7d6-e9f812345678"
       ],
       "experienceModuleId": "career-general",
       "experienceLabel": null,
@@ -15935,12 +15979,12 @@
       "profileId": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
       "profileName": "Questrade — Senior PM, Everyday Banking",
       "question": "What is live from Arc'teryx's membership and Sperro SV work, and what remains planned?",
-      "answer": "The full membership platform hadn't launched while I was there. What we had done was define and secure approval for the investment, shape the MVP and select the architectural direction.\n\nThe membership concept brought care, repair, trade-in and related benefits into a more coherent post-purchase experience. My role covered the strategy, journeys, dependencies and investment case, including securing $5.2 million in capital approval.\n\nI try to be precise about that distinction. Funding and an approved platform direction are significant product milestones, but they're not evidence of member adoption or realized revenue. I wouldn't claim a launched full program or customer outcomes we hadn't observed.",
+      "answer": "I'd separate the Sperro SV launch from the broader membership platform, because they're related initiatives but not the same release.\n\nFor Sperro SV, we supported the September launch with a smaller set of customer benefits, including three years of unlimited out-of-warranty repairs, exclusive community experiences and the opportunity to win a Global Academy experience.\n\nThat allowed us to deliver something meaningful without waiting for the full membership infrastructure.\n\nThe broader membership initiative is a much larger build. We've secured about $5.2 million in approved funding, defined the MVP and worked through the platform architecture and integrations.\n\nSo I wouldn't present that full membership experience as already launched, or claim adoption and commercial outcomes we haven't measured.\n\nThe distinction is that Sperro SV gave us a focused benefits release, while the broader membership program remains a separate platform initiative.",
       "category": "product experience",
       "isPreferred": true,
       "isAuthoritative": true,
       "createdAt": "2026-10-26T19:15:19.253126+00:00",
-      "updatedAt": "2026-10-27T00:17:13.069+00:00",
+      "updatedAt": "2026-10-27T03:08:38.064+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -15951,8 +15995,8 @@
           "parent:b1eac049-c167-4977-a7bd-55e98d7e3b0b"
         ],
         "sourceFile": "questrade-followup-expansion-current-arcteryx.json",
-        "reviewNotes": "Proposed consolidation of conflicting chronology. Does not claim September launch delivery or current employment. Confirm the exact smaller-benefit involvement before expanding this answer.",
-        "shortAnswer": "The full membership platform hadn't launched while I was there. What we had done was define and secure approval for the investment, shape the MVP and select the architectural direction. The membership concept brought care, repair, trade-in and related benefits into a more coherent post-purchase experience. My role covered the strategy, journeys, dependencies and investment…",
+        "reviewNotes": "Tier 2 current-employment rehearsal wording. Confirm exact Sperro SV benefit fulfilment and your involvement before expanding. $5.2M is approved funding, not realized ROI.",
+        "shortAnswer": "I'd separate the Sperro SV launch from the broader membership platform, because they're related initiatives but not the same release. For Sperro SV, we supported the September launch with a smaller set of customer benefits, including three years of unlimited out-of-warranty repairs, exclusive community experiences and…",
         "altPhrasings": [
           "What's actually launched from the membership plan so far?",
           "Which Arc'teryx membership capabilities are live versus planned?",
@@ -15962,7 +16006,7 @@
           "What was in the September Sperro launch versus the full membership MVP?"
         ],
         "reviewStatus": "needs_review",
-        "spokenAnswer": "The full membership platform hadn't launched while I was there. What we had done was define and secure approval for the investment, shape the MVP and select the architectural direction. The membership concept brought care, repair, trade-in and related benefits into a more coherent post-purchase experience. My role covered the strategy, journeys, dependencies and investment case, including securing $5.2 million in capital approval. I try to be precise about that distinction. Funding and an approved platform direction are significant product milestones, but they're not evidence of member adoption…",
+        "spokenAnswer": "I'd separate the Sperro SV launch from the broader membership platform, because they're related initiatives but not the same release.\n\nFor Sperro SV, we supported the September launch with a smaller set of customer benefits, including three years of unlimited out-of-warranty repairs, exclusive community experiences and the opportunity to win a Global Academy experience.\n\nThat allowed us to deliver something meaningful without waiting for the full membership infrastructure.\n\nThe broader membership initiative is a much larger build. We've secured about $5.2 million in approved funding, defined the MVP and worked through the platform architecture and integrations.\n\nSo I wouldn't present that full membership experience as already launched, or claim adoption and commercial outcomes we haven't measured.\n\nThe distinction is that Sperro SV gave us a focused benefits release, while the broader membership program remains a separate platform initiative.",
         "evidenceStatus": "resume_supported",
         "librarySection": "product_experience",
         "roundRelevance": {
@@ -15977,7 +16021,7 @@
         "canonicalQuestionId": "b1eac049-c167-4977-a7bd-55e98d7e3b0b",
         "arcStatusCorrectionAt": "2026-10-26T19:40:19.395Z",
         "primaryInterviewRound": "hiring_manager",
-        "arcStatusCorrectionNote": "Targeted correction for current-employment rehearsal scenario. Review launch and benefits language against actual released customer experience; do not auto-approve."
+        "arcStatusCorrectionNote": "Updated 2026-10-27 tier2: Sperro SV benefits release vs full platform; verify fulfilment details."
       },
       "aliases": [
         "What's actually launched from the membership plan so far?",
@@ -15987,8 +16031,8 @@
         "Has the full membership platform launched yet?",
         "What was in the September Sperro launch versus the full membership MVP?"
       ],
-      "spokenAnswer": "The full membership platform hadn't launched while I was there. What we had done was define and secure approval for the investment, shape the MVP and select the architectural direction. The membership concept brought care, repair, trade-in and related benefits into a more coherent post-purchase experience. My role covered the strategy, journeys, dependencies and investment case, including securing $5.2 million in capital approval. I try to be precise about that distinction. Funding and an approved platform direction are significant product milestones, but they're not evidence of member adoption…",
-      "shortAnswer": "The full membership platform hadn't launched while I was there. What we had done was define and secure approval for the investment, shape the MVP and select the architectural direction. The membership concept brought care, repair, trade-in and related benefits into a more coherent post-purchase experience. My role covered the strategy, journeys, dependencies and investment…",
+      "spokenAnswer": "I'd separate the Sperro SV launch from the broader membership platform, because they're related initiatives but not the same release.\n\nFor Sperro SV, we supported the September launch with a smaller set of customer benefits, including three years of unlimited out-of-warranty repairs, exclusive community experiences and the opportunity to win a Global Academy experience.\n\nThat allowed us to deliver something meaningful without waiting for the full membership infrastructure.\n\nThe broader membership initiative is a much larger build. We've secured about $5.2 million in approved funding, defined the MVP and worked through the platform architecture and integrations.\n\nSo I wouldn't present that full membership experience as already launched, or claim adoption and commercial outcomes we haven't measured.\n\nThe distinction is that Sperro SV gave us a focused benefits release, while the broader membership program remains a separate platform initiative.",
+      "shortAnswer": "I'd separate the Sperro SV launch from the broader membership platform, because they're related initiatives but not the same release. For Sperro SV, we supported the September launch with a smaller set of customer benefits, including three years of unlimited out-of-warranty repairs, exclusive community experiences and…",
       "canonicalQuestion": null,
       "canonicalQuestionId": "b1eac049-c167-4977-a7bd-55e98d7e3b0b",
       "relatedQuestionIds": [
@@ -26513,10 +26557,10 @@
       "question": "How did you measure the 15% improvement in application completions?",
       "answer": "The reported result was a 15% relative improvement in application completions. That is different from a 15-percentage-point increase.\n\nThe measurement question is whether more people who started an application went on to submit it, using a consistent definition and enough time for each cohort to complete. Submission is also different from approval or first card use.\n\nTo attribute the improvement, I'd examine the comparison design and whether traffic source, device mix, offers or other changes could explain it. A randomized test would provide stronger evidence; a before-and-after comparison would require a more cautious claim.\n\nI would use the original analysis for the actual design and sample sizes. I can explain the 15% result and the funnel logic without presenting hypothetical cohort numbers as the historical experiment.",
       "category": "Experience deep dive",
-      "isPreferred": false,
-      "isAuthoritative": false,
+      "isPreferred": true,
+      "isAuthoritative": true,
       "createdAt": "2026-10-26T23:50:23.466268+00:00",
-      "updatedAt": "2026-10-27T00:05:42.523+00:00",
+      "updatedAt": "2026-10-27T03:08:37.596+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -26540,7 +26584,8 @@
         "shortAnswer": "The result was 15% relative improvement in completions, not 15 points. It needs a consistent start-to-submission definition, mature cohorts and a credible comparison. Exact design and sample sizes should come from the original analysis.",
         "altPhrasings": [
           "Was the HBC application lift relative or absolute?",
-          "How would you rule out applicant mix in the HBC result?"
+          "How would you rule out applicant mix in the HBC result?",
+          "How did you measure the 15% improvement?"
         ],
         "reviewStatus": "needs_review",
         "spokenAnswer": "The reported result was a 15% relative improvement in application completions. That is different from a 15-percentage-point increase.\n\nThe measurement question is whether more people who started an application went on to submit it, using a consistent definition and enough time for each cohort to complete. Submission is also different from approval or first card use.\n\nTo attribute the improvement, I'd examine the comparison design and whether traffic source, device mix, offers or other changes could explain it. A randomized test would provide stronger evidence; a before-and-after comparison would require a more cautious claim.\n\nI would use the original analysis for the actual design and sample sizes. I can explain the 15% result and the funnel logic without presenting hypothetical cohort numbers as the historical experiment.",
@@ -26566,11 +26611,34 @@
           "9153cd37-e61f-4f79-b527-50a14094f309"
         ],
         "primaryInterviewRound": "cross_functional_panel",
-        "sourceQuestradeRecordId": "3218b561-2159-442e-a3aa-074756f877c0"
+        "sourceQuestradeRecordId": "3218b561-2159-442e-a3aa-074756f877c0",
+        "supplementalTalkingPoints": [
+          {
+            "label": "Relative vs percentage points",
+            "content": "The 15% improvement in application completions is a relative lift, not a 15-percentage-point increase. Percentage points are the direct difference between two rates.",
+            "importKey": "tier2-hbc-relative-lift"
+          },
+          {
+            "label": "Submission vs approval",
+            "content": "Application submission is different from Neo underwriting approval and from first card activation. I would keep those outcomes separate when discussing commercial impact.",
+            "importKey": "tier2-hbc-submission-vs-approval"
+          },
+          {
+            "label": "Attribution caution",
+            "content": "A before-and-after funnel comparison and a randomized test support different strength of claims. I would match the claim to the design we can actually defend.",
+            "importKey": "tier2-hbc-attribution"
+          },
+          {
+            "label": "No illustrative cohort numbers",
+            "content": "I would not state specific arm sizes, assignment mechanics or completion windows as historical facts unless confirmed in the original reporting.",
+            "importKey": "tier2-hbc-no-illustrative-cohort"
+          }
+        ]
       },
       "aliases": [
         "Was the HBC application lift relative or absolute?",
-        "How would you rule out applicant mix in the HBC result?"
+        "How would you rule out applicant mix in the HBC result?",
+        "How did you measure the 15% improvement?"
       ],
       "spokenAnswer": "The reported result was a 15% relative improvement in application completions. That is different from a 15-percentage-point increase.\n\nThe measurement question is whether more people who started an application went on to submit it, using a consistent definition and enough time for each cohort to complete. Submission is also different from approval or first card use.\n\nTo attribute the improvement, I'd examine the comparison design and whether traffic source, device mix, offers or other changes could explain it. A randomized test would provide stronger evidence; a before-and-after comparison would require a more cautious claim.\n\nI would use the original analysis for the actual design and sample sizes. I can explain the 15% result and the funnel logic without presenting hypothetical cohort numbers as the historical experiment.",
       "shortAnswer": "The result was 15% relative improvement in completions, not 15 points. It needs a consistent start-to-submission definition, mature cohorts and a credible comparison. Exact design and sample sizes should come from the original analysis.",
@@ -26599,7 +26667,28 @@
       "importKey": "questrade-john-experience-depth-v1-hbc-application-measurement",
       "sourceFile": "Interview_Experience_Gap_QA_Cursor_Pack.md",
       "seedKey": null,
-      "supplementalTalkingPoints": [],
+      "supplementalTalkingPoints": [
+        {
+          "label": "Relative vs percentage points",
+          "content": "The 15% improvement in application completions is a relative lift, not a 15-percentage-point increase. Percentage points are the direct difference between two rates.",
+          "importKey": "tier2-hbc-relative-lift"
+        },
+        {
+          "label": "Submission vs approval",
+          "content": "Application submission is different from Neo underwriting approval and from first card activation. I would keep those outcomes separate when discussing commercial impact.",
+          "importKey": "tier2-hbc-submission-vs-approval"
+        },
+        {
+          "label": "Attribution caution",
+          "content": "A before-and-after funnel comparison and a randomized test support different strength of claims. I would match the claim to the design we can actually defend.",
+          "importKey": "tier2-hbc-attribution"
+        },
+        {
+          "label": "No illustrative cohort numbers",
+          "content": "I would not state specific arm sizes, assignment mechanics or completion windows as historical facts unless confirmed in the original reporting.",
+          "importKey": "tier2-hbc-no-illustrative-cohort"
+        }
+      ],
       "embeddedFollowUps": [],
       "embeddedFollowUpCount": 0
     },
@@ -27587,10 +27676,10 @@
       "question": "How did you measure the 40% conversion improvement at Aeroplan?",
       "answer": "The headline outcome on my resume is a 40% improvement in application conversion. I would be careful about the event definition because reaching an issuer, starting an application and completing an application are different outcomes.\n\nTo explain that result properly, I would anchor it to the original reporting definition, eligible audience and comparison period. I do not want to substitute a more impressive downstream event just because it sounds better in an interview.\n\nThe measurement approach I'd use is to follow the journey from exposure to offer engagement, the issuer handoff and whatever application outcome we can reliably observe. I'd compare like-for-like traffic and check for changes in offer strength, channel mix or eligibility that might explain part of the movement.\n\nI would also keep the 40% journey result separate from the 427% year-over-year acquisition growth. The broader number had multiple contributors. My job is to explain the product contribution accurately, including the limits of the evidence.",
       "category": "Experience deep dive",
-      "isPreferred": false,
-      "isAuthoritative": false,
+      "isPreferred": true,
+      "isAuthoritative": true,
       "createdAt": "2026-10-26T23:50:24.213985+00:00",
-      "updatedAt": "2026-10-27T00:05:43.417+00:00",
+      "updatedAt": "2026-10-27T03:08:36.713+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -27610,11 +27699,13 @@
         ],
         "sourceFile": "Interview_Experience_Gap_QA_Cursor_Pack.md",
         "authorNotes": "Authored rehearsal draft. Preserve full answer, short answer and review notes separately. Stage relevance is an editorial preparation judgment, not a probability. Review before enabling live retrieval. Shared experience content for Questrade and Simplii. Maintain factual and review-status parity; target-specific framing belongs in a separate role variant.",
-        "reviewNotes": "Metric-definition repair. Exact conversion event, relative versus absolute calculation, baseline, design and attribution are not supplied by the resume. Do not invent them. This is deliberately a bounded answer until the user confirms the original measurement; Cursor must not mark that gap resolved.",
+        "reviewNotes": "Tier 2: cautious primary retained. Exact funnel numerator/denominator still require verification. Illustrative 8k experiment archived.",
         "shortAnswer": "The reported result is a 40% improvement in application conversion. I need to anchor that to the original event definition and comparison period, rather than confuse issuer handoffs with completed applications. I also keep it separate from the broader 427% year-over-year acquisition growth, which had multiple contributors.",
         "altPhrasings": [
           "Was the 40% lift application starts or completed applications?",
-          "How do you attribute the Aeroplan acquisition improvement?"
+          "How do you attribute the Aeroplan acquisition improvement?",
+          "How exactly did you measure the 40% conversion lift?",
+          "How exactly did you measure Aeroplan's 40% conversion improvement?"
         ],
         "reviewStatus": "needs_review",
         "spokenAnswer": "The headline outcome on my resume is a 40% improvement in application conversion. I would be careful about the event definition because reaching an issuer, starting an application and completing an application are different outcomes.\n\nTo explain that result properly, I would anchor it to the original reporting definition, eligible audience and comparison period. I do not want to substitute a more impressive downstream event just because it sounds better in an interview.\n\nThe measurement approach I'd use is to follow the journey from exposure to offer engagement, the issuer handoff and whatever application outcome we can reliably observe. I'd compare like-for-like traffic and check for changes in offer strength, channel mix or eligibility that might explain part of the movement.\n\nI would also keep the 40% journey result separate from the 427% year-over-year acquisition growth. The broader number had multiple contributors. My job is to explain the product contribution accurately, including the limits of the evidence.",
@@ -27640,11 +27731,35 @@
           "bbb6602f-7fb4-4e7f-8257-fbf48b971bf8"
         ],
         "primaryInterviewRound": "cross_functional_panel",
-        "sourceQuestradeRecordId": "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4"
+        "sourceQuestradeRecordId": "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4",
+        "supplementalTalkingPoints": [
+          {
+            "label": "Relative vs percentage points",
+            "content": "The reported 40% improvement is a relative lift in funnel conversion, not a 40-percentage-point increase. I would anchor any deeper answer to the original reporting definition for the numerator and denominator.",
+            "importKey": "tier2-aeroplan-relative-lift"
+          },
+          {
+            "label": "Measurement boundaries",
+            "content": "Offer engagement, application starts, submissions, issuer approvals and activations are different events. I would not equate a funnel conversion improvement with approved or activated cardholders without the downstream data.",
+            "importKey": "tier2-aeroplan-funnel-boundaries"
+          },
+          {
+            "label": "Separate from 427% growth",
+            "content": "The 427% year-over-year acquisition growth had multiple contributors. I would explain the product funnel result on its own terms rather than implying it fully explains the broader growth number.",
+            "importKey": "tier2-aeroplan-427-separate"
+          },
+          {
+            "label": "No unverified experiment precision",
+            "content": "I would not present illustrative sample sizes, test windows or cohort splits as verified history unless I can confirm them from the original analysis.",
+            "importKey": "tier2-aeroplan-no-illustrative-experiment"
+          }
+        ]
       },
       "aliases": [
         "Was the 40% lift application starts or completed applications?",
-        "How do you attribute the Aeroplan acquisition improvement?"
+        "How do you attribute the Aeroplan acquisition improvement?",
+        "How exactly did you measure the 40% conversion lift?",
+        "How exactly did you measure Aeroplan's 40% conversion improvement?"
       ],
       "spokenAnswer": "The headline outcome on my resume is a 40% improvement in application conversion. I would be careful about the event definition because reaching an issuer, starting an application and completing an application are different outcomes.\n\nTo explain that result properly, I would anchor it to the original reporting definition, eligible audience and comparison period. I do not want to substitute a more impressive downstream event just because it sounds better in an interview.\n\nThe measurement approach I'd use is to follow the journey from exposure to offer engagement, the issuer handoff and whatever application outcome we can reliably observe. I'd compare like-for-like traffic and check for changes in offer strength, channel mix or eligibility that might explain part of the movement.\n\nI would also keep the 40% journey result separate from the 427% year-over-year acquisition growth. The broader number had multiple contributors. My job is to explain the product contribution accurately, including the limits of the evidence.",
       "shortAnswer": "The reported result is a 40% improvement in application conversion. I need to anchor that to the original event definition and comparison period, rather than confuse issuer handoffs with completed applications. I also keep it separate from the broader 427% year-over-year acquisition growth, which had multiple contributors.",
@@ -27673,7 +27788,28 @@
       "importKey": "questrade-john-experience-depth-v1-air-conversion-measurement",
       "sourceFile": "Interview_Experience_Gap_QA_Cursor_Pack.md",
       "seedKey": null,
-      "supplementalTalkingPoints": [],
+      "supplementalTalkingPoints": [
+        {
+          "label": "Relative vs percentage points",
+          "content": "The reported 40% improvement is a relative lift in funnel conversion, not a 40-percentage-point increase. I would anchor any deeper answer to the original reporting definition for the numerator and denominator.",
+          "importKey": "tier2-aeroplan-relative-lift"
+        },
+        {
+          "label": "Measurement boundaries",
+          "content": "Offer engagement, application starts, submissions, issuer approvals and activations are different events. I would not equate a funnel conversion improvement with approved or activated cardholders without the downstream data.",
+          "importKey": "tier2-aeroplan-funnel-boundaries"
+        },
+        {
+          "label": "Separate from 427% growth",
+          "content": "The 427% year-over-year acquisition growth had multiple contributors. I would explain the product funnel result on its own terms rather than implying it fully explains the broader growth number.",
+          "importKey": "tier2-aeroplan-427-separate"
+        },
+        {
+          "label": "No unverified experiment precision",
+          "content": "I would not present illustrative sample sizes, test windows or cohort splits as verified history unless I can confirm them from the original analysis.",
+          "importKey": "tier2-aeroplan-no-illustrative-experiment"
+        }
+      ],
       "embeddedFollowUps": [],
       "embeddedFollowUpCount": 0
     },
@@ -28320,6 +28456,154 @@
       "supplementalTalkingPoints": [],
       "embeddedFollowUps": [],
       "embeddedFollowUpCount": 0
+    },
+    {
+      "id": "7a4e8b2c-3f1d-4a9e-b6c5-d8e7f9012345",
+      "profileId": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
+      "profileName": "Questrade — Senior PM, Everyday Banking",
+      "question": "If an approved trade request times out, how would you prevent a duplicate order?",
+      "answer": "I'd treat the result as unknown, rather than assume the trade failed. The customer should see that we're checking the status, and the agent shouldn't create a fresh order just to get a response.\n\nI'd want the approved instruction tied to a durable request identifier and the execution service's documented retry contract. We'd check the authoritative order state and reconcile delayed responses before deciding whether another submission is safe. If retries are supported, they must refer to the same logical request and unchanged parameters; changing the order is a new decision that needs fresh approval.\n\nIf we still can't establish the state, I'd stop automated retries and give Operations the request, approval and attempt history. The product goal is that uncertainty creates a visible recovery process, never a second financial action.",
+      "category": "Product & Banking Knowledge",
+      "isPreferred": false,
+      "isAuthoritative": true,
+      "createdAt": "2026-10-27T02:49:34.564488+00:00",
+      "updatedAt": "2026-10-27T02:49:34.564488+00:00",
+      "status": "active",
+      "inactiveReason": null,
+      "navigatorMeta": {
+        "intent": "general",
+        "importKey": "questrade-probe-2026-trade-timeout",
+        "topicTags": [
+          "audit-probe",
+          "Product & Banking Knowledge"
+        ],
+        "sourceFile": "imports/questrade_audit_probes_qa.json",
+        "altPhrasings": [
+          "An approved trade times out — how do you avoid a duplicate order?",
+          "How would you handle execution uncertainty after a trade timeout?",
+          "What if the trade submission times out but might have succeeded?"
+        ],
+        "reviewStatus": "ok",
+        "evidenceStatus": "rehearsal_framework",
+        "librarySection": "product_banking_knowledge",
+        "revisionStatus": "current",
+        "roundRelevance": {
+          "recruiter": "low",
+          "hiring_manager": "medium",
+          "cross_functional_panel": "very_high"
+        },
+        "experienceLabel": "Questrade — MCP & agentic finance",
+        "libraryCategory": "product_banking",
+        "canonicalQuestion": "If an approved trade request times out, how would you prevent a duplicate order?",
+        "experienceModuleId": "questrade-mcp",
+        "relatedQuestionIds": []
+      },
+      "aliases": [
+        "An approved trade times out — how do you avoid a duplicate order?",
+        "How would you handle execution uncertainty after a trade timeout?",
+        "What if the trade submission times out but might have succeeded?"
+      ],
+      "spokenAnswer": null,
+      "shortAnswer": null,
+      "canonicalQuestion": "If an approved trade request times out, how would you prevent a duplicate order?",
+      "canonicalQuestionId": null,
+      "relatedQuestionIds": [],
+      "experienceModuleId": "questrade-mcp",
+      "experienceLabel": "Questrade — MCP & agentic finance",
+      "librarySection": "product_banking_knowledge",
+      "libraryCategory": "product_banking",
+      "questionIntent": "general",
+      "evidenceStatus": "rehearsal_framework",
+      "revisionStatus": "current",
+      "reviewStatus": "ok",
+      "supersededByQuestion": null,
+      "roundRelevance": {
+        "recruiter": "low",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "very_high"
+      },
+      "primaryInterviewRound": null,
+      "panelDiscipline": null,
+      "preparationTier": null,
+      "importKey": "questrade-probe-2026-trade-timeout",
+      "sourceFile": "imports/questrade_audit_probes_qa.json",
+      "seedKey": null,
+      "supplementalTalkingPoints": [],
+      "embeddedFollowUps": [],
+      "embeddedFollowUpCount": 0
+    },
+    {
+      "id": "8b5f9c3d-4e2a-5b0f-c7d6-e9f812345678",
+      "profileId": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
+      "profileName": "Questrade — Senior PM, Everyday Banking",
+      "question": "What specific handover artifacts would you prepare during your notice period?",
+      "answer": "I'd organize the handover around decisions and risks, not a long list of documents. I'd leave a clear view of the customer problem, what has shipped, what remains planned and the next decisions that need an owner.\n\nThat would include the current roadmap and backlog, the reasoning behind the major scope choices, dependency and vendor contacts, launch criteria, measurement definitions and open operational risks. For a financial journey, I'd also make sure the exception paths and support or reconciliation responsibilities were explicit.\n\nThen I'd walk the incoming owner through the work and use a few realistic scenarios to check that they can make the next decision without me. A handover is successful when ownership has transferred, not when the document has been sent.",
+      "category": "Motivation",
+      "isPreferred": false,
+      "isAuthoritative": true,
+      "createdAt": "2026-10-27T02:49:34.817441+00:00",
+      "updatedAt": "2026-10-27T02:49:34.817441+00:00",
+      "status": "active",
+      "inactiveReason": null,
+      "navigatorMeta": {
+        "intent": "general",
+        "importKey": "questrade-probe-2026-handover-artifacts",
+        "topicTags": [
+          "audit-probe",
+          "Motivation"
+        ],
+        "sourceFile": "imports/questrade_audit_probes_qa.json",
+        "altPhrasings": [
+          "What would you leave behind when transitioning off the membership program?",
+          "What handover materials would you prepare before leaving Arc'teryx?"
+        ],
+        "reviewStatus": "ok",
+        "evidenceStatus": "rehearsal_framework",
+        "librarySection": "career_motivation",
+        "revisionStatus": "current",
+        "roundRelevance": {
+          "recruiter": "high",
+          "hiring_manager": "medium",
+          "cross_functional_panel": "low"
+        },
+        "experienceLabel": "Arc'teryx — Membership transition",
+        "libraryCategory": "career_recruiter",
+        "canonicalQuestion": "What specific handover artifacts would you prepare during your notice period?",
+        "experienceModuleId": "arcteryx-membership",
+        "relatedQuestionIds": []
+      },
+      "aliases": [
+        "What would you leave behind when transitioning off the membership program?",
+        "What handover materials would you prepare before leaving Arc'teryx?"
+      ],
+      "spokenAnswer": null,
+      "shortAnswer": null,
+      "canonicalQuestion": "What specific handover artifacts would you prepare during your notice period?",
+      "canonicalQuestionId": null,
+      "relatedQuestionIds": [],
+      "experienceModuleId": "arcteryx-membership",
+      "experienceLabel": "Arc'teryx — Membership transition",
+      "librarySection": "career_motivation",
+      "libraryCategory": "career_recruiter",
+      "questionIntent": "general",
+      "evidenceStatus": "rehearsal_framework",
+      "revisionStatus": "current",
+      "reviewStatus": "ok",
+      "supersededByQuestion": null,
+      "roundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "low"
+      },
+      "primaryInterviewRound": null,
+      "panelDiscipline": null,
+      "preparationTier": null,
+      "importKey": "questrade-probe-2026-handover-artifacts",
+      "sourceFile": "imports/questrade_audit_probes_qa.json",
+      "seedKey": null,
+      "supplementalTalkingPoints": [],
+      "embeddedFollowUps": [],
+      "embeddedFollowUpCount": 0
     }
   ],
   "relationships": {
@@ -28376,6 +28660,24 @@
         "fromRecordId": "f67032ca-4e2e-4b49-ae44-29b181eab8b6",
         "toRecordId": "de31db47-3aea-4d26-be40-e0fa92423dd1",
         "toQuestion": "What is the strongest single reason we should choose you for this job?",
+        "relationship": "relatedQuestionIds"
+      },
+      {
+        "fromRecordId": "93f1f35c-cd54-49c3-8d6d-6a95d262fd4b",
+        "toRecordId": "ec501229-d290-41b4-8afb-39fb22d2bedb",
+        "toQuestion": "What is your required notice period?",
+        "relationship": "relatedQuestionIds"
+      },
+      {
+        "fromRecordId": "93f1f35c-cd54-49c3-8d6d-6a95d262fd4b",
+        "toRecordId": "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
+        "toQuestion": "What are your hybrid-work expectations?",
+        "relationship": "relatedQuestionIds"
+      },
+      {
+        "fromRecordId": "93f1f35c-cd54-49c3-8d6d-6a95d262fd4b",
+        "toRecordId": "5c8ca4e3-7857-4084-bc87-eaa91b178fad",
+        "toQuestion": "Are you interviewing elsewhere?",
         "relationship": "relatedQuestionIds"
       },
       {
@@ -28544,6 +28846,12 @@
         "fromRecordId": "e09deee1-3efa-4774-9274-2f18848b739f",
         "toRecordId": "458f82bd-542b-4331-92fb-d77bb3645d06",
         "toQuestion": "What if Risk still says no after you've presented all your evidence?",
+        "relationship": "relatedQuestionIds"
+      },
+      {
+        "fromRecordId": "15aa03e2-46af-4d60-9d73-90ed342c6ccc",
+        "toRecordId": "1fd9478b-7396-4778-bc00-e62aee52de52",
+        "toQuestion": "What are you currently working on at Arc'teryx?",
         "relationship": "relatedQuestionIds"
       },
       {
@@ -28865,15 +29173,9 @@
         "relationship": "relatedQuestionIds"
       },
       {
-        "fromRecordId": "3218b561-2159-442e-a3aa-074756f877c0",
-        "toRecordId": "2af89a04-ab52-40bd-928d-96a3122fffd1",
-        "toQuestion": "How do you know the HBC application improvement wasn't caused by a different applicant mix?",
-        "relationship": "relatedQuestionIds"
-      },
-      {
-        "fromRecordId": "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4",
-        "toRecordId": "195a8189-fe48-4c11-9ebe-8f2741146841",
-        "toQuestion": "What happened after the customer clicked Apply—how did you know they became an approved cardholder?",
+        "fromRecordId": "fb30286a-49ca-4ce1-b54a-4b7c4cea2d58",
+        "toRecordId": "7a4e8b2c-3f1d-4a9e-b6c5-d8e7f9012345",
+        "toQuestion": "If an approved trade request times out, how would you prevent a duplicate order?",
         "relationship": "relatedQuestionIds"
       },
       {
@@ -29066,6 +29368,12 @@
         "fromRecordId": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
         "toRecordId": "ec501229-d290-41b4-8afb-39fb22d2bedb",
         "toQuestion": "What is your required notice period?",
+        "relationship": "relatedQuestionIds"
+      },
+      {
+        "fromRecordId": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+        "toRecordId": "8b5f9c3d-4e2a-5b0f-c7d6-e9f812345678",
+        "toQuestion": "What specific handover artifacts would you prepare during your notice period?",
         "relationship": "relatedQuestionIds"
       },
       {
