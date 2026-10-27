@@ -24,7 +24,11 @@ import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
-import { ArrowLeft, RotateCcw, Search } from "lucide-react";
+import { ArrowLeft, ChevronDown, RotateCcw, Search } from "lucide-react";
+import { PanelResizeHandle } from "@/components/live/panel-resize-handle";
+import { useVerticalResize } from "@/hooks/use-vertical-resize";
+import { clamp } from "@/hooks/use-horizontal-resize";
+import { usePersistedNumber } from "@/hooks/use-persisted-state";
 
 type NavigatorTab = "next" | "experiences" | "all";
 
@@ -85,8 +89,13 @@ type Props = {
   onClearContext: () => void;
   onStartFresh: () => void;
   onSearchOpen: () => void;
+  mainPanelPreparedId?: string | null;
   practiceFooter: React.ReactNode;
 };
+
+const PRACTICE_PANEL_MIN = 48;
+const PRACTICE_PANEL_MAX = 420;
+const PRACTICE_PANEL_DEFAULT = 152;
 
 const TOP_INITIAL_VISIBLE = 5;
 
@@ -152,6 +161,7 @@ export function InterviewNavigator({
   onClearContext,
   onStartFresh,
   onSearchOpen,
+  mainPanelPreparedId = null,
   practiceFooter,
 }: Props) {
   const [tab, setTab] = useState<NavigatorTab>("next");
@@ -165,6 +175,21 @@ export function InterviewNavigator({
     setTopExpanded(false);
   }, [context.activeInterviewRound]);
   const [hideAskedTop, setHideAskedTop] = useState(false);
+  const [practicePanelHeight, setPracticePanelHeight] = usePersistedNumber(
+    "ic-live-practice-debug-height",
+    PRACTICE_PANEL_DEFAULT
+  );
+  const [practiceCollapsed, setPracticeCollapsed] = useState(false);
+
+  const practiceResize = useVerticalResize((dy) => {
+    setPracticeCollapsed(false);
+    setPracticePanelHeight((h) => clamp(h - dy, PRACTICE_PANEL_MIN, PRACTICE_PANEL_MAX));
+  });
+
+  useEffect(() => {
+    if (!mainPanelPreparedId) return;
+    setExpanded((prev) => (prev[mainPanelPreparedId] ? prev : { ...prev, [mainPanelPreparedId]: true }));
+  }, [mainPanelPreparedId]);
 
   const activeMapFocus = mapStack.length > 0 ? mapStack[mapStack.length - 1] : mapFocus;
 
@@ -218,10 +243,12 @@ export function InterviewNavigator({
     });
   }
 
+  const practiceHeight = practiceCollapsed ? PRACTICE_PANEL_MIN : practicePanelHeight;
+
   return (
     <div className={cn("flex min-h-0 flex-1 flex-col overflow-hidden", className)}>
       <ScrollArea className="min-h-0 flex-1">
-        <div className="flex flex-col">
+        <div className="flex min-h-0 flex-col">
           <div className="flex items-center justify-between gap-2 border-b border-border px-2 py-2">
             <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
               Interview Navigator
@@ -441,13 +468,18 @@ export function InterviewNavigator({
                             onToggle={() => toggleExpanded(s.rowId)}
                             onOpenMain={() => {
                               const row = catalog.find((r) => r.id === s.rowId);
-                              if (row) onOpenInMainPanel(row, { fromBrowse: true });
+                              if (row) {
+                                setExpanded((prev) => ({ ...prev, [s.rowId]: true }));
+                                onOpenInMainPanel(row, { fromBrowse: true });
+                              }
                             }}
                             onPin={() => {
                               const row = catalog.find((r) => r.id === s.rowId);
                               if (row) onPin(row);
                             }}
                             showShortFirst
+                            showExpandChevron
+                            activeInMainPanel={mainPanelPreparedId === s.rowId}
                           />
                           {asked && (
                             <p className="px-1 text-[9px] uppercase tracking-wide text-muted-foreground">Asked</p>
@@ -595,10 +627,38 @@ export function InterviewNavigator({
               {pinnedQuestion.length > 80 ? "…" : ""}
             </div>
           )}
-
-          <div className="border-t border-border">{practiceFooter}</div>
         </div>
       </ScrollArea>
+
+      <PanelResizeHandle
+        orientation="horizontal"
+        label="Resize practice and debug panel"
+        onPointerDown={practiceResize.onPointerDown}
+        className="border-t border-border/80"
+      />
+      <div
+        className="flex shrink-0 flex-col overflow-hidden border-t border-border bg-muted/5"
+        style={{ height: practiceHeight }}
+      >
+        <button
+          type="button"
+          className="flex w-full shrink-0 items-center gap-1.5 px-2 py-1.5 text-left hover:bg-muted/30"
+          onClick={() => setPracticeCollapsed((c) => !c)}
+          aria-expanded={!practiceCollapsed}
+        >
+          <ChevronDown
+            className={cn(
+              "h-3.5 w-3.5 shrink-0 text-muted-foreground transition-transform duration-200",
+              !practiceCollapsed && "rotate-180"
+            )}
+            aria-hidden
+          />
+          <span className="text-xs font-medium text-muted-foreground">Practice &amp; debug</span>
+        </button>
+        {!practiceCollapsed && (
+          <div className="min-h-0 flex-1 overflow-y-auto px-2 pb-2">{practiceFooter}</div>
+        )}
+      </div>
     </div>
   );
 }

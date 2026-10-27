@@ -49,6 +49,6 @@ describe("analyzeResultFromPreparedRow", () => {
     };
     const r = analyzeResultFromPreparedRow(intro);
     expect(r.answer).toBe(intro.answer);
-    expect(r.talkingPoints[0]).toContain("opening Avion");
+    expect(r.talkingPoints?.[0]).toContain("opening Avion");
   });
 });

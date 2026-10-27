@@ -1026,12 +1026,9 @@ export default function LiveInterviewPage() {
             onClearContext={interviewNav.clearContext}
             onStartFresh={startFreshInterview}
             onSearchOpen={() => setPaletteOpen(true)}
+            mainPanelPreparedId={matchedRowId ?? null}
             practiceFooter={
-              <details className="px-2 py-2 text-sm">
-                <summary className="cursor-pointer text-xs font-medium text-muted-foreground">
-                  Practice &amp; debug
-                </summary>
-                <div className="mt-2 space-y-3 pb-2">
+                <div className="space-y-3 text-sm">
                   {session.result && (
                     <div className="rounded-md border border-border/80 bg-muted/20 px-2.5 py-2 text-[11px] text-muted-foreground">
                       <p className="font-medium text-foreground/80">Retrieval diagnostics</p>
@@ -1095,7 +1092,6 @@ export default function LiveInterviewPage() {
                     </div>
                   </div>
                 </div>
-              </details>
             }
           />
         </section>

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ScriptText } from "@/components/live/script-text";
 import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
-import { Copy, Pin } from "lucide-react";
+import { ChevronDown, Copy, Pin } from "lucide-react";
 import { toast } from "sonner";
 
 function expandedAnswerCopyClass(accent: "suggested" | "library" | "alternative" | "neutral") {
@@ -53,6 +53,8 @@ export function AnswerPreviewCard({
   onPin,
   showShortFirst = false,
   semanticAccent = "neutral",
+  showExpandChevron = false,
+  activeInMainPanel = false,
 }: {
   source: PreviewSource;
   catalog: EnrichedQaRow[];
@@ -62,6 +64,8 @@ export function AnswerPreviewCard({
   onPin: () => void;
   showShortFirst?: boolean;
   semanticAccent?: "suggested" | "library" | "alternative" | "neutral";
+  showExpandChevron?: boolean;
+  activeInMainPanel?: boolean;
 }) {
   const row = rowFromSource(source, catalog);
   const question = "question" in source && !("navigator" in source) ? source.question : source.question;
@@ -81,14 +85,32 @@ export function AnswerPreviewCard({
       className={cn(
         "rounded-md border border-border/80 bg-muted/10",
         semanticAccent === "suggested" && "hover:border-ic-suggested/25",
-        semanticAccent === "library" && "hover:border-ic-library/25"
+        semanticAccent === "library" && "hover:border-ic-library/25",
+        activeInMainPanel && "border-ic-suggested/50 ring-1 ring-ic-suggested/25"
       )}
     >
-      <button type="button" className="flex w-full items-start gap-1 px-2 py-1.5 text-left" onClick={onToggle}>
+      <button
+        type="button"
+        className="flex w-full items-start gap-1.5 px-2 py-1.5 text-left"
+        onClick={onToggle}
+        aria-expanded={expanded}
+      >
+        {showExpandChevron && (
+          <ChevronDown
+            className={cn(
+              "mt-0.5 h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200",
+              expanded && "rotate-180 text-foreground"
+            )}
+            aria-hidden
+          />
+        )}
         <div className="min-w-0 flex-1">
           <p className={cn("text-xs font-medium leading-snug", liveSemantic.textAnswer)}>{question}</p>
           <p className="text-[10px] text-muted-foreground">
             {label} · {intentLabel(intent)}
+            {activeInMainPanel && (
+              <span className={cn("ml-1", liveSemantic.labelSuggested)}>· Open in main panel</span>
+            )}
           </p>
           {warn && <p className="mt-0.5 text-[10px] text-amber-400/90">{warn}</p>}
         </div>
