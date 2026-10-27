@@ -1,6 +1,6 @@
 # Editorial top questions — library match
 
-Generated: 2026-10-27T00:59:38.585Z
+Generated: 2026-10-27T01:21:41.583Z
 
 Each editorial line is matched independently to the best active Questrade library row (≥ 0.55 similarity). Wording variants usually map to an existing prepared answer.
 

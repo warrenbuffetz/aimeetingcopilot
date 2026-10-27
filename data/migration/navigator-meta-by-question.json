@@ -7393,5 +7393,145 @@
     "canonicalQuestionId": "b1eac049-c167-4977-a7bd-55e98d7e3b0b",
     "arcStatusCorrectionAt": "2026-10-26T19:40:19.395Z",
     "arcStatusCorrectionNote": "Targeted correction for current-employment rehearsal scenario. Review launch and benefits language against actual released customer experience; do not auto-approve."
+  },
+  "What is your required notice period?": {
+    "librarySection": "career_motivation",
+    "libraryCategory": "career_recruiter",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok",
+    "revisionStatus": "current",
+    "topicTags": [
+      "recruiter-logistics",
+      "Motivation"
+    ],
+    "altPhrasings": [
+      "How much notice would you need to give?",
+      "When could you start?",
+      "What's your availability to start?",
+      "How quickly could you join Questrade?",
+      "How would you manage your notice period?"
+    ],
+    "roundRelevance": {
+      "recruiter": "very_high",
+      "hiring_manager": "medium",
+      "cross_functional_panel": "low"
+    },
+    "importKey": "questrade-logistics-2026-notice-period",
+    "sourceFile": "imports/questrade_recruiter_logistics_qa.json",
+    "relatedQuestionIds": [
+      "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+      "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+      "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+      "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b"
+    ],
+    "canonicalQuestion": "What is your required notice period?"
+  },
+  "What are your hybrid-work expectations?": {
+    "librarySection": "career_motivation",
+    "libraryCategory": "career_recruiter",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok",
+    "revisionStatus": "current",
+    "topicTags": [
+      "recruiter-logistics",
+      "Motivation"
+    ],
+    "altPhrasings": [
+      "Are you comfortable with our hybrid model?",
+      "How many days are you willing to come into the office?",
+      "What are your workplace flexibility expectations?",
+      "Would you be comfortable working from our Toronto office?",
+      "Are you looking for a remote or hybrid role?"
+    ],
+    "roundRelevance": {
+      "recruiter": "very_high",
+      "hiring_manager": "medium",
+      "cross_functional_panel": "low"
+    },
+    "importKey": "questrade-logistics-2026-hybrid-work",
+    "sourceFile": "imports/questrade_recruiter_logistics_qa.json",
+    "relatedQuestionIds": [
+      "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+      "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+      "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+      "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b"
+    ],
+    "canonicalQuestion": "What are your hybrid-work expectations?"
+  },
+  "What is your target total compensation?": {
+    "librarySection": "career_motivation",
+    "libraryCategory": "career_recruiter",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok",
+    "revisionStatus": "current",
+    "topicTags": [
+      "recruiter-logistics",
+      "Motivation"
+    ],
+    "altPhrasings": [
+      "What are your total compensation expectations?",
+      "What compensation package are you targeting?",
+      "What are you looking for including bonus?",
+      "What's your expected base salary and total compensation?",
+      "What would a competitive offer look like to you?"
+    ],
+    "roundRelevance": {
+      "recruiter": "very_high",
+      "hiring_manager": "medium",
+      "cross_functional_panel": "low"
+    },
+    "importKey": "questrade-logistics-2026-target-total-comp",
+    "sourceFile": "imports/questrade_recruiter_logistics_qa.json",
+    "relatedQuestionIds": [
+      "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+      "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+      "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+      "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b"
+    ],
+    "canonicalQuestion": "What is your target total compensation?"
+  },
+  "Are you interviewing elsewhere?": {
+    "librarySection": "career_motivation",
+    "libraryCategory": "career_recruiter",
+    "experienceModuleId": "career-general",
+    "experienceLabel": "Career & Motivation",
+    "intent": "general",
+    "evidenceStatus": "rehearsal_framework",
+    "reviewStatus": "ok",
+    "revisionStatus": "current",
+    "topicTags": [
+      "recruiter-logistics",
+      "Motivation"
+    ],
+    "altPhrasings": [
+      "Are you actively interviewing with other companies?",
+      "Where are you in your job search?",
+      "Are you considering other opportunities?",
+      "Do you have any competing offers?",
+      "Are there any timelines we should be aware of?"
+    ],
+    "roundRelevance": {
+      "recruiter": "high",
+      "hiring_manager": "medium",
+      "cross_functional_panel": "low"
+    },
+    "importKey": "questrade-logistics-2026-interviewing-elsewhere",
+    "sourceFile": "imports/questrade_recruiter_logistics_qa.json",
+    "relatedQuestionIds": [
+      "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+      "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+      "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+      "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b"
+    ],
+    "canonicalQuestion": "Are you interviewing elsewhere?"
   }
 }

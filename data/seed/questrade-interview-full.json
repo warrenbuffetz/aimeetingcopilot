@@ -2971,6 +2971,30 @@
       "part": 9,
       "isPreferred": false,
       "notes": "followup-expansion-2026-10-818789ec0c4cf2bb"
+    },
+    {
+      "id": "ec501229-d290-41b4-8afb-39fb22d2bedb",
+      "question": "What is your required notice period?",
+      "answer": "Given that I'm currently leading a fairly significant membership initiative at Arc'teryx, I'd ideally want to allow around three to four weeks for a proper transition.\n\nI'd want to make sure there's a clear handover of the roadmap, key decisions and dependencies so the team can continue moving forward.\n\nThat said, I'm flexible and would be happy to work through timing depending on Questrade's needs.",
+      "category": "Motivation"
+    },
+    {
+      "id": "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
+      "question": "What are your hybrid-work expectations?",
+      "answer": "I'm based in the GTA, so I'm comfortable with a hybrid arrangement in Toronto.\n\nIdeally, I'd be looking at something around two to three days in the office, but I'm flexible depending on the team's needs.\n\nI do think there's value in being together in person, especially when you're working through complex product decisions or collaborating closely with Engineering and stakeholders.\n\nFor me, it's really about finding the right balance between collaboration and having the flexibility to do focused work.",
+      "category": "Motivation"
+    },
+    {
+      "id": "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
+      "question": "What is your target total compensation?",
+      "answer": "For a Senior Product Manager role with this level of ownership, I'd be targeting somewhere around $205,000 to $230,000 in total annual compensation, depending on how the package is structured.\n\nIn terms of base salary, I'm generally looking in the $175,000 to $195,000 range, with the remainder coming from bonus or other compensation components.\n\nI'm open to understanding how Questrade structures its packages, though. What's important to me is that the overall compensation reflects the scope of the role and the impact I'd be expected to deliver.",
+      "category": "Motivation"
+    },
+    {
+      "id": "5c8ca4e3-7857-4084-bc87-eaa91b178fad",
+      "question": "Are you interviewing elsewhere?",
+      "answer": "Yes, I'm having conversations with a few organizations, primarily around senior product opportunities in financial services and customer platforms.\n\nI'm being fairly selective because I'm looking for the right long-term fit, rather than just making a move for the sake of it.\n\nQuestrade is particularly interesting to me because of the expansion into everyday banking. It brings together a lot of the work I've enjoyed most across payments, financial products and customer engagement.\n\nNothing I'd want to rush unnecessarily, but I'd certainly keep you informed if there were any changes to my timelines.",
+      "category": "Motivation"
     }
   ]
 }

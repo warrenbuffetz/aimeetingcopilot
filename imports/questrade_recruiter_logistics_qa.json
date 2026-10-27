@@ -1,0 +1,119 @@
+{
+  "profileName": "Questrade — Senior PM, Everyday Banking",
+  "packageVersion": "questrade-recruiter-logistics-2026-10",
+  "records": [
+    {
+      "importKey": "questrade-logistics-2026-notice-period",
+      "question": "What is your required notice period?",
+      "answer": "Given that I'm currently leading a fairly significant membership initiative at Arc'teryx, I'd ideally want to allow around three to four weeks for a proper transition.\n\nI'd want to make sure there's a clear handover of the roadmap, key decisions and dependencies so the team can continue moving forward.\n\nThat said, I'm flexible and would be happy to work through timing depending on Questrade's needs.",
+      "category": "Motivation",
+      "isPreferred": false,
+      "altPhrasings": [
+        "How much notice would you need to give?",
+        "When could you start?",
+        "What's your availability to start?",
+        "How quickly could you join Questrade?",
+        "How would you manage your notice period?"
+      ],
+      "roundRelevance": {
+        "recruiter": "very_high",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "low"
+      }
+    },
+    {
+      "importKey": "questrade-logistics-2026-hybrid-work",
+      "question": "What are your hybrid-work expectations?",
+      "answer": "I'm based in the GTA, so I'm comfortable with a hybrid arrangement in Toronto.\n\nIdeally, I'd be looking at something around two to three days in the office, but I'm flexible depending on the team's needs.\n\nI do think there's value in being together in person, especially when you're working through complex product decisions or collaborating closely with Engineering and stakeholders.\n\nFor me, it's really about finding the right balance between collaboration and having the flexibility to do focused work.",
+      "category": "Motivation",
+      "isPreferred": false,
+      "altPhrasings": [
+        "Are you comfortable with our hybrid model?",
+        "How many days are you willing to come into the office?",
+        "What are your workplace flexibility expectations?",
+        "Would you be comfortable working from our Toronto office?",
+        "Are you looking for a remote or hybrid role?"
+      ],
+      "roundRelevance": {
+        "recruiter": "very_high",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "low"
+      }
+    },
+    {
+      "importKey": "questrade-logistics-2026-target-total-comp",
+      "question": "What is your target total compensation?",
+      "answer": "For a Senior Product Manager role with this level of ownership, I'd be targeting somewhere around $205,000 to $230,000 in total annual compensation, depending on how the package is structured.\n\nIn terms of base salary, I'm generally looking in the $175,000 to $195,000 range, with the remainder coming from bonus or other compensation components.\n\nI'm open to understanding how Questrade structures its packages, though. What's important to me is that the overall compensation reflects the scope of the role and the impact I'd be expected to deliver.",
+      "category": "Motivation",
+      "isPreferred": false,
+      "altPhrasings": [
+        "What are your total compensation expectations?",
+        "What compensation package are you targeting?",
+        "What are you looking for including bonus?",
+        "What's your expected base salary and total compensation?",
+        "What would a competitive offer look like to you?"
+      ],
+      "roundRelevance": {
+        "recruiter": "very_high",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "low"
+      }
+    },
+    {
+      "importKey": "questrade-logistics-2026-interviewing-elsewhere",
+      "question": "Are you interviewing elsewhere?",
+      "answer": "Yes, I'm having conversations with a few organizations, primarily around senior product opportunities in financial services and customer platforms.\n\nI'm being fairly selective because I'm looking for the right long-term fit, rather than just making a move for the sake of it.\n\nQuestrade is particularly interesting to me because of the expansion into everyday banking. It brings together a lot of the work I've enjoyed most across payments, financial products and customer engagement.\n\nNothing I'd want to rush unnecessarily, but I'd certainly keep you informed if there were any changes to my timelines.",
+      "category": "Motivation",
+      "isPreferred": false,
+      "altPhrasings": [
+        "Are you actively interviewing with other companies?",
+        "Where are you in your job search?",
+        "Are you considering other opportunities?",
+        "Do you have any competing offers?",
+        "Are there any timelines we should be aware of?"
+      ],
+      "roundRelevance": {
+        "recruiter": "high",
+        "hiring_manager": "medium",
+        "cross_functional_panel": "low"
+      }
+    }
+  ],
+  "appendRelatedOnAnchors": [
+    {
+      "anchorQuestion": "Why are you looking to leave Arc'teryx?",
+      "appendRelatedImportKeys": [
+        "questrade-logistics-2026-notice-period",
+        "questrade-logistics-2026-hybrid-work",
+        "questrade-logistics-2026-target-total-comp",
+        "questrade-logistics-2026-interviewing-elsewhere"
+      ]
+    },
+    {
+      "anchorQuestion": "Why Questrade? Why this role?",
+      "appendRelatedImportKeys": [
+        "questrade-logistics-2026-notice-period",
+        "questrade-logistics-2026-hybrid-work",
+        "questrade-logistics-2026-target-total-comp",
+        "questrade-logistics-2026-interviewing-elsewhere"
+      ]
+    },
+    {
+      "anchorQuestion": "You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?",
+      "appendRelatedImportKeys": [
+        "questrade-logistics-2026-notice-period",
+        "questrade-logistics-2026-interviewing-elsewhere"
+      ]
+    },
+    {
+      "anchorQuestion": "How would you manage transitioning away from an ongoing membership initiative?",
+      "appendRelatedImportKeys": ["questrade-logistics-2026-notice-period"]
+    }
+  ],
+  "relatedQuestionIdsOnNewRecords": [
+    "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+    "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+    "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+    "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b"
+  ]
+}

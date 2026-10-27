@@ -138,6 +138,22 @@ const BULK_CASES: EvalCase[] = [
   { id: "eft", query: "EFT money movement reliability", expectQuestionIncludes: "EFT" },
   { id: "comp", query: "What are your compensation expectations?", expectQuestionIncludes: "compensation" },
   { id: "hybrid-work", query: "hybrid work arrangement Toronto", expectQuestionIncludes: "hybrid" },
+  { id: "logistics-notice", query: "How much notice would you need to give?", expectQuestionIncludes: "notice period" },
+  {
+    id: "logistics-hybrid-office",
+    query: "Are you comfortable coming into the office?",
+    expectQuestionIncludes: "hybrid-work",
+  },
+  {
+    id: "logistics-total-comp",
+    query: "What's your total comp target, including bonus?",
+    expectQuestionIncludes: "target total compensation",
+  },
+  {
+    id: "logistics-interviewing",
+    query: "Are you interviewing with anyone else?",
+    expectQuestionIncludes: "interviewing elsewhere",
+  },
   { id: "vendor-banking", query: "underperforming banking technology vendor", expectQuestionIncludes: "vendor" },
   { id: "payment-incident", query: "major payment incident", expectQuestionIncludes: "payment incident" },
   { id: "wrong-exp-rbc-hbc", query: "Tell me about RBC Avion cashback withdrawal launch", expectModuleId: "rbc-cashback" },

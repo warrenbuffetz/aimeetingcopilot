@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-27T01:22:42.004Z",
+  "apply": true,
+  "inserted": [],
+  "updated": [
+    {
+      "id": "ec501229-d290-41b4-8afb-39fb22d2bedb",
+      "question": "What is your required notice period?",
+      "importKey": "questrade-logistics-2026-notice-period"
+    },
+    {
+      "id": "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
+      "question": "What are your hybrid-work expectations?",
+      "importKey": "questrade-logistics-2026-hybrid-work"
+    },
+    {
+      "id": "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
+      "question": "What is your target total compensation?",
+      "importKey": "questrade-logistics-2026-target-total-comp"
+    },
+    {
+      "id": "5c8ca4e3-7857-4084-bc87-eaa91b178fad",
+      "question": "Are you interviewing elsewhere?",
+      "importKey": "questrade-logistics-2026-interviewing-elsewhere"
+    }
+  ],
+  "skipped": [],
+  "relationships": [
+    {
+      "anchorId": "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+      "anchor": "Why are you looking to leave Arc'teryx?",
+      "added": 4
+    },
+    {
+      "anchorId": "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+      "anchor": "Why Questrade? Why this role?",
+      "added": 4
+    },
+    {
+      "anchorId": "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
+      "anchor": "You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?",
+      "added": 2
+    },
+    {
+      "anchorId": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+      "anchor": "How would you manage transitioning away from an ongoing membership initiative?",
+      "added": 1
+    }
+  ],
+  "ids": {
+    "questrade-logistics-2026-notice-period": "ec501229-d290-41b4-8afb-39fb22d2bedb",
+    "questrade-logistics-2026-hybrid-work": "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
+    "questrade-logistics-2026-target-total-comp": "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
+    "questrade-logistics-2026-interviewing-elsewhere": "5c8ca4e3-7857-4084-bc87-eaa91b178fad"
+  }
+}
