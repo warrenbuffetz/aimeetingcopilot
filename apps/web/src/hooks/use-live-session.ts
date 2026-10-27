@@ -136,20 +136,27 @@ export function useLiveSession(
         console.error("prepared_qa load", first.error);
       }
       setLibrary(
-        (data ?? []).map((r) => {
-          const meta = (r as { navigator_meta?: PersistedNavigatorMeta }).navigator_meta;
-          return {
-            id: r.id,
-            question: r.question,
-            answer: r.answer,
-            isPreferred: r.is_preferred,
-            followUps: parseFollowUps(r.follow_ups),
-            category: r.category,
-            part: meta?.part ?? undefined,
-            notes: meta?.notes ?? meta?.seedKey ?? undefined,
-            navigatorMeta: meta ?? null,
-          };
-        })
+        (data ?? [])
+          .filter((r) => {
+            const meta = (r as { navigator_meta?: PersistedNavigatorMeta }).navigator_meta;
+            if (meta?.retrievalExcluded) return false;
+            if (meta?.revisionStatus === "superseded" || meta?.revisionStatus === "archived") return false;
+            return true;
+          })
+          .map((r) => {
+            const meta = (r as { navigator_meta?: PersistedNavigatorMeta }).navigator_meta;
+            return {
+              id: r.id,
+              question: r.question,
+              answer: r.answer,
+              isPreferred: r.is_preferred,
+              followUps: parseFollowUps(r.follow_ups),
+              category: r.category,
+              part: meta?.part ?? undefined,
+              notes: meta?.notes ?? meta?.seedKey ?? undefined,
+              navigatorMeta: meta ?? null,
+            };
+          })
       );
     })();
   }, [profileId]);

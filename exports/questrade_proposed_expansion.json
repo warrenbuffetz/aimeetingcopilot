@@ -1,6 +1,6 @@
 {
   "exportVersion": "1.0.0",
-  "exportedAt": "2026-10-27T01:21:41.525Z",
+  "exportedAt": "2026-10-27T02:16:53.329Z",
   "note": "Source file in repo is data/migration/questrade-followup-expansion-current-arcteryx.json (variant of Questrade_Proposed_Followup_Expansion.json). Entries already in Supabase are omitted.",
   "sourceMeta": {
     "version": "draft-2026-10-26-current-arcteryx-scenario",

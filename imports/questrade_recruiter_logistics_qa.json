@@ -41,25 +41,6 @@
       }
     },
     {
-      "importKey": "questrade-logistics-2026-target-total-comp",
-      "question": "What is your target total compensation?",
-      "answer": "For a Senior Product Manager role with this level of ownership, I'd be targeting somewhere around $205,000 to $230,000 in total annual compensation, depending on how the package is structured.\n\nIn terms of base salary, I'm generally looking in the $175,000 to $195,000 range, with the remainder coming from bonus or other compensation components.\n\nI'm open to understanding how Questrade structures its packages, though. What's important to me is that the overall compensation reflects the scope of the role and the impact I'd be expected to deliver.",
-      "category": "Motivation",
-      "isPreferred": false,
-      "altPhrasings": [
-        "What are your total compensation expectations?",
-        "What compensation package are you targeting?",
-        "What are you looking for including bonus?",
-        "What's your expected base salary and total compensation?",
-        "What would a competitive offer look like to you?"
-      ],
-      "roundRelevance": {
-        "recruiter": "very_high",
-        "hiring_manager": "medium",
-        "cross_functional_panel": "low"
-      }
-    },
-    {
       "importKey": "questrade-logistics-2026-interviewing-elsewhere",
       "question": "Are you interviewing elsewhere?",
       "answer": "Yes, I'm having conversations with a few organizations, primarily around senior product opportunities in financial services and customer platforms.\n\nI'm being fairly selective because I'm looking for the right long-term fit, rather than just making a move for the sake of it.\n\nQuestrade is particularly interesting to me because of the expansion into everyday banking. It brings together a lot of the work I've enjoyed most across payments, financial products and customer engagement.\n\nNothing I'd want to rush unnecessarily, but I'd certainly keep you informed if there were any changes to my timelines.",
@@ -85,7 +66,6 @@
       "appendRelatedImportKeys": [
         "questrade-logistics-2026-notice-period",
         "questrade-logistics-2026-hybrid-work",
-        "questrade-logistics-2026-target-total-comp",
         "questrade-logistics-2026-interviewing-elsewhere"
       ]
     },
@@ -94,7 +74,6 @@
       "appendRelatedImportKeys": [
         "questrade-logistics-2026-notice-period",
         "questrade-logistics-2026-hybrid-work",
-        "questrade-logistics-2026-target-total-comp",
         "questrade-logistics-2026-interviewing-elsewhere"
       ]
     },

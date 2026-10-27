@@ -147,7 +147,7 @@ const BULK_CASES: EvalCase[] = [
   {
     id: "logistics-total-comp",
     query: "What's your total comp target, including bonus?",
-    expectQuestionIncludes: "target total compensation",
+    expectQuestionIncludes: "compensation expectations",
   },
   {
     id: "logistics-interviewing",

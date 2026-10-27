@@ -1,6 +1,6 @@
 {
   "exportVersion": "1.0.0",
-  "exportedAt": "2026-10-27T01:21:41.523Z",
+  "exportedAt": "2026-10-27T02:16:53.326Z",
   "profileId": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
   "profileName": "Questrade — Senior PM, Everyday Banking",
   "items": [
@@ -42,7 +42,6 @@
         "55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1",
         "ec501229-d290-41b4-8afb-39fb22d2bedb",
         "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
-        "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
         "5c8ca4e3-7857-4084-bc87-eaa91b178fad"
       ],
       "canonicalQuestionId": null,
@@ -175,7 +174,6 @@
       "relatedQuestionIds": [
         "ec501229-d290-41b4-8afb-39fb22d2bedb",
         "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
-        "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
         "5c8ca4e3-7857-4084-bc87-eaa91b178fad"
       ],
       "canonicalQuestionId": null,
@@ -7262,13 +7260,13 @@
     {
       "id": "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
       "question": "What is your target total compensation?",
-      "status": "active",
+      "status": "inactive",
       "category": "Motivation",
       "experienceModuleId": "career-general",
       "librarySection": "career_motivation",
       "questionIntent": "general",
       "preparationTier": null,
-      "revisionStatus": "current",
+      "revisionStatus": "archived",
       "importKey": "questrade-logistics-2026-target-total-comp",
       "relatedQuestionIds": [
         "28571e7f-620f-4880-9cd7-cdfc2e146aa8",

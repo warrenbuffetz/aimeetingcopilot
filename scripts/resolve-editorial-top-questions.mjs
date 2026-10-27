@@ -58,7 +58,6 @@ function bestMatch(editorialQ, records) {
 const RECRUITER_LOGISTICS = [
   "What is your required notice period?",
   "What are your hybrid-work expectations?",
-  "What is your target total compensation?",
   "Are you interviewing elsewhere?",
 ];
 

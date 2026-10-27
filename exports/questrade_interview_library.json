@@ -1,6 +1,6 @@
 {
   "exportVersion": "1.0.0",
-  "exportedAt": "2026-10-27T01:21:41.521Z",
+  "exportedAt": "2026-10-27T02:16:53.325Z",
   "source": {
     "system": "supabase.prepared_qa",
     "profileId": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
@@ -9,14 +9,14 @@
   },
   "summary": {
     "totalRecords": 326,
-    "activeCount": 319,
-    "inactiveCount": 7,
+    "activeCount": 318,
+    "inactiveCount": 8,
     "parentsWithEmbeddedFollowUps": 142,
     "embeddedFollowUpSnippets": 575,
-    "standaloneFollowUpLinkedRecords": 219,
+    "standaloneFollowUpLinkedRecords": 218,
     "duplicateActiveQuestionGroups": 0,
-    "withRoundRelevance": 188,
-    "withImportKey": 175
+    "withRoundRelevance": 187,
+    "withImportKey": 174
   },
   "records": [
     {
@@ -106,7 +106,7 @@
       "isPreferred": true,
       "isAuthoritative": true,
       "createdAt": "2026-10-22T18:04:12.477418+00:00",
-      "updatedAt": "2026-10-27T01:21:27.79+00:00",
+      "updatedAt": "2026-10-27T02:15:52.995+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -139,7 +139,6 @@
           "55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1",
           "ec501229-d290-41b4-8afb-39fb22d2bedb",
           "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
-          "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
           "5c8ca4e3-7857-4084-bc87-eaa91b178fad"
         ],
         "supplementalTalkingPoints": [
@@ -159,7 +158,6 @@
         "55b22c18-d8b6-4b18-ba98-5b8a2a33ffe1",
         "ec501229-d290-41b4-8afb-39fb22d2bedb",
         "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
-        "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
         "5c8ca4e3-7857-4084-bc87-eaa91b178fad"
       ],
       "experienceModuleId": "career-general",
@@ -399,12 +397,12 @@
       "profileId": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
       "profileName": "Questrade — Senior PM, Everyday Banking",
       "question": "What are your compensation expectations?",
-      "answer": "Based on the scope of the position, my experience and the published range, I'd be targeting somewhere around $175,000 to $185,000 in base salary.\n\nI'm also interested in understanding the overall compensation package, particularly the bonus structure.\n\nThe role and the opportunity to own a meaningful product outcome are important to me, so I'm open to discussing the right package if there's a strong mutual fit.",
+      "answer": "Based on the scope of the position, my experience and the published range, I'd be targeting somewhere around $185,000 to $205,000 in base salary.\n\nFor me, base salary is one component of the overall package — what matters is how the full compensation is structured, including bonus and any longer-term incentives.\n\nThe role and the opportunity to own a meaningful product outcome are important to me, so I'm open to discussing the right total package if there's a strong mutual fit.",
       "category": "Motivation",
       "isPreferred": false,
       "isAuthoritative": true,
       "createdAt": "2026-10-22T18:04:13.285734+00:00",
-      "updatedAt": "2026-10-26T19:42:21.756+00:00",
+      "updatedAt": "2026-10-27T02:16:51.501+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -582,7 +580,7 @@
       "isPreferred": true,
       "isAuthoritative": true,
       "createdAt": "2026-10-22T18:10:38.310216+00:00",
-      "updatedAt": "2026-10-27T01:21:27.714+00:00",
+      "updatedAt": "2026-10-27T02:15:52.412+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -618,7 +616,6 @@
         "relatedQuestionIds": [
           "ec501229-d290-41b4-8afb-39fb22d2bedb",
           "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
-          "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
           "5c8ca4e3-7857-4084-bc87-eaa91b178fad"
         ]
       },
@@ -637,7 +634,6 @@
       "relatedQuestionIds": [
         "ec501229-d290-41b4-8afb-39fb22d2bedb",
         "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
-        "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
         "5c8ca4e3-7857-4084-bc87-eaa91b178fad"
       ],
       "experienceModuleId": "arcteryx-membership",
@@ -14235,7 +14231,7 @@
       "isPreferred": false,
       "isAuthoritative": true,
       "createdAt": "2026-10-26T19:07:32.612117+00:00",
-      "updatedAt": "2026-10-27T01:21:27.9+00:00",
+      "updatedAt": "2026-10-27T01:22:42.725+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -14421,7 +14417,7 @@
       "isPreferred": false,
       "isAuthoritative": true,
       "createdAt": "2026-10-26T19:07:32.756748+00:00",
-      "updatedAt": "2026-10-27T01:21:28.006+00:00",
+      "updatedAt": "2026-10-27T01:22:42.843+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -27976,7 +27972,7 @@
       "isPreferred": false,
       "isAuthoritative": true,
       "createdAt": "2026-10-27T01:21:27.584991+00:00",
-      "updatedAt": "2026-10-27T01:21:27.584991+00:00",
+      "updatedAt": "2026-10-27T01:22:42.005+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -28065,7 +28061,7 @@
       "isPreferred": false,
       "isAuthoritative": true,
       "createdAt": "2026-10-27T01:21:27.787046+00:00",
-      "updatedAt": "2026-10-27T01:21:27.787046+00:00",
+      "updatedAt": "2026-10-27T01:22:42.155+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -28154,9 +28150,9 @@
       "isPreferred": false,
       "isAuthoritative": true,
       "createdAt": "2026-10-27T01:21:27.872773+00:00",
-      "updatedAt": "2026-10-27T01:21:27.872773+00:00",
-      "status": "active",
-      "inactiveReason": null,
+      "updatedAt": "2026-10-27T02:15:52+00:00",
+      "status": "inactive",
+      "inactiveReason": "archived",
       "navigatorMeta": {
         "intent": "general",
         "importKey": "questrade-logistics-2026-target-total-comp",
@@ -28174,8 +28170,9 @@
         ],
         "reviewStatus": "ok",
         "evidenceStatus": "rehearsal_framework",
+        "inactiveReason": "removed_duplicate_compensation",
         "librarySection": "career_motivation",
-        "revisionStatus": "current",
+        "revisionStatus": "archived",
         "roundRelevance": {
           "recruiter": "very_high",
           "hiring_manager": "medium",
@@ -28184,13 +28181,15 @@
         "experienceLabel": "Career & Motivation",
         "libraryCategory": "career_recruiter",
         "canonicalQuestion": "What is your target total compensation?",
+        "retrievalExcluded": true,
         "experienceModuleId": "career-general",
         "relatedQuestionIds": [
           "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
           "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
           "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
           "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b"
-        ]
+        ],
+        "supersededByQuestion": "What are your compensation expectations?"
       },
       "aliases": [
         "What are your total compensation expectations?",
@@ -28215,9 +28214,9 @@
       "libraryCategory": "career_recruiter",
       "questionIntent": "general",
       "evidenceStatus": "rehearsal_framework",
-      "revisionStatus": "current",
+      "revisionStatus": "archived",
       "reviewStatus": "ok",
-      "supersededByQuestion": null,
+      "supersededByQuestion": "What are your compensation expectations?",
       "roundRelevance": {
         "recruiter": "very_high",
         "hiring_manager": "medium",
@@ -28243,7 +28242,7 @@
       "isPreferred": false,
       "isAuthoritative": true,
       "createdAt": "2026-10-27T01:21:27.952293+00:00",
-      "updatedAt": "2026-10-27T01:21:27.952293+00:00",
+      "updatedAt": "2026-10-27T01:22:42.45+00:00",
       "status": "active",
       "inactiveReason": null,
       "navigatorMeta": {
@@ -28357,12 +28356,6 @@
       },
       {
         "fromRecordId": "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
-        "toRecordId": "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
-        "toQuestion": "What is your target total compensation?",
-        "relationship": "relatedQuestionIds"
-      },
-      {
-        "fromRecordId": "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
         "toRecordId": "5c8ca4e3-7857-4084-bc87-eaa91b178fad",
         "toQuestion": "Are you interviewing elsewhere?",
         "relationship": "relatedQuestionIds"
@@ -28395,12 +28388,6 @@
         "fromRecordId": "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
         "toRecordId": "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
         "toQuestion": "What are your hybrid-work expectations?",
-        "relationship": "relatedQuestionIds"
-      },
-      {
-        "fromRecordId": "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
-        "toRecordId": "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
-        "toQuestion": "What is your target total compensation?",
         "relationship": "relatedQuestionIds"
       },
       {
@@ -30307,30 +30294,6 @@
       },
       {
         "fromRecordId": "6153d308-5e8d-4df6-9ce0-dd15c7f3a3f9",
-        "toRecordId": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
-        "toQuestion": "How would you manage transitioning away from an ongoing membership initiative?",
-        "relationship": "relatedQuestionIds"
-      },
-      {
-        "fromRecordId": "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
-        "toRecordId": "28571e7f-620f-4880-9cd7-cdfc2e146aa8",
-        "toQuestion": "Why are you looking to leave Arc'teryx?",
-        "relationship": "relatedQuestionIds"
-      },
-      {
-        "fromRecordId": "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
-        "toRecordId": "c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
-        "toQuestion": "Why Questrade? Why this role?",
-        "relationship": "relatedQuestionIds"
-      },
-      {
-        "fromRecordId": "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
-        "toRecordId": "a3f8c2d1-6e7b-4a9c-8d0e-1f2a3b4c5d6e",
-        "toQuestion": "You've secured a significant investment and are still building the product. Why would you leave before seeing it launch?",
-        "relationship": "relatedQuestionIds"
-      },
-      {
-        "fromRecordId": "fbb01b9e-858d-42cc-94d2-74d9f0c412d9",
         "toRecordId": "b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
         "toQuestion": "How would you manage transitioning away from an ongoing membership initiative?",
         "relationship": "relatedQuestionIds"

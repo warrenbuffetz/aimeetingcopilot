@@ -1,5 +1,6 @@
 import { EXPERIENCE_MODULES, PRODUCT_EXPERIENCE_COMPANIES } from "./experience-modules";
 import { intentLabel } from "./follow-ups";
+import { isRetrievalExcluded } from "./revision-retrieval";
 import type { EnrichedQaRow, QuestionIntent } from "./types";
 
 export type ExperienceIntentGroup = {
@@ -38,6 +39,42 @@ function intentSort(a: QuestionIntent, b: QuestionIntent): number {
   return INTENT_ORDER.indexOf(a) - INTENT_ORDER.indexOf(b);
 }
 
+function normalizeQuestionText(question: string): string {
+  return question.trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+function browseRowScore(row: EnrichedQaRow): number {
+  let score = 0;
+  if (!isRetrievalExcluded(row.navigator)) score += 100;
+  if (row.isPreferred) score += 40;
+  if (row.navigator.reviewStatus === "ok") score += 20;
+  if (row.navigator.revisionStatus === "current" || !row.navigator.revisionStatus) score += 10;
+  const ik = row.navigator.importKey ?? "";
+  if (!ik.includes("john-experience-depth-v1")) score += 8;
+  if (!ik.includes("followup-expansion")) score += 4;
+  return score;
+}
+
+/** One visible card per canonical question within a module (prefer authoritative library rows). */
+export function dedupeExperienceRowsForBrowse(rows: EnrichedQaRow[]): EnrichedQaRow[] {
+  const byQuestion = new Map<string, EnrichedQaRow[]>();
+  for (const row of rows) {
+    const key = normalizeQuestionText(row.question);
+    const group = byQuestion.get(key) ?? [];
+    group.push(row);
+    byQuestion.set(key, group);
+  }
+  const picked: EnrichedQaRow[] = [];
+  for (const group of byQuestion.values()) {
+    if (group.length === 1) {
+      picked.push(group[0]);
+      continue;
+    }
+    picked.push([...group].sort((a, b) => browseRowScore(b) - browseRowScore(a))[0]);
+  }
+  return picked.sort((a, b) => a.question.localeCompare(b.question));
+}
+
 /** Company → initiative → intents (only intents with at least one answer). */
 export function buildProductExperienceTree(catalog: EnrichedQaRow[]): CompanyExperienceGroup[] {
   const byCompany = new Map<string, Map<string, EnrichedQaRow[]>>();
@@ -46,6 +83,7 @@ export function buildProductExperienceTree(catalog: EnrichedQaRow[]): CompanyExp
   for (const row of catalog) {
     if (seenRowIds.has(row.id)) continue;
     seenRowIds.add(row.id);
+    if (isRetrievalExcluded(row.navigator)) continue;
     if (row.navigator.librarySection !== "product_experience") continue;
     const mod = EXPERIENCE_MODULES[row.navigator.experienceModuleId];
     const company = mod?.company;
@@ -65,8 +103,9 @@ export function buildProductExperienceTree(catalog: EnrichedQaRow[]): CompanyExp
     if (!modMap) continue;
       const modules: ExperienceModuleGroup[] = [...modMap.entries()]
         .map(([moduleId, rows]) => {
+          const deduped = dedupeExperienceRowsForBrowse(rows);
           const byIntent = new Map<QuestionIntent, EnrichedQaRow[]>();
-          for (const r of rows) {
+          for (const r of deduped) {
             const intent = r.navigator.intent;
             if (!byIntent.has(intent)) byIntent.set(intent, []);
             byIntent.get(intent)!.push(r);
