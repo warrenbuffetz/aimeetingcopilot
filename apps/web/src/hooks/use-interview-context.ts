@@ -83,9 +83,17 @@ export function useInterviewContext(library: LibraryRow[]) {
     }));
   }, []);
 
-  const clearContext = useCallback(() => {
-    setContext(emptyInterviewContext());
-    sessionStorage.removeItem(STORAGE_KEY);
+  const clearContext = useCallback((opts?: { preserveInterviewRound?: boolean }) => {
+    setContext((prev) => {
+      const base = emptyInterviewContext();
+      if (opts?.preserveInterviewRound) {
+        base.activeInterviewRound = prev.activeInterviewRound;
+      }
+      return base;
+    });
+    if (!opts?.preserveInterviewRound) {
+      sessionStorage.removeItem(STORAGE_KEY);
+    }
   }, []);
 
   const setActiveInterviewRound = useCallback(

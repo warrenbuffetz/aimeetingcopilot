@@ -683,6 +683,29 @@ export function useLiveSession(
     setCurrentQuestion(questionHistory[last]?.question ?? null);
   }, [questionHistory]);
 
+  /** Clear transcript, Q&A history, and analyze cache without stopping audio capture. */
+  const resetPracticeSession = useCallback(() => {
+    clearSilenceTimer();
+    clearInterimFinalizeTimer();
+    turnBufferRef.current = "";
+    latestWebSpeechInterimRef.current = "";
+    liveSttLineIdRef.current = null;
+    analyzeCacheRef.current.clear();
+    analyzeSeqRef.current = 0;
+    setLines([]);
+    setCurrentQuestion(null);
+    setResult(null);
+    setLoading(false);
+    setQuestionHistory([]);
+    setHistoryIndex(-1);
+    setHistorySources([]);
+    setCandidate(null);
+    setAnswerLocked(false);
+    setInterimTurn("");
+    setMatchPreview(null);
+    setStatusAnnouncement("Session reset — ready for a fresh interview");
+  }, [clearInterimFinalizeTimer, clearSilenceTimer]);
+
   const openPreparedRow = useCallback(
     (row: import("@interview-copilot/shared").EnrichedQaRow, opts?: { preserveDetectedQuestion?: boolean }) => {
       const detected = opts?.preserveDetectedQuestion ? currentQuestionRef.current : null;
@@ -745,6 +768,7 @@ export function useLiveSession(
     historySources,
     goToHistoryIndex,
     jumpToLatestHistory,
+    resetPracticeSession,
     library,
   };
 }

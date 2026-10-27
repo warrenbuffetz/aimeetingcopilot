@@ -5,8 +5,13 @@ export function analyzeResultFromPreparedRow(
   row: EnrichedQaRow,
   opts?: { preserveDetectedQuestion?: string | null }
 ): AnalyzeQuestionResult {
-  const answer = row.navigator.spokenAnswer?.trim() || row.answer;
+  const full = row.answer?.trim() ?? "";
+  const spoken = row.navigator.spokenAnswer?.trim();
   const short = row.navigator.shortAnswer?.trim();
+  const answer = full || spoken || "";
+  const talkingPoints: string[] = [];
+  if (spoken && spoken !== full) talkingPoints.push(spoken);
+  else if (short && short !== full) talkingPoints.push(short);
   return {
     question: opts?.preserveDetectedQuestion?.trim() || row.question,
     outcome: "PREPARED",
@@ -14,7 +19,7 @@ export function analyzeResultFromPreparedRow(
     preparedQuestion: row.question,
     answer,
     sourceLabel: "Your prepared answer (library browse)",
-    talkingPoints: short && short !== answer ? [short] : [],
+    talkingPoints,
     matches: [
       {
         id: row.id,

@@ -24,7 +24,7 @@ import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { liveSemantic } from "@/lib/live-semantic";
 import { cn } from "@/lib/utils";
-import { ArrowLeft, Search } from "lucide-react";
+import { ArrowLeft, RotateCcw, Search } from "lucide-react";
 
 type NavigatorTab = "next" | "experiences" | "all";
 
@@ -83,6 +83,7 @@ type Props = {
   onSetExperience: (moduleId: string | null, label?: string) => void;
   onSetInterviewRound: (round: InterviewRound | null) => void;
   onClearContext: () => void;
+  onStartFresh: () => void;
   onSearchOpen: () => void;
   practiceFooter: React.ReactNode;
 };
@@ -149,6 +150,7 @@ export function InterviewNavigator({
   onSetExperience,
   onSetInterviewRound,
   onClearContext,
+  onStartFresh,
   onSearchOpen,
   practiceFooter,
 }: Props) {
@@ -387,19 +389,32 @@ export function InterviewNavigator({
 
             {!activeMapFocus && tab === "next" && (
               <section>
-                <div className="mb-1 flex items-center justify-between gap-2">
+                <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
                   <h3 className={cn("text-[10px] font-medium uppercase tracking-wide", liveSemantic.labelSuggested)}>
                     Top interview questions
                   </h3>
-                  <label className="flex items-center gap-1 text-[9px] text-muted-foreground">
-                    <input
-                      type="checkbox"
-                      className="h-3 w-3 rounded border-border"
-                      checked={hideAskedTop}
-                      onChange={(e) => setHideAskedTop(e.target.checked)}
-                    />
-                    Hide asked
-                  </label>
+                  <div className="flex flex-wrap items-center justify-end gap-2">
+                    <Button
+                      type="button"
+                      size="sm"
+                      variant="outline"
+                      className="h-6 gap-1 px-2 text-[9px]"
+                      title="Clear transcript, asked tracking, and match history for a real interview"
+                      onClick={onStartFresh}
+                    >
+                      <RotateCcw className="h-3 w-3" />
+                      Start fresh
+                    </Button>
+                    <label className="flex items-center gap-1 text-[9px] text-muted-foreground">
+                      <input
+                        type="checkbox"
+                        className="h-3 w-3 rounded border-border"
+                        checked={hideAskedTop}
+                        onChange={(e) => setHideAskedTop(e.target.checked)}
+                      />
+                      Hide asked
+                    </label>
+                  </div>
                 </div>
                 <p className="mb-2 text-[10px] leading-snug text-muted-foreground">
                   Full ranked list for this round ({topInterviewQuestions.length}) — stable while you interview.

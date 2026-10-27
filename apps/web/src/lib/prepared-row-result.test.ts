@@ -36,4 +36,19 @@ describe("analyzeResultFromPreparedRow", () => {
     expect(r.question).toBe("tell me about arc turks");
     expect(r.preparedQuestion).toBe(row.question);
   });
+
+  it("shows full answer in the panel when spokenAnswer is a truncated preview", () => {
+    const intro: EnrichedQaRow = {
+      ...row,
+      answer: "Full intro with RBC, HBC, Aeroplan, and Questrade closing.",
+      navigator: {
+        ...row.navigator,
+        spokenAnswer: "Full intro with RBC, HBC, and opening Avion to…",
+        shortAnswer: "Short preview…",
+      },
+    };
+    const r = analyzeResultFromPreparedRow(intro);
+    expect(r.answer).toBe(intro.answer);
+    expect(r.talkingPoints[0]).toContain("opening Avion");
+  });
 });

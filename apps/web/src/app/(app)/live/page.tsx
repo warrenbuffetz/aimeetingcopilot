@@ -103,6 +103,27 @@ export default function LiveInterviewPage() {
   });
   const interviewNav = useInterviewContext(session.library);
   sessionContextRef.current = interviewNav.context;
+
+  const startFreshInterview = useCallback(() => {
+    const ok = window.confirm(
+      "Start fresh?\n\nThis clears the transcript, detected-question history, asked-question tracking, and match cache. Your selected interview round is kept. Audio capture stays as-is."
+    );
+    if (!ok) return;
+    skipContextUpdateRef.current = true;
+    session.resetPracticeSession();
+    interviewNav.clearContext({ preserveInterviewRound: true });
+    setPinned(null);
+    setPinnedQuestion(null);
+    setSelectedTranscriptIds([]);
+    setMapFocus(null);
+    setManualQuestion("");
+    setEditRetryDraft(null);
+    setPendingAltId(null);
+    setContextualExpanded({});
+    setContextualShowMore(false);
+    toast.success("Ready for a fresh interview");
+  }, [interviewNav, session]);
+
   const capture = useBrowserAudioCapture();
   const profileNameForRecording =
     profileId == null ? null : profiles.find((p) => p.id === profileId)?.name ?? null;
@@ -1003,6 +1024,7 @@ export default function LiveInterviewPage() {
             onSetExperience={interviewNav.setManualExperience}
             onSetInterviewRound={interviewNav.setActiveInterviewRound}
             onClearContext={interviewNav.clearContext}
+            onStartFresh={startFreshInterview}
             onSearchOpen={() => setPaletteOpen(true)}
             practiceFooter={
               <details className="px-2 py-2 text-sm">
