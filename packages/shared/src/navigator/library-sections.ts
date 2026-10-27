@@ -1,6 +1,28 @@
+import type { InterviewProfileKey } from "./profile-content-eligibility";
 import type { ExperienceModule, LibraryCategory, LibrarySection } from "./types";
 
 export type { LibrarySection };
+
+/** Sections that only appear in browse UI for the matching interview profile. */
+/** Branded section titles hidden on other profiles (label only; content may still be shared modules). */
+const PROFILE_EXCLUSIVE_SECTIONS: Partial<Record<InterviewProfileKey, LibrarySection[]>> = {
+  questrade: ["questrade_cases"],
+  simplii: [],
+};
+
+export function librarySectionsForProfile(profile: InterviewProfileKey): LibrarySection[] {
+  if (profile === "unknown") return [...LIBRARY_SECTION_ORDER];
+  const hide = new Set<LibrarySection>();
+  for (const [key, sections] of Object.entries(PROFILE_EXCLUSIVE_SECTIONS) as [
+    InterviewProfileKey,
+    LibrarySection[],
+  ][]) {
+    if (key !== profile) {
+      for (const s of sections) hide.add(s);
+    }
+  }
+  return LIBRARY_SECTION_ORDER.filter((s) => !hide.has(s));
+}
 
 export const LIBRARY_SECTION_ORDER: LibrarySection[] = [
   "career_motivation",
@@ -8,6 +30,7 @@ export const LIBRARY_SECTION_ORDER: LibrarySection[] = [
   "questrade_cases",
   "product_banking_knowledge",
   "leadership_behavioural",
+  "people_leadership",
 ];
 
 export const LIBRARY_SECTION_LABELS: Record<LibrarySection, string> = {
@@ -16,6 +39,7 @@ export const LIBRARY_SECTION_LABELS: Record<LibrarySection, string> = {
   questrade_cases: "Questrade Product Cases",
   product_banking_knowledge: "Product & Banking Knowledge",
   leadership_behavioural: "Leadership & Behavioural",
+  people_leadership: "People Leadership & Direct Reports",
 };
 
 export function librarySectionForModule(module: ExperienceModule): LibrarySection {

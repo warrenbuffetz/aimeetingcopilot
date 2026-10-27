@@ -46,6 +46,16 @@ const PANEL_TOPIC_BOOSTS: { pattern: RegExp; weight: number }[] = [
 
 const SIMPLII_PANEL_TOPIC_BOOSTS: { pattern: RegExp; weight: number; label: string }[] = [
   { pattern: /tell me about yourself|why simplii|strongest reason to hire/i, weight: 12, label: "Panel opener" },
+  {
+    pattern: /people-management|management philosophy|direct reports?|underperform|coach and develop/i,
+    weight: 7,
+    label: "People leadership",
+  },
+  {
+    pattern: /15-person|lead a squad|managing people versus leading/i,
+    weight: 6,
+    label: "Squad leadership",
+  },
   { pattern: /backlog|prioritiz|sprint|acceptance criteria|user story|refinement/i, weight: 11, label: "Delivery & backlog" },
   { pattern: /risk|legal|compliance|control/i, weight: 10, label: "Controls partnership" },
   { pattern: /stakeholder|disagree|influence|say no/i, weight: 10, label: "Stakeholder judgment" },

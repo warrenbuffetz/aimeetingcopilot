@@ -1,10 +1,13 @@
-import type { EnrichedQaRow } from "./types";
+import type { EnrichedQaRow, InterviewProfileKey } from "./types";
 
-export type InterviewProfileKey = "questrade" | "simplii" | "unknown";
+export type { InterviewProfileKey };
 
 const SIMPLII_MARKERS = /\b(simplii(?:\s+financial)?|simplii-jd|simplii-from-)\b/i;
 const QUESTRADE_MARKERS =
   /\b(questrade|questbank|temenos|brokerage-to-banking|investing-to-banking|questrade flows)\b/i;
+
+const JOB_QUESTION_MARKERS =
+  /\bwhy\s+(questrade|simplii|questbank|this\s+(role|company|opportunity)|are you interested)\b/i;
 
 export function interviewProfileKeyFromLabel(profileName: string | null | undefined): InterviewProfileKey {
   if (!profileName) return "unknown";
@@ -13,40 +16,86 @@ export function interviewProfileKeyFromLabel(profileName: string | null | undefi
   return "unknown";
 }
 
-function rowSurfaceText(row: EnrichedQaRow): string {
+function questionSurface(row: EnrichedQaRow): string {
   const nav = row.navigator;
-  return [
-    row.question,
-    row.answer,
-    nav.canonicalQuestion,
-    nav.importKey,
-    nav.sourceFile,
-    ...(nav.altPhrasings ?? []),
-  ]
-    .filter(Boolean)
-    .join("\n");
+  return [row.question, nav.canonicalQuestion, ...(nav.altPhrasings ?? [])].filter(Boolean).join("\n");
 }
 
-/** Defence-in-depth: filter catalog rows that belong to another interview profile. */
+const SHARED_CATEGORIES = new Set([
+  "resume_deep_dive",
+  "leadership_behavioural",
+  "banking_technical",
+  "banking_strategy",
+  "product_analytics",
+]);
+
+/** True when the prepared row is about this employer/role, not general experience or cases. */
+export function isJobSpecificPreparedRow(row: EnrichedQaRow): boolean {
+  const nav = row.navigator;
+  if (nav.profileExclusive) return true;
+  if (SHARED_CATEGORIES.has(nav.libraryCategory)) return false;
+
+  const q = questionSurface(row);
+  if (JOB_QUESTION_MARKERS.test(q)) return true;
+  if (/\bwhy\s+(questrade|simplii|questbank)\b/i.test(q)) return true;
+  if (/\bwhy\s+this\s+(role|company|opportunity|team)\b/i.test(q)) return true;
+  if (
+    /\bwhy\s+.+\b(role|company|opportunity|team|move|leaving|instead)\b/i.test(q) &&
+    (SIMPLII_MARKERS.test(q) || QUESTRADE_MARKERS.test(q))
+  ) {
+    return true;
+  }
+  return false;
+}
+
+/** Which profile owns this row when job-specific; null means shared across profiles. */
+export function exclusiveProfileForPreparedRow(row: EnrichedQaRow): InterviewProfileKey | null {
+  const nav = row.navigator;
+  if (nav.profileExclusive) return nav.profileExclusive;
+
+  if (!isJobSpecificPreparedRow(row)) return null;
+
+  const importKey = nav.importKey ?? "";
+  if (importKey.startsWith("simplii-")) return "simplii";
+
+  const q = questionSurface(row);
+  const qSimplii = SIMPLII_MARKERS.test(q);
+  const qQuestrade = QUESTRADE_MARKERS.test(q);
+  if (qSimplii && !qQuestrade) return "simplii";
+  if (qQuestrade && !qSimplii) return "questrade";
+
+  const answerLead = (row.answer ?? "").slice(0, 400);
+  if (SIMPLII_MARKERS.test(q) || SIMPLII_MARKERS.test(answerLead)) return "simplii";
+  if (QUESTRADE_MARKERS.test(q) || QUESTRADE_MARKERS.test(answerLead)) return "questrade";
+
+  return null;
+}
+
+/**
+ * Defence-in-depth when catalogs are merged. Shared experience rows stay visible on every profile;
+ * only job-specific prepared answers are exclusive.
+ */
 export function isPreparedRowEligibleForProfile(
   row: EnrichedQaRow,
   profile: InterviewProfileKey
 ): boolean {
   if (profile === "unknown") return true;
+  const exclusive = exclusiveProfileForPreparedRow(row);
+  if (!exclusive) return true;
+  return exclusive === profile;
+}
 
-  const text = rowSurfaceText(row);
-  const importKey = row.navigator.importKey ?? "";
+const EMPLOYER_CLOSE_PLACEHOLDER = /\{\{\s*EMPLOYER_CLOSE\s*\}\}/i;
 
-  if (profile === "questrade") {
-    if (SIMPLII_MARKERS.test(text)) return false;
-    if (importKey.startsWith("simplii-")) return false;
-    return true;
+/** Answer text for display/TTS, applying optional per-profile closing. */
+export function preparedAnswerForProfile(row: EnrichedQaRow, profile: InterviewProfileKey): string {
+  const base = row.answer ?? "";
+  const closing = row.navigator.employerClosing?.[profile];
+  if (!closing) return base;
+  if (EMPLOYER_CLOSE_PLACEHOLDER.test(base)) {
+    return base.replace(EMPLOYER_CLOSE_PLACEHOLDER, closing.trim());
   }
-
-  if (profile === "simplii") {
-    if (QUESTRADE_MARKERS.test(text)) return false;
-    return true;
-  }
-
-  return true;
+  const trimmed = base.trimEnd();
+  if (!trimmed) return closing.trim();
+  return `${trimmed}\n\n${closing.trim()}`;
 }

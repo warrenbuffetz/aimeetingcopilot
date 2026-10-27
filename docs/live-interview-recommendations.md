@@ -16,13 +16,13 @@
 
 **Limits:** up to **4** strong suggestions by default (no backfill); optional **Show more** (8). Minimum score **0.55**. Empty copy: “No strong follow-ups identified for this answer.”
 
-**Profile isolation:** `interviewProfile` filters Simplii-branded / `simplii-*` import keys on Questrade, and Questrade/Questbank/Temenos on Simplii. Defence against mixed catalog when no profile is selected in the loader.
+**Profile isolation:** See `docs/profile-content-strategy.md`. Runtime eligibility (`isPreparedRowEligibleForProfile`) hides only **job-specific** rows (career/motivation, why-this-company) for the other employer—not shared experience answers that mention a company in passing. Editorial top lists and contextual paths remain per profile.
 
 **Exclusions:** retrieval-excluded rows, already-asked IDs, paraphrases of the current detected or library question (≥0.88 lexical similarity), active row itself.
 
 **Recompute deps (Live):** matched prepared row ID, detected question, asked IDs — not full navigator browse context.
 
-**UI:** Up to 5 `AnswerPreviewCard` previews; **Open in main panel** uses browse path (`skipContextUpdateRef`, `openPreparedRow`) — no auto-analyze, respects answer lock.
+**UI:** Top-question `AnswerPreviewCard` previews; **Open in main panel** uses browse path (`skipContextUpdateRef`, `openPreparedRow` with library question as headline) — no auto-analyze, respects answer lock.
 
 ## Right navigator — top interview questions
 
@@ -31,6 +31,14 @@
 **Inputs:** catalog + `activeInterviewRound` (defaults to recruiter) + asked IDs (for display only).
 
 **Not used:** active experience module, active intent, or latest detected question (stable shortlist).
+
+**Active experience UI:** Hidden on the Navigator **Next** tab (matching still uses a pin set from **Experiences** / **All Answers** or auto-detection). **Interview round (editorial)** stays on **Next**.
+
+**Browse library filters (Experiences + All Answers):** `packages/shared/src/navigator/browse-filters.ts` → `filterCatalogForBrowse`. **Active experience** (auto or manual pin) and **Interview round** narrow the Experiences tree, All Answers list, section dropdown, and review queue. Round filter keeps rows with `roundRelevance` of medium or higher for that round. Counts on experience modules, round options, company/module/intent groups, and library sections reflect the filtered totals so you can see applicability. Non–`product_experience` rows (e.g. people leadership) appear under **Other library sections** on Experiences when they match the filters.
+
+**Section dropdown by profile:** `librarySectionsForProfile` hides the branded label **Questrade Product Cases** on Simplii only. Other sections (including People Leadership) are shared labels and appear on both profiles.
+
+**Active experience dropdown by profile:** `experienceModulesForProfile` hides `questrade-*` modules on Simplii and `digital-banking-*` modules on Questrade. Shared resume modules (RBC, HBC, Aeroplan, Arc'teryx) and career/leadership pins stay on both.
 
 **Ranking:**
 
@@ -42,7 +50,7 @@ Intro / Why Questrade / current Arc'teryx appear high in **recruiter, hiring man
 
 **Gap report:** `node scripts/resolve-editorial-top-questions.mjs` → `data/migration/editorial-top-questions-gaps.md`.
 
-**UI:** Heading **TOP INTERVIEW QUESTIONS**; 5 visible by default, **Show all** expands to the full round list (35 / 40 / 40); optional **Hide asked**; subtle **Asked** label when `askedQuestionIds` contains the row ID.
+**UI:** Heading **TOP INTERVIEW QUESTIONS**; as many collapsed rows as fit the panel height (ResizeObserver), then **Show N more** / **Show fewer** for the rest; optional **Hide asked**; subtle **Asked** label when `askedQuestionIds` contains the row ID.
 
 ## Asked-question tracking
 

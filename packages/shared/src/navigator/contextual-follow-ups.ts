@@ -4,6 +4,7 @@ import {
   type CuratedContextualChild,
 } from "./questrade-curated-contextual-paths";
 import { simpliiHpChildrenForParentImportKey } from "./simplii-hp-paths";
+import { simpliiPlChildrenForParentImportKey } from "./simplii-pl-paths";
 import {
   type InterviewProfileKey,
   isPreparedRowEligibleForProfile,
@@ -158,16 +159,24 @@ export function suggestContextualFollowUps(
 
   if (profile === "simplii") {
     const hpKeys = simpliiHpChildrenForParentImportKey(activeRow.navigator.importKey);
-    if (hpKeys.length) {
+    const plKeys = simpliiPlChildrenForParentImportKey(activeRow.navigator.importKey);
+    const childKeys = [...hpKeys];
+    for (const k of plKeys) {
+      if (!childKeys.includes(k)) childKeys.push(k);
+    }
+    if (childKeys.length) {
       const children: CuratedContextualChild[] = [];
       let order = 0;
-      for (const hpKey of hpKeys) {
-        const row = catalog.find((r) => r.navigator.importKey === hpKey);
+      for (const childKey of childKeys) {
+        const row = catalog.find((r) => r.navigator.importKey === childKey);
         if (!row || !isPreparedRowEligibleForProfile(row, profile)) continue;
+        const isHp = hpKeys.includes(childKey);
         children.push({
           questionId: row.id,
           order: order++,
-          reason: "High-pressure follow-up (panel drill)",
+          reason: isHp
+            ? "High-pressure follow-up (panel drill)"
+            : "People leadership follow-up",
           intent: row.navigator.intent,
         });
       }

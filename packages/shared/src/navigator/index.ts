@@ -15,6 +15,7 @@ export * from "./questrade-curated-contextual-paths";
 export * from "./top-interview-questions";
 export * from "./editorial-top-questions";
 export * from "./experience-tree";
+export * from "./browse-filters";
 export * from "./search";
 export * from "./revision-retrieval";
 export * from "./interview-rounds";

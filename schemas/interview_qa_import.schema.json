@@ -165,7 +165,8 @@
             "product_experience",
             "questrade_cases",
             "product_banking_knowledge",
-            "leadership_behavioural"
+            "leadership_behavioural",
+            "people_leadership"
           ]
         },
         "libraryCategory": {
@@ -207,7 +208,21 @@
         "topicTags": { "type": "array", "items": { "type": "string" } },
         "keywords": { "type": "array", "items": { "type": "string" } },
         "sourceFile": { "type": "string" },
-        "notes": { "type": "string" }
+        "notes": { "type": "string" },
+        "profileExclusive": {
+          "type": "string",
+          "enum": ["questrade", "simplii"],
+          "description": "Job-specific row; only shown for that interview profile."
+        },
+        "employerClosing": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "questrade": { "type": "string" },
+            "simplii": { "type": "string" }
+          },
+          "description": "Per-employer closing for shared answer bodies; use {{EMPLOYER_CLOSE}} in answer to substitute."
+        }
       }
     }
   }

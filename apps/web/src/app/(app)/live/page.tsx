@@ -60,7 +60,6 @@ import type {
 import {
   CONTEXTUAL_FOLLOW_UP_DEFAULT_LIMIT,
   CONTEXTUAL_FOLLOW_UP_EXPANDED_LIMIT,
-  evidenceStatusLabel,
   interviewProfileKeyFromLabel,
   LEXICAL_MATCH_THRESHOLD_PREPARED,
   suggestContextualFollowUps,
@@ -261,7 +260,8 @@ export default function LiveInterviewPage() {
 
   function openInMainPanel(row: EnrichedQaRow, opts?: { fromBrowse?: boolean }) {
     if (opts?.fromBrowse) skipContextUpdateRef.current = true;
-    session.openPreparedRow(row, { preserveDetectedQuestion: Boolean(session.currentQuestion) });
+    // Navigator / library browse: headline and answer should match the chosen prepared row.
+    session.openPreparedRow(row, { preserveDetectedQuestion: false });
   }
 
   function pinRow(row: EnrichedQaRow) {
@@ -897,11 +897,6 @@ export default function LiveInterviewPage() {
               matchedMeta={matchedMeta}
               onInspectLibraryQuestion={openQuestionMap}
             />
-            {matchedMeta && evidenceStatusLabel(matchedMeta.evidenceStatus) && (
-              <p className="mt-2 max-w-3xl text-[11px] font-medium text-amber-400/95">
-                {evidenceStatusLabel(matchedMeta.evidenceStatus)}
-              </p>
-            )}
             <div className="mt-3 max-w-3xl">
               <ScriptText text={displayAnswer} clamp={!showFull} className={liveSemantic.textAnswer} />
             </div>
@@ -1046,6 +1041,7 @@ export default function LiveInterviewPage() {
           <InterviewNavigator
             className="min-h-0 flex-1"
             catalog={interviewNav.catalog}
+            interviewProfile={interviewProfileKey}
             context={interviewNav.context}
             topInterviewQuestions={interviewNav.topInterviewQuestions}
             pinnedQuestion={pinnedQuestion}

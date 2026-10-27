@@ -4,6 +4,7 @@ import { experienceModule, EXPERIENCE_MODULES } from "./experience-modules";
 import { canonicalModuleId, canonicalQuestionIntent } from "./module-id-map";
 import type {
   EvidenceStatus,
+  InterviewProfileKey,
   InterviewRound,
   NavigatorQaMeta,
   PanelDiscipline,
@@ -39,6 +40,8 @@ export type PersistedNavigatorMeta = {
   panelDiscipline?: PanelDiscipline;
   spokenAnswer?: string;
   importKey?: string;
+  profileExclusive?: InterviewProfileKey;
+  employerClosing?: Partial<Record<InterviewProfileKey, string>>;
   primaryInterviewRound?: string;
   proposedAnswerUpdate?: string;
   supplementalTalkingPoints?: { label: string; content: string; importKey?: string }[];
@@ -71,6 +74,8 @@ export function navigatorMetaToPersisted(meta: NavigatorQaMeta): PersistedNaviga
     panelDiscipline: meta.panelDiscipline,
     spokenAnswer: meta.spokenAnswer,
     importKey: meta.importKey,
+    profileExclusive: meta.profileExclusive,
+    employerClosing: meta.employerClosing,
     primaryInterviewRound: meta.primaryInterviewRound,
     proposedAnswerUpdate: meta.proposedAnswerUpdate,
     supplementalTalkingPoints: meta.supplementalTalkingPoints,
@@ -135,6 +140,8 @@ export function navigatorMetaFromPersisted(
     panelDiscipline: raw.panelDiscipline as PanelDiscipline | undefined,
     spokenAnswer: raw.spokenAnswer,
     importKey: raw.importKey,
+    profileExclusive: raw.profileExclusive,
+    employerClosing: raw.employerClosing,
     primaryInterviewRound: raw.primaryInterviewRound as NavigatorQaMeta["primaryInterviewRound"],
     proposedAnswerUpdate: raw.proposedAnswerUpdate,
     supplementalTalkingPoints: raw.supplementalTalkingPoints,

@@ -1,12 +1,17 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useFitVisibleItemCount } from "@/hooks/use-fit-visible-item-count";
 import {
   EXPERIENCE_MODULES,
+  experienceModulesForProfile,
   INTERVIEW_ROUND_LABELS,
   LIBRARY_SECTION_LABELS,
-  LIBRARY_SECTION_ORDER,
+  librarySectionsForProfile,
+  type InterviewProfileKey,
   buildProductExperienceTree,
+  countRowsInExperienceTree,
+  filterCatalogForBrowse,
   intentLabel,
   moduleIdsForConcept,
   searchLibrary,
@@ -76,6 +81,7 @@ function filterCatalogForMap(catalog: EnrichedQaRow[], focus: QuestionMapFocus):
 type Props = {
   className?: string;
   catalog: EnrichedQaRow[];
+  interviewProfile: InterviewProfileKey;
   context: InterviewSessionContext;
   topInterviewQuestions: FollowUpSuggestion[];
   pinnedQuestion: string | null;
@@ -96,18 +102,41 @@ const PRACTICE_PANEL_MIN = 48;
 const PRACTICE_PANEL_MAX = 420;
 const PRACTICE_PANEL_DEFAULT = 152;
 
-const TOP_INITIAL_VISIBLE = 5;
-
 function ActiveExperienceCard({
   context,
+  catalog,
+  interviewProfile,
   onSetExperience,
   onClearContext,
 }: {
   context: InterviewSessionContext;
+  catalog: EnrichedQaRow[];
+  interviewProfile: InterviewProfileKey;
   onSetExperience: (moduleId: string | null, label?: string) => void;
   onClearContext: () => void;
 }) {
+  const profileModules = useMemo(
+    () => experienceModulesForProfile(interviewProfile),
+    [interviewProfile]
+  );
   const activeId = context.manualExperienceOverrideId ?? context.activeExperienceModuleId;
+  const activeSelectValue =
+    activeId && profileModules.some((m) => m.id === activeId) ? activeId : "";
+  const round = context.activeInterviewRound ?? null;
+  const autoCount = useMemo(
+    () => filterCatalogForBrowse(catalog, { interviewRound: round }).length,
+    [catalog, round]
+  );
+  const moduleCounts = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const m of profileModules) {
+      map.set(
+        m.id,
+        filterCatalogForBrowse(catalog, { experienceModuleId: m.id, interviewRound: round }).length
+      );
+    }
+    return map;
+  }, [catalog, round, profileModules]);
   return (
     <section className="rounded-md border border-border/70 bg-muted/5 px-2 py-2">
       <p className="text-[10px] font-medium uppercase text-muted-foreground">Active experience</p>
@@ -123,18 +152,18 @@ function ActiveExperienceCard({
       <div className="mt-2 flex flex-wrap gap-1">
         <select
           className="h-7 max-w-full rounded border border-border bg-background px-1 text-[10px]"
-          value={activeId ?? ""}
+          value={activeSelectValue}
           onChange={(e) => {
             const id = e.target.value || null;
             const mod = id ? EXPERIENCE_MODULES[id] : null;
             onSetExperience(id, mod?.label ?? undefined);
           }}
         >
-          <option value="">Auto (from conversation)</option>
-          {Object.values(EXPERIENCE_MODULES)
-            .filter((m) => m.id !== "unclassified-review")
-            .map((m) => (
-              <option key={m.id} value={m.id}>{m.label}</option>
+          <option value="">Auto (from conversation) ({autoCount})</option>
+          {profileModules.map((m) => (
+              <option key={m.id} value={m.id}>
+                {m.label} ({moduleCounts.get(m.id) ?? 0})
+              </option>
             ))}
         </select>
         <Button type="button" size="sm" variant="outline" className="h-7 text-[10px]" onClick={onClearContext}>
@@ -148,6 +177,7 @@ function ActiveExperienceCard({
 export function InterviewNavigator({
   className,
   catalog,
+  interviewProfile,
   context,
   topInterviewQuestions,
   pinnedQuestion,
@@ -167,6 +197,16 @@ export function InterviewNavigator({
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [browseQuery, setBrowseQuery] = useState("");
   const [sectionFilter, setSectionFilter] = useState<LibrarySection | "all">("all");
+  const librarySections = useMemo(
+    () => librarySectionsForProfile(interviewProfile),
+    [interviewProfile]
+  );
+
+  useEffect(() => {
+    if (sectionFilter !== "all" && !librarySections.includes(sectionFilter)) {
+      setSectionFilter("all");
+    }
+  }, [librarySections, sectionFilter]);
   const [mapStack, setMapStack] = useState<QuestionMapFocus[]>([]);
   const [topExpanded, setTopExpanded] = useState(false);
 
@@ -174,6 +214,9 @@ export function InterviewNavigator({
     setTopExpanded(false);
   }, [context.activeInterviewRound]);
   const [hideAskedTop, setHideAskedTop] = useState(false);
+  const topListScrollRef = useRef<HTMLDivElement>(null);
+  const topRowSampleRef = useRef<HTMLDivElement>(null);
+
   const [practicePanelHeight, setPracticePanelHeight] = usePersistedNumber(
     "ic-live-practice-debug-height",
     PRACTICE_PANEL_DEFAULT
@@ -192,6 +235,23 @@ export function InterviewNavigator({
 
   const activeMapFocus = mapStack.length > 0 ? mapStack[mapStack.length - 1] : mapFocus;
 
+  const topFiltered = useMemo(() => {
+    if (hideAskedTop) {
+      return topInterviewQuestions.filter((s) => !context.askedQuestionIds.includes(s.rowId));
+    }
+    return topInterviewQuestions;
+  }, [hideAskedTop, topInterviewQuestions, context.askedQuestionIds]);
+
+  const topFitCount = useFitVisibleItemCount(topListScrollRef, topRowSampleRef, {
+    enabled: tab === "next" && !activeMapFocus && !topExpanded && topFiltered.length > 0,
+    itemCount: topFiltered.length,
+  });
+
+  const anyTopCardExpanded = useMemo(
+    () => topFiltered.some((s) => expanded[s.rowId]),
+    [topFiltered, expanded]
+  );
+
   const mapFocusKey = mapFocus
     ? `${mapFocus.title}|${mapFocus.searchQuery ?? ""}|${mapFocus.moduleIds?.join(",") ?? ""}|${mapFocus.intent ?? ""}`
     : "";
@@ -207,7 +267,50 @@ export function InterviewNavigator({
     }
   }, [mapFocusKey]);
 
-  const experienceTree = useMemo(() => buildProductExperienceTree(catalog), [catalog]);
+  const browseExperienceId =
+    context.manualExperienceOverrideId ?? context.activeExperienceModuleId ?? null;
+  const browseRound = context.activeInterviewRound ?? null;
+  const browseFiltersActive = Boolean(browseExperienceId || browseRound);
+
+  const filteredBrowseCatalog = useMemo(
+    () =>
+      filterCatalogForBrowse(catalog, {
+        experienceModuleId: browseExperienceId,
+        interviewRound: browseRound,
+      }),
+    [catalog, browseExperienceId, browseRound]
+  );
+
+  const browsableTotalCount = useMemo(
+    () => filterCatalogForBrowse(catalog, {}).length,
+    [catalog]
+  );
+
+  const roundBrowseCounts = useMemo(() => {
+    const entries = Object.entries(INTERVIEW_ROUND_LABELS) as [InterviewRound, string][];
+    const noRound = filterCatalogForBrowse(catalog, { experienceModuleId: browseExperienceId }).length;
+    const byRound = new Map<InterviewRound, number>();
+    for (const [id] of entries) {
+      byRound.set(
+        id,
+        filterCatalogForBrowse(catalog, {
+          experienceModuleId: browseExperienceId,
+          interviewRound: id,
+        }).length
+      );
+    }
+    return { noRound, byRound };
+  }, [catalog, browseExperienceId]);
+
+  const experienceTree = useMemo(
+    () => buildProductExperienceTree(filteredBrowseCatalog),
+    [filteredBrowseCatalog]
+  );
+  const experienceOtherRows = useMemo(
+    () =>
+      filteredBrowseCatalog.filter((r) => r.navigator.librarySection !== "product_experience"),
+    [filteredBrowseCatalog]
+  );
   const mapTree = useMemo(
     () => buildProductExperienceTree(activeMapFocus ? filterCatalogForMap(catalog, activeMapFocus) : []),
     [activeMapFocus, catalog]
@@ -219,16 +322,16 @@ export function InterviewNavigator({
 
   const bySection = useMemo(() => {
     const map = new Map<LibrarySection, EnrichedQaRow[]>();
-    for (const s of LIBRARY_SECTION_ORDER) map.set(s, []);
-    for (const row of catalog) {
+    for (const s of librarySections) map.set(s, []);
+    for (const row of filteredBrowseCatalog) {
       map.get(row.navigator.librarySection)?.push(row);
     }
     return map;
-  }, [catalog]);
+  }, [filteredBrowseCatalog, librarySections]);
 
   const reviewQueue = useMemo(
-    () => catalog.filter((r) => r.navigator.reviewStatus === "needs_review"),
-    [catalog]
+    () => filteredBrowseCatalog.filter((r) => r.navigator.reviewStatus === "needs_review"),
+    [filteredBrowseCatalog]
   );
 
   function toggleExpanded(id: string) {
@@ -329,11 +432,15 @@ export function InterviewNavigator({
           <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden p-2">
           {!activeMapFocus && (
           <div className="shrink-0 space-y-3">
-          <ActiveExperienceCard
-            context={context}
-            onSetExperience={onSetExperience}
-            onClearContext={onClearContext}
-          />
+          {tab !== "next" && (
+            <ActiveExperienceCard
+              context={context}
+              catalog={catalog}
+              interviewProfile={interviewProfile}
+              onSetExperience={onSetExperience}
+              onClearContext={onClearContext}
+            />
+          )}
           <section className="rounded-md border border-border/70 bg-muted/5 px-2 py-2">
             <p className="text-[10px] font-medium uppercase text-muted-foreground">Interview round (editorial)</p>
             <select
@@ -344,9 +451,13 @@ export function InterviewNavigator({
                 onSetInterviewRound(v ? v : null);
               }}
             >
-              <option value="">No round filter</option>
+              <option value="">
+                No round filter ({roundBrowseCounts.noRound})
+              </option>
               {(Object.entries(INTERVIEW_ROUND_LABELS) as [InterviewRound, string][]).map(([id, label]) => (
-                <option key={id} value={id}>{label}</option>
+                <option key={id} value={id}>
+                  {label} ({roundBrowseCounts.byRound.get(id) ?? 0})
+                </option>
               ))}
             </select>
           </section>
@@ -444,17 +555,21 @@ export function InterviewNavigator({
                 <p className="mb-2 shrink-0 text-[10px] leading-snug text-muted-foreground">
                   Full ranked list for this round ({topInterviewQuestions.length}) — stable while you interview.
                 </p>
-                <div className="min-h-0 flex-1 space-y-1.5 overflow-y-auto pr-0.5">
+                <div
+                  ref={topListScrollRef}
+                  className={cn(
+                    "min-h-0 flex-1 space-y-1.5 pr-0.5",
+                    topExpanded || anyTopCardExpanded ? "overflow-y-auto" : "overflow-hidden"
+                  )}
+                >
                   {(() => {
-                    const filtered = hideAskedTop
-                      ? topInterviewQuestions.filter((s) => !context.askedQuestionIds.includes(s.rowId))
-                      : topInterviewQuestions;
-                    const visible = topExpanded ? filtered : filtered.slice(0, TOP_INITIAL_VISIBLE);
-                    return visible.map((s) => {
+                    const visible = topExpanded ? topFiltered : topFiltered.slice(0, topFitCount);
+                    return visible.map((s, index) => {
                       const asked = context.askedQuestionIds.includes(s.rowId);
                       return (
                         <div
-                          key={s.reason}
+                          key={s.rowId}
+                          ref={index === 0 ? topRowSampleRef : undefined}
                           className={cn(asked && "opacity-55")}
                           title={asked ? "Marked asked when a prepared answer was matched" : undefined}
                         >
@@ -486,11 +601,14 @@ export function InterviewNavigator({
                       );
                     });
                   })()}
+                  {topFiltered.length === 0 && topInterviewQuestions.length > 0 && (
+                    <p className="text-xs text-muted-foreground">All top questions are hidden (Hide asked).</p>
+                  )}
                   {topInterviewQuestions.length === 0 && (
                     <p className="text-xs text-muted-foreground">No prepared questions for this profile.</p>
                   )}
                 </div>
-                {topInterviewQuestions.length > TOP_INITIAL_VISIBLE && (
+                {topFiltered.length > 0 && (topExpanded || topFiltered.length > topFitCount) && (
                   <Button
                     type="button"
                     size="sm"
@@ -498,7 +616,9 @@ export function InterviewNavigator({
                     className="mt-2 h-7 w-full shrink-0 text-[10px]"
                     onClick={() => setTopExpanded((v) => !v)}
                   >
-                    {topExpanded ? "Show fewer" : `Show all ${topInterviewQuestions.length}`}
+                    {topExpanded
+                      ? "Show fewer"
+                      : `Show ${topFiltered.length - topFitCount} more`}
                   </Button>
                 )}
               </section>
@@ -506,17 +626,26 @@ export function InterviewNavigator({
 
             {!activeMapFocus && tab === "experiences" && (
               <section className="min-h-0 flex-1 space-y-2 overflow-y-auto">
-                <p className="text-[10px] text-muted-foreground">
-                  Browse only — does not change live interview context.
+                <p className="text-[10px] leading-snug text-muted-foreground">
+                  {browseFiltersActive
+                    ? `Showing ${filteredBrowseCatalog.length} of ${browsableTotalCount} prepared answers for this experience and round. Active experience also biases live matching.`
+                    : "Product experience tree — pin Active experience or Interview round to narrow the library."}
                 </p>
+                {experienceTree.length === 0 && experienceOtherRows.length === 0 && (
+                  <p className="text-xs text-muted-foreground">No prepared answers match these filters.</p>
+                )}
                 {experienceTree.map((co) => (
                   <details key={co.company} className="rounded-md border border-border/60" open>
-                    <summary className="cursor-pointer px-2 py-1.5 text-xs font-medium">{co.company}</summary>
+                    <summary className="cursor-pointer px-2 py-1.5 text-xs font-medium">
+                      {co.company} ({countRowsInExperienceTree([co])})
+                    </summary>
                     <div className="space-y-1 border-t border-border/50 px-1 py-1">
-                      {co.modules.map((mod) => (
+                      {co.modules.map((mod) => {
+                        const modCount = mod.intents.reduce((n, ig) => n + ig.rows.length, 0);
+                        return (
                         <details key={mod.moduleId} className="rounded border border-border/40">
                           <summary className="cursor-pointer px-2 py-1 text-[11px] text-muted-foreground">
-                            {mod.label}
+                            {mod.label} ({modCount})
                           </summary>
                           <div className="space-y-1 px-1 pb-1">
                             {mod.intents.map((ig) => (
@@ -544,10 +673,34 @@ export function InterviewNavigator({
                             ))}
                           </div>
                         </details>
-                      ))}
+                        );
+                      })}
                     </div>
                   </details>
                 ))}
+                {experienceOtherRows.length > 0 && (
+                  <details className="rounded-md border border-border/60" open>
+                    <summary className="cursor-pointer px-2 py-1.5 text-xs font-medium">
+                      Other library sections ({experienceOtherRows.length})
+                    </summary>
+                    <ul className="space-y-1 border-t border-border/50 p-1">
+                      {experienceOtherRows.map((row) => (
+                        <li key={row.id}>
+                          <AnswerPreviewCard
+                            source={row}
+                            catalog={catalog}
+                            semanticAccent="library"
+                            expanded={Boolean(expanded[row.id])}
+                            onToggle={() => toggleExpanded(row.id)}
+                            onOpenMain={() => onOpenInMainPanel(row, { fromBrowse: true })}
+                            onPin={() => onPin(row)}
+                            showShortFirst
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                )}
               </section>
             )}
 
@@ -564,10 +717,15 @@ export function InterviewNavigator({
                   value={sectionFilter}
                   onChange={(e) => setSectionFilter(e.target.value as LibrarySection | "all")}
                 >
-                  <option value="all">All sections</option>
-                  {LIBRARY_SECTION_ORDER.map((s) => (
-                    <option key={s} value={s}>{LIBRARY_SECTION_LABELS[s]}</option>
-                  ))}
+                  <option value="all">All sections ({filteredBrowseCatalog.length})</option>
+                  {librarySections.map((s) => {
+                    const n = bySection.get(s)?.length ?? 0;
+                    return (
+                      <option key={s} value={s} disabled={n === 0}>
+                        {LIBRARY_SECTION_LABELS[s]} ({n})
+                      </option>
+                    );
+                  })}
                 </select>
 
                 {reviewQueue.length > 0 && (
@@ -595,9 +753,11 @@ export function InterviewNavigator({
 
                 <div className="space-y-1.5">
                   {(browseQuery.length >= 2
-                    ? searchResults.map((hit) => catalog.find((r) => r.id === hit.rowId)).filter(Boolean)
+                    ? searchResults
+                        .map((hit) => filteredBrowseCatalog.find((r) => r.id === hit.rowId))
+                        .filter(Boolean)
                     : sectionFilter === "all"
-                      ? catalog
+                      ? filteredBrowseCatalog
                       : bySection.get(sectionFilter) ?? []
                   ).map((row) =>
                     row ? (

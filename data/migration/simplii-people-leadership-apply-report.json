@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-27T20:33:20.193Z",
+  "mode": "apply",
+  "parsed": 20,
+  "created": 19,
+  "updated": 1,
+  "merged": 1,
+  "rbcCorrections": 0,
+  "peopleLeadershipCount": 20,
+  "errors": [],
+  "questradeIntegrity": {
+    "unchanged": true,
+    "count": 328
+  }
+}

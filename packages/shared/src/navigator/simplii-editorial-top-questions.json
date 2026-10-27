@@ -41,6 +41,13 @@
     { "rank": 17, "tier": "H", "question": "How would you handle growing complaints about missing or delayed transfers?" },
     { "rank": 18, "tier": "H", "question": "How would you work with a BA, QA and engineers who disagree on a solution?" },
     { "rank": 19, "tier": "M", "question": "How would you diagnose abandonment during digital account opening?" },
-    { "rank": 20, "tier": "M", "question": "How would you approach recurring failures in a money-transfer journey?" }
+    { "rank": 20, "tier": "M", "question": "How would you approach recurring failures in a money-transfer journey?" },
+    { "rank": 21, "tier": "H", "question": "Tell me about your people-management experience." },
+    { "rank": 22, "tier": "H", "question": "What's your management philosophy?" },
+    { "rank": 23, "tier": "H", "question": "How did you lead a 15-person RBC squad with no direct reports?" },
+    { "rank": 24, "tier": "H", "question": "How do you coach and develop direct reports?" },
+    { "rank": 25, "tier": "H", "question": "How would you manage an underperforming employee?" },
+    { "rank": 26, "tier": "H", "question": "What's the difference between managing people and leading a product team?" },
+    { "rank": 27, "tier": "H", "question": "Why pursue a Senior PM role if you've already managed people?" }
   ]
 }

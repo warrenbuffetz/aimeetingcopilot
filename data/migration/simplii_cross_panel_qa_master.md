@@ -30,15 +30,21 @@ These are **proposed spoken-answer replacements, not an instruction to overwrite
 
 #### 1. Tell me about yourself
 **Key:** `simplii-from-2f3a780e-6b54-42b8-b56d-8936a471fa68`  
-**Change:** Lead with your product identity and own results; reduce the chronological résumé recital.
+**Change:** Use Questrade career narrative; Simplii-specific closing (not Questrade everyday-finance close).
 
-> Sure. Most of my career has been in consumer products where the front-end experience looks simple, but making it work requires a lot of coordination behind the scenes. That's been a pretty consistent theme across banking, loyalty and commerce.
+> Sure. I've spent the last nine-plus years in product, mostly working on digital consumer experiences, financial products and the platforms that support them.
 >
-> At RBC Avion, for example, I owned the customer experience for cashback withdrawals to non-RBC customers through Interac e-Transfer. That meant working through eligibility, payment status and exceptions with the enterprise payments, Risk and Financial Operations teams. Before that, at HBC, I worked on the Mastercard portfolio and helped improve application completion by around 15%. More recently, at Arc'teryx, I led the product work behind a new membership proposition, including its MVP, technology evaluation and investment case.
+> I'm currently a Senior Product Manager at Arc'teryx, where I've been leading the strategy for a new membership platform. That involved securing $5.2 million in funding, evaluating different technology solutions and working across business and engineering teams to define how the platform and customer experience come together.
 >
-> What I enjoy most is the combination of figuring out which customer problem is worth solving and then staying close enough to delivery to make sure the solution actually works. That overlap is what drew me to this Simplii role.
+> Before that, I was at RBC working on Avion Rewards. One of the more interesting projects was opening Avion to non-RBC customers, which meant rethinking how people signed up and accessed the platform. I also launched consumer cashback withdrawals through Interac e-Transfer, which gave me experience working with payment infrastructure, Risk and Financial Operations.
+>
+> Earlier in my career, I was at HBC managing growth for its Mastercard portfolio, and at Aeroplan working on credit card acquisition with TD, CIBC and American Express.
+>
+> So I've had the opportunity to work across different parts of the financial customer journey, from acquisition and onboarding to payments, spending and ongoing engagement.
+>
+> What interests me about Simplii is the chance to bring those experiences together in everyday banking. You're trying to become the place customers rely on for day-to-day money movement, and the PM owns meaningful scope—discovery, backlog, delivery detail, and outcome accountability—not just a roadmap slide. That combination is why I'm here.
 
-**Check before use:** Be exact about whether HBC improvement was controlled/causal or associated, and distinguish Arc'teryx planned membership from a launched product.
+**Check before use:** Distinguish Arc'teryx planned membership from post-tenure launches; keep Questrade vs Simplii closings profile-specific.
 
 #### 2. Why Simplii Financial, and why this Senior Product Manager role?
 **Key:** `simplii-from-c1d638b6-1858-487d-9ac2-5b6cc5327eb8`  

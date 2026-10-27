@@ -1,3 +1,4 @@
+import type { InterviewProfileKey } from "./profile-content-eligibility";
 import type { ExperienceModule, LibraryCategory } from "./types";
 
 export const EXPERIENCE_MODULES: Record<string, ExperienceModule> = {
@@ -219,3 +220,21 @@ export function experienceModule(id: string): ExperienceModule {
 
 /** Companies with product experience modules (for Experiences tab). */
 export const PRODUCT_EXPERIENCE_COMPANIES = ["RBC", "HBC", "Aeroplan", "Arc'teryx"] as const;
+
+/** Questrade-branded case modules vs Simplii generic digital-banking modules. */
+export function isExperienceModuleEligibleForProfile(
+  moduleId: string,
+  profile: InterviewProfileKey
+): boolean {
+  if (moduleId === "unclassified-review") return false;
+  if (profile === "unknown") return true;
+  if (moduleId.startsWith("questrade-")) return profile === "questrade";
+  if (moduleId.startsWith("digital-banking-")) return profile === "simplii";
+  return true;
+}
+
+export function experienceModulesForProfile(profile: InterviewProfileKey): ExperienceModule[] {
+  return Object.values(EXPERIENCE_MODULES)
+    .filter((m) => isExperienceModuleEligibleForProfile(m.id, profile))
+    .sort((a, b) => a.label.localeCompare(b.label));
+}

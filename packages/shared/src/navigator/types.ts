@@ -1,3 +1,5 @@
+export type InterviewProfileKey = "questrade" | "simplii" | "unknown";
+
 export type LibraryCategory =
   | "career_recruiter"
   | "resume_deep_dive"
@@ -6,13 +8,14 @@ export type LibraryCategory =
   | "product_analytics"
   | "leadership_behavioural";
 
-/** Five primary library sections (product UX). */
+/** Primary library sections (product UX). */
 export type LibrarySection =
   | "career_motivation"
   | "product_experience"
   | "questrade_cases"
   | "product_banking_knowledge"
-  | "leadership_behavioural";
+  | "leadership_behavioural"
+  | "people_leadership";
 
 export type QuestionIntent =
   | "main_story"
@@ -84,6 +87,10 @@ export interface NavigatorQaMeta {
   panelDiscipline?: PanelDiscipline;
   spokenAnswer?: string;
   importKey?: string;
+  /** When set, row is only eligible for this interview profile (job-specific prepared answer). */
+  profileExclusive?: InterviewProfileKey;
+  /** Optional per-profile closing paragraph for shared answer bodies. */
+  employerClosing?: Partial<Record<InterviewProfileKey, string>>;
   primaryInterviewRound?: InterviewRound;
   proposedAnswerUpdate?: string;
   supplementalTalkingPoints?: { label: string; content: string; importKey?: string }[];

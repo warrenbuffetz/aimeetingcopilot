@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-27T19:56:01.227Z",
+  "mode": "apply",
+  "db": {
+    "candidates": 39,
+    "sample": [
+      "469b3ada-9d4c-406d-af5b-f1688eacabcc",
+      "c34099e8-30c9-4ef4-b733-27b36e13801d",
+      "3b944ff0-0835-43e1-a831-f778c9f62b30"
+    ]
+  },
+  "pkg": {
+    "fieldUpdates": 14
+  },
+  "questradeIntegrity": {
+    "unchanged": true,
+    "count": 328
+  }
+}
