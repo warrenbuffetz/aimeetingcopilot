@@ -133,7 +133,12 @@ async function main() {
     .eq("profile_id", profile.id);
   if (error) throw error;
 
-  let active = (rows ?? []).filter((r) => !isInactive(r.navigator_meta));
+  const includeReviewDrafts = process.env.EMBED_INCLUDE_REVIEW_DRAFTS === "1";
+  let active = (rows ?? []).filter((r) => {
+    const meta = r.navigator_meta;
+    if (includeReviewDrafts && meta?.contentPackage === "john-experience-depth-v1") return true;
+    return !isInactive(meta);
+  });
   const filterIds = (process.env.EMBED_QA_IDS ?? "")
     .split(",")
     .map((s) => s.trim())

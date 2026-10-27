@@ -227,7 +227,7 @@ export default function LiveInterviewPage() {
 
   function openInMainPanel(row: EnrichedQaRow, opts?: { fromBrowse?: boolean }) {
     if (opts?.fromBrowse) skipContextUpdateRef.current = true;
-    void runAnalyze(row.question, { forceMainPanel: true, analysisSource: "browse" });
+    session.openPreparedRow(row, { preserveDetectedQuestion: Boolean(session.currentQuestion) });
   }
 
   function pinRow(row: EnrichedQaRow) {

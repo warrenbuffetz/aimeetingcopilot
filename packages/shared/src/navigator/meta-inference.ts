@@ -60,6 +60,12 @@ function libraryCategoryFromPart(part?: number, category?: string | null): Libra
 
 function moduleFromQuestion(question: string, category?: string | null, part?: number): string {
   const q = question.toLowerCase();
+  if (/tell me more about your time at|walk me through your (role|experience) at|give me an overview of your/.test(q)) {
+    if (/arc'?teryx|arcterx/.test(q)) return "arcteryx-overview";
+    if (/\brbc|royal bank|avion rewards/.test(q)) return "rbc-overview";
+    if (/hbc|hudson'?s bay/.test(q)) return "hbc-overview";
+    if (/aeroplan|air canada/.test(q)) return "aeroplan-overview";
+  }
   if (/\bshop\s*plus|shopplus/.test(q)) return "rbc-shopplus";
   if (/\bavion select|avion\b/.test(q) && !/cashback withdrawal/.test(q)) return "rbc-avion";
   if (/\bcore platform|mobile banking platform/.test(q)) return "rbc-core";

@@ -1,0 +1,111 @@
+{
+  "at": "2026-10-26T23:53:51.006Z",
+  "packageValidation": {
+    "qtVal": {
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        {
+          "path": "records[43].sourceQuestradeRecordId",
+          "message": "Not a RFC-4122 UUID (c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f); stored as provenance reference only"
+        }
+      ]
+    },
+    "simVal": {
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        {
+          "path": "records[43].sourceQuestradeRecordId",
+          "message": "Not a RFC-4122 UUID (c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f); stored as provenance reference only"
+        }
+      ]
+    },
+    "cross": [],
+    "valid": true
+  },
+  "textPreservation": {
+    "answerMatchesPack": 61,
+    "answerDrift": [],
+    "reviewNoteDrift": 61,
+    "cardCount": 61
+  },
+  "db": {
+    "questrade": {
+      "imported": 61,
+      "issues": 0
+    },
+    "simplii": {
+      "imported": 61,
+      "issues": 0
+    }
+  },
+  "linkIntegrity": {
+    "questrade": [],
+    "simplii": []
+  },
+  "idempotency": {
+    "questradeUpdatesExpected": 61,
+    "questradeReady": true,
+    "simpliiReady": true
+  },
+  "employerOverviews": [
+    {
+      "profile": "questrade",
+      "externalId": "questrade-john-experience-depth-v1-arc-overview",
+      "isPreferred": true,
+      "retrievalExcluded": false,
+      "experienceModuleId": "arcteryx-overview"
+    },
+    {
+      "profile": "questrade",
+      "externalId": "questrade-john-experience-depth-v1-rbc-overview",
+      "isPreferred": true,
+      "retrievalExcluded": false,
+      "experienceModuleId": "rbc-overview"
+    },
+    {
+      "profile": "questrade",
+      "externalId": "questrade-john-experience-depth-v1-hbc-overview",
+      "isPreferred": true,
+      "retrievalExcluded": false,
+      "experienceModuleId": "hbc-overview"
+    },
+    {
+      "profile": "questrade",
+      "externalId": "questrade-john-experience-depth-v1-air-overview",
+      "isPreferred": true,
+      "retrievalExcluded": false,
+      "experienceModuleId": "aeroplan-overview"
+    },
+    {
+      "profile": "simplii",
+      "externalId": "simplii-john-experience-depth-v1-arc-overview",
+      "isPreferred": true,
+      "retrievalExcluded": false,
+      "experienceModuleId": "arcteryx-overview"
+    },
+    {
+      "profile": "simplii",
+      "externalId": "simplii-john-experience-depth-v1-rbc-overview",
+      "isPreferred": true,
+      "retrievalExcluded": false,
+      "experienceModuleId": "rbc-overview"
+    },
+    {
+      "profile": "simplii",
+      "externalId": "simplii-john-experience-depth-v1-hbc-overview",
+      "isPreferred": true,
+      "retrievalExcluded": false,
+      "experienceModuleId": "hbc-overview"
+    },
+    {
+      "profile": "simplii",
+      "externalId": "simplii-john-experience-depth-v1-air-overview",
+      "isPreferred": true,
+      "retrievalExcluded": false,
+      "experienceModuleId": "aeroplan-overview"
+    }
+  ],
+  "pass": true
+}

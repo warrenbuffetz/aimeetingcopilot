@@ -16,7 +16,20 @@ const TOPIC_SWITCH =
 const AMBIGUOUS_FOLLOW_UP =
   /\b(what would you do differently|how did you measure|how exactly did you measure|what did you (personally )?decide|what did you own|what was your role|what would you change|was that incremental|how did you attribute|why did you use|why interac|what if it failed|how would the customer know|how did you prevent|how did you know it worked|what went wrong|how would you handle|why didn't you|whole membership platform|continue without you|leave before seeing)\b/i;
 
+const BROAD_EMPLOYER_QUESTION =
+  /\b(tell me more about your time at|walk me through your (role|experience) at|what did you work on at|give me an overview of your|tell me about your experience at)\b/i;
+
+function employerOverviewModuleFromSpoken(spoken: string): string | null {
+  if (!BROAD_EMPLOYER_QUESTION.test(spoken)) return null;
+  if (/\b(arc'?teryx|arcterx|arcteryx)\b/i.test(spoken)) return "arcteryx-overview";
+  if (/\b(rbc|royal bank|avion rewards)\b/i.test(spoken)) return "rbc-overview";
+  if (/\b(hbc|hudson'?s bay)\b/i.test(spoken)) return "hbc-overview";
+  if (/\b(aeroplan|air canada)\b/i.test(spoken)) return "aeroplan-overview";
+  return null;
+}
+
 const COMPANY_HINTS: { pattern: RegExp; moduleId: string }[] = [
+  { pattern: /\bshop\s*plus|shopplus\b/i, moduleId: "rbc-shopplus" },
   { pattern: /\b(rbc|avion|interac)\b/i, moduleId: "rbc-cashback" },
   { pattern: /\b(arc'?teryx|rebird)\b/i, moduleId: "arcteryx-membership" },
   { pattern: /\b(aeroplan|air canada)\b/i, moduleId: "aeroplan-cobrand" },
@@ -39,11 +52,15 @@ export function enrichLibrary(rows: EnrichLibraryInput[]): EnrichedQaRow[] {
 }
 
 export function explicitExperienceModuleFromSpoken(spoken: string): string | null {
+  const overview = employerOverviewModuleFromSpoken(spoken);
+  if (overview) return overview;
   for (const { pattern, moduleId } of COMPANY_HINTS) {
     if (pattern.test(spoken)) return moduleId;
   }
   return null;
 }
+
+export { employerOverviewModuleFromSpoken };
 
 export function isAmbiguousFollowUp(spoken: string): boolean {
   return AMBIGUOUS_FOLLOW_UP.test(spoken);

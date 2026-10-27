@@ -62,7 +62,12 @@ function filterCatalogForMap(catalog: EnrichedQaRow[], focus: QuestionMapFocus):
     const hitIds = new Set(hits.map((h) => h.rowId));
     rows = rows.filter((r) => hitIds.has(r.id));
   }
-  return rows;
+  const seen = new Set<string>();
+  return rows.filter((r) => {
+    if (seen.has(r.id)) return false;
+    seen.add(r.id);
+    return true;
+  });
 }
 
 type Props = {

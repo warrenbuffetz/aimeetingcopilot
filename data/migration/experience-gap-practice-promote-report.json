@@ -1,0 +1,873 @@
+{
+  "at": "2026-10-27T00:05:37.785Z",
+  "mode": "apply",
+  "scope": "package-all",
+  "questrade": {
+    "profileId": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
+    "targets": 61,
+    "updated": 61,
+    "rows": [
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-overview",
+        "id": "1df49dc5-5dd2-4512-8467-60b2acc872f3",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-overview",
+        "id": "cedc1dd2-21d9-4e51-818b-8e0999ed1c38",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-overview",
+        "id": "c795883f-351b-4b72-8d44-335d0d8da0d8",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-overview",
+        "id": "d840e1d2-04f2-4b4c-9f58-bb067eb3d299",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-story",
+        "id": "65b0afd6-5db1-4786-b729-ea63e374931d",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-discovery",
+        "id": "c6f81179-433a-4831-9365-e811f6d210b3",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-ownership",
+        "id": "3d530a40-14f7-4280-a6fb-5bb968df099c",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-measurement",
+        "id": "6121877f-65c3-4290-a9ba-873429483f0a",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-tradeoff",
+        "id": "2218c41d-4e30-4261-80f5-eb64e40e6d2a",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-testing",
+        "id": "805a377f-4bac-4d15-ad2d-fe8cffd6b051",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-lesson",
+        "id": "3cac2202-3db8-46c3-89df-76fc3ec54582",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-membership-conflict",
+        "id": "0c1cbc5a-06b2-47e6-9fad-594166c1f7b5",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-funding-depth",
+        "id": "6a76bd08-518a-41a6-8926-1f9ec568ca97",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-delivered-scope",
+        "id": "2cdf3a06-2a45-4819-b307-9ed753f021e0",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-validation-depth",
+        "id": "ebab8959-d7ca-4bbe-93ce-d49c990bcce6",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-remit-team",
+        "id": "e30c788e-37b5-4d3f-b075-508d9b4d2590",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-core-story",
+        "id": "377d9cf1-c43f-4edc-abe1-37e8aad320b9",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-team-leadership",
+        "id": "904264e6-b2a0-4312-b325-8f2ad4a766f0",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-roadmap-tradeoff",
+        "id": "3f273a74-be57-4b56-97d5-32df55ce3a97",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-travel-story",
+        "id": "b86b9a96-2c61-446e-b101-879f969e2080",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-travel-choice",
+        "id": "57e519b0-4b59-4961-a654-5ee513f81523",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-travel-rollout",
+        "id": "2f418f27-06ef-4e7d-b1e4-1dba3a2288ae",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-travel-measures",
+        "id": "7f637223-8202-4619-b009-8705b13041ea",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-story",
+        "id": "0e893417-dd06-4a8a-aec4-5e60a254848b",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-ownership",
+        "id": "d4527537-8ed9-4978-a3bd-e7d0435f0b35",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-discovery",
+        "id": "f6802f33-9393-4931-9d54-87c73b7004c7",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-trust",
+        "id": "f412c6ce-693b-4480-b6ec-745c9f27d71a",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-browsers",
+        "id": "2526af3e-20fb-41ef-8fd3-5260685ed09b",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-measurement",
+        "id": "11abb83f-e948-4395-a3f3-87321f0a806f",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-lesson",
+        "id": "47088e00-d6b7-4605-ab23-848d5576e50b",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-avion-identity",
+        "id": "34411bfa-8b96-45ae-9660-4f4cbb171d0d",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-avion-attribution",
+        "id": "b119b3ad-08d9-405f-82a3-2dfb73df6177",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-discovery-context",
+        "id": "054c93f3-ec2d-45a2-ae90-d900d22c3ab0",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-measurement-repair",
+        "id": "99f08a8e-4b0e-4833-886b-cc1f043e3801",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-payments-disagreement",
+        "id": "6872469b-deab-479a-adb4-69444f0aa8e4",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-activation-story",
+        "id": "56c5fe70-147f-4ea2-8ff3-2dedc592c9f0",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-activation-actions",
+        "id": "4c24cdf7-02fa-4905-98df-374a9befa8d7",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-activation-definition",
+        "id": "4016e9ee-aa8e-40f1-8571-5b3e169c7b9e",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-retention-definition",
+        "id": "ba179e05-21e4-4cd8-8030-c682aa4a0d76",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-quests-story",
+        "id": "09ece096-dd49-4fc7-8bd7-e95b217bfd21",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-quests-targeting",
+        "id": "c5005b28-5701-4e12-b6b5-de83410b4828",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-quests-measurement",
+        "id": "7035c494-b2eb-4cff-b8ba-05015e79f2ed",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-quests-rules",
+        "id": "6dc571dc-f4bc-4fc4-98dc-6416e7abd9c3",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-quests-failure",
+        "id": "e9627c89-1878-4f64-8b13-ed4fbe2443bb",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-commercial-tradeoff",
+        "id": "8e2693cb-97eb-4c4a-af3d-942f7c4bff0c",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-neo-implementation",
+        "id": "8c3ef979-886d-4f20-956d-b49441e17cb9",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-application-measurement",
+        "id": "722da43e-9883-44ce-800c-97a0aafbc694",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-neo-disagreement",
+        "id": "fc235006-4c1d-4c99-a73c-18b9c0e09952",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-ownership-boundaries",
+        "id": "9153cd37-e61f-4f79-b527-50a14094f309",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-commercial-story",
+        "id": "88e1bde2-a50c-442c-a015-c2f5997b998c",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-partnership-model",
+        "id": "77e71d8d-ccbd-496c-96b8-586b3cf9e43c",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-partnership-prioritization",
+        "id": "4e7a2a67-6db1-4a5b-b4c1-31e4d2a0ed26",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-partnership-ownership",
+        "id": "c0af9788-6dac-4c7a-af53-1466ae345664",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-billings-measurement",
+        "id": "5a7f9b09-3b2a-4504-8af8-a7b6ab7ebd4e",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-analyst-to-pm",
+        "id": "c2f71a02-d590-4684-bf9e-e030d5a8c06d",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-issuer-conflict",
+        "id": "023788b0-4d6d-40f5-8612-bc8b1e7b72d6",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-acquisition-ownership",
+        "id": "db02305b-a197-4748-9eda-03bebbe8f3b8",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-conversion-measurement",
+        "id": "0e33272e-0d91-49a8-8d6d-e74881372454",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-downstream-data",
+        "id": "bbb6602f-7fb4-4e7f-8257-fbf48b971bf8",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-partner-failure",
+        "id": "f2a453fc-95f8-46a7-b63c-6e0faea3313e",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-transfer-to-banking",
+        "id": "ff10bbc0-0e21-4cf6-a9c4-cc6c033667ce",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      }
+    ]
+  },
+  "simplii": {
+    "profileId": "1aff0813-6615-4a12-bfd6-ce7603604f6b",
+    "targets": 61,
+    "updated": 61,
+    "rows": [
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-overview",
+        "id": "fedfd600-9285-49c6-a03a-4e157c69fa1f",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-overview",
+        "id": "2ab3eefa-48ac-46d2-ba59-0e2178344e11",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-overview",
+        "id": "36167e36-b5c4-4109-95fe-001c05206ccb",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-overview",
+        "id": "eba5f488-6c47-4acb-bc2c-a7ed6550f5e2",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-story",
+        "id": "e9836a6b-e5e5-4683-aadf-136fade590e8",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-discovery",
+        "id": "49853532-b413-4a6f-a933-954ac07f9a62",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-ownership",
+        "id": "faf07ee9-1da1-438f-825c-73cd49944dec",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-measurement",
+        "id": "8f46e2b8-d41c-4244-88c7-8d5210c315f9",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-tradeoff",
+        "id": "0e559768-362c-4a5f-8879-f119fc24ddea",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-testing",
+        "id": "92f5b55e-490f-493f-8be8-bd2fab662c2b",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-lesson",
+        "id": "5e8dbfcd-2d91-44c1-bd85-2cd82f5b557a",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-membership-conflict",
+        "id": "6584fa28-8157-4be1-9faf-ac28d822d595",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-funding-depth",
+        "id": "9be2ec57-590b-4bf4-8469-4c54cf50f23a",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-delivered-scope",
+        "id": "d51d8579-2c91-405b-87e9-e894e02b0759",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-validation-depth",
+        "id": "673cb19c-02ec-471a-9f92-95cc2cb99cf5",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-remit-team",
+        "id": "d2b31a1c-3cc4-4bd9-aac4-87727def647c",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-core-story",
+        "id": "832f80ec-4146-4865-a9ae-402c54e64471",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-team-leadership",
+        "id": "524ce7d0-7bfb-47ff-9e0b-b0fc826f0a3d",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-roadmap-tradeoff",
+        "id": "ad7589e9-26dd-4d7e-b347-694e9dc12b19",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-travel-story",
+        "id": "5b0249a5-86ae-4f0b-8649-6d8d34adf486",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-travel-choice",
+        "id": "c2ee031b-fcce-42a9-b536-d160ec1cfbf4",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-travel-rollout",
+        "id": "d34ae15e-41af-42d9-b656-fdff082077e7",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-travel-measures",
+        "id": "193f6387-d1c3-4c6c-a01a-db701f1d626b",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-story",
+        "id": "7b6b9f91-22c5-497a-bf26-e77ee4cb869f",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-ownership",
+        "id": "afa7d2c1-087c-46db-b533-34387a5de02c",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-discovery",
+        "id": "2debf81a-ee8d-4725-8e16-f0ec6ed05429",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-trust",
+        "id": "cc1db69a-07f5-4896-b19f-cf07cd40bd77",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-browsers",
+        "id": "8c891d08-918d-4745-8716-7d36055d9f95",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-measurement",
+        "id": "2d088216-185e-4157-9ca8-85e7bf7f006c",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-lesson",
+        "id": "2997e3a5-d79b-4013-be83-62b9c833587b",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-avion-identity",
+        "id": "b877423a-e451-458c-9569-cf2ff7c89cb1",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-avion-attribution",
+        "id": "45142e2b-07aa-4669-9f00-3319043d4284",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-discovery-context",
+        "id": "c47654ca-a39f-4b17-bb3a-db1d412ce610",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-measurement-repair",
+        "id": "d6eac4c0-0b65-45bb-9fce-826cc0284431",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-payments-disagreement",
+        "id": "a283607c-40ed-4709-a21b-7abaf92d2bb6",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-activation-story",
+        "id": "930e5b8d-8643-47bd-8c56-8b7c26ba733c",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-activation-actions",
+        "id": "134698dc-e556-48f1-ba3b-b9504b56f51a",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-activation-definition",
+        "id": "6ba4c255-468a-4fb7-a4e1-7a6bf73108ba",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-retention-definition",
+        "id": "1c0df6a0-6a33-4f43-a068-0fb8aab48071",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-quests-story",
+        "id": "38bfeea0-4320-4cef-9472-8e7729cb5dd5",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-quests-targeting",
+        "id": "a9613925-b4a0-454b-ac59-4f60137410c2",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-quests-measurement",
+        "id": "e02dd37a-04a9-4e3b-86e6-d85656bbd2d4",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-quests-rules",
+        "id": "3eb4ee01-ba35-46fa-9c90-5540ccdcfea2",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-quests-failure",
+        "id": "1da7a8eb-ce49-4e0e-8567-aa2086caebf2",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-commercial-tradeoff",
+        "id": "def133e2-0cca-416b-9c02-eafb391c0d2e",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-neo-implementation",
+        "id": "22bd5454-6cc7-433a-a534-fa5055053cb5",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-application-measurement",
+        "id": "4aab2f21-9f81-411c-9840-9389550a45b1",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-neo-disagreement",
+        "id": "89c62a66-86f0-4df3-aa94-7e625b5190e0",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-ownership-boundaries",
+        "id": "463e686a-fa86-4b4b-a6d6-fd68426dc57d",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-commercial-story",
+        "id": "00f525e1-2a65-417a-95d0-f73ce8a604d6",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-partnership-model",
+        "id": "b02eb713-454f-4a01-bc2a-5fb9ef6429dc",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-partnership-prioritization",
+        "id": "45be49cd-9ec7-4166-882b-62a81adfa412",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-partnership-ownership",
+        "id": "08d3a9b7-dc96-4d2f-b3b3-069c5f87d141",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-billings-measurement",
+        "id": "3bc5970d-c2fe-4619-a014-4c886caf9ccb",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-analyst-to-pm",
+        "id": "88fb3749-9464-49c9-af40-bb3c31e9ade8",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-issuer-conflict",
+        "id": "222acaee-1874-4d2b-9ef2-c1481ac2aed2",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-acquisition-ownership",
+        "id": "bde103c7-4a5f-4fe8-a92a-bfdba3ae3664",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-conversion-measurement",
+        "id": "265ac1c7-8295-443e-83fc-2dd3f602518f",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-downstream-data",
+        "id": "af36ad1a-15e1-4ade-8c52-b49d5c88657c",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-partner-failure",
+        "id": "7ffea759-4653-4a72-bbbb-7ad9233d930a",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-transfer-to-banking",
+        "id": "5495cd03-1963-4004-a21c-f20f28de4ef6",
+        "retrievalExcluded": false,
+        "isPreferred": false,
+        "reviewStatus": "needs_review"
+      }
+    ]
+  }
+}

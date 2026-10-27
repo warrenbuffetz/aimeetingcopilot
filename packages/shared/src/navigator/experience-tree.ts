@@ -42,7 +42,10 @@ function intentSort(a: QuestionIntent, b: QuestionIntent): number {
 export function buildProductExperienceTree(catalog: EnrichedQaRow[]): CompanyExperienceGroup[] {
   const byCompany = new Map<string, Map<string, EnrichedQaRow[]>>();
 
+  const seenRowIds = new Set<string>();
   for (const row of catalog) {
+    if (seenRowIds.has(row.id)) continue;
+    seenRowIds.add(row.id);
     if (row.navigator.librarySection !== "product_experience") continue;
     const mod = EXPERIENCE_MODULES[row.navigator.experienceModuleId];
     const company = mod?.company;

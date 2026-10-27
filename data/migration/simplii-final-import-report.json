@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-26T19:47:30.230Z",
+  "at": "2026-10-27T00:17:29.417Z",
   "mode": "apply",
   "inputPath": "/Users/johnlee/Documents/Cursor/ai meeting copilot/imports/simplii_final_qa.json",
   "validation": {
@@ -17,14 +17,1557 @@
     ]
   },
   "actions": {
-    "insert": 257,
-    "update": 0,
+    "insert": 0,
+    "update": 257,
     "skipped": 0
   },
   "relationshipIssues": [],
-  "semanticDuplicates": [],
+  "semanticDuplicates": [
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about yourself",
+      "externalId": "simplii-from-2f3a780e-6b54-42b8-b56d-8936a471fa68",
+      "existingId": "e5091a37-ba00-4b2c-b5c7-02f1b23cf334"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why simplii financial and why this senior product manager role",
+      "externalId": "simplii-from-c1d638b6-1858-487d-9ac2-5b6cc5327eb8",
+      "existingId": "4a553cd2-d27b-4782-ae4f-26e38f8d5fa1"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why move into everyday banking from rewards and loyalty",
+      "externalId": "simplii-from-c45ce30e-6de2-4164-93bf-8b67902caae0",
+      "existingId": "7e86158f-775e-47ea-ba03-36e30df4835c"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "you haven't owned a traditional chequing account why are you qualified for simplii",
+      "externalId": "simplii-from-a292f433-831a-440c-a196-dbf8c38fbddd",
+      "existingId": "21fb87b8-3c43-406b-b2de-7667f970c273"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what makes you different from other senior pm candidates",
+      "externalId": "simplii-from-f67032ca-4e2e-4b49-ae44-29b181eab8b6",
+      "existingId": "1be95378-2cc4-45d8-808f-0ff35eef11d1"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what are your compensation expectations",
+      "externalId": "simplii-from-93f1f35c-cd54-49c3-8d6d-6a95d262fd4b",
+      "existingId": "d2dee267-acdc-4c03-bfbc-9b321907fb43"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what is motivating you to consider a move to simplii",
+      "externalId": "simplii-from-28571e7f-620f-4880-9cd7-cdfc2e146aa8",
+      "existingId": "b31caa0f-ecea-42c5-a340-8be82dbc6388"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you help a simplii customer make their chequing account part of their everyday financial routine",
+      "externalId": "simplii-from-6844c2e7-03c5-434e-b64c-ca9febec68dd",
+      "existingId": "3125f221-40a0-4a60-8c5c-c49ceb2cf581"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you increase direct deposit adoption",
+      "externalId": "simplii-from-06e233ae-5d45-42d3-b560-84baf56a8948",
+      "existingId": "7b52a3a5-1fdb-4283-8bf2-cbc874df4fa8"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what metrics would you use to measure success in everyday banking",
+      "externalId": "simplii-from-735da866-20fc-4837-b67d-c91a6b4e2c77",
+      "existingId": "65127872-0f03-4669-b10b-c64bbd5f6ee5"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "mau is increasing but transaction frequency and deposits are flat how would you diagnose it",
+      "externalId": "simplii-from-b51df0d6-2cd1-41cb-b1f6-757f899b8bcc",
+      "existingId": "3d26236d-ca1f-4f69-8a1a-d6a52321b604"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "you can prioritize only one direct deposit setup transaction clarity automatic savings or debit card reliability how do you decide",
+      "externalId": "simplii-from-50313c26-9a05-42e6-b88e-cc571be4b272",
+      "existingId": "92e78f8e-a79e-425f-84e0-9b3b458842c7"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "build a business case for investing 2 million in account switching",
+      "externalId": "simplii-from-ecbddc79-ce40-4452-88cc-68b3f56f197a",
+      "existingId": "c2a11354-320d-4089-88c1-2946ae5ba430"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you improve transaction histories",
+      "externalId": "simplii-from-94d1edb7-2a12-40f6-8145-2a6006c2d682",
+      "existingId": "6812a08d-4bfc-423e-8366-fdd5e330961a"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you make saving more engaging without turning it into a gimmick",
+      "externalId": "simplii-from-aa868026-c8b7-4c7a-9318-a8754cb383af",
+      "existingId": "fc3620e8-04f2-42e7-9092-3f51524f148c"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you do in your first 90 days",
+      "externalId": "simplii-from-d47c60d3-510e-4373-abf0-0749fcc41ebc",
+      "existingId": "3198afb8-e52a-457e-8b92-2e8d68f495a3"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "walk me through the interac e transfer product you launched at rbc",
+      "externalId": "simplii-from-244e239c-2f88-4b6e-968f-ef8ce65daa70",
+      "existingId": "ea4c3415-7869-41d4-aa6e-b6dc49d44fec"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what's the difference between eft and interac e transfer",
+      "externalId": "simplii-from-91cd5cac-65b4-41e6-be3b-76ba3c49e9b1",
+      "existingId": "ba28f632-76b8-4a9c-b751-814f8357e361"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what should happen when a customer initiates a transfer but the payment fails",
+      "externalId": "simplii-from-93a2100c-050b-4990-9340-00412fb9b507",
+      "existingId": "c83572e1-2ab9-4164-8381-5a7c48463ed1"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you design a reliable account funding experience",
+      "externalId": "simplii-from-cf5d16e4-7d0d-4ddf-8a0b-f87d3dce3efc",
+      "existingId": "f95ea875-f69a-4012-91f9-92870922397b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you handle duplicate charges incorrect balances or transaction discrepancies",
+      "externalId": "simplii-from-a40816ee-67e5-4b52-9228-33132bb5ffb1",
+      "existingId": "48be0d8c-0e3d-4827-b42f-ebe99dcd5601"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a complex cross system product integration you led",
+      "externalId": "simplii-from-f8074663-5773-4b95-a25b-1e32a764c1a9",
+      "existingId": "1ce955cd-bc52-48fe-85f2-4c3be8d7fde9"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you manage an underperforming banking technology vendor",
+      "externalId": "simplii-from-176ce1ac-757b-452d-b98c-d8055754808c",
+      "existingId": "4c139c46-b70b-4d8a-b252-4b216f6bef2b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you use ai to improve personal financial management",
+      "externalId": "simplii-from-0977208e-9d2d-40dc-8cfa-d48c79105e79",
+      "existingId": "93a29b2b-2c1c-4d40-9bb2-ce2985ea3782"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about the financial impact of your work at hbc",
+      "externalId": "simplii-from-89ded97e-dc5a-420c-a4ee-a7372c2937a9",
+      "existingId": "401870f6-95a2-401e-9559-d49e5b8a648d"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you approach customer activation and retention for the hbc mastercard",
+      "externalId": "simplii-from-7eb5e7ae-c611-4966-8279-0fcc8d80fc3c",
+      "existingId": "1ac8bf9a-1a3a-461a-9d15-91d20e550e23"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about improving the hbc mastercard application journey",
+      "externalId": "simplii-from-140caed9-55a1-48ac-9190-5d2256afd262",
+      "existingId": "995631d2-4fde-40d1-9105-367105ee5790"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you drive credit card acquisition growth at aeroplan",
+      "externalId": "simplii-from-e8d13d9e-a98d-4dbc-a596-a178557963b0",
+      "existingId": "2ac953ed-bdb3-4ef9-bb77-84f5c12c762a"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about building avion select from zero to one",
+      "externalId": "simplii-from-6458104e-34c6-430c-8005-aef3a3da9c02",
+      "existingId": "91d9871a-62d8-4b10-9114-238a9dde4a28"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you help secure 5 2 million in funding for arc'teryx membership",
+      "externalId": "simplii-from-439ccf45-857e-431f-ab0e-1312d6998f02",
+      "existingId": "c1a461c3-a61b-480d-9fb4-6c77d31416da"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why did you choose a headless membership platform rather than building everything internally",
+      "externalId": "simplii-from-a85b536e-5e20-468f-87d9-fb447ae796f6",
+      "existingId": "eac5de90-ccbd-408c-b8c6-295d3db3f7ec"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a time you had competing priorities with risk compliance or engineering",
+      "externalId": "simplii-from-e09deee1-3efa-4774-9274-2f18848b739f",
+      "existingId": "16da5085-1878-47fa-bcd8-67063062e82c"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a time you challenged the original product strategy",
+      "externalId": "simplii-from-011b9f33-e2ea-4063-aa22-446d561e6df1",
+      "existingId": "c7d1b75f-344c-4a09-b2a3-386c6bbcc081"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a product initiative that didn't go according to plan",
+      "externalId": "simplii-from-15aa03e2-46af-4d60-9d73-90ed342c6ccc",
+      "existingId": "2fca5f1c-f7a9-4a1e-84c1-15955b449a46"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you make decisions when the data is incomplete",
+      "externalId": "simplii-from-4f7c15c5-f4ec-40ce-b1df-3e0a7dddfc71",
+      "existingId": "61d2dc83-2655-4597-9f06-3dcc09c37fee"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you manage stakeholders who disagree on priorities",
+      "externalId": "simplii-from-b4880442-6054-41de-b29b-f89c40e95005",
+      "existingId": "2adb5b81-d679-4daf-9ba0-75c6fea8a325"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you decide whether to experiment or commit directly to delivery",
+      "externalId": "simplii-from-03d6326e-9615-4ffc-8464-d9d6c186811d",
+      "existingId": "6be6d298-8e8d-4081-876e-956fd949fead"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you work with designers and customer researchers",
+      "externalId": "simplii-from-c79db9b5-4487-4e2d-b794-624b16332f9e",
+      "existingId": "1c9a6a2a-ec72-4eb7-b44d-653813bec5ff"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how are you using ai in your product management work",
+      "externalId": "simplii-from-7c079cf5-b153-435d-a4b3-e83ad3139a2b",
+      "existingId": "b1372f25-667a-4145-8b81-dae2a6ccb2a0"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you handle a major payment incident",
+      "externalId": "simplii-from-2f00fac1-89ff-470f-992d-cd89980a36a9",
+      "existingId": "a348edf2-b51a-4b88-acbd-bb390a0bbff2"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why should we hire you instead of someone with direct core banking experience",
+      "externalId": "simplii-from-56065bcd-e97e-4d82-ac21-e35a44296ae7",
+      "existingId": "f299ad67-b1a3-4815-a20b-be3dda974a14"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "you say hbc's modeled lifetime value increased 10 how would you explain that metric",
+      "externalId": "simplii-from-333428ab-ba63-4939-a069-a376f0334868",
+      "existingId": "0b835602-8fbe-4800-8d15-72b4c51bcf33"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you know your incentive program generated incremental spending",
+      "externalId": "simplii-from-6cffb3bc-d87e-45de-a116-f6539d8d23dc",
+      "existingId": "a33d18a6-0036-4768-97a3-ab21345bc31f"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "if direct deposit conversion improved by 20 how would you determine whether the experiment succeeded",
+      "externalId": "simplii-from-976c189b-f59f-409f-92ea-2648cc5b2f5a",
+      "existingId": "c20b1fbf-edbc-41dd-906d-5120baf01de6"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if leadership wants to optimize dau but you believe retained deposits matter more",
+      "externalId": "simplii-from-868dbf79-c06d-4ed3-83c4-f001b12be2bf",
+      "existingId": "99916d38-7d95-471e-96bd-668b9a3dfaca"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if the team ships a feature on time but adoption is poor",
+      "externalId": "simplii-from-4671a4a2-6cdf-4a6a-ad67-48ff291ca2dc",
+      "existingId": "b863ded4-54b0-48c1-a14f-8b7e96fdfd3f"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why would someone move everyday banking activity to simplii if their existing bank works fine",
+      "externalId": "simplii-from-dd28e2fe-24d1-4012-98d0-e951276439c6",
+      "existingId": "ec652af9-bea0-42c9-9c1b-51eaacf4b669"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "which customer segment would you prioritize to deepen simplii chequing account adoption",
+      "externalId": "simplii-from-0bcc9c40-011a-4fff-9789-fdad78429b78",
+      "existingId": "e536abfb-2ded-4688-8f9b-880d2b06bee5"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what's the one feature you'd build first to win payroll",
+      "externalId": "simplii-from-e481df79-5778-46dc-8292-e381da7845d6",
+      "existingId": "5da7ce9b-6af8-4b17-8f35-f2c8801797b5"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if employers aren't supported by an automated payroll switching provider",
+      "externalId": "simplii-from-d551219e-6540-4760-a132-b27c92c706db",
+      "existingId": "f2714376-83a6-4147-a61b-dc502c6a2461"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you know a customer really switched their paycheque",
+      "externalId": "simplii-from-6f890192-85ca-45f7-8259-f92001b996cf",
+      "existingId": "c57cae8d-99b9-4721-8bb9-fa2a4481e929"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "if a simplii customer also maintains an account at another bank is that a problem",
+      "externalId": "simplii-from-0d2ba56b-828d-4eeb-bbc4-b099d740e800",
+      "existingId": "d75cfe5e-28af-465e-bf89-a1987c081922"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if payroll bonuses bring in customers who leave immediately afterward",
+      "externalId": "simplii-from-73c5726c-d892-4f7b-895c-59a71c29080b",
+      "existingId": "9e35549c-7c36-4196-ade3-09af90082b8c"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you explain simplii's value against other canadian banking options",
+      "externalId": "simplii-from-c4343691-6421-47c9-9c1e-8c88f948e0b6",
+      "existingId": "36ec0e14-39fb-4e04-992e-f03f1279d010"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what is the biggest risk in connecting external accounts",
+      "externalId": "simplii-from-6a8c3993-05ae-456b-8750-2b6778b6ee6b",
+      "existingId": "56714b9a-9086-41c5-a44e-0103343af8e8"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you decide between better rates and better switching ux",
+      "externalId": "simplii-from-648015c7-c77e-4d15-87c7-b0c2c688beb0",
+      "existingId": "11788d86-8709-4c42-bea7-fae65765c7f4"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if leadership wants to ship five banking features at once",
+      "externalId": "simplii-from-1d491196-487e-4282-9a80-15e857190b75",
+      "existingId": "a7a300c2-2670-4eec-bd3a-b179aacaa2e1"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you define a customer's share of everyday banking activity at simplii",
+      "externalId": "simplii-from-a60003e2-1f39-431f-8386-531fc24d711c",
+      "existingId": "fca8d188-b975-4a27-91e4-8dfb989a07c5"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "give me an exact definition of a monthly active banking customer",
+      "externalId": "simplii-from-7ade5d00-b631-4813-bf25-039f6c808fa5",
+      "existingId": "77bf9913-88c6-4e94-9ef8-8ef439f9e5c6"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you use as a north star measure for deeper everyday banking engagement",
+      "externalId": "simplii-from-0059c616-ee5b-4b23-a15e-f8af7061fd25",
+      "existingId": "2ccb20ab-bd0c-4847-811c-a4e0e8f6444e"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "your conversion improved from 10 to 12 is that 2 or 20",
+      "externalId": "simplii-from-0e0a03bc-dc74-48a1-8af5-3cc3a80ada2a",
+      "existingId": "08f7bf7a-f32e-48a1-876d-8ec8a5de03a0"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you prevent cohort analysis from becoming a misleading before and after story",
+      "externalId": "simplii-from-629392bb-f39b-414e-b66d-0d879a9c4557",
+      "existingId": "82434972-97ef-4d86-9c4c-7a7ec44d32fb"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you select an experiment's primary metric and guardrails",
+      "externalId": "simplii-from-6441c9f1-738a-4bd4-b819-92ddf2c1de5b",
+      "existingId": "429194ec-2d66-49a5-8f71-471d00c7cc00"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if an experiment looks positive after two days can we ship early",
+      "externalId": "simplii-from-f95b4bf7-5896-494b-810c-bb4d06393365",
+      "existingId": "f5809828-9544-46e3-b89e-957c7f799d71"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why is spend per active cardholder a risky metric",
+      "externalId": "simplii-from-3c438a5c-c720-4277-a72a-fdcdfd5e156d",
+      "existingId": "65441a61-8545-4b4a-a24f-afad1e983299"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "explain how you would model customer lifetime value in banking",
+      "externalId": "simplii-from-96d0d431-bf77-42e5-85b5-1b8106ff1edc",
+      "existingId": "9ab3cfa1-fabb-4c64-8ffd-f88e7eb6ed2d"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "is a 100 million increase in deposits automatically a win",
+      "externalId": "simplii-from-6bf73e61-9653-44ef-b0b3-03f854f27398",
+      "existingId": "4dfd2405-e466-46c5-b554-57f98a2dc4bd"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "would you optimize account openings funded accounts or payroll adoption",
+      "externalId": "simplii-from-75a6db9c-b40c-44d3-b7b7-3edd17933d54",
+      "existingId": "c3bc9de2-a338-4ee0-b115-846d89c99742"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you decide if a 5 incremental spending lift justified an incentive",
+      "externalId": "simplii-from-35d5ff6e-5890-41c9-a4f2-2d48476b7d3d",
+      "existingId": "47a7ef8b-07e2-4547-9b78-56b8c27039cb"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "you have only a dashboard no user research what do you do",
+      "externalId": "simplii-from-fce9554d-a36d-4085-874f-e842afda538c",
+      "existingId": "374f20dc-93b9-4e4d-8e97-255e17b34d94"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you know an increase in dau isn't just more balance checking",
+      "externalId": "simplii-from-f7e403b2-26b8-4da4-83c1-ea58c2e3371b",
+      "existingId": "1b939a88-5f06-456d-9e60-297685854201"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what exactly did you own versus rbc's payments infrastructure team",
+      "externalId": "simplii-from-f290b115-770e-4448-82ac-52f4334f34de",
+      "existingId": "79d548c7-f53b-44ae-9189-9d3334ea89dd"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why mention 5m settlement events when avion payouts were only 1m",
+      "externalId": "simplii-from-6eb506c0-03c7-4205-aa2a-ba3662c5b94d",
+      "existingId": "5e54960c-7a73-4f33-833c-fbd585b2793d"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why use interac e transfer rather than eft for cashback withdrawals",
+      "externalId": "simplii-from-3c199d05-67ba-4f4c-aa98-d7f06a2cc3c6",
+      "existingId": "2e484123-59ba-4c11-a61b-76bc1a8211b0"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what happens if a payout api times out after the request was accepted",
+      "externalId": "simplii-from-fb3c9a13-b37d-45df-b095-e14f8e84bed2",
+      "existingId": "25a49bd6-1c1d-4c01-b1c6-1cecf2939849"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what is reconciliation and why does a pm need to understand it",
+      "externalId": "simplii-from-21cb8214-854d-48a1-a86d-c1d8fd37bf89",
+      "existingId": "1b0743e0-4b7e-40fa-898f-aca0169551cd"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you define payout success rate",
+      "externalId": "simplii-from-a91d4a5a-19bf-4cd7-8ade-e773f9e83028",
+      "existingId": "9fe37589-1a10-4263-8e4d-fa81ab68e7fd"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what controls would you require before allowing a new transfer type",
+      "externalId": "simplii-from-83d6cb34-59ce-42d0-88ca-dfb46a91bfae",
+      "existingId": "e0ab1aca-b677-4e8d-a390-cb65261f416d"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if risk wants a step that cuts conversion by 20",
+      "externalId": "simplii-from-9e7049a3-2fa7-4388-931c-875a7cc4d416",
+      "existingId": "0d73635c-53b8-49c8-831a-af7cd43196c2"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do pending and posted card transactions differ",
+      "externalId": "simplii-from-fb56f902-9f1a-4f18-9f34-dffa2027c038",
+      "existingId": "c3a4197c-20cd-466f-96ad-8f44a3bf61cf"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if the ledger balance and customer facing balance don't match",
+      "externalId": "simplii-from-0c8b1a1c-7290-4b60-8c88-8d978935beae",
+      "existingId": "f053d81c-c2a8-4652-877f-c02606c3466a"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you roll out a critical payments integration",
+      "externalId": "simplii-from-038f6014-b892-4a64-84d6-e09048b9fea2",
+      "existingId": "3288b547-da47-4a68-b913-128a109fc5b7"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you choose between building a payment service and buying one",
+      "externalId": "simplii-from-009d20a6-a8cf-458a-a7ea-9ef696c693e0",
+      "existingId": "d88a71c9-34bf-41fb-8b2f-22789de10c16"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what does 'p l ownership' at hbc actually mean",
+      "externalId": "simplii-from-9b0f399e-6750-463a-9570-805c82449eb8",
+      "existingId": "4614d7f7-2554-46b2-bcb0-a8bfc8f3425b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what was your most important hbc product decision",
+      "externalId": "simplii-from-b0d58fdf-bced-41f7-b878-1b158fc89643",
+      "existingId": "2179ecf1-b28b-47da-988a-c47641c5688d"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me exactly how you defined hbc's 30 day activation and 90 day retention",
+      "externalId": "simplii-from-4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5",
+      "existingId": "6a046b95-dd21-4c42-b2b8-6f2e29769725"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "did you actually run randomized holdouts on the hbc mastercard programme",
+      "externalId": "simplii-from-af5bd3a4-1b6f-4f1c-a319-15475be31b5d",
+      "existingId": "e4b5a839-0060-42e5-a472-022192d86fec"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why did hbc modeled ltv rise 10 and how certain are you",
+      "externalId": "simplii-from-3ba24689-dd1a-4428-b018-743f0a8c61af",
+      "existingId": "c88351de-66fa-4432-a12d-966bbe0f06e8"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why mention 500k cardholders if you didn't control the credit book",
+      "externalId": "simplii-from-9dbe28fe-5bde-46e2-86a2-2a9381643704",
+      "existingId": "36205e5d-6c8c-482c-8b83-62cf71bf608e"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what exactly did you change in the hbc application experience",
+      "externalId": "simplii-from-e546440d-67eb-4266-8466-0827ccd35e42",
+      "existingId": "f4f37d3a-0e49-4f93-8483-40a968f6fd4a"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "did your ux redesign cause approvals in under three minutes",
+      "externalId": "simplii-from-7aafc468-3bf5-48c2-886e-5ca34ce4f660",
+      "existingId": "b816ab21-56a8-426d-a4e1-e9bb822f8280"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "did quests reach six million active credit cardholders",
+      "externalId": "simplii-from-92a7cf55-18dc-4d94-93d7-db3303028b9b",
+      "existingId": "09eab4ba-402f-468b-9019-f5ceb07e3c36"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how can you claim 427 acquisition growth when you only improved conversion by 40",
+      "externalId": "simplii-from-09b7fdec-df53-4a0a-a6af-592fe54cbe57",
+      "existingId": "5cb6995c-39fa-4cb2-8eba-028ea38ccca0"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you experiment when the bank owned the application form",
+      "externalId": "simplii-from-1161687d-c6f7-4dd4-9c47-39354f254b09",
+      "existingId": "17f22640-e461-487d-beed-25d36580d9c0"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "you secured 5 2m at arc'teryx was the programme launched",
+      "externalId": "simplii-from-b1eac049-c167-4977-a7bd-55e98d7e3b0b",
+      "existingId": "b94d6ad3-774b-4158-8b78-93ae5a52904a"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you know the headless option saved two quarters",
+      "externalId": "simplii-from-1db0b6d1-d7a9-4d2b-b2a4-7758f9c47b3b",
+      "existingId": "021e2e48-dd92-4e64-a366-7e00e8e65161"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you do if engineering said your top feature was six months of work",
+      "externalId": "simplii-from-0f4d097c-a03a-4123-9e70-37c642139843",
+      "existingId": "a2930228-6118-4b5a-8590-a3a6101826cb"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you challenge a vp who has already promised a launch date",
+      "externalId": "simplii-from-478cb389-1d3d-43e6-9a9b-71fd8b7c7cd5",
+      "existingId": "3ea04563-8be5-4354-8e39-8d4f2a973fc2"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a time you said no to a stakeholder",
+      "externalId": "simplii-from-1c3ffb21-7fdd-46b3-832a-57c13b409a34",
+      "existingId": "ce5494ec-503c-4396-8c27-91c05985f710"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you handle an engineer who strongly disagrees with your roadmap",
+      "externalId": "simplii-from-309200d8-48f6-4957-8eda-75eb4e3faf62",
+      "existingId": "0d53f2f5-c0fa-4fff-b304-7b3860800533"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you know when to stop investing in a feature",
+      "externalId": "simplii-from-df6c37ec-3c98-4d5d-b441-30ba78608f56",
+      "existingId": "5dda9aad-f138-4b29-864f-0f72806ce0be"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what is your biggest weakness as a product leader",
+      "externalId": "simplii-from-39a0bcf9-7d01-4cde-8da4-4ff893da44b3",
+      "existingId": "e1c81e50-0ca1-4e2d-8620-aeaabebac563"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you lead when you don't manage the engineers directly",
+      "externalId": "simplii-from-20f12afb-0dbb-49eb-821e-01989453d828",
+      "existingId": "d83ade07-621a-4212-8867-cfb749a9499b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if your pm peers own cards and money movement but your metric depends on both",
+      "externalId": "simplii-from-c4c44a09-0799-471a-97cb-05e06e8bf8a8",
+      "existingId": "7b1dc74c-6017-45b3-8222-7b597b5361bc"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "would you delay launch over a 0 5 payment failure rate",
+      "externalId": "simplii-from-17154883-f321-4b28-bee5-6fa80de879db",
+      "existingId": "61c08831-de35-42c7-8fa6-6fd116f1a88d"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you do if a new ai feature gave customers incorrect financial advice",
+      "externalId": "simplii-from-e4952adf-c7af-45fb-955e-169fc91e2f7d",
+      "existingId": "f723e54f-92d4-41fe-8486-857bfbf43dc6"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what's one product opinion you hold strongly that others might disagree with",
+      "externalId": "simplii-from-2b7b68cd-d7ae-4358-b609-405c36f1f6b6",
+      "existingId": "de43f0bd-a74f-4313-8354-9fd587be24c7"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about your first disagreement with a new team's established strategy",
+      "externalId": "simplii-from-fef2b30f-d115-48fe-be83-cf89c80548de",
+      "existingId": "d57d602e-95e5-4f90-b8f4-1a7da805082b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a customer problem you solved at rbc",
+      "externalId": "simplii-from-f1194ecf-438d-422d-a96f-9c9b69a54fe2",
+      "existingId": "a503ee2f-e897-4df9-882d-81e49389504e"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you know the avion cashback withdrawal was a customer problem",
+      "externalId": "simplii-from-7df4eff0-1801-4505-afc3-cf652d90eb63",
+      "existingId": "5bfe1aaa-b1d0-42a9-ae68-7d69d03c8058"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why did you prioritize it over other avion improvements",
+      "externalId": "simplii-from-3bcaff0a-31cb-447a-b037-889edb579c5d",
+      "existingId": "625b1f18-024c-4c82-b77c-060482bb7de3"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why interac e transfer instead of direct bank account linking",
+      "externalId": "simplii-from-c226bb45-beb6-4162-9628-f16d6660b887",
+      "existingId": "afae3cc0-2213-497c-a730-9dfbb5b7112d"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what did you personally decide on the avion cashback withdrawal launch",
+      "externalId": "simplii-from-27d2a524-6a0d-4a3d-b102-c531d65f368f",
+      "existingId": "ed4e02e8-a337-40f9-bd9e-d486927f8577"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you measure success for the avion cashback withdrawal launch",
+      "externalId": "simplii-from-11375f03-31fa-45da-8557-488a8cc63beb",
+      "existingId": "8750305f-4d55-466b-a9a8-e13bb4a0bfde"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you do differently on the avion cashback withdrawal launch",
+      "externalId": "simplii-from-14ad93b1-527c-49e9-b160-e9b22ca0f888",
+      "existingId": "e55c3752-59f6-428f-bdc7-6f05ef560131"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about something you took from an idea into a product",
+      "externalId": "simplii-from-2a1ed160-bfa6-4f2a-91ea-d280a3ef0418",
+      "existingId": "0f278822-cbaf-4415-9a35-b337f5530b39"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you know membership was a customer problem at arc'teryx",
+      "externalId": "simplii-from-ab850009-b3cc-4b2b-b026-cd9bb28987c3",
+      "existingId": "ff8f655c-9971-4641-abb2-1bc5b30ed7a2"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why prioritize a membership platform rather than improving service pages",
+      "externalId": "simplii-from-7d32e566-7779-4fe8-bca5-f9db5c8180d1",
+      "existingId": "5e5687a2-851f-46fc-a99b-b74a655e9f55"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why this solution and why start in north america",
+      "externalId": "simplii-from-d8d2b2a3-94db-456b-b6d2-f94c28429a61",
+      "existingId": "8eec9125-4cfd-4ea9-945b-b42361130370"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what did you personally decide or deprioritize",
+      "externalId": "simplii-from-f9022f65-91fb-4094-ae8f-b4dc87edcca7",
+      "existingId": "ba7845dc-51b1-42cf-b343-8f4d54d64f5e"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you know it worked if the full membership platform hadn't launched",
+      "externalId": "simplii-from-a412c28e-815d-42b5-91fa-ad7bc4e444b6",
+      "existingId": "421aed67-c50e-4a0a-b427-0b7f9fa868f0"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you do differently on the rebird membership platform",
+      "externalId": "simplii-from-8efd1a27-85fe-41e7-a279-d79a07bda1d4",
+      "existingId": "34d16821-5027-4ddc-afd7-606a3c202eb6"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a customer experience you improved at hbc",
+      "externalId": "simplii-from-5e92bdca-a458-4e00-9e4f-e5034d641a9b",
+      "existingId": "770e28de-b443-494a-b46c-0655d7d9297a"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you identify the application problem",
+      "externalId": "simplii-from-04f9a779-8058-4470-8817-beccdcbecf1e",
+      "existingId": "ef068144-fcf0-4c59-9c8f-e58f4997ffeb"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why prioritize application continuation instead of more acquisition",
+      "externalId": "simplii-from-d9c4b9aa-5e54-44a8-b246-c99a3a380239",
+      "existingId": "a3533970-6882-486d-a706-8922469c3928"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why save and resume and how did you split ownership with neo",
+      "externalId": "simplii-from-c60f747c-fd04-49d7-821c-1ed3e4a0d4c9",
+      "existingId": "d2634dd3-6a27-4a71-853a-87556928e424"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what did you personally decide on the hbc mastercard application journey",
+      "externalId": "simplii-from-b9f349e9-64c8-4308-a221-2004dd8f3038",
+      "existingId": "6c2aef3d-628a-4978-b9db-dea5805b966c"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you measure the 15 improvement",
+      "externalId": "simplii-from-3218b561-2159-442e-a3aa-074756f877c0",
+      "existingId": "b1ac4e3e-368d-4b42-a0ce-1e9acbb72fc5"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you do differently on the hbc application experiment",
+      "externalId": "simplii-from-092b08d1-51ec-4761-a05d-2ccd56724ad5",
+      "existingId": "0ca41580-f93d-44a6-acab-ad01b379c5a4"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a data driven product decision at aeroplan",
+      "externalId": "simplii-from-c88f487e-e0d1-44c0-ab54-60f1e19fe79d",
+      "existingId": "4b3b3513-adb9-4599-bfd3-9aadb483176e"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you identify the problem",
+      "externalId": "simplii-from-75fd6429-dc9a-4cd3-b996-ce48af985a7b",
+      "existingId": "5fae85d3-7049-43b7-9b39-e21a91bb7b8b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why was it worth prioritizing",
+      "externalId": "simplii-from-f2dabb52-3af6-43eb-ab59-c5934bc3a036",
+      "existingId": "d74e7bba-7f31-4919-b20b-3bc6b7894ef9"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why a clearer offer summary instead of a shorter page or bigger apply button",
+      "externalId": "simplii-from-4fa0697a-ebf8-4c97-a107-946de9e5bf1c",
+      "existingId": "6314f6b2-d1f3-41ea-955c-d32008a7ac2c"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what did you personally decide on the aeroplan card offer test",
+      "externalId": "simplii-from-2e58d329-4b40-4142-bf45-67504474f730",
+      "existingId": "4e19ed6c-9989-4a34-b25b-01615fa388d4"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how exactly did you measure the 40 conversion lift",
+      "externalId": "simplii-from-8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4",
+      "existingId": "0343f6eb-6777-488c-9440-7b9e1db73c65"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you do differently after the aeroplan offer summary test",
+      "externalId": "simplii-from-b810ad2f-f519-4a36-9e96-246c398f9d70",
+      "existingId": "d5c21740-9827-493d-b8b8-8dfcf8eb748e"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you deliver customer facing features when another team owns the core banking ledger",
+      "externalId": "simplii-from-a8fe6bd5-ecc2-4c0f-95d5-63bb51f0c20c",
+      "existingId": "50892393-4fb9-49b5-a96d-a1353b714f09"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you measure genuine primary banking adoption instead of superficial account opening",
+      "externalId": "simplii-from-04f3d519-31e2-478e-9083-e60d2bca7818",
+      "existingId": "aecc5083-68b0-4bb6-8ad2-cea0b99018e1"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you ensure financial data shown to customers or ai tools is accurate enough to act on",
+      "externalId": "simplii-from-eb393097-3860-4697-a24d-dd0a0cbaaf1d",
+      "existingId": "ff6be849-49b9-4ae0-87f1-cef4e6667b6b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what have you learned about simplii and what product question interests you most",
+      "externalId": "simplii-from-0accbf98-6b70-462f-9631-d279d5fe3ae5",
+      "existingId": "d7f4b4f0-0d30-464c-942d-eecd7007322b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you prioritize banking reliability against a differentiated customer feature",
+      "externalId": "simplii-from-d6e02f71-bdb1-4dbc-b373-4c7958d83e04",
+      "existingId": "0d55d164-6f1e-499f-97be-a0511f630d31"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you tell whether better transaction insights actually help simplii customers",
+      "externalId": "simplii-from-59024cc1-b1e1-4f5b-a146-1936c8c86037",
+      "existingId": "6c236ffd-06b3-4daa-b911-ef9a5cebac30"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "where should transaction status balance calculation and reconciliation responsibilities sit",
+      "externalId": "simplii-from-695ace4a-7c53-415e-9eb2-5f885d680c2b",
+      "existingId": "fdf1ed2d-f1ec-45ec-946f-48af47750005"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you handle payment exceptions and straight through processing as transaction volume grows",
+      "externalId": "simplii-from-4068ab67-0613-40ae-bb08-f810651d27a0",
+      "existingId": "9b5924a2-ecc0-4f8c-b294-6d035ddb34fb"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you introduce ai assisted account insights while preserving consent accuracy and user control",
+      "externalId": "simplii-from-d616c1d2-a2f7-49f4-a246-47feeacdf169",
+      "existingId": "dd143a3d-e0e3-4336-8e8a-c00f859b981b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "would you use ai to recommend how someone should move their money",
+      "externalId": "simplii-from-ad2fa044-aa66-4016-a587-a812cc94514d",
+      "existingId": "eb4058f0-1593-466f-a4c3-8f983b16661b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what happens if an ai agent gives the customer an incorrect account balance or invents a transaction",
+      "externalId": "simplii-from-3772aed5-2bdd-43f0-a114-3eb66342d397",
+      "existingId": "2997ad19-affb-42ba-920c-bbfd5691ea0c"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you protect customers from malicious or unauthorized ai agent actions",
+      "externalId": "simplii-from-1429b53c-f5fd-4819-bb3b-c116ce1ed889",
+      "existingId": "6e7ffea2-3429-49fa-9156-ac1d2c25463b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you prioritize ai features against core banking reliability",
+      "externalId": "simplii-from-14239bac-e0fc-4f29-abfe-3c7a4386539b",
+      "existingId": "48e2762a-1c12-4952-803b-24a1425a514a"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you test an ai powered financial feature before launching it broadly",
+      "externalId": "simplii-from-df23d3a1-181c-4c9b-9460-42d635d2352d",
+      "existingId": "ea745fd6-1702-472b-9112-49e0d9248b04"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "walk me through your most recent work on the arc'teryx membership platform",
+      "externalId": "simplii-from-1fd9478b-7396-4778-bc00-e62aee52de52",
+      "existingId": "173d1033-d882-4e4b-8a0f-d55a074622fe"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you decide what to include in the smaller sperro sv release",
+      "externalId": "simplii-from-7c4b9e12-3a6f-4d8e-9b01-5e2c8f7a1d30",
+      "existingId": "d0b3c4ba-600e-4b38-8eee-5476baf6e909"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a product decision you got wrong what did you learn",
+      "externalId": "simplii-from-c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+      "existingId": "413c49cd-795d-4555-a4e6-353acd0ad2aa"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you hand off a complex product initiative to another pm",
+      "externalId": "simplii-from-b8e9f0a1-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+      "existingId": "f135f23e-254b-48c8-9e8f-84314cdbdbad"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why have you moved between several industries and employers",
+      "externalId": "simplii-from-66530581-f599-40f5-8f97-5bf255953c87",
+      "existingId": "ce0e323c-a04a-41e5-807a-9e1af80b0d08"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what's your biggest learning curve if you join simplii",
+      "externalId": "simplii-from-a5e5c740-637c-4b42-8642-e889de82dcec",
+      "existingId": "be541cf3-a588-41e0-9bc5-376c10944401"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what's the strongest reason to hire you for this simplii role",
+      "externalId": "simplii-from-de31db47-3aea-4d26-be40-e0fa92423dd1",
+      "existingId": "48a54a94-f34a-43e7-a0c2-3253f7086dd1"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "do you prefer building new products or improving established ones",
+      "externalId": "simplii-from-e3acf896-6e83-4597-aeb6-088aba201987",
+      "existingId": "988c5282-4a66-4c20-be6f-3b98612b7c8d"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you actually deliver in your first 30 days",
+      "externalId": "simplii-from-08bed145-68a4-4f1f-a500-1287247345bc",
+      "existingId": "6562c0c7-8336-4806-b7c4-c795815723d3"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what happened if an avion member didn't have interac autodeposit enabled",
+      "externalId": "simplii-from-5c05a272-9334-44b8-bddd-fdbd4a50f6d3",
+      "existingId": "63641605-b2d4-4add-9dbe-0bef08308752"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you prevent a customer from receiving the same cashback payout twice",
+      "externalId": "simplii-from-c864344c-3df9-4f30-b478-278b4e58f8d4",
+      "existingId": "6fab1766-f2ed-4c48-97e4-024a05961ebe"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would the customer see while a cashback payout is pending or being investigated",
+      "externalId": "simplii-from-bfaa86a1-2c06-4c4f-880a-bf2718e8a330",
+      "existingId": "d8b81f76-156c-433b-b95a-512ba89307da"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "who made the final decision when the payments team risk and product disagreed",
+      "externalId": "simplii-from-80a4e168-83f0-45ba-a9b7-bde17123566a",
+      "existingId": "71860ee5-ec35-4a78-853c-d5226d970cad"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what were the leading indicators before you could measure meaningful payout volume",
+      "externalId": "simplii-from-14712a6a-881f-4c8c-9f98-9b3359211669",
+      "existingId": "b11ba6ea-c39c-4962-8472-ff61da7fcbd6"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you turn regulatory and operations requirements into stories engineers could build",
+      "externalId": "simplii-from-79d4fa99-20bc-4cff-8c9c-0b25705550ca",
+      "existingId": "8317f319-ad43-4328-8380-68402f8d94e5"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why did you use the member's email address and what if that address changed",
+      "externalId": "simplii-from-c22bc35e-41a0-4bc7-9b53-6d19da3ecfef",
+      "existingId": "df872068-1545-45f2-9f53-4b082fbbcfbd"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "if payout failures doubled after launch how would you investigate the first week",
+      "externalId": "simplii-from-03065da4-6d80-432b-bca7-c034fdf0ff52",
+      "existingId": "b4e925c9-3017-4f3d-b744-ea12da764d28"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you prevent a non rbc member from getting a worse onboarding experience than an rbc customer",
+      "externalId": "simplii-from-0cf5b127-23d5-442e-b968-59bafc1ff0b3",
+      "existingId": "eaf3ff00-4bc5-4f3e-a9f0-ddc9d6ea7fdd"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "would you make the same interac versus eft decision for a recurring payroll or bill payment product",
+      "externalId": "simplii-from-cd39ab59-8574-443c-b78e-a9dfa3010185",
+      "existingId": "da4555a2-025d-4f0d-9853-58d328e9d4bb"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "which arc'teryx membership capabilities were actually delivered and which remained planned",
+      "externalId": "simplii-from-1c3f6b10-2b62-4807-bffd-ef21beef30d7",
+      "existingId": "70243d04-d1f3-4a85-b2df-c4f5562d1b07"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what assumptions in the 5 2 million investment case were most sensitive",
+      "externalId": "simplii-from-efc27de7-507e-4d96-b95d-446de1f5badf",
+      "existingId": "98320790-b5c9-40c8-8f43-0c42d0215d41"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would have changed your recommendation from buy to build",
+      "externalId": "simplii-from-73b7a947-02f5-4298-8592-4badfbcbb139",
+      "existingId": "03c17222-d1cd-4023-b4f6-2b4d2243ce38"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what did you cut from the membership mvp and how did you defend those trade offs",
+      "externalId": "simplii-from-31d8ded4-7dc2-4d0b-ad30-009b1f92748b",
+      "existingId": "d003b2d2-2d20-4b31-b374-5bc358df7116"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you test whether customers wanted membership benefits before building the full platform",
+      "externalId": "simplii-from-9b1df81f-65b7-4b77-81af-4ae48b03eb79",
+      "existingId": "384b755d-5b59-4ebd-81cf-06212dd60145"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you know the hbc application improvement wasn't caused by a different applicant mix",
+      "externalId": "simplii-from-2af89a04-ab52-40bd-928d-96a3122fffd1",
+      "existingId": "bbd2d586-13a7-4617-99f4-9e483c8173ee"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "which step in a credit card application funnel would you inspect first and why",
+      "externalId": "simplii-from-0f41544d-2a2d-4b4b-bb41-f89df44c05d0",
+      "existingId": "48cf508b-5342-4ef5-8890-3f2ea3ee9873"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "could the hbc incentives have increased spending while destroying profitability",
+      "externalId": "simplii-from-cee35d92-74ae-4d9b-a713-3594c8276e17",
+      "existingId": "d5d2e272-3d1d-4752-96b3-77291b986ab7"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what did you control in the hbc card portfolio and what was controlled by neo",
+      "externalId": "simplii-from-4333a9f3-b07d-4d8e-8676-6a7ca9012116",
+      "existingId": "1a008ec9-b048-4a8d-b5d0-7b5a1ff689bc"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you align td cibc and amex when the banks had different priorities",
+      "externalId": "simplii-from-233f8d5d-fa5a-45a7-a301-39c4e3743edb",
+      "existingId": "6988b2f9-9c18-4d7f-960d-e54cb23ff995"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what happened after the customer clicked apply how did you know they became an approved cardholder",
+      "externalId": "simplii-from-195a8189-fe48-4c11-9ebe-8f2741146841",
+      "existingId": "73fec34c-5e8a-4ba3-b7ff-f84d6a573f00"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you prevent one card partner's offer from undermining another's",
+      "externalId": "simplii-from-bb903f25-6886-4106-ab80-1fa344cd8a05",
+      "existingId": "572e25a0-fd87-40fe-9fc3-871a010cf466"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what's the difference between acquiring a cardholder activating one and retaining one",
+      "externalId": "simplii-from-f1a3ec4e-63a0-4bb5-ab2e-4d2a634004b1",
+      "existingId": "6915c2ba-f6bc-45c4-a4f9-d036eba697d6"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you design a safe payroll switching experience when the employer's first deposit could fail",
+      "externalId": "simplii-from-e896f79a-bee7-4d99-a673-d337bb38cd38",
+      "existingId": "6182dd01-bae3-4080-b721-fcde8f54dbea"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if someone sets up a direct deposit with simplii once and then stops using the account",
+      "externalId": "simplii-from-c4eabdaa-ab91-4b85-8d46-cd2cacdf8d42",
+      "existingId": "f8d83e08-6dbd-465f-ac2a-e720c012d0aa"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you attract customers to simplii without relying mainly on cash sign up bonuses",
+      "externalId": "simplii-from-855c7ca3-5897-4baa-8c59-99f3c30cdd6e",
+      "existingId": "cfd38bff-2159-4c8c-b631-c89e2938e0d2"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why would a bank not want unlimited deposits if customers are willing to bring them",
+      "externalId": "simplii-from-86fb0ff0-ee19-402f-bbd3-4d478d902d9e",
+      "existingId": "fa48410b-1056-476d-a6c1-0678dbd59a35"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what happens to your banking growth strategy when interest rates fall",
+      "externalId": "simplii-from-cfe370bc-2273-4055-b0e2-d1adbb96cbf1",
+      "existingId": "d218002c-2477-420b-a7c3-e5b19eb8ea77"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "would you consider a secondary simplii banking relationship a product failure",
+      "externalId": "simplii-from-adc80bff-8a24-4eaf-9c48-8b050d759ab1",
+      "existingId": "170748d9-959c-4718-8a5d-c5c83e790250"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "it's payday and hundreds of customers say their salary hasn't arrived what do you do in the first 15 minutes",
+      "externalId": "simplii-from-2fb1eeab-7958-4099-9216-e2b88d0de5c5",
+      "existingId": "072c0aa7-772e-455e-a8c3-a8b28498e846"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why might my available balance be different from my posted balance",
+      "externalId": "simplii-from-0f093e83-c8de-44bd-9398-e0f186a814df",
+      "existingId": "790355dd-4280-4e76-bda9-1f24d7f19718"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "a customer sees the same purchase twice once pending and once posted how would you fix it",
+      "externalId": "simplii-from-ec3a7c0b-b921-45be-8548-df8c95b2f713",
+      "existingId": "f7fcf23e-28aa-48e9-bff3-bf83cfcb5501"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "card payments start declining but the banking app and core ledger are online where do you look",
+      "externalId": "simplii-from-d8be8368-b755-4baf-8494-3cf9a9f8a69e",
+      "existingId": "a3ff54fb-0700-45c2-a800-4f431d80ef75"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you design a new payee or recipient verification experience",
+      "externalId": "simplii-from-4445d2e9-0632-4f42-b1a8-6a60adc01012",
+      "existingId": "c78af088-eaa0-4520-8f6a-710eacaa7c81"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you use feature flags without creating inconsistent financial records",
+      "externalId": "simplii-from-6635b44b-bd82-4980-8aef-ea67474a075e",
+      "existingId": "d42cd57e-2c80-4b1a-85cb-d18d5dc76048"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "when should an automated retry be prohibited even if it would reduce failures",
+      "externalId": "simplii-from-d17bc916-0925-4b2f-9904-092499e61920",
+      "existingId": "03eeca02-d428-4871-810f-1ffedf52dff2"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you do if the customer sees a successful transfer but settlement hasn't reconciled",
+      "externalId": "simplii-from-771cc93c-f8fd-4499-90dd-04482b325890",
+      "existingId": "c7081e76-621b-406b-b02b-10386f5747ee"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how should a customer dispute an unfamiliar debit card transaction",
+      "externalId": "simplii-from-0360f445-9e66-472e-932f-e06050ec3a3e",
+      "existingId": "4fa0172e-bdb1-4977-9e6e-8f6bd7eed8f6"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you reduce fraud without rejecting too many legitimate banking customers",
+      "externalId": "simplii-from-2c8d4c01-fde5-45f2-83a5-4567c8b9ea00",
+      "existingId": "9ea8ab0b-fb63-458a-9a44-2455958f6bf8"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you explain a deposit hold to a customer who needs the money tomorrow",
+      "externalId": "simplii-from-b36da9fd-c09c-4202-bc35-aaf2d27afad3",
+      "existingId": "2d4b98f9-6128-4828-8f43-e301543877c5"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you design recurring bill payments or pre authorized debits in a digital bank",
+      "externalId": "simplii-from-10c8d63e-14a4-474f-be0c-7a6f5b731600",
+      "existingId": "b94d086e-0aad-4fdf-9814-a27785d9228b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "which three metrics would you put on a simplii everyday banking product scorecard",
+      "externalId": "simplii-from-557cbeab-d17e-48bc-99de-1a54625ee37f",
+      "existingId": "c8b01a77-90e2-4737-8a6d-2275c8c80de9"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "your experiment improves payroll setup by 20 but increases support calls by 30 do you ship",
+      "externalId": "simplii-from-a27a2489-4944-4faa-b130-5a1a4ab088e9",
+      "existingId": "94f8484a-e4f3-4ea1-b0a8-d041ef4ff9b3"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what is sample ratio mismatch and why would you care in a banking a b test",
+      "externalId": "simplii-from-4a20cf51-7a43-415b-b55d-d01104a46d6f",
+      "existingId": "38f4f933-f7c3-463e-8f3e-e44213e3371f"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you tell healthy banking engagement from anxiety driven repeat checking",
+      "externalId": "simplii-from-cb792784-57f0-449a-a12d-76bbbde35b46",
+      "existingId": "07f34233-3185-4715-8a4a-f19a81efee3e"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you estimate the value of a customer who keeps 5 000 in deposits but never uses the debit card",
+      "externalId": "simplii-from-23e0a9f7-0f29-4a82-9f42-e673eb6c0bd4",
+      "existingId": "4d5280c9-7ee9-47a4-afca-53e515237833"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you experiment on payment reliability if you can't ethically expose customers to worse payments",
+      "externalId": "simplii-from-cca30fb0-f7be-497e-8e20-2cd349712829",
+      "existingId": "bfc6d49c-1fd8-47d3-9e93-50b42c7449d8"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what early signal might tell you simplii customers are losing trust",
+      "externalId": "simplii-from-1f935f03-d796-480c-8e77-2a3c26f156b2",
+      "existingId": "9a79b326-9836-48b1-838a-2964c890d9f8"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would convince you to stop an ai financial assistant pilot",
+      "externalId": "simplii-from-bad7b926-f617-44c4-ab13-ddc78b1e4378",
+      "existingId": "9d2bed0d-3ef7-4221-8e41-23454614cec1"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "when would you choose deterministic software or rules instead of an ai model",
+      "externalId": "simplii-from-be3e3314-68c5-4f6a-a3d9-7f0b9147e17b",
+      "existingId": "b93bf1a4-44e2-46ee-a60d-3edc3d57ab22"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "explain your interview copilot's semantic matching architecture without using technical jargon",
+      "externalId": "simplii-from-db88df8e-3a36-4cc6-8b84-4fb24e2136c3",
+      "existingId": "deeb5ff5-6388-4e1a-bd07-fff2e90c4f43"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how did you know your semantic search approach was actually better than keyword matching",
+      "externalId": "simplii-from-c8d4a611-d174-48b1-911c-e2db8f3acc3e",
+      "existingId": "2ce2c6a0-5925-487f-8491-86f643f6a334"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if risk still says no after you've presented all your evidence",
+      "externalId": "simplii-from-458f82bd-542b-4331-92fb-d77bb3645d06",
+      "existingId": "7fe19929-b644-44b5-b687-f433e97b3bfd"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if engineering says your banking launch plan is unsafe but leadership wants the date",
+      "externalId": "simplii-from-77caa5b4-817d-47b3-9569-366aa012daf6",
+      "existingId": "8d62085d-d097-4a3f-baa6-10e7a6828873"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you handle an offshore team that doesn't understand the customer impact of a requirement",
+      "externalId": "simplii-from-a95a3a54-604e-4617-af66-92158c5c2c53",
+      "existingId": "4cee9abd-4fe7-4cad-b071-e66302621e0a"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what do you do when a shared dependency is blocking your objective but the other pm has different priorities",
+      "externalId": "simplii-from-110a4074-4ba6-4eb9-9b8e-4a96b4e223e4",
+      "existingId": "a36f7962-4c1e-46f8-be01-b6ec4be2a8ab"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "when would you shut down a feature your own team spent six months building",
+      "externalId": "simplii-from-1de87c3a-d693-419c-9ded-b76154af230a",
+      "existingId": "a3807c53-5103-480c-9882-77c96ff6f083"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you communicate a complex banking trade off to an executive in two minutes",
+      "externalId": "simplii-from-d333a258-c050-4f17-a50b-242e5ad5254d",
+      "existingId": "e24772a0-4d42-44be-a0c7-75efafae8fd5"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you say no without damaging a relationship with a powerful stakeholder",
+      "externalId": "simplii-from-f33aaf31-f0a3-403e-ad9d-eb2d7e7e410f",
+      "existingId": "cf94b94d-4511-42d1-9a30-3efecdc28cac"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "a customer says they sent money to the wrong recipient what can your product realistically do",
+      "externalId": "simplii-from-837e7efc-def5-4758-8ca1-627d006ec1ff",
+      "existingId": "d392da9b-e6b6-41fe-acc9-5fd0c21c96b3"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what is the difference between kyc aml monitoring and transaction fraud prevention",
+      "externalId": "simplii-from-ba4861ca-9dc4-4514-9fd9-1d2ec6edb13c",
+      "existingId": "621403df-44f1-47fb-8c4e-d165e25dee17"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what if someone fails identity verification while opening a simplii account",
+      "externalId": "simplii-from-cdc38655-878f-4b7f-a49d-109f3b69125e",
+      "existingId": "4d2ab3c2-7bb2-44fd-905f-5d134c340999"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "an account was frozen for suspected fraud how would you handle the customer experience",
+      "externalId": "simplii-from-2fb50805-1cb9-43f9-a2ba-54b816d3085d",
+      "existingId": "e27fbc91-c1cf-4f49-801b-d447965c7dc1"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what should happen if someone loses their phone and tries to access their bank account",
+      "externalId": "simplii-from-6ffb405d-688b-433e-87c3-a7d992430bad",
+      "existingId": "e41cbff6-9712-4802-a2fc-0439f03d34ba"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "would you use screen scraping or customer permissioned banking apis for account aggregation",
+      "externalId": "simplii-from-c6aa4266-ebca-41df-a32b-99cba4676ffd",
+      "existingId": "d84570be-7eb6-42d6-a654-a06e4230a071"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you tell customers if a major banking partner was down and you didn't know the restoration time",
+      "externalId": "simplii-from-ab5294e4-b011-43a7-8cb2-432d84014ec7",
+      "existingId": "f13eb4d9-13b3-48fb-925e-c277c4c97fc8"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "should a bank help customers automate savings when they have unpredictable income",
+      "externalId": "simplii-from-4f6209aa-a000-442c-bbd6-96723a266b9a",
+      "existingId": "c63ca3d7-ac6d-40af-b784-9d4fcf1e9538"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you decide when to compensate a customer after a bank payment error",
+      "externalId": "simplii-from-7fefebb7-44eb-4fa3-80f8-14e6900cba0b",
+      "existingId": "0cf98b04-9f6a-4e74-b5a6-652798abda84"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you handle events arriving out of order in a customer's transaction history",
+      "externalId": "simplii-from-25ad6af4-9d72-4ac5-9159-29bceeebfb80",
+      "existingId": "525c198e-8ce6-4a46-afff-96219cf7463c"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "if debit card reliability is already strong but payroll adoption is flat how would you reprioritize",
+      "externalId": "simplii-from-e3fe2cd3-f788-42bb-9446-e5e8fc5fa2d0",
+      "existingId": "40fa38a7-005e-4cf0-844c-5b6432fd3ffa"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would the mvp of a payroll switching feature actually contain",
+      "externalId": "simplii-from-8ba596cd-8c2c-456e-bf5e-0681333ab61a",
+      "existingId": "3d14e3f4-4472-41ef-b54b-a3831cd60684"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how long would you wait before deciding whether a payroll switching experiment actually worked",
+      "externalId": "simplii-from-b995b443-a009-4b4c-b03b-81f53bd6cc67",
+      "existingId": "acf99513-7c5a-46d4-a52b-4908a2287189"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would your launch readiness checklist include for an everyday banking feature",
+      "externalId": "simplii-from-606fd4d4-8492-40ac-b65f-099d93621451",
+      "existingId": "15507bb8-6db1-4b04-8509-615fbb7dff05"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you set shared okrs without making ownership ambiguous",
+      "externalId": "simplii-from-059b883d-ccbf-4e0b-8719-5dbff7c26da6",
+      "existingId": "eb5e4dcf-77d7-4b07-b56f-9947e88598fe"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you do if post launch data contradicts the user research that justified the feature",
+      "externalId": "simplii-from-48f67960-28cb-4d6b-b863-e7cfe2c1ca71",
+      "existingId": "8e7db533-7a3e-41d0-bec7-8abd16b4bf1f"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "walk me through how you would run discovery for an unfamiliar simplii product area",
+      "externalId": "simplii-jd-001",
+      "existingId": "fb61d81c-c27a-4b44-b86c-40184f1578cc"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a time you used customer data to define a problem before proposing a solution",
+      "externalId": "simplii-jd-002",
+      "existingId": "63b3d26d-1299-4ab2-88da-0db20bda664c"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you write a user story and acceptance criteria that engineering can actually use",
+      "externalId": "simplii-jd-003",
+      "existingId": "2f1a5486-93f3-469a-b3d0-cc6797135237"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you keep the backlog tied to customer outcomes instead of stakeholder requests",
+      "externalId": "simplii-jd-004",
+      "existingId": "a5d94d98-0d15-4a7f-9249-3ba4343db165"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "walk me through a user story for a failed interac e transfer or cashback withdrawal",
+      "externalId": "simplii-jd-005",
+      "existingId": "d9d5651f-3682-4677-b9a1-785affa4ec3d"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you decide whether a backlog item is ready for a sprint",
+      "externalId": "simplii-jd-006",
+      "existingId": "a70923f7-1aa0-4372-b99d-46438ef81521"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a time you cut scope while protecting customer value",
+      "externalId": "simplii-jd-007",
+      "existingId": "b3a281e6-2ea6-44f1-8b03-4fce0b097877"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you improve a simplii account opening funnel with high abandonment",
+      "externalId": "simplii-jd-008",
+      "existingId": "a95417c7-cabd-4f25-a25f-8960396f9026"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you measure after changing a digital banking onboarding experience",
+      "externalId": "simplii-jd-009",
+      "existingId": "f44d2290-c1a3-4568-8e73-7539c8df3987"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you explain a product tradeoff to senior stakeholders and to engineers differently",
+      "externalId": "simplii-jd-010",
+      "existingId": "fbe72c8e-37e5-47b9-be32-f6a98d8748a1"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what do you do when requirements change after engineering has started",
+      "externalId": "simplii-jd-011",
+      "existingId": "b3bd3cd5-1864-4270-94d7-e426cf36aa75"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you define a business case for fixing a common banking service issue",
+      "externalId": "simplii-jd-012",
+      "existingId": "3cae19ae-9bdd-4805-a722-12cf9bfafe39"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you work with risk when a control adds friction to a customer journey",
+      "externalId": "simplii-jd-013",
+      "existingId": "3df86e9e-2cad-4aa7-b58d-a641ab422518"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you measure success when a feature ships on time but customers don't adopt it",
+      "externalId": "simplii-jd-014",
+      "existingId": "3f8d09d9-3e0a-48b6-bc25-edab453dfade"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a time you influenced teams that did not report to you",
+      "externalId": "simplii-jd-015",
+      "existingId": "24f6c5a4-c8d1-4363-97cf-f5607e720cf1"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you run a healthy product squad day to day",
+      "externalId": "simplii-jd-016",
+      "existingId": "899e8ec4-9f03-4e3f-b4c1-6f08db03a215"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what would you do if customer research supports a feature but post launch data contradicts it",
+      "externalId": "simplii-jd-017",
+      "existingId": "04831833-59e9-40b3-a3ee-2eec61969dbe"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you handle a growing number of complaints about missing or delayed transfers",
+      "externalId": "simplii-jd-018",
+      "existingId": "bfd92f8a-d6c2-425c-935a-97ba884ddc9a"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what is the most important product detail you've had to insist on",
+      "externalId": "simplii-jd-019",
+      "existingId": "6fe45029-2522-4a03-9ba3-dbad356c9842"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you estimate whether a customer issue is worth fixing now",
+      "externalId": "simplii-jd-020",
+      "existingId": "46bb9c42-76cd-461e-94de-1ba6fa7694ce"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you make sure acceptance criteria remain aligned to customer intent during delivery",
+      "externalId": "simplii-jd-021",
+      "existingId": "f86c3375-2d93-4b0e-a733-6dd7659ef8fb"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you work with designers engineers analysts and researchers who disagree on a solution",
+      "externalId": "simplii-jd-022",
+      "existingId": "4647cae3-176b-49c0-b317-18c582a000b5"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you know that the delivery team's roadmap is improving customers' lives",
+      "externalId": "simplii-jd-023",
+      "existingId": "f3e36c46-8203-46b5-a827-71ba9335d028"
+    }
+  ],
   "questradeIntegrity": {
     "unchanged": true,
-    "hash": "50d377eaa2750119c97364a89bb214336d20bcf0bae5f7bc5dab542d4cee2e3e"
+    "hash": "c3b850d52631de2989d0309cf7b7682716340df6edddcccf135ee340adf55913"
   }
 }

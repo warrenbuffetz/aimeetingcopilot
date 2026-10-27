@@ -44,7 +44,15 @@ export function useInterviewContext(library: LibraryRow[]) {
     sessionStorage.setItem(STORAGE_KEY, JSON.stringify(context));
   }, [context]);
 
-  const catalog: EnrichedQaRow[] = useMemo(() => enrichLibrary(library), [library]);
+  const catalog: EnrichedQaRow[] = useMemo(() => {
+    const enriched = enrichLibrary(library);
+    const seen = new Set<string>();
+    return enriched.filter((r) => {
+      if (seen.has(r.id)) return false;
+      seen.add(r.id);
+      return true;
+    });
+  }, [library]);
 
   const nextSuggestions = useMemo(
     () => suggestNextQuestions(catalog, context, 3),

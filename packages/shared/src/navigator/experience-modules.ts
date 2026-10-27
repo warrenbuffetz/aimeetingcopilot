@@ -79,6 +79,30 @@ export const EXPERIENCE_MODULES: Record<string, ExperienceModule> = {
     company: "Arc'teryx",
     libraryCategory: "resume_deep_dive",
   },
+  "arcteryx-overview": {
+    id: "arcteryx-overview",
+    label: "Arc'teryx — Employer Overview",
+    company: "Arc'teryx",
+    libraryCategory: "resume_deep_dive",
+  },
+  "rbc-overview": {
+    id: "rbc-overview",
+    label: "RBC — Employer Overview",
+    company: "RBC",
+    libraryCategory: "resume_deep_dive",
+  },
+  "hbc-overview": {
+    id: "hbc-overview",
+    label: "HBC — Employer Overview",
+    company: "HBC",
+    libraryCategory: "resume_deep_dive",
+  },
+  "aeroplan-overview": {
+    id: "aeroplan-overview",
+    label: "Air Canada / Aeroplan — Employer Overview",
+    company: "Aeroplan",
+    libraryCategory: "resume_deep_dive",
+  },
   "questrade-primary": {
     id: "questrade-primary",
     label: "Questbank — Primary Account",

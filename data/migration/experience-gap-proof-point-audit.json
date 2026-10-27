@@ -1,0 +1,225 @@
+{
+  "at": "2026-10-27T00:08:00.951Z",
+  "cardCount": 61,
+  "proofGaps": [
+    {
+      "cardId": "rbc-overview",
+      "question": "Tell me more about your time at RBC.",
+      "evidenceStatus": "resume_supported",
+      "missingShortTokens": [],
+      "missingOverviewAnchors": [
+        "14 person"
+      ],
+      "reviewNote": "Resume-supported anchor; review the stated boundaries. Resume supports scope and figures. Do not equate the broader service's 5M settlement events with Avion payouts. Do not infer direct people-manage"
+    },
+    {
+      "cardId": "hbc-overview",
+      "question": "Tell me more about your time at HBC.",
+      "evidenceStatus": "resume_supported",
+      "missingShortTokens": [],
+      "missingOverviewAnchors": [
+        "P&L"
+      ],
+      "reviewNote": "Resume-supported anchor; review the stated boundaries. Resume supports scope and headline metrics. 'P&L' means product/program commercial scope, not underwriting or the issuer's whole credit book."
+    },
+    {
+      "cardId": "air-overview",
+      "question": "Tell me more about your time at Air Canada and Aeroplan.",
+      "evidenceStatus": "resume_supported",
+      "missingShortTokens": [],
+      "missingOverviewAnchors": [
+        "427%"
+      ],
+      "reviewNote": "Resume-supported anchor; review the stated boundaries. Resume supports progression and scope. Do not attribute all 427% YoY growth to the 40% conversion change or personally claim ownership of partner"
+    }
+  ],
+  "proofGapCount": 3,
+  "evidenceCounts": {
+    "resume_supported": 15,
+    "illustrative_scenario": 31,
+    "unverified_detail": 5,
+    "rehearsal_framework": 10
+  },
+  "needsConfirmationBeforeAutobiographical": [
+    {
+      "cardId": "arc-crm-story",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about your CRM and customer communications work at Arc'teryx."
+    },
+    {
+      "cardId": "arc-crm-discovery",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "How did you identify what was causing CRM deployment failures?"
+    },
+    {
+      "cardId": "arc-crm-ownership",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "What did you personally own in the CRM reliability improvement?"
+    },
+    {
+      "cardId": "arc-crm-measurement",
+      "evidenceStatus": "unverified_detail",
+      "question": "How did you measure the 25% reduction in deployment failures?"
+    },
+    {
+      "cardId": "arc-crm-tradeoff",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about a time you protected reliability when a stakeholder wanted a faster release."
+    },
+    {
+      "cardId": "arc-membership-conflict",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about a cross-team disagreement on the Arc'teryx membership roadmap."
+    },
+    {
+      "cardId": "arc-funding-depth",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "How did you make the $5.2 million membership investment case credible?"
+    },
+    {
+      "cardId": "arc-delivered-scope",
+      "evidenceStatus": "unverified_detail",
+      "question": "What did you deliver at Arc'teryx, and what remained planned?"
+    },
+    {
+      "cardId": "arc-remit-team",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "How did you balance membership development with the existing CRM roadmap?"
+    },
+    {
+      "cardId": "rbc-core-story",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about owning Avion's core web and mobile roadmap."
+    },
+    {
+      "cardId": "rbc-team-leadership",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "How did you lead the 14-person cross-functional team at RBC?"
+    },
+    {
+      "cardId": "rbc-roadmap-tradeoff",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Give me a concrete example of prioritizing across the Avion roadmap."
+    },
+    {
+      "cardId": "rbc-travel-story",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about the native travel booking work at RBC."
+    },
+    {
+      "cardId": "rbc-shopplus-story",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about launching ShopPlus."
+    },
+    {
+      "cardId": "rbc-shopplus-ownership",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "What did you personally own on ShopPlus?"
+    },
+    {
+      "cardId": "rbc-shopplus-discovery",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Why was a browser extension the right place to solve cashback discovery?"
+    },
+    {
+      "cardId": "rbc-shopplus-trust",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "How would you handle missing cashback or unclear tracking in ShopPlus?"
+    },
+    {
+      "cardId": "rbc-shopplus-browsers",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "What made delivering ShopPlus across three browsers difficult?"
+    },
+    {
+      "cardId": "rbc-shopplus-lesson",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about a product judgment you would revisit on ShopPlus."
+    },
+    {
+      "cardId": "rbc-avion-identity",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "What did you personally own in Avion Select's onboarding and identity experience?"
+    },
+    {
+      "cardId": "rbc-discovery-context",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "How did you identify the customer problem behind RBC cashback withdrawals?"
+    },
+    {
+      "cardId": "rbc-measurement-repair",
+      "evidenceStatus": "unverified_detail",
+      "question": "How did you measure success for the Avion cashback withdrawal launch?"
+    },
+    {
+      "cardId": "rbc-payments-disagreement",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Who made the final decision when the payments team, Risk and Product disagreed?"
+    },
+    {
+      "cardId": "hbc-activation-story",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about improving activation for the HBC Mastercard."
+    },
+    {
+      "cardId": "hbc-activation-actions",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "What did you actually change to improve HBC card activation?"
+    },
+    {
+      "cardId": "hbc-quests-story",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Walk me through the Quests product you launched at HBC."
+    },
+    {
+      "cardId": "hbc-quests-measurement",
+      "evidenceStatus": "unverified_detail",
+      "question": "How would you substantiate Quests' six-percent incremental spending lift?"
+    },
+    {
+      "cardId": "hbc-quests-rules",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Why was a rules-based approach suitable for Quests?"
+    },
+    {
+      "cardId": "hbc-quests-failure",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about a product decision you got wrong."
+    },
+    {
+      "cardId": "hbc-commercial-tradeoff",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about a commercial trade-off you made in the HBC card portfolio."
+    },
+    {
+      "cardId": "hbc-neo-implementation",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "What exactly did you change in the HBC application experience?"
+    },
+    {
+      "cardId": "hbc-application-measurement",
+      "evidenceStatus": "unverified_detail",
+      "question": "How did you measure the 15% improvement in application completions?"
+    },
+    {
+      "cardId": "hbc-neo-disagreement",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about a disagreement you resolved with Neo Financial."
+    },
+    {
+      "cardId": "air-issuer-conflict",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about a disagreement with an issuer on the co-brand acquisition experience."
+    },
+    {
+      "cardId": "air-partner-failure",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "Tell me about something you would do differently in a partner-led product launch."
+    },
+    {
+      "cardId": "air-transfer-to-banking",
+      "evidenceStatus": "illustrative_scenario",
+      "question": "What from your Aeroplan experience would you bring to an everyday banking product?"
+    }
+  ]
+}

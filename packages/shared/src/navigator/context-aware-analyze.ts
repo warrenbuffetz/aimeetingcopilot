@@ -39,6 +39,12 @@ export function rankPreparedQaWithContext(
     }
     const inModule = row.navigator.experienceModuleId === targetModule;
     if (inModule) score += explicitModule ? 0.24 : 0.16;
+    const employerOverview =
+      row.navigator.topicTags?.includes("scope:employer_overview") ||
+      row.navigator.experienceModuleId?.endsWith("-overview");
+    if (explicitModule?.endsWith("-overview") && employerOverview && row.navigator.intent === "main_story") {
+      score += 0.2;
+    }
     if (targetIntent && row.navigator.intent === targetIntent) score += 0.12;
     if (resolution.rowId === row.id) score += 0.15;
     if (ambiguous && targetModule && !inModule) score *= 0.82;

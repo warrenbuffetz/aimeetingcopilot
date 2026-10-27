@@ -1,0 +1,2009 @@
+{
+  "at": "2026-10-26T23:48:06.115Z",
+  "mode": "dry-run-only",
+  "authorization": "Content handoff only — no production deploy, no overwrite of live answers.",
+  "inputs": {
+    "packPath": "/Users/johnlee/Documents/Cursor/ai meeting copilot/docs/Interview_Experience_Gap_QA_Cursor_Pack.md",
+    "questradeJson": "/Users/johnlee/Documents/Cursor/ai meeting copilot/imports/questrade_experience_gap_qa.json",
+    "simpliiJson": "/Users/johnlee/Documents/Cursor/ai meeting copilot/imports/simplii_experience_gap_qa.json",
+    "jsonSource": "user_supplied_json"
+  },
+  "cardCount": 61,
+  "validation": {
+    "questrade": {
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        {
+          "path": "records[43].sourceQuestradeRecordId",
+          "message": "Not a RFC-4122 UUID (c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f); stored as provenance reference only"
+        }
+      ]
+    },
+    "simplii": {
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        {
+          "path": "records[43].sourceQuestradeRecordId",
+          "message": "Not a RFC-4122 UUID (c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f); stored as provenance reference only"
+        }
+      ]
+    }
+  },
+  "textPreservation": {
+    "packFingerprints": [
+      {
+        "cardId": "arc-overview",
+        "sha256": "1374ca7e43826484e12bb733d256181f537384f7e058ba616306401f74aeb9e9"
+      },
+      {
+        "cardId": "arc-crm-story",
+        "sha256": "ee8c1dbaf8c25a7a7c8e015553c78d57bcae93dec0b5d7550009a0666114d317"
+      },
+      {
+        "cardId": "arc-crm-discovery",
+        "sha256": "6f2c9b3f086ecb50fbe4c22fe94e19e949cac9ce097d6b64f2c483f268705fb5"
+      },
+      {
+        "cardId": "arc-crm-ownership",
+        "sha256": "663f35faa3e149f26ebcfc473e3a5f76758b3ada62be5f0cf9b1a4824f720bb3"
+      },
+      {
+        "cardId": "arc-crm-measurement",
+        "sha256": "a7876caf5c3640becb9e846c1d0e7535b39c5f1813df028ecad7e56a05ead1f9"
+      },
+      {
+        "cardId": "arc-crm-tradeoff",
+        "sha256": "5b4f8e957193777ff077a24f5cbe2e672b14627db6cf6f012e8bc5a009a44658"
+      },
+      {
+        "cardId": "arc-crm-testing",
+        "sha256": "0a63e655bb373340f5b4f4e8926a650a5f933d0121b7e016e51afe8ac96863a8"
+      },
+      {
+        "cardId": "arc-crm-lesson",
+        "sha256": "35af7f3a70ef9f2db4829ee9b0ec5f74e7d3f581ac6accde07306959f302de5d"
+      },
+      {
+        "cardId": "arc-membership-conflict",
+        "sha256": "61bf1febbbc9f1f23109098d3b1a708a15cf32f9d642ac333e0a62a520c10bb0"
+      },
+      {
+        "cardId": "arc-funding-depth",
+        "sha256": "efe539a42785061847322a1085f08cfff0a3f8540c69a5c08ef57534d26def81"
+      },
+      {
+        "cardId": "arc-delivered-scope",
+        "sha256": "8cacae115ca7bba026bfdf81f88a2ef212b91eef8f8fe48fe3841e6bfb71cfba"
+      },
+      {
+        "cardId": "arc-validation-depth",
+        "sha256": "6e4984b314c6c225b677d5d5d64675fe795ff1229fbbddf644e5bec70dcf2d7d"
+      },
+      {
+        "cardId": "arc-remit-team",
+        "sha256": "be8c019e9c1b806abc981c094ff19cbb9c836385d2acdea003c6b4cc62e46007"
+      },
+      {
+        "cardId": "rbc-overview",
+        "sha256": "25b93b89e6e17bdd03f9cd8ea049bf8ad2e62a81b7f9eaa67a8bd5b133b85cf5"
+      },
+      {
+        "cardId": "rbc-core-story",
+        "sha256": "456176d80addf3f1faecab420dc45491053a0ba1247c7c0b3784ae13009a3204"
+      },
+      {
+        "cardId": "rbc-team-leadership",
+        "sha256": "476c287649d6328be1951f60c0c16960c84f4b4f7f69324f3f20cb5839a35f69"
+      },
+      {
+        "cardId": "rbc-roadmap-tradeoff",
+        "sha256": "1c1a7b799ac9b0ebabc084c6940f32dd367dce389ec66ecf57bdaf59e276caa0"
+      },
+      {
+        "cardId": "rbc-travel-story",
+        "sha256": "71a88412384f5743510f667b557c751f6f8c5fff22f51c6bf9698758bdb0cd1b"
+      },
+      {
+        "cardId": "rbc-travel-choice",
+        "sha256": "9cbca9daad18b5280022e9a7fcadf9f023da126d9c67d902fe33095e4522bd24"
+      },
+      {
+        "cardId": "rbc-travel-rollout",
+        "sha256": "7db7f9a11138263e45e3269ff6dc3b380dd78f51e251e9cb8c5adb51880a4540"
+      },
+      {
+        "cardId": "rbc-travel-measures",
+        "sha256": "eb951014754fff41fa7454e1e3f2f6e55cd12483e36df654f5ab613113c2266b"
+      },
+      {
+        "cardId": "rbc-shopplus-story",
+        "sha256": "6d823bb926547ea4e64d90969a2f38b0fabd8e93cda3b0e74e6c34f3aadbfc6b"
+      },
+      {
+        "cardId": "rbc-shopplus-ownership",
+        "sha256": "5edea01e24776908ada7d54c855c1dcaffaf3326f5b6201614888fd69fd5dad3"
+      },
+      {
+        "cardId": "rbc-shopplus-discovery",
+        "sha256": "c21d0db176d4948e50c105371313f2358a54a4860cb983c52ecdb4b2d9ee019c"
+      },
+      {
+        "cardId": "rbc-shopplus-trust",
+        "sha256": "1b66e7e2b2ece0b76ab6f23877937899d14733d9dc1333308f6c291c2f21b85f"
+      },
+      {
+        "cardId": "rbc-shopplus-browsers",
+        "sha256": "86b34f023f0669f0acf51735f1f7498124f28c5b25558d0057b2825256e2b4ab"
+      },
+      {
+        "cardId": "rbc-shopplus-measurement",
+        "sha256": "c46b9372c34bbfb82612a2d2488179f5c022288c6ad50d08b99bd3f7477bc076"
+      },
+      {
+        "cardId": "rbc-shopplus-lesson",
+        "sha256": "85861007401990a2466399bb117cf4d438653c46663e7e8924c649b03250ff02"
+      },
+      {
+        "cardId": "rbc-avion-identity",
+        "sha256": "a847f4288313400feca44c65aad221178acac89f5c83b238bde896b278a32ef9"
+      },
+      {
+        "cardId": "rbc-avion-attribution",
+        "sha256": "856f02cc559acb10741444ad68d71c6e2b4889ffc72b9c29733767856a2ff973"
+      },
+      {
+        "cardId": "rbc-discovery-context",
+        "sha256": "e06db7348d45fc9fafe967abe2010660787e0a8864985dee740ee0ca9e2b932e"
+      },
+      {
+        "cardId": "rbc-measurement-repair",
+        "sha256": "6bf9aba2f7cac7610e9b0579a2c067048df411349921591b0868591cf0b305d6"
+      },
+      {
+        "cardId": "rbc-payments-disagreement",
+        "sha256": "84e815ac877ebdb90afafa34ca7a83ab5971f3948b6aa7a142f4e060721fbc18"
+      },
+      {
+        "cardId": "hbc-overview",
+        "sha256": "b847f19896816f600cfa1862f2207454a535330d29147e10143c839070d12479"
+      },
+      {
+        "cardId": "hbc-activation-story",
+        "sha256": "796e3154a05370208cd5ee5ab839c83fd7c1936578ec528b58e0d5853996d781"
+      },
+      {
+        "cardId": "hbc-activation-actions",
+        "sha256": "8de35eeb201cce860833f96935121f5a3801550f99db7f62dc95706fe3886236"
+      },
+      {
+        "cardId": "hbc-activation-definition",
+        "sha256": "b7d125a26b78de0b2a48e6f7c9eaca5678fae21080353c42983430201a9cc759"
+      },
+      {
+        "cardId": "hbc-retention-definition",
+        "sha256": "fb706d9b4d4206d6451dc379febc92fa7d91f515b4a896ae69eb61ba16fc5846"
+      },
+      {
+        "cardId": "hbc-quests-story",
+        "sha256": "0dba4bf89da5f3445b2b6b85a57007c4b945326aaf3f235b09c5db5cc1036807"
+      },
+      {
+        "cardId": "hbc-quests-targeting",
+        "sha256": "78f5628c108e00a378eb3405dee78c9f9906f4eb0c24394ccc2b3c8aa4fef870"
+      },
+      {
+        "cardId": "hbc-quests-measurement",
+        "sha256": "c84e082c3b52b75577a33641317342476f97053d9d2d765895689f0256fac0f4"
+      },
+      {
+        "cardId": "hbc-quests-rules",
+        "sha256": "7095041e8b1f57640fd55cf801157092ac5aa784643540187e71889753a96140"
+      },
+      {
+        "cardId": "hbc-quests-failure",
+        "sha256": "77ba910445069a6cfa86708e3ea90714d13d552a8036aaaa72585ccefc324afc"
+      },
+      {
+        "cardId": "hbc-commercial-tradeoff",
+        "sha256": "37be3bc21abde19254c2f6cccb91491ac288185ef77c4950d9141e034251cefc"
+      },
+      {
+        "cardId": "hbc-neo-implementation",
+        "sha256": "b12991c02521f0c9618daa74f18427721a4ff85c0db26fe6303faf52d8fbb6a7"
+      },
+      {
+        "cardId": "hbc-application-measurement",
+        "sha256": "183c59e47a1675170f03a5ff56c99cf04b8f297cf8d3a4c69adc126ddfe69c08"
+      },
+      {
+        "cardId": "hbc-neo-disagreement",
+        "sha256": "5e57f64edce92cd1fbed99da5ead866fc94453afced0888d7f15b474b4b30047"
+      },
+      {
+        "cardId": "hbc-ownership-boundaries",
+        "sha256": "3c09a89f8d1e162bc69f767a364dde8f831ce4e64e5b1a24ec265aa1bf080954"
+      },
+      {
+        "cardId": "air-overview",
+        "sha256": "7222cae235ce152b6f949733a4ac5c1cebfb0d68cbe1868b5fc8cf1c6584ad74"
+      },
+      {
+        "cardId": "air-commercial-story",
+        "sha256": "882b5bf5e216cf3f68810534a7dce4bfa502f3688eb57617d557f9ee63ee5d67"
+      },
+      {
+        "cardId": "air-partnership-model",
+        "sha256": "e7808760dd98e215ade7d6e0393f3ffc25663a1be8330045c21028905507b90e"
+      },
+      {
+        "cardId": "air-partnership-prioritization",
+        "sha256": "f22ff4a6db5e23ce0656a532194345cf36248ed00d9c4b8dddd74532752a28e2"
+      },
+      {
+        "cardId": "air-partnership-ownership",
+        "sha256": "e716c1f1436613225c19e97798345e5a00349742bfc4880ef7dbb81faef5860c"
+      },
+      {
+        "cardId": "air-billings-measurement",
+        "sha256": "9193f1faa314377026bd71ef14fb9ba1c97a1be32e190ca7347f3d2335238596"
+      },
+      {
+        "cardId": "air-analyst-to-pm",
+        "sha256": "24e8d37c0fbb5f4125b1a5b536a02b7e83a0bbaebb8b1aea4d95aa3ca1f0d489"
+      },
+      {
+        "cardId": "air-issuer-conflict",
+        "sha256": "153d27ed10e451e726711303705253b054c4a5f002ff7fdce9b6c8e3eb50ff29"
+      },
+      {
+        "cardId": "air-acquisition-ownership",
+        "sha256": "27cb551b7deb54a3897e5a87f9ffb1bd09f75547513e10574a2ef0c99e743f48"
+      },
+      {
+        "cardId": "air-conversion-measurement",
+        "sha256": "bb71c02f5c29f697b85cd318fb7f087cc8c6c740428d5cead156f26381a3468e"
+      },
+      {
+        "cardId": "air-downstream-data",
+        "sha256": "40f191d244fd5a7e91813b98db7f61ab56269bd3d664da1735ba62d4946ab1f4"
+      },
+      {
+        "cardId": "air-partner-failure",
+        "sha256": "62f882c7cde515b0d0d96d4ca1c01a4c2f83502d8ccc43b6ff55cf03d7438584"
+      },
+      {
+        "cardId": "air-transfer-to-banking",
+        "sha256": "f5520821216743cec602ac40d45a5c64017205e82746b5225bedf195294c9c9d"
+      }
+    ],
+    "crossProfileSharedIssues": [
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-overview",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-crm-story",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-crm-discovery",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-crm-ownership",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-crm-measurement",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-crm-tradeoff",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-crm-testing",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-crm-lesson",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-membership-conflict",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-funding-depth",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-delivered-scope",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-validation-depth",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "arc-remit-team",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-overview",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-core-story",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-team-leadership",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-roadmap-tradeoff",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-travel-story",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-travel-choice",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-travel-rollout",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-travel-measures",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-shopplus-story",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-shopplus-ownership",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-shopplus-discovery",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-shopplus-trust",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-shopplus-browsers",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-shopplus-measurement",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-shopplus-lesson",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-avion-identity",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-avion-attribution",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-discovery-context",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-measurement-repair",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "rbc-payments-disagreement",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-overview",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-activation-story",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-activation-actions",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-activation-definition",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-retention-definition",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-quests-story",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-quests-targeting",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-quests-measurement",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-quests-rules",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-quests-failure",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-commercial-tradeoff",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-neo-implementation",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-application-measurement",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-neo-disagreement",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "hbc-ownership-boundaries",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-overview",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-commercial-story",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-partnership-model",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-partnership-prioritization",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-partnership-ownership",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-billings-measurement",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-analyst-to-pm",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-issuer-conflict",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-acquisition-ownership",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-conversion-measurement",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-downstream-data",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-partner-failure",
+        "profile": "questrade"
+      },
+      {
+        "type": "pack_vs_json_drift",
+        "cardId": "air-transfer-to-banking",
+        "profile": "questrade"
+      }
+    ]
+  },
+  "links": {
+    "questrade": [],
+    "simplii": []
+  },
+  "employerOverviewModules": [
+    {
+      "cardId": "arc-overview",
+      "moduleLabel": "Arc'teryx — Employer Overview",
+      "experienceModuleId": "arcteryx-membership",
+      "routingNote": "Broad employer questions should hit this overview first (isPreferred on import row)."
+    },
+    {
+      "cardId": "rbc-overview",
+      "moduleLabel": "RBC — Employer Overview",
+      "experienceModuleId": "rbc-core",
+      "routingNote": "Broad employer questions should hit this overview first (isPreferred on import row)."
+    },
+    {
+      "cardId": "hbc-overview",
+      "moduleLabel": "HBC — Employer Overview",
+      "experienceModuleId": "hbc-portfolio",
+      "routingNote": "Broad employer questions should hit this overview first (isPreferred on import row)."
+    },
+    {
+      "cardId": "air-overview",
+      "moduleLabel": "Air Canada / Aeroplan — Employer Overview",
+      "experienceModuleId": "aeroplan-cobrand",
+      "routingNote": "Broad employer questions should hit this overview first (isPreferred on import row)."
+    }
+  ],
+  "profiles": {
+    "questrade": {
+      "id": "f96f6db8-c0e9-4341-be68-c29f6975dc5e",
+      "name": "Questrade — Senior PM, Everyday Banking",
+      "resolvedBy": "constant_id"
+    },
+    "simplii": {
+      "id": "1aff0813-6615-4a12-bfd6-ce7603604f6b",
+      "name": "Simplii Financial — Senior Product Manager",
+      "resolvedBy": "exact_name_match"
+    }
+  },
+  "idempotency": {
+    "questradeImportKeySetSha256": "1214d52c5492bb57ec43c6dadbbf39b79d76c8d4d38616de74285cbcaf200521",
+    "simpliiImportKeySetSha256": "a4b24457d95ca091d3a0dd278035a6f3f534c96b2a13f16ed567671751e67c4e",
+    "rerunBehavior": "Second dry-run with same JSON should classify all rows as idempotent_skip once importKeys exist (apply not run in this handoff)."
+  },
+  "duplicateHandling": {
+    "questradeSemantic": [
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-measurement-repair",
+        "existingId": "11375f03-31fa-45da-8557-488a8cc63beb",
+        "normalizedQuestion": "how did you measure success for the avion cashback withdrawal launch"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-payments-disagreement",
+        "existingId": "80a4e168-83f0-45ba-a9b7-bde17123566a",
+        "normalizedQuestion": "who made the final decision when the payments team risk and product disagreed"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-quests-failure",
+        "existingId": "c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+        "normalizedQuestion": "tell me about a product decision you got wrong"
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-neo-implementation",
+        "existingId": "e546440d-67eb-4266-8466-0827ccd35e42",
+        "normalizedQuestion": "what exactly did you change in the hbc application experience"
+      }
+    ],
+    "simpliiSemantic": [
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-measurement-repair",
+        "existingId": "8750305f-4d55-466b-a9a8-e13bb4a0bfde",
+        "normalizedQuestion": "how did you measure success for the avion cashback withdrawal launch"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-payments-disagreement",
+        "existingId": "71860ee5-ec35-4a78-853c-d5226d970cad",
+        "normalizedQuestion": "who made the final decision when the payments team risk and product disagreed"
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-neo-implementation",
+        "existingId": "f4f37d3a-0e49-4f93-8483-40a968f6fd4a",
+        "normalizedQuestion": "what exactly did you change in the hbc application experience"
+      }
+    ],
+    "profileIsolation": {
+      "questradeRowCount": 261,
+      "simpliiRowCount": 257,
+      "note": "Import keys and UUID links are profile-local; sharedConcept tags tie content only."
+    }
+  },
+  "plannedActions": {
+    "questrade": [
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-overview",
+        "sharedConcept": "john-experience-depth-v1-arc-overview",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-overview",
+        "sharedConcept": "john-experience-depth-v1-rbc-overview",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-overview",
+        "sharedConcept": "john-experience-depth-v1-hbc-overview",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-overview",
+        "sharedConcept": "john-experience-depth-v1-air-overview",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-story",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-story",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-discovery",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-discovery",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-ownership",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-ownership",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-measurement",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-measurement",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-tradeoff",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-tradeoff",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-testing",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-testing",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-crm-lesson",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-lesson",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-membership-conflict",
+        "sharedConcept": "john-experience-depth-v1-arc-membership-conflict",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-funding-depth",
+        "sharedConcept": "john-experience-depth-v1-arc-funding-depth",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "f9022f65-91fb-4094-ae8f-b4dc87edcca7"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-delivered-scope",
+        "sharedConcept": "john-experience-depth-v1-arc-delivered-scope",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-validation-depth",
+        "sharedConcept": "john-experience-depth-v1-arc-validation-depth",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "a412c28e-815d-42b5-91fa-ad7bc4e444b6"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-arc-remit-team",
+        "sharedConcept": "john-experience-depth-v1-arc-remit-team",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-core-story",
+        "sharedConcept": "john-experience-depth-v1-rbc-core-story",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-team-leadership",
+        "sharedConcept": "john-experience-depth-v1-rbc-team-leadership",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-roadmap-tradeoff",
+        "sharedConcept": "john-experience-depth-v1-rbc-roadmap-tradeoff",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-travel-story",
+        "sharedConcept": "john-experience-depth-v1-rbc-travel-story",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-travel-choice",
+        "sharedConcept": "john-experience-depth-v1-rbc-travel-choice",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-travel-rollout",
+        "sharedConcept": "john-experience-depth-v1-rbc-travel-rollout",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-travel-measures",
+        "sharedConcept": "john-experience-depth-v1-rbc-travel-measures",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-story",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-story",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-ownership",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-ownership",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-discovery",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-discovery",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-trust",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-trust",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-browsers",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-browsers",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-measurement",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-measurement",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-shopplus-lesson",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-lesson",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-avion-identity",
+        "sharedConcept": "john-experience-depth-v1-rbc-avion-identity",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-avion-attribution",
+        "sharedConcept": "john-experience-depth-v1-rbc-avion-attribution",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-discovery-context",
+        "sharedConcept": "john-experience-depth-v1-rbc-discovery-context",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "7df4eff0-1801-4505-afc3-cf652d90eb63"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-measurement-repair",
+        "sharedConcept": "john-experience-depth-v1-rbc-measurement-repair",
+        "actions": [
+          {
+            "kind": "proposed_revision",
+            "reason": "normalized question match",
+            "existingId": "11375f03-31fa-45da-8557-488a8cc63beb",
+            "preserveExistingVersion": true,
+            "note": "Do not auto-update by sourceQuestradeRecordId; propose draft sibling or supersede flow."
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-rbc-payments-disagreement",
+        "sharedConcept": "john-experience-depth-v1-rbc-payments-disagreement",
+        "actions": [
+          {
+            "kind": "proposed_revision",
+            "reason": "normalized question match",
+            "existingId": "80a4e168-83f0-45ba-a9b7-bde17123566a",
+            "preserveExistingVersion": true,
+            "note": "Do not auto-update by sourceQuestradeRecordId; propose draft sibling or supersede flow."
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-activation-story",
+        "sharedConcept": "john-experience-depth-v1-hbc-activation-story",
+        "actions": [
+          {
+            "kind": "competing_intent_risk",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "7eb5e7ae-c611-4966-8279-0fcc8d80fc3c"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-activation-actions",
+        "sharedConcept": "john-experience-depth-v1-hbc-activation-actions",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-activation-definition",
+        "sharedConcept": "john-experience-depth-v1-hbc-activation-definition",
+        "actions": [
+          {
+            "kind": "competing_intent_risk",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-retention-definition",
+        "sharedConcept": "john-experience-depth-v1-hbc-retention-definition",
+        "actions": [
+          {
+            "kind": "competing_intent_risk",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "4da64bdb-adc3-4baa-8d64-dae4f6ddf6b5"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-quests-story",
+        "sharedConcept": "john-experience-depth-v1-hbc-quests-story",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-quests-targeting",
+        "sharedConcept": "john-experience-depth-v1-hbc-quests-targeting",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-quests-measurement",
+        "sharedConcept": "john-experience-depth-v1-hbc-quests-measurement",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-quests-rules",
+        "sharedConcept": "john-experience-depth-v1-hbc-quests-rules",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-quests-failure",
+        "sharedConcept": "john-experience-depth-v1-hbc-quests-failure",
+        "actions": [
+          {
+            "kind": "proposed_revision",
+            "reason": "normalized question match",
+            "existingId": "c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+            "preserveExistingVersion": true,
+            "note": "Do not auto-update by sourceQuestradeRecordId; propose draft sibling or supersede flow."
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-commercial-tradeoff",
+        "sharedConcept": "john-experience-depth-v1-hbc-commercial-tradeoff",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-neo-implementation",
+        "sharedConcept": "john-experience-depth-v1-hbc-neo-implementation",
+        "actions": [
+          {
+            "kind": "proposed_revision",
+            "reason": "normalized question match",
+            "existingId": "e546440d-67eb-4266-8466-0827ccd35e42",
+            "preserveExistingVersion": true,
+            "note": "Do not auto-update by sourceQuestradeRecordId; propose draft sibling or supersede flow."
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-application-measurement",
+        "sharedConcept": "john-experience-depth-v1-hbc-application-measurement",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "3218b561-2159-442e-a3aa-074756f877c0"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-neo-disagreement",
+        "sharedConcept": "john-experience-depth-v1-hbc-neo-disagreement",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-hbc-ownership-boundaries",
+        "sharedConcept": "john-experience-depth-v1-hbc-ownership-boundaries",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "9dbe28fe-5bde-46e2-86a2-2a9381643704"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-commercial-story",
+        "sharedConcept": "john-experience-depth-v1-air-commercial-story",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-partnership-model",
+        "sharedConcept": "john-experience-depth-v1-air-partnership-model",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-partnership-prioritization",
+        "sharedConcept": "john-experience-depth-v1-air-partnership-prioritization",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-partnership-ownership",
+        "sharedConcept": "john-experience-depth-v1-air-partnership-ownership",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-billings-measurement",
+        "sharedConcept": "john-experience-depth-v1-air-billings-measurement",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-analyst-to-pm",
+        "sharedConcept": "john-experience-depth-v1-air-analyst-to-pm",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-issuer-conflict",
+        "sharedConcept": "john-experience-depth-v1-air-issuer-conflict",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-acquisition-ownership",
+        "sharedConcept": "john-experience-depth-v1-air-acquisition-ownership",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "c88f487e-e0d1-44c0-ab54-60f1e19fe79d"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-conversion-measurement",
+        "sharedConcept": "john-experience-depth-v1-air-conversion-measurement",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "8f93a4d4-6570-4ae8-8e29-ff5f1c6218b4"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-downstream-data",
+        "sharedConcept": "john-experience-depth-v1-air-downstream-data",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-partner-failure",
+        "sharedConcept": "john-experience-depth-v1-air-partner-failure",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "questrade-john-experience-depth-v1-air-transfer-to-banking",
+        "sharedConcept": "john-experience-depth-v1-air-transfer-to-banking",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      }
+    ],
+    "simplii": [
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-overview",
+        "sharedConcept": "john-experience-depth-v1-arc-overview",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-overview",
+        "sharedConcept": "john-experience-depth-v1-rbc-overview",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-overview",
+        "sharedConcept": "john-experience-depth-v1-hbc-overview",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-overview",
+        "sharedConcept": "john-experience-depth-v1-air-overview",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-story",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-story",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-discovery",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-discovery",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-ownership",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-ownership",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-measurement",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-measurement",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-tradeoff",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-tradeoff",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-testing",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-testing",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-crm-lesson",
+        "sharedConcept": "john-experience-depth-v1-arc-crm-lesson",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-membership-conflict",
+        "sharedConcept": "john-experience-depth-v1-arc-membership-conflict",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-funding-depth",
+        "sharedConcept": "john-experience-depth-v1-arc-funding-depth",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "ba7845dc-51b1-42cf-b343-8f4d54d64f5e"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-delivered-scope",
+        "sharedConcept": "john-experience-depth-v1-arc-delivered-scope",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-validation-depth",
+        "sharedConcept": "john-experience-depth-v1-arc-validation-depth",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "421aed67-c50e-4a0a-b427-0b7f9fa868f0"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-arc-remit-team",
+        "sharedConcept": "john-experience-depth-v1-arc-remit-team",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-core-story",
+        "sharedConcept": "john-experience-depth-v1-rbc-core-story",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-team-leadership",
+        "sharedConcept": "john-experience-depth-v1-rbc-team-leadership",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-roadmap-tradeoff",
+        "sharedConcept": "john-experience-depth-v1-rbc-roadmap-tradeoff",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-travel-story",
+        "sharedConcept": "john-experience-depth-v1-rbc-travel-story",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-travel-choice",
+        "sharedConcept": "john-experience-depth-v1-rbc-travel-choice",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-travel-rollout",
+        "sharedConcept": "john-experience-depth-v1-rbc-travel-rollout",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-travel-measures",
+        "sharedConcept": "john-experience-depth-v1-rbc-travel-measures",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-story",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-story",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-ownership",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-ownership",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-discovery",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-discovery",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-trust",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-trust",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-browsers",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-browsers",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-measurement",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-measurement",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-shopplus-lesson",
+        "sharedConcept": "john-experience-depth-v1-rbc-shopplus-lesson",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-avion-identity",
+        "sharedConcept": "john-experience-depth-v1-rbc-avion-identity",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-avion-attribution",
+        "sharedConcept": "john-experience-depth-v1-rbc-avion-attribution",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-discovery-context",
+        "sharedConcept": "john-experience-depth-v1-rbc-discovery-context",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "5bfe1aaa-b1d0-42a9-ae68-7d69d03c8058"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-measurement-repair",
+        "sharedConcept": "john-experience-depth-v1-rbc-measurement-repair",
+        "actions": [
+          {
+            "kind": "proposed_revision",
+            "reason": "normalized question match",
+            "existingId": "8750305f-4d55-466b-a9a8-e13bb4a0bfde",
+            "preserveExistingVersion": true,
+            "note": "Do not auto-update by sourceQuestradeRecordId; propose draft sibling or supersede flow."
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-rbc-payments-disagreement",
+        "sharedConcept": "john-experience-depth-v1-rbc-payments-disagreement",
+        "actions": [
+          {
+            "kind": "proposed_revision",
+            "reason": "normalized question match",
+            "existingId": "71860ee5-ec35-4a78-853c-d5226d970cad",
+            "preserveExistingVersion": true,
+            "note": "Do not auto-update by sourceQuestradeRecordId; propose draft sibling or supersede flow."
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-activation-story",
+        "sharedConcept": "john-experience-depth-v1-hbc-activation-story",
+        "actions": [
+          {
+            "kind": "competing_intent_risk",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "1ac8bf9a-1a3a-461a-9d15-91d20e550e23"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-activation-actions",
+        "sharedConcept": "john-experience-depth-v1-hbc-activation-actions",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-activation-definition",
+        "sharedConcept": "john-experience-depth-v1-hbc-activation-definition",
+        "actions": [
+          {
+            "kind": "competing_intent_risk",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "6a046b95-dd21-4c42-b2b8-6f2e29769725"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-retention-definition",
+        "sharedConcept": "john-experience-depth-v1-hbc-retention-definition",
+        "actions": [
+          {
+            "kind": "competing_intent_risk",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "6a046b95-dd21-4c42-b2b8-6f2e29769725"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-quests-story",
+        "sharedConcept": "john-experience-depth-v1-hbc-quests-story",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-quests-targeting",
+        "sharedConcept": "john-experience-depth-v1-hbc-quests-targeting",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-quests-measurement",
+        "sharedConcept": "john-experience-depth-v1-hbc-quests-measurement",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-quests-rules",
+        "sharedConcept": "john-experience-depth-v1-hbc-quests-rules",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-quests-failure",
+        "sharedConcept": "john-experience-depth-v1-hbc-quests-failure",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-commercial-tradeoff",
+        "sharedConcept": "john-experience-depth-v1-hbc-commercial-tradeoff",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-neo-implementation",
+        "sharedConcept": "john-experience-depth-v1-hbc-neo-implementation",
+        "actions": [
+          {
+            "kind": "proposed_revision",
+            "reason": "normalized question match",
+            "existingId": "f4f37d3a-0e49-4f93-8483-40a968f6fd4a",
+            "preserveExistingVersion": true,
+            "note": "Do not auto-update by sourceQuestradeRecordId; propose draft sibling or supersede flow."
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-application-measurement",
+        "sharedConcept": "john-experience-depth-v1-hbc-application-measurement",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "b1ac4e3e-368d-4b42-a0ce-1e9acbb72fc5"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-neo-disagreement",
+        "sharedConcept": "john-experience-depth-v1-hbc-neo-disagreement",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-hbc-ownership-boundaries",
+        "sharedConcept": "john-experience-depth-v1-hbc-ownership-boundaries",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "36205e5d-6c8c-482c-8b83-62cf71bf608e"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-commercial-story",
+        "sharedConcept": "john-experience-depth-v1-air-commercial-story",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-partnership-model",
+        "sharedConcept": "john-experience-depth-v1-air-partnership-model",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-partnership-prioritization",
+        "sharedConcept": "john-experience-depth-v1-air-partnership-prioritization",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-partnership-ownership",
+        "sharedConcept": "john-experience-depth-v1-air-partnership-ownership",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-billings-measurement",
+        "sharedConcept": "john-experience-depth-v1-air-billings-measurement",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-analyst-to-pm",
+        "sharedConcept": "john-experience-depth-v1-air-analyst-to-pm",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-issuer-conflict",
+        "sharedConcept": "john-experience-depth-v1-air-issuer-conflict",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-acquisition-ownership",
+        "sharedConcept": "john-experience-depth-v1-air-acquisition-ownership",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "4b3b3513-adb9-4599-bfd3-9aadb483176e"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-conversion-measurement",
+        "sharedConcept": "john-experience-depth-v1-air-conversion-measurement",
+        "actions": [
+          {
+            "kind": "consolidate_or_route",
+            "reason": "same module+intent already has live-style row(s)",
+            "existingIds": [
+              "0343f6eb-6777-488c-9440-7b9e1db73c65"
+            ],
+            "employerOverviewRouting": false
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-downstream-data",
+        "sharedConcept": "john-experience-depth-v1-air-downstream-data",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-partner-failure",
+        "sharedConcept": "john-experience-depth-v1-air-partner-failure",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      },
+      {
+        "externalId": "simplii-john-experience-depth-v1-air-transfer-to-banking",
+        "sharedConcept": "john-experience-depth-v1-air-transfer-to-banking",
+        "actions": [
+          {
+            "kind": "create_draft",
+            "reason": "new gap coverage"
+          }
+        ]
+      }
+    ]
+  }
+}

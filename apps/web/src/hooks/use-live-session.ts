@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { analyzeResultFromPreparedRow } from "@/lib/prepared-row-result";
 import {
   LEXICAL_MATCH_THRESHOLD_PREPARED,
   LEXICAL_MATCH_THRESHOLD_WEAK,
@@ -255,9 +256,11 @@ export function useLiveSession(
       const now = Date.now();
       if (cached && now - cached.at < ANALYZE_CACHE_MS) {
         const data = cached.data;
-        if (!options?.respectMainPanelLock) {
+        if (!options?.respectMainPanelLock || options?.forceMainPanel) {
           setResult(data);
-          setCurrentQuestion(question);
+          if (!options?.preserveDetectedQuestion) {
+            setCurrentQuestion(question);
+          }
         }
         return data;
       }
@@ -680,6 +683,25 @@ export function useLiveSession(
     setCurrentQuestion(questionHistory[last]?.question ?? null);
   }, [questionHistory]);
 
+  const openPreparedRow = useCallback(
+    (row: import("@interview-copilot/shared").EnrichedQaRow, opts?: { preserveDetectedQuestion?: boolean }) => {
+      const detected = opts?.preserveDetectedQuestion ? currentQuestionRef.current : null;
+      const data = analyzeResultFromPreparedRow(row, { preserveDetectedQuestion: detected });
+      setResult(data);
+      if (!opts?.preserveDetectedQuestion) {
+        setCurrentQuestion(row.question);
+        setQuestionHistory((h) => [...h, data]);
+        setHistorySources((s) => [...s, "browse"]);
+        setHistoryIndex((h) => h + 1);
+      }
+      setAnswerLocked(true);
+      setMatchPreview(null);
+      setCandidate(null);
+      setStatusAnnouncement(`Loaded: ${row.question}`);
+    },
+    []
+  );
+
   useEffect(() => () => clearSilenceTimer(), [clearSilenceTimer]);
 
   useEffect(() => {
@@ -709,6 +731,7 @@ export function useLiveSession(
     applyMatchPreview,
     dismissMatchPreview,
     analyze,
+    openPreparedRow,
     startSimulation,
     stopListening,
     setListening: setListeningActive,
