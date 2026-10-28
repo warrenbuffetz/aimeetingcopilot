@@ -36,6 +36,7 @@
     "audit:experience-gap-proof": "node scripts/audit-experience-gap-proof-points.mjs",
     "validate:simplii": "node scripts/validate-simplii-profile.mjs",
     "generate:career-alignment": "node scripts/generate-career-motivation-alignment-table.mjs",
+    "generate:simplii:all-qa": "node scripts/generate-simplii-all-qa-review.mjs",
     "strip:simplii:quotes": "node scripts/strip-simplii-answer-quotes.mjs --apply --embed",
     "apply:simplii:cross-panel": "node scripts/apply-simplii-cross-panel-master.mjs",
     "apply:simplii:cross-panel:apply": "node scripts/apply-simplii-cross-panel-master.mjs --apply --embed",

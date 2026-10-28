@@ -23,6 +23,7 @@ import {
   type LibrarySection,
   type QuestionIntent,
 } from "@interview-copilot/shared";
+import { StoryMapPanel } from "@/components/live/story-map-panel";
 import { AnswerPreviewCard } from "@/components/live/answer-preview-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -34,7 +35,16 @@ import { useVerticalResize } from "@/hooks/use-vertical-resize";
 import { clamp } from "@/hooks/use-horizontal-resize";
 import { usePersistedNumber } from "@/hooks/use-persisted-state";
 
-type NavigatorTab = "next" | "experiences" | "all";
+type NavigatorTab = "next" | "experiences" | "map" | "all";
+
+const NAV_TAB_STORAGE_KEY = "ic-live-navigator-tab";
+
+function loadNavTab(): NavigatorTab {
+  if (typeof window === "undefined") return "next";
+  const v = sessionStorage.getItem(NAV_TAB_STORAGE_KEY);
+  if (v === "experiences" || v === "map" || v === "all" || v === "next") return v;
+  return "next";
+}
 
 export type QuestionMapFocus = {
   title: string;
@@ -194,6 +204,14 @@ export function InterviewNavigator({
   practiceFooter,
 }: Props) {
   const [tab, setTab] = useState<NavigatorTab>("next");
+
+  useEffect(() => {
+    setTab(loadNavTab());
+  }, []);
+
+  useEffect(() => {
+    sessionStorage.setItem(NAV_TAB_STORAGE_KEY, tab);
+  }, [tab]);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [browseQuery, setBrowseQuery] = useState("");
   const [sectionFilter, setSectionFilter] = useState<LibrarySection | "all">("all");
@@ -407,6 +425,7 @@ export function InterviewNavigator({
                 [
                   ["next", "Next"],
                   ["experiences", "Experiences"],
+                  ["map", "Map"],
                   ["all", "All Answers"],
                 ] as const
               ).map(([id, label]) => (
@@ -414,7 +433,7 @@ export function InterviewNavigator({
                   key={id}
                   type="button"
                   className={cn(
-                    "flex-1 border-b-2 px-1 py-1.5 text-[10px] font-medium uppercase tracking-wide",
+                    "flex-1 border-b-2 px-0.5 py-1.5 text-[9px] font-medium uppercase tracking-wide sm:px-1 sm:text-[10px]",
                     tab === id
                       ? id === "next"
                         ? liveSemantic.navTabNextActive
@@ -432,7 +451,7 @@ export function InterviewNavigator({
           <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden p-2">
           {!activeMapFocus && (
           <div className="shrink-0 space-y-3">
-          {tab !== "next" && (
+          {tab !== "next" && tab !== "map" && (
             <ActiveExperienceCard
               context={context}
               catalog={catalog}
@@ -442,7 +461,9 @@ export function InterviewNavigator({
             />
           )}
           <section className="rounded-md border border-border/70 bg-muted/5 px-2 py-2">
-            <p className="text-[10px] font-medium uppercase text-muted-foreground">Interview round (editorial)</p>
+            <p className="text-[10px] font-medium uppercase text-muted-foreground">
+              Interview round {tab === "map" ? "(highlights only)" : "(editorial)"}
+            </p>
             <select
               className="mt-1 h-7 w-full rounded border border-border bg-background px-1 text-[10px]"
               value={context.activeInterviewRound ?? ""}
@@ -702,6 +723,19 @@ export function InterviewNavigator({
                   </details>
                 )}
               </section>
+            )}
+
+            {!activeMapFocus && tab === "map" && (
+              <StoryMapPanel
+                catalog={catalog}
+                interviewProfile={interviewProfile}
+                highlightRound={context.activeInterviewRound}
+                expanded={expanded}
+                onToggleExpanded={(id) => toggleExpanded(id)}
+                onOpenInMainPanel={onOpenInMainPanel}
+                onPin={onPin}
+                mainPanelPreparedId={mainPanelPreparedId}
+              />
             )}
 
             {!activeMapFocus && tab === "all" && (

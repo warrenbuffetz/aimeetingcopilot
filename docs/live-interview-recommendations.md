@@ -40,6 +40,8 @@
 
 **Active experience dropdown by profile:** `experienceModulesForProfile` hides `questrade-*` modules on Simplii and `digital-banking-*` modules on Questrade. Shared resume modules (RBC, HBC, Aeroplan, Arc'teryx) and career/leadership pins stay on both.
 
+**Story Map tab:** `docs/story-map-navigator.md` — MAP | progressive drill-down, multi-branch indexing (`packages/shared/src/navigator/story-map/`), in-map search, browse-only (Open in main panel uses existing `fromBrowse` path).
+
 **Ranking:**
 
 1. Curated per-round list (`data/editorial/questrade-top-questions-by-round.json`, mirrored in shared package) — rank order and VH/H/M/L tiers; reason label e.g. `Recruiter #3 · VH`.

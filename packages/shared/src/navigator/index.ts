@@ -17,6 +17,7 @@ export * from "./editorial-top-questions";
 export * from "./experience-tree";
 export * from "./browse-filters";
 export * from "./search";
+export * from "./story-map";
 export * from "./revision-retrieval";
 export * from "./interview-rounds";
 export * from "./hybrid-rank";
