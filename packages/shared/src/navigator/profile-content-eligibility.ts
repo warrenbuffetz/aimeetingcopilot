@@ -3,16 +3,18 @@ import type { EnrichedQaRow, InterviewProfileKey } from "./types";
 export type { InterviewProfileKey };
 
 const SIMPLII_MARKERS = /\b(simplii(?:\s+financial)?|simplii-jd|simplii-from-)\b/i;
+const OPENTABLE_MARKERS = /\b(opentable|opentable-rec|opentable-jd)\b/i;
 const QUESTRADE_MARKERS =
   /\b(questrade|questbank|temenos|brokerage-to-banking|investing-to-banking|questrade flows)\b/i;
 
 const JOB_QUESTION_MARKERS =
-  /\bwhy\s+(questrade|simplii|questbank|this\s+(role|company|opportunity)|are you interested)\b/i;
+  /\bwhy\s+(questrade|simplii|opentable|questbank|this\s+(role|company|opportunity)|are you interested)\b/i;
 
 export function interviewProfileKeyFromLabel(profileName: string | null | undefined): InterviewProfileKey {
   if (!profileName) return "unknown";
   if (/questrade/i.test(profileName)) return "questrade";
   if (/simplii/i.test(profileName)) return "simplii";
+  if (/opentable/i.test(profileName)) return "opentable";
   return "unknown";
 }
 
@@ -37,11 +39,11 @@ export function isJobSpecificPreparedRow(row: EnrichedQaRow): boolean {
 
   const q = questionSurface(row);
   if (JOB_QUESTION_MARKERS.test(q)) return true;
-  if (/\bwhy\s+(questrade|simplii|questbank)\b/i.test(q)) return true;
+  if (/\bwhy\s+(questrade|simplii|opentable|questbank)\b/i.test(q)) return true;
   if (/\bwhy\s+this\s+(role|company|opportunity|team)\b/i.test(q)) return true;
   if (
     /\bwhy\s+.+\b(role|company|opportunity|team|move|leaving|instead)\b/i.test(q) &&
-    (SIMPLII_MARKERS.test(q) || QUESTRADE_MARKERS.test(q))
+    (SIMPLII_MARKERS.test(q) || QUESTRADE_MARKERS.test(q) || OPENTABLE_MARKERS.test(q))
   ) {
     return true;
   }
@@ -57,15 +59,19 @@ export function exclusiveProfileForPreparedRow(row: EnrichedQaRow): InterviewPro
 
   const importKey = nav.importKey ?? "";
   if (importKey.startsWith("simplii-")) return "simplii";
+  if (importKey.startsWith("opentable-")) return "opentable";
 
   const q = questionSurface(row);
   const qSimplii = SIMPLII_MARKERS.test(q);
+  const qOpentable = OPENTABLE_MARKERS.test(q);
   const qQuestrade = QUESTRADE_MARKERS.test(q);
-  if (qSimplii && !qQuestrade) return "simplii";
-  if (qQuestrade && !qSimplii) return "questrade";
+  if (qSimplii && !qQuestrade && !qOpentable) return "simplii";
+  if (qOpentable && !qQuestrade && !qSimplii) return "opentable";
+  if (qQuestrade && !qSimplii && !qOpentable) return "questrade";
 
   const answerLead = (row.answer ?? "").slice(0, 400);
   if (SIMPLII_MARKERS.test(q) || SIMPLII_MARKERS.test(answerLead)) return "simplii";
+  if (OPENTABLE_MARKERS.test(q) || OPENTABLE_MARKERS.test(answerLead)) return "opentable";
   if (QUESTRADE_MARKERS.test(q) || QUESTRADE_MARKERS.test(answerLead)) return "questrade";
 
   return null;

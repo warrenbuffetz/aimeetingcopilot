@@ -1,0 +1,32 @@
+{
+  "recruiter": [
+    { "rank": 1, "tier": "VH", "question": "Tell me about yourself." },
+    { "rank": 2, "tier": "VH", "question": "Why OpenTable?" },
+    { "rank": 3, "tier": "VH", "question": "Why this particular Senior Product Manager role?" },
+    { "rank": 4, "tier": "VH", "question": "Have you built and shipped AI/ML-powered products?" },
+    { "rank": 5, "tier": "H", "question": "Your background is primarily financial services and retail. Why move into hospitality?" },
+    { "rank": 6, "tier": "H", "question": "Why are you looking for a new opportunity now?" },
+    { "rank": 7, "tier": "H", "question": "What are your compensation expectations?" }
+  ],
+  "hiring_manager": [
+    { "rank": 1, "tier": "VH", "question": "Have you built and shipped AI/ML-powered products?" },
+    { "rank": 2, "tier": "VH", "question": "How would you approach identifying an AI opportunity that improves restaurant revenue?" },
+    { "rank": 3, "tier": "VH", "question": "How would you measure success for a restaurant revenue-optimization product?" },
+    { "rank": 4, "tier": "VH", "question": "Tell me about a 0-to-1 product you've launched." },
+    { "rank": 5, "tier": "VH", "question": "Tell me about a time you improved a commercial or revenue outcome." },
+    { "rank": 6, "tier": "VH", "question": "Tell me more about one of the AI applications you've built." },
+    { "rank": 7, "tier": "H", "question": "How do you move quickly when building something new?" },
+    { "rank": 8, "tier": "H", "question": "How do you handle conflicting executive or stakeholder priorities?" },
+    { "rank": 9, "tier": "H", "question": "How comfortable are you working with engineering, data science, and technical teams?" },
+    { "rank": 10, "tier": "H", "question": "Have you worked with two-sided marketplaces?" }
+  ],
+  "cross_functional_panel": [
+    { "rank": 1, "tier": "VH", "question": "Have you built and shipped AI/ML-powered products?" },
+    { "rank": 2, "tier": "VH", "question": "Tell me more about one of the AI applications you've built." },
+    { "rank": 3, "tier": "VH", "question": "How would you measure success for a restaurant revenue-optimization product?" },
+    { "rank": 4, "tier": "VH", "question": "How comfortable are you working with engineering, data science, and technical teams?" },
+    { "rank": 5, "tier": "H", "question": "Tell me about a 0-to-1 product you've launched." },
+    { "rank": 6, "tier": "H", "question": "How would you approach identifying an AI opportunity that improves restaurant revenue?" },
+    { "rank": 7, "tier": "H", "question": "Tell me about a time you improved a commercial or revenue outcome." }
+  ]
+}

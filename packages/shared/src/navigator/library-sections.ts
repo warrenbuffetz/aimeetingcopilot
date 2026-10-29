@@ -8,6 +8,7 @@ export type { LibrarySection };
 const PROFILE_EXCLUSIVE_SECTIONS: Partial<Record<InterviewProfileKey, LibrarySection[]>> = {
   questrade: ["questrade_cases"],
   simplii: [],
+  opentable: [],
 };
 
 export function librarySectionsForProfile(profile: InterviewProfileKey): LibrarySection[] {
@@ -64,6 +65,7 @@ export function librarySectionFromCategory(
 ): LibrarySection {
   if (moduleId?.startsWith("questrade-")) return "questrade_cases";
   if (moduleId?.startsWith("digital-banking-")) return "product_banking_knowledge";
+  if (moduleId?.startsWith("opentable-")) return "product_banking_knowledge";
   if (moduleId === "career-general") return "career_motivation";
   if (moduleId === "leadership-general") return "leadership_behavioural";
   if (moduleId && /^(rbc|hbc|aeroplan|arcteryx)-/.test(moduleId)) return "product_experience";

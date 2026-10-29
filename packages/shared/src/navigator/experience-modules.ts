@@ -68,6 +68,12 @@ export const EXPERIENCE_MODULES: Record<string, ExperienceModule> = {
     company: "Arc'teryx",
     libraryCategory: "resume_deep_dive",
   },
+  "opentable-revenue-ai": {
+    id: "opentable-revenue-ai",
+    label: "OpenTable — Revenue & AI craft",
+    company: "OpenTable",
+    libraryCategory: "product_analytics",
+  },
   "arcteryx-vendor": {
     id: "arcteryx-vendor",
     label: "Arc'teryx — Vendor Evaluation",
@@ -230,6 +236,7 @@ export function isExperienceModuleEligibleForProfile(
   if (profile === "unknown") return true;
   if (moduleId.startsWith("questrade-")) return profile === "questrade";
   if (moduleId.startsWith("digital-banking-")) return profile === "simplii";
+  if (moduleId.startsWith("opentable-")) return profile === "opentable";
   return true;
 }
 

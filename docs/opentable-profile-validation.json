@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-29T16:53:56.793Z",
+  "questradeRowCount": 328,
+  "simpliiRowCount": 374,
+  "opentable": {
+    "profileId": "62f33a6c-a1e7-4ba3-91f5-02b29689fab4",
+    "totalRows": 19,
+    "activeRows": 19,
+    "forbiddenTermHits": 0,
+    "unapprovedPredictionsImportedAsPreparedQa": 0,
+    "p0Count": 19
+  },
+  "integrityHashes": {
+    "questrade": "8c8808f7a901c37edd032f64ba216f92164d1496320cd9f6b0c394b0329379ee",
+    "simplii": "97aad59832676a501b2b0b1e2fb40d8e4b6f78c7aa004bacdea5f20d40c12014"
+  },
+  "forbiddenHits": []
+}

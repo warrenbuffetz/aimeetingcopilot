@@ -1,4 +1,4 @@
-export type InterviewProfileKey = "questrade" | "simplii" | "unknown";
+export type InterviewProfileKey = "questrade" | "simplii" | "opentable" | "unknown";
 
 export type LibraryCategory =
   | "career_recruiter"

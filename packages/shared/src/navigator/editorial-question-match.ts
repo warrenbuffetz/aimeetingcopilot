@@ -1,10 +1,12 @@
 import overrides from "./questrade-editorial-question-overrides.json";
 import simpliiOverrides from "./simplii-editorial-question-overrides.json";
+import opentableOverrides from "./opentable-editorial-question-overrides.json";
 import type { InterviewProfileKey } from "./profile-content-eligibility";
 import type { EnrichedQaRow } from "./types";
 
 const EDITORIAL_ROW_ID_OVERRIDES = overrides as Record<string, string>;
 const SIMPLII_EDITORIAL_IMPORT_KEY_OVERRIDES = simpliiOverrides as Record<string, string>;
+const OPENTABLE_EDITORIAL_IMPORT_KEY_OVERRIDES = opentableOverrides as Record<string, string>;
 
 export function normalizeEditorialQuestion(s: string): string {
   return (s ?? "")
@@ -60,6 +62,16 @@ export function findBestCatalogMatchForEditorial(
 
   if (profile === "simplii") {
     const importKey = SIMPLII_EDITORIAL_IMPORT_KEY_OVERRIDES[editorialQuestion.trim()];
+    if (importKey) {
+      const row = catalog.find((r) => r.navigator.importKey === importKey);
+      if (row && !exclude?.has(row.id)) {
+        return { row, score: 1, matchedText: row.question };
+      }
+    }
+  }
+
+  if (profile === "opentable") {
+    const importKey = OPENTABLE_EDITORIAL_IMPORT_KEY_OVERRIDES[editorialQuestion.trim()];
     if (importKey) {
       const row = catalog.find((r) => r.navigator.importKey === importKey);
       if (row && !exclude?.has(row.id)) {

@@ -26,7 +26,7 @@ function careerTopicIds(row: EnrichedQaRow): StoryMapTopicId[] {
   const ids: StoryMapTopicId[] = [];
   if (/\btell me about yourself\b/i.test(q)) ids.push("career:tmay");
   if (
-    /\bwhy\s+(questrade|simplii|questbank|this\s+(role|company|opportunity))\b/i.test(q) ||
+    /\bwhy\s+(questrade|simplii|opentable|questbank|this\s+(role|company|opportunity))\b/i.test(q) ||
     /\bwhy\s+.+\b(role|company|opportunity)\b/i.test(q)
   ) {
     ids.push("career:why-employer");

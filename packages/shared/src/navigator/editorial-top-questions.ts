@@ -1,5 +1,6 @@
 import curated from "./questrade-editorial-top-questions.json";
 import simpliiCurated from "./simplii-editorial-top-questions.json";
+import opentableCurated from "./opentable-editorial-top-questions.json";
 import type { InterviewProfileKey } from "./profile-content-eligibility";
 import type { InterviewRound } from "./types";
 
@@ -17,12 +18,18 @@ export const EDITORIAL_TOP_QUESTIONS_BY_ROUND: Record<InterviewRound, EditorialT
 export const SIMPLII_EDITORIAL_TOP_QUESTIONS_BY_ROUND: Record<InterviewRound, EditorialTopQuestion[]> =
   simpliiCurated as Record<InterviewRound, EditorialTopQuestion[]>;
 
+export const OPENTABLE_EDITORIAL_TOP_QUESTIONS_BY_ROUND: Record<InterviewRound, EditorialTopQuestion[]> =
+  opentableCurated as Record<InterviewRound, EditorialTopQuestion[]>;
+
 export function editorialTopQuestionsForProfile(
   profile: InterviewProfileKey,
   round: InterviewRound
 ): EditorialTopQuestion[] {
   if (profile === "simplii") {
     return SIMPLII_EDITORIAL_TOP_QUESTIONS_BY_ROUND[round] ?? [];
+  }
+  if (profile === "opentable") {
+    return OPENTABLE_EDITORIAL_TOP_QUESTIONS_BY_ROUND[round] ?? [];
   }
   return EDITORIAL_TOP_QUESTIONS_BY_ROUND[round] ?? [];
 }
@@ -50,6 +57,9 @@ export function editorialTopQuestionLimit(
 ): number {
   if (profile === "simplii") {
     return SIMPLII_EDITORIAL_TOP_QUESTIONS_BY_ROUND[round]?.length ?? 0;
+  }
+  if (profile === "opentable") {
+    return OPENTABLE_EDITORIAL_TOP_QUESTIONS_BY_ROUND[round]?.length ?? 0;
   }
   return EDITORIAL_TOP_QUESTIONS_BY_ROUND[round]?.length ?? 0;
 }

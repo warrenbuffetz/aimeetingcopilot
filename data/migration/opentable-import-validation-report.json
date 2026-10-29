@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-29T16:53:41.414Z",
+  "importPath": "/Users/johnlee/Documents/Cursor/ai meeting copilot/imports/opentable_final_qa.json",
+  "recordCount": 19,
+  "sourceModuleRecordCount": 19,
+  "verbatimPreserved": true,
+  "mismatches": [],
+  "approvedImportKeys": [
+    "opentable-rec-001",
+    "opentable-rec-002",
+    "opentable-rec-003",
+    "opentable-rec-004",
+    "opentable-rec-005",
+    "opentable-rec-006",
+    "opentable-rec-007",
+    "opentable-rec-008",
+    "opentable-rec-009",
+    "opentable-rec-010",
+    "opentable-rec-011",
+    "opentable-rec-012",
+    "opentable-rec-013",
+    "opentable-rec-014",
+    "opentable-rec-015",
+    "opentable-rec-016",
+    "opentable-rec-017",
+    "opentable-rec-018",
+    "opentable-rec-019"
+  ]
+}

@@ -211,7 +211,7 @@
         "notes": { "type": "string" },
         "profileExclusive": {
           "type": "string",
-          "enum": ["questrade", "simplii"],
+          "enum": ["questrade", "simplii", "opentable"],
           "description": "Job-specific row; only shown for that interview profile."
         },
         "employerClosing": {
@@ -219,7 +219,8 @@
           "additionalProperties": false,
           "properties": {
             "questrade": { "type": "string" },
-            "simplii": { "type": "string" }
+            "simplii": { "type": "string" },
+            "opentable": { "type": "string" }
           },
           "description": "Per-employer closing for shared answer bodies; use {{EMPLOYER_CLOSE}} in answer to substitute."
         }

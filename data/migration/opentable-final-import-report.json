@@ -1,0 +1,140 @@
+{
+  "at": "2026-10-29T16:54:58.118Z",
+  "mode": "apply",
+  "inputPath": "/Users/johnlee/Documents/Cursor/ai meeting copilot/imports/opentable_final_qa.json",
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "actions": {
+    "insert": 0,
+    "update": 19,
+    "skipped": 0
+  },
+  "relationshipIssues": [],
+  "semanticDuplicates": [
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about yourself",
+      "externalId": "opentable-rec-001",
+      "existingId": "5d6f65d0-a3b7-41d0-b94c-cbf02e5a3990"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why opentable",
+      "externalId": "opentable-rec-002",
+      "existingId": "c2dfa0a3-2bbd-4d67-b6ab-c6300082abc5"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why this particular senior product manager role",
+      "externalId": "opentable-rec-003",
+      "existingId": "bbb9714f-b63f-4228-a4b7-98baa334671c"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "your background is primarily financial services and retail why move into hospitality",
+      "externalId": "opentable-rec-004",
+      "existingId": "caa232da-e233-4e72-b092-092ee9e92433"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a 0 to 1 product you've launched",
+      "externalId": "opentable-rec-005",
+      "existingId": "376ccd14-34ed-42c2-9b1a-e52442d59492"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me more about what you're doing at arc'teryx",
+      "externalId": "opentable-rec-006",
+      "existingId": "b7beb578-2de3-44da-b7ba-91f096670aa7"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me about a time you improved a commercial or revenue outcome",
+      "externalId": "opentable-rec-007",
+      "existingId": "056f1aeb-df99-4b70-932b-1883755c5929"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "have you built and shipped ai ml powered products",
+      "externalId": "opentable-rec-008",
+      "existingId": "636b059f-bbd6-4b06-a86e-7b67386a0379"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how are you using ai in your day to day product work",
+      "externalId": "opentable-rec-009",
+      "existingId": "3754e980-e9a5-43ff-9880-515d652bd720"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you approach identifying an ai opportunity that improves restaurant revenue",
+      "externalId": "opentable-rec-010",
+      "existingId": "f8b83485-802c-4ff3-be0c-71d79293f647"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how would you measure success for a restaurant revenue optimization product",
+      "externalId": "opentable-rec-011",
+      "existingId": "91483d3b-e462-4c5e-b15e-5f4a2cac8b5a"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how comfortable are you working with engineering data science and technical teams",
+      "externalId": "opentable-rec-012",
+      "existingId": "a38e9a85-a5f9-43d4-9902-e13924ca501b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you move quickly when building something new",
+      "externalId": "opentable-rec-013",
+      "existingId": "a9b473c7-5424-436e-80d0-ab7450122115"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "how do you handle conflicting executive or stakeholder priorities",
+      "externalId": "opentable-rec-014",
+      "existingId": "e8e530c4-0687-4b9a-b699-745dfafeb19c"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "have you worked with two sided marketplaces",
+      "externalId": "opentable-rec-015",
+      "existingId": "90f9d0ff-772b-40b1-a52c-a39156644212"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "why are you looking for a new opportunity now",
+      "externalId": "opentable-rec-016",
+      "existingId": "57d6c145-e2fe-480e-bb9f-6565517a1a5f"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "what are your compensation expectations",
+      "externalId": "opentable-rec-017",
+      "existingId": "37c79188-f6ad-4e6a-8176-9e8fb663278b"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "are you comfortable with the hybrid model and when could you start",
+      "externalId": "opentable-rec-018",
+      "existingId": "6389c910-c0f2-4b75-8d8c-d43759c03d1e"
+    },
+    {
+      "type": "duplicate_vs_existing",
+      "normalizedQuestion": "tell me more about one of the ai applications you've built",
+      "externalId": "opentable-rec-019",
+      "existingId": "37b7a52f-75de-4743-9e27-ac907e089f44"
+    }
+  ],
+  "questradeIntegrity": {
+    "unchanged": true,
+    "hash": "8c8808f7a901c37edd032f64ba216f92164d1496320cd9f6b0c394b0329379ee"
+  },
+  "simpliiIntegrity": {
+    "unchanged": true,
+    "hash": "97aad59832676a501b2b0b1e2fb40d8e4b6f78c7aa004bacdea5f20d40c12014"
+  }
+}

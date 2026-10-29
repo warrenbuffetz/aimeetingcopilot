@@ -65,6 +65,33 @@ const SIMPLII_PANEL_TOPIC_BOOSTS: { pattern: RegExp; weight: number; label: stri
   { pattern: /scope|cut scope|defer/i, weight: 8, label: "Prioritization trade-off" },
 ];
 
+const OPENTABLE_RECRUITER_TOPIC_BOOSTS: { pattern: RegExp; weight: number; label: string }[] = [
+  { pattern: /tell me about yourself/i, weight: 12, label: "Introduction" },
+  { pattern: /why opentable|why this (particular )?senior product manager role/i, weight: 11, label: "Why OpenTable" },
+  { pattern: /ai\/ml|machine learning|shipped ai/i, weight: 10, label: "AI credibility" },
+  { pattern: /hospitality|restaurant|financial services and retail/i, weight: 9, label: "Industry pivot" },
+  { pattern: /0-to-1|zero-to-one|arc'teryx|membership/i, weight: 8, label: "Current work" },
+  { pattern: /compensation|salary|hybrid|start date|notice/i, weight: 6, label: "Logistics" },
+];
+
+const OPENTABLE_HM_TOPIC_BOOSTS: { pattern: RegExp; weight: number; label: string }[] = [
+  { pattern: /ai\/ml|machine learning|model|llm|embedding|semantic/i, weight: 12, label: "AI/ML depth" },
+  { pattern: /restaurant revenue|demand forecast|yield|pricing|capacity|covers|table utilization/i, weight: 11, label: "Revenue optimization" },
+  { pattern: /incremental|attribution|experiment|metric/i, weight: 10, label: "Measurement" },
+  { pattern: /0-to-1|prototype|iterate quickly/i, weight: 9, label: "0-to-1 execution" },
+  { pattern: /marketplace|diner|restaurant operator|two-sided/i, weight: 8, label: "Marketplace" },
+  { pattern: /stakeholder|executive|priorit/i, weight: 8, label: "Leadership" },
+  { pattern: /data science|ml engineering|technical teams/i, weight: 8, label: "Technical partnership" },
+];
+
+const OPENTABLE_PANEL_TOPIC_BOOSTS: { pattern: RegExp; weight: number; label: string }[] = [
+  { pattern: /hallucination|latency|token|cost|reliability|guardrail/i, weight: 11, label: "AI reliability & ops" },
+  { pattern: /model|evaluation|offline|online|drift|feature store/i, weight: 10, label: "ML architecture" },
+  { pattern: /experiment|a\/b|holdout|incremental revenue/i, weight: 10, label: "Experimentation" },
+  { pattern: /restaurant|covers|no-show|cancellation|seating/i, weight: 9, label: "Restaurant ops" },
+  { pattern: /pricing|promotion|discount|yield/i, weight: 9, label: "Yield & pricing" },
+];
+
 const SIMPLII_TECH_DEEP_PATTERN =
   /\b(idempoten|reconcil|settlement rail|5m\+|ledger posting|enterprise settlement events)\b/i;
 
@@ -89,13 +116,19 @@ function topicBoost(
   profile: InterviewProfileKey = "questrade"
 ): { score: number; label: string } {
   const boosts =
-    profile === "simplii" && round === "cross_functional_panel"
-      ? SIMPLII_PANEL_TOPIC_BOOSTS
-      : round === "hiring_manager"
-        ? HM_TOPIC_BOOSTS
-        : round === "cross_functional_panel"
-          ? PANEL_TOPIC_BOOSTS
-          : RECRUITER_TOPIC_BOOSTS;
+    profile === "opentable" && round === "recruiter"
+      ? OPENTABLE_RECRUITER_TOPIC_BOOSTS
+      : profile === "opentable" && round === "hiring_manager"
+        ? OPENTABLE_HM_TOPIC_BOOSTS
+        : profile === "opentable" && round === "cross_functional_panel"
+          ? OPENTABLE_PANEL_TOPIC_BOOSTS
+          : profile === "simplii" && round === "cross_functional_panel"
+            ? SIMPLII_PANEL_TOPIC_BOOSTS
+            : round === "hiring_manager"
+              ? HM_TOPIC_BOOSTS
+              : round === "cross_functional_panel"
+                ? PANEL_TOPIC_BOOSTS
+                : RECRUITER_TOPIC_BOOSTS;
   let best = 0;
   let label = "Editorial priority";
   for (const b of boosts) {
@@ -106,6 +139,7 @@ function topicBoost(
   }
   if (
     profile !== "simplii" &&
+    profile !== "opentable" &&
     importKey?.startsWith("simplii-jd-")
   ) {
     return { score: -2, label: "JD practice (lower recruiter priority)" };

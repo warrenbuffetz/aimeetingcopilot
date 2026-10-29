@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-27T19:21:34.640Z",
+  "at": "2026-10-29T16:53:58.051Z",
   "questradeIntegrity": {
     "baselineHash": "8c8808f7a901c37edd032f64ba216f92164d1496320cd9f6b0c394b0329379ee",
     "currentHash": "8c8808f7a901c37edd032f64ba216f92164d1496320cd9f6b0c394b0329379ee",
@@ -8,12 +8,12 @@
   },
   "simplii": {
     "profileId": "1aff0813-6615-4a12-bfd6-ce7603604f6b",
-    "totalRows": 355,
-    "activeRows": 352,
+    "totalRows": 374,
+    "activeRows": 371,
     "duplicateActiveQuestions": 0,
     "forbiddenTermHits": 0,
     "withCloneSourceId": 0,
-    "p0Count": 188
+    "p0Count": 194
   },
   "forbiddenHits": [],
   "duplicateSamples": [],
@@ -135,15 +135,15 @@
       "tier": "P1"
     },
     {
-      "question": "Would you optimize account openings, funded accounts or payroll adoption?",
-      "tier": "P1"
-    },
-    {
       "question": "Give me an exact definition of a monthly active banking customer.",
       "tier": "P1"
     },
     {
       "question": "Why is spend per active cardholder a risky metric?",
+      "tier": "P1"
+    },
+    {
+      "question": "Would you optimize account openings, funded accounts or payroll adoption?",
       "tier": "P1"
     },
     {
@@ -163,15 +163,15 @@
       "tier": "P1"
     },
     {
-      "question": "What if Risk wants a step that cuts conversion by 20%?",
-      "tier": "P1"
-    },
-    {
       "question": "You have only a dashboard, no user research. What do you do?",
       "tier": "P1"
     },
     {
       "question": "What is reconciliation, and why does a PM need to understand it?",
+      "tier": "P1"
+    },
+    {
+      "question": "What if Risk wants a step that cuts conversion by 20%?",
       "tier": "P1"
     },
     {
@@ -191,12 +191,12 @@
       "tier": "P1"
     },
     {
-      "question": "How do pending and posted card transactions differ?",
-      "tier": "P1"
-    },
-    {
       "question": "Why use Interac e-Transfer rather than EFT for cashback withdrawals?",
       "tier": "P0"
+    },
+    {
+      "question": "How do pending and posted card transactions differ?",
+      "tier": "P1"
     },
     {
       "question": "Did your UX redesign cause approvals in under three minutes?",
@@ -243,10 +243,6 @@
       "tier": "P0"
     },
     {
-      "question": "Tell me about yourself.",
-      "tier": "P0"
-    },
-    {
       "question": "What did you cut from the membership MVP, and how did you defend those trade-offs?",
       "tier": "P0"
     },
@@ -279,11 +275,11 @@
       "tier": "P1"
     },
     {
-      "question": "What assumptions in the $5.2 million investment case were most sensitive?",
+      "question": "What would the customer see while a cashback payout is pending or being investigated?",
       "tier": "P1"
     },
     {
-      "question": "What would the customer see while a cashback payout is pending or being investigated?",
+      "question": "What assumptions in the $5.2 million investment case were most sensitive?",
       "tier": "P1"
     },
     {
@@ -351,7 +347,7 @@
       "tier": "P2"
     },
     {
-      "question": "How do you decide whether a backlog item is ready for a sprint?",
+      "question": "Tell me about yourself.",
       "tier": "P0"
     },
     {
@@ -359,11 +355,11 @@
       "tier": "P0"
     },
     {
-      "question": "How did you lead the 14-person cross-functional team at RBC?",
+      "question": "How do you decide whether a backlog item is ready for a sprint?",
       "tier": "P0"
     },
     {
-      "question": "Tell me about a time you used customer data to define a problem before proposing a solution.",
+      "question": "Walk me through a user story for a failed Interac e-Transfer or cashback withdrawal.",
       "tier": "P0"
     },
     {
@@ -379,10 +375,6 @@
       "tier": "P0"
     },
     {
-      "question": "Walk me through a user story for a failed Interac e-Transfer or cashback withdrawal.",
-      "tier": "P0"
-    },
-    {
       "question": "How would you work with Risk when a control adds friction to a customer journey?",
       "tier": "P0"
     },
@@ -395,7 +387,7 @@
       "tier": "P0"
     },
     {
-      "question": "How do you make sure acceptance criteria remain aligned to customer intent during delivery?",
+      "question": "How would you handle a growing number of complaints about missing or delayed transfers?",
       "tier": "P0"
     },
     {
@@ -403,7 +395,7 @@
       "tier": "P0"
     },
     {
-      "question": "How would you handle a growing number of complaints about missing or delayed transfers?",
+      "question": "How do you make sure acceptance criteria remain aligned to customer intent during delivery?",
       "tier": "P0"
     },
     {
@@ -435,16 +427,12 @@
       "tier": "P1"
     },
     {
-      "question": "What's the one feature you'd build first to win payroll?",
-      "tier": "P1"
+      "question": "How would you choose between building a payment service and buying one?",
+      "tier": "P2"
     },
     {
       "question": "What if payroll bonuses bring in customers who leave immediately afterward?",
       "tier": "P1"
-    },
-    {
-      "question": "How would you choose between building a payment service and buying one?",
-      "tier": "P2"
     },
     {
       "question": "How would you roll out a critical payments integration?",
@@ -455,16 +443,12 @@
       "tier": "P1"
     },
     {
-      "question": "What if the ledger balance and customer-facing balance don't match?",
-      "tier": "P1"
+      "question": "How do you keep the backlog tied to customer outcomes instead of stakeholder requests?",
+      "tier": "P0"
     },
     {
       "question": "What exactly did you change in the HBC application experience?",
       "tier": "P1"
-    },
-    {
-      "question": "How do you keep the backlog tied to customer outcomes instead of stakeholder requests?",
-      "tier": "P0"
     },
     {
       "question": "How would you decide between better rates and better switching UX?",
@@ -479,6 +463,14 @@
       "tier": "P0"
     },
     {
+      "question": "Tell me about a time you used customer data to define a problem before proposing a solution.",
+      "tier": "P0"
+    },
+    {
+      "question": "What if leadership wants to ship five banking features at once?",
+      "tier": "P1"
+    },
+    {
       "question": "Is a $100 million increase in deposits automatically a win?",
       "tier": "P2"
     },
@@ -487,7 +479,19 @@
       "tier": "P1"
     },
     {
+      "question": "What's the one feature you'd build first to win payroll?",
+      "tier": "P1"
+    },
+    {
+      "question": "Tell me about a time you influenced teams that did not report to you.",
+      "tier": "P0"
+    },
+    {
       "question": "What if someone sets up a direct deposit with Simplii once and then stops using the account?",
+      "tier": "P1"
+    },
+    {
+      "question": "What if the ledger balance and customer-facing balance don't match?",
       "tier": "P1"
     },
     {
@@ -507,11 +511,11 @@
       "tier": "P0"
     },
     {
-      "question": "What is the most important product detail you've had to insist on?",
+      "question": "What does 100,000 ShopPlus downloads tell you, and what doesn't it tell you?",
       "tier": "P0"
     },
     {
-      "question": "What does 100,000 ShopPlus downloads tell you, and what doesn't it tell you?",
+      "question": "What is the most important product detail you've had to insist on?",
       "tier": "P0"
     },
     {
@@ -524,10 +528,6 @@
     },
     {
       "question": "What did you personally own in Avion Select's onboarding and identity experience?",
-      "tier": "P0"
-    },
-    {
-      "question": "Tell me about a time you influenced teams that did not report to you.",
       "tier": "P0"
     },
     {
@@ -567,16 +567,16 @@
       "tier": "P2"
     },
     {
+      "question": "How do you handle an engineer who strongly disagrees with your roadmap?",
+      "tier": "P1"
+    },
+    {
       "question": "Tell me about your CRM and customer communications work at Arc'teryx.",
       "tier": "P0"
     },
     {
       "question": "How did you measure the 25% reduction in deployment failures?",
       "tier": "P0"
-    },
-    {
-      "question": "How do you handle an engineer who strongly disagrees with your roadmap?",
-      "tier": "P1"
     },
     {
       "question": "Tell me more about your time at Arc'teryx.",
@@ -627,6 +627,14 @@
       "tier": "P1"
     },
     {
+      "question": "What's the difference between managing people and leading a product team?",
+      "tier": "P0"
+    },
+    {
+      "question": "Why pursue a Senior PM role if you've already managed people?",
+      "tier": "P0"
+    },
+    {
       "question": "Why mention 500K+ cardholders if you didn't control the credit book?",
       "tier": "P2"
     },
@@ -643,8 +651,28 @@
       "tier": "P0"
     },
     {
+      "question": "Tell me about your people-management experience.",
+      "tier": "P0"
+    },
+    {
+      "question": "How did you lead a 15-person RBC squad with no direct reports?",
+      "tier": "P0"
+    },
+    {
+      "question": "How do you coach and develop direct reports?",
+      "tier": "P0"
+    },
+    {
       "question": "What's one product opinion you hold strongly that others might disagree with?",
       "tier": "P1"
+    },
+    {
+      "question": "What's your management philosophy?",
+      "tier": "P0"
+    },
+    {
+      "question": "How would you manage an underperforming employee?",
+      "tier": "P0"
     },
     {
       "question": "What did you personally decide or deprioritize?",
@@ -684,10 +712,6 @@
     },
     {
       "question": "Why did HBC modeled LTV rise 10%, and how certain are you?",
-      "tier": "P1"
-    },
-    {
-      "question": "What if leadership wants to ship five banking features at once?",
       "tier": "P1"
     },
     {
