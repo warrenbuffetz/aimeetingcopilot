@@ -28,6 +28,12 @@ import {
   type JazContentEdits,
 } from "@/lib/questrade-jaz/edits";
 import {
+  BRISTOL_FOCUSED_HREF,
+  BRISTOL_FOCUSED_PROFILE_ID,
+  BRISTOL_FOCUSED_PROFILE_NAME,
+  isBristolFocusedProfileName,
+} from "@/lib/bristol-focused/profile";
+import {
   JAZ_FOCUSED_PROFILE_ID,
   JAZ_FOCUSED_PROFILE_NAME,
   isJazFocusedProfileName,
@@ -231,7 +237,11 @@ export function JazFocusedNavigator() {
         const supabase = createClient();
         const { data } = await supabase.from("interview_profiles").select("id, name");
         if (cancelled) return;
-        setOtherProfiles((data ?? []).filter((profile) => !isJazFocusedProfileName(profile.name)));
+        setOtherProfiles(
+          (data ?? []).filter(
+            (profile) => !isJazFocusedProfileName(profile.name) && !isBristolFocusedProfileName(profile.name)
+          )
+        );
       } catch {
         if (!cancelled) setOtherProfiles([]);
       }
@@ -424,6 +434,7 @@ export function JazFocusedNavigator() {
 
   function leaveProfile(profileId: string) {
     if (profileId === "all") router.push("/live");
+    else if (profileId === BRISTOL_FOCUSED_PROFILE_ID) router.push(BRISTOL_FOCUSED_HREF);
     else router.push(`/live?profile=${encodeURIComponent(profileId)}`);
   }
 
@@ -514,13 +525,17 @@ export function JazFocusedNavigator() {
     </div>
   );
 
+  function navListLabel(question: JazQuestion): string {
+    return question.title?.trim() || question.navigationLabel;
+  }
+
   function navButton(question: JazQuestion, dense = false) {
     const selected = screen === "answer" && question.id === active.id;
     return (
       <button
         key={question.id}
         type="button"
-        title={question.navigationLabel}
+        title={navListLabel(question)}
         aria-current={selected ? "true" : undefined}
         className={cn(
           "flex w-full items-start gap-2 rounded-md px-2 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-300",
@@ -534,7 +549,7 @@ export function JazFocusedNavigator() {
             {question.priority === 1 ? "P1" : "P2"}
           </span>
         )}
-        <span className="text-[13px] leading-5">{question.shortLabel}</span>
+        <span className="min-w-0 flex-1 text-[13px] leading-5 break-words">{navListLabel(question)}</span>
       </button>
     );
   }
@@ -634,7 +649,7 @@ export function JazFocusedNavigator() {
                     }
                   >
                     {open ? <ChevronDown className="h-3.5 w-3.5 shrink-0" /> : <ChevronRight className="h-3.5 w-3.5 shrink-0" />}
-                    <span className="flex-1">{category.label}</span>
+                    <span className="min-w-0 flex-1 break-words">{category.label}</span>
                     <span className="text-[11px] text-muted-foreground">{items.length}</span>
                   </button>
                   {open && <div className="ml-3">{items.map((question) => navButton(question))}</div>}
@@ -657,7 +672,7 @@ export function JazFocusedNavigator() {
                     }
                   >
                     {open ? <ChevronDown className="h-3.5 w-3.5 shrink-0" /> : <ChevronRight className="h-3.5 w-3.5 shrink-0" />}
-                    <span className="flex-1">{experience.label}</span>
+                    <span className="min-w-0 flex-1 break-words">{experience.label}</span>
                     <span className="text-[11px] text-muted-foreground">{items.length}</span>
                   </button>
                   {open && <div className="ml-3">{items.map((question) => navButton(question))}</div>}
@@ -1091,6 +1106,7 @@ export function JazFocusedNavigator() {
             </SelectTrigger>
             <SelectContent>
               <SelectItem value={JAZ_FOCUSED_PROFILE_ID}>{JAZ_FOCUSED_PROFILE_NAME}</SelectItem>
+              <SelectItem value={BRISTOL_FOCUSED_PROFILE_ID}>{BRISTOL_FOCUSED_PROFILE_NAME}</SelectItem>
               <SelectItem value="all">No profile</SelectItem>
               {otherProfiles.map((profile) => (
                 <SelectItem key={profile.id} value={profile.id}>

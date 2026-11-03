@@ -12,12 +12,17 @@ import { Textarea } from "@/components/ui/textarea";
 import { isSupabaseConfigured } from "@/lib/env";
 import { createClient } from "@/lib/supabase/client";
 import {
+  BRISTOL_HM_MOST_LIKELY_IDS,
+  BRISTOL_HM_NEXT_MOST_LIKELY_IDS,
+  bristolQuestionsForHmIds,
+  defaultBristolActiveCuratedKey,
+} from "@/lib/bristol-focused/hm-ranking";
+import {
   BRISTOL_CATEGORIES,
   BRISTOL_EXPERIENCES,
   bristolAskQuestions,
   bristolBattlecard,
   bristolCategoryLabel,
-  bristolPinnedQuestions,
   bristolQuestions,
   type BristolQuestion,
 } from "@/lib/bristol-focused/dataset";
@@ -35,6 +40,12 @@ import {
   BRISTOL_FOCUSED_PROFILE_NAME,
   isBristolFocusedProfileName,
 } from "@/lib/bristol-focused/profile";
+import {
+  JAZ_FOCUSED_HREF,
+  JAZ_FOCUSED_PROFILE_ID,
+  JAZ_FOCUSED_PROFILE_NAME,
+} from "@/lib/questrade-jaz/profile";
+import { sortQuestionsForTopicsNav } from "@/lib/bristol-focused/topic-navigation";
 import { relatedQuestions } from "@/lib/bristol-focused/related";
 import { searchAsksForBristol, searchBristolQuestions, type BristolSearchHit } from "@/lib/bristol-focused/search";
 import { mapIdsForQuestionId } from "@/lib/bristol-focused/map-links";
@@ -87,6 +98,13 @@ type Screen = "answer" | "ask";
 type Pane = "nav" | "answer";
 type ViewMode = "answers" | "maps" | "battlecard";
 
+const NEXT_MOST_KEY = "ic-bristol-focused-next-most-open";
+
+function defaultBristolActiveId(): string {
+  const key = defaultBristolActiveCuratedKey();
+  return bristolQuestions.find((q) => q.curatedKey === key)?.id ?? bristolQuestions[0]!.id;
+}
+
 function readList(key: string): string[] {
   try {
     const parsed = JSON.parse(sessionStorage.getItem(key) ?? "[]");
@@ -120,10 +138,11 @@ export function BristolFocusedNavigator() {
 
   const [edits, setEdits] = useState<BristolContentEdits>({ answers: {}, followUps: {} });
   const [ready, setReady] = useState(false);
-  const [activeId, setActiveId] = useState(bristolPinnedQuestions[0]?.id ?? bristolQuestions[0]!.id);
+  const [activeId, setActiveId] = useState(defaultBristolActiveId);
   const [followId, setFollowId] = useState<string | null>(null);
   const [history, setHistory] = useState<string[]>([]);
   const [recent, setRecent] = useState<string[]>([]);
+  const [nextMostOpen, setNextMostOpen] = useState(false);
   const [expandedTopics, setExpandedTopics] = useState<string[]>([]);
   const [expandedGroups, setExpandedGroups] = useState<string[]>([]);
   const [navMode, setNavMode] = useState<NavMode>("topics");
@@ -159,6 +178,14 @@ export function BristolFocusedNavigator() {
   });
 
   const questions = useMemo(() => applyBristolEdits(bristolQuestions, edits), [edits]);
+  const mostLikelyQuestions = useMemo(
+    () => bristolQuestionsForHmIds(questions, BRISTOL_HM_MOST_LIKELY_IDS),
+    [questions]
+  );
+  const nextMostLikelyQuestions = useMemo(
+    () => bristolQuestionsForHmIds(questions, BRISTOL_HM_NEXT_MOST_LIKELY_IDS),
+    [questions]
+  );
   const active = questions.find((question) => question.id === activeId) ?? questions[0]!;
   const baseActive = bristolQuestions.find((question) => question.id === active.id) ?? active;
   const edited = questionHasEdits(baseActive, edits);
@@ -195,7 +222,7 @@ export function BristolFocusedNavigator() {
     const initialId =
       savedActive && bristolQuestions.some((question) => question.id === savedActive)
         ? savedActive
-        : bristolPinnedQuestions[0]?.id ?? bristolQuestions[0]!.id;
+        : defaultBristolActiveId();
     const initialQuestion = bristolQuestions.find((question) => question.id === initialId) ?? bristolQuestions[0]!;
     setActiveId(initialId);
     if (savedFollow && initialQuestion.followUps.some((follow) => follow.id === savedFollow)) setFollowId(savedFollow);
@@ -208,6 +235,8 @@ export function BristolFocusedNavigator() {
     if (savedMapId && bristolStoryMaps.some((story) => story.id === savedMapId)) setSelectedMapId(savedMapId);
     setMapQuery(savedMapQuery);
     setMapFromAnswer(savedMapFromAnswer);
+    const savedNextMost = sessionStorage.getItem(NEXT_MOST_KEY);
+    if (savedNextMost === "1") setNextMostOpen(true);
     setReady(true);
   }, []);
 
@@ -224,7 +253,8 @@ export function BristolFocusedNavigator() {
     sessionStorage.setItem(MAP_ID_KEY, selectedMapId);
     sessionStorage.setItem(MAP_SEARCH_KEY, mapQuery);
     sessionStorage.setItem(MAP_FROM_ANSWER_KEY, mapFromAnswer ? "1" : "0");
-  }, [ready, activeId, followId, recent, expandedTopics, expandedGroups, navMode, query, viewMode, selectedMapId, mapQuery, mapFromAnswer]);
+    sessionStorage.setItem(NEXT_MOST_KEY, nextMostOpen ? "1" : "0");
+  }, [ready, activeId, followId, recent, expandedTopics, expandedGroups, navMode, query, viewMode, selectedMapId, mapQuery, mapFromAnswer, nextMostOpen]);
 
   useEffect(() => {
     if (!isSupabaseConfigured()) return;
@@ -433,6 +463,7 @@ export function BristolFocusedNavigator() {
 
   function leaveProfile(profileId: string) {
     if (profileId === "all") router.push("/live");
+    else if (profileId === JAZ_FOCUSED_PROFILE_ID) router.push(JAZ_FOCUSED_HREF);
     else router.push(`/live?profile=${encodeURIComponent(profileId)}`);
   }
 
@@ -523,13 +554,27 @@ export function BristolFocusedNavigator() {
     </div>
   );
 
-  function navButton(question: BristolQuestion, dense = false) {
+  function navListLabel(question: BristolQuestion): string {
+    return question.title?.trim() || question.navigationLabel;
+  }
+
+  function compactNavLabel(question: BristolQuestion): string {
+    return question.navCompactLabel ?? question.shortLabel;
+  }
+
+  function navButton(
+    question: BristolQuestion,
+    dense = false,
+    opts: { concise?: boolean; sectionNav?: boolean } = {}
+  ) {
+    const { concise = false, sectionNav = false } = opts;
     const selected = screen === "answer" && question.id === active.id;
+    const label = concise || sectionNav ? compactNavLabel(question) : navListLabel(question);
     return (
       <button
         key={question.id}
         type="button"
-        title={question.navigationLabel}
+        title={navListLabel(question)}
         aria-current={selected ? "true" : undefined}
         className={cn(
           "flex w-full items-start gap-2 rounded-md px-2 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300",
@@ -538,12 +583,24 @@ export function BristolFocusedNavigator() {
         )}
         onClick={() => openQuestion(question.id, null)}
       >
-        {!dense && (
+        {!dense && sectionNav && question.sectionTier ? (
+          <span
+            className={cn(
+              "mt-0.5 w-6 shrink-0 text-[10px] font-semibold",
+              question.sectionTier === "REF" ? "text-muted-foreground" : "text-amber-800"
+            )}
+          >
+            {question.sectionTier}
+          </span>
+        ) : null}
+        {!dense && !sectionNav && (
           <span className="mt-0.5 w-6 shrink-0 text-[10px] font-semibold text-amber-700">
             {question.priority === 0 ? "P0" : question.priority === 1 ? "P1" : "P2"}
           </span>
         )}
-        <span className="text-[13px] leading-5">{question.shortLabel}</span>
+        <span className={cn("min-w-0 flex-1 text-[13px] leading-5", concise || sectionNav ? "" : "break-words")}>
+          {label}
+        </span>
       </button>
     );
   }
@@ -553,14 +610,6 @@ export function BristolFocusedNavigator() {
       <div className="hidden shrink-0 border-b border-amber-100 p-3 md:block">{searchField(desktopSearchRef, "bristol-search-desktop")}</div>
       <div className="min-h-0 flex-1 overflow-auto px-2 py-2">
         <p className="px-2 pt-1 pb-1 text-[11px] font-semibold tracking-wide text-amber-800 uppercase">Interview map</p>
-        <button
-          type="button"
-          className="flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-sm hover:bg-white/80"
-          onClick={() => document.getElementById("bristol-pinned")?.scrollIntoView({ block: "nearest" })}
-        >
-          <Star className="h-3.5 w-3.5 text-amber-700" />
-          Pinned ({bristolPinnedQuestions.length})
-        </button>
         <button
           type="button"
           className="flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-sm hover:bg-white/80"
@@ -575,9 +624,29 @@ export function BristolFocusedNavigator() {
             {recentQuestions.map((question) => navButton(question, true))}
           </div>
         )}
-        <div id="bristol-pinned" className="mt-2 mb-3">
-          <p className="px-2 pb-1 text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">Most likely</p>
-          {bristolPinnedQuestions.map((question) => navButton(questions.find((item) => item.id === question.id) ?? question, true))}
+        <div id="bristol-most-likely" className="mt-2 mb-2">
+          <p className="px-2 pb-1 text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">
+            Most likely — Top 10
+          </p>
+          {mostLikelyQuestions.map((question) => navButton(question, true, { concise: true }))}
+        </div>
+        <div className="mb-3">
+          <button
+            type="button"
+            className="flex min-h-9 w-full items-center gap-1 rounded-md px-1.5 text-left text-[13px] font-medium hover:bg-white/80"
+            aria-expanded={nextMostOpen}
+            onClick={() => setNextMostOpen((open) => !open)}
+          >
+            {nextMostOpen ? (
+              <ChevronDown className="h-3.5 w-3.5 shrink-0" />
+            ) : (
+              <ChevronRight className="h-3.5 w-3.5 shrink-0" />
+            )}
+            <span className="min-w-0 flex-1 break-words">Next most likely ({nextMostLikelyQuestions.length})</span>
+          </button>
+          {nextMostOpen && (
+            <div className="ml-3 mt-0.5">{nextMostLikelyQuestions.map((question) => navButton(question, true, { concise: true }))}</div>
+          )}
         </div>
 
         <div className="mb-2 flex flex-wrap items-center gap-1 px-1">
@@ -628,7 +697,9 @@ export function BristolFocusedNavigator() {
 
         {navMode === "topics"
           ? BRISTOL_CATEGORIES.map((category) => {
-              const items = questions.filter((question) => question.category === category.id);
+              const items = sortQuestionsForTopicsNav(
+                questions.filter((question) => question.category === category.id)
+              );
               const open = expandedTopics.includes(category.id);
               return (
                 <div key={category.id} className="mb-1">
@@ -643,15 +714,17 @@ export function BristolFocusedNavigator() {
                     }
                   >
                     {open ? <ChevronDown className="h-3.5 w-3.5 shrink-0" /> : <ChevronRight className="h-3.5 w-3.5 shrink-0" />}
-                    <span className="flex-1">{category.label}</span>
+                    <span className="min-w-0 flex-1 break-words">{category.label}</span>
                     <span className="text-[11px] text-muted-foreground">{items.length}</span>
                   </button>
-                  {open && <div className="ml-3">{items.map((question) => navButton(question))}</div>}
+                  {open && <div className="ml-3">{items.map((question) => navButton(question, false, { sectionNav: true }))}</div>}
                 </div>
               );
             })
           : BRISTOL_EXPERIENCES.map((experience) => {
-              const items = questions.filter((question) => experience.test(question.projectTags));
+              const items = sortQuestionsForTopicsNav(
+                questions.filter((question) => experience.test(question.projectTags))
+              );
               const open = expandedGroups.includes(experience.id);
               return (
                 <div key={experience.id} className="mb-1">
@@ -666,10 +739,10 @@ export function BristolFocusedNavigator() {
                     }
                   >
                     {open ? <ChevronDown className="h-3.5 w-3.5 shrink-0" /> : <ChevronRight className="h-3.5 w-3.5 shrink-0" />}
-                    <span className="flex-1">{experience.label}</span>
+                    <span className="min-w-0 flex-1 break-words">{experience.label}</span>
                     <span className="text-[11px] text-muted-foreground">{items.length}</span>
                   </button>
-                  {open && <div className="ml-3">{items.map((question) => navButton(question))}</div>}
+                  {open && <div className="ml-3">{items.map((question) => navButton(question, false, { sectionNav: true }))}</div>}
                 </div>
               );
             })}
@@ -1090,10 +1163,10 @@ export function BristolFocusedNavigator() {
             className="hidden h-8 bg-white/10 text-white hover:bg-white/15 sm:inline-flex"
             onClick={() => {
               setPane("nav");
-              document.getElementById("bristol-pinned")?.scrollIntoView({ block: "nearest" });
+              document.getElementById("bristol-most-likely")?.scrollIntoView({ block: "nearest" });
             }}
           >
-            Pinned ({bristolPinnedQuestions.length})
+            Most likely ({mostLikelyQuestions.length})
           </Button>
           <Button
             type="button"
@@ -1131,6 +1204,7 @@ export function BristolFocusedNavigator() {
             </SelectTrigger>
             <SelectContent>
               <SelectItem value={BRISTOL_FOCUSED_PROFILE_ID}>{BRISTOL_FOCUSED_PROFILE_NAME}</SelectItem>
+              <SelectItem value={JAZ_FOCUSED_PROFILE_ID}>{JAZ_FOCUSED_PROFILE_NAME}</SelectItem>
               <SelectItem value="all">No profile</SelectItem>
               {otherProfiles.map((profile) => (
                 <SelectItem key={profile.id} value={profile.id}>

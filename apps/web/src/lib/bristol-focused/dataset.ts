@@ -1,5 +1,8 @@
 import raw from "@/data/bristol-focused-curated.json";
 import { canonicalFromOpenTableId, canonicalFromQuestradeId } from "./canonical";
+import { applyTopicNavigationOverlay } from "./topic-navigation";
+
+export type BristolSectionTier = "P1" | "P2" | "REF";
 
 export const BRISTOL_NEEDS_GPT_MARKER = "needs_gpt_draft";
 
@@ -78,6 +81,10 @@ export type BristolQuestion = {
   title: string;
   navigationLabel: string;
   shortLabel: string;
+  /** Compact Topics/Experiences sidebar label from topic navigation overlay. */
+  navCompactLabel?: string;
+  sectionTier?: BristolSectionTier;
+  sectionOrder?: number;
   priority: number;
   answer: string;
   shortAnswer: string;
@@ -346,7 +353,9 @@ export const bristolWeaknessTracker: BristolWeaknessRow[] =
 export const bristolP0Prediction = (raw as { p0Prediction?: { disclaimer: string; p0: { id: string; area: string; reason: string }[] } })
   .p0Prediction;
 
-export const bristolQuestions: BristolQuestion[] = asQuestions(rawQuestions, frameworkHint);
+export const bristolQuestions: BristolQuestion[] = applyTopicNavigationOverlay(
+  asQuestions(rawQuestions, frameworkHint)
+);
 
 export const bristolAskQuestions: BristolAskQuestion[] = rawAsk.map((item, index) => {
   const tierRaw = String(item.tier ?? "");

@@ -115,7 +115,8 @@ export default function ProfilesPage() {
         </CardHeader>
         <CardContent className="space-y-3 text-sm text-muted-foreground">
           <p>
-            Focused navigator for Bristol Lewis (Restaurant Product). Reuses shared canonical answers and OpenTable import rows; strategic slots stay unpopulated until you author them.
+            Focused navigator for Bristol Lewis (45-minute hiring manager). Sidebar Most/Next lists follow{" "}
+            <code className="text-xs">bristol-hm-ranking.json</code>; all 111 answers remain under Topics.
           </p>
           <Link href={BRISTOL_FOCUSED_HREF} className={buttonVariants({ variant: "secondary" })}>
             Open live navigator

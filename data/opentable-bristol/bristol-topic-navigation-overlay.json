@@ -1,0 +1,1616 @@
+{
+  "profile": "OpenTable — Bristol (Focused)",
+  "profileSlug": "bristol",
+  "version": "section-nav-v1",
+  "interviewStage": "45-minute hiring-manager call",
+  "basedOn": {
+    "curatedQuestionCount": 111,
+    "priorHMRanking": "Bristol_HM_Ranking_Patch_v2/bristol-hm-ranking.json"
+  },
+  "purpose": "Non-destructive Topics sidebar ranking, compact navigation labels, and additive keyword aliases. Does not change answers, original priority, or top quick access lists.",
+  "rules": {
+    "sectionTierMeaning": {
+      "P1": "Higher relevance within this section for Bristol HM",
+      "P2": "Secondary or useful follow-up within this section",
+      "REF": "Reference/cheat sheet, not phrased as an interview question"
+    },
+    "scenariosCaveat": "P1 within Live Product Scenarios ranks rehearsal importance, not probability that the exact case will be asked.",
+    "display": "Show P1 then P2 then REF within each existing Topics category, with shortLabel as clickable name; display full original question on open and on hover if useful.",
+    "search": "Search should match fullQuestion, shortLabel, existing aliases, searchAliasesAdd, answer content, and follow-ups. Deduplicate by questionId; give exact shortLabel/alias matches higher relevance.",
+    "preserve": "Do not overwrite curatedKey, title, answer, followUps, evidenceStatus, canonicalAnswerId, opentableRecordId, priority, suggestedPinned, Categories, Experiences, Experience Maps, Battlecard, Most Likely or Next Most Likely."
+  },
+  "sectionOrder": [
+    "Career & Motivation",
+    "Industry POV & Strategic Judgment",
+    "Live Product Scenarios",
+    "Restaurant Product & Marketplace Strategy",
+    "AI/ML & Revenue Optimization",
+    "Restaurant Economics, Workflows & Metrics",
+    "Product Craft, Discovery & Experimentation",
+    "Experience Stories",
+    "Leadership & Judgment"
+  ],
+  "quickAccessListsRemainExactly": [
+    "B01",
+    "B43",
+    "B40",
+    "B53",
+    "B06",
+    "B02",
+    "B09",
+    "B17",
+    "B49",
+    "B61"
+  ],
+  "nextMostLikelyRemainsExactly": [
+    "B03",
+    "B51",
+    "B52",
+    "B62",
+    "IP01",
+    "IP03",
+    "B20",
+    "B42",
+    "B18",
+    "B16",
+    "B50",
+    "B59"
+  ],
+  "records": [
+    {
+      "questionId": "B01",
+      "category": "Career & Motivation",
+      "shortLabel": "About me",
+      "sectionTier": "P1",
+      "sectionOrder": 1,
+      "searchAliasesAdd": [
+        "background",
+        "career overview",
+        "tell me about yourself"
+      ],
+      "fullQuestion": "Tell me about yourself.",
+      "topQuickAccess": "mostLikely"
+    },
+    {
+      "questionId": "B02",
+      "category": "Career & Motivation",
+      "shortLabel": "Why OpenTable",
+      "sectionTier": "P1",
+      "sectionOrder": 2,
+      "searchAliasesAdd": [
+        "motivation OpenTable",
+        "why join company",
+        "personal connection"
+      ],
+      "fullQuestion": "Why OpenTable?",
+      "topQuickAccess": "mostLikely"
+    },
+    {
+      "questionId": "B03",
+      "category": "Career & Motivation",
+      "shortLabel": "Why Restaurant Product",
+      "sectionTier": "P1",
+      "sectionOrder": 3,
+      "searchAliasesAdd": [
+        "why restaurant team",
+        "why this role",
+        "role interest"
+      ],
+      "fullQuestion": "Why are you interested in the Restaurant Product team specifically?",
+      "topQuickAccess": "nextMostLikely"
+    },
+    {
+      "questionId": "B06",
+      "category": "Career & Motivation",
+      "shortLabel": "AI/ML experience gap",
+      "sectionTier": "P1",
+      "sectionOrder": 4,
+      "searchAliasesAdd": [
+        "no production ML",
+        "shipped AI",
+        "AI qualification",
+        "ML background"
+      ],
+      "fullQuestion": "What makes your background relevant when you haven't owned a production AI/ML product end to end?",
+      "topQuickAccess": "mostLikely"
+    },
+    {
+      "questionId": "B59",
+      "category": "Career & Motivation",
+      "shortLabel": "Love about PM",
+      "sectionTier": "P1",
+      "sectionOrder": 5,
+      "searchAliasesAdd": [
+        "what energizes me",
+        "product philosophy",
+        "enjoy product"
+      ],
+      "fullQuestion": "What do you love about product management?",
+      "topQuickAccess": "nextMostLikely"
+    },
+    {
+      "questionId": "B04",
+      "category": "Career & Motivation",
+      "shortLabel": "Why looking now",
+      "sectionTier": "P2",
+      "sectionOrder": 6,
+      "searchAliasesAdd": [
+        "why change jobs",
+        "why leaving",
+        "why now"
+      ],
+      "fullQuestion": "Why are you looking for a new opportunity now?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B05",
+      "category": "Career & Motivation",
+      "shortLabel": "Why hospitality + AI",
+      "sectionTier": "P2",
+      "sectionOrder": 7,
+      "searchAliasesAdd": [
+        "why hospitality",
+        "industry transition",
+        "move to AI"
+      ],
+      "fullQuestion": "Why move into hospitality and AI/ML product management?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B60",
+      "category": "Career & Motivation",
+      "shortLabel": "Frustrates about PM",
+      "sectionTier": "P2",
+      "sectionOrder": 8,
+      "searchAliasesAdd": [
+        "PM frustrations",
+        "least favorite",
+        "product philosophy challenges"
+      ],
+      "fullQuestion": "What frustrates you about product management?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B66",
+      "category": "Career & Motivation",
+      "shortLabel": "Role scope interpretation",
+      "sectionTier": "P2",
+      "sectionOrder": 9,
+      "searchAliasesAdd": [
+        "AI FOH global scope",
+        "interpret job",
+        "role remit"
+      ],
+      "fullQuestion": "How do you interpret this role across AI revenue optimization, FOH and global expansion?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "IP01",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "Restaurant industry take",
+      "sectionTier": "P1",
+      "sectionOrder": 1,
+      "searchAliasesAdd": [
+        "industry outlook",
+        "restaurant trends",
+        "state of hospitality"
+      ],
+      "fullQuestion": "What's your take on the restaurant industry today?",
+      "topQuickAccess": "nextMostLikely"
+    },
+    {
+      "questionId": "IP02",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "Operator pain points",
+      "sectionTier": "P1",
+      "sectionOrder": 2,
+      "searchAliasesAdd": [
+        "restaurant problems",
+        "GM challenges",
+        "operator needs"
+      ],
+      "fullQuestion": "What are the biggest pain points restaurant operators face?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "IP03",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "Pain point priority",
+      "sectionTier": "P1",
+      "sectionOrder": 3,
+      "searchAliasesAdd": [
+        "which problem first",
+        "strategic prioritization",
+        "why this opportunity"
+      ],
+      "fullQuestion": "Which of those pain points would you prioritize for OpenTable, and why?",
+      "topQuickAccess": "nextMostLikely"
+    },
+    {
+      "questionId": "IP04",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "OpenTable advantage",
+      "sectionTier": "P2",
+      "sectionOrder": 4,
+      "searchAliasesAdd": [
+        "right to win",
+        "platform advantage",
+        "differentiation opportunities"
+      ],
+      "fullQuestion": "What is OpenTable particularly well positioned to solve?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "IP05",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "Product strengths / gaps",
+      "sectionTier": "P2",
+      "sectionOrder": 5,
+      "searchAliasesAdd": [
+        "opentable critique",
+        "areas to improve",
+        "current product"
+      ],
+      "fullQuestion": "Where is OpenTable's existing product strong, and where could it improve?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "IP06",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "Beyond more bookings",
+      "sectionTier": "P2",
+      "sectionOrder": 6,
+      "searchAliasesAdd": [
+        "bookings not profit",
+        "restaurant value beyond demand",
+        "operational outcome"
+      ],
+      "fullQuestion": "What important restaurant problems cannot be solved simply by generating more bookings?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "IP07",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "Where AI adds value",
+      "sectionTier": "P2",
+      "sectionOrder": 7,
+      "searchAliasesAdd": [
+        "AI economics",
+        "useful restaurant AI",
+        "predictive opportunity"
+      ],
+      "fullQuestion": "Where do you see AI genuinely improving restaurant economics?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "IP08",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "AI hype / skepticism",
+      "sectionTier": "P2",
+      "sectionOrder": 8,
+      "searchAliasesAdd": [
+        "overhyped AI",
+        "when not to use AI",
+        "tech-first ideas"
+      ],
+      "fullQuestion": "What AI use cases are overhyped or unlikely to create meaningful value?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "IP09",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "Independent vs groups",
+      "sectionTier": "P2",
+      "sectionOrder": 9,
+      "searchAliasesAdd": [
+        "small restaurant",
+        "enterprise chains",
+        "restaurant segmentation"
+      ],
+      "fullQuestion": "How would you balance small independents with larger restaurant groups?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "IP10",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "What NOT to build",
+      "sectionTier": "P2",
+      "sectionOrder": 10,
+      "searchAliasesAdd": [
+        "deprioritize product",
+        "say no to investment",
+        "tradeoffs"
+      ],
+      "fullQuestion": "What product investment would you deliberately NOT prioritize, and why?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "IP11",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "Problem vs technology",
+      "sectionTier": "P2",
+      "sectionOrder": 11,
+      "searchAliasesAdd": [
+        "AI solution looking for problem",
+        "problem discovery",
+        "value validation"
+      ],
+      "fullQuestion": "How would you distinguish a real industry problem from an attractive technology solution?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "IP12",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "Revenue incrementality",
+      "sectionTier": "P2",
+      "sectionOrder": 12,
+      "searchAliasesAdd": [
+        "attribution vs incrementality",
+        "cannibalization",
+        "organic demand"
+      ],
+      "fullQuestion": "How would you determine whether OpenTable creates incremental revenue rather than capturing existing demand?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "IP-REF",
+      "category": "Industry POV & Strategic Judgment",
+      "shortLabel": "Industry pain points",
+      "sectionTier": "REF",
+      "sectionOrder": 13,
+      "searchAliasesAdd": [
+        "industry reference",
+        "pain point ranking",
+        "restaurant outlook cheat sheet"
+      ],
+      "fullQuestion": "Industry reference — five pain points & priority ranking",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC11",
+      "category": "Live Product Scenarios",
+      "shortLabel": "Two servers call in sick",
+      "sectionTier": "P1",
+      "sectionOrder": 1,
+      "searchAliasesAdd": [
+        "staffing disruption",
+        "short staffed dinner",
+        "host stand capacity"
+      ],
+      "fullQuestion": "Two servers call in sick before dinner: live FOH intervention",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC04",
+      "category": "Live Product Scenarios",
+      "shortLabel": "Accurate AI, low adoption",
+      "sectionTier": "P1",
+      "sectionOrder": 2,
+      "searchAliasesAdd": [
+        "model works nobody uses",
+        "operator trust",
+        "recommendation adoption"
+      ],
+      "fullQuestion": "Accurate AI model, poor operator adoption",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC03",
+      "category": "Live Product Scenarios",
+      "shortLabel": "Bookings up, profit flat",
+      "sectionTier": "P1",
+      "sectionOrder": 3,
+      "searchAliasesAdd": [
+        "reservations up margin flat",
+        "profitability case",
+        "revenue not profit"
+      ],
+      "fullQuestion": "More reservations, flat profitability",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC12",
+      "category": "Live Product Scenarios",
+      "shortLabel": "Global market mismatch",
+      "sectionTier": "P1",
+      "sectionOrder": 4,
+      "searchAliasesAdd": [
+        "local competitor",
+        "reservation culture",
+        "country launch"
+      ],
+      "fullQuestion": "Global launch: reservation culture and local competitor differ",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC01",
+      "category": "Live Product Scenarios",
+      "shortLabel": "Deposits vs conversion",
+      "sectionTier": "P2",
+      "sectionOrder": 5,
+      "searchAliasesAdd": [
+        "no show deposits",
+        "booking conversion drops",
+        "deposit experiment"
+      ],
+      "fullQuestion": "Deposits cut no-shows but booking conversion drops",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC02",
+      "category": "Live Product Scenarios",
+      "shortLabel": "Turns vs experience",
+      "sectionTier": "P2",
+      "sectionOrder": 6,
+      "searchAliasesAdd": [
+        "faster turns",
+        "guests rushed",
+        "server overload"
+      ],
+      "fullQuestion": "Faster turns raise covers but hurt experience scores",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC05",
+      "category": "Live Product Scenarios",
+      "shortLabel": "Privacy blocks AI launch",
+      "sectionTier": "P2",
+      "sectionOrder": 7,
+      "searchAliasesAdd": [
+        "privacy restriction",
+        "no guest data",
+        "rescope launch"
+      ],
+      "fullQuestion": "Privacy rule removes guest-level data before launch",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC06",
+      "category": "Live Product Scenarios",
+      "shortLabel": "Partner doubts ROI",
+      "sectionTier": "P2",
+      "sectionOrder": 8,
+      "searchAliasesAdd": [
+        "attributed demand",
+        "partner skepticism",
+        "prove ROI"
+      ],
+      "fullQuestion": "Operator doubts OpenTable incrementality",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC07",
+      "category": "Live Product Scenarios",
+      "shortLabel": "AI vs immediate revenue",
+      "sectionTier": "P2",
+      "sectionOrder": 9,
+      "searchAliasesAdd": [
+        "leadership AI roadmap",
+        "revenue now",
+        "prioritization twist"
+      ],
+      "fullQuestion": "Operators want revenue now, not more AI",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC08",
+      "category": "Live Product Scenarios",
+      "shortLabel": "Diner benefit, partner loss",
+      "sectionTier": "P2",
+      "sectionOrder": 10,
+      "searchAliasesAdd": [
+        "marketplace conflict",
+        "small restaurant harm",
+        "fairness"
+      ],
+      "fullQuestion": "Marketplace win for diners hurts some restaurants",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC09",
+      "category": "Live Product Scenarios",
+      "shortLabel": "Proxy win, revenue flat",
+      "sectionTier": "P2",
+      "sectionOrder": 11,
+      "searchAliasesAdd": [
+        "metric trap",
+        "optimization score",
+        "experiment no impact"
+      ],
+      "fullQuestion": "Experiment wins proxy metric, not revenue",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC10",
+      "category": "Live Product Scenarios",
+      "shortLabel": "Integration lost",
+      "sectionTier": "P2",
+      "sectionOrder": 12,
+      "searchAliasesAdd": [
+        "POS integration",
+        "missing data source",
+        "forecasting launch"
+      ],
+      "fullQuestion": "Integration loss blocks forecasting launch",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "SC13",
+      "category": "Live Product Scenarios",
+      "shortLabel": "AI fails in new market",
+      "sectionTier": "P2",
+      "sectionOrder": 13,
+      "searchAliasesAdd": [
+        "model drift",
+        "distribution shift",
+        "global rollout"
+      ],
+      "fullQuestion": "AI forecast performs well at home but poorly in new markets",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B09",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "First opportunity",
+      "sectionTier": "P1",
+      "sectionOrder": 1,
+      "searchAliasesAdd": [
+        "identify opportunity",
+        "where start",
+        "what prioritize first"
+      ],
+      "fullQuestion": "If you joined OpenTable, how would you identify and prioritize your first product opportunity?",
+      "topQuickAccess": "mostLikely"
+    },
+    {
+      "questionId": "B07",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "Restaurant revenue strategy",
+      "sectionTier": "P1",
+      "sectionOrder": 2,
+      "searchAliasesAdd": [
+        "partner revenue strategy",
+        "restaurant growth plan",
+        "strategy design"
+      ],
+      "fullQuestion": "How would you develop a product strategy to increase revenue for OpenTable's restaurant partners?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B61",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "Global TMS scale",
+      "sectionTier": "P1",
+      "sectionOrder": 3,
+      "searchAliasesAdd": [
+        "international table management",
+        "platform localization",
+        "global rollout"
+      ],
+      "fullQuestion": "How would you scale the core table-management product internationally?",
+      "topQuickAccess": "mostLikely"
+    },
+    {
+      "questionId": "B62",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "Front-of-house workflow",
+      "sectionTier": "P1",
+      "sectionOrder": 4,
+      "searchAliasesAdd": [
+        "FOH operations",
+        "host stand experience",
+        "busy service"
+      ],
+      "fullQuestion": "How would you improve front-of-house workflows during a busy service?",
+      "topQuickAccess": "nextMostLikely"
+    },
+    {
+      "questionId": "B16",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "First 90 days",
+      "sectionTier": "P1",
+      "sectionOrder": 5,
+      "searchAliasesAdd": [
+        "30 60 90",
+        "onboarding plan",
+        "first months"
+      ],
+      "fullQuestion": "What would your first 90 days and initial product strategy look like?",
+      "topQuickAccess": "nextMostLikely"
+    },
+    {
+      "questionId": "B08",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "Untapped revenue",
+      "sectionTier": "P2",
+      "sectionOrder": 6,
+      "searchAliasesAdd": [
+        "revenue leakage",
+        "reservation funnel opportunities",
+        "growth levers"
+      ],
+      "fullQuestion": "Where do you see the biggest untapped revenue opportunities in the restaurant reservation lifecycle?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B10",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "Profit vs diner experience",
+      "sectionTier": "P2",
+      "sectionOrder": 7,
+      "searchAliasesAdd": [
+        "protect hospitality",
+        "commercial tradeoff",
+        "more revenue no harm"
+      ],
+      "fullQuestion": "How would you improve restaurant profitability without compromising the diner experience?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B11",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "Inventory utilization",
+      "sectionTier": "P2",
+      "sectionOrder": 8,
+      "searchAliasesAdd": [
+        "table inventory",
+        "seat optimization",
+        "unused capacity"
+      ],
+      "fullQuestion": "How would you approach optimizing restaurant table inventory and utilization?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B12",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "Growth lever tradeoffs",
+      "sectionTier": "P2",
+      "sectionOrder": 9,
+      "searchAliasesAdd": [
+        "acquisition vs retention",
+        "efficiency vs growth",
+        "prioritization mix"
+      ],
+      "fullQuestion": "How would you prioritize between restaurant acquisition, operational efficiency, repeat diners and increased revenue per guest?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B13",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "Marketplace balance",
+      "sectionTier": "P2",
+      "sectionOrder": 10,
+      "searchAliasesAdd": [
+        "two sided marketplace",
+        "diner restaurant balance",
+        "supply demand"
+      ],
+      "fullQuestion": "How do you balance restaurant-side outcomes with the health of a two-sided marketplace?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B14",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "Restaurant segmentation",
+      "sectionTier": "P2",
+      "sectionOrder": 11,
+      "searchAliasesAdd": [
+        "restaurant cohorts",
+        "segment operator",
+        "different needs"
+      ],
+      "fullQuestion": "How would you segment restaurants to find differentiated product opportunities?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B15",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "Competitive position",
+      "sectionTier": "P2",
+      "sectionOrder": 12,
+      "searchAliasesAdd": [
+        "vs Resy SevenRooms",
+        "restaurant tech competitors",
+        "differentiation"
+      ],
+      "fullQuestion": "How would you differentiate OpenTable's restaurant product from competing restaurant technology platforms?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B63",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "Product tiers",
+      "sectionTier": "P2",
+      "sectionOrder": 13,
+      "searchAliasesAdd": [
+        "Basic Core Pro",
+        "plan packaging",
+        "upsell value"
+      ],
+      "fullQuestion": "How would you think about Core and Pro restaurant product packaging?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B64",
+      "category": "Restaurant Product & Marketplace Strategy",
+      "shortLabel": "New-market readiness",
+      "sectionTier": "P2",
+      "sectionOrder": 14,
+      "searchAliasesAdd": [
+        "local launch validation",
+        "go live country",
+        "market entry criteria"
+      ],
+      "fullQuestion": "How would you validate readiness to launch in a new market?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B17",
+      "category": "AI/ML & Revenue Optimization",
+      "shortLabel": "0-to-1 AI opportunity",
+      "sectionTier": "P1",
+      "sectionOrder": 1,
+      "searchAliasesAdd": [
+        "AI product idea",
+        "new AI concept",
+        "revenue advisor"
+      ],
+      "fullQuestion": "What is the most compelling 0-to-1 AI/ML product you would explore for OpenTable?",
+      "topQuickAccess": "mostLikely"
+    },
+    {
+      "questionId": "B18",
+      "category": "AI/ML & Revenue Optimization",
+      "shortLabel": "ML vs rules",
+      "sectionTier": "P1",
+      "sectionOrder": 2,
+      "searchAliasesAdd": [
+        "why machine learning",
+        "rules based automation",
+        "simplest solution"
+      ],
+      "fullQuestion": "How do you decide whether a problem requires machine learning, rules-based automation or a simpler product solution?",
+      "topQuickAccess": "nextMostLikely"
+    },
+    {
+      "questionId": "B20",
+      "category": "AI/ML & Revenue Optimization",
+      "shortLabel": "Validate AI before build",
+      "sectionTier": "P1",
+      "sectionOrder": 3,
+      "searchAliasesAdd": [
+        "AI discovery",
+        "prototype vs build",
+        "concierge MVP"
+      ],
+      "fullQuestion": "How would you evaluate an AI-powered product before committing to a full build?",
+      "topQuickAccess": "nextMostLikely"
+    },
+    {
+      "questionId": "B22",
+      "category": "AI/ML & Revenue Optimization",
+      "shortLabel": "ML quality vs ROI",
+      "sectionTier": "P1",
+      "sectionOrder": 4,
+      "searchAliasesAdd": [
+        "offline online eval",
+        "model metrics",
+        "business lift"
+      ],
+      "fullQuestion": "How would you measure the quality of the model and its actual commercial impact?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B19",
+      "category": "AI/ML & Revenue Optimization",
+      "shortLabel": "Predictive revenue model",
+      "sectionTier": "P2",
+      "sectionOrder": 5,
+      "searchAliasesAdd": [
+        "predictive analytics",
+        "demand forecast",
+        "restaurant ML value"
+      ],
+      "fullQuestion": "How would you use predictive models to help restaurants increase revenue?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B21",
+      "category": "AI/ML & Revenue Optimization",
+      "shortLabel": "Demand forecast data",
+      "sectionTier": "P2",
+      "sectionOrder": 6,
+      "searchAliasesAdd": [
+        "model features",
+        "reservation signals",
+        "data requirements"
+      ],
+      "fullQuestion": "What data would you need to build a demand forecasting or revenue optimization model?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B23",
+      "category": "AI/ML & Revenue Optimization",
+      "shortLabel": "Cold start",
+      "sectionTier": "P2",
+      "sectionOrder": 7,
+      "searchAliasesAdd": [
+        "new restaurants",
+        "sparse data",
+        "ML bootstrap"
+      ],
+      "fullQuestion": "How would you address cold-start problems for smaller or newer restaurants?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B24",
+      "category": "AI/ML & Revenue Optimization",
+      "shortLabel": "Operator AI trust",
+      "sectionTier": "P2",
+      "sectionOrder": 8,
+      "searchAliasesAdd": [
+        "explainability",
+        "model recommendations",
+        "human override"
+      ],
+      "fullQuestion": "How would you build restaurant operator trust in AI-generated recommendations?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B25",
+      "category": "AI/ML & Revenue Optimization",
+      "shortLabel": "Human-in-loop control",
+      "sectionTier": "P2",
+      "sectionOrder": 9,
+      "searchAliasesAdd": [
+        "operator override",
+        "autonomy safety",
+        "automation boundaries"
+      ],
+      "fullQuestion": "How would you balance automation, human control, explainability and operational safety?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B26",
+      "category": "AI/ML & Revenue Optimization",
+      "shortLabel": "Prototype to production",
+      "sectionTier": "P2",
+      "sectionOrder": 10,
+      "searchAliasesAdd": [
+        "production AI",
+        "ML deployment",
+        "model monitoring"
+      ],
+      "fullQuestion": "How would you move an AI/ML product from prototype to production?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B28",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "North Star metric",
+      "sectionTier": "P1",
+      "sectionOrder": 1,
+      "searchAliasesAdd": [
+        "team northstar",
+        "main success measure",
+        "primary metric"
+      ],
+      "fullQuestion": "What would be your North Star metric for OpenTable's Restaurant Product team?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B29",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Revenue metrics",
+      "sectionTier": "P1",
+      "sectionOrder": 2,
+      "searchAliasesAdd": [
+        "restaurant KPI",
+        "revenue optimization metrics",
+        "profit measures"
+      ],
+      "fullQuestion": "Which metrics would you use to measure restaurant revenue optimization?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B30",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Incremental vs bookings",
+      "sectionTier": "P1",
+      "sectionOrder": 3,
+      "searchAliasesAdd": [
+        "incrementality measurement",
+        "booking attribution",
+        "counterfactual"
+      ],
+      "fullQuestion": "How would you distinguish increased reservations from genuine incremental restaurant revenue?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B27",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Reservation journey",
+      "sectionTier": "P2",
+      "sectionOrder": 4,
+      "searchAliasesAdd": [
+        "diner to seated",
+        "booking workflow",
+        "guest journey"
+      ],
+      "fullQuestion": "Walk me through the reservation lifecycle from diner discovery to completed restaurant visit.",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B31",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "No-show economics",
+      "sectionTier": "P2",
+      "sectionOrder": 5,
+      "searchAliasesAdd": [
+        "late cancellations",
+        "recovered covers",
+        "show rate"
+      ],
+      "fullQuestion": "How would you measure and reduce the economic impact of no-shows and late cancellations?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B32",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Bookings vs profit",
+      "sectionTier": "P2",
+      "sectionOrder": 6,
+      "searchAliasesAdd": [
+        "flat margin",
+        "revenue leakage",
+        "profit diagnostic"
+      ],
+      "fullQuestion": "What would you investigate if restaurant bookings increased but profitability remained unchanged?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-R01",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Covers + show rate",
+      "sectionTier": "REF",
+      "sectionOrder": 7,
+      "searchAliasesAdd": [
+        "seated covers",
+        "reservation show rate",
+        "bookings"
+      ],
+      "fullQuestion": "Seated covers, bookings and show rate",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-R02",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Booking conversion",
+      "sectionTier": "REF",
+      "sectionOrder": 8,
+      "searchAliasesAdd": [
+        "search to booking",
+        "demand capture",
+        "booking funnel"
+      ],
+      "fullQuestion": "Booking conversion and demand capture",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-R03",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Seat utilization",
+      "sectionTier": "REF",
+      "sectionOrder": 9,
+      "searchAliasesAdd": [
+        "table occupancy",
+        "seat hours",
+        "capacity metric"
+      ],
+      "fullQuestion": "Seat and table utilization",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-R04",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "RevPASH",
+      "sectionTier": "REF",
+      "sectionOrder": 10,
+      "searchAliasesAdd": [
+        "revenue per available seat hour",
+        "yield",
+        "restaurant revenue metric"
+      ],
+      "fullQuestion": "Revenue per available seat-hour (RevPASH)",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-R05",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Check + contribution",
+      "sectionTier": "REF",
+      "sectionOrder": 11,
+      "searchAliasesAdd": [
+        "average check",
+        "contribution margin",
+        "profit per diner"
+      ],
+      "fullQuestion": "Average check and contribution margin",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-R06",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Turn time + pacing",
+      "sectionTier": "REF",
+      "sectionOrder": 12,
+      "searchAliasesAdd": [
+        "party size mix",
+        "table turns",
+        "seating pace"
+      ],
+      "fullQuestion": "Table turn times, party-size mix and reservation pacing",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-R07",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Cancellation recovery",
+      "sectionTier": "REF",
+      "sectionOrder": 13,
+      "searchAliasesAdd": [
+        "waitlist backfill",
+        "late cancel",
+        "fill empty tables"
+      ],
+      "fullQuestion": "Cancellation recovery and waitlist conversion",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-R08",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Repeat guest LTV",
+      "sectionTier": "REF",
+      "sectionOrder": 14,
+      "searchAliasesAdd": [
+        "diner retention",
+        "customer lifetime value",
+        "repeat dining"
+      ],
+      "fullQuestion": "Repeat dining and guest lifetime value",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-R09",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Restaurant retention",
+      "sectionTier": "REF",
+      "sectionOrder": 15,
+      "searchAliasesAdd": [
+        "SaaS churn",
+        "operator adoption",
+        "restaurant growth"
+      ],
+      "fullQuestion": "Restaurant product adoption, retention and churn",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-R10",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Incrementality vs shift",
+      "sectionTier": "REF",
+      "sectionOrder": 16,
+      "searchAliasesAdd": [
+        "cannibalization",
+        "channel displacement",
+        "incremental demand"
+      ],
+      "fullQuestion": "Incremental revenue versus revenue cannibalization",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-R11",
+      "category": "Restaurant Economics, Workflows & Metrics",
+      "shortLabel": "Experiment guardrails",
+      "sectionTier": "REF",
+      "sectionOrder": 17,
+      "searchAliasesAdd": [
+        "guest experience guardrail",
+        "operator trust",
+        "secondary metrics"
+      ],
+      "fullQuestion": "Experiment guardrail metrics",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B33",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Validate revenue opportunity",
+      "sectionTier": "P1",
+      "sectionOrder": 1,
+      "searchAliasesAdd": [
+        "product discovery",
+        "operator interviews",
+        "problem first"
+      ],
+      "fullQuestion": "How would you validate a restaurant revenue opportunity before building the solution?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B34",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Off-peak experiment",
+      "sectionTier": "P1",
+      "sectionOrder": 2,
+      "searchAliasesAdd": [
+        "growth experiment",
+        "A B test",
+        "weekday demand"
+      ],
+      "fullQuestion": "Design an experiment to increase restaurant revenue during off-peak periods.",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B37",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Measure true lift",
+      "sectionTier": "P1",
+      "sectionOrder": 3,
+      "searchAliasesAdd": [
+        "incremental contribution",
+        "causal impact",
+        "experiment misleading"
+      ],
+      "fullQuestion": "How would you evaluate whether an apparently successful experiment creates genuine incremental value?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B35",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Test AI recommendation",
+      "sectionTier": "P2",
+      "sectionOrder": 4,
+      "searchAliasesAdd": [
+        "recommendation experiment",
+        "operator trial",
+        "human review"
+      ],
+      "fullQuestion": "How would you test an AI-generated recommendation with restaurant operators?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B36",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Marketplace A/B test",
+      "sectionTier": "P2",
+      "sectionOrder": 5,
+      "searchAliasesAdd": [
+        "network interference",
+        "restaurant randomized",
+        "spillover"
+      ],
+      "fullQuestion": "How would you structure an A/B experiment when restaurants and diners can affect one another?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B38",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Prioritize ML bets",
+      "sectionTier": "P2",
+      "sectionOrder": 6,
+      "searchAliasesAdd": [
+        "AI roadmap prioritization",
+        "limited DS capacity",
+        "RICE"
+      ],
+      "fullQuestion": "How would you prioritize three competing restaurant AI/ML opportunities with limited engineering and data science capacity?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B39",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Launch with messy data",
+      "sectionTier": "P2",
+      "sectionOrder": 7,
+      "searchAliasesAdd": [
+        "0-1 data quality",
+        "incomplete infrastructure",
+        "MVP release"
+      ],
+      "fullQuestion": "How would you approach a 0-to-1 launch with uncertain data quality and incomplete infrastructure?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-E01",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "No-show experiment",
+      "sectionTier": "REF",
+      "sectionOrder": 8,
+      "searchAliasesAdd": [
+        "targeted reminders",
+        "confirmation test",
+        "no-show risk"
+      ],
+      "fullQuestion": "Experiment reference: No-show mitigation and targeted confirmations",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-E02",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Waitlist backfill test",
+      "sectionTier": "REF",
+      "sectionOrder": 9,
+      "searchAliasesAdd": [
+        "late cancellation matching",
+        "recovered covers",
+        "waitlist"
+      ],
+      "fullQuestion": "Experiment reference: Late-cancellation backfill and waitlist matching",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-E03",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Off-peak demand test",
+      "sectionTier": "REF",
+      "sectionOrder": 10,
+      "searchAliasesAdd": [
+        "weekday demand stimulation",
+        "time slots",
+        "incremental covers"
+      ],
+      "fullQuestion": "Experiment reference: Off-peak demand stimulation",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-E04",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Guest CRM experiment",
+      "sectionTier": "REF",
+      "sectionOrder": 11,
+      "searchAliasesAdd": [
+        "personalized campaign",
+        "repeat dining",
+        "retention test"
+      ],
+      "fullQuestion": "Experiment reference: Guest retention and personalized CRM",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-E05",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Operator recommendations",
+      "sectionTier": "REF",
+      "sectionOrder": 12,
+      "searchAliasesAdd": [
+        "AI advisor experiment",
+        "decision support",
+        "recommendation uptake"
+      ],
+      "fullQuestion": "Experiment reference: Restaurant operator decision recommendations",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-E06",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Pacing experiment",
+      "sectionTier": "REF",
+      "sectionOrder": 13,
+      "searchAliasesAdd": [
+        "reservation pacing",
+        "arrival clustering",
+        "service load"
+      ],
+      "fullQuestion": "Experiment reference: Reservation pacing optimization",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-E07",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Turn-time prediction",
+      "sectionTier": "REF",
+      "sectionOrder": 14,
+      "searchAliasesAdd": [
+        "predict duration",
+        "table capacity",
+        "availability prediction"
+      ],
+      "fullQuestion": "Experiment reference: Turn-time prediction and capacity optimization",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B-E08",
+      "category": "Product Craft, Discovery & Experimentation",
+      "shortLabel": "Discovery conversion test",
+      "sectionTier": "REF",
+      "sectionOrder": 15,
+      "searchAliasesAdd": [
+        "search ranking",
+        "diner discovery",
+        "booking conversion"
+      ],
+      "fullQuestion": "Experiment reference: Diner discovery and conversion improvements",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B43",
+      "category": "Experience Stories",
+      "shortLabel": "Arc'teryx membership",
+      "sectionTier": "P1",
+      "sectionOrder": 1,
+      "searchAliasesAdd": [
+        "0 to 1 membership",
+        "investment case",
+        "MVP sequencing"
+      ],
+      "fullQuestion": "Tell me about building Arc'teryx membership from zero to one.",
+      "topQuickAccess": "mostLikely"
+    },
+    {
+      "questionId": "B40",
+      "category": "Experience Stories",
+      "shortLabel": "RBC Interac",
+      "sectionTier": "P1",
+      "sectionOrder": 2,
+      "searchAliasesAdd": [
+        "cashback withdrawal",
+        "payment rails",
+        "e-transfer payout"
+      ],
+      "fullQuestion": "Walk me through the RBC Interac cashback withdrawal product end to end.",
+      "topQuickAccess": "mostLikely"
+    },
+    {
+      "questionId": "B42",
+      "category": "Experience Stories",
+      "shortLabel": "HBC growth",
+      "sectionTier": "P1",
+      "sectionOrder": 3,
+      "searchAliasesAdd": [
+        "Mastercard",
+        "funnel optimization",
+        "portfolio P&L"
+      ],
+      "fullQuestion": "Tell me about HBC Mastercard growth and funnel experimentation.",
+      "topQuickAccess": "nextMostLikely"
+    },
+    {
+      "questionId": "B41",
+      "category": "Experience Stories",
+      "shortLabel": "Avion Select",
+      "sectionTier": "P2",
+      "sectionOrder": 4,
+      "searchAliasesAdd": [
+        "non RBC onboarding",
+        "platform expansion",
+        "identity"
+      ],
+      "fullQuestion": "Tell me about expanding Avion to non-RBC customers (Avion Select).",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B44",
+      "category": "Experience Stories",
+      "shortLabel": "Aeroplan acquisition",
+      "sectionTier": "P2",
+      "sectionOrder": 5,
+      "searchAliasesAdd": [
+        "credit card acquisition",
+        "partner growth",
+        "conversion 40 percent"
+      ],
+      "fullQuestion": "Tell me about Aeroplan acquisition and conversion optimization.",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B45",
+      "category": "Experience Stories",
+      "shortLabel": "Shop+ discovery",
+      "sectionTier": "P2",
+      "sectionOrder": 6,
+      "searchAliasesAdd": [
+        "shopping extension",
+        "consumer research",
+        "product discovery"
+      ],
+      "fullQuestion": "Tell me about a customer problem you identified and solved — ShopPlus.",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B46",
+      "category": "Experience Stories",
+      "shortLabel": "Ensights startup",
+      "sectionTier": "P2",
+      "sectionOrder": 7,
+      "searchAliasesAdd": [
+        "Seoul startup",
+        "Bluetooth beacons",
+        "early stage"
+      ],
+      "fullQuestion": "Tell me about your Ensights startup experience.",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B47",
+      "category": "Experience Stories",
+      "shortLabel": "RBC overview",
+      "sectionTier": "P2",
+      "sectionOrder": 8,
+      "searchAliasesAdd": [
+        "Avion scope",
+        "RBC team",
+        "rewards platform"
+      ],
+      "fullQuestion": "RBC Avion overview — scope and impact.",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B48",
+      "category": "Experience Stories",
+      "shortLabel": "Arc'teryx overview",
+      "sectionTier": "P2",
+      "sectionOrder": 9,
+      "searchAliasesAdd": [
+        "membership responsibility",
+        "current role",
+        "team scope"
+      ],
+      "fullQuestion": "Arc'teryx overview — current responsibilities.",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B53",
+      "category": "Leadership & Judgment",
+      "shortLabel": "Prioritization (Arc'teryx)",
+      "sectionTier": "P1",
+      "sectionOrder": 1,
+      "searchAliasesAdd": [
+        "limited resources",
+        "saying no",
+        "competing stakeholders"
+      ],
+      "fullQuestion": "How do you prioritize with limited resources and competing stakeholders?",
+      "topQuickAccess": "mostLikely"
+    },
+    {
+      "questionId": "B49",
+      "category": "Leadership & Judgment",
+      "shortLabel": "Engineering disagreement",
+      "sectionTier": "P1",
+      "sectionOrder": 2,
+      "searchAliasesAdd": [
+        "design pushback",
+        "stakeholder conflict",
+        "engineering partnership"
+      ],
+      "fullQuestion": "How do you handle disagreement with engineering or design?",
+      "topQuickAccess": "mostLikely"
+    },
+    {
+      "questionId": "B51",
+      "category": "Leadership & Judgment",
+      "shortLabel": "Failure / setback",
+      "sectionTier": "P1",
+      "sectionOrder": 3,
+      "searchAliasesAdd": [
+        "what went wrong",
+        "product failure",
+        "learning"
+      ],
+      "fullQuestion": "Tell me about a time something didn't go as planned.",
+      "topQuickAccess": "nextMostLikely"
+    },
+    {
+      "questionId": "B52",
+      "category": "Leadership & Judgment",
+      "shortLabel": "Incomplete information",
+      "sectionTier": "P1",
+      "sectionOrder": 4,
+      "searchAliasesAdd": [
+        "ambiguous decision",
+        "uncertainty",
+        "assumptions"
+      ],
+      "fullQuestion": "How do you make decisions with incomplete information?",
+      "topQuickAccess": "nextMostLikely"
+    },
+    {
+      "questionId": "B50",
+      "category": "Leadership & Judgment",
+      "shortLabel": "Influence without authority",
+      "sectionTier": "P1",
+      "sectionOrder": 5,
+      "searchAliasesAdd": [
+        "lead cross-functional",
+        "no direct reports",
+        "stakeholder alignment"
+      ],
+      "fullQuestion": "How do you influence stakeholders without authority?",
+      "topQuickAccess": "nextMostLikely"
+    },
+    {
+      "questionId": "B54",
+      "category": "Leadership & Judgment",
+      "shortLabel": "Prioritize two bets",
+      "sectionTier": "P2",
+      "sectionOrder": 6,
+      "searchAliasesAdd": [
+        "two initiatives",
+        "tradeoff",
+        "sequencing decision"
+      ],
+      "fullQuestion": "Tell me about prioritizing between two important initiatives.",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B55",
+      "category": "Leadership & Judgment",
+      "shortLabel": "Stakeholder disagreement",
+      "sectionTier": "P2",
+      "sectionOrder": 7,
+      "searchAliasesAdd": [
+        "business stakeholders",
+        "product direction conflict",
+        "alignment"
+      ],
+      "fullQuestion": "How do you navigate stakeholder disagreement on product direction?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B56",
+      "category": "Leadership & Judgment",
+      "shortLabel": "Launch recovery",
+      "sectionTier": "P2",
+      "sectionOrder": 8,
+      "searchAliasesAdd": [
+        "delivery setback",
+        "recover plan",
+        "missed timeline"
+      ],
+      "fullQuestion": "How do you recover from a launch or delivery setback?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B57",
+      "category": "Leadership & Judgment",
+      "shortLabel": "Executive pushback",
+      "sectionTier": "P2",
+      "sectionOrder": 9,
+      "searchAliasesAdd": [
+        "difficult decision",
+        "leadership communication",
+        "escalation"
+      ],
+      "fullQuestion": "How do you communicate difficult decisions to executives?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B58",
+      "category": "Leadership & Judgment",
+      "shortLabel": "Lead under pressure",
+      "sectionTier": "P2",
+      "sectionOrder": 10,
+      "searchAliasesAdd": [
+        "cross functional urgency",
+        "deadline pressure",
+        "incident"
+      ],
+      "fullQuestion": "How do you lead cross-functional initiatives under time pressure?",
+      "topQuickAccess": null
+    },
+    {
+      "questionId": "B65",
+      "category": "Leadership & Judgment",
+      "shortLabel": "Global AI pushback",
+      "sectionTier": "P2",
+      "sectionOrder": 11,
+      "searchAliasesAdd": [
+        "unsafe AI rollout",
+        "market usability",
+        "challenge leadership"
+      ],
+      "fullQuestion": "Leadership wants a global AI launch; usability data says some markets are not ready. How do you push back?",
+      "topQuickAccess": null
+    }
+  ]
+}

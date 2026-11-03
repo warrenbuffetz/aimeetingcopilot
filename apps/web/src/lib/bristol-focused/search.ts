@@ -95,6 +95,16 @@ const EXPANSIONS: [string, string[]][] = [
   ["industry pain", ["operator pain points", "restaurant operators"]],
   ["incremental revenue", ["demand capture", "IP12"]],
   ["scenario", ["live product", "SC01"]],
+  ["pushback", ["push back", "executive disagreement", "global ai pushback"]],
+  ["rbc interac", ["interac e transfer", "cashback withdrawal", "B40"]],
+  ["two servers", ["sick servers", "staff shortage", "SC11"]],
+  ["staffing", ["staff shortage", "sick servers", "SC11"]],
+  ["global tms", ["international", "localization", "B61"]],
+  ["localization", ["global tms", "market entry", "B61"]],
+  ["no show", ["no-show", "show rate", "cancellation"]],
+  ["north star", ["northstar", "B28"]],
+  ["ml vs rules", ["machine learning vs rules", "B18"]],
+  ["why opentable", ["why join", "B02"]],
 ];
 
 const MAX_RESULTS = 7;
@@ -175,16 +185,18 @@ export function searchBristolQuestions(questions: readonly BristolQuestion[], ra
 
   const hits: BristolSearchHit[] = [];
   for (const question of questions) {
+    const compact = question.navCompactLabel ?? question.shortLabel;
     const parentFields: Field[] = [
       { text: question.title, weight: 120 },
       { text: question.navigationLabel, weight: 110 },
+      { text: compact, weight: 132 },
       { text: question.shortLabel, weight: 100 },
-      ...question.aliases.map((alias) => ({ text: alias, weight: 100 })),
+      ...question.aliases.map((alias) => ({ text: alias, weight: 108 })),
       ...question.projectTags.map((tag) => ({ text: tag, weight: 70 })),
       { text: question.category, weight: 36 },
     ];
     const corpus = foldBristolText(
-      [question.title, question.navigationLabel, question.shortLabel, ...question.aliases, ...question.projectTags, ...question.followUps.map((follow) => follow.question)].join(" ")
+      [question.title, question.navigationLabel, compact, question.shortLabel, ...question.aliases, ...question.projectTags, ...question.followUps.map((follow) => follow.question)].join(" ")
     );
     const covered = queryTokens.filter((token) => {
       if (corpus.includes(token)) return true;
