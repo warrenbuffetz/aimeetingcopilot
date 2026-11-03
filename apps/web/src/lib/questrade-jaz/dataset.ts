@@ -37,6 +37,7 @@ export type JazAskQuestion = {
   question: string;
   note: string;
   badge: string;
+  tier: "primary" | "backup" | "additional";
   followUps: JazAskFollowUp[];
 };
 
@@ -58,7 +59,14 @@ type RawQuestion = {
 };
 
 type RawAskFollow = { question?: string; cue?: string; note?: string };
-type RawAsk = { topic?: string; question?: string; note?: string; badge?: string; followUps?: RawAskFollow[] };
+type RawAsk = {
+  topic?: string;
+  question?: string;
+  note?: string;
+  badge?: string;
+  tier?: string;
+  followUps?: RawAskFollow[];
+};
 
 const SHORT_LABELS: Record<string, string> = {
   Q01: "Tell me about yourself",
@@ -151,19 +159,25 @@ const rawAsk = ((raw as { questionsForJaz?: RawAsk[] }).questionsForJaz ?? []) a
 
 export const jazQuestions: JazQuestion[] = asQuestions(rawQuestions);
 
-export const jazAskQuestions: JazAskQuestion[] = rawAsk.map((item, index) => ({
-  id: `jaz-ask-${index + 1}`,
-  topic: String(item.topic ?? `Question ${index + 1}`),
-  question: String(item.question ?? ""),
-  note: String(item.note ?? ""),
-  badge: String(item.badge ?? ""),
-  followUps: (item.followUps ?? []).map((follow, followIndex) => ({
-    id: `jaz-ask-${index + 1}-f${followIndex + 1}`,
-    question: String(follow.question ?? ""),
-    cue: String(follow.cue ?? ""),
-    note: String(follow.note ?? ""),
-  })),
-}));
+export const jazAskQuestions: JazAskQuestion[] = rawAsk.map((item, index) => {
+  const tierRaw = String(item.tier ?? "");
+  const tier: JazAskQuestion["tier"] =
+    tierRaw === "primary" || tierRaw === "backup" || tierRaw === "additional" ? tierRaw : "additional";
+  return {
+    id: `jaz-ask-${index + 1}`,
+    topic: String(item.topic ?? `Question ${index + 1}`),
+    question: String(item.question ?? ""),
+    note: String(item.note ?? ""),
+    badge: String(item.badge ?? ""),
+    tier,
+    followUps: (item.followUps ?? []).map((follow, followIndex) => ({
+      id: `jaz-ask-${index + 1}-f${followIndex + 1}`,
+      question: String(follow.question ?? ""),
+      cue: String(follow.cue ?? ""),
+      note: String(follow.note ?? ""),
+    })),
+  };
+});
 
 export const jazPinnedQuestions = jazQuestions.filter((q) => q.suggestedPinned);
 
@@ -179,7 +193,7 @@ export function validateJazDataset(): string[] {
   if (followCount !== 80) issues.push(`expected 80 follow-ups, found ${followCount}`);
   const pinned = questions.filter((q) => q.suggestedPinned).length;
   if (pinned !== 13) issues.push(`expected 13 pins, found ${pinned}`);
-  if (rawAsk.length !== 12) issues.push(`expected 12 questions for Jaz, found ${rawAsk.length}`);
+  if (rawAsk.length !== 10) issues.push(`expected 10 questions for Jaz, found ${rawAsk.length}`);
 
   const keys = new Set<string>();
   for (const q of questions) {
@@ -204,6 +218,10 @@ export function validateJazDataset(): string[] {
   rawAsk.forEach((item, index) => {
     if (!item.question?.trim()) issues.push(`questionsForJaz ${index + 1} missing question`);
     if (!item.topic?.trim()) issues.push(`questionsForJaz ${index + 1} missing topic`);
+    const tier = String(item.tier ?? "");
+    if (tier && tier !== "primary" && tier !== "backup" && tier !== "additional") {
+      issues.push(`questionsForJaz ${index + 1} invalid tier ${tier}`);
+    }
     (item.followUps ?? []).forEach((follow, followIndex) => {
       if (!follow.question?.trim()) issues.push(`questionsForJaz ${index + 1} follow-up ${followIndex + 1} missing question`);
     });

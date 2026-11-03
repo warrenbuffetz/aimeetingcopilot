@@ -27,11 +27,13 @@ describe("questrade jaz dataset", () => {
     expect(jazQuestions).toHaveLength(36);
     expect(jazQuestions.reduce((sum, question) => sum + question.followUps.length, 0)).toBe(80);
     expect(jazPinnedQuestions).toHaveLength(13);
-    expect(jazAskQuestions).toHaveLength(12);
-    expect(jazAskQuestions[3]?.topic).toBe("Team stability and evolution");
-    expect(jazAskQuestions[3]?.question).toContain("long-term stability");
+    expect(jazAskQuestions).toHaveLength(10);
+    expect(jazAskQuestions.filter((q) => q.tier === "primary")).toHaveLength(4);
     expect(jazAskQuestions[0]?.topic).toBe("Leadership under pressure");
     expect(jazAskQuestions[0]?.question).toContain("When do you step in versus give them space");
+    expect(jazAskQuestions[0]?.followUps).toHaveLength(2);
+    expect(jazAskQuestions[1]?.topic).toBe("Why the role is open");
+    expect(jazAskQuestions.find((item) => item.topic === "Communication and trust")).toBeUndefined();
     expect(jazAskQuestions.find((item) => item.topic === "Why the role is open")?.followUps).toHaveLength(2);
     expect(jazAskQuestions.some((item) => item.question.includes("Why this is better"))).toBe(false);
     expect(new Set(jazQuestions.map((question) => question.id)).size).toBe(36);

@@ -1196,84 +1196,102 @@
   "questionsForJaz": [
     {
       "topic": "Leadership under pressure",
-      "badge": "Priority",
-      "question": "I understand Questrade is a pretty fast-moving environment, with a lot of ownership expected from PMs. I'm curious, when a PM you're working with runs into a difficult situation — maybe competing stakeholder priorities or something that isn't going to plan — how do you typically approach that? When do you step in versus give them space to work through it?",
-      "note": "It doesn't assume she has a team today, and the last sentence gets at whether she balances autonomy with meaningful support."
-    },
-    {
-      "topic": "Communication and trust",
-      "question": "One thing I've really come to value is having an open and candid working relationship with my manager, especially when priorities change or things aren't going as expected. How do you typically approach communication and feedback with the PMs you work with?",
-      "note": "It states what you want from the relationship and invites her to describe her style.",
+      "tier": "primary",
+      "badge": "Priority 1",
+      "question": "From what I've heard, PMs here have a lot of ownership and things move pretty quickly. When someone runs into a tough situation, maybe competing priorities or something going off track, how do you typically work through that with them? When do you step in versus give them space?",
+      "note": "Doesn't assume she has direct reports today. Listen for support, candor, advocacy, and balance between autonomy and coaching.",
       "followUps": [
         {
-          "question": "That's helpful. Is there an example from a team you've led, either here or previously, where you had to navigate something like that?"
-        }
-      ]
-    },
-    {
-      "topic": "What attracted you to Questrade",
-      "question": "I'm curious, what originally attracted you to Questrade? And when you were evaluating the opportunity, beyond the role itself, what stood out to you about the organization and its culture?",
-      "followUps": [
+          "cue": "If she doesn't address communication",
+          "question": "And when priorities change or something isn't working, how do you typically keep the PMs you work with in the loop and give them feedback?"
+        },
         {
-          "question": "And now that you've been here, how has that compared with what you expected? Has anything surprised you, either positively or in terms of challenges?"
-        }
-      ]
-    },
-    {
-      "topic": "Team stability and evolution",
-      "question": "As I think about my next move, long-term stability is definitely a consideration for me. Has the Banking product organization gone through any significant restructuring or changes in headcount recently? And how do you see the team evolving over the next year or two?",
-      "note": "Signals that stability matters to you without sounding alarmist. Use the follow-up if she mentions significant recent organizational changes.",
-      "followUps": [
-        {
-          "cue": "If she mentions significant organizational changes",
-          "question": "That's helpful context. Were those changes primarily driven by a shift in strategic priorities, or were there broader organizational adjustments?"
+          "cue": "If her answer is theoretical",
+          "question": "That's helpful. Is there an example from a team you've led where you've had to navigate something like that?"
         }
       ]
     },
     {
       "topic": "Why the role is open",
-      "badge": "Recommended",
-      "question": "I'm curious, could you share a bit about what prompted this opening? Is this a new role as the Everyday Banking team grows, or is it more of a backfill? And what are you hoping this person will bring to the team?",
-      "note": "A normal question for a senior candidate. It doesn't assume anything negative about why the seat is open.",
+      "tier": "primary",
+      "badge": "Priority 2",
+      "question": "Can I ask what led to this opening? Is it a new role as Everyday Banking grows, or more of a backfill?",
+      "note": "Normal senior-candidate question. Doesn't assume anything negative about the vacancy.",
       "followUps": [
         {
           "cue": "If it's a backfill",
-          "question": "Got it. And has the scope of the role changed at all from what the previous person was responsible for?",
-          "note": "She may say whether the predecessor was promoted, transferred, or left, or whether the scope was restructured."
+          "question": "Got it. Has the scope changed much from what the previous person was responsible for?"
         },
         {
-          "cue": "If it's a newly created role",
-          "question": "That's interesting. What's driving the decision to expand the team now, and how does that fit into the broader investment in Everyday Banking?"
+          "cue": "If it's a new role",
+          "question": "What's driving the decision to expand the team now?"
         }
       ]
     },
     {
-      "topic": "Where product is heading",
-      "question": "How has the product organization evolved over the past year or so, and where do you see it heading over the next 12 months, particularly as Everyday Banking becomes a bigger focus?"
+      "topic": "Why Jaz joined Questrade",
+      "tier": "primary",
+      "badge": "Priority 3",
+      "question": "I'm curious, what made you want to join Questrade in the first place? And now that you've been here for a bit, how has it compared with what you expected, especially around the culture and how teams work together?",
+      "followUps": [
+        {
+          "cue": "If she gives an entirely positive or generic answer",
+          "question": "Has anything surprised you, or been more challenging than you expected?"
+        }
+      ]
     },
     {
-      "topic": "Leadership and feedback",
-      "question": "How would you describe your approach to leading PMs, particularly when someone has a different recommendation from yours? What does that discussion typically look like?"
-    },
-    {
-      "topic": "Decision-making and autonomy",
-      "question": "What decisions would you expect the Senior PM to make independently, and which ones typically need your involvement or alignment with other product leaders?"
-    },
-    {
-      "topic": "Why Jaz joined",
-      "question": "What originally attracted you to Questrade, and what have you found most rewarding or most challenging about the environment since joining?"
-    },
-    {
-      "topic": "Role context and vacancy",
-      "question": "I noticed the posting is for an existing vacancy. Is this replacing someone who owned Everyday Banking, or has the scope of the role evolved?"
+      "topic": "Team stability and investment",
+      "tier": "primary",
+      "badge": "Priority 4",
+      "question": "Since you've joined, has the Banking product team changed much in terms of structure or headcount? And how is the business thinking about investing in Everyday Banking over the next year?",
+      "note": "Due diligence on stability and commitment to Everyday Banking without sounding alarmist.",
+      "followUps": [
+        {
+          "cue": "If she describes organizational changes but doesn't explain them",
+          "question": "Was that mostly driven by changing business priorities, or were there broader organizational changes?"
+        },
+        {
+          "cue": "If she discusses growth without addressing stability",
+          "question": "And has the team been relatively stable through those changes, or has there been some restructuring as well?"
+        }
+      ]
     },
     {
       "topic": "First six months",
+      "tier": "backup",
+      "badge": "Backup",
       "question": "If this person is doing really well six months in, what would you hope they've accomplished?"
     },
     {
       "topic": "Organization dependencies",
+      "tier": "backup",
+      "badge": "Backup",
       "question": "Where do you see the biggest challenge today: motivating customers to make Everyday Banking their primary account, or getting the underlying capabilities and partner-team dependencies in place?"
+    },
+    {
+      "topic": "Where product is heading",
+      "tier": "additional",
+      "question": "How has the product organization evolved over the past year or so, and where do you see it heading over the next 12 months, particularly as Everyday Banking becomes a bigger focus?"
+    },
+    {
+      "topic": "Leadership and feedback",
+      "tier": "additional",
+      "badge": "Alternative",
+      "question": "How would you describe your approach to leading PMs, particularly when someone has a different recommendation from yours? What does that discussion typically look like?",
+      "note": "Use if Priority 1 didn't surface how she handles disagreement or feedback."
+    },
+    {
+      "topic": "Decision-making and autonomy",
+      "tier": "additional",
+      "question": "What decisions would you expect the Senior PM to make independently, and which ones typically need your involvement or alignment with other product leaders?"
+    },
+    {
+      "topic": "Role context and vacancy",
+      "tier": "additional",
+      "badge": "Alternative",
+      "question": "I noticed the posting is for an existing vacancy. Is this replacing someone who owned Everyday Banking, or has the scope of the role evolved?",
+      "note": "Use if Priority 2 didn't cover posting context or scope."
     }
   ]
 }

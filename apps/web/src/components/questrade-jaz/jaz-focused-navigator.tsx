@@ -686,37 +686,89 @@ export function JazFocusedNavigator() {
             <p className="mt-2 text-sm text-muted-foreground">
               Ask these in her words. This list has no scripted answer.
             </p>
-            <ol className="mt-6 space-y-4">
-              {jazAskQuestions.map((item, index) => (
-                <li key={item.id} className="rounded-lg border border-border bg-card px-4 py-3">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <p className="text-xs font-semibold tracking-wide text-violet-700 uppercase">
-                      {index + 1}. {item.topic}
-                    </p>
-                    {item.badge && (
-                      <span className="rounded-full bg-violet-100 px-2 py-0.5 text-[11px] font-semibold text-violet-900">
-                        {item.badge}
-                      </span>
-                    )}
-                  </div>
-                  <p className="mt-1 text-[16px] leading-7">{item.question}</p>
-                  {item.note && <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.note}</p>}
-                  {item.followUps.length > 0 && (
-                    <div className="mt-3 space-y-2 border-t border-border pt-3">
-                      {item.followUps.map((follow) => (
-                        <div key={follow.id}>
-                          {follow.cue && (
-                            <p className="text-[11px] font-semibold tracking-wide text-violet-700 uppercase">{follow.cue}</p>
-                          )}
-                          <p className="text-[15px] leading-7">{follow.question}</p>
-                          {follow.note && <p className="mt-1 text-sm leading-6 text-muted-foreground">{follow.note}</p>}
-                        </div>
-                      ))}
-                    </div>
+            {(
+              [
+                { tier: "primary" as const, title: "Top priorities" },
+                { tier: "backup" as const, title: "If time allows" },
+                { tier: "additional" as const, title: "More questions" },
+              ] as const
+            ).map((section) => {
+              const items = jazAskQuestions.filter((item) => item.tier === section.tier);
+              if (!items.length) return null;
+              const primaryCount = jazAskQuestions.filter((q) => q.tier === "primary").length;
+              const backupCount = jazAskQuestions.filter((q) => q.tier === "backup").length;
+              const listStart =
+                section.tier === "primary" ? 1 : section.tier === "backup" ? primaryCount + 1 : primaryCount + backupCount + 1;
+              return (
+                <div key={section.tier} className={cn("mt-6", section.tier !== "primary" && "mt-8 border-t border-border pt-6")}>
+                  <h2 className="text-sm font-semibold text-neutral-900">{section.title}</h2>
+                  {section.tier === "primary" && (
+                    <p className="mt-1 text-xs text-muted-foreground">Start here. Follow-ups are optional—expand when you need them.</p>
                   )}
-                </li>
-              ))}
-            </ol>
+                  <ol className="mt-4 space-y-4" start={listStart}>
+                    {items.map((item, itemIndex) => {
+                      const displayIndex = listStart + itemIndex;
+                      const isPrimary = item.tier === "primary";
+                      return (
+                        <li
+                          key={item.id}
+                          className={cn(
+                            "rounded-lg border px-4 py-3",
+                            isPrimary ? "border-violet-200 bg-violet-50/60" : "border-border bg-card"
+                          )}
+                        >
+                          <div className="flex flex-wrap items-center gap-2">
+                            <p
+                              className={cn(
+                                "text-xs font-semibold tracking-wide uppercase",
+                                isPrimary ? "text-violet-800" : "text-violet-700"
+                              )}
+                            >
+                              {displayIndex}. {item.topic}
+                            </p>
+                            {item.badge && (
+                              <span
+                                className={cn(
+                                  "rounded-full px-2 py-0.5 text-[11px] font-semibold",
+                                  isPrimary ? "bg-violet-200 text-violet-950" : "bg-muted text-muted-foreground"
+                                )}
+                              >
+                                {item.badge}
+                              </span>
+                            )}
+                          </div>
+                          <p className={cn("mt-2 leading-7", isPrimary ? "text-[17px] font-medium text-neutral-950" : "text-[16px]")}>
+                            {item.question}
+                          </p>
+                          {item.note && <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.note}</p>}
+                          {item.followUps.length > 0 && (
+                            <details className="group mt-3 rounded-md border border-violet-100/80 bg-white/80">
+                              <summary className="cursor-pointer list-none px-3 py-2 text-sm font-medium text-violet-900 marker:content-none [&::-webkit-details-marker]:hidden">
+                                <span className="inline-flex items-center gap-1.5">
+                                  Follow-ups ({item.followUps.length})
+                                  <span className="text-xs font-normal text-muted-foreground group-open:hidden">— tap to expand</span>
+                                </span>
+                              </summary>
+                              <div className="space-y-3 border-t border-violet-100 px-3 py-3">
+                                {item.followUps.map((follow) => (
+                                  <div key={follow.id} className="rounded-md bg-muted/40 px-3 py-2">
+                                    {follow.cue && (
+                                      <p className="text-[11px] font-semibold tracking-wide text-violet-800 uppercase">{follow.cue}</p>
+                                    )}
+                                    <p className="mt-1 text-[15px] leading-7 text-neutral-900">{follow.question}</p>
+                                    {follow.note && <p className="mt-1 text-sm leading-6 text-muted-foreground">{follow.note}</p>}
+                                  </div>
+                                ))}
+                              </div>
+                            </details>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ol>
+                </div>
+              );
+            })}
           </div>
         ) : (
           <div className="w-full max-w-3xl px-5 py-5 md:px-8 md:py-6">
