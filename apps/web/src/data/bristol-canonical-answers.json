@@ -1,0 +1,1348 @@
+{
+  "version": 1,
+  "questrade": {
+    "244e239c-2f88-4b6e-968f-ef8ce65daa70": {
+      "question": "Walk me through the Interac e-Transfer product you launched at RBC.",
+      "answer": "At RBC, one of the products I worked on was enabling cashback withdrawals for Avion members who weren't RBC banking customers.\n\nThe challenge was that these members could earn cashback, but we needed a way for them to receive that money without requiring an RBC bank account.\n\nWe decided to use Interac e-Transfer and adapt an existing enterprise payments capability rather than building a completely separate payment service.\n\nMy role was owning the consumer product requirements and coordinating the dependencies across teams, including AML, Risk, Financial Operations and the payments service.\n\nThere were a few important considerations. We needed eligibility rules to determine which members could withdraw, transaction limits, a reliable way to initiate the payout and an operational process for settlement and reconciliation.\n\nWe also needed the customer experience to be clear about what was happening with their money.\n\nThe product ultimately supported over $1 million in annualized cashback withdrawals. It leveraged a broader enterprise payments service that supported more than five million settlement events annually.\n\nWhat I took away from that experience is that launching a payment feature isn't just about making an API call. The real work is making sure the product behaves predictably across customer experience, risk controls and financial operations.",
+      "shortAnswer": "At RBC I owned consumer requirements for Avion cashback withdrawals via Interac e-Transfer for members without an RBC bank account. We reused an enterprise payments service rather than build a separate rail. I coordinated AML, Risk, Financial Operations and engineering on eligibility, limits, initiation, customer stat…",
+      "evidenceStatus": "grounded"
+    },
+    "b4880442-6054-41de-b29b-f89c40e95005": {
+      "question": "How do you manage stakeholders who disagree on priorities?",
+      "answer": "I've found that stakeholder disagreements often come from people optimizing for different outcomes.\n\nEngineering may be focused on reliability or technical debt, Marketing may care about a launch commitment, and Finance may be looking at cost or payback.\n\nMy role is to make those trade-offs visible and bring everyone back to the customer or business objective.\n\nI try to understand the underlying concern before proposing a compromise.\n\nIf two teams disagree on priority, I'd ask what evidence supports each position, what happens if we delay either initiative, and whether there are dependencies or risks we haven't accounted for.\n\nSometimes the right answer is a smaller scope. Other times, we have to make a clear decision that not everyone will prefer.\n\nI don't think alignment means getting unanimous agreement. It means people understand the decision, why it was made, and what we're collectively committing to.\n\nIf there's a genuine disagreement that can't be resolved at the team level, I'd escalate it with a clear recommendation and trade-offs rather than simply sending leadership a list of competing opinions.",
+      "shortAnswer": "I've found that stakeholder disagreements often come from people optimizing for different outcomes.",
+      "evidenceStatus": "grounded"
+    },
+    "20f12afb-0dbb-49eb-821e-01989453d828": {
+      "question": "How do you lead when you don't manage the engineers directly?",
+      "answer": "I see leadership as creating clarity and making it easier for the team to do good work. That starts with a clear customer problem and success measure, not just a prioritized ticket list. I want engineers and designers involved in shaping the solution because they often see options I don't. When we're blocked, my responsibility is to make decisions, resolve dependencies and explain trade-offs rather than asking everyone to work harder. I also try to give credit publicly and deal with disagreements directly. You don't need reporting authority to establish direction and accountability, but you do need trust and consistency.",
+      "shortAnswer": "I see leadership as creating clarity and making it easier for the team to do good work. That starts with a clear customer problem and success measure, not just a prioritized ticket list. I want engineers and designers involved in shaping the solution because they often see options I don't. When we're blocked, my responsibility is to make decisions,",
+      "evidenceStatus": "grounded"
+    },
+    "059b883d-ccbf-4e0b-8719-5dbff7c26da6": {
+      "question": "How would you set shared OKRs without making ownership ambiguous?",
+      "answer": "I'd separate the customer outcome that teams jointly influence from the capabilities each team directly owns. For example, sustained active primary accounts might be shared, while one team owns reliable payroll funding and another owns card transaction success.\n\nI'd define lead measures and service-level guardrails for the dependencies, then agree on a regular decision forum where cross-team trade-offs are resolved. Shared outcomes should encourage collaboration, but they shouldn't become a way for everyone to blame someone else when performance misses.\n\nI'd want clear escalation paths and a common view of the customer journey so the organization optimizes for the relationship rather than isolated feature deliveries.",
+      "shortAnswer": "I'd separate the customer outcome that teams jointly influence from the capabilities each team directly owns. For example, sustained active primary accounts might be shared, while one team owns reliable payroll funding and another owns card transaction success. I'd define lead measures and service-level guardrails for the dependencies, then agree on a regular decision forum…",
+      "evidenceStatus": "grounded"
+    },
+    "011b9f33-e2ea-4063-aa22-446d561e6df1": {
+      "question": "Tell me about a time you challenged the original product strategy.",
+      "answer": "As we've worked through the membership program at Arc'teryx, we've had to revisit certain assumptions around scope and delivery sequencing.\n\nOne risk with a program like that is treating every capability as something that needs to launch together.\n\nAs we worked through the product scope and integration dependencies, it became important to distinguish what genuinely needed the broader membership platform from what could deliver customer value independently.\n\nI supported a phased approach that separated essential capabilities from longer-term functionality and reduced some of the dependencies on the full platform rollout.\n\nThat required conversations with business and technology stakeholders because not every team had the same definition of the MVP.\n\nMy approach was to bring the discussion back to the customer proposition and ask what had to be true for the first release to be useful.\n\nI think a roadmap should reflect what we've learned, not become something we defend simply because it was previously approved.\n\nThat experience reminded me that challenging scope is often one of the most useful things a PM can do, especially when a large program has a lot of momentum behind it.",
+      "shortAnswer": "At Arc'teryx, the membership vision brought several experiences together, from registration and gear ownership to repairs and events. As we worked through the technical and operational dependencies, it became clear that treating everything as one launch created unnecessary risk.",
+      "evidenceStatus": "grounded"
+    },
+    "0cf5b127-23d5-442e-b968-59bafc1ff0b3": {
+      "question": "How did you prevent a non-RBC member from getting a worse onboarding experience than an RBC customer?",
+      "answer": "I wouldn't assume the two entry points should look identical because their authentication and account relationships are different. But the value proposition and the next step should feel equally understandable.\n\nFor non-RBC members, a clear sign-up path, identity capture, terms and a reliable way to access the product become especially important. I'd compare conversion and first-value completion across the two segments, while accounting for their different journeys.\n\nIf one group struggled, I'd look at authentication friction, missing information and confusing eligibility rules before adding incentives. The important point from Avion Select was opening a financial-services-adjacent product to an audience that wasn't already inside the bank's usual sign-in flow.",
+      "shortAnswer": "I wouldn't assume the two entry points should look identical because their authentication and account relationships are different. But the value proposition and the next step should feel equally understandable. For non-RBC members, a clear sign-up path, identity capture, terms and a reliable way to access the product become especially important. I'd compare conversion and…",
+      "evidenceStatus": "grounded"
+    }
+  },
+  "opentable": {
+    "opentable-rec-001": {
+      "question": "Tell me about yourself.",
+      "answer": "Sure. I've spent a little over nine years in product management, mostly working on digital consumer products, with a lot of my experience focused on growth, customer engagement, and the technology behind those experiences.\n\nI'm currently at Arc'teryx, where I've been leading the development of a new membership proposition. That includes building the investment case, securing about $5.2 million in funding, and working through how the platform would come together across different business and technology teams.\n\nBefore that, I was at RBC Avion, where I worked on opening the platform to non-RBC customers and launched cashback withdrawals through Interac e-Transfer.\n\nAnd earlier, at HBC and Aeroplan, my work was more commercially focused — things like credit-card acquisition, customer activation, spending, and retention.\n\nSo I've had a pretty good mix of building products from the ground up and improving the commercial performance of existing ones.\n\nThat's partly what interested me about OpenTable. It's an opportunity to bring those experiences together, but in a different industry, with AI playing a much bigger role in the products being built.",
+      "shortAnswer": "Sure. I've spent a little over nine years in product management, mostly working on digital consumer products, with a lot of my experience focused on growth, customer engagement, and the technology behind those experiences.",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-002": {
+      "question": "Why OpenTable?",
+      "answer": "There's actually a personal connection for me. I'm a big foodie, and living in Toronto, I use OpenTable quite a bit when I'm looking for restaurants or making reservations. So it's a product I've been familiar with for a long time.\n\nI've also helped a friend with his small business, and that gave me a better appreciation for how difficult it can be to get discovered and consistently bring in new customers.\n\nThat's one of the things I find interesting about OpenTable. From the diner's perspective, it's about finding somewhere good to eat. But from the restaurant's perspective, it's a tool that can have a meaningful impact on their business.\n\nAnd when I saw that this role was specifically focused on AI and helping restaurants optimize revenue, it caught my attention. A lot of my background has been in growth, experimentation, and commercial performance, so it's a problem I'd genuinely enjoy working on.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-003": {
+      "question": "Why this particular Senior Product Manager role?",
+      "answer": "I think it's the combination of the commercial focus and the opportunity to build something new.\n\nI've always enjoyed product work where you can draw a fairly direct connection between what you're building and how it improves the business.\n\nThe 0-to-1 aspect also appeals to me. At Arc'teryx and RBC, I've had opportunities to take fairly ambiguous problems, work out what the product should look like, and bring different teams together to make it happen.\n\nAnd then there's the AI component. I've been spending quite a bit of my own time building AI-enabled applications, so I'm particularly interested in finding opportunities to apply that knowledge to real business problems.\n\nThis role brings together several things I've enjoyed doing and want to continue developing.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-004": {
+      "question": "Your background is primarily financial services and retail. Why move into hospitality?",
+      "answer": "I actually think a lot of the underlying business challenges are quite similar.\n\nAt HBC, for example, I was managing growth for a large credit-card portfolio. We were looking at things like customer acquisition, spending behaviour, retention, and how to improve the economics of that portfolio.\n\nAt Aeroplan, there was a similar focus on customer growth and partner performance.\n\nWith restaurants, the operating model is obviously different, but you're still trying to understand customer demand and how to turn that demand into revenue.\n\nWhat's especially interesting is that restaurant capacity is perishable. If you have empty tables during a particular seating window, you can't necessarily recover that opportunity tomorrow.\n\nSo the idea of using data and predictive analytics to help restaurants make better decisions is something I find really compelling.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-005": {
+      "question": "Tell me about a 0-to-1 product you've launched.",
+      "answer": "Yeah, one example would be cashback withdrawals for non-RBC customers on Avion Rewards.\n\nWe'd opened Avion to people who weren't RBC banking customers, which created an interesting problem. These members could earn cashback, but we still needed a practical way for them to actually receive that money.\n\nRather than building a completely separate payment service, we looked at adapting an existing enterprise payments capability using Interac e-Transfer.\n\nI owned the consumer product requirements and worked with engineering, Risk, and Financial Operations to figure out how the experience would work, including eligibility, controls, transaction status, and reconciliation.\n\nWe ultimately launched the capability, and it supported roughly 3,200 withdrawal requests per quarter, with about 99% confirmed within 24 hours. That represented approximately $1.2 million in annualized payouts.\n\nIt was a good example of taking a customer problem that sounded fairly straightforward and working through all the complexity behind it to actually deliver something usable.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-006": {
+      "question": "Tell me more about what you're doing at Arc'teryx.",
+      "answer": "I'm currently leading the product work for a new membership proposition.\n\nThe idea is to build a relationship with customers that goes beyond buying another jacket. Arc'teryx products can last for years, so there are opportunities around care, repairs, trade-in, and community experiences that make sense over the lifetime of the product.\n\nI've been involved in building the business case, securing approximately $5.2 million in funding, evaluating technology vendors, and defining how the different systems would need to work together.\n\nOne of the more interesting challenges has been figuring out what actually needs to be part of the larger platform versus what we can deliver independently.\n\nFor example, with the Sperro SV launch, we had an opportunity to introduce specific customer benefits without waiting for the entire membership platform to be ready.\n\nSo it's been a mix of long-term product strategy and making fairly practical decisions about scope, dependencies, and what we can deliver sooner.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-008": {
+      "question": "Have you built and shipped AI/ML-powered products?",
+      "answer": "I haven't been the product lead for an enterprise AI/ML launch yet, but I've built up a fairly strong foundation on both the analytical and hands-on development sides.\n\nI have a Master of Management Analytics from Queen's, so I came into this with a background in statistics and predictive modelling. That's been helpful as I've gotten deeper into concepts like embeddings, vector search, and how different models are evaluated.\n\nMore recently, I've been using AI-assisted development to build and deploy my own web applications.\n\nOne is a tool that explores semantic matching and AI-assisted retrieval, and another is Bench, where I've been experimenting with computer vision for exercise recognition.\n\nI've also become much more comfortable working across the application stack — using Git, Vercel, Supabase, and integrating model APIs. And that's exposed me to some of the practical decisions around retrieval accuracy, latency, token usage, and cost.\n\nSo while I wouldn't equate those projects with leading an enterprise-scale ML launch, I do bring that technical and analytical foundation alongside nine-plus years of experience building and launching products commercially.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-009": {
+      "question": "How are you using AI in your day-to-day product work?",
+      "answer": "Quite a bit, actually. The biggest change for me is how quickly I can go from having an idea to building something I can test.\n\nI use ChatGPT and Claude for things like research, challenging assumptions, and working through different approaches to a problem.\n\nBut where I've spent more time recently is with Cursor, building actual applications rather than just creating mockups or writing requirements.\n\nI've been experimenting with computer vision, semantic search, and integrating AI models into different user experiences.\n\nAnd you start running into practical questions pretty quickly. Is the output reliable enough? Is the response fast enough? Is the extra model complexity actually improving the experience?\n\nI like that it's given me a much more hands-on understanding of the technology, while still approaching it from a product perspective.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-010": {
+      "question": "How would you approach identifying an AI opportunity that improves restaurant revenue?",
+      "answer": "I'd probably start by spending time understanding where restaurants are actually losing revenue today.\n\nFor example, is the bigger challenge unfilled tables, last-minute cancellations, predicting demand, or something else entirely?\n\nI'd also want to understand what OpenTable already provides and where restaurant operators still find themselves making decisions without enough information.\n\nOne area I'd be interested in exploring is demand forecasting. If a restaurant can anticipate that certain seating windows are likely to have unused capacity, there might be an opportunity to recommend actions before that revenue is lost.\n\nBut I wouldn't necessarily start by building a sophisticated ML model.\n\nI'd first want to validate that the recommendation is useful, understand what operators are willing to act on, and establish whether we're genuinely creating incremental revenue.\n\nIf the data supports a more advanced model, that's where I'd invest further.\n\nFor me, the interesting part isn't the prediction by itself. It's whether that prediction helps someone make a better decision.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-011": {
+      "question": "How would you measure success for a restaurant revenue-optimization product?",
+      "answer": "I'd want to make sure we're measuring the actual commercial outcome, not just activity within the product.\n\nFor example, if we introduced a feature that helps restaurants fill otherwise empty tables, reservation volume alone wouldn't tell us enough.\n\nI'd want to understand whether those reservations resulted in additional seated diners and whether that translated into incremental revenue.\n\nSo I'd look at things like table utilization, completed covers, cancellation and no-show rates, and actual guest spending where we have that data.\n\nI'd also be careful about incrementality. Are we genuinely bringing in additional business, or just shifting reservations that would have happened anyway?\n\nAnd then there are the operational considerations. If a recommendation increases revenue but creates problems for staffing or service quality, that's not necessarily a good outcome.\n\nSo I'd be looking at both the commercial improvement and whether the product is actually helping restaurants operate more effectively.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-012": {
+      "question": "How comfortable are you working with engineering, data science, and technical teams?",
+      "answer": "Very comfortable. A lot of the products I've worked on have had fairly complex technical dependencies behind what looks like a straightforward customer experience.\n\nAt RBC, for example, I was working across web, mobile, backend engineering, architecture, and payments infrastructure.\n\nAt Arc'teryx, it's been more about connecting systems like identity, commerce, loyalty, and customer service.\n\nI'm comfortable getting into technical discussions and understanding the trade-offs, although I don't pretend to be the engineer making every implementation decision.\n\nAnd more recently, building applications myself has helped me get closer to those decisions.\n\nWith machine learning, I'd approach it similarly. I'd want to understand the data, how the model is being evaluated, and the practical implications for accuracy, cost, and user experience.\n\nI think my role is to be technically fluent enough to challenge assumptions and make good product decisions, while working closely with the people who have the deeper engineering and ML expertise.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-013": {
+      "question": "How do you move quickly when building something new?",
+      "answer": "I try to figure out what we need to learn before deciding how much we need to build.\n\nA lot of the time, the temptation with a new product is to start defining all the capabilities it should eventually have.\n\nBut I'd rather understand the biggest uncertainty first. Do customers actually need this? Can we deliver it with the technology we have? Does the business case make sense?\n\nAt Arc'teryx, for example, we had a much broader membership vision, but there were certain benefits we could deliver independently without waiting for the full platform.\n\nThat meant being deliberate about scope and separating what was essential from what could come later.\n\nI think that same approach is particularly useful with AI, where it's now possible to prototype something relatively quickly, but that doesn't necessarily mean it's worth building into a full product.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-014": {
+      "question": "How do you handle conflicting executive or stakeholder priorities?",
+      "answer": "I try to understand what's driving the disagreement first, because often the different teams are optimizing for slightly different things.\n\nAt Arc'teryx, for example, membership involved teams across commerce, marketing, customer service, ReBIRD, and technology.\n\nThey all had legitimate priorities, but we couldn't necessarily accommodate everything in the initial scope.\n\nA lot of my role was making those trade-offs visible — what was essential to the customer experience, what had technical dependencies, and what we could reasonably deliver within the timeline and investment we had.\n\nI find those conversations become much easier when everyone understands what we're actually trying to achieve and what each decision means.\n\nYou won't necessarily get everyone agreeing with every decision, but you can usually get alignment around the rationale.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-rec-015": {
+      "question": "Have you worked with two-sided marketplaces?",
+      "answer": "Not a traditional two-sided marketplace in the same way OpenTable operates, but I've worked on products where there are multiple groups with different incentives, and the economics have to work for everyone involved.\n\nAt Aeroplan, for example, I worked on acquisition across several financial partners, where we had to think about the customer experience alongside partner performance.\n\nAnd at HBC, there was a similar balance between encouraging customer engagement and making sure the economics of those incentives actually worked.\n\nWhat I find interesting about OpenTable is that a better experience for diners doesn't automatically mean a better commercial outcome for every restaurant.\n\nYou have to think about both sides and make sure the incentives remain aligned.\n\nSo it's a different marketplace structure from what I've worked on, but that way of thinking about the product is familiar.",
+      "shortAnswer": "",
+      "evidenceStatus": "resume_supported"
+    },
+    "opentable-bristol-20261103-b01": {
+      "question": "Tell me about yourself.",
+      "answer": "Sure. I've spent a little over nine years in product, mostly across consumer technology, financial services, loyalty and growth.\n\nAt Arc'teryx I've been leading the strategy for a new membership proposition — building the business case, securing about $5.2 million in funding, and bringing a fairly complex set of technology and operating teams around an MVP.\n\nBefore that, I was at RBC Avion, where I worked on opening the platform to non-RBC customers and led the consumer product work for cashback withdrawals through Interac e-Transfer. Earlier, at HBC and Aeroplan, my focus was more commercial: acquisition, activation, spending and retention.\n\nSo I've had a mix of building new products and improving the economics of established ones. OpenTable interests me because those skills come together in a product that's genuinely used in a live business — one where a better decision about demand or capacity can make a difference that evening. The AI component is exciting, but it's the restaurant problem that makes the role compelling.",
+      "shortAnswer": "Sure. I've spent a little over nine years in product, mostly across consumer technology, financial services, loyalty and growth.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B01",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b02": {
+      "question": "Why OpenTable?",
+      "answer": "There's a personal connection. I eat out a lot in Toronto, and OpenTable's been part of how I find restaurants and make plans for years. I've also helped a friend with a small business and have friends in hospitality, so I have at least some appreciation for how hard it is to attract customers consistently.\n\nWhat I like is that the two sides experience the product differently. I just want to find somewhere good and book easily. The restaurant has to think about staffing, guest flow, cancellations and whether the evening is actually profitable.\n\nThe interesting opportunity is to help both sides without treating them as separate problems. I've spent a lot of my career on growth, analytics and commercial outcomes, and I'd like to apply that to decisions restaurants make every day. I also like that OpenTable is investing in its own restaurant products and expanding internationally — there's meaningful product work beyond just adding another discovery feature.",
+      "shortAnswer": "There's a personal connection. I eat out a lot in Toronto, and OpenTable's been part of how I find restaurants and make plans for years. I've also helped a friend with a small business and have friends in hospitality, so I have at least some appreciation for how hard it is to attract customers consistently.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B02",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b03": {
+      "question": "Why are you interested in the Restaurant Product team specifically?",
+      "answer": "It's the combination of commercial ownership and the operational reality of the product. I've worked on growth products, but I've also led platform work where the customer promise only holds if the underlying systems and teams are aligned.\n\nFor a restaurant, those two worlds meet in the same service. Getting one more reservation sounds good until the kitchen is backed up, a server calls in sick, or a table is still occupied. That's an unusually tangible product trade-off.\n\nFrom what Suzanne described, this team is close to front-of-house and availability planning, while the job also emphasizes new AI-powered revenue products. I'd enjoy working at that intersection — making a prediction useful to an operator, not just accurate on a dashboard. I'd also be interested to hear from Bristol how the specific role is divided between those priorities.",
+      "shortAnswer": "It's the combination of commercial ownership and the operational reality of the product. I've worked on growth products, but I've also led platform work where the customer promise only holds if the underlying systems and teams are aligned.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B03",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b04": {
+      "question": "Why are you looking for a new opportunity now?",
+      "answer": "I've really valued the chance to lead a large, complex membership initiative at Arc'teryx. A big part of that work has been strategy, investment decisions and aligning teams around what actually belongs in the first release.\n\nFor my next role, I'm looking for that same level of ownership, but closer to a product where we can see the effect of our decisions on customers and commercial performance more directly. I'm also keen to deepen the practical AI work I've been exploring through my own prototypes.\n\nWhat stood out about OpenTable was the mix of 0-to-1 opportunity, restaurant economics and a product team that's small enough for PMs to own meaningful decisions. I'm interested in the scope and the people as much as the industry itself.",
+      "shortAnswer": "I've really valued the chance to lead a large, complex membership initiative at Arc'teryx. A big part of that work has been strategy, investment decisions and aligning teams around what actually belongs in the first release.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B04",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b05": {
+      "question": "Why move into hospitality and AI/ML product management?",
+      "answer": "The industry is new for me, but the underlying questions are familiar. At HBC and Aeroplan we were trying to understand demand, improve conversion and make better commercial decisions from customer data.\n\nRestaurants have a different constraint that I find especially interesting: capacity disappears. If a table goes empty on Friday at seven, that particular opportunity is gone. And filling it isn't automatically a win if the kitchen or floor can't support the extra party.\n\nOn the AI side, I have a management analytics background and I've been building my own prototypes, so I'm interested in using prediction to support those real decisions. I wouldn't claim to know restaurant operations better than people who've spent years on a floor. I'd approach it by learning those workflows and bringing the analytical, experimentation and execution experience I already have.",
+      "shortAnswer": "The industry is new for me, but the underlying questions are familiar. At HBC and Aeroplan we were trying to understand demand, improve conversion and make better commercial decisions from customer data.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B05",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b06": {
+      "question": "What makes your background relevant when you haven't owned a production AI/ML product end to end?",
+      "answer": "That's the most obvious gap in my background, and I don't want to dress it up. I haven't led an enterprise AI or ML product all the way through production launch.\n\nI have led complex 0-to-1 products where the hardest part was connecting a customer need to the architecture, operational controls and commercial outcome. RBC's Interac cashback withdrawals is a good example: the customer saw a simple payout, but getting there required eligibility rules, risk, payment operations and reconciliation working together. At Arc'teryx, membership involved a business case, a new platform and significant cross-team dependencies.\n\nI also have a Master's in Management Analytics and more recently have been building AI prototypes involving semantic retrieval and computer vision. I know that's not the same as operating production ML at scale. What I can bring immediately is identifying a valuable problem, designing a credible experiment and working closely with data science and engineering to decide what should actually ship.",
+      "shortAnswer": "That's the most obvious gap in my background, and I don't want to dress it up. I haven't led an enterprise AI or ML product all the way through production launch.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B06",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b59": {
+      "question": "What do you love about product management?",
+      "answer": "I like taking a problem that's initially messy and getting a team to the point where we know what matters and can do something about it.\n\nI genuinely enjoy the back-and-forth with engineers and designers. Some of the best decisions come when someone challenges the approach I walked in with, and we end up with something simpler or more useful. I also like the commercial side — being able to say, after all the planning and trade-offs, that the product actually changed a customer or business outcome.\n\nOver time I've learned that being a good PM isn't about being the person with the answer to everything. It's about making the problem clear, making decisions when they're needed, and creating enough trust that the team can challenge you as well.",
+      "shortAnswer": "I like taking a problem that's initially messy and getting a team to the point where we know what matters and can do something about it.",
+      "evidenceStatus": "requires_personal_review",
+      "curatedKey": "B59",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b60": {
+      "question": "What frustrates you about product management?",
+      "answer": "Probably when a solution gets treated as a commitment before we've really agreed on the problem.\n\nOn a big program, you can have months of momentum behind a particular feature or launch date. That makes it harder to ask whether the assumption still holds, even when the evidence starts changing.\n\nI don't find disagreement frustrating in itself. I'd rather have an engineer challenge me early than discover the issue after launch. What bothers me is avoiding an uncomfortable decision because we've already invested so much in the original plan.\n\nI've tried to get better at making that call earlier — saying, 'This is what we've learned, here are the options, and here's what I recommend changing.' It's not always popular, but usually it's better for the team and the customer.",
+      "shortAnswer": "Probably when a solution gets treated as a commitment before we've really agreed on the problem.",
+      "evidenceStatus": "requires_personal_review",
+      "curatedKey": "B60",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip01": {
+      "question": "What's your take on the restaurant industry today?",
+      "answer": "My take is that restaurants are dealing with a difficult combination of thin margins, uneven demand and really unforgiving operations. A restaurant can look busy on paper and still have a difficult night if everyone arrives at once, a section is understaffed or the tables aren't turning as expected.\n\nSo I wouldn't assume the industry's biggest technology need is simply more reservations. It's helping operators turn demand into a service they can deliver well and profitably.\n\nThat makes OpenTable interesting because it sits between the diner looking for a table and the restaurant deciding what it can actually accommodate. My working hypothesis is that the next wave of value comes from better availability, pacing and revenue decisions, with much less manual work at the host stand.\n\nI'd want to validate which part of that problem is most painful by restaurant segment. A fine-dining venue and a busy neighborhood restaurant may have very different constraints.",
+      "shortAnswer": "My take is that restaurants are dealing with a difficult combination of thin margins, uneven demand and really unforgiving operations. A restaurant can look busy on paper and still have a difficult night if everyone arrives at once, a section is understaffed or the tables aren't turning as expected.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "IP01",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip02": {
+      "question": "What are the biggest pain points restaurant operators face?",
+      "answer": "I'd put three problems at the top. One is profitability: costs move, demand changes, but restaurants don't have unlimited room to raise prices. The second is uncertainty: a full reservation book doesn't guarantee everyone shows up, and a quiet Tuesday isn't fixed by having a great Saturday.\n\nThe third is service capacity. A dining room has physical tables, but its usable capacity also depends on servers, kitchen throughput, party mix and how long guests stay.\n\nThose problems interact. If I push more bookings into a service that's already stretched, I might raise covers and lower the quality of the meal. So before choosing a feature, I'd ask where a specific restaurant is losing money or time, and whether OpenTable can actually change that outcome.",
+      "shortAnswer": "I'd put three problems at the top. One is profitability: costs move, demand changes, but restaurants don't have unlimited room to raise prices. The second is uncertainty: a full reservation book doesn't guarantee everyone shows up, and a quiet Tuesday isn't fixed by having a great Saturday.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "IP02",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip03": {
+      "question": "Which of those pain points would you prioritize for OpenTable, and why?",
+      "answer": "My first bet would be helping restaurants capture profitable demand from capacity they already have, while making it easier to protect the quality of service.\n\nI like that opportunity because it's close to OpenTable's existing strengths: it has visibility into the reservation book, availability rules, cancellations and, in some cases, operating signals. I'd look for restaurants where demand exists but a late cancellation, rigid party-size rule or poorly paced service means they can't use it.\n\nI'm not suggesting building another basic table automation — OpenTable already has those. I'd test whether more contextual recommendations or better execution of the existing tools produces measurable incremental seated value.\n\nI would put direct labor scheduling or dynamic menu pricing behind that for now. They're important problems, but less obviously owned by this product surface and potentially more disruptive to restaurant workflows. I'd change the ranking if operator research or the data showed a bigger opportunity elsewhere.",
+      "shortAnswer": "My first bet would be helping restaurants capture profitable demand from capacity they already have, while making it easier to protect the quality of service.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "IP03",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip04": {
+      "question": "What is OpenTable particularly well positioned to solve?",
+      "answer": "OpenTable's advantage, to me, is the connection between demand and the restaurant's actual book. It can see the diner trying to find a table, and it gives operators tools to decide when and how that table should be available.\n\nThat matters because a recommendation only creates value if somebody can act on it. A general analytics provider might forecast demand, but a restaurant still needs to translate that forecast into pacing, inventory or guest communication.\n\nI'd look at ways of closing that loop: show the opportunity, recommend a specific action, make it easy to approve or override, then measure whether it helped. That's a more defensible position than simply saying OpenTable has a lot of data.",
+      "shortAnswer": "OpenTable's advantage, to me, is the connection between demand and the restaurant's actual book. It can see the diner trying to find a table, and it gives operators tools to decide when and how that table should be available.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "IP04",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip05": {
+      "question": "Where is OpenTable's existing product strong, and where could it improve?",
+      "answer": "From the public product material, I think OpenTable is going in a sensible direction. Table Automations already handle operator-defined availability and pacing rules. Turn Times and Availability Insights show unused bookable time, and there are guest and reporting capabilities around that.\n\nMy question would be what happens after the insight. Does an operator spot it before service, trust the recommendation and actually change what they're doing? Does that improve the economics, or just make the dashboard look better?\n\nI'd be curious about a prediction or decision-support layer that helps operators handle changing conditions — without taking control away from the host or manager. That's a hypothesis about an extension, not a claim that OpenTable isn't already working on it. I'd want Bristol's view on where the current tools fall short.",
+      "shortAnswer": "From the public product material, I think OpenTable is going in a sensible direction. Table Automations already handle operator-defined availability and pacing rules. Turn Times and Availability Insights show unused bookable time, and there are guest and reporting capabilities around that.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "IP05",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip06": {
+      "question": "What important restaurant problems cannot be solved simply by generating more bookings?",
+      "answer": "Profitability and the guest experience, for a start. More reservations help only if those people show up, spend enough to cover the incremental cost and can be served well.\n\nImagine a restaurant discounts early dinner heavily and fills the book. Bookings look fantastic, but maybe half those guests would have come later at full price, or the kitchen now has a rush it can't handle. That's not necessarily a good business result.\n\nThere are also problems with staff workload, table-status accuracy and the time operators spend managing exceptions. Those might be worth solving even if they don't immediately create more covers.\n\nI'd want the product scorecard to include actual seated outcomes, service reliability and restaurant retention — not just reservation volume.",
+      "shortAnswer": "Profitability and the guest experience, for a start. More reservations help only if those people show up, spend enough to cover the incremental cost and can be served well.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "IP06",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip07": {
+      "question": "Where do you see AI genuinely improving restaurant economics?",
+      "answer": "I see the strongest opportunity in decisions that happen repeatedly under uncertainty. How much demand will we see in the next two hours? Is this table likely to be free in time? Does opening another seating slot help, or will it overwhelm the floor?\n\nPredictive models could be useful when those decisions depend on lots of interacting signals, but I would start with the action. If the forecast says a Friday service is running behind, can the product recommend a pacing change the host can actually use?\n\nThe operator should understand the reason and retain control. I'd test whether the recommendation reduces avoidable empty capacity or late seating without adding guest complaints or staff overload. The model is useful only when the better prediction leads to a better service.",
+      "shortAnswer": "I see the strongest opportunity in decisions that happen repeatedly under uncertainty. How much demand will we see in the next two hours? Is this table likely to be free in time? Does opening another seating slot help, or will it overwhelm the floor?",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "IP07",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip08": {
+      "question": "What AI use cases are overhyped or unlikely to create meaningful value?",
+      "answer": "I'm cautious about AI features where the novelty is doing the talking. A report-summarizing assistant may save time, but if it doesn't change a decision, the commercial impact could be limited.\n\nI'd also question complex predictive models where a clear rules-based workflow already solves most of the problem. OpenTable's table automations are a good example of existing capability we should benchmark against, not reinvent.\n\nAnd fully autonomous decisions in the middle of a restaurant service would make me nervous until there's a very strong trust and reliability case. A host knows that a particular table has a stroller beside it or a guest who's been waiting longer than the system realizes.\n\nMy test would be straightforward: which decision gets better, by how much, and is that improvement worth the complexity and risk?",
+      "shortAnswer": "I'm cautious about AI features where the novelty is doing the talking. A report-summarizing assistant may save time, but if it doesn't change a decision, the commercial impact could be limited.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "IP08",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip09": {
+      "question": "How would you balance small independents with larger restaurant groups?",
+      "answer": "I'd start by segmenting on operating needs, not just number of locations. A small independent might have one person running the host stand and making pricing, staffing and marketing decisions. They need something quick and obvious, not a deep analytics suite.\n\nA restaurant group may need central controls, permissions, comparisons across venues and consistent reporting. The underlying reservation and availability engine can be shared, but the workflows around it should differ.\n\nI'd try to keep one platform with configuration rather than custom-build a product for every segment. The decision would depend on where the needs are genuinely different and where the same capability could serve both. I'd measure activation and realized value by segment, not just total usage.",
+      "shortAnswer": "I'd start by segmenting on operating needs, not just number of locations. A small independent might have one person running the host stand and making pricing, staffing and marketing decisions. They need something quick and obvious, not a deep analytics suite.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "IP09",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip10": {
+      "question": "What product investment would you deliberately NOT prioritize, and why?",
+      "answer": "I wouldn't lead with fully autonomous dynamic menu pricing.\n\nThere's a revenue-management argument for it, but restaurants aren't airlines. Price changes can feel personal, affect the guest relationship and create front-of-house confusion. It also isn't the first place I'd expect OpenTable's existing reservation and table-management data to give us a clear advantage.\n\nI'd rather prove value with more controllable decisions: availability, cancellation recovery and helpful pacing recommendations that operators can approve. Those can build trust without asking restaurants to change how guests perceive their hospitality.\n\nI'd revisit pricing in an environment where variability is already expected, like special experiences or events, if customers and operators actually want it. The question isn't whether we can optimize something — it's whether we should.",
+      "shortAnswer": "I wouldn't lead with fully autonomous dynamic menu pricing.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "IP10",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip11": {
+      "question": "How would you distinguish a real industry problem from an attractive technology solution?",
+      "answer": "I'd want evidence that the problem is frequent, costly and important enough that operators will change how they work.\n\nSuppose someone proposes an AI assistant that tells managers when to open more availability. Before building it, I'd sit with operators during service. When do they make that call today? What's hard about it? What happens if they get it wrong? And could a simple rule solve the same issue?\n\nThen I'd put a rough dollar or time value against the decision. A small manual pilot might be enough to see whether managers actually use the recommendation.\n\nIf they ignore a clear, accurate suggestion because it doesn't fit the realities of the floor, making the model more sophisticated won't rescue the product. That's a workflow problem, not a modeling problem.",
+      "shortAnswer": "I'd want evidence that the problem is frequent, costly and important enough that operators will change how they work.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "IP11",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip12": {
+      "question": "How would you determine whether OpenTable creates incremental revenue rather than capturing existing demand?",
+      "answer": "I'd separate revenue attributed to OpenTable from revenue the restaurant wouldn't have earned without the intervention. Those aren't the same.\n\nI'd define the outcome as incremental seated revenue or contribution, where we have enough cost data. Then I'd choose an experiment that can detect displacement — for example, a randomized restaurant-level or market-level rollout, depending on whether diners can substitute between nearby venues.\n\nI'd want POS data if it's available, and information about other channels or walk-ins. Otherwise, a booking may simply have moved from a restaurant's own website to OpenTable.\n\nIf we couldn't observe total restaurant outcomes reliably, I'd be transparent about that limitation. We could still measure incremental seated covers under a controlled test, but I wouldn't claim precise incremental profit on the basis of platform attribution alone.",
+      "shortAnswer": "I'd separate revenue attributed to OpenTable from revenue the restaurant wouldn't have earned without the intervention. Those aren't the same.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "IP12",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-ip_ref": {
+      "question": "Industry reference — five pain points & priority ranking",
+      "answer": "Top five restaurant problems, in my working priority order:\n\n1. Profitable use of limited service capacity. Even when tables exist, staffing, kitchen throughput, party mix and timing decide what the room can handle. OpenTable relevance: availability, pacing, turn times. Test whether better recommendations convert usable idle capacity into seated value.\n\n2. Demand volatility and missed visits. Late cancellations, no-shows and weak weekday periods can leave otherwise usable capacity empty. OpenTable relevance: demand discovery, guest communications, waitlists. Test net recovered contribution, not no-show percentage in isolation.\n\n3. Thin margins and costs that bookings don't reveal. More covers might require costly promotions or overtime. OpenTable relevance: commercial reporting and POS integrations where available. Distinguish revenue, contribution and attribution.\n\n4. Front-of-house operating load. Hosts need fast, trustworthy decisions during live service; wrong information creates seating conflicts and guest frustration. OpenTable relevance: existing one-tap controls and automation. Explore operator-approved prediction, not duplicating controls.\n\n5. International workflow fragmentation. A translated interface doesn't solve differences in reservation culture, deposits, POS, payments, local integrations and service style. OpenTable relevance: configurable core platform with market-specific extensions.\n\nRanking is a strategic hypothesis, not verified OpenTable customer research. Validate with operators, product/retention data and market-level evidence. I would initially prioritize capacity-aware, operator-controlled decision support; then cancellation recovery and demand shaping; then broader AI and market-specific extensions.\n\nExisting publicly documented capabilities include Table Automations, Turn Times and Availability Insights, Guest Relationship Management, and conversational reporting in testing. Do not pitch these foundational features as new inventions.",
+      "shortAnswer": "Top five restaurant problems, in my working priority order:",
+      "evidenceStatus": "reference",
+      "curatedKey": "IP-REF",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc01": {
+      "question": "Deposits cut no-shows but booking conversion drops",
+      "answer": "I'd change the deposit rollout rather than declare victory on the no-show rate. We're probably making some diners more reliable while discouraging others from booking at all.\n\nFirst I'd look at the net number of seated covers and the contribution of those visits, not just the percentage of reservations that show up. Then I'd break it down by first-time versus repeat diner, booking lead time, restaurant type and risk of a no-show.\n\nMy likely move would be to keep deposits where the cost of a missed table is genuinely high — perhaps a large party or a scarce experience — and reduce friction elsewhere. I'd test that against the current policy, watching conversion, actual seated revenue and complaints.\n\nIf regulation ruled deposits out for certain bookings, I'd remove them for those bookings. I wouldn't try to disguise the same restriction as another payment step. We'd test permitted options like clearer confirmations and waitlist recovery instead.",
+      "shortAnswer": "I'd change the deposit rollout rather than declare victory on the no-show rate. We're probably making some diners more reliable while discouraging others from booking at all.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC01",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc02": {
+      "question": "Faster turns raise covers but hurt experience scores",
+      "answer": "I'd slow or pause the aggressive pacing change for affected restaurants. More covers are only a win if the staff can deliver the service and people want to come back.\n\nI'd check where experience scores fell — was it particular restaurants, service windows or table types? Then I'd sit with hosts and servers. Are guests actually being rushed, are parties waiting even longer, or is the kitchen receiving too many orders at once?\n\nI'd separate different interventions. More accurate turn-time estimates might help, while shortening every table duration might not. I'd test a narrower recommendation with operator control, and use seating delays, complaints, staff overrides and repeat visits as guardrails alongside incremental covers.\n\nIf key partners wanted the feature off, I'd give them that control while we diagnosed it. We shouldn't make the floor harder to run to protect a revenue metric.",
+      "shortAnswer": "I'd slow or pause the aggressive pacing change for affected restaurants. More covers are only a win if the staff can deliver the service and people want to come back.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC02",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc03": {
+      "question": "More reservations, flat profitability",
+      "answer": "I'd stop calling it a success. A 15% booking lift with flat profitability suggests we're shifting demand, attracting lower-value visits or adding costs that offset the revenue.\n\nI'd trace it from booked reservations through actual seated parties, average check, promotions, incremental labor and service mix. For example, an early-dinner campaign might pull guests from a later full-price seating instead of bringing in new visits.\n\nIf the problem is concentrated in discounted peak-hour bookings, I'd stop expanding that treatment and test more targeted off-peak demand instead. If there's no path to incremental contribution, I'd end the experiment.\n\nI'd rather report that we learned what *didn't* work than keep investing because the reservations chart looks good.",
+      "shortAnswer": "I'd stop calling it a success. A 15% booking lift with flat profitability suggests we're shifting demand, attracting lower-value visits or adding costs that offset the revenue.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC03",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc04": {
+      "question": "Accurate AI model, poor operator adoption",
+      "answer": "Eight percent adoption tells me we haven't built a useful enough operator workflow yet. Improving model accuracy wouldn't be my first move.\n\nI'd watch real services and ask why recommendations aren't used. Are they arriving at the wrong time? Are they asking a manager to make changes the floor can't handle? Is the reasoning unclear? Or do operators simply not believe the commercial claim?\n\nI'd narrow to one high-value decision — say whether to release a held table shortly before service — and make it easy to accept, reject or override. I'd show a plain-language reason and capture why the operator disagreed.\n\nThen I'd measure *useful decisions*, not recommendation clicks: time saved, seating outcomes, override frequency and guest experience. If people still don't use it, we may have picked the wrong problem, however good the model is.",
+      "shortAnswer": "Eight percent adoption tells me we haven't built a useful enough operator workflow yet. Improving model accuracy wouldn't be my first move.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC04",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc05": {
+      "question": "Privacy rule removes guest-level data before launch",
+      "answer": "I'd treat the privacy change as a product constraint, not a launch checklist item. If the promise depends on guest-level data we can no longer use, we have to change the promise.\n\nI'd work with Legal, data science and engineering to establish exactly what remains permissible. Could we do a less-personalized version using aggregated service-level demand? If so, is it still accurate and useful enough to warrant launching?\n\nIf it is, I'd rescope and validate it. If not, I'd delay rather than ship something that looks the same but can't deliver the value we sold.\n\nAnd I'd bring Sales into that decision immediately, particularly if groups had already been promised the feature. I'd explain what changed, the options and a recommendation. The commercial commitment matters, but it doesn't supersede the restriction.",
+      "shortAnswer": "I'd treat the privacy change as a product constraint, not a launch checklist item. If the promise depends on guest-level data we can no longer use, we have to change the promise.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC05",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc06": {
+      "question": "Operator doubts OpenTable incrementality",
+      "answer": "I'd take that objection seriously. A restaurant seeing bookings from OpenTable doesn't prove those customers wouldn't have come anyway.\n\nI'd ask where they suspect substitution — returning guests, Friday peak demand or people who already know the restaurant. Then I'd propose an experiment on an intervention we can control, such as incremental marketplace visibility during a softer period.\n\nI'd compare total seated outcomes at treated and control restaurants, ideally with POS or partner-provided transaction data and a look at other channels. I'd be careful with spillover, since giving one restaurant more exposure can pull demand from another.\n\nIf the POS integration failed, I wouldn't pretend reservations alone prove incremental sales. I'd use the evidence we do have, flag the limitation and work toward a more credible measurement approach. Long-term partner trust is worth more than a convenient attribution claim.",
+      "shortAnswer": "I'd take that objection seriously. A restaurant seeing bookings from OpenTable doesn't prove those customers wouldn't have come anyway.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC06",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc07": {
+      "question": "Operators want revenue now, not more AI",
+      "answer": "I'd agree that the outcome comes first. If operators need near-term revenue and we have a modest extension of existing workflows that can deliver it, I wouldn't force a brand-new AI system onto the roadmap simply because the company is AI-first.\n\nI'd compare the options on likely impact, delivery time, confidence and dependency risk. For example, making the existing cancellation-recovery workflow easier to use might be a better first release than an ambitious new forecasting model.\n\nThat doesn't mean abandoning AI. I'd preserve a small validation track if we can afford it — maybe an offline model benchmark or manual recommendations — so we learn whether prediction meaningfully beats the rules baseline.\n\nIf we truly only have capacity for one initiative, I'd choose one and explain what evidence would change that call. Half-funding both would be worse.",
+      "shortAnswer": "I'd agree that the outcome comes first. If operators need near-term revenue and we have a modest extension of existing workflows that can deliver it, I wouldn't force a brand-new AI system onto the roadmap simply because the company is AI-first.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC07",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc08": {
+      "question": "Marketplace win for diners hurts some restaurants",
+      "answer": "That's a marketplace result I'd take seriously, even if the overall conversion number improves.\n\nI'd investigate whether our change disproportionately concentrates demand at popular venues and makes it harder for other relevant restaurants to get discovered. I'd break down results by demand level, geography, restaurant type and the quality of the bookings — not just gross volume.\n\nI wouldn't promise equal exposure to every restaurant; relevance still matters to diners. But we should be able to explain the trade-off and understand whether we are weakening partner value over time.\n\nI'd consider narrowing the rollout, adjusting ranking constraints or finding a better way to surface a broader range of relevant options. If the change helps diners today but erodes supply and partner retention, it's not a durable win.",
+      "shortAnswer": "That's a marketplace result I'd take seriously, even if the overall conversion number improves.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC08",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc09": {
+      "question": "Experiment wins proxy metric, not revenue",
+      "answer": "I wouldn't ship based solely on a 9% lift in an internal optimization score if the business outcome is flat.\n\nFirst I'd check the experiment: was it powered to detect a realistic revenue lift, did we run it long enough, and were there service or marketplace effects outside the measurement window? Then I'd test whether our score actually predicts or causes better commercial outcomes in this context.\n\nIf it's simply a better proxy without a believable link to seated revenue, operator time saved or service quality, I'd stop expansion. We could redesign the intervention, but I'd give it a clear next decision point.\n\nA score can tell you the system is doing what you asked. It doesn't tell you whether you asked it to do the right thing.",
+      "shortAnswer": "I wouldn't ship based solely on a 9% lift in an internal optimization score if the business outcome is flat.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC09",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc10": {
+      "question": "Integration loss blocks forecasting launch",
+      "answer": "I'd establish which product promise the POS integration was supporting. If we promised a forecast of actual restaurant revenue but only have reservation data left, those are different products.\n\nI'd ask data science to evaluate the degraded input set, quantify how accuracy changes by segment and decide whether there's a useful narrower capability — perhaps forecasting reservation demand rather than sales.\n\nIf it meets a defensible threshold and operators understand the limitation, we could rescope. If it doesn't, I'd delay the launch rather than send managers inaccurate recommendations that affect staffing or availability.\n\nI'd make the call with engineering and the commercial team, and communicate it to promised customers clearly. An on-time product that operators can't trust can be more expensive than an honest change in scope.",
+      "shortAnswer": "I'd establish which product promise the POS integration was supporting. If we promised a forecast of actual restaurant revenue but only have reservation data left, those are different products.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC10",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b07": {
+      "question": "How would you develop a product strategy to increase revenue for OpenTable's restaurant partners?",
+      "answer": "I'd start by being specific about where the restaurant is losing value. One restaurant may have empty early-evening tables; another may have demand but poor pacing; a third may have no-show issues. A single 'grow revenue' roadmap would miss those differences.\n\nI'd segment restaurants by operating model and demand pattern, look at where we have evidence of leakage, and speak with operators during actual services. Then I'd size the opportunities and ask where OpenTable has a practical lever — the book, availability, discovery or guest communications.\n\nMy working first bet would be improving profitable use of existing capacity, while protecting service quality. But I'd run a lightweight test before committing to a sophisticated ML build. The strategy should end with a business outcome, a reason we're uniquely positioned to move it, and a clear set of things we're not doing.",
+      "shortAnswer": "I'd start by being specific about where the restaurant is losing value. One restaurant may have empty early-evening tables; another may have demand but poor pacing; a third may have no-show issues. A single 'grow revenue' roadmap would miss those differences.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B07",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b08": {
+      "question": "Where do you see the biggest untapped revenue opportunities in the restaurant reservation lifecycle?",
+      "answer": "I'd look at three points in the journey: before booking, between booking and arrival, and during the service itself.\n\nBefore booking, diners may see no availability even when the restaurant could accept a different party size or time. After booking, late cancellations and no-shows can leave tables empty. During service, unexpected delays or staffing changes can make the published inventory inaccurate.\n\nI think the most interesting opportunity is connecting those moments. For example, if an early cancellation occurs, can we tell whether it can be filled without overwhelming the kitchen, then match it to real nearby demand?\n\nSome underlying tools already exist at OpenTable, so I'd investigate where there is still friction or unused capacity. The priority wouldn't be the point with the largest booking count; it would be where an intervention generates genuine incremental value.",
+      "shortAnswer": "I'd look at three points in the journey: before booking, between booking and arrival, and during the service itself.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B08",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b09": {
+      "question": "If you joined OpenTable, how would you identify and prioritize your first product opportunity?",
+      "answer": "I'd spend the first few weeks understanding the team, data and restaurant workflows rather than arriving with a fixed roadmap.\n\nI'd want to see a real service with a host or manager and look at product usage by restaurant segment. Where are people changing settings manually? What do they override? Where are reservation outcomes different from what the book predicted?\n\nThen I'd rank opportunities on economic value, confidence that we understand the problem, fit with OpenTable's platform, and delivery risk. I'd pick one where we can test the core assumption quickly, perhaps through a manual recommendation or small cohort.\n\nThe output I'd want is a clear recommendation with evidence and trade-offs, not a backlog of ten equally exciting AI ideas.",
+      "shortAnswer": "I'd spend the first few weeks understanding the team, data and restaurant workflows rather than arriving with a fixed roadmap.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B09",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b10": {
+      "question": "How would you improve restaurant profitability without compromising the diner experience?",
+      "answer": "I'd look for profit improvements that don't ask guests to accept a worse meal. Recovering a genuinely empty table, reducing avoidable staff work or making pacing more predictable are good examples.\n\nI'd be much more cautious about simply shortening dining duration or adding bookings at a kitchen bottleneck. If guests feel rushed or staff can't deliver, we may borrow revenue from future visits to improve this week's dashboard.\n\nMy preferred approach is to test a segment-specific change with operator control, measure incremental seated value and include guardrails like late seating, complaints and repeat visits. If the commercial lift only exists when those guardrails deteriorate, I wouldn't expand it.",
+      "shortAnswer": "I'd look for profit improvements that don't ask guests to accept a worse meal. Recovering a genuinely empty table, reducing avoidable staff work or making pacing more predictable are good examples.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B10",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b11": {
+      "question": "How would you approach optimizing restaurant table inventory and utilization?",
+      "answer": "I'd begin by understanding the difference between empty tables and *usable* empty capacity. A four-top that's physically free may not be bookable if the kitchen is at capacity or the restaurant is holding it for a larger party.\n\nOpenTable already has availability rules and Table Automations, so I wouldn't start by rebuilding those. I'd study where operators frequently override rules, release capacity too late or experience seating conflicts. That could tell us whether the gap is configuration, better visibility or a more predictive recommendation.\n\nFor example, a suggestion to loosen a party-size minimum could be helpful when a service is approaching, but only if the remaining bookings and actual floor flow support it. I'd measure incremental seated covers and operator time saved, with service and guest-experience guardrails.",
+      "shortAnswer": "I'd begin by understanding the difference between empty tables and *usable* empty capacity. A four-top that's physically free may not be bookable if the kitchen is at capacity or the restaurant is holding it for a larger party.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B11",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b12": {
+      "question": "How would you prioritize between restaurant acquisition, operational efficiency, repeat diners and increased revenue per guest?",
+      "answer": "I wouldn't choose the same lever for every restaurant. I'd classify the main constraint first: not enough demand, poor conversion of demand, limited service capacity or weak repeat visits.\n\nIf a restaurant is half-empty on weekdays, demand generation may be the priority. If it routinely turns away diners while leaving odd inventory gaps, better availability planning could have higher ROI. And if it already fills peak services, the answer may be retention or guest experience rather than more bookings.\n\nI'd compare the size of each problem, what OpenTable can actually influence, time to value and risk. I'd also examine the restaurant's contribution economics where possible. The decision I want to make is which *constraint* we should relieve first, not which functional team has the most attractive feature idea.",
+      "shortAnswer": "I wouldn't choose the same lever for every restaurant. I'd classify the main constraint first: not enough demand, poor conversion of demand, limited service capacity or weak repeat visits.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B12",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b13": {
+      "question": "How do you balance restaurant-side outcomes with the health of a two-sided marketplace?",
+      "answer": "I'd be careful about optimizing one side of the marketplace at the expense of the other. More prominent placements might increase booking conversion for diners while shifting demand away from relevant smaller restaurants.\n\nI'd measure marketplace-wide outcomes and restaurant-level distribution, not just how the treatment group performed. For the diner, choice, booking success and reliability matter. For the restaurant, incremental value, service fit and long-term retention matter.\n\nEqual bookings across every restaurant wouldn't be the objective; relevance still has to drive discovery. But I'd want to understand when a change creates new demand versus simply reallocating it. If a short-term win starts weakening restaurant supply or trust, I'd adjust the rollout.",
+      "shortAnswer": "I'd be careful about optimizing one side of the marketplace at the expense of the other. More prominent placements might increase booking conversion for diners while shifting demand away from relevant smaller restaurants.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B13",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b14": {
+      "question": "How would you segment restaurants to find differentiated product opportunities?",
+      "answer": "I'd segment along the dimensions that change the product need: demand pattern, capacity constraints, service style, table mix, operational maturity and number of locations.\n\nA small tasting-menu restaurant with costly no-shows is different from a casual venue driven by walk-ins, even if both are independently owned. A group operating twenty restaurants may need central controls and reporting, while a single owner needs something that's usable between services.\n\nI'd start with behavioral and outcome data, then validate the segments with operators. The useful segments are ones where the same intervention produces meaningfully different results. I'd resist creating separate country or plan-tier products unless configuration can't handle the real workflow difference.",
+      "shortAnswer": "I'd segment along the dimensions that change the product need: demand pattern, capacity constraints, service style, table mix, operational maturity and number of locations.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B14",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b15": {
+      "question": "How would you differentiate OpenTable's restaurant product from competing restaurant technology platforms?",
+      "answer": "I wouldn't try to win with a generic promise of 'more AI.' I'd want OpenTable to be the platform that helps restaurants connect diner demand to decisions at the host stand and see the actual value of those decisions.\n\nThere's a credible advantage in combining a consumer marketplace with restaurant availability and operational workflows. But I'd validate where restaurants think the current product helps and where they still turn to another tool or a manual workaround.\n\nIn a competitive market, reliability during service and ease of onboarding can be as important as advanced analytics. I'd focus on measurable operator value, a product that fits the floor, and the ability to adapt across markets without creating a separate codebase every time.",
+      "shortAnswer": "I wouldn't try to win with a generic promise of 'more AI.' I'd want OpenTable to be the platform that helps restaurants connect diner demand to decisions at the host stand and see the actual value of those decisions.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B15",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b16": {
+      "question": "What would your first 90 days and initial product strategy look like?",
+      "answer": "Month one would be about context: talk to restaurant operators, sit in on real services, understand how the team divides FOH, availability and AI work, and review the commercial and technical constraints.\n\nBy the second month I'd want to have narrowed the biggest opportunity areas, with evidence about which restaurant segments feel them most and which levers we actually control. I'd work with design, engineering and data science on a very small test of the strongest hypothesis.\n\nBy ninety days, I'd aim to have a clear recommendation, a baseline metric and either a prototype in operators' hands or an experiment running. I wouldn't promise a production ML launch in ninety days without knowing the data and dependencies. I'd rather demonstrate good judgment and a credible path to value than a rushed roadmap.",
+      "shortAnswer": "Month one would be about context: talk to restaurant operators, sit in on real services, understand how the team divides FOH, availability and AI work, and review the commercial and technical constraints.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B16",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b17": {
+      "question": "What is the most compelling 0-to-1 AI/ML product you would explore for OpenTable?",
+      "answer": "I'd explore a service-aware revenue advisor — something that helps operators decide whether, when and how to open capacity based on the conditions of a particular service.\n\nI know OpenTable already has rules-based Table Automations and availability controls, including rapid changes from the host stand. I wouldn't pitch those as new. The hypothesis is that predictive context could improve the *choice* of action. Imagine a Friday dinner service where two servers are absent and tables are running fifteen minutes late. The number of tables hasn't changed, but the usable capacity has.\n\nThe product could flag the risk and suggest a pacing or availability adjustment, with a clear reason and the manager in control. I'd begin with one decision and benchmark simple rules against an ML recommendation.\n\nI'd measure fewer avoidable seating delays and better use of feasible capacity, not just model accuracy or recommendation clicks. If the model doesn't beat a good rules baseline, we should use the rules.",
+      "shortAnswer": "I'd explore a service-aware revenue advisor — something that helps operators decide whether, when and how to open capacity based on the conditions of a particular service.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B17",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b18": {
+      "question": "How do you decide whether a problem requires machine learning, rules-based automation or a simpler product solution?",
+      "answer": "I'd start with the operating decision, not an assumption that it needs a model.\n\nIf the rule is 'release held tables two hours before service' and it works well, that's simple to understand, maintain and override. ML becomes interesting when the right timing depends on multiple signals — party mix, historical turn time, current delays and demand — and we have enough reliable data to learn that relationship.\n\nI'd build a rules baseline, evaluate the model offline and then test the intervention online. The added value needs to cover the cost of building, monitoring and explaining the model.\n\nIf the sophisticated approach produces a slightly better prediction but no practical improvement for the host or restaurant, I'd choose the simpler product. There's no prize for using the most advanced technology.",
+      "shortAnswer": "I'd start with the operating decision, not an assumption that it needs a model.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B18",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b19": {
+      "question": "How would you use predictive models to help restaurants increase revenue?",
+      "answer": "I'd focus on predictive decisions that have a clear lever. Demand forecasts might tell a restaurant when a service will likely be soft, while turn-time estimates could inform whether to release inventory or adjust pacing.\n\nBut a forecast alone won't create revenue. We'd need to connect it to something an operator can actually do, ideally in an existing OpenTable workflow. And sometimes the recommendation should be to *hold back* inventory if the floor can't support the demand.\n\nI would pilot one such decision, compare a predictive suggestion with the current rules and measure incremental seated value alongside service quality. I'd also examine where the model is wrong — different markets or restaurant styles may have very different behavior. That becomes part of the rollout decision.",
+      "shortAnswer": "I'd focus on predictive decisions that have a clear lever. Demand forecasts might tell a restaurant when a service will likely be soft, while turn-time estimates could inform whether to release inventory or adjust pacing.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B19",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b20": {
+      "question": "How would you evaluate an AI-powered product before committing to a full build?",
+      "answer": "I'd want to answer three questions before funding the full build. Is the problem economically important? Can a better recommendation change the outcome? And can we deliver it reliably with the data we have?\n\nFor example, before building a model that recommends pacing adjustments, we could manually generate recommendations for a few operators and see whether they understand and follow them. That tells us whether the workflow is worth solving.\n\nThen I'd work with data science to benchmark a predictive approach against the existing rules, looking at calibration, performance by segment and the cost of mistakes. Finally I'd design a controlled pilot tied to seated and operational outcomes.\n\nA high offline accuracy score isn't enough. I'd want evidence that restaurants make better decisions because of the product.",
+      "shortAnswer": "I'd want to answer three questions before funding the full build. Is the problem economically important? Can a better recommendation change the outcome? And can we deliver it reliably with the data we have?",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B20",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b21": {
+      "question": "What data would you need to build a demand forecasting or revenue optimization model?",
+      "answer": "It depends on the decision, but for a service-demand or turn-time model I'd look at reservation timestamps, party size, booking lead time, cancellation history, dining area and table characteristics, actual seating and departure times, and local time-and-date patterns.\n\nIf we have reliable integrations and permission, staffing or POS signals could improve context. I'd be careful about assuming those data exist consistently across markets. I'd want freshness, missing-data rates and clear definitions before feeding anything into a model.\n\nI'd also protect against leakage — for instance, not training the forecast on events that happen after the decision is supposed to be made.\n\nMy first technical question would be: what's the simplest baseline using inputs we can trust in real time? That gives us something concrete to beat.",
+      "shortAnswer": "It depends on the decision, but for a service-demand or turn-time model I'd look at reservation timestamps, party size, booking lead time, cancellation history, dining area and table characteristics, actual seating and departure times, and local time-and-date patterns.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B21",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b22": {
+      "question": "How would you measure the quality of the model and its actual commercial impact?",
+      "answer": "I'd separate prediction quality from business impact. For a no-show-risk model, I'd want well-calibrated probabilities and performance by restaurant segment; I'd also watch whether high-risk predictions are reliable enough for the intervention we have in mind.\n\nIf the model drives a decision, the cost of the wrong prediction matters. A false positive that adds friction for a loyal diner could be more damaging than a missed no-show.\n\nThen I'd test the policy enabled by the model against a control or rules baseline. Primary outcomes might be incremental seated covers or contribution; guardrails would include booking conversion, complaints, late seating and operator overrides.\n\nI wouldn't scale a better model simply because its AUC improved. I'd scale it when the change produces a better customer and restaurant outcome.",
+      "shortAnswer": "I'd separate prediction quality from business impact. For a no-show-risk model, I'd want well-calibrated probabilities and performance by restaurant segment; I'd also watch whether high-risk predictions are reliable enough for the intervention we have in mind.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B22",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b23": {
+      "question": "How would you address cold-start problems for smaller or newer restaurants?",
+      "answer": "I'd expect cold start to be a real issue for new restaurants and new markets. A model trained on large urban venues may not reflect a small restaurant with a different service style.\n\nMy first approach would be a reliable default: operator-defined rules and conservative recommendations. We could explore segment-level patterns or hierarchical modeling as data accumulates, but I'd be transparent about uncertainty and avoid presenting a precise estimate where we don't have evidence.\n\nI'd design the product so restaurants can supply useful constraints — typical dining duration, sections, staffing limits — and correct the system when it's wrong.\n\nRollout should depend on confidence. If we can't meet a minimum quality bar, the appropriate product may simply be the good rules-based experience until we learn more.",
+      "shortAnswer": "I'd expect cold start to be a real issue for new restaurants and new markets. A model trained on large urban venues may not reflect a small restaurant with a different service style.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B23",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b24": {
+      "question": "How would you build restaurant operator trust in AI-generated recommendations?",
+      "answer": "Operators need to know what the recommendation means, why it's appearing now and how easily they can reverse it.\n\nA suggestion like 'slow the next seating window by fifteen minutes because current tables are running behind' is much more actionable than a confidence score with no explanation. I'd show the relevant signals without claiming certainty and make accept, dismiss and override straightforward.\n\nI'd also observe actual service. A recommendation may be mathematically sound but impossible because the kitchen is short-staffed or there's a large party with special requirements.\n\nI'd track when operators act and whether it helps, but I wouldn't push recommendation acceptance as a goal by itself. Sometimes rejecting the AI is the correct decision, and that feedback should inform the product.",
+      "shortAnswer": "Operators need to know what the recommendation means, why it's appearing now and how easily they can reverse it.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B24",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b25": {
+      "question": "How would you balance automation, human control, explainability and operational safety?",
+      "answer": "I'd draw the automation boundary based on reversibility and the cost of being wrong.\n\nLow-risk actions like surfacing an insight or preparing a suggested adjustment can be highly automated. Changes that affect confirmed guests, available seating or a live shift deserve more operator control, at least until we've demonstrated reliability.\n\nI'd give the host or manager visibility into what's going to change, a quick override and an audit trail. I'd also establish safe defaults if inputs are missing or integrations go down.\n\nI don't think explainability needs to mean showing a technical model diagram. It means the operator understands the practical reason and consequence well enough to make the call.",
+      "shortAnswer": "I'd draw the automation boundary based on reversibility and the cost of being wrong.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B25",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b26": {
+      "question": "How would you move an AI/ML product from prototype to production?",
+      "answer": "I'd move from a proven workflow to an ML capability, not the other way around. First validate that the recommendation is worth making, then establish a simple baseline and a reliable source of inputs.\n\nWith data science and engineering, I'd define the offline evaluation, segment-level quality bar, latency requirement, missing-data behavior, monitoring and rollback. For a live restaurant workflow, I'd care a lot about what the product does when the prediction is unavailable — it should fall back gracefully, not stop the host from running service.\n\nI'd launch in shadow mode or as an operator-approved recommendation, then test the impact online before considering more automation. We'd monitor drift and changes across markets, because a model that works in one type of venue may fail in another.\n\nI'm not claiming to have led that full production ML lifecycle myself; this is how I'd structure the product responsibility with an experienced ML team.",
+      "shortAnswer": "I'd move from a proven workflow to an ML capability, not the other way around. First validate that the recommendation is worth making, then establish a simple baseline and a reliable source of inputs.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B26",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b27": {
+      "question": "Walk me through the reservation lifecycle from diner discovery to completed restaurant visit.",
+      "answer": "I think of the reservation journey as a chain of promises. A diner searches, finds availability, selects a time and experience, and receives a confirmation. The restaurant needs that booking to appear correctly in the book, reflect the right party size and any special requirements, and be workable against the floor plan.\n\nCloser to service, the restaurant may confirm, change pacing, handle a cancellation or fill a released slot. Then guests arrive, check in, wait or get seated; the host updates table status while servers and the kitchen manage the actual meal. Afterward, there's the guest record, potential feedback and a future visit.\n\nThe key is that the reservation isn't the outcome. The outcome is a guest who arrives, gets a good experience and creates value for the restaurant — without leaving staff to reconcile broken information across systems.",
+      "shortAnswer": "I think of the reservation journey as a chain of promises. A diner searches, finds availability, selects a time and experience, and receives a confirmation. The restaurant needs that booking to appear correctly in the book, reflect the right party size and any special requirements, and be workable against the floor plan.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B27",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b28": {
+      "question": "What would be your North Star metric for OpenTable's Restaurant Product team?",
+      "answer": "For this particular revenue-optimization mandate, the ideal outcome would be incremental restaurant contribution that the product helps create. That's stronger than bookings, but I know it won't be observable in every restaurant without reliable POS and cost data.\n\nSo I'd likely use a practical measure like incremental seated covers or seated revenue in eligible service windows, with a clearly stated method for estimating incrementality. Then I'd protect it with operational guardrails: seating delays, complaints, operator overrides and long-term partner retention.\n\nI would also keep platform health separate from restaurant value — active paying locations and retention matter to OpenTable, but they're not proof that a restaurant earned more.\n\nI'd confirm the team's remit with Bristol before declaring a single company-wide North Star.",
+      "shortAnswer": "For this particular revenue-optimization mandate, the ideal outcome would be incremental restaurant contribution that the product helps create. That's stronger than bookings, but I know it won't be observable in every restaurant without reliable POS and cost data.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B28",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b29": {
+      "question": "Which metrics would you use to measure restaurant revenue optimization?",
+      "answer": "I'd look at four layers. First, demand: booking conversion, cancellations and actual seated covers. Second, usable capacity: time and seats available versus occupied, turn times and pacing. Third, economics: average check, RevPASH and incremental contribution where the data are good enough. And fourth, trust: operator adoption, manual overrides, guest complaints and restaurant retention.\n\nThe sequence matters. You can increase reservations without increasing seated guests, and increase seated guests without improving profitability.\n\nFor example, pushing another party into a service that's already understaffed could look great in a bookings report but create slow seating and poor repeat business. I'd choose one outcome metric for an experiment and only a few critical guardrails, rather than every metric on a dashboard.",
+      "shortAnswer": "I'd look at four layers. First, demand: booking conversion, cancellations and actual seated covers. Second, usable capacity: time and seats available versus occupied, turn times and pacing. Third, economics: average check, RevPASH and incremental contribution where the data are good enough. And fourth, trust: operator adoption, manual overrides, guest complaints and restaurant retention.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B29",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b30": {
+      "question": "How would you distinguish increased reservations from genuine incremental restaurant revenue?",
+      "answer": "I'd avoid equating attribution with incrementality. A booking made through OpenTable may have happened directly with the restaurant anyway.\n\nThe cleanest evidence would come from a controlled intervention and total restaurant outcomes, ideally including POS or other channels. We'd measure whether treated restaurants actually saw additional seated revenue or contribution, not just more OpenTable bookings.\n\nI'd also watch demand displacement across the marketplace. A new discovery placement might shift diners from the restaurant next door rather than create a new dining occasion.\n\nIf data access limits what we can prove, I'd say so rather than overstate the result. We can still make better decisions with imperfect data, but the claim has to match the evidence.",
+      "shortAnswer": "I'd avoid equating attribution with incrementality. A booking made through OpenTable may have happened directly with the restaurant anyway.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B30",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b31": {
+      "question": "How would you measure and reduce the economic impact of no-shows and late cancellations?",
+      "answer": "I'd measure no-shows in terms of lost *recoverable* opportunity. A missed two-top at a sold-out 7 p.m. service is different from one in an empty dining room, and a cancellation four hours ahead is more recoverable than one five minutes before arrival.\n\nI'd segment by restaurant style, party size, booking lead time and cancellation timing. Then I'd compare interventions: reminders, confirmation prompts, targeted deposits where appropriate and faster waitlist matching.\n\nI wouldn't apply the most restrictive policy everywhere. Deposits can reduce no-shows and also deter legitimate new diners.\n\nThe primary outcome would be recovered seated contribution, or a reasonable proxy, with conversion, complaints and support cost as guardrails. I'd also respect local rules and the restaurant's choice over its guest policy.",
+      "shortAnswer": "I'd measure no-shows in terms of lost *recoverable* opportunity. A missed two-top at a sold-out 7 p.m. service is different from one in an empty dining room, and a cancellation four hours ahead is more recoverable than one five minutes before arrival.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B31",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b32": {
+      "question": "What would you investigate if restaurant bookings increased but profitability remained unchanged?",
+      "answer": "First I'd verify the reservations became seated guests. Then I'd look at check size, discount use, the cost of serving those visits and whether the additional diners displaced a full-price booking.\n\nFor example, if a promotion fills early slots but shifts people away from later peak times, total restaurant revenue may not move. Or a service may be so busy that staffing and food costs rise faster than sales.\n\nI'd break it down by restaurant segment and service window before drawing a conclusion. If we can't find a positive incremental contribution, I'd stop scaling the intervention and test a narrower target rather than defending the booking lift.",
+      "shortAnswer": "First I'd verify the reservations became seated guests. Then I'd look at check size, discount use, the cost of serving those visits and whether the additional diners displaced a full-price booking.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B32",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_r01": {
+      "question": "Seated covers, bookings and show rate",
+      "answer": "A booking is a confirmed reservation, usually for a party. A cover is one diner actually served; one reservation for four can produce four seated covers. Show rate should be defined consistently: for example, parties arriving / eligible booked parties, or covers seated / booked covers. Never compare the two definitions as if they were the same.\n\nInterview application: Primary: seated covers in the targeted window. Watch no-show rate and walk-ins. Distinguish a reservation from fulfilled demand.",
+      "shortAnswer": "A booking is a confirmed reservation, usually for a party. A cover is one diner actually served; one reservation for four can produce four seated covers. Show rate should be defined consistently: for example, parties arriving / eligible booked parties, or covers seated / booked covers. Never compare the two definitions as if they were the same.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-R01",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_r02": {
+      "question": "Booking conversion and demand capture",
+      "answer": "Booking conversion is completed reservations divided by eligible booking attempts or availability views; specify the funnel step. Demand capture is the share of genuine, serviceable intent we convert into bookings and ultimately seated guests. More clicks or bookings are not necessarily new demand.\n\nInterview application: Use search → availability shown → booking initiated → confirmed → seated. Segment by venue, hour and party size.",
+      "shortAnswer": "Booking conversion is completed reservations divided by eligible booking attempts or availability views; specify the funnel step. Demand capture is the share of genuine, serviceable intent we convert into bookings and ultimately seated guests. More clicks or bookings are not necessarily new demand.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-R02",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_r03": {
+      "question": "Seat and table utilization",
+      "answer": "Seat utilization is occupied seat-time divided by usable seat-time, not necessarily all physically installed seats. Table utilization tracks how much of the available table time is used. Kitchens, staffing, sections and reservation restrictions can make nominally empty tables unusable.\n\nInterview application: Guardrails: seating delays, staff overload, guest complaints. Revenue per available seat-hour can complement utilization.",
+      "shortAnswer": "Seat utilization is occupied seat-time divided by usable seat-time, not necessarily all physically installed seats. Table utilization tracks how much of the available table time is used. Kitchens, staffing, sections and reservation restrictions can make nominally empty tables unusable.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-R03",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_r04": {
+      "question": "Revenue per available seat-hour (RevPASH)",
+      "answer": "RevPASH means revenue per available seat-hour. Roughly: restaurant revenue in the period / (available seats × hours in the period). A 40-seat restaurant open for 4 hours has 160 available seat-hours; at $4,800 in revenue, RevPASH is $30. Define revenue basis and usable capacity consistently.\n\nInterview application: A higher RevPASH is not proof of more profit; check service quality, incremental cost and whether time/seat assumptions changed.",
+      "shortAnswer": "RevPASH means revenue per available seat-hour. Roughly: restaurant revenue in the period / (available seats × hours in the period). A 40-seat restaurant open for 4 hours has 160 available seat-hours; at $4,800 in revenue, RevPASH is $30. Define revenue basis and usable capacity consistently.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-R04",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_r05": {
+      "question": "Average check and contribution margin",
+      "answer": "Average check is restaurant sales divided by covers or transactions; state the denominator. Contribution margin is incremental sales less variable costs to serve them, which may include food, promotions, payment/booking costs and additional labor. It is not the same as gross revenue or accounting net income.\n\nInterview application: Use revenue where cost data are unavailable, but flag profit as an estimate instead of claiming precise contribution.",
+      "shortAnswer": "Average check is restaurant sales divided by covers or transactions; state the denominator. Contribution margin is incremental sales less variable costs to serve them, which may include food, promotions, payment/booking costs and additional labor. It is not the same as gross revenue or accounting net income.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-R05",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_r06": {
+      "question": "Table turn times, party-size mix and reservation pacing",
+      "answer": "Turn time is elapsed time from seating to table becoming reusable, preferably measured separately by party size and service. Party-size mix matters because a six-top holding two guests is different from a four-top serving four. Pacing controls how bookings arrive across time and floor sections.\n\nInterview application: Track on-time seating, kitchen peaks and staff capacity. Faster turns can hurt hospitality; manage actual service, not just the planned book.",
+      "shortAnswer": "Turn time is elapsed time from seating to table becoming reusable, preferably measured separately by party size and service. Party-size mix matters because a six-top holding two guests is different from a four-top serving four. Pacing controls how bookings arrive across time and floor sections.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-R06",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_r07": {
+      "question": "Cancellation recovery and waitlist conversion",
+      "answer": "Cancellation recovery asks how much *recoverable* inventory a cancellation creates and whether a replacement guest actually arrives. Waitlist conversion is the share of eligible waitlist offers that lead to bookings or seated visits. Timing matters: a 6-hour cancellation is easier to recover than a 5-minute one.\n\nInterview application: Measure incremental recovered covers and contribution, not just notifications sent. Watch guest spam and support contacts.",
+      "shortAnswer": "Cancellation recovery asks how much *recoverable* inventory a cancellation creates and whether a replacement guest actually arrives. Waitlist conversion is the share of eligible waitlist offers that lead to bookings or seated visits. Timing matters: a 6-hour cancellation is easier to recover than a 5-minute one.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-R07",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_r08": {
+      "question": "Repeat dining and guest lifetime value",
+      "answer": "Repeat dining is the share of identifiable guests returning within a defined window, such as 90 days; define whether it means same restaurant or any OpenTable venue. Guest lifetime value is future contribution from a customer relationship, less retention/acquisition costs, estimated with uncertainty.\n\nInterview application: Beware fragmented guest identity and incomplete off-platform visit data. Do not infer full restaurant LTV from platform reservations alone.",
+      "shortAnswer": "Repeat dining is the share of identifiable guests returning within a defined window, such as 90 days; define whether it means same restaurant or any OpenTable venue. Guest lifetime value is future contribution from a customer relationship, less retention/acquisition costs, estimated with uncertainty.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-R08",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_r09": {
+      "question": "Restaurant product adoption, retention and churn",
+      "answer": "Restaurant adoption should mean sustained operational use: active service days, availability settings managed, or realized outcomes — not just a login. Retention can track active and paying locations by cohort; churn can be logo, location, or revenue churn depending on commercial model.\n\nInterview application: Compare independent versus multi-location cohorts and newly launched markets; reliable first-live-service onboarding is a useful leading indicator.",
+      "shortAnswer": "Restaurant adoption should mean sustained operational use: active service days, availability settings managed, or realized outcomes — not just a login. Retention can track active and paying locations by cohort; churn can be logo, location, or revenue churn depending on commercial model.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-R09",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_r10": {
+      "question": "Incremental revenue versus revenue cannibalization",
+      "answer": "Attributed revenue passed through OpenTable; incremental revenue is revenue that would not have existed absent a product intervention. Cannibalization occurs when a new booking replaces an otherwise full-price booking, direct booking, other time slot or another venue.\n\nInterview application: Use control groups and total seated outcomes where possible; watch marketplace interference and POS coverage. Attribution alone is not a causal claim.",
+      "shortAnswer": "Attributed revenue passed through OpenTable; incremental revenue is revenue that would not have existed absent a product intervention. Cannibalization occurs when a new booking replaces an otherwise full-price booking, direct booking, other time slot or another venue.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-R10",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_r11": {
+      "question": "Experiment guardrail metrics",
+      "answer": "Guardrails protect people and the system while optimizing an outcome. For restaurant revenue experiments: booking conversion, seating delay, kitchen/service capacity, guest complaints, operator overrides, refund/support costs and partner retention can be critical.\n\nInterview application: Choose guardrails aligned to actual failure modes, define thresholds in advance, and have a rollback mechanism for live-service interventions.",
+      "shortAnswer": "Guardrails protect people and the system while optimizing an outcome. For restaurant revenue experiments: booking conversion, seating delay, kitchen/service capacity, guest complaints, operator overrides, refund/support costs and partner retention can be critical.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-R11",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b33": {
+      "question": "How would you validate a restaurant revenue opportunity before building the solution?",
+      "answer": "I'd validate it in the workflow before building it at scale. Let's say we suspect operators lose money because they release held tables too late. I'd review the data for evidence of unused bookable time, then talk to hosts and managers during actual services.\n\nI'd want to know whether they recognize the problem, what stops them from changing settings and whether an existing OpenTable rule already solves it if configured properly.\n\nThen I'd test the smallest intervention — perhaps a weekly recommendation or a prototype in a handful of restaurants — and measure whether they act on it and whether more guests actually get seated.\n\nThat helps separate a worthwhile product opportunity from an interesting dashboard finding. I'd only build more sophisticated prediction after the decision and its value are proven.",
+      "shortAnswer": "I'd validate it in the workflow before building it at scale. Let's say we suspect operators lose money because they release held tables too late. I'd review the data for evidence of unused bookable time, then talk to hosts and managers during actual services.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B33",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b34": {
+      "question": "Design an experiment to increase restaurant revenue during off-peak periods.",
+      "answer": "I'd focus on restaurants with persistent unused capacity in a specific off-peak window, perhaps early weekday dinner, and avoid discounting the entire restaurant.\n\nThe hypothesis would be that better-targeted discovery of genuinely available slots brings in incremental diners who wouldn't otherwise book. I'd randomize at a level that limits spillover — maybe comparable restaurants or geographic clusters, depending on the intervention.\n\nThe primary measure would be incremental seated revenue or contribution in that window. I'd also look at whether guests shifted from a later full-price booking, average check, cancellations and whether staff can handle the change.\n\nIf we see a real lift, we could test whether predictive targeting beats the simpler version. If bookings rise but the restaurant's economics don't, I'd stop or narrow it.",
+      "shortAnswer": "I'd focus on restaurants with persistent unused capacity in a specific off-peak window, perhaps early weekday dinner, and avoid discounting the entire restaurant.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B34",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b35": {
+      "question": "How would you test an AI-generated recommendation with restaurant operators?",
+      "answer": "I'd test the value of the *recommendation* before the model. Imagine we tell a manager to release a held table thirty minutes earlier. I'd start with a handful of restaurants, show the suggestion with a plain explanation and observe whether the manager can act on it during a real service.\n\nIf they reject it, I'd learn why — maybe it's wrong, maybe staffing won't support it, or maybe the suggestion arrives too late. Those are different problems.\n\nI'd compare operator action and seated outcomes with a control or rules-based baseline, and measure override rates and service disruptions. Only if that helps would I invest in improving the predictive model.\n\nA model can be statistically good and still create a product nobody trusts.",
+      "shortAnswer": "I'd test the value of the *recommendation* before the model. Imagine we tell a manager to release a held table thirty minutes earlier. I'd start with a handful of restaurants, show the suggestion with a plain explanation and observe whether the manager can act on it during a real service.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B35",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b36": {
+      "question": "How would you structure an A/B experiment when restaurants and diners can affect one another?",
+      "answer": "The hard part is interference: a diner who sees one restaurant promoted might book there instead of the place next door. Randomizing individual sessions can make one restaurant look successful without creating marketplace-wide lift.\n\nI'd decide the randomization unit from the intervention. For a restaurant-only workflow, venue or group assignment might work. For discovery or pricing-like changes, we'd need to consider geographic or marketplace-level tests, or a design that explicitly accounts for substitution.\n\nI'd define the outcome at both affected restaurants and the wider market, and watch differences by partner segment. We may sacrifice statistical power for a cleaner causal answer, but that's better than confidently measuring the wrong effect.",
+      "shortAnswer": "The hard part is interference: a diner who sees one restaurant promoted might book there instead of the place next door. Randomizing individual sessions can make one restaurant look successful without creating marketplace-wide lift.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B36",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b37": {
+      "question": "How would you evaluate whether an apparently successful experiment creates genuine incremental value?",
+      "answer": "I'd ask what improved and whether the improvement can be translated into something the restaurant actually values.\n\nIf an experiment raises booking conversion, I'd follow the chain: were those bookings incremental, did diners arrive, did the restaurant have capacity, and did the additional visits improve revenue or contribution?\n\nI'd examine a control group and possible substitution from other slots or nearby restaurants. I'd also look at longer-term effects like repeat visits and partner complaints.\n\nIf the evidence doesn't support a commercial lift, I wouldn't scale just because the proxy metric passed statistical significance. I'd either redesign the hypothesis or end the test with a clear explanation of what we learned.",
+      "shortAnswer": "I'd ask what improved and whether the improvement can be translated into something the restaurant actually values.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B37",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b38": {
+      "question": "How would you prioritize three competing restaurant AI/ML opportunities with limited engineering and data science capacity?",
+      "answer": "I'd compare the opportunities on value, learning speed, data readiness and operational risk — not just theoretical model sophistication.\n\nSay we have no-show risk scoring, service pacing recommendations and personalized off-peak demand targeting. If the no-show problem is concentrated in a small set of expensive missed bookings, we might test a simpler targeted policy first. If the pacing problem is widespread but requires unreliable staffing data, it may need more discovery before a build.\n\nI'd prefer one major bet plus a small discovery track, with clear reasons for the trade-off. I'd tell stakeholders what we're deliberately not building and what evidence would change that decision.\n\nAn AI roadmap should be a sequence of valuable, testable bets, not a list of models.",
+      "shortAnswer": "I'd compare the opportunities on value, learning speed, data readiness and operational risk — not just theoretical model sophistication.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B38",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b39": {
+      "question": "How would you approach a 0-to-1 launch with uncertain data quality and incomplete infrastructure?",
+      "answer": "I'd narrow the product promise to what our data can safely support. If a reservation-demand forecast has incomplete POS integration, I wouldn't call it a revenue forecast.\n\nI'd identify the critical inputs, set acceptable quality and freshness thresholds, and work with engineering on a safe fallback when information is missing. A host should still be able to run service if the model or integration fails.\n\nI'd use an offline baseline and a small operator-approved pilot before expanding. I would be especially careful about cross-market performance and the effect of inaccurate recommendations on guest commitments.\n\nIf the data aren't reliable enough, I'd ship the simpler rules workflow or delay the predictive piece. I'd rather make the scope smaller than make an inflated promise.",
+      "shortAnswer": "I'd narrow the product promise to what our data can safely support. If a reservation-demand forecast has incomplete POS integration, I wouldn't call it a revenue forecast.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B39",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_e01": {
+      "question": "Experiment reference: No-show mitigation and targeted confirmations",
+      "answer": "Opportunity: Missed parties leave high-value inventory empty.\nHypothesis: Targeted confirmation prompts reduce expensive no-shows without suppressing legitimate bookings.\nSegment: High-risk booking windows / large parties, not every diner.\nIntervention: Test confirmation/reminder cadence; compare with existing default.\nTest design: Randomize reservation or restaurant cohorts, preventing cross-policy contamination.\nPrimary metric: Incremental seated contribution per eligible booking window.\nGuardrails: Booking conversion, cancellations, complaints, support load.\nDecision rule: Scale only if net seated value improves; otherwise narrow or stop.\nCommercial interpretation: No-shows down alone is not enough if conversion collapses.",
+      "shortAnswer": "Opportunity: Missed parties leave high-value inventory empty.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-E01",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_e02": {
+      "question": "Experiment reference: Late-cancellation backfill and waitlist matching",
+      "answer": "Opportunity: Late cancellations create slots with very little time to refill.\nHypothesis: A faster waitlist match can recover otherwise lost covers.\nSegment: Restaurants with waitlists and reliable real-time availability.\nIntervention: Send appropriately timed offers for matching party sizes.\nTest design: Restaurant or shift-level experiment to avoid competing offers for same table.\nPrimary metric: Incremental seated covers recovered within cancelled windows.\nGuardrails: Failed offers, seating conflicts, excessive notification volume.\nDecision rule: Scale if fills are incremental and service remains stable.\nCommercial interpretation: Recovering one peak slot matters more than notifying 100 diners.",
+      "shortAnswer": "Opportunity: Late cancellations create slots with very little time to refill.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-E02",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_e03": {
+      "question": "Experiment reference: Off-peak demand stimulation",
+      "answer": "Opportunity: Early weekday service has usable idle capacity.\nHypothesis: Relevant visibility can add profitable visits without broad discounts.\nSegment: Off-peak services with proven capacity, segmented by venue.\nIntervention: Surface available early slots to matching diners, initially without promotions.\nTest design: Randomize by venue or geographic cluster where substitution risk is high.\nPrimary metric: Incremental seated revenue or contribution in target service.\nGuardrails: Peak-slot cannibalization, average check, staff overload.\nDecision rule: Invest only if total restaurant outcome improves versus control.\nCommercial interpretation: Bookings shifted from 7:00 to 5:00 are not automatically new revenue.",
+      "shortAnswer": "Opportunity: Early weekday service has usable idle capacity.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-E03",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_e04": {
+      "question": "Experiment reference: Guest retention and personalized CRM",
+      "answer": "Opportunity: Operators struggle to bring guests back without over-discounting.\nHypothesis: Relevant, consent-based follow-ups can improve repeat visits.\nSegment: Opted-in, identifiable diners with a meaningful relationship to a venue.\nIntervention: A modest personalized message tied to genuine guest preferences.\nTest design: Diner or restaurant randomized holdout subject to privacy/consent constraints.\nPrimary metric: Incremental 90-day repeat seated visits.\nGuardrails: Unsubscribes, complaints, discount cost, channel substitution.\nDecision rule: Scale only if incremental repeat contribution exceeds campaign cost.\nCommercial interpretation: Do not confuse email opens with valuable return visits.",
+      "shortAnswer": "Opportunity: Operators struggle to bring guests back without over-discounting.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-E04",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_e05": {
+      "question": "Experiment reference: Restaurant operator decision recommendations",
+      "answer": "Opportunity: Operators see insights but do not act during time-pressured services.\nHypothesis: An explainable, reversible recommendation increases useful action.\nSegment: Restaurants that repeatedly override availability or pacing rules.\nIntervention: Show one action with reason and operator approval.\nTest design: Pilot or restaurant-level treatment compared with existing rules/insights.\nPrimary metric: Incremental seated value or operator minutes saved per shift.\nGuardrails: Overrides, seating delays, trust, support contacts.\nDecision rule: Expand only if action and outcome improve beyond rules baseline.\nCommercial interpretation: A high acceptance rate is not necessarily correct decision-making.",
+      "shortAnswer": "Opportunity: Operators see insights but do not act during time-pressured services.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-E05",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_e06": {
+      "question": "Experiment reference: Reservation pacing optimization",
+      "answer": "Opportunity: Arrival peaks overwhelm host, floor or kitchen.\nHypothesis: Service-aware pacing recommendations reduce delays without losing valuable demand.\nSegment: High-demand services with frequent seating lateness.\nIntervention: Recommend a bounded pacing adjustment with one-tap operator review.\nTest design: Randomize eligible shifts or restaurants; ensure consistent booking conditions.\nPrimary metric: On-time seating rate plus feasible seated contribution.\nGuardrails: Cancelled bookings, waitlist time, kitchen peaks, complaints.\nDecision rule: Scale when service improves without material revenue loss.\nCommercial interpretation: Current OpenTable pacing controls already exist; experiment is about decisions, not controls.",
+      "shortAnswer": "Opportunity: Arrival peaks overwhelm host, floor or kitchen.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-E06",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_e07": {
+      "question": "Experiment reference: Turn-time prediction and capacity optimization",
+      "answer": "Opportunity: Fixed turn-time assumptions misrepresent real bookable capacity.\nHypothesis: Contextual turn-time estimates improve inventory choices.\nSegment: Restaurants with stable seating timestamps and material gaps.\nIntervention: Suggest turn-time ranges by party size and service, never automatic eviction.\nTest design: Shadow-model evaluation then restaurant-level controlled pilot.\nPrimary metric: Incremental usable reservable time converting into seated covers.\nGuardrails: Late seating, guest experience, false availability, override rate.\nDecision rule: Deploy only if it beats simple historical/rules baseline.\nCommercial interpretation: Model speed alone is not the measure; real capacity and hospitality are.",
+      "shortAnswer": "Opportunity: Fixed turn-time assumptions misrepresent real bookable capacity.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-E07",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b_e08": {
+      "question": "Experiment reference: Diner discovery and conversion improvements",
+      "answer": "Opportunity: Diners can't easily find a suitable restaurant/time despite available supply.\nHypothesis: Better relevance can increase successful matches across marketplace.\nSegment: Searches with ambiguous intent / weak conversion.\nIntervention: Compare recommendations that incorporate availability and diner context.\nTest design: Use market/cluster-level testing when ranking causes restaurant substitution.\nPrimary metric: Incremental completed and seated bookings marketplace-wide.\nGuardrails: Partner concentration, fairness, complaint rate, nonincremental displacement.\nDecision rule: Scale only if market-level value improves across healthy supply segments.\nCommercial interpretation: A restaurant-level lift may only reflect taking demand from its neighbor.",
+      "shortAnswer": "Opportunity: Diners can't easily find a suitable restaurant/time despite available supply.",
+      "evidenceStatus": "reference",
+      "curatedKey": "B-E08",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b40": {
+      "question": "Walk me through the RBC Interac cashback withdrawal product end to end.",
+      "answer": "At RBC, we were opening Avion Rewards to non-RBC customers. Existing RBC banking customers could receive cashback into their RBC account, but these new members didn't have one. We needed a way for them to withdraw what they'd earned without becoming a banking customer.\n\nWe used Interac e-Transfer through an existing enterprise payments capability rather than building a payout rail from scratch. I owned the consumer product requirements and coordinated across engineering, AML, Risk and Financial Operations. The work went well beyond the request itself: eligibility and limits, how payouts were initiated, status and failure handling, settlement and reconciliation, and what customers needed to understand about timing.\n\nWe ultimately supported about 3,200 withdrawal requests a quarter, with roughly 99% confirmed within 24 hours — around $1.2 million annualized. The broader enterprise payments service handled more than five million settlement events annually; that figure wasn't generated by our feature alone.\n\nMy takeaway is that a simple customer promise depends on a lot of unglamorous operational detail. That's relevant to restaurant product too: the front-end interaction only works if the underlying service can reliably deliver it.",
+      "shortAnswer": "At RBC, we were opening Avion Rewards to non-RBC customers. Existing RBC banking customers could receive cashback into their RBC account, but these new members didn't have one. We needed a way for them to withdraw what they'd earned without becoming a banking customer.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B40",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b41": {
+      "question": "Tell me about expanding Avion to non-RBC customers (Avion Select).",
+      "answer": "Avion Select was RBC's expansion of Avion Rewards beyond customers who already banked with RBC.\n\nThat sounds like opening up a sign-up funnel, but it changes foundational assumptions. Non-RBC members don't arrive with the same identity and account relationship, so onboarding, authentication, eligibility and access to rewards all need to work differently. We also needed a practical cashback withdrawal mechanism, which is where the Interac e-Transfer work fitted into the broader proposition.\n\nI led core consumer product work and worked with identity, platform, risk and payments stakeholders to make those experiences usable together. Avion Select grew to around 500,000 members.\n\nI think the lesson is that entering a new customer segment often exposes platform assumptions that were invisible when you served only the original audience. I'd expect a similar challenge when taking a restaurant operating product into a market with different workflows.",
+      "shortAnswer": "Avion Select was RBC's expansion of Avion Rewards beyond customers who already banked with RBC.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B41",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b42": {
+      "question": "Tell me about HBC Mastercard growth and funnel experimentation.",
+      "answer": "At HBC, I worked on the commercial performance of a Mastercard portfolio with more than 500,000 accounts. One lesson was that acquisition isn't enough; you need people to activate, use the product and keep getting value from it.\n\nWe used customer cohorts and controlled experiments to understand activation and spending behavior. On the application side, we worked with Neo on a redesigned digital application that improved completion by about 15%, with decisions typically available in under three minutes.\n\nAcross the portfolio, active cardholders improved by four percentage points and spend per active cardholder by about 5%. Our modeled customer lifetime value rose roughly 10%.\n\nWhat I liked was having to make decisions at two levels: improve the immediate funnel, but also make sure those improvements helped the long-term economics. That's the same discipline I'd bring to restaurant bookings versus actual seated, profitable demand.",
+      "shortAnswer": "At HBC, I worked on the commercial performance of a Mastercard portfolio with more than 500,000 accounts. One lesson was that acquisition isn't enough; you need people to activate, use the product and keep getting value from it.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B42",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b43": {
+      "question": "Tell me about building Arc'teryx membership from zero to one.",
+      "answer": "At Arc'teryx, I've been leading the product strategy for a new membership program built around how customers use and care for their gear, not just how often they buy it. That includes repairs, care, trade-in and community experiences.\n\nWe had a big vision and a lot of systems and stakeholders involved. I worked on the business case, vendor evaluation, identity and eligibility dependencies, and the scope of a first release. We secured about $5.2 million in funding for the phase.\n\nOne decision I think was important was moving toward a web-first MVP rather than making a native app part of the initial launch. We also looked at which benefits could be delivered independently instead of waiting for every platform component.\n\nThat work taught me that 0-to-1 isn't about packing the entire vision into the first release. It's about making a credible product promise, getting agreement on the trade-offs and creating a path to learn. To be clear, I wouldn't describe the entire membership platform as already launched.",
+      "shortAnswer": "At Arc'teryx, I've been leading the product strategy for a new membership program built around how customers use and care for their gear, not just how often they buy it. That includes repairs, care, trade-in and community experiences.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B43",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b44": {
+      "question": "Tell me about Aeroplan acquisition and conversion optimization.",
+      "answer": "At Aeroplan, I worked on digital acquisition across the co-brand credit-card partners, including TD, CIBC and Amex.\n\nWe looked at how people moved from understanding a card proposition to actually applying, where the experience was confusing or had too much friction, and how partner touchpoints connected to the conversion journey.\n\nThe redesigned acquisition experience improved conversion by about 40%, and co-brand card acquisition grew 427% year over year during the period. I wouldn't suggest the interface change alone explains the whole growth figure — there were broader commercial and partner factors too.\n\nThe transferable lesson is to understand both the customer funnel and the partnership mechanics, then measure outcomes without over-claiming the causal impact of one feature.",
+      "shortAnswer": "At Aeroplan, I worked on digital acquisition across the co-brand credit-card partners, including TD, CIBC and Amex.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B44",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b45": {
+      "question": "Tell me about a customer problem you identified and solved — ShopPlus.",
+      "answer": "One consumer product example is the Shop+ cashback browser extension at RBC Avion. The customer problem was that cashback opportunities were easier to miss when people were shopping across retailers outside the Avion experience.\n\nThe extension brought cashback discovery closer to where customers were already shopping, and the product reached more than 100,000 downloads across supported browsers.\n\nI'd be careful to distinguish distribution from sustained value. Downloads tell us the acquisition story, but the product questions I'd want to answer are whether people used it at eligible merchants, activated cashback successfully and came back to use it again.\n\nThis is a useful example of meeting customers in their existing workflow rather than expecting them to visit a separate product first. For a detailed behavioral interview, I would anchor follow-up claims to the specific discovery and prioritization decisions I can personally verify rather than inventing a research process.",
+      "shortAnswer": "One consumer product example is the Shop+ cashback browser extension at RBC Avion. The customer problem was that cashback opportunities were easier to miss when people were shopping across retailers outside the Avion experience.",
+      "evidenceStatus": "requires_personal_review",
+      "curatedKey": "B45",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b46": {
+      "question": "Tell me about your Ensights startup experience.",
+      "answer": "My route into tech was a little unconventional. I reached out to a startup founder in Seoul through AngelList and ended up working with Ensights, which was building Bluetooth beacon technology and location-based analytics.\n\nThe idea was to help physical venues understand movement and engagement using data, and we worked on early pilots including Seoul Metro-related work. A lot of the challenge was connecting the hardware, data and an actual customer use case while the product was still taking shape.\n\nIt was a different environment from a large bank or retail business. You didn't have a mature process or a large team to fall back on, so you had to keep asking what evidence would make the next investment worthwhile.\n\nI still like that part of product: not every decision needs a big specification before you can learn something useful.",
+      "shortAnswer": "My route into tech was a little unconventional. I reached out to a startup founder in Seoul through AngelList and ended up working with Ensights, which was building Bluetooth beacon technology and location-based analytics.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B46",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b47": {
+      "question": "RBC Avion overview — scope and impact.",
+      "answer": "At RBC I owned core Avion Rewards experiences across web and mobile, with a cross-functional squad spanning design, frontend, backend, iOS, Android and QA, alongside architecture and business analysis.\n\nSome of the major themes were expanding access to non-RBC customers, improving the mobile experience and enabling rewards to become useful cash value. Interac cashback withdrawals is a particularly good example because it involved the consumer journey, enterprise payments and financial controls coming together.\n\nI also worked on measurement infrastructure, including event taxonomy and GA4 migration, so we could understand where customers were getting stuck instead of making product decisions based only on anecdote.\n\nThe thing I took from that role was the importance of owning an end-to-end customer outcome even when the dependencies span teams you don't manage.",
+      "shortAnswer": "At RBC I owned core Avion Rewards experiences across web and mobile, with a cross-functional squad spanning design, frontend, backend, iOS, Android and QA, alongside architecture and business analysis.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B47",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b48": {
+      "question": "Arc'teryx overview — current responsibilities.",
+      "answer": "At Arc'teryx my focus has been guest services technology and, more recently, membership. I've been working on how to build a non-transactional membership experience around product ownership, care, repairs, trade-in and events.\n\nThat involved the customer proposition, funding and governance, evaluating platform vendors and connecting membership eligibility and identity to existing commerce and service systems.\n\nA large part of the job is making trade-offs across teams: what's essential to the MVP, what can be phased, and what creates unnecessary dependency or operating cost. We secured roughly $5.2 million in funding and moved toward a web-first initial approach.\n\nI also had direct PM and BA leadership responsibilities on the membership side. The work has given me a good balance of strategic planning, complex systems thinking and day-to-day decisions with the people actually building it.",
+      "shortAnswer": "At Arc'teryx my focus has been guest services technology and, more recently, membership. I've been working on how to build a non-transactional membership experience around product ownership, care, repairs, trade-in and events.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B48",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b49": {
+      "question": "How do you handle disagreement with engineering or design?",
+      "answer": "I usually try to work out what the disagreement is really about before choosing sides. Engineering may be protecting reliability, design may be seeing customer friction, and commercial teams may be worried about timing.\n\nThe worst version is when everyone comes to the meeting defending a solution. I'd bring us back to the outcome and make the trade-offs visible: what happens if we delay, simplify or change the approach?\n\nAt Arc'teryx, defining a realistic membership MVP required that kind of discussion across business and technology teams. Some capabilities were attractive, but making all of them launch dependencies would have increased the risk considerably.\n\nI don't think alignment means unanimous agreement. It means people understand the decision, feel heard and know what we're collectively committing to. If we can't resolve it at the working level, I'd escalate with a recommendation rather than just competing opinions.",
+      "shortAnswer": "I usually try to work out what the disagreement is really about before choosing sides. Engineering may be protecting reliability, design may be seeing customer friction, and commercial teams may be worried about timing.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B49",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b50": {
+      "question": "How do you influence stakeholders without authority?",
+      "answer": "I focus on making it easier for people to make a good decision together. At RBC, I didn't directly manage the engineers, but the Avion experiences I owned depended on mobile, frontend, backend, risk and payment operations all moving in the same direction.\n\nI'd begin with the customer outcome and the constraints, bring technical partners into shaping the approach, and take responsibility for resolving dependencies and trade-offs. I don't want the team to feel like they're receiving a completed solution from product.\n\nOver time, trust comes from following through, making decisions when needed and giving people credit for the expertise they bring. Reporting lines aren't the only source of leadership — consistency matters more.",
+      "shortAnswer": "I focus on making it easier for people to make a good decision together. At RBC, I didn't directly manage the engineers, but the Avion experiences I owned depended on mobile, frontend, backend, risk and payment operations all moving in the same direction.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B50",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b51": {
+      "question": "Tell me about a time something didn't go as planned.",
+      "answer": "A useful example is the membership planning work at Arc'teryx. The initial vision had a lot of connected experiences — registration, ownership, care and events — and it would have been tempting to package all of that into a single launch.\n\nAs we worked through the integration dependencies and operating implications, it became clear that treating everything as day-one scope would create risk without proving additional customer value.\n\nWe had to revisit the sequencing, move toward a more focused web-first MVP and consider which experiences could be delivered independently. That meant having difficult scope conversations with business partners, not simply asking engineering to move faster.\n\nI wouldn't describe it as a failed launch; it's an example of an early assumption we corrected. The lesson is to be willing to change the plan when the dependencies or evidence don't support it.",
+      "shortAnswer": "A useful example is the membership planning work at Arc'teryx. The initial vision had a lot of connected experiences — registration, ownership, care and events — and it would have been tempting to package all of that into a single launch.",
+      "evidenceStatus": "requires_personal_review",
+      "curatedKey": "B51",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b52": {
+      "question": "How do you make decisions with incomplete information?",
+      "answer": "I try to distinguish three things: what we know, what we're assuming, and which unknowns could actually change the decision.\n\nAt Arc'teryx, we had enough confidence in the membership proposition to advance the investment case, but there were still open questions around integrations, adoption and which capabilities had to be in the first release. We didn't need every uncertainty solved before making a scope decision.\n\nWe moved toward a smaller web-first MVP and separated what needed the broader platform from what could happen independently. For reversible decisions, I'd rather make a call and learn. If something is costly to reverse — especially something affecting customer trust, money or a live restaurant service — I'd require stronger evidence and clearer safeguards.\n\nThe important thing is to name the assumption and set a point at which we'd reconsider it.",
+      "shortAnswer": "I try to distinguish three things: what we know, what we're assuming, and which unknowns could actually change the decision.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B52",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b53": {
+      "question": "How do you prioritize with limited resources and competing stakeholders?",
+      "answer": "I start by separating stakeholder requests from the outcome each team is trying to protect.\n\nArc'teryx membership touched a lot of business functions, so everyone had reasonable ideas for what should be included. But if every good idea became a launch requirement, we'd have a much slower and riskier product.\n\nI brought the conversation back to what the initial customer proposition needed to prove, what the systems could support and what could wait. That helped us move toward a web-first MVP and phase dependencies rather than carrying the full vision into day one.\n\nI don't see prioritization as a way of making everyone happy. It's a recommendation about where we'll create the most value with the capacity we have, and a clear explanation of what we're not doing yet.",
+      "shortAnswer": "I start by separating stakeholder requests from the outcome each team is trying to protect.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B53",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b54": {
+      "question": "Tell me about prioritizing between two important initiatives.",
+      "answer": "At Arc'teryx, an important sequencing decision was whether to make a native app part of the initial membership launch or focus the MVP on the web experience first.\n\nAn app could be valuable eventually, but it would also bring another delivery surface and dependencies into an already complex program. The core question was what we needed to validate the membership proposition, not which channel might be attractive in the long term.\n\nWe moved toward a web-first MVP, preserving the ability to expand later. I liked that decision because it made the trade-off explicit: give up some initial ambition to improve the chance of delivering a useful first experience.\n\nI'd apply the same discipline at OpenTable when choosing between a practical improvement to restaurant operations and a larger AI investment.",
+      "shortAnswer": "At Arc'teryx, an important sequencing decision was whether to make a native app part of the initial membership launch or focus the MVP on the web experience first.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B54",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b55": {
+      "question": "How do you navigate stakeholder disagreement on product direction?",
+      "answer": "I usually find that disagreements come from people optimizing for different risks. Commercial stakeholders may value a promised date; engineering may be worried about reliability; design may be pointing to a customer issue.\n\nI try to make those concerns concrete and find the shared objective. What do we know? What would happen if we didn't ship this part? Which option is safest to reverse if we're wrong?\n\nI'm comfortable pushing back when the evidence doesn't support a requested feature, but I'd do it with an alternative and a clear recommendation. An escalation should ask leadership to resolve a real trade-off, not outsource the PM's responsibility to make a call.",
+      "shortAnswer": "I usually find that disagreements come from people optimizing for different risks. Commercial stakeholders may value a promised date; engineering may be worried about reliability; design may be pointing to a customer issue.",
+      "evidenceStatus": "resume_supported",
+      "curatedKey": "B55",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b56": {
+      "question": "How do you recover from a launch or delivery setback?",
+      "answer": "I try to separate recovering the customer outcome from recovering the original plan. If a dependency slips, the first question is whether we can still deliver a useful and honest subset safely.\n\nAt Arc'teryx, the membership program had many integrations and operational dependencies. That reinforced the value of phasing capabilities instead of assuming everything had to arrive at once.\n\nI'd establish the immediate impact, options and decision owner; communicate early to partners; and set an explicit point to revisit the plan. Then I'd do a blameless review of why the dependency surprised us and what controls or sequencing changes would reduce recurrence.\n\nI wouldn't claim a specific incident I can't verify. The principle is that preserving trust and a valid customer promise matters more than preserving a date on a slide.",
+      "shortAnswer": "I try to separate recovering the customer outcome from recovering the original plan. If a dependency slips, the first question is whether we can still deliver a useful and honest subset safely.",
+      "evidenceStatus": "requires_personal_review",
+      "curatedKey": "B56",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b57": {
+      "question": "How do you communicate difficult decisions to executives?",
+      "answer": "I try to make difficult decisions concise enough that leadership can actually decide. I'd explain the original goal, what's changed, the realistic options and my recommendation — including what we give up.\n\nTake the membership MVP at Arc'teryx. Once the dependencies became clearer, it was important to distinguish the longer-term vision from what needed to be in the first release. I would rather say, 'We can deliver a focused first proposition and learn sooner, but we won't have the full app experience at launch,' than promise everything and hide the risk.\n\nI also try to be explicit about the decision we need from an executive versus the decision the product team should own. Escalation is useful when it resolves a trade-off, not when it just passes along uncertainty.",
+      "shortAnswer": "I try to make difficult decisions concise enough that leadership can actually decide. I'd explain the original goal, what's changed, the realistic options and my recommendation — including what we give up.",
+      "evidenceStatus": "requires_personal_review",
+      "curatedKey": "B57",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b58": {
+      "question": "How do you lead cross-functional initiatives under time pressure?",
+      "answer": "When time is tight, I start by making the problem and decision rights clear. At RBC, cashback withdrawals had dependencies on payments, AML, risk and financial operations, so the critical path wasn't only what the consumer team could build.\n\nI'd identify the small number of outcomes that must hold at launch, give owners to critical dependencies, and escalate exceptions early. For a transaction flow, eligibility, status handling and reconciliation aren't optional polish.\n\nUnder pressure I prefer reducing scope to reducing reliability. I also keep the team close to the customer impact, because it's easy to optimize for the project milestone when everyone is busy.\n\nThat's relevant to restaurant product, where a problem during dinner service is immediately visible to guests and staff.",
+      "shortAnswer": "When time is tight, I start by making the problem and decision rights clear. At RBC, cashback withdrawals had dependencies on payments, AML, risk and financial operations, so the critical path wasn't only what the consumer team could build.",
+      "evidenceStatus": "requires_personal_review",
+      "curatedKey": "B58",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc11": {
+      "question": "Two servers call in sick before dinner: live FOH intervention",
+      "answer": "The critical distinction is that the number of tables hasn't changed, but the restaurant's ability to serve them has. I'd protect confirmed reservations where possible and give the host or manager a quick way to slow *new* demand without rebuilding the whole shift.\n\nOpenTable already supports one-tap availability and pacing changes, so I wouldn't pitch that as a new product. The opportunity I'd explore is making the right response easier to choose: 'You're down two servers; here are the sections most at risk and a suggested pacing adjustment,' with the operator approving it.\n\nI'd consider the kitchen, floor layout and existing guest commitments before recommending anything. If the owner refuses to restrict future bookings, I wouldn't silently override them. I'd show the expected effect on seating delays and service quality, offer lower-risk alternatives and let them make the business decision.",
+      "shortAnswer": "The critical distinction is that the number of tables hasn't changed, but the restaurant's ability to serve them has. I'd protect confirmed reservations where possible and give the host or manager a quick way to slow *new* demand without rebuilding the whole shift.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC11",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc12": {
+      "question": "Global launch: reservation culture and local competitor differ",
+      "answer": "I wouldn't assume a product that works well in Toronto is ready for Seoul just because we've translated it. I'd begin with restaurant visits and local partners to understand how reservations, walk-ins, deposits, communication and point-of-sale systems actually work there.\n\nThen I'd separate core platform concepts — a party, a table, availability, a confirmed reservation — from local behavior that we should support through configuration. If we need a local integration or a different flow, I'd make that an explicit investment decision rather than bury it in a one-off workaround.\n\nI would pilot with a small, representative group of restaurants and measure onboarding completion, successful first service, booking reliability, operator overrides and 30/90-day retention. If a locally dominant app is already deeply embedded, we'd need to validate whether our value proposition is differentiated enough before scaling spend.",
+      "shortAnswer": "I wouldn't assume a product that works well in Toronto is ready for Seoul just because we've translated it. I'd begin with restaurant visits and local partners to understand how reservations, walk-ins, deposits, communication and point-of-sale systems actually work there.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC12",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-sc13": {
+      "question": "AI forecast performs well at home but poorly in new markets",
+      "answer": "I'd avoid making a global launch call from a single aggregate forecast. Different markets can have very different data quality, workflows and regulations, so a model that's strong in North America may be unreliable somewhere new.\n\nI'd establish minimum eligibility criteria by market and restaurant segment: data completeness, calibration, operator ability to override, customer support readiness and the value of the recommendation against an existing rules baseline.\n\nI'd roll out to segments that meet those thresholds, with monitoring and a way to turn recommendations off quickly. For markets that don't, I'd keep the proven manual or rules-based experience rather than pretend the AI is ready everywhere.\n\nI'd tell leadership the expansion path and what we must learn to unlock the next markets. 'Global' should mean consistent trust, not identical functionality on day one.",
+      "shortAnswer": "I'd avoid making a global launch call from a single aggregate forecast. Different markets can have very different data quality, workflows and regulations, so a model that's strong in North America may be unreliable somewhere new.",
+      "evidenceStatus": "illustrative_scenario",
+      "curatedKey": "SC13",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b61": {
+      "question": "How would you scale the core table-management product internationally?",
+      "answer": "I'd separate what should be consistent globally from what needs to adapt to local restaurant behavior. The basics — a reservation, party size, table, availability and service status — should live on a common platform.\n\nBut how restaurants use those concepts varies. Some markets lean more heavily on walk-ins or local reservation services. Some have different expectations around deposits, dining duration, language and guest communication. POS integration can vary as well.\n\nI'd learn those workflows from operators in the market before writing requirements, then prefer configuration and extension points over country-specific forks. I'd validate the product with a few representative restaurants, including a busy service, before scaling.\n\nThe measures I'd care about are onboarding time, booking and seating reliability, use during actual service, and retention. A translated app with low operator adoption isn't a successful market launch.",
+      "shortAnswer": "I'd separate what should be consistent globally from what needs to adapt to local restaurant behavior. The basics — a reservation, party size, table, availability and service status — should live on a common platform.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B61",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b62": {
+      "question": "How would you improve front-of-house workflows during a busy service?",
+      "answer": "For front-of-house, the product needs to work when the room is loud and the host has five things happening at once. I wouldn't judge it only by whether a feature is discoverable in a usability test.\n\nI'd map the actual shift: bookings arriving, guests checking in, walk-ins, seating, table status, late parties and last-minute problems. Then I'd look for steps where the host has to leave the floor, re-enter information or make a risky adjustment under time pressure.\n\nI'd favor quick, reversible actions, clear statuses and the ability to override automation. If a server calls in sick, the most useful product might be a reliable way to adjust future pacing without disturbing confirmed guests.\n\nI'd validate with real operators during service and measure time to complete critical tasks, errors and overrides, not just clicks.",
+      "shortAnswer": "For front-of-house, the product needs to work when the room is loud and the host has five things happening at once. I wouldn't judge it only by whether a feature is discoverable in a usability test.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B62",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b63": {
+      "question": "How would you think about Core and Pro restaurant product packaging?",
+      "answer": "I'd be interested in how the restaurant plan tiers map to actual value rather than feature count. An independent restaurant might need the essential reservation and floor workflows to be reliable and easy to set up. A growing group may have more value from cross-location insights, permissions and automation.\n\nFor packaging, I'd look at which capabilities help operators reach a clear business outcome and what they're willing to pay for, without putting critical reliability or service controls behind an upgrade.\n\nI'd test conversion, activation and retention by segment, plus whether customers actually realize the advertised benefit. If a premium AI feature improves a model score but nobody uses it during service, it's a weak upsell.\n\nI'd want to understand OpenTable's current tiers and commercial strategy before recommending a change to packaging.",
+      "shortAnswer": "I'd be interested in how the restaurant plan tiers map to actual value rather than feature count. An independent restaurant might need the essential reservation and floor workflows to be reliable and easy to set up. A growing group may have more value from cross-location insights, permissions and automation.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B63",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b64": {
+      "question": "How would you validate readiness to launch in a new market?",
+      "answer": "I'd view market expansion as a sequence of operational proofs, not just a country launch date.\n\nFirst, can we onboard the restaurant and represent its floor and booking rules correctly? Second, can it run a real lunch or dinner service without breakdowns? Third, do the operator and diners have a good enough experience to use it again?\n\nI'd instrument that journey with time to first live shift, reservations handled successfully, seating issues, urgent support contacts and retention. I'd also want local qualitative feedback, because a metric can miss a subtle workflow mismatch.\n\nI'd start with a small group across different venue types and only scale once the failure modes are understood. I'd rather learn that a particular integration or guest expectation needs work in ten restaurants than across a whole new market.",
+      "shortAnswer": "I'd view market expansion as a sequence of operational proofs, not just a country launch date.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B64",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b65": {
+      "question": "Leadership wants a global AI launch; usability data says some markets are not ready. How do you push back?",
+      "answer": "I'd push back on a global launch if the evidence says some restaurants can't use the feature reliably. The way I'd frame it to leadership is not 'the team isn't ready,' but 'here's the business risk and a safer path to the same outcome.'\n\nSuppose the AI recommends pacing adjustments that work well in urban North American restaurants but poorly in smaller venues abroad. I'd show the segment-level quality and operator feedback, then recommend launching where it clears an agreed bar while keeping a proven rules-based experience elsewhere.\n\nThat gives us a credible launch and a plan to expand, rather than an arbitrary all-or-nothing argument. I'd be explicit about the trade-off: we sacrifice some initial reach to protect operator trust and avoid service disruptions.\n\nIf leadership wants to proceed anyway, I'd make the decision rights, guardrails and rollback plan very clear.",
+      "shortAnswer": "I'd push back on a global launch if the evidence says some restaurants can't use the feature reliably. The way I'd frame it to leadership is not 'the team isn't ready,' but 'here's the business risk and a safer path to the same outcome.'",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B65",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    },
+    "opentable-bristol-20261103-b66": {
+      "question": "How do you interpret this role across AI revenue optimization, FOH and global expansion?",
+      "answer": "I'd want to understand how Bristol sees the boundaries of this role, because Suzanne described a broader restaurant product portfolio — front-of-house, availability planning and global expansion — while the posting emphasizes building new AI-driven revenue products.\n\nIf the mandate is new product discovery, my first responsibility would be to find a high-value, measurable operator decision that deserves investment. If it's closer to the core platform, I'd put more weight on workflow reliability, extensibility and international configuration.\n\nBoth are interesting to me, and they overlap. An intelligent revenue recommendation only works if the underlying reservation and floor-management systems are dependable. I'd ask what problem is most urgent for the team and orient the first ninety days around that.",
+      "shortAnswer": "I'd want to understand how Bristol sees the boundaries of this role, because Suzanne described a broader restaurant product portfolio — front-of-house, availability planning and global expansion — while the posting emphasizes building new AI-driven revenue products.",
+      "evidenceStatus": "hypothetical",
+      "curatedKey": "B66",
+      "answerStatus": "ready",
+      "profileSlug": "bristol",
+      "source": "Bristol interview authoring — Nov 3, 2026",
+      "scope": "OpenTable only — do not overwrite canonical shared answers"
+    }
+  }
+}

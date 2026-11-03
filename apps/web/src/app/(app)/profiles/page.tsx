@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { BRISTOL_FOCUSED_HREF, BRISTOL_FOCUSED_PROFILE_NAME } from "@/lib/bristol-focused/profile";
 import { JAZ_FOCUSED_HREF, JAZ_FOCUSED_PROFILE_NAME } from "@/lib/questrade-jaz/profile";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -103,6 +104,20 @@ export default function ProfilesPage() {
             Local navigator for the 30-minute Jaz Huang interview. Its 33 answers stay in this profile and are not written into the shared library.
           </p>
           <Link href={JAZ_FOCUSED_HREF} className={buttonVariants({ variant: "secondary" })}>
+            Open live navigator
+          </Link>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-base">{BRISTOL_FOCUSED_PROFILE_NAME}</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-3 text-sm text-muted-foreground">
+          <p>
+            Focused navigator for Bristol Lewis (Restaurant Product). Reuses shared canonical answers and OpenTable import rows; strategic slots stay unpopulated until you author them.
+          </p>
+          <Link href={BRISTOL_FOCUSED_HREF} className={buttonVariants({ variant: "secondary" })}>
             Open live navigator
           </Link>
         </CardContent>

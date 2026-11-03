@@ -7,9 +7,14 @@ import {
   JAZ_FOCUSED_HREF,
   JAZ_FOCUSED_PROFILE_ID,
   JAZ_FOCUSED_PROFILE_NAME,
-  chooseClassicLiveProfile,
   isJazFocusedProfileName,
 } from "@/lib/questrade-jaz/profile";
+import {
+  BRISTOL_FOCUSED_HREF,
+  BRISTOL_FOCUSED_PROFILE_ID,
+  BRISTOL_FOCUSED_PROFILE_NAME,
+} from "@/lib/bristol-focused/profile";
+import { chooseClassicLiveProfile, isFocusedProfileName } from "@/lib/focused-live-routing";
 import { useLiveSession } from "@/hooks/use-live-session";
 import { useBrowserAudioCapture } from "@/hooks/use-browser-audio-capture";
 import { useWebSpeechTranscription } from "@/hooks/use-web-speech-transcription";
@@ -156,9 +161,13 @@ export default function LiveInterviewPage() {
       const supabase = createClient();
       const { data } = await supabase.from("interview_profiles").select("id, name");
       const list = data ?? [];
-      setProfiles(list.filter((profile) => !isJazFocusedProfileName(profile.name)));
+      setProfiles(list.filter((profile) => !isFocusedProfileName(profile.name)));
       const requested = new URLSearchParams(window.location.search).get("profile");
       const choice = chooseClassicLiveProfile(list, requested);
+      if (choice.kind === "bristol") {
+        router.replace(BRISTOL_FOCUSED_HREF);
+        return;
+      }
       if (choice.kind === "jaz") {
         router.replace(JAZ_FOCUSED_HREF);
         return;
@@ -586,6 +595,10 @@ export default function LiveInterviewPage() {
             <Select
               value={profileId ?? "all"}
               onValueChange={(v) => {
+                if (v === BRISTOL_FOCUSED_PROFILE_ID) {
+                  router.push(BRISTOL_FOCUSED_HREF);
+                  return;
+                }
                 if (v === JAZ_FOCUSED_PROFILE_ID || (v != null && isJazFocusedProfileName(profiles.find((profile) => profile.id === v)?.name))) {
                   router.push(JAZ_FOCUSED_HREF);
                   return;
@@ -599,6 +612,7 @@ export default function LiveInterviewPage() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">No profile</SelectItem>
+                <SelectItem value={BRISTOL_FOCUSED_PROFILE_ID}>{BRISTOL_FOCUSED_PROFILE_NAME}</SelectItem>
                 <SelectItem value={JAZ_FOCUSED_PROFILE_ID}>{JAZ_FOCUSED_PROFILE_NAME}</SelectItem>
                 {profiles.map((p) => (
                   <SelectItem key={p.id} value={p.id}>{p.name}</SelectItem>

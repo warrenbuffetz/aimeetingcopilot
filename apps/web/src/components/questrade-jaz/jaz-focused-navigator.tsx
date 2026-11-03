@@ -571,7 +571,7 @@ export function JazFocusedNavigator() {
           {jazPinnedQuestions.map((question) => navButton(questions.find((item) => item.id === question.id) ?? question, true))}
         </div>
 
-        <div className="mb-2 flex gap-1 px-1">
+        <div className="mb-2 flex flex-wrap items-center gap-1 px-1">
           <button
             type="button"
             className={cn(
@@ -592,6 +592,29 @@ export function JazFocusedNavigator() {
           >
             Experiences
           </button>
+          <span className="ml-auto flex shrink-0 gap-0.5">
+            <button
+              type="button"
+              className="rounded px-1.5 py-0.5 text-[10px] font-medium text-violet-900 hover:bg-violet-100"
+              onClick={() =>
+                navMode === "topics"
+                  ? setExpandedTopics(JAZ_CATEGORIES.map((c) => c.id))
+                  : setExpandedGroups(JAZ_EXPERIENCES.map((e) => e.id))
+              }
+            >
+              Expand all
+            </button>
+            <span className="text-[10px] text-muted-foreground" aria-hidden>
+              ·
+            </span>
+            <button
+              type="button"
+              className="rounded px-1.5 py-0.5 text-[10px] font-medium text-violet-900 hover:bg-violet-100"
+              onClick={() => (navMode === "topics" ? setExpandedTopics([]) : setExpandedGroups([]))}
+            >
+              Collapse all
+            </button>
+          </span>
         </div>
 
         {navMode === "topics"
