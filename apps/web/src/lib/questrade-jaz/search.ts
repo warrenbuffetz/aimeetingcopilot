@@ -88,6 +88,7 @@ const EXPANSIONS: [string, string[]][] = [
   ["neo", ["hbc", "neo"]],
   ["capital one", ["hbc", "capital one"]],
   ["conversion", ["application abandonment", "completions"]],
+  ["competing priorities", ["rbc competing priorities"]],
 ];
 
 const MAX_RESULTS = 7;

@@ -6,16 +6,16 @@ import type { JazQuestion } from "./dataset";
  */
 const RELATED_KEYS: Record<string, string[]> = {
   Q01: ["Q02", "Q30", "Q31"],
-  Q02: ["Q03", "Q04", "Q05"],
+  Q02: ["Q36", "Q03", "Q04"],
   Q03: ["Q02", "Q30", "Q01"],
-  Q04: ["Q08", "Q13", "Q06"],
+  Q04: ["Q36", "Q08", "Q13"],
   Q05: ["Q06", "Q04", "Q02"],
-  Q06: ["Q05", "Q04", "Q07"],
+  Q06: ["Q05", "Q36", "Q04"],
   Q07: ["Q06", "Q14", "Q17"],
-  Q08: ["Q04", "Q13", "Q06"],
+  Q08: ["Q04", "Q36", "Q13"],
   Q09: ["Q10", "Q13", "Q18"],
-  Q10: ["Q04", "Q09", "Q02"],
-  Q11: ["Q12", "Q16", "Q04"],
+  Q10: ["Q04", "Q36", "Q09"],
+  Q11: ["Q36", "Q12", "Q16"],
   Q12: ["Q11", "Q04", "Q16"],
   Q13: ["Q04", "Q08", "Q18"],
   Q14: ["Q15", "Q16", "Q21"],
@@ -40,6 +40,7 @@ const RELATED_KEYS: Record<string, string[]> = {
   Q33: ["Q01", "Q32", "Q31"],
   Q34: ["Q27", "Q32", "Q18"],
   Q35: ["Q17", "Q31", "Q14"],
+  Q36: ["Q04", "Q08", "Q06"],
 };
 
 export function relatedQuestionKeys(curatedKey: string): string[] {

@@ -24,21 +24,26 @@ function followQuestion(query: string): string | null {
 describe("questrade jaz dataset", () => {
   it("matches the curated counts and keeps answers isolated from old ids", () => {
     expect(validateJazDataset()).toEqual([]);
-    expect(jazQuestions).toHaveLength(35);
-    expect(jazQuestions.reduce((sum, question) => sum + question.followUps.length, 0)).toBe(77);
+    expect(jazQuestions).toHaveLength(36);
+    expect(jazQuestions.reduce((sum, question) => sum + question.followUps.length, 0)).toBe(80);
     expect(jazPinnedQuestions).toHaveLength(13);
-    expect(jazAskQuestions).toHaveLength(11);
+    expect(jazAskQuestions).toHaveLength(12);
+    expect(jazAskQuestions[3]?.topic).toBe("Team stability and evolution");
+    expect(jazAskQuestions[3]?.question).toContain("long-term stability");
     expect(jazAskQuestions[0]?.topic).toBe("Leadership under pressure");
     expect(jazAskQuestions[0]?.question).toContain("When do you step in versus give them space");
     expect(jazAskQuestions.find((item) => item.topic === "Why the role is open")?.followUps).toHaveLength(2);
     expect(jazAskQuestions.some((item) => item.question.includes("Why this is better"))).toBe(false);
-    expect(new Set(jazQuestions.map((question) => question.id)).size).toBe(35);
+    expect(new Set(jazQuestions.map((question) => question.id)).size).toBe(36);
     expect(jazQuestions.every((question) => question.id.startsWith("jaz-Q"))).toBe(true);
   });
 
   it("keeps the authored distinctions the interview depends on", () => {
     const byKey = (key: string) => jazQuestions.find((question) => question.curatedKey === key)!;
-    expect(byKey("Q04").answer).toContain("paycheque");
+    expect(byKey("Q04").answer).toContain("fund their investment accounts");
+    expect(byKey("Q11").answer).toContain("Balance Sheet");
+    expect(byKey("Q36").followUps).toHaveLength(3);
+    expect(byKey("Q36").navigationLabel).toBe("Questrade App Observations");
     expect(byKey("Q14").followUps.some((follow) => /idempotency/i.test(follow.question))).toBe(true);
     expect(byKey("Q15").answer).toMatch(/Interac/);
     expect(byKey("Q19").evidenceStatus).toBe("illustrative");
@@ -101,6 +106,7 @@ describe("questrade jaz search", () => {
     expect(topKey("didn't launch")).toBe("Q25");
     expect(topKey("Tell me about your current responsibilities at Arc'teryx")).toBe("Q30");
     expect(topKey("direct deposit")).toBe("Q08");
+    expect(topKey("Questrade app")).toBe("Q36");
     expect(topKey("RBC Interac")).toBe("Q15");
     expect(searchJazQuestions(jazQuestions, "money movement").length).toBeLessThanOrEqual(7);
     expect(searchJazQuestions(jazQuestions, "independently confirmed details")).toEqual([]);
@@ -109,7 +115,7 @@ describe("questrade jaz search", () => {
   it("links primary-bank and disagreement answers to the next prepared pivot", () => {
     const primary = jazQuestions.find((question) => question.curatedKey === "Q04")!;
     const disagreement = jazQuestions.find((question) => question.curatedKey === "Q24")!;
-    expect(relatedQuestions(primary, jazQuestions).map((question) => question.curatedKey)).toEqual(["Q08", "Q13", "Q06"]);
+    expect(relatedQuestions(primary, jazQuestions).map((question) => question.curatedKey)).toEqual(["Q36", "Q08", "Q13"]);
     expect(relatedQuestions(disagreement, jazQuestions).map((question) => question.curatedKey)).toContain("Q26");
     expect(relatedQuestions(disagreement, jazQuestions).map((question) => question.curatedKey)).toContain("Q25");
   });
