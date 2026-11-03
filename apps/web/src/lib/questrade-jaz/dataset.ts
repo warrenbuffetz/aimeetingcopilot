@@ -101,11 +101,11 @@ const SHORT_LABELS: Record<string, string> = {
 
 export const JAZ_CATEGORIES: { id: string; label: string }[] = [
   { id: "Career & Motivation", label: "Career & Motivation" },
-  { id: "Everyday Banking Strategy", label: "Everyday Banking Strategy" },
-  { id: "Payments & Cards", label: "Payments & Cards" },
-  { id: "Product Craft & Execution", label: "Product Craft & Execution" },
-  { id: "Leadership & Judgment", label: "Leadership & Judgment" },
   { id: "Experience Overviews", label: "Experience Stories" },
+  { id: "Product Craft & Execution", label: "Product Craft & Execution" },
+  { id: "Payments & Cards", label: "Payments & Cards" },
+  { id: "Leadership & Judgment", label: "Leadership & Judgment" },
+  { id: "Everyday Banking Strategy", label: "Everyday Banking Strategy" },
 ];
 
 export const JAZ_EXPERIENCES: { id: string; label: string; test: (tags: string[]) => boolean }[] = [
