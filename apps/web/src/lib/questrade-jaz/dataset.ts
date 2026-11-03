@@ -88,7 +88,7 @@ const SHORT_LABELS: Record<string, string> = {
   Q17: "Prioritization (Arc'teryx)",
   Q18: "Outcomes and metrics",
   Q19: "HBC discovery",
-  Q20: "ShopPlus",
+  Q20: "Customer problem",
   Q21: "Complex integration",
   Q22: "Risk and compliance",
   Q23: "Agile delivery",
