@@ -53,12 +53,10 @@ function MapSection({
   title,
   tone,
   children,
-  defaultOpen = false,
 }: {
   title: string;
   tone: "slate" | "amber" | "violet" | "sky" | "ink";
   children: ReactNode;
-  defaultOpen?: boolean;
 }) {
   const toneClasses = {
     slate: "border-l-slate-500 bg-slate-50/90 [&>summary]:text-slate-900 [&>summary:hover]:bg-slate-100/80",
@@ -74,7 +72,6 @@ function MapSection({
         "group mt-2 overflow-hidden rounded-lg border border-black/5 border-l-4 shadow-sm",
         toneClasses
       )}
-      defaultOpen={defaultOpen}
     >
       <summary className="cursor-pointer list-none px-3 py-2.5 text-sm font-semibold marker:content-none [&::-webkit-details-marker]:hidden">
         <span className="inline-flex items-center gap-2">
