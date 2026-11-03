@@ -1,0 +1,188 @@
+{
+  "description": "Role-specific stack reference for Questrade Jaz focused experience maps. Verification describes the candidate-level claim, not a universal truth about each company.",
+  "verificationValues": {
+    "firsthand": "Established from user interview history; candidate should still describe actual degree of usage accurately.",
+    "organization_context": "Previously identified in employer/public job or technology materials; not confirmation of personal use.",
+    "candidate_unverified": "Plausible tool or practice for illustration only; do not present as personally used without confirmation."
+  },
+  "roles": [
+    {
+      "id": "rbc",
+      "company": "RBC Avion Rewards",
+      "period": "2023–2024",
+      "tools": [
+        {
+          "name": "Google Analytics 4 (GA4)",
+          "category": "Product analytics / funnels",
+          "verification": "firsthand",
+          "application": "Event taxonomy and migration for web/core product experiences; distinguish front-end analytics from backend reward and payment state."
+        },
+        {
+          "name": "Rewards and enterprise payment records",
+          "category": "Reporting and source of truth",
+          "verification": "firsthand",
+          "application": "Authoritative record for cashback earned, available, redeemed, and payment outcomes; transaction workflows and settlements are outside GA4."
+        },
+        {
+          "name": "Internal analytics dashboards / analyst reporting",
+          "category": "Reporting and source of truth",
+          "verification": "firsthand",
+          "application": "Measurement coordination with analytics and engineering; named dashboard vendor not established."
+        },
+        {
+          "name": "SQL / Tableau / Power BI / Snowflake / Databricks",
+          "category": "Reporting and source of truth",
+          "verification": "organization_context",
+          "application": "Tools previously identified in RBC analytics job context; personal usage and specific squad adoption unconfirmed."
+        },
+        {
+          "name": "A/B and cohort analysis",
+          "category": "Experimentation / testing",
+          "verification": "candidate_unverified",
+          "application": "Appropriate analytics methods; do not imply a particular experimentation vendor or historical controlled test for ShopPlus absent confirmation."
+        },
+        {
+          "name": "Interac e-Transfer / enterprise payments services",
+          "category": "Product and technical platforms",
+          "verification": "firsthand",
+          "application": "Payment capability integrated into Avion; underlying execution owned by enterprise payments."
+        }
+      ]
+    },
+    {
+      "id": "hbc",
+      "company": "Hudson’s Bay / HBC Mastercard with Neo",
+      "period": "2022",
+      "tools": [
+        {
+          "name": "HBC funnel and acquisition reporting",
+          "category": "Product analytics / funnels",
+          "verification": "firsthand",
+          "application": "Application click-through and completion analysis; distinguish HBC website handoff from downstream Neo application outcomes."
+        },
+        {
+          "name": "Neo application and portfolio reporting",
+          "category": "Reporting and source of truth",
+          "verification": "firsthand",
+          "application": "Completion, approval, activation and spend outcome reporting from financial partner; exact integration mechanisms illustrative."
+        },
+        {
+          "name": "MicroStrategy",
+          "category": "Reporting and source of truth",
+          "verification": "organization_context",
+          "application": "Previously identified HBC enterprise BI technology; personal usage unverified."
+        },
+        {
+          "name": "Snowflake",
+          "category": "Reporting and source of truth",
+          "verification": "organization_context",
+          "application": "Previously identified HBC enterprise data infrastructure; personal usage unverified."
+        },
+        {
+          "name": "Adobe Analytics / Google Analytics",
+          "category": "Product analytics / funnels",
+          "verification": "candidate_unverified",
+          "application": "Possible web analytics options; neither personally confirmed."
+        },
+        {
+          "name": "Adobe Target / Optimizely",
+          "category": "Experimentation / testing",
+          "verification": "candidate_unverified",
+          "application": "Potential testing platforms, not verified as used in the HBC Mastercard program."
+        },
+        {
+          "name": "Cohort analysis and controlled growth experiments",
+          "category": "Experimentation / testing",
+          "verification": "firsthand",
+          "application": "Activation and spending segment performance, including incentive economics; no claim about vendor-specific test tooling."
+        }
+      ]
+    },
+    {
+      "id": "arc",
+      "company": "Arc’teryx",
+      "period": "2024–2026",
+      "tools": [
+        {
+          "name": "Salesforce Marketing Cloud",
+          "category": "Product and technical platforms",
+          "verification": "firsthand",
+          "application": "CRM communications and transactional email triggers."
+        },
+        {
+          "name": "Salesforce Service Cloud",
+          "category": "Product and technical platforms",
+          "verification": "firsthand",
+          "application": "Guest service workflows and proposed membership benefit fulfillment touchpoints."
+        },
+        {
+          "name": "Adobe Commerce / SAP / Narvar",
+          "category": "Product and technical platforms",
+          "verification": "firsthand",
+          "application": "Commerce, enterprise systems and transactional notifications in broader product environment."
+        },
+        {
+          "name": "Okta CIAM",
+          "category": "Product and technical platforms",
+          "verification": "firsthand",
+          "application": "Discovery and architecture work around identity and membership linkage, not necessarily a live membership implementation."
+        },
+        {
+          "name": "Salesforce Data Cloud",
+          "category": "Product and technical platforms",
+          "verification": "firsthand",
+          "application": "Planned/proposed architecture; should not be described as fully deployed by membership."
+        },
+        {
+          "name": "CRM and service reporting",
+          "category": "Reporting and source of truth",
+          "verification": "firsthand",
+          "application": "Customer engagement and service workflows; membership North Star is proposed because the larger program did not launch."
+        },
+        {
+          "name": "GA4 / Adobe Analytics",
+          "category": "Product analytics / funnels",
+          "verification": "candidate_unverified",
+          "application": "Potential broader site analytics platforms; personal use unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "aeroplan",
+      "company": "Air Canada / Aeroplan",
+      "period": "2018–2022",
+      "tools": [
+        {
+          "name": "Partner attribution and issuer conversion reports",
+          "category": "Reporting and source of truth",
+          "verification": "firsthand",
+          "application": "Bank partner application outcomes versus Air Canada/Aeroplan offer discovery and application handoff."
+        },
+        {
+          "name": "Digital acquisition funnel reporting",
+          "category": "Product analytics / funnels",
+          "verification": "firsthand",
+          "application": "Offers, referral starts and acquisition conversion, including the +40% conversion improvement."
+        },
+        {
+          "name": "Adobe Analytics",
+          "category": "Product analytics / funnels",
+          "verification": "organization_context",
+          "application": "Previously documented Air Canada digital analytics ecosystem; specific candidate usage and period unverified."
+        },
+        {
+          "name": "Campaign/landing-page experiments",
+          "category": "Experimentation / testing",
+          "verification": "candidate_unverified",
+          "application": "Illustrative way to analyze offers and conversion; no specific test platform verified."
+        },
+        {
+          "name": "TD / CIBC / American Express issuer application systems",
+          "category": "Product and technical platforms",
+          "verification": "firsthand",
+          "application": "External card acquisition and decisions owned by banking partners; distinguish from Air Canada front-end."
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,11 @@ import { applyJazEdits } from "./edits";
 import { chooseClassicLiveProfile, isJazFocusedProfileName } from "./profile";
 import { relatedQuestions } from "./related";
 import { searchJazQuestions } from "./search";
+import { mapIdsForQuestionId } from "./map-links";
+import { validateJazStoryMaps } from "./story-maps";
+import { validateJazTechStack } from "./tech-stack";
+import { searchJazStoryMaps } from "./story-map-search";
+import { jazStoryMaps } from "./story-maps";
 
 function topKey(query: string): string | undefined {
   const hit = searchJazQuestions(jazQuestions, query)[0];
@@ -106,5 +111,18 @@ describe("questrade jaz search", () => {
     expect(relatedQuestions(primary, jazQuestions).map((question) => question.curatedKey)).toEqual(["Q08", "Q13", "Q06"]);
     expect(relatedQuestions(disagreement, jazQuestions).map((question) => question.curatedKey)).toContain("Q26");
     expect(relatedQuestions(disagreement, jazQuestions).map((question) => question.curatedKey)).toContain("Q25");
+  });
+});
+
+describe("questrade jaz experience maps", () => {
+  it("keeps story maps and tech stack datasets valid", () => {
+    expect(validateJazStoryMaps()).toEqual([]);
+    expect(validateJazTechStack()).toEqual([]);
+    expect(jazStoryMaps).toHaveLength(7);
+    expect(mapIdsForQuestionId("jaz-Q15")).toEqual(["rbc-payouts"]);
+    expect(mapIdsForQuestionId("jaz-Q19")).toEqual(["hbc-app"]);
+    expect(mapIdsForQuestionId("jaz-Q24")).toEqual(["arc-membership"]);
+    expect(searchJazStoryMaps(jazStoryMaps, "Neo").some((story) => story.id === "hbc-app")).toBe(true);
+    expect(searchJazStoryMaps(jazStoryMaps, "Interac").some((story) => story.id === "rbc-payouts")).toBe(true);
   });
 });

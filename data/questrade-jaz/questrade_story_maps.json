@@ -1,0 +1,471 @@
+{
+  "title": "Product Story Maps — Questrade interview",
+  "description": "A navigable, cross-role systems-thinking map for improvised Senior PM interview answers. Measured outcomes are distinguished from proposed metrics and illustrative discovery details.",
+  "stories": [
+    {
+      "id": "rbc-payouts",
+      "company": "RBC Avion",
+      "title": "Cashback withdrawals via Interac",
+      "domain": "Payments / Risk",
+      "status": "Launched",
+      "hook": "Non-bank Avion members could earn cashback but needed a way to receive it without opening an RBC deposit account.",
+      "user": "Avion Select member without an RBC bank account",
+      "problem": "Cashback has little value if eligible members cannot reliably withdraw the balance they earned.",
+      "evidence": "Established product expansion requirement. The precise research methods behind the choice are not confirmed.",
+      "decision": "Reuse RBC enterprise payment capability and offer Interac e-Transfer, with consumer-facing eligibility, status and exception handling.",
+      "alternative": "Build a dedicated payout service, use an account-number-based EFT flow, or restrict withdrawal options. Trade-offs: time, trust, customer friction, controls and cost.",
+      "journey": [
+        [
+          "Rewards value",
+          "Earned vs. available cashback is distinguishable"
+        ],
+        [
+          "Request",
+          "Eligibility + minimum threshold + customer intent"
+        ],
+        [
+          "Validate",
+          "Authoritative available amount and required controls"
+        ],
+        [
+          "Pay",
+          "Enterprise service executes Interac transfer"
+        ],
+        [
+          "Resolve",
+          "Processing status, exceptions and reconciliation"
+        ]
+      ],
+      "north": "Eligible withdrawal requests ending in a correctly completed and reconciled payout",
+      "northWhy": "The customer outcome is receiving the money—not tapping “Withdraw.” Proposed metric, not a documented RBC North Star.",
+      "leading": [
+        "Eligible members reaching withdrawal",
+        "Request initiation → accepted conversion",
+        "Withdrawal exception / retry rate",
+        "Share of requests processed within target time"
+      ],
+      "guardrails": [
+        "Duplicate or excess payouts",
+        "Fraud and AML exceptions",
+        "Unreconciled balances or payment discrepancies",
+        "Payment-status accuracy and support contacts"
+      ],
+      "observed": [
+        "≈3,200 requests per quarter",
+        "≈99% processed within 24 hours",
+        "≈$1.2M annualized payouts"
+      ],
+      "ownership": "You owned consumer product requirements and cross-team coordination; enterprise payments owned the rails and execution.",
+      "watchout": "The $15 figure is the minimum available cashback for withdrawing—not an AML cap. Idempotency/reservation are sound design concepts, not verified descriptions of RBC’s exact code.",
+      "questions": [
+        "Why Interac rather than EFT?",
+        "Where does the cashback funding come from?",
+        "What if the same request is submitted twice?",
+        "How do you reconcile a failed or delayed payout?",
+        "What is the source of truth for available cashback?"
+      ],
+      "answer": "The customer problem was access to earned value. We chose to reuse an existing payment capability, then designed the eligibility, transaction status and operational handoffs around it. I would measure successful payouts—not just clicks—and watch for duplicate payments, control exceptions and reconciliation breaks."
+    },
+    {
+      "id": "rbc-shopplus",
+      "company": "RBC Avion",
+      "title": "ShopPlus cashback browser extension",
+      "domain": "Discovery / Growth",
+      "status": "Launched",
+      "hook": "Cashback offers were available, but members had to remember to visit Avion before shopping online.",
+      "user": "Customer shopping on a participating retailer’s website",
+      "problem": "Offers were disconnected from the moment of purchase intent, making earning opportunities easy to miss.",
+      "evidence": "The product mechanics and launch are grounded. Specific funnel findings and customer quotes are illustrative until checked.",
+      "decision": "Surface and activate relevant offers in the merchant browsing context rather than rely only on customers returning to the rewards site.",
+      "alternative": "Email reminders, better Avion-site discovery or campaign retargeting. Still dependent on the customer remembering Avion before purchase.",
+      "journey": [
+        [
+          "Shopping intent",
+          "Customer visits a retailer"
+        ],
+        [
+          "Recognition",
+          "Extension identifies participating merchant"
+        ],
+        [
+          "Offer",
+          "Relevant cashback offer is shown"
+        ],
+        [
+          "Activation",
+          "Customer opts in / activates offer"
+        ],
+        [
+          "Earn",
+          "Eligible purchase is attributed and cashback credited"
+        ],
+        [
+          "Repeat",
+          "Customer returns and earns again"
+        ]
+      ],
+      "north": "Monthly customers with repeat qualifying cashback earnings through ShopPlus",
+      "northWhy": "Repeat earning reflects durable customer value better than installation count. Proposed metric.",
+      "leading": [
+        "Extension installations and activation",
+        "Eligible merchant visits with offers surfaced",
+        "Offer-view → activation conversion",
+        "Activated offer → attributed purchase",
+        "Repeat usage cohorts"
+      ],
+      "guardrails": [
+        "Intrusive notifications or extension uninstall rate",
+        "Wrong merchant recognition or attribution",
+        "Offer misrepresentation or customer complaints",
+        "Rewards cost / incremental profitability"
+      ],
+      "observed": [
+        "100,000+ browser-extension downloads (reach, not proof of active use)"
+      ],
+      "ownership": "Your consumer product work focused on offer discovery and a more contextual earning journey; implementation details should be claimed only where verified.",
+      "watchout": "Do not say cashback was automatically earned merely from visiting a merchant. Activation and purchase attribution matter. The discovery research details are currently illustrative.",
+      "questions": [
+        "Why an extension instead of more emails?",
+        "What would be the true North Star?",
+        "How would you avoid interrupting shopping?",
+        "How would you connect an activation to an eligible purchase?",
+        "What would you do if downloads grew but earnings did not?"
+      ],
+      "answer": "We moved offer discovery to where purchase intent already existed. I would measure meaningful earn behaviour and repeat usage, not just downloads, while protecting customer trust through relevant, accurate and nonintrusive offers."
+    },
+    {
+      "id": "rbc-select",
+      "company": "RBC Avion",
+      "title": "Avion Select — non-bank onboarding",
+      "domain": "Identity / Expansion",
+      "status": "Launched",
+      "hook": "The rewards product had been tied to RBC banking relationships, limiting access to people who did not bank with RBC.",
+      "user": "Prospective member with no RBC deposit account",
+      "problem": "Bank-based identity and payout assumptions prevented a broader addressable audience from joining and using the value proposition.",
+      "evidence": "Known initiative: onboarding and eligibility expansion, identity/MFA work and external payout capability.",
+      "decision": "Open membership to non-bank customers with a suitable identity/onboarding path and a payout method that did not depend on an RBC account.",
+      "alternative": "Limit the product to bank customers or require an RBC bank account; less complexity but substantially narrower proposition.",
+      "journey": [
+        [
+          "Discover",
+          "Understand Avion Select value"
+        ],
+        [
+          "Sign up",
+          "Create non-bank identity and complete required verification"
+        ],
+        [
+          "Eligible",
+          "Access rewards product and offers"
+        ],
+        [
+          "Earn",
+          "Qualifying reward activity occurs"
+        ],
+        [
+          "Redeem",
+          "Cashback payout through Interac where eligible"
+        ],
+        [
+          "Retain",
+          "Repeat use and continued engagement"
+        ]
+      ],
+      "north": "Monthly non-bank members completing a meaningful earn or redeem action",
+      "northWhy": "Membership registration is an entry metric; participation demonstrates delivered value. Proposed metric.",
+      "leading": [
+        "Signup completion and MFA success",
+        "Time to first meaningful action",
+        "Active members by acquisition cohort",
+        "Earners converting to first redemption"
+      ],
+      "guardrails": [
+        "Identity fraud / account takeover",
+        "MFA failure and lockouts",
+        "Support contact rate",
+        "Eligibility mistakes and payout errors"
+      ],
+      "observed": [
+        "≈500,000 members reached (membership scale, not necessarily monthly active)"
+      ],
+      "ownership": "Owned core consumer experience across web/mobile; identity and enterprise payment infrastructure required cross-team coordination.",
+      "watchout": "ShopPlus came before Avion Select. Interac payout was a launch dependency for the non-bank proposition, not a feature deliberately deferred until after launch.",
+      "questions": [
+        "Why open Avion to non-bank customers?",
+        "What changed in CIAM and eligibility?",
+        "How did payouts affect launch scope?",
+        "How do you measure activation versus registrations?",
+        "What would be a fraud guardrail?"
+      ],
+      "answer": "Opening membership expanded the addressable market, but made banking assumptions visible in identity and payouts. The product had to work end to end—from signup through earning to redemption—so I would measure activated members rather than registrations alone."
+    },
+    {
+      "id": "hbc-app",
+      "company": "HBC / Neo",
+      "title": "Mastercard application redesign",
+      "domain": "Acquisition / UX",
+      "status": "Launched",
+      "hook": "Interested HBC shoppers began credit-card applications, but not all completed the cross-brand journey to Neo.",
+      "user": "HBC shopper; includes former Capital One HBC cardholder who needed to reapply",
+      "problem": "Customer intent can be lost when the retail acquisition journey hands off to an unfamiliar financial partner and identity / underwriting steps.",
+      "evidence": "Capital One → Neo partnership change and +15% completion outcome are grounded. Mobile handoff abandonment, trust findings, and exact UI interventions are illustrative.",
+      "decision": "Look beyond “Apply” clicks and improve full-journey continuity, issuer-partner explanation and mobile application clarity where evidence supports them.",
+      "alternative": "Buy more traffic or promote offers harder. That does not fix end-to-end completion barriers.",
+      "journey": [
+        [
+          "Retail intent",
+          "HBC card offer viewed"
+        ],
+        [
+          "Referral",
+          "Customer taps Apply"
+        ],
+        [
+          "Handoff",
+          "Neo-operated credit application"
+        ],
+        [
+          "Verify",
+          "Identity, disclosures and application information"
+        ],
+        [
+          "Submit",
+          "Application sent for decision"
+        ],
+        [
+          "Outcome",
+          "Decision, approved account and eventual card use"
+        ]
+      ],
+      "north": "Qualified completed card applications per eligible customer entering the journey",
+      "northWhy": "Captures completed customer intent without mistaking referral clicks for success. Proposed metric.",
+      "leading": [
+        "Offer view → Apply click rate",
+        "HBC referral → Neo application start",
+        "Stage-by-stage drop-off by device",
+        "Application completion rate by cohort"
+      ],
+      "guardrails": [
+        "Approval quality / approval mix",
+        "Fraud and disclosure compliance",
+        "Customer complaints and trust signals",
+        "Acquisition cost and application errors"
+      ],
+      "observed": [
+        "Application completions +15% (not necessarily +15 percentage points)"
+      ],
+      "ownership": "HBC owned the retail acquisition journey; Neo operated the application experience with an issuing-bank partner. Your role was commercial/product coordination and funnel improvement.",
+      "watchout": "Do not label Neo itself as the legal credit-card issuer in 2022. Treat precise customer-interview statements as a hypothetical rehearsal scenario until verified.",
+      "questions": [
+        "What evidence changed your assumption?",
+        "How did you join HBC and Neo funnel data?",
+        "What specific UX change mattered?",
+        "Why not simply increase acquisition spend?",
+        "How did you separate conversion from approvals?"
+      ],
+      "answer": "We had to measure beyond the HBC Apply button and understand completion through the partner application. My illustrative hypothesis is that the brand handoff and verification expectations caused avoidable uncertainty. The real outcome was a 15% improvement in completed applications."
+    },
+    {
+      "id": "hbc-portfolio",
+      "company": "HBC / Neo",
+      "title": "Card activation, spend and portfolio growth",
+      "domain": "Lifecycle / Economics",
+      "status": "Launched",
+      "hook": "Approving a cardholder does not create much ongoing customer or commercial value if the card is never activated or used.",
+      "user": "New or existing HBC Mastercard holder",
+      "problem": "Low early activation and inconsistent repeat spending limit portfolio engagement and economics.",
+      "evidence": "Your established responsibility: 500K+ portfolio, lifecycle experiments, activity/spend outcomes. Specific treatment mechanics are not confirmed.",
+      "decision": "Use cohorts and controlled lifecycle interventions to lift first use, sustained usage and portfolio performance—not just approvals.",
+      "alternative": "Optimize gross applications or offer blanket incentives. These can raise costs without incremental profitable usage.",
+      "journey": [
+        [
+          "Approved",
+          "New account created by issuer"
+        ],
+        [
+          "Activate",
+          "Customer completes necessary setup"
+        ],
+        [
+          "First use",
+          "First qualifying purchase"
+        ],
+        [
+          "Habit",
+          "Subsequent transactions"
+        ],
+        [
+          "Value",
+          "Sustained engagement and sustainable portfolio economics"
+        ]
+      ],
+      "north": "Sustained active cardholders with positive incremental contribution by cohort",
+      "northWhy": "Links customer habit to product economics, avoiding a pure acquisition-volume metric. Proposed metric.",
+      "leading": [
+        "30-day and 90-day activation",
+        "Time to first purchase",
+        "Transactions per active card",
+        "Spend per active cardholder",
+        "Incremental lift by experimental cohort"
+      ],
+      "guardrails": [
+        "Promotion / incentive cost per incremental active",
+        "Complaint and servicing costs",
+        "Risk / delinquency indicators with issuer partners",
+        "Offer fatigue and opt-out rate"
+      ],
+      "observed": [
+        "500,000+ cardholders in portfolio",
+        "Active cardholders +4 percentage points",
+        "Spend per active +5%",
+        "30-day activation +6pp; 90-day +4pp (if matched to the relevant initiatives)",
+        "Modeled LTV +10%"
+      ],
+      "ownership": "Product growth and commercial portfolio performance at HBC, working with Neo; not ownership of the issuer’s lending balance sheet.",
+      "watchout": "Use percentage points for changes in rates (+4pp, +6pp) versus percentage increase in average spending (+5%). Modeled LTV is not realized revenue.",
+      "questions": [
+        "How did you choose customer cohorts?",
+        "How do you prove incrementality?",
+        "How do you evaluate a cashback incentive?",
+        "What if activation rises but spend does not?",
+        "Did you own the bank P&L?"
+      ],
+      "answer": "The economic value was not in approvals alone; it was in customers activating and repeatedly using the card. We tested lifecycle interventions against behaviour and cost, and tracked sustained active-card and spending outcomes rather than just campaign engagement."
+    },
+    {
+      "id": "arc-membership",
+      "company": "Arc’teryx",
+      "title": "Membership MVP and circular services",
+      "domain": "0→1 / Platform",
+      "status": "Broader launch delayed",
+      "hook": "A customer may own a premium jacket for years, with limited brand engagement after purchase despite care, repair and trade-in needs.",
+      "user": "Owner of Arc’teryx gear seeking care, repair, trade-in or member experiences",
+      "problem": "Fragmented customer services and technology make it hard to deliver a coherent relationship after purchase.",
+      "evidence": "Established: research/business case, $5.2M funding, systems and vendor evaluation, web-first scope recommendation, broader program did not launch as planned.",
+      "decision": "Define the narrowest valuable membership proposition; favor web-first MVP; assess identity, eligibility and fulfilment integration before widening scope.",
+      "alternative": "Launch full web + externally supported app + commerce + ReSALE integration immediately. More coverage but major cost, dependency and delivery risk.",
+      "journey": [
+        [
+          "Purchase",
+          "Guest owns gear / has identity"
+        ],
+        [
+          "Recognize",
+          "Account and membership eligibility"
+        ],
+        [
+          "Discover",
+          "Care, repair, trade-in or event benefit"
+        ],
+        [
+          "Request",
+          "Eligibility + benefit redemption"
+        ],
+        [
+          "Fulfil",
+          "Service and external partner workflows"
+        ],
+        [
+          "Return",
+          "Repeat care / circularity engagement"
+        ]
+      ],
+      "north": "Members completing a meaningful care, repair or circularity action within a defined period",
+      "northWhy": "Would measure actual value delivered, not registrations or benefit impressions. Proposed metric; broader program was not launched.",
+      "leading": [
+        "Membership eligibility completion",
+        "First benefit discovery and request",
+        "Repair / trade-in completion rate",
+        "Time to fulfilment and repeat actions"
+      ],
+      "guardrails": [
+        "Cost per benefit and service capacity",
+        "Incorrect benefit eligibility",
+        "Partner / system integration failures",
+        "Customer support effort and poor fulfilment"
+      ],
+      "observed": [
+        "≈$5.2M approved funding for phase",
+        "Broader membership launch missed original target",
+        "Limited benefits launched with a separate product initiative"
+      ],
+      "ownership": "Technology-side senior PM translating business proposition into feasible MVP; managed PM and BA on Membership. Business sponsors owned final proposition/investment decisions.",
+      "watchout": "Funding is not a member outcome. Do not claim full Membership platform launched or measured broad retention lift. Limited mobile scope was a planning agreement.",
+      "questions": [
+        "Which MVP benefit came first?",
+        "Why web-first instead of app-first?",
+        "How did you calculate integration costs?",
+        "What guardrails would prevent expensive redemptions?",
+        "Why did the program miss launch and what would you change?"
+      ],
+      "answer": "The product promise was useful engagement after purchase, but fragmented systems made delivery expensive. My role was to surface those trade-offs, propose a narrower MVP, and work on decision alignment. The full program did not launch as intended; the learning was to escalate sponsor-level scope decisions earlier."
+    },
+    {
+      "id": "aeroplan-acq",
+      "company": "Air Canada Aeroplan",
+      "title": "Co-branded card digital acquisition",
+      "domain": "Partner Conversion",
+      "status": "Launched",
+      "hook": "Interested Aeroplan customers had to choose a TD, CIBC or Amex card, then complete an application through a separate financial partner.",
+      "user": "Aeroplan member considering a co-branded card",
+      "problem": "Comparing offers and moving between airline and issuer channels introduces choice friction and attribution gaps.",
+      "evidence": "Established: TD/CIBC/Amex partner acquisition, +40% conversion and +427% YoY overall acquisition; specific experiments are not verified.",
+      "decision": "Clarify partner/card selection, improve the digital referral journey, use funnel and partner performance data to optimize customer conversion.",
+      "alternative": "Rely mainly on marketing volume; can increase clicks without improving applications or approved acquisition.",
+      "journey": [
+        [
+          "Interest",
+          "Aeroplan benefit / card offer"
+        ],
+        [
+          "Choose",
+          "Compare TD, CIBC and Amex propositions"
+        ],
+        [
+          "Refer",
+          "Follow partner application link"
+        ],
+        [
+          "Apply",
+          "Application and decision at issuer"
+        ],
+        [
+          "Acquire",
+          "Qualified new cardholder"
+        ],
+        [
+          "Engage",
+          "Ongoing card-linked Aeroplan participation"
+        ]
+      ],
+      "north": "Approved co-branded card accounts attributable to Aeroplan digital acquisition",
+      "northWhy": "Aligns customer acquisition and commercial partnership value better than outbound clicks. Proposed metric.",
+      "leading": [
+        "Offer-view to application referral",
+        "Digital application conversion",
+        "Conversion by issuer and channel",
+        "Incremental applications per qualified visitor"
+      ],
+      "guardrails": [
+        "Offer/disclosure accuracy",
+        "Attribution gaps and partner data delays",
+        "Traffic quality and approval mix",
+        "Customer confusion / support burden"
+      ],
+      "observed": [
+        "Digital application conversion +40%",
+        "Overall card acquisition +427% year over year (do not attribute entirely to one UX change)"
+      ],
+      "ownership": "Digital acquisition experience, segmentation and partner integration/coordination; issuing banks owned application underwriting and credit decisions.",
+      "watchout": "Distinguish the 40% conversion uplift from the 427% overall acquisition growth. Do not imply your one redesign caused all YoY volume gain.",
+      "questions": [
+        "How did partner attribution work?",
+        "Which conversion denominator did you use?",
+        "What was your experiment design?",
+        "Why would a customer choose one issuer?",
+        "How would you measure incrementality?"
+      ],
+      "answer": "We optimized the customer journey across an airline and multiple issuers. The key was measuring meaningful application outcomes, not outbound clicks, and balancing clarity, conversion and partner constraints."
+    }
+  ]
+}

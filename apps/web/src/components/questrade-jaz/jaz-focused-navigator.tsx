@@ -34,6 +34,10 @@ import {
 } from "@/lib/questrade-jaz/profile";
 import { relatedQuestions } from "@/lib/questrade-jaz/related";
 import { searchAsksForJaz, searchJazQuestions, type JazSearchHit } from "@/lib/questrade-jaz/search";
+import { mapIdsForQuestionId } from "@/lib/questrade-jaz/map-links";
+import { jazStoryById, jazStoryMaps } from "@/lib/questrade-jaz/story-maps";
+import { JazStoryMapDetail } from "@/components/questrade-jaz/jaz-story-map-detail";
+import { JazStoryMapSidebar } from "@/components/questrade-jaz/jaz-story-map-sidebar";
 import { cn } from "@/lib/utils";
 
 const LIGHT_SURFACE = {
@@ -70,10 +74,15 @@ const EXPANDED_KEY = "ic-jaz-focused-expanded";
 const GROUP_KEY = "ic-jaz-focused-groups";
 const NAV_MODE_KEY = "ic-jaz-focused-nav-mode";
 const SEARCH_KEY = "ic-jaz-focused-search";
+const VIEW_MODE_KEY = "ic-jaz-focused-view-mode";
+const MAP_ID_KEY = "ic-jaz-focused-map-id";
+const MAP_SEARCH_KEY = "ic-jaz-focused-map-search";
+const MAP_FROM_ANSWER_KEY = "ic-jaz-focused-map-from-answer";
 
 type NavMode = "topics" | "experiences";
 type Screen = "answer" | "ask";
 type Pane = "nav" | "answer";
+type ViewMode = "answers" | "maps";
 
 function readList(key: string): string[] {
   try {
@@ -122,6 +131,10 @@ export function JazFocusedNavigator() {
   const [highlight, setHighlight] = useState(0);
   const [recentOpen, setRecentOpen] = useState(false);
   const [prep, setPrep] = useState(false);
+  const [viewMode, setViewMode] = useState<ViewMode>("answers");
+  const [selectedMapId, setSelectedMapId] = useState(jazStoryMaps[0]?.id ?? "rbc-payouts");
+  const [mapQuery, setMapQuery] = useState("");
+  const [mapFromAnswer, setMapFromAnswer] = useState(false);
   const [showRail, setShowRail] = useState(false);
   const [splitLayout, setSplitLayout] = useState(false);
   const [containerWidth, setContainerWidth] = useState(0);
@@ -150,6 +163,14 @@ export function JazFocusedNavigator() {
   const askHit = searchAsksForJaz(query);
   const resultCount = hits.length + (askHit ? 1 : 0);
   const related = useMemo(() => relatedQuestions(active, questions), [active, questions]);
+  const linkedMapStories = useMemo(
+    () =>
+      mapIdsForQuestionId(active.id)
+        .map((id) => jazStoryById(id))
+        .filter((story): story is NonNullable<ReturnType<typeof jazStoryById>> => Boolean(story)),
+    [active.id]
+  );
+  const selectedStory = jazStoryById(selectedMapId) ?? jazStoryMaps[0]!;
   const recentQuestions = recent
     .map((id) => questions.find((question) => question.id === id))
     .filter((question): question is JazQuestion => Boolean(question))
@@ -164,6 +185,10 @@ export function JazFocusedNavigator() {
     const savedGroups = readList(GROUP_KEY);
     const savedMode = sessionStorage.getItem(NAV_MODE_KEY);
     const savedQuery = sessionStorage.getItem(SEARCH_KEY) ?? "";
+    const savedViewMode = sessionStorage.getItem(VIEW_MODE_KEY);
+    const savedMapId = sessionStorage.getItem(MAP_ID_KEY);
+    const savedMapQuery = sessionStorage.getItem(MAP_SEARCH_KEY) ?? "";
+    const savedMapFromAnswer = sessionStorage.getItem(MAP_FROM_ANSWER_KEY) === "1";
     const initialId =
       savedActive && jazQuestions.some((question) => question.id === savedActive)
         ? savedActive
@@ -176,6 +201,10 @@ export function JazFocusedNavigator() {
     setExpandedGroups(savedGroups);
     if (savedMode === "experiences" || savedMode === "topics") setNavMode(savedMode);
     setQuery(savedQuery);
+    if (savedViewMode === "maps" || savedViewMode === "answers") setViewMode(savedViewMode);
+    if (savedMapId && jazStoryMaps.some((story) => story.id === savedMapId)) setSelectedMapId(savedMapId);
+    setMapQuery(savedMapQuery);
+    setMapFromAnswer(savedMapFromAnswer);
     setReady(true);
   }, []);
 
@@ -188,7 +217,11 @@ export function JazFocusedNavigator() {
     sessionStorage.setItem(GROUP_KEY, JSON.stringify(expandedGroups));
     sessionStorage.setItem(NAV_MODE_KEY, navMode);
     sessionStorage.setItem(SEARCH_KEY, query);
-  }, [ready, activeId, followId, recent, expandedTopics, expandedGroups, navMode, query]);
+    sessionStorage.setItem(VIEW_MODE_KEY, viewMode);
+    sessionStorage.setItem(MAP_ID_KEY, selectedMapId);
+    sessionStorage.setItem(MAP_SEARCH_KEY, mapQuery);
+    sessionStorage.setItem(MAP_FROM_ANSWER_KEY, mapFromAnswer ? "1" : "0");
+  }, [ready, activeId, followId, recent, expandedTopics, expandedGroups, navMode, query, viewMode, selectedMapId, mapQuery, mapFromAnswer]);
 
   useEffect(() => {
     if (!isSupabaseConfigured()) return;
@@ -227,8 +260,8 @@ export function JazFocusedNavigator() {
   }, []);
 
   useEffect(() => {
-    setShowRail(splitLayout && containerWidth - topicsWidth - RAIL_WIDTH >= 520);
-  }, [containerWidth, splitLayout, topicsWidth]);
+    setShowRail(viewMode === "answers" && splitLayout && containerWidth - topicsWidth - RAIL_WIDTH >= 520);
+  }, [containerWidth, splitLayout, topicsWidth, viewMode]);
 
   useEffect(() => {
     const pane = answerRef.current;
@@ -247,6 +280,25 @@ export function JazFocusedNavigator() {
   const remember = useCallback((id: string) => {
     setRecent((current) => [id, ...current.filter((item) => item !== id)].slice(0, 12));
   }, []);
+
+  const openExperienceMap = useCallback((mapId: string, fromAnswer = false) => {
+    setSelectedMapId(mapId);
+    setViewMode("maps");
+    setMapFromAnswer(fromAnswer);
+    setPane("answer");
+  }, []);
+
+  const returnToAnswersFromMap = useCallback(() => {
+    setViewMode("answers");
+    setMapFromAnswer(false);
+    setPane("answer");
+    requestAnimationFrame(() => {
+      const pane = answerRef.current;
+      if (!pane) return;
+      pane.scrollTop = answerScrolls.current[activeId] ?? 0;
+      if (followId) document.getElementById(`jaz-follow-${followId}`)?.scrollIntoView({ block: "nearest" });
+    });
+  }, [activeId, followId]);
 
   const openQuestion = useCallback(
     (questionId: string, nextFollowId: string | null) => {
@@ -704,6 +756,21 @@ export function JazFocusedNavigator() {
               {edited && <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] text-amber-950">Edited in this profile</span>}
             </div>
 
+            {linkedMapStories.length > 0 && (
+              <div className="mt-3 flex flex-wrap gap-2">
+                {linkedMapStories.map((story) => (
+                  <button
+                    key={story.id}
+                    type="button"
+                    className="rounded-md border border-violet-200 bg-violet-50 px-2.5 py-1.5 text-left text-xs font-medium text-violet-950 hover:bg-violet-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-300"
+                    onClick={() => openExperienceMap(story.id, true)}
+                  >
+                    View experience map · {story.title}
+                  </button>
+                ))}
+              </div>
+            )}
+
             {prep ? (
               <div className="mt-4 space-y-3 rounded-lg border border-amber-200 bg-amber-50 p-3">
                 <p className="text-xs font-semibold tracking-wide text-amber-950 uppercase">Prep only — not spoken script</p>
@@ -825,6 +892,36 @@ export function JazFocusedNavigator() {
     </div>
   );
 
+  const mapsMain = (
+    <div className="flex h-full min-h-0 min-w-0 flex-1 flex-col text-neutral-950">
+      <div className="flex items-center gap-2 border-b border-border px-4 py-2 md:hidden">
+        <Button type="button" variant="outline" size="sm" onClick={() => setPane("nav")}>
+          <ArrowLeft className="h-3.5 w-3.5" />
+          Experiences
+        </Button>
+        <span className="truncate text-xs text-muted-foreground">{selectedStory.title}</span>
+      </div>
+      <JazStoryMapDetail
+        story={selectedStory}
+        prep={prep}
+        backLabel={mapFromAnswer ? active.shortLabel : null}
+        onBack={mapFromAnswer ? returnToAnswersFromMap : undefined}
+      />
+    </div>
+  );
+
+  const mapsSidebar = (
+    <JazStoryMapSidebar
+      selectedId={selectedMapId}
+      query={mapQuery}
+      onQueryChange={setMapQuery}
+      onSelect={(id) => {
+        setSelectedMapId(id);
+        setPane("answer");
+      }}
+    />
+  );
+
   return (
     <div ref={rootRef} style={LIGHT_SURFACE} className="flex h-[100vh] max-h-[100vh] flex-col overflow-hidden bg-white text-neutral-950">
       <header className="flex shrink-0 items-center gap-3 bg-[#221b3a] px-3 py-2 text-white">
@@ -832,7 +929,44 @@ export function JazFocusedNavigator() {
           <p className="truncate text-sm font-semibold">{JAZ_FOCUSED_PROFILE_NAME}</p>
           <p className="text-[11px] text-violet-200">Live navigator · local answers · no transcript</p>
         </div>
-        <div className="min-w-0 flex-1 md:hidden">{searchField(mobileSearchRef, "jaz-search-mobile")}</div>
+        <div
+          className="hidden shrink-0 rounded-md bg-white/10 p-0.5 sm:flex"
+          role="tablist"
+          aria-label="Jaz focused modes"
+        >
+          <button
+            type="button"
+            role="tab"
+            aria-selected={viewMode === "answers"}
+            className={cn(
+              "rounded px-2.5 py-1 text-xs font-medium transition-colors",
+              viewMode === "answers" ? "bg-white text-violet-950" : "text-white/90 hover:bg-white/10"
+            )}
+            onClick={() => {
+              setViewMode("answers");
+              setMapFromAnswer(false);
+            }}
+          >
+            Answers
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={viewMode === "maps"}
+            className={cn(
+              "rounded px-2.5 py-1 text-xs font-medium transition-colors",
+              viewMode === "maps" ? "bg-white text-violet-950" : "text-white/90 hover:bg-white/10"
+            )}
+            onClick={() => {
+              setViewMode("maps");
+              setMapFromAnswer(false);
+              setPane("answer");
+            }}
+          >
+            Experience Maps
+          </button>
+        </div>
+        <div className="min-w-0 flex-1 md:hidden">{viewMode === "answers" ? searchField(mobileSearchRef, "jaz-search-mobile") : null}</div>
         <div className="ml-auto flex shrink-0 items-center gap-1.5">
           <Button
             type="button"
@@ -853,6 +987,7 @@ export function JazFocusedNavigator() {
             className={cn("h-8 bg-white/10 text-white hover:bg-white/15", screen === "ask" && "bg-white text-violet-950")}
             onClick={() => {
               setScreen("ask");
+              setViewMode("answers");
               setPane("answer");
             }}
           >
@@ -896,7 +1031,7 @@ export function JazFocusedNavigator() {
           className={cn("relative min-h-0 shrink-0", pane === "nav" ? "flex w-full md:w-auto" : "hidden md:block")}
           style={splitLayout ? { width: topicsWidth } : undefined}
         >
-          <aside className="flex h-full min-h-0 w-full flex-col">{nav}</aside>
+          <aside className="flex h-full min-h-0 w-full flex-col">{viewMode === "maps" ? mapsSidebar : nav}</aside>
           {splitLayout && (
             <PanelResizeHandle
               className="absolute top-0 right-0 z-30 hidden h-full w-3 translate-x-1/2 md:flex"
@@ -906,8 +1041,10 @@ export function JazFocusedNavigator() {
             />
           )}
         </div>
-        <div className={cn("min-h-0 min-w-0 flex-1 md:flex", pane === "answer" ? "flex" : "hidden")}>{answer}</div>
-        {showRail && screen === "answer" && (
+        <div className={cn("min-h-0 min-w-0 flex-1 md:flex", pane === "answer" ? "flex" : "hidden")}>
+          {viewMode === "maps" ? mapsMain : answer}
+        </div>
+        {showRail && viewMode === "answers" && screen === "answer" && (
           <aside className="w-56 shrink-0 overflow-auto border-l border-border bg-[#fbfbfe] p-3">
             <p className="text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">At a glance</p>
             <dl className="mt-2 space-y-2 text-xs">
