@@ -92,7 +92,7 @@
       "title": "How would you approach making Questrade a customer's primary bank?",
       "navigationLabel": "How would you approach making Questrade a customer's primary bank?",
       "priority": 1,
-      "answer": "I think Questrade's existing investment relationships are a real advantage, but I wouldn't assume someone who trusts Questrade with their investments is automatically ready to move their paycheque there.\n\nThe first thing I'd want to understand is what's actually preventing customers from making that switch. Is their existing bank good enough? Are they worried about moving their payroll and recurring payments? Or do they simply not see a compelling reason to change?\n\nI'd be particularly interested in customers who already have a natural reason to move money between their everyday finances and investments.\n\nFor example, someone regularly contributing to their TFSA might value a simpler way to manage the cash they're setting aside to invest. Someone who frequently withdraws investment proceeds might care more about having predictable access to those funds.\n\nI'd use behavioural data and customer interviews to understand those needs, then identify one or two segments where we have a meaningful opportunity to differentiate.\n\nFrom there, I'd look at the biggest barrier to adoption. If customers see the value but find switching cumbersome, I'd explore things like guided direct deposit setup or making it easier to move recurring payments.\n\nBut if the issue is trust, or that a fundamental banking capability isn't meeting expectations, that's what I'd prioritize first. And that would mean working closely with the Money Movement and Cards teams to make sure we're solving the experience end to end.\n\nI'd also want to test whether there's a practical benefit to managing spending, saving, and investing together. Something that genuinely makes customers' financial lives easier, rather than just giving them another dashboard.\n\nAnd in terms of success, I wouldn't focus solely on account openings. I'd look at recurring payroll deposits, regular spending and bill payments, and whether customers sustain those behaviours over time.\n\nUltimately, the goal isn't just to cross-sell banking to existing Questrade customers. It's to give them a compelling enough reason to make Questrade the account they actually rely on.",
+      "answer": "I think Questrade's existing investment relationships are a real advantage, but I wouldn't assume someone who trusts Questrade with their investments is automatically ready to move their paycheque there.\n\nMy initial instinct would be to start with existing investment customers who are already moving money regularly between Questrade and another bank. They've already demonstrated a reason to interact with us financially, so I'd be interested in what it would take to deepen that relationship.\n\nThe first thing I'd want to understand is what's actually preventing customers from making that switch. Is their existing bank good enough? Are they worried about moving their payroll and recurring payments? Or do they simply not see a compelling reason to change?\n\nI'd be particularly interested in customers who already have a natural reason to move money between their everyday finances and investments.\n\nFor example, someone regularly contributing to their TFSA might value a simpler way to manage the cash they're setting aside to invest. Someone who frequently withdraws investment proceeds might care more about having predictable access to those funds.\n\nI'd use behavioural data and customer interviews to understand those needs, then identify one or two segments where we have a meaningful opportunity to differentiate.\n\nFrom there, I'd look at the biggest barrier to adoption. If customers see the value but find switching cumbersome, I'd explore things like guided direct deposit setup or making it easier to move recurring payments.\n\nBut if the issue is trust, or that a fundamental banking capability isn't meeting expectations, that's what I'd prioritize first. And that would mean working closely with the Money Movement and Cards teams to make sure we're solving the experience end to end.\n\nI'd also want to test whether there's a practical benefit to managing spending, saving, and investing together. Something that genuinely makes customers' financial lives easier, rather than just giving them another dashboard.\n\nAnd in terms of success, I wouldn't focus solely on account openings. I'd look at recurring payroll deposits, regular spending and bill payments, and whether customers sustain those behaviours over time.\n\nUltimately, the goal isn't just to cross-sell banking to existing Questrade customers. It's to give them a compelling enough reason to make Questrade the account they actually rely on.",
       "followUps": [
         {
           "question": "If you could only prioritize one initiative, what would you choose?",
@@ -159,7 +159,7 @@
       "title": "How would you define the Everyday Banking roadmap?",
       "navigationLabel": "How would you define the Everyday Banking roadmap?",
       "priority": 1,
-      "answer": "I'd start by organizing the roadmap around customer outcomes rather than a list of features.\n\nIf we want to become someone's primary bank, I think about the journey in stages. First, customers need to be able to fund the account easily and trust that the money is available when they need it. Second, we need them to establish recurring behaviours—payroll, bill payments, and everyday spending. Third, there's an opportunity to deepen the relationship through cash-flow management, saving, and connections to investing.\n\nBut I wouldn't automatically build in that sequence without looking at the data. If funding works but customers don't switch payroll, that's one problem. If payroll arrives but people still don't use the card or pay bills, that's a different problem.\n\nI'd work with the Cards and Money Movement PMs to map the dependencies and evaluate initiatives by customer impact, commercial value, risk, technical readiness, and effort.\n\nI wouldn't want three squads shipping individually successful features while the end-to-end experience still feels fragmented.\n\nI'd rather have a roadmap where we can explain how each investment gets us closer to sustained primary-account use, and what we'd stop doing if the evidence changes.",
+      "answer": "I'd start by organizing the roadmap around customer outcomes rather than a list of features.\n\nIf we want to become someone's primary bank, I think about the journey in stages. First, customers need to be able to fund the account easily and trust that the money is available when they need it. Second, we need them to establish recurring behaviours—payroll, bill payments, and everyday spending. Third, there's an opportunity to deepen the relationship through cash-flow management, saving, and connections to investing.\n\nBut I wouldn't automatically build in that sequence without looking at the data. If funding works but customers don't switch payroll, that's one problem. If payroll arrives but people still don't use the card or pay bills, that's a different problem.\n\nFor example, if we're seeing customers open and fund accounts but not move their payroll, I'd probably prioritize improving that journey ahead of building a broad financial wellness dashboard. There's limited value in giving someone detailed spending insights if most of their everyday financial activity is still happening at another bank.\n\nI'd work with the Cards and Money Movement PMs to map the dependencies and evaluate initiatives by customer impact, commercial value, risk, technical readiness, and effort.\n\nI wouldn't want three squads shipping individually successful features while the end-to-end experience still feels fragmented.\n\nI'd rather have a roadmap where we can explain how each investment gets us closer to sustained primary-account use, and what we'd stop doing if the evidence changes.",
       "followUps": [
         {
           "question": "How would you decide the first roadmap priority?",
@@ -221,7 +221,7 @@
       "title": "How would you drive direct deposit adoption?",
       "navigationLabel": "How would you drive direct deposit adoption?",
       "priority": 1,
-      "answer": "I'd think about payroll switching as both a customer trust decision and a workflow problem.\n\nFirst I'd identify people who have opened and funded the account but haven't moved recurring income. I'd want to know whether they're holding back because the bank isn't meeting a core need, or because switching their employer and recurring payments feels inconvenient or risky.\n\nFor customers who already see the value, I'd explore a guided setup: clear account details, employer instructions, visibility into what they've completed, and reminders tied to the next pay cycle. I'd also consider how customers manage the transition without accidentally missing bills or having deposits go to the wrong account.\n\nBut if customers don't believe the account can reliably handle everyday spending or bill payments, simplifying the switch won't be enough. We'd need to address that first with the relevant squads.\n\nI'd test with a defined segment before scaling broad cash incentives. And I'd measure verified recurring deposits over multiple pay cycles, subsequent card and bill-payment activity, retained balances, and support issues—not simply clicks on a 'switch payroll' button.\n\nThe goal is to make switching feel worthwhile and manageable, then earn the customer's continued use.",
+      "answer": "I'd think about payroll switching as both a customer trust decision and a workflow problem.\n\nFirst I'd identify people who have opened and funded the account but haven't moved recurring income. I'd want to know whether they're holding back because the bank isn't meeting a core need, or because switching their employer and recurring payments feels inconvenient or risky.\n\nFor customers who already see the value, I'd explore a guided setup: clear account details, employer instructions, visibility into what they've completed, and reminders tied to the next pay cycle. I'd also consider how customers manage the transition without accidentally missing bills or having deposits go to the wrong account.\n\nBut if customers don't believe the account can reliably handle everyday spending or bill payments, simplifying the switch won't be enough. We'd need to address that first with the relevant squads.\n\nI'd test with a defined segment before scaling broad cash incentives. And I'd measure verified recurring deposits over multiple pay cycles. I'd want to measure the number of customers who actually receive recurring payroll deposits, not just those who download a direct-deposit form or complete our setup instructions. I'd also track subsequent card and bill-payment activity, retained balances, and support issues—not simply clicks on a 'switch payroll' button.\n\nThe goal is to make switching feel worthwhile and manageable, then earn the customer's continued use.",
       "followUps": [
         {
           "question": "Would you pay a switching bonus?",
@@ -548,7 +548,8 @@
         "Trade offs",
         "Limited resources",
         "Competing priorities",
-        "Prioritization"
+        "Prioritization",
+        "Arc'teryx prioritization"
       ],
       "evidenceStatus": "mixed",
       "accuracyNote": "Mobile compromise was a planning decision, not evidence that full membership launched.",
@@ -882,7 +883,7 @@
       "title": "Tell me about a decision you made with incomplete information.",
       "navigationLabel": "Tell me about a decision you made with incomplete information.",
       "priority": 2,
-      "answer": "At HBC, part of my work was improving how quickly new Mastercard customers became active cardholders.\n\nWith activation, there are several plausible reasons people don't start using a new card. You can spend months trying to explain every motivation before making a change, but at some point you need to test.\n\nWe used cohort analysis and controlled experiments to understand which activation approaches changed behaviour. The important distinction was that the outcome wasn't email opens or clicks; it was customers activating and actually spending on the card.\n\nWe also had to think about incentive cost relative to the incremental activity generated. A campaign can look successful on engagement metrics and still be commercially unattractive.\n\nThe lifecycle work improved 30-day activation by about six percentage points and 90-day activation by around four points.\n\nFor me, the principle is proportionality. If we're talking about a reversible messaging or offer test, I'd rather establish a clear hypothesis and learn quickly than wait for perfect certainty.\n\nIf the decision affects customer balances, money movement or regulatory obligations, the evidence and controls need to be much stronger. Not every product decision should require the same degree of certainty.",
+      "answer": "At HBC, one of the challenges we were working through was improving how quickly new Mastercard customers became active cardholders.\n\nWe knew that getting someone approved didn't necessarily mean they would start using the card, but we didn't have a complete picture of what was preventing that first purchase.\n\nWas it that customers weren't seeing enough value? Were they forgetting about the card? Or did we need to do a better job with the onboarding experience?\n\nThere were different ways we could approach it, including offering more points or incentives. But I was hesitant to commit to a broad incentive program without knowing whether it would actually change behaviour.\n\nSo rather than spend months trying to understand every possible reason, I recommended starting with a smaller, controlled lifecycle test.\n\nThe idea was to try a more targeted onboarding experience with a specific customer cohort, compare activation against the existing journey, and use those results to decide whether it was worth expanding.\n\nThat let us move forward without committing a large amount of promotional spending upfront.\n\nMore broadly, our lifecycle work helped improve 30-day activation by about six percentage points and 90-day activation by around four points.\n\nI wouldn't attribute those entire improvements to one test, but they reinforced the value of making smaller, evidence-based decisions rather than waiting until we felt certain about every assumption.\n\nAnd I think the important distinction is the risk involved.\n\nFor a reversible customer engagement experiment, I'm comfortable making a decision with imperfect information if we have a clear hypothesis and a way to measure it.\n\nFor something involving customer funds or financial controls, I'd have a much higher bar.\n\nSo for me, it's about understanding which decisions need certainty and which ones are better answered by actually testing something.",
       "followUps": [
         {
           "question": "How do you know when you have enough information?",
@@ -897,10 +898,11 @@
         "Ambiguity",
         "Bias for action",
         "Incomplete data",
-        "Experimentation"
+        "Experimentation",
+        "Decision without all the information"
       ],
       "evidenceStatus": "mixed",
-      "accuracyNote": "Cohort experiments and lifecycle results are established. Avoid inventing a specific campaign or hypothesis unless confirmed.",
+      "accuracyNote": "Illustrative first-purchase / initial activation onboarding test under uncertainty. Keep distinct from the second-purchase rewards accelerator (Q34). Broader +6 pp / +4 pp activation results must not be attributed entirely to one hypothetical test.",
       "projectTags": [
         "HBC"
       ],
@@ -1066,6 +1068,90 @@
       "accuracyNote": "",
       "projectTags": [
         "Aeroplan"
+      ],
+      "suggestedPinned": false
+    },
+    {
+      "curatedKey": "Q34",
+      "canonicalAnswerId": null,
+      "category": "Product Craft & Execution",
+      "title": "Tell me about a growth experiment you ran and how you measured its success.",
+      "navigationLabel": "Tell me about a growth experiment you ran and how you measured its success.",
+      "priority": 2,
+      "answer": "Yeah, one example would be at HBC, where I was responsible for growth across our Mastercard portfolio.\n\nOne of the things we were trying to improve was getting new cardholders to use the card more consistently after their initial purchase.\n\nWe had a pretty large portfolio, over 500,000 cardholders, and one thing we noticed was that some customers would make their first purchase but then go quiet.\n\nNow, the obvious solution would have been to offer everyone more points or a larger spending incentive.\n\nBut I was concerned we'd end up rewarding customers who were already going to spend, without necessarily changing the behaviour of the customers we wanted to influence.\n\nSo I worked with our analytics team and Neo to identify a more specific cohort: customers who'd made an initial purchase but hadn't returned for a second transaction within the following few weeks.\n\nThe hypothesis was that a small, well-timed incentive might help establish a repeat-spending habit.\n\nWe tested a capped points accelerator on their next qualifying purchase, while keeping a comparable control group on the existing lifecycle experience.\n\nAnd what was important to me was measuring everyone assigned to the test, not just the people who opened the message or redeemed the offer. Otherwise, we'd risk overstating the impact.\n\nFor the pilot, we saw a meaningful improvement in second-purchase conversion—around five percentage points over the control group in this example.\n\nBut the interesting part was looking at the economics.\n\nWe saw additional spending, but the uplift wasn't equally attractive across every customer segment once we accounted for the reward costs.\n\nSo rather than recommending that we extend the incentive to the whole portfolio, I focused on where the incremental behaviour justified the investment.\n\nWe also looked at whether those customers continued spending after the promotional period, because there's a difference between creating a habit and simply pulling someone's next purchase forward.\n\nFor me, that was a good example of using experimentation to make a commercial decision.\n\nIt wasn't just about finding an offer that increased transactions. It was about understanding which customers actually needed an intervention, whether it changed their behaviour, and whether the economics made sense before scaling it.",
+      "followUps": [
+        {
+          "question": "Why did you offer more points instead of just sending a reminder?",
+          "answer": "That's a fair challenge, because a reminder would obviously be cheaper. I'd want to establish whether the incentive actually changes behaviour beyond what messaging alone would achieve. In this example, the existing lifecycle experience served as our baseline. If we were expanding the experiment, I'd be interested in a message-only variation as well, because the reward has to earn its incremental cost."
+        },
+        {
+          "question": "How did you know you weren't just subsidizing spending that would have happened anyway?",
+          "answer": "That's why I wanted a control group. I'd compare the repeat-purchase rate and spending of everyone assigned to the treatment against the control, rather than looking only at customers who redeemed the incentive. Then I'd assess the incremental commercial contribution after reward costs. I'd also check subsequent behaviour to see whether we created sustained engagement or just accelerated a purchase."
+        },
+        {
+          "question": "What was your actual success metric?",
+          "answer": "For that test, I'd use second-purchase conversion within a defined period as the primary metric. Incremental spending and subsequent active-cardholder behaviour would be supporting measures. Reward cost, contribution, and customer complaints would be guardrails. I wouldn't use offer redemptions or message opens as proof of success."
+        },
+        {
+          "question": "How did that influence your strategy?",
+          "answer": "It reinforced that one broad incentive strategy doesn't make sense for every cardholder. The customers who already use the product regularly may not need additional incentives. I'd rather concentrate spending on segments where we can demonstrate incremental behaviour, then monitor whether that behaviour persists."
+        }
+      ],
+      "aliases": [
+        "HBC growth experiment",
+        "HBC repeat purchase test",
+        "A/B test",
+        "Growth experiment",
+        "Second purchase",
+        "Repeat use",
+        "Incrementality",
+        "Unit economics",
+        "HBC experiment"
+      ],
+      "evidenceStatus": "illustrative",
+      "accuracyNote": "Illustrative scenario: second-purchase cohort, capped points accelerator, control group, ~5 pp lift, and selective-scale decision are rehearsal details—not verified historical project results. Broader HBC portfolio metrics are not results of this pilot.",
+      "projectTags": [
+        "HBC",
+        "Neo"
+      ],
+      "suggestedPinned": false
+    },
+    {
+      "curatedKey": "Q35",
+      "canonicalAnswerId": null,
+      "category": "Product Craft & Execution",
+      "title": "Tell me about a time you had to prioritize between two important initiatives.",
+      "navigationLabel": "Tell me about a time you had to prioritize between two important initiatives.",
+      "priority": 2,
+      "answer": "Yeah, one example would be at RBC, when we were working on expanding Avion Rewards to customers who didn't bank with RBC.\n\nAt the same time, we had other improvements on the roadmap, including moving more of the travel-booking experience natively into our mobile apps.\n\nBoth were valuable initiatives.\n\nThe native travel experience would have improved an existing journey, particularly around making it feel more seamless within the app.\n\nBut Avion Select was opening the platform to an entirely new customer segment, and there were some fairly fundamental capabilities we needed to get right.\n\nFor example, existing RBC customers could receive cashback directly into their bank accounts. Non-RBC customers couldn't, so the expansion required us to support a separate withdrawal method through Interac e-Transfer.\n\nWe also had additional identity and onboarding requirements.\n\nThe challenge was that both initiatives were drawing on capacity across our web and mobile squad, along with integration and testing dependencies.\n\nSo I looked at the customer consequence of delaying each initiative.\n\nWith travel, customers already had a functioning booking experience through the existing web-based journey. It wasn't ideal, but they could still accomplish what they needed.\n\nWith Avion Select, launching without reliable onboarding and a way for customers to actually receive their cashback would mean bringing people into a rewards program without delivering the full value proposition.\n\nSo my recommendation was to protect the end-to-end Avion Select launch, including the payout capability, and sequence the broader native travel work afterward.\n\nThat meant being clear about what was essential for launch, aligning with the dependent teams, and keeping the travel improvements on the roadmap rather than allowing them to disappear.\n\nThe broader Avion Select proposition went on to reach roughly 500,000 members, and the Interac withdrawal capability supported around 3,200 requests per quarter, with about 99% processed within 24 hours.\n\nI wouldn't attribute all of that growth to one prioritization decision, but those outcomes demonstrate the customer value of the capabilities we were protecting.\n\nFor me, the important distinction was that one initiative improved a journey customers could already complete, while the other enabled a new segment to use the product end to end.\n\nAnd when resources are constrained, that's the kind of trade-off I try to make explicit rather than simply prioritizing whichever project has the most visibility.",
+      "followUps": [
+        {
+          "question": "Why was Avion Select more important than native travel?",
+          "answer": "The biggest distinction was the customer outcome. Travel already had a working journey, even if it wasn't as seamless as we wanted. For non-RBC members, onboarding and cashback withdrawals were foundational to delivering the proposition. Without those capabilities, the expansion wouldn't be complete from the customer's perspective. So I'd prioritize removing the fundamental barrier before improving an existing experience."
+        },
+        {
+          "question": "How did you make sure travel didn't get deprioritized indefinitely?",
+          "answer": "I'd want the decision documented with a clear rationale, the outstanding travel work sized, and a specific point to revisit it. It also helps to agree on the customer metrics that would justify accelerating it—for example, booking abandonment or friction attributable to the existing experience. Deferring something shouldn't mean it disappears from the strategy."
+        },
+        {
+          "question": "What if the travel team disagreed?",
+          "answer": "I'd explain the customer and commercial trade-off, and I'd want to understand what they believed we were underestimating. If the current travel journey had a serious conversion or reliability problem, that could change the decision. But if customers could still complete bookings, I'd be comfortable recommending that we protect the essential launch dependencies first."
+        }
+      ],
+      "aliases": [
+        "RBC competing priorities",
+        "RBC prioritization",
+        "Avion Select vs native travel",
+        "Two important initiatives",
+        "Competing initiatives",
+        "Sequencing",
+        "Dependencies",
+        "MVP trade-off"
+      ],
+      "evidenceStatus": "illustrative",
+      "accuracyNote": "Illustrative prioritization scenario: native travel vs Avion Select capacity conflict, recommendation, and sequencing are constructed. Avion Select and Interac outcomes are broader established results—do not claim this one decision caused all membership growth.",
+      "projectTags": [
+        "RBC"
       ],
       "suggestedPinned": false
     }

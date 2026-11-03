@@ -1,4 +1,4 @@
-/** Deterministic links from curated question keys (Q01–Q33) to product story map ids. */
+/** Deterministic links from curated question keys (Q01–Q35) to product story map ids. */
 export const QUESTION_CURATED_KEY_TO_MAP_IDS: Record<string, readonly string[]> = {
   Q09: ["hbc-portfolio"],
   Q14: ["rbc-payouts", "rbc-select"],
@@ -19,6 +19,8 @@ export const QUESTION_CURATED_KEY_TO_MAP_IDS: Record<string, readonly string[]> 
   Q31: ["rbc-payouts", "rbc-shopplus", "rbc-select"],
   Q32: ["hbc-app", "hbc-portfolio"],
   Q33: ["aeroplan-acq"],
+  Q34: ["hbc-portfolio"],
+  Q35: ["rbc-select"],
   Q03: ["arc-membership"],
   Q17: ["arc-membership"],
 };

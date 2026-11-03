@@ -77,7 +77,7 @@ const SHORT_LABELS: Record<string, string> = {
   Q14: "Money movement",
   Q15: "RBC Interac",
   Q16: "Cards and history",
-  Q17: "Prioritization",
+  Q17: "Prioritization (Arc'teryx)",
   Q18: "Outcomes and metrics",
   Q19: "HBC discovery",
   Q20: "ShopPlus",
@@ -94,6 +94,8 @@ const SHORT_LABELS: Record<string, string> = {
   Q31: "RBC overview",
   Q32: "HBC overview",
   Q33: "Aeroplan overview",
+  Q34: "Growth Experiment",
+  Q35: "Prioritization (RBC)",
 };
 
 export const JAZ_CATEGORIES: { id: string; label: string }[] = [
@@ -171,9 +173,9 @@ export function jazCategoryLabel(category: string): string {
 export function validateJazDataset(): string[] {
   const issues: string[] = [];
   const questions = rawQuestions;
-  if (questions.length !== 33) issues.push(`expected 33 questions, found ${questions.length}`);
+  if (questions.length !== 35) issues.push(`expected 35 questions, found ${questions.length}`);
   const followCount = questions.reduce((sum, q) => sum + (q.followUps?.length ?? 0), 0);
-  if (followCount !== 70) issues.push(`expected 70 follow-ups, found ${followCount}`);
+  if (followCount !== 77) issues.push(`expected 77 follow-ups, found ${followCount}`);
   const pinned = questions.filter((q) => q.suggestedPinned).length;
   if (pinned !== 13) issues.push(`expected 13 pins, found ${pinned}`);
   if (rawAsk.length !== 11) issues.push(`expected 11 questions for Jaz, found ${rawAsk.length}`);
@@ -194,7 +196,7 @@ export function validateJazDataset(): string[] {
       if (!follow.answer?.trim()) issues.push(`${key} follow-up ${index + 1} missing answer`);
     });
   }
-  for (let n = 1; n <= 33; n += 1) {
+  for (let n = 1; n <= 35; n += 1) {
     const key = `Q${String(n).padStart(2, "0")}`;
     if (!keys.has(key)) issues.push(`missing ${key}`);
   }

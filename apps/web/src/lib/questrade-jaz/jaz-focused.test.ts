@@ -24,15 +24,15 @@ function followQuestion(query: string): string | null {
 describe("questrade jaz dataset", () => {
   it("matches the curated counts and keeps answers isolated from old ids", () => {
     expect(validateJazDataset()).toEqual([]);
-    expect(jazQuestions).toHaveLength(33);
-    expect(jazQuestions.reduce((sum, question) => sum + question.followUps.length, 0)).toBe(70);
+    expect(jazQuestions).toHaveLength(35);
+    expect(jazQuestions.reduce((sum, question) => sum + question.followUps.length, 0)).toBe(77);
     expect(jazPinnedQuestions).toHaveLength(13);
     expect(jazAskQuestions).toHaveLength(11);
     expect(jazAskQuestions[0]?.topic).toBe("Leadership under pressure");
     expect(jazAskQuestions[0]?.question).toContain("When do you step in versus give them space");
     expect(jazAskQuestions.find((item) => item.topic === "Why the role is open")?.followUps).toHaveLength(2);
     expect(jazAskQuestions.some((item) => item.question.includes("Why this is better"))).toBe(false);
-    expect(new Set(jazQuestions.map((question) => question.id)).size).toBe(33);
+    expect(new Set(jazQuestions.map((question) => question.id)).size).toBe(35);
     expect(jazQuestions.every((question) => question.id.startsWith("jaz-Q"))).toBe(true);
   });
 
@@ -91,7 +91,8 @@ describe("questrade jaz search", () => {
     expect(topKey("paycheque")).toBe("Q08");
     expect(topKey("payroll")).toBe("Q08");
     expect(topKey("stakeholder conflict")).toBe("Q24");
-    expect(topKey("competing priorities")).toBe("Q17");
+    expect(topKey("competing priorities")).toBe("Q35");
+    expect(topKey("Arc'teryx prioritization")).toBe("Q17");
     expect(topKey("why Questrade")).toBe("Q02");
     expect(topKey("30/60/90")).toBe("Q05");
     expect(topKey("first 90 days")).toBe("Q05");
@@ -112,6 +113,22 @@ describe("questrade jaz search", () => {
     expect(relatedQuestions(disagreement, jazQuestions).map((question) => question.curatedKey)).toContain("Q26");
     expect(relatedQuestions(disagreement, jazQuestions).map((question) => question.curatedKey)).toContain("Q25");
   });
+
+  it("adds targeted growth and RBC prioritization answers without replacing Arc'teryx prioritization", () => {
+    const growth = jazQuestions.find((question) => question.curatedKey === "Q34")!;
+    const rbcPriority = jazQuestions.find((question) => question.curatedKey === "Q35")!;
+    const arcPriority = jazQuestions.find((question) => question.curatedKey === "Q17")!;
+    const ambiguity = jazQuestions.find((question) => question.curatedKey === "Q27")!;
+    expect(growth.followUps).toHaveLength(4);
+    expect(rbcPriority.followUps).toHaveLength(3);
+    expect(growth.evidenceStatus).toBe("illustrative");
+    expect(growth.answer).toContain("five percentage points");
+    expect(arcPriority.answer).toContain("membership program at Arc'teryx");
+    expect(rbcPriority.answer).toContain("Avion Select");
+    expect(ambiguity.answer).toContain("smaller, controlled lifecycle test");
+    expect(topKey("growth experiment")).toBe("Q34");
+    expect(topKey("RBC competing priorities")).toBe("Q35");
+  });
 });
 
 describe("questrade jaz experience maps", () => {
@@ -122,6 +139,8 @@ describe("questrade jaz experience maps", () => {
     expect(mapIdsForQuestionId("jaz-Q15")).toEqual(["rbc-payouts"]);
     expect(mapIdsForQuestionId("jaz-Q19")).toEqual(["hbc-app"]);
     expect(mapIdsForQuestionId("jaz-Q24")).toEqual(["arc-membership"]);
+    expect(mapIdsForQuestionId("jaz-Q34")).toEqual(["hbc-portfolio"]);
+    expect(mapIdsForQuestionId("jaz-Q35")).toEqual(["rbc-select"]);
     expect(searchJazStoryMaps(jazStoryMaps, "Neo").some((story) => story.id === "hbc-app")).toBe(true);
     expect(searchJazStoryMaps(jazStoryMaps, "Interac").some((story) => story.id === "rbc-payouts")).toBe(true);
   });
