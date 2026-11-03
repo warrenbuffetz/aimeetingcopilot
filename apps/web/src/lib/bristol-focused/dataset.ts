@@ -9,12 +9,12 @@ export type BristolScenarioMeta = {
   initialPovPrompt?: string;
   structuredGuide?: string;
   unexpectedTwist?: string;
-  followUpProbes: string[];
-  assessedSkills: string[];
-  answerFramework: string[];
+  followUpProbes?: string[];
+  assessedSkills?: string[];
+  answerFramework?: string[];
   primaryMetric?: string;
   guardrailMetrics?: string[];
-  commonMistakes: string[];
+  commonMistakes?: string[];
   quickDecision?: string;
   responseToTwist?: string;
 };

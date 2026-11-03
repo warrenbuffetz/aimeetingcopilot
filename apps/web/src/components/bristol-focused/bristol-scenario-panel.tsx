@@ -13,8 +13,8 @@ function AnswerParagraphs({ text }: { text: string }) {
   );
 }
 
-function ListBlock({ title, items }: { title: string; items: string[] }) {
-  if (!items.length) return null;
+function ListBlock({ title, items }: { title: string; items?: string[] }) {
+  if (!items?.length) return null;
   return (
     <div>
       <h3 className="text-xs font-semibold tracking-wide text-amber-900 uppercase">{title}</h3>
@@ -57,10 +57,12 @@ export function BristolScenarioPanel({ question }: { question: BristolQuestion }
           <p className="mt-2 text-xs text-muted-foreground">Framework: {s.structuredGuide}</p>
         )}
       </div>
-      <div className="rounded-md border border-red-200 bg-red-50/80 px-3 py-2">
-        <h3 className="text-xs font-semibold text-red-900">Unexpected twist (after your first response)</h3>
-        <p className="mt-1 text-sm leading-6 text-red-950">{s.unexpectedTwist}</p>
-      </div>
+      {s.unexpectedTwist ? (
+        <div className="rounded-md border border-red-200 bg-red-50/80 px-3 py-2">
+          <h3 className="text-xs font-semibold text-red-900">Unexpected twist (after your first response)</h3>
+          <p className="mt-1 text-sm leading-6 text-red-950">{s.unexpectedTwist}</p>
+        </div>
+      ) : null}
       {s.responseToTwist && (
         <details className="rounded-md border border-amber-200 bg-amber-50/60 px-3 py-2">
           <summary className="cursor-pointer text-xs font-semibold text-amber-950">
