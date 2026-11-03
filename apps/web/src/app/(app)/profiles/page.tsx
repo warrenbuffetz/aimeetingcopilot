@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { JAZ_FOCUSED_HREF, JAZ_FOCUSED_PROFILE_NAME } from "@/lib/questrade-jaz/profile";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -89,6 +91,20 @@ export default function ProfilesPage() {
           <Button className="sm:col-span-3" disabled={!name} onClick={() => void createProfile()}>
             Create
           </Button>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-base">{JAZ_FOCUSED_PROFILE_NAME}</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-3 text-sm text-muted-foreground">
+          <p>
+            Local navigator for the 30-minute Jaz Huang interview. Its 33 answers stay in this profile and are not written into the shared library.
+          </p>
+          <Link href={JAZ_FOCUSED_HREF} className={buttonVariants({ variant: "secondary" })}>
+            Open live navigator
+          </Link>
         </CardContent>
       </Card>
 

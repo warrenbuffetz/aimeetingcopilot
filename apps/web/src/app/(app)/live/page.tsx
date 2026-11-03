@@ -1,7 +1,15 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import {
+  JAZ_FOCUSED_HREF,
+  JAZ_FOCUSED_PROFILE_ID,
+  JAZ_FOCUSED_PROFILE_NAME,
+  chooseClassicLiveProfile,
+  isJazFocusedProfileName,
+} from "@/lib/questrade-jaz/profile";
 import { useLiveSession } from "@/hooks/use-live-session";
 import { useBrowserAudioCapture } from "@/hooks/use-browser-audio-capture";
 import { useWebSpeechTranscription } from "@/hooks/use-web-speech-transcription";
@@ -72,6 +80,7 @@ import type { TranscriptLine } from "@/hooks/use-live-session";
 const SELECTABLE_TRANSCRIPT_KINDS = new Set<TranscriptLine["kind"]>(["speech", "question", "candidate"]);
 
 export default function LiveInterviewPage() {
+  const router = useRouter();
   const [profiles, setProfiles] = useState<{ id: string; name: string }[]>([]);
   const [profileId, setProfileId] = useState<string | null>(null);
   const [manualQuestion, setManualQuestion] = useState("");
@@ -147,15 +156,16 @@ export default function LiveInterviewPage() {
       const supabase = createClient();
       const { data } = await supabase.from("interview_profiles").select("id, name");
       const list = data ?? [];
-      setProfiles(list);
-      if (list.length === 1) {
-        setProfileId(list[0].id);
-      } else {
-        const preferred = list.find((p) => /questrade/i.test(p.name));
-        if (preferred) setProfileId(preferred.id);
+      setProfiles(list.filter((profile) => !isJazFocusedProfileName(profile.name)));
+      const requested = new URLSearchParams(window.location.search).get("profile");
+      const choice = chooseClassicLiveProfile(list, requested);
+      if (choice.kind === "jaz") {
+        router.replace(JAZ_FOCUSED_HREF);
+        return;
       }
+      if (choice.kind === "profile") setProfileId(choice.id);
     })();
-  }, []);
+  }, [router]);
 
   useEffect(() => {
     void fetch("/api/health")
@@ -575,7 +585,13 @@ export default function LiveInterviewPage() {
           <div className="flex flex-wrap items-center gap-2">
             <Select
               value={profileId ?? "all"}
-              onValueChange={(v) => setProfileId(v === "all" ? null : v)}
+              onValueChange={(v) => {
+                if (v === JAZ_FOCUSED_PROFILE_ID || (v != null && isJazFocusedProfileName(profiles.find((profile) => profile.id === v)?.name))) {
+                  router.push(JAZ_FOCUSED_HREF);
+                  return;
+                }
+                setProfileId(v === "all" ? null : v);
+              }}
             >
               <SelectTrigger id="live-profile" className="h-9 min-w-0 w-[14rem] max-w-[14rem]">
                 <SelectValue className="sr-only" />
@@ -583,6 +599,7 @@ export default function LiveInterviewPage() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">No profile</SelectItem>
+                <SelectItem value={JAZ_FOCUSED_PROFILE_ID}>{JAZ_FOCUSED_PROFILE_NAME}</SelectItem>
                 {profiles.map((p) => (
                   <SelectItem key={p.id} value={p.id}>{p.name}</SelectItem>
                 ))}
