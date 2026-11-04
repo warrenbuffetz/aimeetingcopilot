@@ -1,6 +1,7 @@
 "use client";
 
 import type { BristolQuestion } from "@/lib/bristol-focused/dataset";
+import { structuredScenarioAnswerText } from "@/lib/bristol-focused/scenario-display";
 
 function AnswerParagraphs({ text }: { text: string }) {
   const paragraphs = text.split(/\n\n+/).filter(Boolean);
@@ -31,6 +32,7 @@ export function BristolScenarioPanel({ question }: { question: BristolQuestion }
   const s = question.scenario;
   if (!s) return null;
   const povLine = s.quickDecision ?? s.initialPovPrompt ?? "Lead with a clear recommendation.";
+  const structuredAnswer = structuredScenarioAnswerText(question);
 
   return (
     <div className="mt-4 space-y-4">
@@ -51,7 +53,7 @@ export function BristolScenarioPanel({ question }: { question: BristolQuestion }
       <div>
         <h3 className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">~45–75s structured response</h3>
         <div className="mt-2">
-          <AnswerParagraphs text={question.answer} />
+          <AnswerParagraphs text={structuredAnswer} />
         </div>
         {s.structuredGuide && (
           <p className="mt-2 text-xs text-muted-foreground">Framework: {s.structuredGuide}</p>

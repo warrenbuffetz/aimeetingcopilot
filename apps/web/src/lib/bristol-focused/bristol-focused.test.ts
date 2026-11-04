@@ -19,6 +19,7 @@ import {
   validateBristolHmRanking,
 } from "./hm-ranking";
 import { sortQuestionsForTopicsNav, validateTopicNavigationOverlay } from "./topic-navigation";
+import { structuredScenarioAnswerText, normalizeAnswerCompare } from "./scenario-display";
 
 describe("bristol focused dataset", () => {
   it("loads curated profile with resolver metadata", () => {
@@ -74,6 +75,19 @@ describe("bristol focused dataset", () => {
     const sc01 = bristolQuestions.find((q) => q.curatedKey === "SC01")!;
     expect(sc01.scenario?.responseToTwist).toBeTruthy();
     expect(sc01.answer.length).toBeGreaterThan(200);
+  });
+
+  it("structured scenario answers drop the ~10s POV paragraph when it duplicates quickDecision", () => {
+    const scenarios = bristolQuestions.filter((q) => q.recordType === "scenario" && q.scenario?.quickDecision);
+    expect(scenarios.length).toBeGreaterThanOrEqual(13);
+    for (const q of scenarios) {
+      const body = structuredScenarioAnswerText(q);
+      const pov = q.scenario!.quickDecision!;
+      expect(normalizeAnswerCompare(body)).not.toContain(normalizeAnswerCompare(pov));
+      expect(body.length).toBeGreaterThan(80);
+    }
+    const sc11 = bristolQuestions.find((q) => q.curatedKey === "SC11")!;
+    expect(structuredScenarioAnswerText(sc11).startsWith("OpenTable already")).toBe(true);
   });
 
   it("includes new global/FOH questions B61 and B66", () => {
