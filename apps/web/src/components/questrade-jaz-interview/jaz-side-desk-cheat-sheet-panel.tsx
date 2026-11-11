@@ -194,44 +194,24 @@ export function JazSideDeskCheatSheetPanel({
     return () => window.removeEventListener("keydown", onKey);
   }, [selectedCardId]);
 
+  useEffect(() => {
+    if (!selectedCardId) return;
+    window.requestAnimationFrame(() => {
+      document.getElementById("sd-live-bundle")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+  }, [selectedCardId]);
+
   return (
     <div className="mx-auto max-w-4xl px-5 py-6 md:px-8">
-      {!bundle ? (
-        <>
-          <p className="text-xs font-medium tracking-wide text-violet-800 uppercase">
-            Live reference · {SHEET_LABELS[sheetId]}
-          </p>
-          <h1 className="mt-1 text-2xl font-semibold tracking-tight">
-            {sheet.title.replace(/^\d+\.\s*/, "")}
-          </h1>
-          <p className="mt-2 text-sm text-muted-foreground">{sheet.useFor}</p>
-        </>
-      ) : (
-        <p className="text-xs font-medium tracking-wide text-violet-800 uppercase">
-          Live bundle · {SHEET_LABELS[sheetId]}
-        </p>
-      )}
+      <p className="text-xs font-medium tracking-wide text-violet-800 uppercase">
+        Live reference · {SHEET_LABELS[sheetId]}
+      </p>
+      <h1 className="mt-1 text-2xl font-semibold tracking-tight">
+        {sheet.title.replace(/^\d+\.\s*/, "")}
+      </h1>
+      <p className="mt-2 text-sm text-muted-foreground">{sheet.useFor}</p>
 
       <div className="sticky top-0 z-10 -mx-2 mt-4 space-y-2 bg-white/95 px-2 py-2 backdrop-blur">
-        {bundle ? (
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-full bg-violet-600 px-2.5 py-0.5 text-xs font-semibold text-white">
-              {bundle.card.kind}
-            </span>
-            <span className="text-sm font-semibold text-violet-950">
-              {bundle.card.label}
-              {bundle.card.priority ? <span className="ml-1 text-amber-600">★</span> : null}
-            </span>
-            <button
-              type="button"
-              className="ml-auto text-xs text-violet-800 underline-offset-2 hover:underline"
-              onClick={() => setSelectedCardId(null)}
-            >
-              ← Cards
-            </button>
-          </div>
-        ) : null}
-
         <p className="rounded-md border border-violet-300 bg-violet-50 px-3 py-2 text-sm font-medium leading-relaxed text-violet-950">
           {sheet.frameworkNote}
         </p>
@@ -295,7 +275,7 @@ export function JazSideDeskCheatSheetPanel({
         </div>
       </div>
 
-      {catalog.alwaysSay && !bundle && !showTables ? (
+      {catalog.alwaysSay && !showTables ? (
         <div className="mt-4 rounded-md border border-amber-200 bg-amber-50/60 px-3 py-2.5">
           <p className="text-[10px] font-semibold tracking-wide text-amber-900 uppercase">Always ask (banking feature)</p>
           <ol className="mt-1.5 list-decimal space-y-1 pl-4 text-xs text-amber-950">
@@ -306,23 +286,7 @@ export function JazSideDeskCheatSheetPanel({
         </div>
       ) : null}
 
-      {bundle ? (
-        <div className="mt-4 space-y-3 rounded-lg border border-violet-300 bg-white p-4 shadow-sm">
-          <div className="rounded-md border border-violet-400 bg-violet-50 px-3 py-2.5">
-            <p className="text-[10px] font-semibold tracking-wide text-violet-800 uppercase">Live pin</p>
-            <p className="mt-1 text-sm font-medium text-violet-950">{bundle.card.subtitle}</p>
-          </div>
-          <ul className="space-y-2">
-            {bundle.speakLines.map((line) => (
-              <li key={line.label} className="rounded-md border border-violet-100 bg-violet-50/40 px-2.5 py-2">
-                <p className="text-[10px] font-semibold tracking-wide text-violet-800 uppercase">{line.label}</p>
-                <p className="mt-0.5 text-sm leading-snug text-neutral-900">{line.text}</p>
-              </li>
-            ))}
-          </ul>
-          <PanelScriptLinks links={bundle.panelLinks} onOpen={onOpenPanelScript} title="Related panel answers" />
-        </div>
-      ) : showTables ? (
+      {showTables ? (
         <div className="mt-4 space-y-1">
           {sheet.sections.map((section) => (
             <SectionBlock
@@ -337,7 +301,7 @@ export function JazSideDeskCheatSheetPanel({
       ) : (
         <div className="mt-4 space-y-3">
           <p className="text-sm text-muted-foreground">
-            Pick a card for speakable lines — skip the tables unless you need to study.
+            Tap a card to expand speakable lines below — stay on this screen.
           </p>
           <div className="grid gap-2 sm:grid-cols-2">
             {liveCards.map((card) => (
@@ -345,12 +309,48 @@ export function JazSideDeskCheatSheetPanel({
                 key={card.id}
                 card={card}
                 selected={selectedCardId === card.id}
-                onSelect={() => setSelectedCardId(card.id)}
+                onSelect={() => setSelectedCardId((cur) => (cur === card.id ? null : card.id))}
               />
             ))}
           </div>
           {liveCards.length === 0 ? (
             <p className="text-sm text-muted-foreground">No cards for this step.</p>
+          ) : null}
+
+          {bundle ? (
+            <div
+              id="sd-live-bundle"
+              className="scroll-mt-28 space-y-3 rounded-lg border border-violet-300 bg-white p-4 shadow-sm"
+            >
+              <div className="flex flex-wrap items-start gap-2">
+                <div className="min-w-0 flex-1 rounded-md border border-violet-400 bg-violet-50 px-3 py-2.5">
+                  <p className="text-[10px] font-semibold tracking-wide text-violet-800 uppercase">
+                    Live pin · {bundle.card.kind}
+                  </p>
+                  <p className="mt-1 text-sm font-semibold text-violet-950">
+                    {bundle.card.label}
+                    {bundle.card.priority ? <span className="ml-1 text-amber-600">★</span> : null}
+                  </p>
+                  <p className="mt-0.5 text-sm text-violet-950">{bundle.card.subtitle}</p>
+                </div>
+                <button
+                  type="button"
+                  className="shrink-0 text-xs text-violet-800 underline-offset-2 hover:underline"
+                  onClick={() => setSelectedCardId(null)}
+                >
+                  Close
+                </button>
+              </div>
+              <ul className="space-y-2">
+                {bundle.speakLines.map((line) => (
+                  <li key={line.label} className="rounded-md border border-violet-100 bg-violet-50/40 px-2.5 py-2">
+                    <p className="text-[10px] font-semibold tracking-wide text-violet-800 uppercase">{line.label}</p>
+                    <p className="mt-0.5 text-sm leading-snug text-neutral-900">{line.text}</p>
+                  </li>
+                ))}
+              </ul>
+              <PanelScriptLinks links={bundle.panelLinks} onOpen={onOpenPanelScript} title="Related panel answers" />
+            </div>
           ) : null}
         </div>
       )}
