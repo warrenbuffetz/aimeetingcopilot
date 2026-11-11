@@ -1,0 +1,218 @@
+{
+  "title": "Everyday Banking Primer (live)",
+  "useFor": "On-the-fly distinctions and spoken takeaways while answering case questions.",
+  "distinctions": [
+    {
+      "label": "1. Transaction history and payment clarity",
+      "question": "What happened to the money?",
+      "distinction": "Pending is not posted; bank processing is not necessarily biller credit."
+    },
+    {
+      "label": "2. Account balances and financial state",
+      "question": "What money can the customer actually use?",
+      "distinction": "Current/ledger balance is not necessarily available balance."
+    },
+    {
+      "label": "3. Customer activation and primary banking",
+      "question": "Has the account become a financial routine?",
+      "distinction": "Account opened is not sustained primary use."
+    },
+    {
+      "label": "4. Cross-product boundaries",
+      "question": "Who owns the operation, data, and experience?",
+      "distinction": "Experience owner and authoritative system owner may differ."
+    },
+    {
+      "label": "5. Prioritization and metrics",
+      "question": "Why is this solution worth doing first?",
+      "distinction": "Interactions are not the same as successful customer outcomes."
+    },
+    {
+      "label": "6. Banking reliability and control",
+      "question": "What happens when a money operation fails or is retried?",
+      "distinction": "Idempotency, atomicity, and reconciliation solve different risks."
+    }
+  ],
+  "parts": [
+    {
+      "id": "part-1-transaction-history-and-payment-clarity",
+      "title": "Part 1. Transaction history and payment clarity",
+      "bullets": [
+        "**Authorization:** Approval to proceed with a proposed card transaction. It is not proof of final posting.",
+        "**Pending authorization / reservation:** Funds may be withheld from available balance while the transaction is not yet posted.",
+        "**Clearing:** Exchange of financial transaction details, which may include an adjusted final amount.",
+        "**Posting:** Recording the relevant debit or credit in the account ledger.",
+        "**Settlement:** Discharge of the payment obligations between participants. Do not assume it happens at the exact time of customer-facing posting.",
+        "**Reversal:** Reversal or adjustment of a prior transaction/authorization, with its own semantics.",
+        "**Refund:** Typically a separate merchant credit, not simply the removal of a pending hold.",
+        "**Leading:** Successful transaction identification; payment-status comprehension in a task test.",
+        "**Outcome:** Fewer unresolved payment-status inquiries per 1,000 relevant payments; faster successful task completion.",
+        "**Supporting:** Search refinements, repeated unresolved views, detail-view latency, contact reasons.",
+        "**Guardrails:** Incorrect payment completion, hidden actual duplicates, false merchant attribution, unauthorized data exposure."
+      ],
+      "takeaway": "I'd clarify what the customer is trying to establish from transaction history. If it's finding a record, I'd prioritize discovery and search; if it's confirming a payment, I'd prioritize the meaning and reliability of status. The interface must reflect authoritative transaction events rather than making a processing state look final."
+    },
+    {
+      "id": "part-2-account-balances-and-financial-state",
+      "title": "Part 2. Account balances and financial state",
+      "bullets": [
+        "**Card authorization hold:** Reservation against an expected debit; amount may change or expire.",
+        "**Deposit hold:** Certain deposited funds are temporarily unavailable under product or risk rules.",
+        "**Outgoing payment reservation:** Funds associated with an in-progress instruction may be reserved or debited depending on the rail and design.",
+        "**Risk restriction:** Potentially limits account capabilities due to fraud or risk concern.",
+        "**Operational/compliance restriction:** May require verification or review; permissible disclosures can be limited.",
+        "**Leading:** Customer can explain which funds are usable and why.",
+        "**Outcome:** Reduced unresolved balance issues without increased customer harm.",
+        "**Supporting:** Hold explanation interactions, support categorization, data freshness.",
+        "**Guardrails:** Wrong available balances, false declines, unauthorized access, reconciliation exceptions."
+      ],
+      "takeaway": "I'd first determine whether the balance is wrong or simply confusing. For a correctness issue, I'd investigate the authoritative ledger and availability logic. If it's correct, I'd explain the gap between current and available funds using only reliable hold and reservation information."
+    },
+    {
+      "id": "part-3-customer-activation-and-primary-banking",
+      "title": "Part 3. Customer activation and primary banking",
+      "bullets": [
+        "**Leading:** First funding within 30 days, first successful spend, direct-deposit setup, first bill payment.",
+        "**Outcome:** Sustained recurring primary-banking activity by eligible cohort.",
+        "**Supporting:** Time to first value, step-level abandonment, repeat usage, switch progress.",
+        "**Guardrails:** Failed deposits, missed salary, returned pre-authorized payments, fraud, complaints."
+      ],
+      "takeaway": "I'd separate sign-up from sustained use. I'd determine where customers stop: first funding, first transaction, payroll, or recurring bills. Then I'd solve the largest verified obstacle to building a daily financial habit, rather than optimizing only account opening."
+    },
+    {
+      "id": "part-4-cross-product-system-boundaries",
+      "title": "Part 4. Cross-product system boundaries",
+      "bullets": [],
+      "takeaway": "I'd keep the customer's experience coherent while respecting domain ownership. The other team may own the operation, but we need a shared status contract and clear handoff to present its real outcome."
+    },
+    {
+      "id": "part-5-product-prioritization-and-metrics",
+      "title": "Part 5. Product prioritization and metrics",
+      "bullets": [
+        "**Leading:** Early action or comprehension that signals the change might work.",
+        "**Outcome:** The customer or business benefit the initiative is designed to improve.",
+        "**Supporting:** Mechanisms, cohorts, errors and funnel steps explaining movement.",
+        "**Guardrail:** Measures guarding against negative consequences."
+      ],
+      "takeaway": "I'd choose one outcome measure that proves the customer's job improved, with an early signal, diagnostic measures and the key risk guardrail. For an ordinary UX intervention I'd consider an experiment; for financial correctness I'd validate technically and roll out safely."
+    },
+    {
+      "id": "part-6-banking-reliability-and-control",
+      "title": "Part 6. Banking reliability and control",
+      "bullets": [
+        "**Leading:** Correctly identified/handled transaction states; successful controlled recovery.",
+        "**Outcome:** Safe, successfully completed distinct intended payments; reliable availability.",
+        "**Supporting:** Event latency, error classes, reconciliation exception age, retry behavior.",
+        "**Guardrails:** Duplicate debits, wrong balances, unapproved early release, fraud, unauthorized access."
+      ],
+      "takeaway": "I'd define the authoritative payment state and handle uncertain outcomes carefully. I want idempotent initiation, valid state transitions, reconciliation and a customer experience that tells the truth even if the backend is still processing."
+    },
+    {
+      "id": "part-7-connecting-all-six-priorities-one-scenari",
+      "title": "Part 7. Connecting all six priorities: one scenario",
+      "bullets": [
+        "**Scenario:** The customer starts with $2,000, sends a $500 transfer, sees $1,500 available, but the recipient has not received the money. The customer checks history repeatedly and contacts support.",
+        "**Worked two-minute answer:**"
+      ],
+      "takeaway": ""
+    },
+    {
+      "id": "part-8-live-interview-pocket-reference",
+      "title": "Part 8. Live-interview pocket reference",
+      "bullets": [
+        "**Five repeatable questions:** What job? What cause? What two approaches? What authoritative dependency? What outcome and guardrail?"
+      ],
+      "takeaway": ""
+    }
+  ],
+  "navMatrix": [
+    {
+      "trigger": "Open account",
+      "rootProblem": "Identity, KYC, first value",
+      "intervention": "Contextual onboarding",
+      "outcome": "Funded activation",
+      "guardrail": "Fraud/KYC"
+    },
+    {
+      "trigger": "Switch bank",
+      "rootProblem": "Payroll, billers, trust",
+      "intervention": "Guided switch",
+      "outcome": "Recurring use",
+      "guardrail": "Missed bills"
+    },
+    {
+      "trigger": "Transaction history",
+      "rootProblem": "Find, identify, status",
+      "intervention": "Search and details",
+      "outcome": "Task success",
+      "guardrail": "Wrong data"
+    },
+    {
+      "trigger": "Balance",
+      "rootProblem": "Holds, available versus posted",
+      "intervention": "Availability explanation",
+      "outcome": "Correct comprehension",
+      "guardrail": "Wrong balance"
+    },
+    {
+      "trigger": "Pending payment",
+      "rootProblem": "State, timing, retry",
+      "intervention": "Truthful timeline",
+      "outcome": "Uncertainty reduction",
+      "guardrail": "Duplicate debit"
+    },
+    {
+      "trigger": "Bill tracker",
+      "rootProblem": "Past versus future obligation",
+      "intervention": "Narrow job first",
+      "outcome": "Bill task completed",
+      "guardrail": "False due date"
+    },
+    {
+      "trigger": "Card spend",
+      "rootProblem": "Authorization / clearing",
+      "intervention": "Linked lifecycle",
+      "outcome": "Recognition",
+      "guardrail": "Fraud/declines"
+    },
+    {
+      "trigger": "Family helper",
+      "rootProblem": "Scope and consent",
+      "intervention": "Redacted receipt",
+      "outcome": "Safe assistance",
+      "guardrail": "Privacy leak"
+    },
+    {
+      "trigger": "Saving",
+      "rootProblem": "Predictability, control",
+      "intervention": "Opt-in threshold rule",
+      "outcome": "Safe saving",
+      "guardrail": "NSF"
+    },
+    {
+      "trigger": "Investment funding",
+      "rootProblem": "Bank versus brokerage state",
+      "intervention": "Joined timeline",
+      "outcome": "Funding task success",
+      "guardrail": "Wrong purchasing power"
+    },
+    {
+      "trigger": "API timeout",
+      "rootProblem": "Unknown outcome",
+      "intervention": "Idempotency and status lookup",
+      "outcome": "Safe completion",
+      "guardrail": "Duplicate execution"
+    },
+    {
+      "trigger": "Regulatory change",
+      "rootProblem": "Applicable rules and timing",
+      "intervention": "Backend enforcement / safe rescope",
+      "outcome": "Compliant processing",
+      "guardrail": "Violation"
+    }
+  ],
+  "metadata": {
+    "source": "everyday_banking_six_part_primer.md",
+    "version": "2026-11-11"
+  }
+}

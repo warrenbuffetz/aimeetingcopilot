@@ -38,14 +38,22 @@ import {
   type ProductSensePanelHandle,
 } from "@/components/questrade-jaz-interview/jaz-product-sense-panel";
 import { JazSideDeskCheatSheetPanel } from "@/components/questrade-jaz-interview/jaz-side-desk-cheat-sheet-panel";
+import { JazPlaybookCasesPanel } from "@/components/questrade-jaz-interview/jaz-playbook-cases-panel";
 import { searchSideDeskCheatSheets } from "@/lib/questrade-jaz-interview/side-desk-search";
+import { searchPlaybookCases } from "@/lib/questrade-jaz-interview/playbook-search";
+import {
+  LIVE_CASE_TRIGGERS,
+  caseLinksForPanel,
+  caseLinksForSheet,
+} from "@/lib/questrade-jaz-interview/playbook-live-nav";
 import type { SideDeskCheatSheetId } from "@/lib/questrade-jaz-interview/side-desk-cheat-sheet";
 import { cn } from "@/lib/utils";
 
-type MainView = "answers" | "product-sense" | "system-design" | "diagnostic" | "technical";
+type MainView = "answers" | "product-sense" | "system-design" | "diagnostic" | "technical" | "cases";
 
 const MAIN_VIEWS: MainView[] = [
   "answers",
+  "cases",
   "product-sense",
   "system-design",
   "diagnostic",
@@ -58,6 +66,7 @@ function isSideDeskView(view: MainView): view is SideDeskCheatSheetId {
 
 const VIEW_LABELS: Record<MainView, string> = {
   answers: "Panel",
+  cases: "Cases",
   "product-sense": "Product",
   "system-design": "System",
   diagnostic: "Diagnostic",
@@ -90,7 +99,7 @@ function writeList(key: string, value: string[]) {
 function AnswerParagraphs({ text }: { text: string }) {
   const paragraphs = text.split(/\n\n+/).filter(Boolean);
   return (
-    <div className="space-y-4 text-[15px] leading-7">
+    <div className="space-y-3 text-[15px] leading-7">
       {paragraphs.map((paragraph) => (
         <p key={paragraph.slice(0, 48)}>{paragraph}</p>
       ))}
@@ -117,11 +126,13 @@ export function JazInterviewNavigator() {
   const [mainView, setMainView] = useState<MainView>("answers");
   const [sideDeskFocusSection, setSideDeskFocusSection] = useState<string | null>(null);
   const [sideDeskFocusCard, setSideDeskFocusCard] = useState<string | null>(null);
+  const [casesFocusId, setCasesFocusId] = useState<string | null>(null);
   const [otherProfiles, setOtherProfiles] = useState<{ id: string; name: string }[]>([]);
 
   const active = jazInterviewQuestions.find((q) => q.id === activeId) ?? jazInterviewQuestions[0]!;
   const hits = useMemo(() => searchJazInterviewQuestions(jazInterviewQuestions, query), [query]);
   const productSenseHits = useMemo(() => searchProductSenseCheatSheet(query), [query]);
+  const playbookHits = useMemo(() => searchPlaybookCases(query), [query]);
   const sideDeskHits = useMemo(
     () =>
       isSideDeskView(mainView)
@@ -146,6 +157,7 @@ export function JazInterviewNavigator() {
   );
 
   const openQuestion = useCallback((questionId: string, followUpId: string | null) => {
+    setMainView("answers");
     setActiveId(questionId);
     setFollowId(followUpId);
     setRecent((current) => {
@@ -156,6 +168,14 @@ export function JazInterviewNavigator() {
     sessionStorage.setItem(ACTIVE_KEY, questionId);
     if (followUpId) sessionStorage.setItem(FOLLOW_KEY, followUpId);
     else sessionStorage.removeItem(FOLLOW_KEY);
+    answerRef.current?.scrollTo({ top: 0 });
+  }, []);
+
+  const openCase = useCallback((caseId: string) => {
+    setMainView("cases");
+    setCasesFocusId(null);
+    queueMicrotask(() => setCasesFocusId(caseId));
+    setQuery("");
     answerRef.current?.scrollTo({ top: 0 });
   }, []);
 
@@ -345,6 +365,7 @@ export function JazInterviewNavigator() {
                 setMainView(view);
                 setSideDeskFocusSection(null);
                 setSideDeskFocusCard(null);
+                if (view !== "cases") setCasesFocusId(null);
               }}
               title={view === "answers" ? "Panel & stories" : VIEW_LABELS[view]}
             >
@@ -389,15 +410,39 @@ export function JazInterviewNavigator() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder={
-                  mainView === "product-sense"
-                    ? "Search problems, levers, metrics…"
-                    : isSideDeskView(mainView)
-                      ? "Search this reference…"
-                      : "Search panel, cheat sheets…"
+                  mainView === "cases"
+                    ? "Search prepared cases, primer triggers…"
+                    : mainView === "product-sense"
+                      ? "Search problems, levers, metrics…"
+                      : isSideDeskView(mainView)
+                        ? "Search this reference…"
+                        : "Search panel, cases, cheat sheets…"
                 }
                 className="h-9 w-full rounded-md border border-violet-200 bg-white pl-8 pr-2 text-sm"
               />
             </div>
+            {query.length >= 2 && mainView === "cases" && playbookHits.length > 0 && (
+              <ul className="mt-2 max-h-48 overflow-auto rounded-md border border-violet-100 bg-white text-sm">
+                {playbookHits.map((hit) => (
+                  <li key={`${hit.kind}-${hit.id}`}>
+                    <button
+                      type="button"
+                      className="w-full px-2 py-1.5 text-left hover:bg-violet-50"
+                      onClick={() => {
+                        setMainView("cases");
+                        setCasesFocusId(hit.caseId ?? null);
+                        setQuery("");
+                        answerRef.current?.scrollTo({ top: 0 });
+                      }}
+                    >
+                      <span className="text-[10px] font-semibold uppercase text-violet-700">{hit.kind}</span>
+                      <span className="mt-0.5 block text-xs font-medium text-neutral-900">{hit.label}</span>
+                      <span className="block text-[11px] text-muted-foreground">{hit.subtitle}</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
             {query.length >= 2 && mainView === "product-sense" && productSenseHits.length > 0 && (
               <ul className="mt-2 max-h-48 overflow-auto rounded-md border border-violet-100 bg-white text-sm">
                 {productSenseHits.map((hit) => (
@@ -465,7 +510,29 @@ export function JazInterviewNavigator() {
                 })}
               </ul>
             )}
-            {query.length >= 2 && mainView === "answers" && productSenseHits.length > 0 && hits.length === 0 && (
+            {query.length >= 2 && mainView === "answers" && hits.length === 0 && playbookHits.length > 0 && (
+              <ul className="mt-2 max-h-40 overflow-auto rounded-md border border-violet-200 bg-violet-50/50 text-sm">
+                <li className="px-2 py-1 text-[10px] font-semibold text-violet-800 uppercase">Prepared cases</li>
+                {playbookHits.slice(0, 8).map((hit) => (
+                  <li key={`case-${hit.kind}-${hit.id}`}>
+                    <button
+                      type="button"
+                      className="w-full px-2 py-1.5 text-left text-xs hover:bg-white"
+                      onClick={() => {
+                        setMainView("cases");
+                        setCasesFocusId(hit.caseId ?? null);
+                        setQuery("");
+                        answerRef.current?.scrollTo({ top: 0 });
+                      }}
+                    >
+                      {hit.label}
+                      <span className="block text-[10px] text-muted-foreground">{hit.subtitle}</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {query.length >= 2 && mainView === "answers" && productSenseHits.length > 0 && hits.length === 0 && playbookHits.length === 0 && (
               <ul className="mt-2 max-h-40 overflow-auto rounded-md border border-violet-200 bg-violet-50/50 text-sm">
                 <li className="px-2 py-1 text-[10px] font-semibold text-violet-800 uppercase">Product sense</li>
                 {productSenseHits.slice(0, 6).map((hit) => (
@@ -503,6 +570,7 @@ export function JazInterviewNavigator() {
             </p>
             {(
               [
+                ["cases", "Prepared cases (playbook)"],
                 ["product-sense", "Product sense"],
                 ["system-design", "System design"],
                 ["diagnostic", "Diagnostic"],
@@ -519,6 +587,12 @@ export function JazInterviewNavigator() {
                     : "border-violet-200 bg-white hover:bg-violet-50"
                 )}
                 onClick={() => {
+                  if (view === "cases") {
+                    setMainView("cases");
+                    setCasesFocusId(null);
+                    answerRef.current?.scrollTo({ top: 0 });
+                    return;
+                  }
                   if (view === "product-sense") {
                     setMainView("product-sense");
                     setSideDeskFocusSection(null);
@@ -532,6 +606,31 @@ export function JazInterviewNavigator() {
                 {label}
               </button>
             ))}
+            {mainView === "cases" ? (
+              <div className="mb-2 rounded-md border border-violet-200 bg-white px-2 py-2">
+                <p className="px-0.5 pb-1.5 text-[10px] font-semibold tracking-wide text-violet-800 uppercase">
+                  Trigger → case
+                </p>
+                <div className="flex flex-wrap gap-1">
+                  {LIVE_CASE_TRIGGERS.map((t) => (
+                    <button
+                      key={t.id}
+                      type="button"
+                      className={cn(
+                        "rounded-full border px-2 py-0.5 text-[10px] font-semibold",
+                        casesFocusId === t.primaryCaseId
+                          ? "border-violet-500 bg-violet-600 text-white"
+                          : "border-violet-200 bg-violet-50 text-violet-950 hover:bg-violet-100"
+                      )}
+                      onClick={() => openCase(t.primaryCaseId)}
+                      title={t.hints.join(", ")}
+                    >
+                      {t.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) : null}
             {jazInterviewPanelQuickPicks.length > 0 && (
               <div className="mb-2">
                 <p className="px-2 pb-1 text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">
@@ -574,25 +673,39 @@ export function JazInterviewNavigator() {
         </aside>
 
         <main className="min-h-0 min-w-0 flex-1 overflow-auto bg-white text-neutral-950" ref={answerRef}>
-          {mainView === "product-sense" ? (
-            <JazProductSensePanel
-              ref={productSenseRef}
-              onOpenPanelScript={(questionId) => {
-                setMainView("answers");
-                openQuestion(questionId, null);
+          {mainView === "cases" ? (
+            <JazPlaybookCasesPanel
+              focusCaseId={casesFocusId}
+              onOpenPanel={(questionId) => openQuestion(questionId, null)}
+              onOpenCheatSheet={(hint) => {
+                if (hint === "product-sense") {
+                  setMainView("product-sense");
+                  return;
+                }
+                if (hint === "diagnostic" || hint === "technical" || hint === "system-design") {
+                  openSideDesk(hint as SideDeskCheatSheetId);
+                }
               }}
             />
+          ) : mainView === "product-sense" ? (
+            <div>
+              <JazProductSensePanel
+                ref={productSenseRef}
+                onOpenPanelScript={(questionId) => openQuestion(questionId, null)}
+              />
+              <RelatedCasesStrip sheetId="product-sense" onOpenCase={openCase} />
+            </div>
           ) : isSideDeskView(mainView) ? (
-            <JazSideDeskCheatSheetPanel
-              key={mainView}
-              sheetId={mainView}
-              focusSectionId={sideDeskFocusSection}
-              focusCardId={sideDeskFocusCard}
-              onOpenPanelScript={(questionId) => {
-                setMainView("answers");
-                openQuestion(questionId, null);
-              }}
-            />
+            <div>
+              <JazSideDeskCheatSheetPanel
+                key={mainView}
+                sheetId={mainView}
+                focusSectionId={sideDeskFocusSection}
+                focusCardId={sideDeskFocusCard}
+                onOpenPanelScript={(questionId) => openQuestion(questionId, null)}
+              />
+              <RelatedCasesStrip sheetId={mainView} onOpenCase={openCase} />
+            </div>
           ) : (
           <div className="mx-auto max-w-3xl px-5 py-6 md:px-8">
             {activeFollow ? (
@@ -607,6 +720,7 @@ export function JazInterviewNavigator() {
                 <div className="mt-5">
                   <AnswerParagraphs text={activeFollow.answer} />
                 </div>
+                <RelatedCasesForPanel curatedKey={active.curatedKey} onOpenCase={openCase} />
               </>
             ) : (
               <>
@@ -636,6 +750,7 @@ export function JazInterviewNavigator() {
                 {active.accuracyNote && (
                   <p className="mt-3 rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-950">{active.accuracyNote}</p>
                 )}
+                <RelatedCasesForPanel curatedKey={active.curatedKey} onOpenCase={openCase} />
                 <div className="mt-5">
                   <AnswerParagraphs text={primaryBody} />
                 </div>
@@ -648,10 +763,7 @@ export function JazInterviewNavigator() {
                           <button
                             type="button"
                             className="w-full rounded-md px-2 py-2 text-left text-sm hover:bg-violet-50"
-                            onClick={() => {
-                          setMainView("answers");
-                          openQuestion(active.id, follow.id);
-                        }}
+                            onClick={() => openQuestion(active.id, follow.id)}
                           >
                             {follow.question}
                           </button>
@@ -679,6 +791,71 @@ function QuestionTriggerCues({ triggers }: { triggers: string[] }) {
           <li key={trigger}>{trigger}</li>
         ))}
       </ul>
+    </div>
+  );
+}
+
+function RelatedCasesForPanel({
+  curatedKey,
+  onOpenCase,
+}: {
+  curatedKey: string;
+  onOpenCase: (caseId: string) => void;
+}) {
+  const links = caseLinksForPanel(curatedKey);
+  if (links.length === 0) return null;
+  return (
+    <div className="mt-4 rounded-md border border-violet-200 bg-violet-50/50 px-2.5 py-2">
+      <p className="text-[10px] font-semibold tracking-wide text-violet-800 uppercase">Related practice cases</p>
+      <ul className="mt-1.5 flex flex-wrap gap-1.5">
+        {links.map((link) =>
+          link.caseId ? (
+            <li key={link.caseId}>
+              <button
+                type="button"
+                className="rounded-full border border-violet-300 bg-white px-2.5 py-1 text-[11px] font-medium text-violet-950 hover:bg-violet-100"
+                onClick={() => onOpenCase(link.caseId!)}
+              >
+                {link.caseId}
+              </button>
+            </li>
+          ) : null
+        )}
+      </ul>
+    </div>
+  );
+}
+
+function RelatedCasesStrip({
+  sheetId,
+  onOpenCase,
+}: {
+  sheetId: string;
+  onOpenCase: (caseId: string) => void;
+}) {
+  const links = caseLinksForSheet(sheetId);
+  if (links.length === 0) return null;
+  return (
+    <div className="mx-auto max-w-4xl border-t border-violet-100 px-5 py-4 md:px-8">
+      <div className="rounded-md border border-violet-200 bg-violet-50/50 px-2.5 py-2">
+        <p className="text-[10px] font-semibold tracking-wide text-violet-800 uppercase">Related practice cases</p>
+        <ul className="mt-1.5 flex flex-wrap gap-1.5">
+          {links.map((link) =>
+            link.caseId ? (
+              <li key={link.caseId}>
+                <button
+                  type="button"
+                  className="rounded-full border border-violet-300 bg-white px-2.5 py-1 text-[11px] font-medium text-violet-950 hover:bg-violet-100"
+                  onClick={() => onOpenCase(link.caseId!)}
+                  title={link.label}
+                >
+                  {link.caseId}
+                </button>
+              </li>
+            ) : null
+          )}
+        </ul>
+      </div>
     </div>
   );
 }
