@@ -3,14 +3,17 @@
 import { useEffect, useMemo, useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import {
-  SIDE_DESK_PANEL_KEYS,
   SIDE_DESK_CHEAT_SHEETS,
   type SideDeskCheatSheetId,
   type SideDeskSection,
   type SideDeskTable,
 } from "@/lib/questrade-jaz-interview/side-desk-cheat-sheet";
-import { jazInterviewQuestions } from "@/lib/questrade-jaz-interview/dataset";
-import type { ProductSensePanelLink } from "@/lib/questrade-jaz-interview/product-sense-panel-links";
+import {
+  SIDE_DESK_LIVE_CATALOGS,
+  cardsForFlowStep,
+  type SideDeskLiveCard,
+} from "@/lib/questrade-jaz-interview/side-desk-live-catalog";
+import { getSideDeskLiveBundle } from "@/lib/questrade-jaz-interview/side-desk-live-bundle";
 import { PanelScriptLinks } from "@/components/questrade-jaz-interview/jaz-panel-script-links";
 import { cn } from "@/lib/utils";
 
@@ -74,26 +77,16 @@ function SectionBlock({
   onToggle: () => void;
   starOnly?: boolean;
 }) {
-  const hasStarRows = section.table?.rows.some((row) => row.some((c) => /★|\u2605/.test(c)));
   return (
     <section id={`sd-${section.id}`} className="scroll-mt-28 border-b border-violet-100 pb-4">
       <button type="button" className="flex w-full items-center gap-2 py-3 text-left" onClick={onToggle}>
         {open ? <ChevronDown className="h-4 w-4 shrink-0" /> : <ChevronRight className="h-4 w-4 shrink-0" />}
         <h2 className="text-base font-semibold text-violet-950">{section.title}</h2>
-        {hasStarRows ? <span className="text-[10px] text-amber-700">★ rows</span> : null}
       </button>
       {open && (
         <div className="space-y-3 pl-6">
           {section.prose?.map((p) => (
-            <p
-              key={p.slice(0, 48)}
-              className={cn(
-                "text-sm leading-relaxed",
-                p.startsWith("Five questions") || /^\d+\./.test(p)
-                  ? "rounded-md border border-violet-200 bg-violet-50 px-2.5 py-1.5 font-medium text-violet-950"
-                  : "text-muted-foreground"
-              )}
-            >
+            <p key={p.slice(0, 48)} className="text-sm leading-relaxed text-muted-foreground">
               {p}
             </p>
           ))}
@@ -115,94 +108,252 @@ const SHEET_LABELS: Record<SideDeskCheatSheetId, string> = {
   technical: "Technical",
 };
 
+function LiveCardChip({
+  card,
+  selected,
+  onSelect,
+}: {
+  card: SideDeskLiveCard;
+  selected: boolean;
+  onSelect: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onSelect}
+      className={cn(
+        "w-full rounded-md border bg-white p-2.5 text-left transition-colors",
+        selected ? "border-violet-500 ring-2 ring-violet-200" : "border-violet-100 hover:border-violet-300",
+        card.priority ? "border-amber-300" : null
+      )}
+    >
+      <p className="text-xs font-semibold text-violet-950">
+        {card.label}
+        {card.priority ? <span className="ml-1 text-amber-600">★</span> : null}
+      </p>
+      <p className="mt-0.5 text-[11px] leading-snug text-neutral-700">{card.subtitle}</p>
+      <p className="mt-1 text-[10px] text-violet-800">Tap for live speak lines</p>
+    </button>
+  );
+}
+
 export function JazSideDeskCheatSheetPanel({
   sheetId,
   onOpenPanelScript,
   focusSectionId,
+  focusCardId,
 }: {
   sheetId: SideDeskCheatSheetId;
   onOpenPanelScript?: (questionId: string) => void;
   focusSectionId?: string | null;
+  focusCardId?: string | null;
 }) {
   const sheet = SIDE_DESK_CHEAT_SHEETS[sheetId];
-  const [starOnly, setStarOnly] = useState(false);
-  const [openSections, setOpenSections] = useState<Record<string, boolean>>(() => {
-    const first = sheet.sections[0]?.id;
-    const init: Record<string, boolean> = {};
-    if (first) init[first] = true;
-    if (focusSectionId) init[focusSectionId] = true;
-    return init;
-  });
+  const catalog = SIDE_DESK_LIVE_CATALOGS[sheetId];
+  const [flowStepId, setFlowStepId] = useState(catalog.flowSteps[0]!.id);
+  const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
+  const [showTables, setShowTables] = useState(false);
+  const [starOnly, setStarOnly] = useState(true);
+  const [openSections, setOpenSections] = useState<Record<string, boolean>>({});
 
-  const panelLinks = useMemo((): ProductSensePanelLink[] => {
-    const keys = SIDE_DESK_PANEL_KEYS[sheetId] ?? [];
-    return keys
-      .map((key) => {
-        const q = jazInterviewQuestions.find((item) => item.curatedKey === key);
-        if (!q) return null;
-        return { curatedKey: key, shortLabel: q.shortLabel, questionId: q.id };
-      })
-      .filter((v): v is ProductSensePanelLink => Boolean(v));
-  }, [sheetId]);
+  const liveCards = useMemo(() => cardsForFlowStep(sheetId, flowStepId), [sheetId, flowStepId]);
+  const bundle = useMemo(
+    () => (selectedCardId ? getSideDeskLiveBundle(sheetId, selectedCardId) : null),
+    [sheetId, selectedCardId]
+  );
 
   useEffect(() => {
-    if (!focusSectionId) return;
+    setFlowStepId(catalog.flowSteps[0]!.id);
+    setSelectedCardId(null);
+    setShowTables(false);
+  }, [sheetId, catalog.flowSteps]);
+
+  useEffect(() => {
+    if (!focusCardId) return;
+    const card = catalog.cards.find((c) => c.id === focusCardId);
+    if (!card) return;
+    setShowTables(false);
+    setFlowStepId(card.flowStepId);
+    setSelectedCardId(card.id);
+  }, [focusCardId, catalog.cards]);
+
+  useEffect(() => {
+    if (!focusSectionId || focusCardId) return;
+    setShowTables(true);
     setOpenSections((c) => ({ ...c, [focusSectionId]: true }));
     window.requestAnimationFrame(() => {
       document.getElementById(`sd-${focusSectionId}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
-  }, [focusSectionId]);
+  }, [focusSectionId, focusCardId]);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && selectedCardId) setSelectedCardId(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [selectedCardId]);
 
   return (
     <div className="mx-auto max-w-4xl px-5 py-6 md:px-8">
-      <p className="text-xs font-medium tracking-wide text-violet-800 uppercase">
-        Live reference · {SHEET_LABELS[sheetId]}
-      </p>
-      <h1 className="mt-1 text-2xl font-semibold tracking-tight">{sheet.title.replace(/^\d+\.\s*/, "")}</h1>
-      <p className="mt-2 text-sm text-muted-foreground">{sheet.useFor}</p>
+      {!bundle ? (
+        <>
+          <p className="text-xs font-medium tracking-wide text-violet-800 uppercase">
+            Live reference · {SHEET_LABELS[sheetId]}
+          </p>
+          <h1 className="mt-1 text-2xl font-semibold tracking-tight">
+            {sheet.title.replace(/^\d+\.\s*/, "")}
+          </h1>
+          <p className="mt-2 text-sm text-muted-foreground">{sheet.useFor}</p>
+        </>
+      ) : (
+        <p className="text-xs font-medium tracking-wide text-violet-800 uppercase">
+          Live bundle · {SHEET_LABELS[sheetId]}
+        </p>
+      )}
 
-      <div className="sticky top-0 z-10 -mx-2 mt-4 bg-white/95 px-2 py-2 backdrop-blur">
+      <div className="sticky top-0 z-10 -mx-2 mt-4 space-y-2 bg-white/95 px-2 py-2 backdrop-blur">
+        {bundle ? (
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="rounded-full bg-violet-600 px-2.5 py-0.5 text-xs font-semibold text-white">
+              {bundle.card.kind}
+            </span>
+            <span className="text-sm font-semibold text-violet-950">
+              {bundle.card.label}
+              {bundle.card.priority ? <span className="ml-1 text-amber-600">★</span> : null}
+            </span>
+            <button
+              type="button"
+              className="ml-auto text-xs text-violet-800 underline-offset-2 hover:underline"
+              onClick={() => setSelectedCardId(null)}
+            >
+              ← Cards
+            </button>
+          </div>
+        ) : null}
+
         <p className="rounded-md border border-violet-300 bg-violet-50 px-3 py-2 text-sm font-medium leading-relaxed text-violet-950">
           {sheet.frameworkNote}
         </p>
-        <div className="mt-2 flex flex-wrap items-center gap-2">
+
+        <div className="overflow-x-auto pb-0.5">
+          <div
+            className="grid gap-1.5"
+            style={{ gridTemplateColumns: `repeat(${catalog.flowSteps.length}, minmax(0, 1fr))` }}
+          >
+            {catalog.flowSteps.map((step) => {
+              const active = flowStepId === step.id;
+              return (
+                <button
+                  key={step.id}
+                  type="button"
+                  className={cn(
+                    "min-h-[2.75rem] rounded-md border px-1.5 py-2 text-center text-[11px] font-semibold transition-colors",
+                    active
+                      ? "border-violet-500 bg-violet-600 text-white"
+                      : "border-violet-100 bg-white text-violet-950 hover:bg-violet-50"
+                  )}
+                  onClick={() => {
+                    setFlowStepId(step.id);
+                    setSelectedCardId(null);
+                    setShowTables(false);
+                  }}
+                >
+                  {step.label}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="flex flex-wrap items-center gap-2">
           <button
             type="button"
             className={cn(
               "rounded-full border px-2.5 py-1 text-[11px] font-semibold",
-              starOnly ? "border-amber-400 bg-amber-50 text-amber-950" : "border-violet-200 bg-white text-violet-900"
+              showTables ? "border-violet-400 bg-violet-100 text-violet-950" : "border-violet-200 bg-white text-violet-900"
             )}
-            onClick={() => setStarOnly((v) => !v)}
-          >
-            {starOnly ? "★ rows only" : "Show all rows"}
-          </button>
-          <button
-            type="button"
-            className="text-[11px] text-violet-800 underline-offset-2 hover:underline"
             onClick={() => {
-              const next = Object.fromEntries(sheet.sections.map((s) => [s.id, true]));
-              setOpenSections(next);
+              setShowTables((v) => !v);
+              setSelectedCardId(null);
             }}
           >
-            Expand all
+            {showTables ? "Live cards" : "Full tables"}
           </button>
-        </div>
-        <div className="mt-2">
-          <PanelScriptLinks links={panelLinks} onOpen={onOpenPanelScript} title="Related panel answers" />
+          {showTables ? (
+            <button
+              type="button"
+              className={cn(
+                "rounded-full border px-2.5 py-1 text-[11px] font-semibold",
+                starOnly ? "border-amber-400 bg-amber-50 text-amber-950" : "border-violet-200 bg-white text-violet-900"
+              )}
+              onClick={() => setStarOnly((v) => !v)}
+            >
+              {starOnly ? "★ rows only" : "Show all rows"}
+            </button>
+          ) : null}
         </div>
       </div>
 
-      <div className="mt-4 space-y-1">
-        {sheet.sections.map((section) => (
-          <SectionBlock
-            key={section.id}
-            section={section}
-            open={openSections[section.id] ?? false}
-            onToggle={() => setOpenSections((c) => ({ ...c, [section.id]: !c[section.id] }))}
-            starOnly={starOnly}
-          />
-        ))}
-      </div>
+      {catalog.alwaysSay && !bundle && !showTables ? (
+        <div className="mt-4 rounded-md border border-amber-200 bg-amber-50/60 px-3 py-2.5">
+          <p className="text-[10px] font-semibold tracking-wide text-amber-900 uppercase">Always ask (banking feature)</p>
+          <ol className="mt-1.5 list-decimal space-y-1 pl-4 text-xs text-amber-950">
+            {catalog.alwaysSay.map((q) => (
+              <li key={q}>{q}</li>
+            ))}
+          </ol>
+        </div>
+      ) : null}
+
+      {bundle ? (
+        <div className="mt-4 space-y-3 rounded-lg border border-violet-300 bg-white p-4 shadow-sm">
+          <div className="rounded-md border border-violet-400 bg-violet-50 px-3 py-2.5">
+            <p className="text-[10px] font-semibold tracking-wide text-violet-800 uppercase">Live pin</p>
+            <p className="mt-1 text-sm font-medium text-violet-950">{bundle.card.subtitle}</p>
+          </div>
+          <ul className="space-y-2">
+            {bundle.speakLines.map((line) => (
+              <li key={line.label} className="rounded-md border border-violet-100 bg-violet-50/40 px-2.5 py-2">
+                <p className="text-[10px] font-semibold tracking-wide text-violet-800 uppercase">{line.label}</p>
+                <p className="mt-0.5 text-sm leading-snug text-neutral-900">{line.text}</p>
+              </li>
+            ))}
+          </ul>
+          <PanelScriptLinks links={bundle.panelLinks} onOpen={onOpenPanelScript} title="Related panel answers" />
+        </div>
+      ) : showTables ? (
+        <div className="mt-4 space-y-1">
+          {sheet.sections.map((section) => (
+            <SectionBlock
+              key={section.id}
+              section={section}
+              open={openSections[section.id] ?? false}
+              onToggle={() => setOpenSections((c) => ({ ...c, [section.id]: !c[section.id] }))}
+              starOnly={starOnly}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="mt-4 space-y-3">
+          <p className="text-sm text-muted-foreground">
+            Pick a card for speakable lines — skip the tables unless you need to study.
+          </p>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {liveCards.map((card) => (
+              <LiveCardChip
+                key={card.id}
+                card={card}
+                selected={selectedCardId === card.id}
+                onSelect={() => setSelectedCardId(card.id)}
+              />
+            ))}
+          </div>
+          {liveCards.length === 0 ? (
+            <p className="text-sm text-muted-foreground">No cards for this step.</p>
+          ) : null}
+        </div>
+      )}
     </div>
   );
 }

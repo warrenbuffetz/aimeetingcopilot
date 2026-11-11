@@ -323,7 +323,7 @@ export function getProblemBundle(
     for (const part of m.guardrails.split(",")) fromMetrics.add(part.trim());
   }
 
-  let universalGuardrails = findUniversalGuardrails(sections, links.guardrailDims);
+  const universalGuardrails = findUniversalGuardrails(sections, links.guardrailDims);
   if (priority) {
     const extra = findUniversalGuardrails(sections, ["Payment integrity", "Reliability", "Financial risk"]);
     const seen = new Set(universalGuardrails.map((g) => g.dimension));

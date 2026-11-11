@@ -3,7 +3,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ChevronDown, ChevronRight, Clock, Search, Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { isSupabaseConfigured } from "@/lib/env";
 import { createClient } from "@/lib/supabase/client";
@@ -117,6 +116,7 @@ export function JazInterviewNavigator() {
   const [spokenMode, setSpokenMode] = useState<"full" | "quick">("full");
   const [mainView, setMainView] = useState<MainView>("answers");
   const [sideDeskFocusSection, setSideDeskFocusSection] = useState<string | null>(null);
+  const [sideDeskFocusCard, setSideDeskFocusCard] = useState<string | null>(null);
   const [otherProfiles, setOtherProfiles] = useState<{ id: string; name: string }[]>([]);
 
   const active = jazInterviewQuestions.find((q) => q.id === activeId) ?? jazInterviewQuestions[0]!;
@@ -134,12 +134,16 @@ export function JazInterviewNavigator() {
     .filter((q): q is JazInterviewQuestion => Boolean(q))
     .slice(0, 8);
 
-  const openSideDesk = useCallback((view: SideDeskCheatSheetId, sectionId?: string) => {
-    setMainView(view);
-    setSideDeskFocusSection(sectionId ?? null);
-    setQuery("");
-    answerRef.current?.scrollTo({ top: 0 });
-  }, []);
+  const openSideDesk = useCallback(
+    (view: SideDeskCheatSheetId, opts?: { sectionId?: string; cardId?: string }) => {
+      setMainView(view);
+      setSideDeskFocusSection(opts?.sectionId ?? null);
+      setSideDeskFocusCard(opts?.cardId ?? null);
+      setQuery("");
+      answerRef.current?.scrollTo({ top: 0 });
+    },
+    []
+  );
 
   const openQuestion = useCallback((questionId: string, followUpId: string | null) => {
     setActiveId(questionId);
@@ -340,6 +344,7 @@ export function JazInterviewNavigator() {
               onClick={() => {
                 setMainView(view);
                 setSideDeskFocusSection(null);
+                setSideDeskFocusCard(null);
               }}
               title={view === "answers" ? "Panel & stories" : VIEW_LABELS[view]}
             >
@@ -423,11 +428,17 @@ export function JazInterviewNavigator() {
                       type="button"
                       className="w-full px-2 py-1.5 text-left text-xs hover:bg-violet-50"
                       onClick={() => {
-                        openSideDesk(hit.sheetId, hit.sectionId);
+                        openSideDesk(hit.sheetId, {
+                          sectionId: hit.cardId ? undefined : hit.sectionId,
+                          cardId: hit.cardId,
+                        });
                       }}
                     >
-                      {hit.label}
-                      <span className="block text-[10px] text-muted-foreground">{hit.sectionTitle}</span>
+                      {hit.cardId ? (
+                        <span className="text-[10px] font-semibold uppercase text-violet-700">card</span>
+                      ) : null}
+                      <span className={cn("block text-xs font-medium", hit.cardId ? "mt-0.5" : "")}>{hit.label}</span>
+                      <span className="block text-[10px] text-muted-foreground">{hit.subtitle || hit.sectionTitle}</span>
                     </button>
                   </li>
                 ))}
@@ -511,6 +522,7 @@ export function JazInterviewNavigator() {
                   if (view === "product-sense") {
                     setMainView("product-sense");
                     setSideDeskFocusSection(null);
+                    setSideDeskFocusCard(null);
                     answerRef.current?.scrollTo({ top: 0 });
                     return;
                   }
@@ -575,6 +587,7 @@ export function JazInterviewNavigator() {
               key={mainView}
               sheetId={mainView}
               focusSectionId={sideDeskFocusSection}
+              focusCardId={sideDeskFocusCard}
               onOpenPanelScript={(questionId) => {
                 setMainView("answers");
                 openQuestion(questionId, null);
