@@ -1,0 +1,53 @@
+5. Cross-reference: questions and what to use
+Keep this section open while practising live case questions. Select a primary framework, then borrow a few relevant concepts from the other sections.
+Interview question
+Primary framework
+Key concepts to pull
+How would you improve account overview?
+Product Sense
+Balance clarity, pending states, comprehension, trust
+How would you grow primary banking?
+Product Sense
+Switching friction, direct deposit, activation, retention
+Design transaction history
+Product Sense + System Design
+Customer jobs, categorization, source of truth, freshness
+Design an instant bill-payment feature
+System Design
+States, idempotency, ledger, external processing
+How would you design notifications?
+System Design
+Events, queues, delivery, preference management
+Transactions dropped 20%
+Diagnostic
+Metric decomposition, segments, funnels, release correlation
+Payment failures increased
+Diagnostic
+Error codes, rail/provider breakdown, status tracing
+Customers complain balances are wrong
+Diagnostic + Technical
+Available vs. posted, holds, freshness, reconciliation
+Explain idempotency
+Technical
+Duplicate prevention, key management, retry safety
+What happens during a timeout?
+Technical
+Uncertain outcome, status inquiry, reconciliation
+How would you handle a provider outage?
+System Design + Technical
+Circuit breaker, degraded mode, communication
+New regulation changes the launch
+Product Sense + System Design
+Scope clarification, compliance, customer promise, controls
+How would you measure account health?
+Product Sense + Diagnostic
+Primary outcomes, leading indicators, guardrails
+How would you approach an AI feature?
+Product Sense + Technical
+User value, data quality, evaluation, privacy, human oversight
+Engineering says six months; you have six weeks
+Product Sense + Execution
+MVP slicing, dependencies, reversibility, risk
+How do you know a feature caused improvement?
+Diagnostic
+Experiment design, attribution, control groups

@@ -38,6 +38,11 @@ import {
   JAZ_FOCUSED_PROFILE_NAME,
   isJazFocusedProfileName,
 } from "@/lib/questrade-jaz/profile";
+import {
+  JAZ_INTERVIEW_HREF,
+  JAZ_INTERVIEW_PROFILE_ID,
+  JAZ_INTERVIEW_PROFILE_NAME,
+} from "@/lib/questrade-jaz-interview/profile";
 import { relatedQuestions } from "@/lib/questrade-jaz/related";
 import { searchAsksForJaz, searchJazQuestions, type JazSearchHit } from "@/lib/questrade-jaz/search";
 import { mapIdsForQuestionId } from "@/lib/questrade-jaz/map-links";
@@ -435,6 +440,7 @@ export function JazFocusedNavigator() {
   function leaveProfile(profileId: string) {
     if (profileId === "all") router.push("/live");
     else if (profileId === BRISTOL_FOCUSED_PROFILE_ID) router.push(BRISTOL_FOCUSED_HREF);
+    else if (profileId === JAZ_INTERVIEW_PROFILE_ID) router.push(JAZ_INTERVIEW_HREF);
     else router.push(`/live?profile=${encodeURIComponent(profileId)}`);
   }
 
@@ -1106,6 +1112,7 @@ export function JazFocusedNavigator() {
             </SelectTrigger>
             <SelectContent>
               <SelectItem value={JAZ_FOCUSED_PROFILE_ID}>{JAZ_FOCUSED_PROFILE_NAME}</SelectItem>
+              <SelectItem value={JAZ_INTERVIEW_PROFILE_ID}>{JAZ_INTERVIEW_PROFILE_NAME}</SelectItem>
               <SelectItem value={BRISTOL_FOCUSED_PROFILE_ID}>{BRISTOL_FOCUSED_PROFILE_NAME}</SelectItem>
               <SelectItem value="all">No profile</SelectItem>
               {otherProfiles.map((profile) => (

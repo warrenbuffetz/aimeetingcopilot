@@ -1,0 +1,711 @@
+{
+  "metadata": {
+    "source": "Questrade_Senior_PM_Master_Cheat_Sheet_Arial.docx",
+    "sectionId": "diagnostic",
+    "version": "2026-11-11"
+  },
+  "id": "diagnostic",
+  "title": "3. Diagnostic Cheat Sheet",
+  "useFor": "Use for: X dropped 20%, conversion declined, fraud increased, support contacts spiked, payments are failing, or customers are behaving unexpectedly.",
+  "frameworkNote": "Verify → Segment → Hypothesize → Test → Act. Isolate the problem using evidence rather than brainstorming explanations indiscriminately.",
+  "preamble": null,
+  "sections": [
+    {
+      "id": "a-common-metrics-to-investigate",
+      "title": "A. Common metrics to investigate",
+      "prose": null,
+      "table": {
+        "columns": [
+          "Metric family",
+          "Specific metrics"
+        ],
+        "rows": [
+          [
+            "Acquisition",
+            "Visits, leads, signup starts, signup completions, CAC"
+          ],
+          [
+            "Onboarding",
+            "Completion rate, step abandonment, verification failures, time to activation"
+          ],
+          [
+            "Activation ★",
+            "First deposit, first transaction, first successful bill payment"
+          ],
+          [
+            "Primary banking ★",
+            "Direct deposit penetration, recurring inflows, bill-pay activity, spending activity"
+          ],
+          [
+            "Transactions ★",
+            "Initiated, authorized, processed, completed, failed, reversed"
+          ],
+          [
+            "Money movement ★",
+            "Completion rate, time to completion, retries, rejects, returns"
+          ],
+          [
+            "Engagement",
+            "DAU, WAU, MAU, active transactors, actions per user"
+          ],
+          [
+            "Retention",
+            "D7/D30/D90 retention, recurring use, dormancy"
+          ],
+          [
+            "Conversion",
+            "Stage-to-stage conversion, end-to-end conversion"
+          ],
+          [
+            "Reliability ★",
+            "Error rate, latency, availability, timeouts"
+          ],
+          [
+            "Financial integrity ★",
+            "Ledger mismatches, unreconciled transactions, duplicate postings"
+          ],
+          [
+            "Financial risk",
+            "Fraud exposure, loss rates, false positives"
+          ],
+          [
+            "Support",
+            "Contacts per 1,000 customers, escalations, reopen rate"
+          ],
+          [
+            "Trust",
+            "Complaints, disputes, perceived accuracy"
+          ],
+          [
+            "Revenue",
+            "Revenue per customer, interchange where relevant, contribution margin"
+          ],
+          [
+            "Cost",
+            "Cost per transaction, vendor costs, operational handling cost"
+          ],
+          [
+            "Data quality",
+            "Event completeness, duplication, processing lag, freshness"
+          ]
+        ]
+      },
+      "footnotes": null
+    },
+    {
+      "id": "b-metric-decomposition-extremely-useful-in-intervi",
+      "title": "B. Metric decomposition — extremely useful in interviews",
+      "prose": [
+        "Break top-line outcomes into the factors that create them. Use compatible denominators and time windows.",
+        "Transaction volume",
+        "Completed transactions = Active transactors × Attempts per transactor × Completion rate",
+        "If completed volume falls: Are fewer people transacting, are they attempting fewer transactions, or are more attempts failing?",
+        "Onboarding activation",
+        "Activated users = Eligible starters × Onboarding completion rate × First-value rate",
+        "Illustrative direct deposit funnel: Eligible account → Views switching instructions → Starts switch → Submits required details → First deposit received → Recurring deposit established.",
+        "For primary banking, track recurring income, outgoing activity, and retention separately before combining them into an explicit primary-account definition."
+      ],
+      "table": {
+        "columns": [
+          "Stage-level rates must use compatible populations and time windows.",
+          "Revenue"
+        ],
+        "rows": [
+          [
+            "Revenue = Active customers × Revenue per active customer",
+            "Decompose further into usage frequency, monetized volume, and yield where appropriate."
+          ],
+          [
+            "Funnel completion",
+            "End-to-end conversion = Product of stage conversion rates"
+          ]
+        ]
+      },
+      "footnotes": [
+        "A large decline in one stage can disproportionately affect the overall journey."
+      ]
+    },
+    {
+      "id": "c-common-diagnostic-problems-and-first-investigati",
+      "title": "C. Common diagnostic problems and first investigations",
+      "prose": null,
+      "table": {
+        "columns": [
+          "Symptom",
+          "Likely hypotheses"
+        ],
+        "rows": [
+          [
+            "First useful test",
+            "Transaction volume down ★"
+          ],
+          [
+            "Fewer active customers, fewer attempts, more failures",
+            "Decompose volume"
+          ],
+          [
+            "Payment failures up ★",
+            "Rail outage, validation, risk rules, insufficient funds"
+          ],
+          [
+            "Failure codes by rail and stage",
+            "Direct deposit adoption down ★"
+          ],
+          [
+            "Setup friction, employer delay, cohort mix, instrumentation",
+            "Funnel and cohort comparison"
+          ],
+          [
+            "Bill-pay completion down ★",
+            "Biller validation, payment processing, app regression"
+          ],
+          [
+            "Stage-level conversion",
+            "iOS performance down"
+          ],
+          [
+            "App release, OS behavior, SDK issue",
+            "Version and release comparison"
+          ],
+          [
+            "Conversion down",
+            "UI friction, traffic quality, eligibility changes"
+          ],
+          [
+            "Funnel and acquisition segments",
+            "Engagement down"
+          ],
+          [
+            "Reduced utility, seasonality, poor performance",
+            "Active users vs. activity per user"
+          ],
+          [
+            "Retention down",
+            "Weak first value, poor experience, competitor switching"
+          ],
+          [
+            "Cohort retention curves",
+            "Support contacts up"
+          ],
+          [
+            "Defects, unclear UX, new policies",
+            "Contact reasons and release timing"
+          ],
+          [
+            "Fraud losses up ★",
+            "Rule gaps, new attack pattern, account takeover"
+          ],
+          [
+            "Losses by channel and cohort",
+            "Declines up ★"
+          ],
+          [
+            "Stricter risk policy, balance or eligibility problems",
+            "Decline reason codes"
+          ],
+          [
+            "Pending payments up ★",
+            "Provider latency, event delays, reconciliation backlog"
+          ],
+          [
+            "State age and queue metrics",
+            "Duplicate transactions ★"
+          ],
+          [
+            "Retries, client submission, idempotency failure",
+            "Duplicate request identifiers"
+          ],
+          [
+            "Balance complaints ★",
+            "Stale data, holds, unclear available balance"
+          ],
+          [
+            "Ledger vs. displayed-balance comparison",
+            "Notification failures"
+          ],
+          [
+            "Vendor, device permissions, queue backlog",
+            "Delivery rates by provider"
+          ],
+          [
+            "Revenue down",
+            "Customer mix, usage, yield, pricing"
+          ],
+          [
+            "Revenue decomposition",
+            "Feature adoption low"
+          ],
+          [
+            "Poor awareness, relevance, discoverability",
+            "Eligible exposure-to-use funnel"
+          ],
+          [
+            "Experiment underperforms",
+            "Wrong hypothesis, low power, poor exposure"
+          ],
+          [
+            "Assignment, exposure and funnel checks",
+            "Unexpected metric improvement"
+          ],
+          [
+            "Event duplication, denominator changes, gaming",
+            "Data-quality audit"
+          ]
+        ]
+      },
+      "footnotes": null
+    },
+    {
+      "id": "d-segmentation-menu",
+      "title": "D. Segmentation menu",
+      "prose": [
+        "Do not slice data across 20 dimensions indiscriminately. Start with the dimensions most likely to isolate the symptom, then narrow further."
+      ],
+      "table": {
+        "columns": [
+          "Dimension",
+          "Segments"
+        ],
+        "rows": [
+          [
+            "Time ★",
+            "Hour, day, week, pre/post release, business vs. nonbusiness day"
+          ],
+          [
+            "Platform ★",
+            "iOS, Android, web"
+          ],
+          [
+            "Software version ★",
+            "App version, OS version, backend release"
+          ],
+          [
+            "Customer lifecycle",
+            "New, activated, mature, dormant"
+          ],
+          [
+            "Customer cohort",
+            "Signup week/month, acquisition source"
+          ],
+          [
+            "Banking activity ★",
+            "Primary vs. secondary usage, direct deposit vs. none"
+          ],
+          [
+            "Transaction type ★",
+            "Bill payment, transfer, deposit, withdrawal, card transaction"
+          ],
+          [
+            "Processing stage ★",
+            "Initiation, authorization, posting, settlement/confirmation"
+          ],
+          [
+            "Provider / rail ★",
+            "Network, partner, connector, processing channel"
+          ],
+          [
+            "Transaction characteristics",
+            "Amount band, frequency, first-time vs. repeat"
+          ],
+          [
+            "Risk attributes",
+            "Review status, risk rule, limit or restriction"
+          ],
+          [
+            "Geography / time zone",
+            "Region, local time, availability window"
+          ],
+          [
+            "Device / network",
+            "Device type, connectivity quality"
+          ],
+          [
+            "Acquisition source",
+            "Organic, paid, referral, partner"
+          ],
+          [
+            "Experiment assignment",
+            "Treatment vs. control"
+          ],
+          [
+            "Account configuration",
+            "Account type, restrictions, linked services"
+          ]
+        ]
+      },
+      "footnotes": null
+    },
+    {
+      "id": "e-common-data-quality-checks",
+      "title": "E. Common data-quality checks",
+      "prose": [
+        "Check",
+        "What can go wrong?"
+      ],
+      "table": {
+        "columns": [
+          "Metric definition",
+          "“Completed” was redefined"
+        ],
+        "rows": [
+          [
+            "Numerator",
+            "An event is no longer emitted"
+          ],
+          [
+            "Denominator",
+            "Eligibility population changed"
+          ],
+          [
+            "Event duplication",
+            "Retry creates multiple analytics records"
+          ],
+          [
+            "Missing instrumentation",
+            "New app version doesn’t track a stage"
+          ],
+          [
+            "Data freshness",
+            "Pipeline is delayed"
+          ],
+          [
+            "Time-zone boundaries",
+            "Activity moves into another reporting day"
+          ],
+          [
+            "Cohort composition",
+            "Different customer mix"
+          ],
+          [
+            "Seasonality",
+            "Payday, holidays, month-end or weekends"
+          ],
+          [
+            "Data backfill",
+            "Late-arriving records alter history"
+          ],
+          [
+            "Join integrity",
+            "Transactions lose user or account identifiers"
+          ],
+          [
+            "Schema changes",
+            "Properties or event names changed"
+          ],
+          [
+            "Bot / internal traffic",
+            "Artificial activity distorts results"
+          ],
+          [
+            "Attribution",
+            "Events are assigned to the wrong channel"
+          ],
+          [
+            "Statistical noise",
+            "Variation is too small to distinguish from chance"
+          ]
+        ]
+      },
+      "footnotes": null
+    },
+    {
+      "id": "f-common-analytical-tests",
+      "title": "F. Common analytical tests",
+      "prose": [
+        "If bill-pay completions dropped immediately after an iOS release, checking the app-version funnel and release logs is generally more useful than beginning with broad customer interviews."
+      ],
+      "table": {
+        "columns": [
+          "Test",
+          "Best use case"
+        ],
+        "rows": [
+          [
+            "What it tells you",
+            "Funnel analysis ★"
+          ],
+          [
+            "Conversion or activation decline",
+            "Which stage lost customers"
+          ],
+          [
+            "Pre/post comparison ★",
+            "Recent release or policy change"
+          ],
+          [
+            "Whether timing aligns with the issue",
+            "Affected vs. unaffected cohort ★"
+          ],
+          [
+            "Platform-specific regression",
+            "Whether the change is localized"
+          ],
+          [
+            "Error-code analysis ★",
+            "Payment failures"
+          ],
+          [
+            "Which failure mechanisms increased",
+            "Transaction tracing ★"
+          ],
+          [
+            "Distributed-system errors",
+            "Which component failed or delayed"
+          ],
+          [
+            "Ledger reconciliation ★",
+            "Financial mismatches"
+          ],
+          [
+            "Whether authoritative records agree",
+            "Cohort retention"
+          ],
+          [
+            "Engagement decline",
+            "Whether particular cohorts are deteriorating"
+          ],
+          [
+            "Time-series analysis",
+            "Sudden or gradual decline"
+          ],
+          [
+            "Trend, seasonality, change point",
+            "Difference-in-differences"
+          ],
+          [
+            "Change affecting only some groups",
+            "Relative change versus a comparison group"
+          ],
+          [
+            "A/B test",
+            "Proposed product intervention"
+          ],
+          [
+            "Causal impact when designed correctly",
+            "A/A test"
+          ],
+          [
+            "Experimentation integrity",
+            "Whether randomization and measurement behave as expected"
+          ],
+          [
+            "Correlation analysis",
+            "Relationships between variables"
+          ],
+          [
+            "Association, not necessarily causation",
+            "Distribution / percentile analysis ★"
+          ],
+          [
+            "Latency or transaction size",
+            "Tail behavior hidden by averages"
+          ],
+          [
+            "Support ticket analysis",
+            "Emerging customer pain"
+          ],
+          [
+            "Common themes and affected cohorts",
+            "Session replay / usability testing"
+          ],
+          [
+            "Suspected UX breakdown",
+            "Where customers become confused"
+          ],
+          [
+            "Release correlation ★",
+            "Post-deployment defect"
+          ],
+          [
+            "Whether issues align with rollout",
+            "Feature-flag comparison"
+          ],
+          [
+            "Progressive release",
+            "Differences between exposed and unexposed customers"
+          ],
+          [
+            "SQL integrity checks",
+            "Missing or duplicated data"
+          ],
+          [
+            "Broken joins, duplicates, nulls",
+            "Queue / backlog inspection"
+          ],
+          [
+            "Processing delays",
+            "Accumulating unprocessed work"
+          ],
+          [
+            "Provider comparison",
+            "Third-party outage"
+          ],
+          [
+            "Whether one dependency is responsible",
+            "Sensitivity analysis"
+          ],
+          [
+            "Uncertain assumptions",
+            "Whether conclusions change under plausible inputs"
+          ],
+          [
+            "Hypothesis prioritization",
+            "Likelihood × Impact × Ease of verification — a practical heuristic, not a statistical formula."
+          ]
+        ]
+      },
+      "footnotes": null
+    },
+    {
+      "id": "g-common-mitigations",
+      "title": "G. Common mitigations",
+      "prose": [
+        "For money movement, do not automatically retry a transaction just because its response timed out. Establish whether it already executed first."
+      ],
+      "table": {
+        "columns": [
+          "Situation",
+          "Potential immediate response"
+        ],
+        "rows": [
+          [
+            "Broken new feature",
+            "Disable feature flag"
+          ],
+          [
+            "Regression after deployment",
+            "Roll back the affected release"
+          ],
+          [
+            "Failing third-party provider",
+            "Pause affected flow or route to a verified fallback"
+          ],
+          [
+            "Payment status uncertainty ★",
+            "Preserve existing state, investigate before retrying"
+          ],
+          [
+            "Retry storm",
+            "Rate-limit requests, apply backoff"
+          ],
+          [
+            "Incorrect risk rule",
+            "Review and correct safely with risk owners"
+          ],
+          [
+            "Customer confusion",
+            "Improve messaging and support guidance"
+          ],
+          [
+            "Wrong displayed balance ★",
+            "Suppress or correct misleading information"
+          ],
+          [
+            "Reconciliation discrepancy ★",
+            "Escalate exception; control further processing if needed"
+          ],
+          [
+            "Notification outage",
+            "Restore delivery and expose authoritative in-app status"
+          ],
+          [
+            "Queue backlog",
+            "Scale or safely replay processing"
+          ],
+          [
+            "Data pipeline failure",
+            "Repair pipeline and backfill affected records"
+          ],
+          [
+            "Fraud attack",
+            "Tighten controls, step up verification, investigate"
+          ],
+          [
+            "Experiment causing harm",
+            "Pause the treatment and assess impact"
+          ],
+          [
+            "Availability incident",
+            "Activate incident response and customer communications"
+          ],
+          [
+            "Third-party degradation",
+            "Enter a documented degraded mode"
+          ]
+        ]
+      },
+      "footnotes": null
+    },
+    {
+      "id": "h-monitoring-after-mitigation",
+      "title": "H. Monitoring after mitigation",
+      "prose": [
+        "Google’s Site Reliability Engineering guidance identifies four foundational service-health signals: latency, traffic, errors and saturation. For banking, add financial correctness and customer impact.",
+        "A strong answer identifies incident ownership, the action that contains further harm, the conditions for recovery, and any permanent fix. Useful post-incident outputs are root-cause analysis, quantified customer impact, corrective actions, monitoring improvements and a prevention owner."
+      ],
+      "table": {
+        "columns": [
+          "Four golden signals",
+          "Examples"
+        ],
+        "rows": [
+          [
+            "Latency",
+            "p95/p99 response time and processing delay"
+          ],
+          [
+            "Traffic",
+            "Requests, payment attempts, transaction volume"
+          ],
+          [
+            "Errors",
+            "Failures, timeouts, rejects, exceptions"
+          ],
+          [
+            "Saturation",
+            "Resource utilization, queue depth, processing backlog"
+          ],
+          [
+            "Monitoring layer",
+            "What to track"
+          ],
+          [
+            "Customer outcome",
+            "Successful completion and restored conversion"
+          ],
+          [
+            "Financial integrity ★",
+            "Duplicate postings, mismatches, unresolved exceptions"
+          ],
+          [
+            "Pending transactions ★",
+            "Pending volume, age distribution, stuck states"
+          ],
+          [
+            "Risk",
+            "Fraud losses, decline rates, false positives"
+          ],
+          [
+            "Customer experience",
+            "Complaints, support contacts, repeat attempts"
+          ],
+          [
+            "Data quality",
+            "Event completeness and freshness"
+          ],
+          [
+            "Release quality",
+            "Error rates by version and exposure"
+          ],
+          [
+            "Operational recovery",
+            "Incident backlog, manual review workload"
+          ]
+        ]
+      },
+      "footnotes": [
+        "Incident-response sequence"
+      ]
+    }
+  ]
+}

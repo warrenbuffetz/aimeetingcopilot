@@ -1,0 +1,1940 @@
+
+I am copying and pasting the questions and answers to make this accurate. Feel free to retitle as necesssary to maximize navigation during a live interview:
+
+1. Walk us through a complex product you led from identifying the problem to launch and results 
+
+One of the more complex products I worked on at RBC was enabling cashback withdrawals through Interac e-Transfer when we expanded Avion Rewards beyond existing RBC banking customers. 
+
+ 
+
+The business context was actually quite important. 
+
+ 
+
+Historically, customers with eligible RBC deposit accounts could receive cashback through internal account crediting. But with Avion Select, we were opening the platform to people who didn't necessarily bank with RBC. 
+
+ 
+
+That created a fairly fundamental problem. Customers could earn cashback, but we needed a way for them to receive that money without requiring an RBC bank account. 
+
+ 
+
+I led the consumer product work, collaborating with our engineers, UX designers, enterprise payments, AML, Risk and Financial Operations. 
+
+ 
+
+One of the first decisions was how to approach the payout infrastructure. 
+
+ 
+
+We evaluated a separate Avion-specific integration against reusing an existing enterprise payments capability, and I was involved in the decision to use Interac e-Transfer. 
+
+We ultimately leveraged the enterprise capability because it allowed us to build on established banking infrastructure and operational processes rather than recreate them for one rewards feature. 
+
+ 
+
+But that introduced an interesting product challenge: the rewards platform and the actual payment system had different responsibilities. 
+
+ 
+
+For example, we had to define when cashback should become unavailable for further redemption, how to handle a withdrawal that was still processing, and what happened if a transfer failed or was returned. 
+
+ 
+
+One of the more important technical considerations was handling uncertain payment outcomes. 
+
+ 
+
+If a request timed out, we couldn't automatically assume the payment had failed. The enterprise service might already have accepted it. 
+
+ 
+
+So we worked through requirements for transaction identification, safe retries, duplicate prevention and reconciliation. We also needed the customer experience to distinguish between a withdrawal being requested and the money actually being delivered. 
+
+I worked with UX to make those states understandable, and with Financial Operations on how we'd trace a withdrawal from the original redemption through to the financial outcome. 
+
+ 
+
+I was also involved in launch readiness and post-launch monitoring, because with a payment product, reliability and exception handling are as important as the successful transaction path. 
+
+ 
+
+In terms of outcomes, the capability supported approximately 3,200 withdrawal requests per quarter, with around 99% completed within 24 hours, representing roughly $1.2 million in annualized payouts. 
+
+ 
+
+What I found most interesting was that the customer-facing experience was intentionally simple, but achieving that simplicity required a lot of coordination across systems. 
+
+The lesson for me was that a financial product isn't successful simply because an API request works. You need to know what state the money is in, ensure your financial records remain accurate, and make sure the customer can trust what they're seeing. 
+
+ 
+
+"What happens if a customer submits a $50 withdrawal, the payment service times out, and they try again?" 
+
+ 
+
+"I'd preserve the original withdrawal reference and treat the outcome as unknown until we could establish whether the enterprise service accepted it. We shouldn't automatically create another payment. The product needs to protect the cashback from being redeemed twice, reconcile the original instruction and only allow another attempt when we know it's safe. Engineering would determine the specific idempotency and recovery mechanisms, but defining that financial guarantee was part of the product requirements." 
+
+2. Tell us about a growth challenge you owned. How did you identify the opportunity and measure success? 
+
+At HBC, I was responsible for growth and commercial performance across a Mastercard portfolio of more than 500,000 customers. 
+
+ 
+
+One of the biggest challenges was that acquiring a new cardholder didn't necessarily translate into long-term engagement. 
+
+ 
+
+Someone could get approved, use the card once for a promotion and then hardly use it again.  
+
+From a commercial perspective, that meant we had to think beyond acquisition and understand what actually drove active cardholder behaviour. 
+
+ 
+
+I approached that through customer segmentation and cohort analysis. 
+
+ 
+
+We looked at where customers were in their lifecycle—whether they'd recently been approved, made their first purchase, were actively spending or had started to disengage. 
+
+That helped us distinguish between different growth problems. 
+
+ 
+
+For example, a newly approved customer who hasn't made their first purchase needs a different intervention from someone who used to spend regularly but has become inactive. 
+
+We used controlled experiments and targeted rewards initiatives to test ways to influence those behaviours. 
+
+ 
+
+One of the important considerations was incrementality. 
+
+ 
+
+With credit cards, it's relatively easy to offer customers more reward points and see spending increase. But that doesn't necessarily mean you've created value. You might simply be subsidizing purchases those customers would have made anyway. 
+
+ 
+
+So I wanted us to think about the incremental behaviour we were creating and whether the commercial return justified the incentive cost. 
+
+ 
+
+I'd evaluate an initiative through both engagement and economics: how many additional customers became active, whether their usage persisted after the offer, what happened to spending per active cardholder, and what that meant for the portfolio's profitability and lifetime value. 
+
+ 
+
+Across that work, we improved active cardholder rates by approximately four percentage points, increased spending per active cardholder by around 5%, and improved modeled customer lifetime value by roughly 10%. 
+
+ 
+
+What I took away from that experience is that sustainable growth is really about changing customer behaviour, not just generating short-term activity. 
+
+ 
+
+And I think that's especially relevant to everyday banking. Getting someone to open an account is one thing. Getting them to build the habit of using it for their actual financial life is a much more meaningful outcome. 
+
+ 
+
+ 
+
+If asked for a concrete test, this is the type of example I'd prepare. The cohort and numbers below are illustrative rather than verified HBC campaign results. 
+
+ 
+
+ 3. How would you convince a Questrade customer to move their direct deposit and everyday banking to Questbank? 
+
+That's an interesting challenge because I think there's a big difference between convincing someone to open another bank account and convincing them to make it their primary account. 
+
+Before jumping into solutions, I'd want to understand where customers are getting stuck. 
+
+ 
+
+Are we seeing people open Questbank accounts but not fund them? Are they funding them occasionally but not moving payroll? Or are they actually receiving direct deposits but continuing to do most of their banking elsewhere? 
+
+ 
+
+Those are different problems. I'd probably start with existing Questrade customers who already have a relationship with the brand, particularly customers who have opened or shown interest in an everyday banking account. 
+
+ 
+
+We have a potential trust and distribution advantage with those customers, although I wouldn't assume they're automatically comfortable moving their paycheques. Switching a primary bank is a fairly high-friction decision. People have payroll arrangements, recurring bill payments, subscriptions and years of established habits. The perceived cost of getting something wrong is significant. 
+
+ 
+
+So I'd explore three hypotheses: customers don't see enough value in switching, they find the process too complicated, or they aren't yet confident that Questbank can reliably handle their everyday financial needs. 
+
+ 
+
+I'd validate those through funnel data, customer research and support feedback. If the evidence pointed to switching friction, I'd start with a guided direct deposit experience. 
+
+ 
+
+For example, rather than just displaying transit and account details, we could walk customers through updating their employer's payroll information, provide the necessary documents, help them understand what's left to move and confirm when their first deposit arrives. 
+
+ 
+
+I'd also consider a checklist for moving recurring bill payments and avoiding interruptions during the transition. 
+
+ 
+
+One important decision would be whether to build a more automated switching experience immediately or start with a guided, lower-complexity solution. I'd favour the simpler approach initially unless we had evidence that deeper automation would materially improve conversion. 
+
+ 
+
+For measurement, I wouldn't stop at direct deposit setup. 
+
+ 
+
+I'd look at eligible customers who receive their first recurring deposit, how many receive a second or third one, and whether their bill payments, card activity and ongoing balances indicate they're actually developing a primary banking relationship. 
+
+ 
+
+I'd also watch failed deposits, support escalations and early account abandonment. 
+
+Ultimately, I wouldn't try to win primary banking through a one-time promotion alone. I'd want to reduce the effort and perceived risk of switching, then give customers enough ongoing value that they choose to stay. 
+
+ 
+
+------------------------------------------------------------------------------------------ 
+
+ 
+
+ 4. Design an account overview or transaction history experience that helps customers understand their money 
+
+I'd start by clarifying what problem we're trying to solve for customers. 
+
+ 
+
+Are they struggling to understand how much money they have available, trying to figure out where their money went, or having difficulty recognizing and resolving individual transactions? 
+
+Those are related, but the right design could be quite different depending on the main problem. 
+
+ 
+
+For an everyday banking account, I'd probably start with a simple customer need: Can I quickly understand how much money I can use, what's happened to it, and whether there's anything I need to pay attention to? 
+
+ 
+
+I'd organize the experience around those three questions. 
+
+ 
+
+First, I'd make the available balance prominent, with a clear explanation of how it differs from the posted balance when there are pending transactions or holds. 
+
+Second, I'd create a unified activity feed where customers can see deposits, purchases, transfers, bill payments and other relevant account activity in a consistent format. 
+
+And third, I'd make transaction details actionable. If someone doesn't recognize a charge or a transfer is still processing, they should be able to understand its status and find the appropriate next step without immediately contacting support. 
+
+ 
+
+The interesting challenge is that those transactions may originate from different systems. 
+
+ 
+
+A card authorization, for example, might appear as pending before it becomes a posted transaction. A bank transfer could be initiated successfully but still be processing. 
+
+I'd work with engineering to establish how those source events map to a consistent customer-facing transaction model. 
+
+ 
+
+We'd need to avoid showing duplicates when a pending transaction posts, and avoid suggesting that a payment is completed when the authoritative system hasn't confirmed it. 
+
+ 
+
+I would also consider merchant enrichment and categorization, because those could make spending insights more useful. But I'd be careful not to let enrichment introduce incorrect or misleading transaction information. 
+
+ 
+
+For the MVP, I'd prioritize accuracy and clarity over advanced financial insights. 
+
+ 
+
+I'd start with balances, dependable transaction states, search and useful transaction details. Then use customer research and usage data to decide which insights to introduce next. 
+
+ 
+
+I'd measure whether customers can find and understand their transactions, whether support contacts about confusing balances or missing payments decline, and whether they're increasingly comfortable managing their financial activity through Questbank. 
+
+ 
+
+The underlying principle would be that the experience should make customers feel more in control of their money, not just show them more data.  
+
+ 
+
+---------------------------------------------- 
+
+ 
+
+ 5. Transaction activity or direct deposit adoption has dropped. How would you investigate? 
+
+The first thing I'd want to establish is whether we're seeing a genuine change in customer behaviour or whether something has changed in how we're measuring the activity. 
+
+ 
+
+Let's say transaction volume has dropped by 20% since yesterday. 
+
+ 
+
+I wouldn't jump straight into a feature or growth intervention. First, I'd validate the metric. 
+
+ 
+
+Is the decline in successful transactions, attempted transactions or total transaction value? Are we comparing the same customer population and a comparable time period? And have there been any changes to our event tracking or reporting pipelines? 
+
+ 
+
+I'd also look at whether we're experiencing normal seasonality—particularly with banking, where payroll cycles, weekends and holidays can materially affect transaction patterns. 
+
+ 
+
+Then I'd segment the problem. 
+
+ 
+
+Is the decline happening across all customers or a particular cohort? Is it concentrated in card purchases, Interac transfers, bill payments or another transaction type? 
+
+ 
+
+I'd also want to distinguish between lower customer demand and customers attempting transactions that aren't being completed. 
+
+ 
+
+For example, if payment attempts are stable but completion rates have declined, that suggests a very different problem from customers simply using the product less frequently. 
+
+I'd work with engineering and operations to review transaction failures, error rates, latency and any recent releases or partner incidents. 
+
+ 
+
+If we discovered a processing issue affecting real payments, I'd treat that as an operational incident and prioritize containment, customer communication and recovery. 
+
+If the underlying systems were healthy and the decline was concentrated in a particular customer cohort, I'd investigate the customer journey and recent behavioural changes. 
+
+ 
+
+For direct deposit adoption, I'd apply the same diagnostic discipline. 
+
+ 
+
+I'd break the funnel into customers eligible to switch, those beginning the setup process, those completing the required instructions and those actually receiving recurring deposits. 
+
+ 
+
+A decline at setup might point to UX friction, while a decline between completed instructions and first deposits could involve employer processing, eligibility or account-readiness issues. 
+
+ 
+
+Once we understood the root cause, I'd choose a targeted intervention and measure whether the affected part of the funnel recovered. 
+
+ 
+
+The important thing is to diagnose the mechanism before proposing a solution. A product engagement problem, a measurement issue and a payment-processing incident shouldn't all receive the same response. 
+
+ 
+
+----------------------------------------------------------------------- 
+
+ 
+
+6. Explain how you would design a reliable money-movement experience, including pending, failed and completed states 
+
+I'd start by clarifying the type of money movement we're talking about, because an internal transfer, an Interac e-Transfer and a bill payment can have very different processing and settlement characteristics. 
+
+ 
+
+But regardless of the rail, I'd approach the experience around three things: making sure the customer is authorized to move the money, ensuring the transaction executes correctly, and communicating the actual outcome clearly. 
+
+ 
+
+First, I'd define the lifecycle of the transaction. A payment typically involves more than simply calling an API and receiving success or failure. There may be states such as requested, validated, processing, sent and completed, with additional outcomes for rejection, expiry or return depending on the payment method. We need to be clear about what each state means and which system is authoritative for confirming it. 
+
+ 
+
+Second, I'd define the financial controls around those states. Before initiating a payment, we'd validate things like account eligibility, available funds, limits and any applicable risk restrictions. 
+
+ 
+
+We'd also need to understand when funds become unavailable to spend, and what happens if a transaction fails or is returned. One particularly important consideration is idempotency. 
+
+ 
+
+If a customer submits a transfer and the application times out, we can't assume the payment wasn't processed and blindly create a second instruction. We need to recognize the original request and establish its outcome. 
+
+ 
+
+Third, I'd work through the unhappy paths with engineering, Risk and Financial Operations. 
+
+ 
+
+What happens if the network is unavailable? If a payment is rejected? If we don't receive an expected status update? Or if the customer-facing record doesn't match the underlying financial record? We need traceability, exception handling and reconciliation so those issues can be detected and resolved. 
+
+ 
+
+Then I'd translate those requirements into the customer experience. 
+
+ 
+
+For example, I'd distinguish between 'We've received your payment instruction' and 'Your payment has completed.' I wouldn't want customers seeing a success message when we only know that the instruction was accepted. 
+
+ 
+
+I'd also make sure they have useful guidance when a transaction is delayed or requires action. 
+
+ 
+
+For success metrics, I'd look at completion rates, processing times, duplicate-prevention effectiveness, reconciliation exceptions and customer support contacts. 
+
+The biggest principle for me is that the experience should be simple, but it shouldn't conceal the actual financial state. That's how you build trust in a money-movement product.>  
+
+ 
+
+ 7. Tell us about a difficult technical or stakeholder trade-off you made during delivery 
+
+One of the more difficult trade-offs I've worked through was defining the MVP for a new membership platform at Arc'teryx. 
+
+ 
+
+The overall vision was fairly ambitious. We wanted to build a membership proposition around ReBIRD, connecting experiences like product care, repairs, trade-in, resale and events. 
+
+And ideally, you'd want that membership experience available across all your customer channels from day one. 
+
+ 
+
+But as we got further into technology discovery and delivery planning, it became clear that the complexity wasn't just building a member-facing experience. We needed the underlying identity, eligibility and fulfilment capabilities to work across several different enterprise systems. 
+
+ 
+
+For example, if someone qualified for a complimentary repair benefit, the membership capability needed to recognize that entitlement, but the actual repair workflow still belonged in our service infrastructure. 
+
+ 
+
+We needed to think carefully about which system owned which responsibilities and how they would exchange information. 
+
+ 
+
+That created a decision about where to invest our initial delivery capacity. 
+
+ 
+
+We could try to deliver the broader omnichannel vision upfront, including mobile, but that would increase the number of dependencies and the work required before we could validate the proposition. 
+
+ 
+
+Or we could focus the MVP on a smaller set of meaningful member experiences, with the foundational architecture designed to support additional channels and benefits later. 
+
+I advocated for the more focused approach. 
+
+ 
+
+We prioritized a web-first North American MVP and deferred broader mobile integration, while preserving the underlying membership capabilities needed for the long-term vision. 
+
+ 
+
+The important part was making sure we weren't just cutting features to meet a date. I wanted the first release to establish a useful customer journey and a platform we could realistically extend. 
+
+ 
+
+I worked with our business stakeholders, engineering and enterprise architecture to align the scope, technology direction and investment requirements. 
+
+ 
+
+That became part of the business case, and we secured approximately $5.2 million in capital funding for the program phase. 
+
+ 
+
+The program hadn't launched at that point, so the measurable outcome wasn't member adoption. It was getting the organization aligned around a funded and executable MVP. 
+
+ 
+
+The biggest learning for me was that strong prioritization sometimes means challenging the completeness of the first release to protect the viability of the overall product. 
+
+ 
+
+You need to preserve the ambition without making the first version unnecessarily difficult to deliver.  
+
+ 8. How would you prioritize features when the team has limited time and several competing opportunities? 
+
+I think the first thing I'd do is make sure we're prioritizing against a clear product outcome rather than trying to rank unrelated feature requests. 
+
+ 
+
+Let's say our main goal for the quarter is getting more customers to establish Questbank as their everyday banking account. 
+
+ 
+
+Now imagine we have competing opportunities: improve the direct deposit switching experience, introduce spending insights, and address confusion around pending transactions and available balances. 
+
+ 
+
+I'd start by understanding the customer evidence and the impact of each problem. 
+
+The first distinction I'd make is between something that protects the core banking experience and something that creates incremental value. 
+
+ 
+
+If customers are seeing inaccurate balances or misleading transaction states, that's a trust and potentially a financial-control issue. I wouldn't treat it as a normal feature-prioritization exercise. 
+
+ 
+
+We'd need to establish its severity and address the problem appropriately. 
+
+Assuming the foundational experience was reliable, I'd look at which opportunity was most directly connected to our business objective. 
+
+ 
+
+For example, if research showed that customers wanted to move their payroll but abandoned the setup process, improving that experience could have a much more direct impact on primary-bank adoption than launching an advanced spending insights feature. 
+
+ 
+
+I'd work with engineering and design to understand the options and dependencies, then look for the smallest meaningful improvement we could validate. 
+
+ 
+
+Maybe that means clear direct deposit instructions and better setup guidance before investing in a fully automated account-switching capability. 
+
+ 
+
+I'd also be explicit about what we're not doing. 
+
+ 
+
+If we prioritize direct deposit activation, that means we're probably deferring some of the more sophisticated financial insights. I'd explain why, what evidence supports the decision, and when we'd revisit those opportunities. 
+
+ 
+
+Then I'd establish success measures before development begins. 
+
+For the direct deposit experience, that might be first recurring deposit conversion, repeat deposit retention and reductions in setup-related support contacts. 
+
+ 
+
+My general approach is to make the trade-off visible, focus the team on the highest-impact customer problem, and avoid taking on more work than we can meaningfully deliver and learn from. 
+
+ 
+9. What would you measure to determine whether Questbank is becoming a customer's primary bank? 
+
+I'd start by defining what we actually mean by someone's primary bank. 
+
+ 
+
+I don't think account openings or even monthly active users would be sufficient on their own. 
+
+To me, a primary bank is where customers manage a meaningful share of their ongoing financial life. That usually involves money coming in regularly, recurring financial obligations and everyday transactions. 
+
+ 
+
+So I'd create a primary-banking relationship metric based on a combination of behaviours. 
+
+For example, we could look at customers who receive recurring income or other qualifying deposits, actively use the account for everyday transactions, and pay bills or manage other recurring obligations through Questbank. 
+
+ 
+
+I'd want to validate the specific thresholds against actual customer behaviour rather than choose arbitrary numbers. 
+
+ 
+
+I'd also be careful not to define primary banking exclusively around payroll. Retirees, self-employed customers and people with irregular income may have genuinely primary relationships without conventional employer direct deposit. 
+
+ 
+
+Then I'd break the outcome into a few leading indicators. 
+
+ 
+
+First, activation: how many customers fund their account and complete their first meaningful transaction? 
+
+ 
+
+Second, recurring money-in: how many establish consistent incoming deposits, and how many maintain that behaviour over subsequent months? 
+
+ 
+
+Third, everyday usage: are customers using the account for purchases, transfers and bill payments? 
+
+ 
+
+And fourth, retention and relationship depth: are those behaviours continuing, and are customers increasingly using Questbank across more of their financial needs? 
+
+ 
+
+I'd also want to distinguish between existing Questrade customers adding banking and entirely new customers, because the adoption patterns could be different. 
+
+ 
+
+One thing I'd avoid is overclaiming share of wallet. 
+
+ 
+
+Unless we have reliable consented information about a customer's activity at other banks, we can't know their precise proportion of total banking activity. 
+
+ 
+
+We can use observable proxies, but we should recognize their limitations. 
+
+ 
+
+I'd complement those metrics with customer feedback and guardrails like failed payments, account complaints, fraud losses and support escalations. 
+
+ 
+
+Ultimately, the goal isn't just getting money into an account. It's building a relationship where customers repeatedly trust Questbank to manage their everyday financial activity. 
+
+ 
+
+ 10. Describe a time your initial hypothesis was wrong or a launch encountered an unexpected problem 
+
+One example I'd point to was the early planning for our membership platform at Arc'teryx. 
+
+We had a fairly ambitious vision for membership, including connecting experiences across web, mobile, product care, repairs and other parts of the ReBIRD ecosystem. 
+
+ 
+
+And initially, there was a reasonable argument that if we wanted membership to feel like a meaningful new proposition, we should launch with a fairly complete experience across channels. 
+
+ 
+
+But as we worked through the technical discovery, I started to question that assumption. 
+
+The more we mapped the customer journeys and underlying dependencies, the clearer it became that the biggest challenge wasn't necessarily the number of channels we supported. 
+
+It was whether we had the right identity, membership rules and fulfilment integrations in place to make the experience work consistently. 
+
+ 
+
+For example, launching an additional mobile experience wouldn't solve the underlying problem of associating a customer's qualifying activity with their membership or ensuring that a benefit could actually be fulfilled. 
+
+ 
+
+So we had to reconsider what was genuinely essential to the first release. 
+
+I helped reshape the MVP toward a more focused web-first approach, while preserving the foundational capabilities we needed for the longer-term vision. 
+
+ 
+
+That meant having some difficult scope conversations and accepting that certain experiences would come later. 
+
+ 
+
+It also meant being more deliberate about the distinction between what we wanted the eventual membership platform to become and what we needed to validate initially. 
+
+ 
+
+We incorporated that direction into the program planning and business case, ultimately securing approximately $5.2 million in capital funding for the phase. 
+
+ 
+
+The learning for me was that I need to distinguish between a compelling product vision and the assumptions we're making about how to get there. 
+
+ 
+
+Just because something feels important to the complete customer experience doesn't automatically mean it belongs in the first release. 
+
+ 
+
+I'd rather change the plan when the evidence improves than protect an earlier decision simply because we'd already committed to it.  
+
+ 
+
+ Deep dive 1 — RBC Avion: Interac e-Transfer cashback withdrawals 
+
+Question triggers 
+
+Walk me through the most complex product you've launched. 
+
+Tell me about a technically difficult integration. 
+
+Describe a product where failure handling was especially important. 
+
+How did you work with engineering, risk and operations? 
+
+Tell me about a consequential technical trade-off. 
+
+ 
+ 
+
+ 
+
+----------------------------------------- 
+REDUCED 
+
+ 
+
+A good example would be the cashback withdrawal capability we built at RBC for Avion Select. 
+
+ 
+
+We were expanding Avion Rewards to non-RBC customers, and there was a pretty fundamental problem we needed to solve. Previously, customers with RBC deposit accounts could receive cashback directly into those accounts. But now we had people earning cashback who didn't necessarily bank with RBC, so we needed another way to get them their money. 
+
+ 
+
+I owned the consumer product side, working with engineering, design, enterprise payments, Risk, AML and Financial Operations. Early on, we had to figure out whether to build a separate payment integration for Avion or use something RBC already had. We ended up using Interac e-Transfer through the existing enterprise payments infrastructure, which made sense because we could reuse the bank's payment capabilities rather than build our own. 
+
+ 
+
+But the tricky part was what happened between someone requesting a withdrawal and actually receiving the money. Say a customer has $50 in cashback and wants to withdraw it. We need to make sure that $50 can't be withdrawn again while the payment is processing, but we also can't tell them it's completed just because the payment service accepted the request. 
+
+ 
+
+And then there's the failure scenario. What if the payment service accepts the instruction, but our application times out before receiving the response? We can't just let the customer try again because we might end up paying them twice. 
+
+ 
+
+So a lot of my work involved defining those transaction states and exception requirements with engineering, working with design on how we communicated the payment status, and making sure Financial Operations could trace and reconcile the withdrawals. We also worked through launch readiness and how we'd monitor payment completion and exceptions once it was live. 
+
+ 
+
+The capability eventually handled around 3,200 withdrawals per quarter, with roughly 99% completed within 24 hours, representing about $1.2 million in annualized payouts. It's a good example of a feature that looks fairly straightforward to the customer, but requires a lot of thought around financial accuracy and what happens when something goes wrong. 
+
+1. Follow-up 1: "Why did you choose Interac e-Transfer and the existing enterprise payment service rather than build something new?" 
+
+There were actually two related decisions: what payout method made sense for non-RBC customers, and how much of the payment infrastructure we needed to own within Avion. 
+
+ 
+
+The existing internal account-crediting approach worked for customers with eligible RBC deposit accounts, but it didn't solve the problem for people banking elsewhere. 
+
+ 
+
+Interac e-Transfer was attractive because it was familiar to Canadian customers and allowed us to provide a payout experience without requiring an RBC deposit account. 
+
+ 
+
+We also evaluated whether to create a separate Avion-specific payment integration or reuse an existing enterprise payment capability. 
+
+ 
+
+My preference was to build on the enterprise capability because the bank already had the infrastructure and operational processes needed to initiate and manage outgoing payments. Creating a separate solution would introduce more integration work, additional control obligations and ongoing maintenance. 
+
+ 
+
+But reuse wasn't free. It meant Avion still needed to handle rewards-specific eligibility, balances, withdrawal requests and customer-facing states, while the enterprise payments capability handled the actual payment processing. 
+
+ 
+
+The product decision was really about establishing the right boundary between those systems. 
+
+ 
+
+We wanted to avoid rebuilding payments infrastructure, but we also couldn't delegate the entire customer experience and redemption lifecycle to a generic payments service. 
+
+ 
+
+I helped work through those requirements with engineering, enterprise payments and Financial Operations. 
+
+ 
+
+The trade-off was accepting some orchestration and reconciliation complexity in exchange for reusing established banking capabilities and keeping the Avion-specific implementation more focused. 
+
+1. Follow-up 2: "How did the system prevent customers from withdrawing the same cashback twice?" 
+
+The key was treating a withdrawal as a transaction with its own lifecycle, rather than simply deducting a balance and sending a payment request. 
+
+ 
+
+For example, suppose a customer has $50 in available cashback and requests a $50 withdrawal. 
+
+ 
+
+Once that request is valid, we need to make sure the same $50 can't be used for another redemption while the first payout remains unresolved. 
+
+ 
+
+A defensible design is to make the amount unavailable for further redemption and associate it with a unique withdrawal record. That record tracks the instruction and its eventual payment outcome. 
+
+ 
+
+If the payout completes, the redemption can be finalized. If it fails or is returned, we need to confirm the financial outcome before restoring the customer's available cashback. 
+
+ 
+
+The interesting part is that those transitions need to remain consistent even when different systems are updating asynchronously. 
+
+ 
+
+I'd define the product requirements around preventing duplicate financial effects, maintaining an accurate available balance and ensuring we could recover from failed transactions without losing track of the obligation. 
+
+ 
+
+Engineering would determine the specific persistence and concurrency controls. 
+
+ 
+
+My role was making sure the business and customer requirements were explicit, including what should happen if two requests were submitted close together or the original transaction status couldn't immediately be confirmed. 
+
+1. Follow-up 3: "What if the enterprise payments API times out after you submit the withdrawal?" 
+
+The first thing I'd distinguish is a definite rejection from an unknown outcome. 
+
+ 
+
+If the enterprise service rejects the request because of invalid data or an eligibility issue, we know it wasn't accepted in that form. 
+
+ 
+
+But if we submit the instruction and the request times out, we don't necessarily know whether the service processed it. 
+
+ 
+
+That's where blindly retrying becomes dangerous, because the first instruction may already have been accepted. 
+
+ 
+
+The approach I'd want is to preserve the original withdrawal reference, maintain the unresolved payment state and determine what happened to the original instruction before creating another one. 
+
+ 
+
+Depending on the enterprise architecture, engineering might implement idempotency keys, status lookups, durable request processing or reconciliation against payment records. 
+
+ 
+
+But the product-level guarantee is the important part: we must not accidentally pay out the same redemption twice, and we shouldn't tell the customer the money has been delivered until we have evidence supporting that status. 
+
+ 
+
+I'd also define what the customer sees during that uncertainty. 
+
+ 
+
+Instead of showing a generic failure and encouraging another withdrawal, we'd communicate that the request is being checked or processed and provide an appropriate path for support if it remains unresolved. 
+
+ 
+
+That protects both financial integrity and customer trust. 
+
+1. Follow-up 4: "How did you work with engineering, UX, Risk and Financial Operations? What was actually yours to decide?" 
+
+My responsibility was owning the consumer product requirements and connecting the customer experience to the banking and operational capabilities needed to deliver it. 
+
+ 
+
+That meant establishing the intended customer journey, eligibility and withdrawal behaviour, defining the product requirements for different payment outcomes, and prioritizing what needed to be supported for launch. 
+
+ 
+
+Engineering and enterprise architecture owned the detailed technical implementation. The enterprise payments team understood the existing service's capabilities and constraints. 
+
+ 
+
+Risk and AML were responsible for their control requirements, while Financial Operations owned the financial processes and reconciliation obligations. 
+
+ 
+
+My job wasn't to make those decisions independently for the specialists. 
+
+ 
+
+It was to make sure they translated into one coherent product. 
+
+ 
+
+For example, when we discussed pending or failed payments, I needed to understand how the enterprise service represented those conditions, what Financial Operations required for traceability, and how the customer experience should respond. 
+
+ 
+
+I worked with UX on the appropriate status and recovery messaging and with engineering on acceptance criteria for the relevant scenarios. 
+
+ 
+
+The difficult part wasn't getting individual teams to agree that reliability mattered. 
+
+ 
+
+It was ensuring that the decisions each team made didn't create an inconsistent or confusing experience for the customer. 
+
+ 
+
+That's where I believe the product ownership added the most value. 
+
+1. Follow-up 5: "How did you know the product was ready to launch, and what did you monitor afterward?" 
+
+For a payment capability, I wouldn't consider it ready simply because the happy path passed UAT. 
+
+ 
+
+We needed to establish that customers could withdraw successfully, that eligibility and limits behaved as expected, and that the operational teams could investigate and resolve exceptions. 
+
+ 
+
+The launch criteria I'd want to establish would cover successful payout processing, safe handling of duplicate requests, timeouts, failed transfers and accurate reconciliation between the redemption and payment records. 
+
+ 
+
+I'd also want clear ownership for exceptions, because not every issue is something a customer-facing engineering squad can resolve on its own. 
+
+ 
+
+In a controlled rollout, I'd monitor payout completion rates, processing time, unresolved payment states, duplicate-payment exceptions, reconciliation discrepancies and support contacts. 
+
+ 
+
+I'd look beyond the average processing time as well. A small population of customers waiting much longer than expected can still create a serious trust problem. 
+
+ 
+
+The actual product went on to handle roughly 3,200 quarterly withdrawal requests, with around 99% completed within 24 hours and approximately $1.2 million in annualized payout value. 
+
+ 
+
+Those metrics demonstrate that the capability operated at meaningful scale. 
+
+ 
+
+But I'd still distinguish successful financial completion from simply accepting a payment instruction, because the definition matters when you're evaluating reliability. 
+
+Deep dive 2  —Arc'teryx: Defining a $5.2M zero-to-one membership platform 
+
+Question triggers 
+
+Tell me about a zero-to-one product you led. 
+
+How do you prioritize when you can't build everything? 
+
+Describe a difficult stakeholder disagreement. 
+
+Tell me about a build-versus-buy decision. 
+
+How did you turn an ambiguous vision into an executable roadmap? 
+
+ 
+
+--------------------------------------- 
+ 
+REDUCED 
+
+ 
+
+At Arc'teryx, one of the bigger initiatives I led was developing a new membership platform around our ReBIRD ecosystem. The idea was to build a deeper relationship with customers beyond just purchasing products. So things like product care, repairs, trade-in and resale would become part of the membership experience. 
+
+ 
+
+The challenge was that those services already existed, but they were spread across different systems and business teams. And naturally, the original vision was pretty ambitious. We wanted membership to work across web, mobile and several different customer touchpoints. 
+
+ 
+
+I was leading the product strategy, MVP and vendor evaluation, along with the business case. What became clear during technical discovery was that building the front-end experience wasn't necessarily the hard part. It was getting the underlying systems to recognize the same customer, understand what they qualified for, and actually deliver the benefits. 
+
+ 
+
+For example, let's say a member earns a complimentary repair. Our membership platform might determine they're eligible, but Service Cloud is still responsible for managing the repair. So we needed to figure out which system owned the entitlement, how those systems communicated, and what happened if a repair was cancelled or the records didn't line up. 
+
+ 
+
+That got us thinking differently about the MVP. We could try to launch a much broader experience across channels, but we'd be taking on a lot more dependencies. At the same time, I didn't want us to build something that was basically just membership enrollment without giving customers a meaningful reason to join. 
+
+ 
+
+So I pushed for a more focused web-first MVP, with a smaller set of member experiences and the foundational capabilities we'd need to expand later. The goal was to prove that someone could join, complete a qualifying activity and actually receive a benefit—not just sign up for another account. 
+
+ 
+
+That direction shaped our roadmap, vendor evaluation and investment case. There was quite a bit of alignment needed across business, operations and technology, but we ultimately secured around $5.2 million in capital funding for the program phase. The platform hadn't launched yet, so I wouldn't claim adoption results. But we had taken a pretty ambitious concept and turned it into something much more focused and executable. 
+
+ 
+
+For me, the biggest decision was figuring out what we genuinely needed for the first release without losing the reason we were building membership in the first place. 
+
+2. Follow-up 1: "What evidence made you realize the original membership MVP was too ambitious?" 
+
+The biggest shift came from mapping the customer journeys end to end rather than looking at the membership features in isolation. 
+
+ 
+
+The original ambition was fairly comprehensive. We wanted members to engage across care, repairs, trade-in, events and multiple digital channels. 
+
+ 
+
+But when we started looking at how those journeys would actually function, we found that many of the most important steps depended on systems outside the membership platform. 
+
+ 
+
+Take a complimentary repair benefit. 
+
+ 
+
+The membership capability needs to identify the customer, determine eligibility and manage the entitlement. But the repair itself is managed through Service Cloud. 
+
+ 
+
+So we had to establish how the two systems would recognize the same customer, how the benefit would be validated, and how we'd know whether the repair had actually been fulfilled. 
+
+ 
+
+A mobile interface wouldn't solve those dependencies. 
+
+ 
+
+That was the important realization. We could invest heavily in creating a broader front-end experience but still struggle to deliver the underlying customer value reliably. 
+
+ 
+
+So I worked with engineering, architecture and our business stakeholders to map those dependencies and distinguish foundational capabilities from additional channel experiences. 
+
+ 
+
+That evidence influenced the decision to prioritize a narrower web-first MVP while preserving the identity, eligibility and fulfilment capabilities needed for future expansion. 
+
+2. Follow-up 2: "Why did you defer mobile? Wouldn't that make the customer experience worse?" 
+
+That's a fair challenge, because mobile could absolutely make membership more visible and accessible. 
+
+ 
+
+I wouldn't argue that mobile was unimportant. 
+
+ 
+
+The question was whether native mobile was essential to proving the first version of the membership proposition. 
+
+ 
+
+We had to separate the long-term channel strategy from the foundational capabilities the customer experience depended on. 
+
+ 
+
+If someone joins membership, completes a qualifying action and earns a benefit, we need to recognize and fulfil that correctly regardless of whether they access the experience through web or mobile. 
+
+ 
+
+During planning, we found that the harder dependencies were around identity, eligibility, activity attribution and integration with existing service platforms. 
+
+ 
+
+Adding native mobile would introduce another development and release stream, but it wouldn't eliminate those dependencies. 
+
+ 
+
+So the trade-off I advocated was to deliver a focused web-first experience, establish the core member journeys, and design the capabilities so mobile could be introduced later. 
+
+ 
+
+I also wouldn't have supported a purely enrollment-focused launch with no meaningful benefit experience. We still needed customers to experience the reason membership existed. 
+
+ 
+
+The principle was to narrow the number of channels and initial benefits without reducing the product to something that couldn't validate the proposition. 
+
+2. Follow-up 3: "How did you evaluate membership vendors? Why not build the platform internally?" 
+
+I approached the vendor evaluation as a platform decision rather than simply comparing loyalty features. 
+
+ 
+
+We were considering technologies such as Antavo, Open Loyalty, Annex Cloud and Salesforce, but the important question was how the membership capability would fit into our existing architecture. 
+
+ 
+
+We needed a way to recognize qualifying member activity, manage benefits and eligibility, and connect those capabilities to systems that already owned commerce, customer identity and service fulfilment. 
+
+ 
+
+Building everything ourselves could offer more control, particularly over Arc'teryx-specific experiences. 
+
+ 
+
+But it would also mean owning the development and long-term maintenance of capabilities that specialized platforms already provide, including rules configuration, benefit management and operational tooling. 
+
+ 
+
+On the other hand, buying a platform didn't eliminate integration complexity or guarantee flexibility. 
+
+ 
+
+A vendor could have an impressive feature catalog but still require significant custom work to support our identity model or ReBIRD use cases. 
+
+ 
+
+So I wanted the evaluation to consider the actual end-to-end member journeys, the integration effort, total cost of ownership and the ability to introduce new actions and benefits over time. 
+
+ 
+
+The question I was trying to answer was which solution would give us a sustainable foundation without overengineering the first release or creating unnecessary vendor dependency. 
+
+ 
+
+That evaluation helped shape our technology direction, scope and investment case. 
+
+2. Follow-up 4: "How did you handle stakeholders who wanted a larger launch?" 
+
+The important thing was recognizing that the competing priorities were legitimate. 
+
+ 
+
+From a marketing perspective, a broad launch across channels could create a much stronger introduction to membership. 
+
+ 
+
+From a service operations perspective, the concern was making sure the new benefits could actually be delivered without overwhelming existing workflows. 
+
+ 
+
+And from engineering and architecture, the concern was introducing too many cross-system dependencies before we'd established the core capabilities. 
+
+ 
+
+So I didn't approach it as a debate about whether one function understood the problem better than another. 
+
+ 
+
+I tried to bring the discussion back to what the first release needed to accomplish and what each option would cost us. 
+
+ 
+
+For example, we could compare the additional mobile integration and testing work against the member capabilities we'd have to defer to accommodate it. 
+
+ 
+
+I also wanted to make sure the proposed MVP wasn't just a technical foundation. It still needed an actual customer value exchange. 
+
+ 
+
+That helped frame the discussion around a common objective: deliver something meaningful, reduce unnecessary launch risk and keep a credible path to the broader vision. 
+
+ 
+
+The web-first recommendation was ultimately reflected in the program direction and roadmap. 
+
+ 
+
+I think the most important part of stakeholder management is making the trade-off visible enough that people understand not just what you're recommending, but what they're giving up with the alternatives. 
+
+2. Follow-up 5: "How would you measure success when the product hadn't launched?" 
+
+I'd separate the success of the product development phase from the success of the eventual membership program. 
+
+ 
+
+Before launch, we couldn't claim customer retention or engagement improvements. Those would need to be measured after members began using the program. 
+
+ 
+
+At the planning and delivery stage, the meaningful outcomes were establishing a viable proposition, confirming how the core journeys would function, resolving important architectural dependencies, defining the MVP and securing the investment needed to execute it. 
+
+ 
+
+That work contributed to approximately $5.2 million in approved capital funding for the program phase. 
+
+ 
+
+For the actual launch, I'd build the metrics around the member value exchange rather than simply count enrollments. 
+
+ 
+
+I'd measure how many eligible customers join, how many complete their first qualifying action, whether those actions are attributed successfully, and how many members actually redeem and receive benefits. 
+
+ 
+
+I'd then look at repeat participation and whether the program changes longer-term engagement. 
+
+ 
+
+I'd also have operational guardrails, such as failed benefit fulfilment, duplicate entitlements and customer support contacts. 
+
+ 
+
+One metric I'd pay particular attention to is the percentage of enrolled members who complete a meaningful qualifying action within an initial period. 
+
+ 
+
+That tells us more about whether membership is delivering value than the total number of accounts created. 
+
+Deep dive 3 — HBC Mastercard: Turning new cardholders into active, profitable customers 
+
+Question triggers 
+
+Tell me about a growth challenge you owned. 
+
+How did you identify an opportunity using data? 
+
+Describe a meaningful experiment you ran. 
+
+How do you know an initiative creates incremental growth? 
+
+Tell me about a hypothesis that didn't work as expected. 
+
+ 
+ 
+
+----------------------------------------- 
+ 
+REDUCED 
+ 
+ 
+
+At HBC, I managed growth for our Mastercard portfolio, which had over 500,000 cardholders. 
+
+ 
+
+One challenge we kept coming back to was that getting someone approved for a credit card didn't necessarily mean they were going to use it regularly. We wanted to understand what was happening after acquisition, so we spent a lot of time looking at customer cohorts—when people made their first purchase, how often they came back, and where engagement started dropping off. 
+
+ 
+
+One area that stood out was early activation. Customers who didn't start using their card relatively soon after approval tended to have much weaker engagement later on. The obvious thing to do would be to give everyone more rewards points to encourage spending. But I was concerned we'd end up spending a lot of money rewarding people for purchases they were already going to make. So we focused more on targeted interventions and using experiments to understand whether we were actually changing behaviour. 
+
+ 
+
+For example, let's say we targeted new cardholders who hadn't made a purchase within their first two weeks. We could test a first-purchase points incentive against a control group and see whether it improved activation. But I wouldn't just look at the first purchase. 
+
+ 
+
+Say activation increased by five percentage points, but when we looked at those customers a couple of months later, the improvement in ongoing usage was only three points. That's still an interesting result, but now we have to ask whether the cost of the incentive was worth the additional customers who stayed active. 
+
+ 
+
+And that's where I think a lot of the product judgment comes in. Do we scale the campaign, make the incentive smaller, target a smaller group, or is there a better onboarding experience we should be testing instead? 
+
+ 
+
+Across our broader portfolio initiatives, we improved active cardholder rates by about four percentage points, increased spending per active cardholder by 5%, and our model indicated roughly a 10% improvement in customer lifetime value. Those were results across multiple initiatives, not a single experiment. 
+
+ 
+
+What I enjoyed about that work was connecting customer behaviour with the actual economics of growing the product. A campaign can look successful on conversion and still not be the best commercial decision. 
+
+ 
+ 3. Follow-up 1: "How did you identify which customers to target?" 
+I started by breaking the customer base into lifecycle cohorts rather than treating all cardholders as one population. 
+
+ 
+
+The key distinction was between acquisition, initial activation and ongoing usage. 
+
+ 
+
+A newly approved cardholder who hasn't made their first purchase has a different problem from someone who used to spend regularly but has disengaged. 
+
+ 
+
+In a realistic cohort analysis, we'd look at how quickly customers make their first purchase and whether that behaviour is associated with continued usage. 
+
+ 
+
+For example, imagine we found that customers purchasing within their first 14 days had much higher activity at day 90 than those who didn't. 
+
+ 
+
+I wouldn't interpret that as proof that forcing an early purchase creates loyalty. More motivated customers might simply do both. 
+
+ 
+
+But it would identify a meaningful group where we could test an intervention. 
+
+ 
+
+I'd combine that behavioural analysis with the customer journey. 
+
+ 
+
+Are people waiting for their physical card? Do they understand where it can be used? Are they missing an obvious first spending occasion? 
+
+ 
+
+Then I'd prioritize segments where the potential impact was meaningful and the intervention could be tested economically. 
+
+ 
+
+The important decision is to start from a specific customer behaviour and hypothesis rather than choosing an incentive first and then finding an audience for it. 
+
+3. Follow-up 2: "Walk me through the experiment. How did you know the offer actually worked?" 
+
+I'd use a randomized experiment so we could distinguish the effect of the offer from customers who would have activated on their own. 
+
+ 
+
+For example, suppose we identified 8,000 eligible customers who hadn't made their first purchase within 14 days. 
+
+ 
+
+We could randomly split them into two groups of 4,000. 
+
+ 
+
+The control group would continue receiving the standard onboarding experience, while the treatment group received a time-limited points incentive after a qualifying purchase. 
+
+ 
+
+I'd predefine the primary metric as first-purchase activation within the measurement window, and I'd keep the denominator as the original eligible randomized population. 
+
+ 
+
+That's important because measuring only customers who opened or redeemed the offer would introduce selection bias. 
+
+ 
+
+I'd also measure subsequent card activity after the incentive period, because the long-term objective wasn't just one transaction. 
+
+ 
+
+In an illustrative result, the control group might activate at 21% and the treatment group at 26%, giving us a five-percentage-point lift. 
+
+ 
+
+But I wouldn't stop there. 
+
+ 
+
+I'd review statistical uncertainty, implementation integrity, whether the two groups were comparable, and whether there were any important differences in later behaviour. 
+
+ 
+
+Then I'd evaluate the financial impact before deciding whether the intervention deserved a larger rollout. 
+
+3. Follow-up 3: "If activation increased, why wouldn't you scale the incentive?" 
+
+Because a positive activation result doesn't automatically mean we've created profitable incremental behaviour. 
+
+ 
+
+Imagine the treatment group generates 200 additional first-purchase activations, but only 120 additional customers are active during the later measurement period. 
+
+ 
+
+Now suppose the incentive has a $10 face value and approximately 1,040 treatment customers qualify for it. 
+
+ 
+
+That creates up to $10,400 in reward face-value exposure, including incentives paid to customers who would have activated without the offer. 
+
+ 
+
+When you divide that by the 120 additional later-active customers, you're spending roughly $87 in offer face value for each incremental later-active customer. 
+
+ 
+
+That doesn't automatically mean the experiment failed, because we'd need the actual reward economics and longer-term contribution. 
+
+ 
+
+But suppose our financial model indicated only $70 in incremental contribution per additional later-active customer over the relevant horizon. 
+
+ 
+
+Under those simplified assumptions, I wouldn't scale the campaign as designed. 
+
+ 
+
+I'd consider a smaller incentive, a more responsive customer segment or a non-financial onboarding improvement. 
+
+ 
+
+The key is that an experiment can validate our behavioural hypothesis while invalidating the commercial case for the proposed solution. 
+
+ 
+
+That's still a useful result, because it changes where we invest. 
+
+3. Follow-up 4: "How did you calculate customer lifetime value, and how do you know your work caused the improvement?" 
+
+I'd distinguish between observed portfolio performance and modeled lifetime value. 
+
+ 
+
+Observed metrics include active cardholder rate, transaction frequency and spending per active cardholder. 
+
+ 
+
+Lifetime value is a model based on assumptions about how customer behaviour translates into future economic value. 
+
+ 
+
+For a co-branded card portfolio, that requires understanding the actual partnership economics, rewards costs, acquisition and servicing costs, customer retention and the value of ongoing customer activity. 
+
+ 
+
+I wouldn't assume HBC simply received all the interchange revenue generated by card spending. We'd use the commercial arrangements and financial assumptions relevant to our program. 
+
+ 
+
+The model would estimate the expected value of a customer relationship over time, with appropriate retention assumptions and discounting where relevant. 
+
+ 
+
+Across our portfolio growth work, we saw a four-percentage-point improvement in active cardholder rate and around 5% growth in spending per active cardholder. Our model indicated approximately 10% improvement in customer lifetime value. 
+
+ 
+
+But I wouldn't attribute that entire LTV improvement to one campaign. 
+
+ 
+
+We ran multiple initiatives, and broader commercial conditions could influence the outcome. 
+
+ 
+
+For individual experiments, I'd use controlled comparisons to estimate incremental impact. For portfolio-level results, I'd be more careful about attribution and explain the assumptions behind the model. 
+
+3. Follow-up 5: "What did you do when a growth experiment produced results that weren't as strong as expected?" 
+
+One useful example is an incentive that improves the immediate activation metric but doesn't generate enough sustained behaviour to justify its cost. 
+
+ 
+
+Suppose we'd hypothesized that encouraging the first card purchase would help customers develop a longer-term spending habit. 
+
+ 
+
+We test an offer and see a meaningful lift in first-purchase activation. 
+
+ 
+
+Initially, that looks promising. 
+
+ 
+
+But when we examine activity after the promotion ends, the improvement is considerably smaller. And once we include the rewards cost, the economics of a broad rollout aren't particularly attractive. 
+
+ 
+
+That tells us the original hypothesis was only partially correct. 
+
+ 
+
+The incentive helped customers complete the first action, but didn't necessarily solve the reasons they weren't continuing to use the card. 
+
+ 
+
+So rather than declare the experiment successful and scale it, I'd revisit the customer problem. 
+
+ 
+
+Maybe the remaining friction is that customers don't understand where the card offers the best value, or the ongoing rewards proposition isn't compelling enough. 
+
+ 
+
+I'd use the results to narrow the target audience, change the incentive or test an intervention focused on ongoing utility rather than a one-time reward. 
+
+ 
+
+What matters to me is that we treat experiments as opportunities to make better decisions, not exercises where we need to prove our initial idea was right. 
+
+Deep dive 4 — HBC Mastercard: Redesigning the credit application with Neo Financial 
+
+Question triggers 
+
+Tell me about improving conversion or onboarding. 
+
+How did you discover the real customer problem? 
+
+Describe improving a journey you didn't fully own. 
+
+What changes did you make based on customer research? 
+
+How did you measure conversion across different systems? 
+
+-------------------------------------------------------------- 
+
+ 
+REDUCED 
+ 
+ 
+
+Another example from HBC was redesigning the Mastercard application experience when we transitioned the program to Neo Financial. 
+
+ 
+
+The interesting thing was that we weren't just trying to acquire new customers. We also had existing HBC Mastercard holders who were familiar with the old program but needed to apply for the new card. 
+
+ 
+
+And we didn't control the whole journey. Customers discovered the card through HBC, but Neo owned the credit application and underwriting. So one of the first things I wanted to understand was where we were actually losing people. 
+
+ 
+
+Was it that customers weren't interested in the card, or were they interested but struggling to complete the application? When we looked at the funnel, one area worth investigating was what happened after customers clicked Apply and moved into Neo's application. 
+
+ 
+
+For existing cardholders, there was a potential expectation problem. Someone who had held an HBC Mastercard for years might assume they were simply getting a replacement card, when really they needed to complete a new credit application. That gave us a different problem to solve than simply generating more traffic. 
+
+ 
+
+We could run stronger promotions, ask Neo to make bigger changes to its application, or improve the part of the customer journey we had more direct control over. I favoured starting with the pre-application experience and the handoff. We worked with design on making the issuer relationship clearer, setting expectations around the new application, and making the transition into Neo feel more natural. 
+
+ 
+
+We were also careful not to add another lengthy qualification step that would just duplicate information Neo already needed to collect. And because the journey crossed two organizations, measurement mattered. More Apply clicks didn't necessarily mean more applications completed, so we needed to look at downstream outcomes through the reporting available from Neo. 
+
+ 
+
+The redesign ultimately improved application completions by about 15%, and Neo's platform supported credit decisions in under three minutes. What stuck with me was that the solution wasn't necessarily making the application shorter. It was reducing the uncertainty customers experienced before they even got into it. 
+
+ 
+ 4. Follow-up 1: "How did you determine where the application friction was coming from?" 
+
+The first thing I wanted to distinguish was whether customers weren't interested in the card or whether interested customers were struggling to complete the application. 
+
+ 
+
+Those require different solutions. 
+
+ 
+
+We had an acquisition journey that started on HBC's digital properties but moved to Neo for the actual credit application. 
+
+ 
+
+So I'd look at the funnel in stages: card-page visits, Apply clicks, successful partner handoffs, recorded application starts and completed submissions. 
+
+ 
+
+In a representative analysis, imagine 10,000 visitors produced 3,500 Apply clicks, but only 2,500 application starts and 1,600 completed applications. 
+
+ 
+
+That suggests meaningful friction after customers have expressed interest, but the numbers alone don't explain why. 
+
+ 
+
+I'd work with UX and the partner team to review session behaviour, customer feedback and usability research. 
+
+ 
+
+For example, former HBC cardholders might expect a straightforward replacement of their existing card and be surprised when redirected into a new credit application. 
+
+ 
+
+If several research participants hesitate at that transition and support contacts show similar confusion, that gives us a more credible explanation for the drop-off. 
+
+ 
+
+The important part is that we don't choose the solution solely because one funnel stage has a low conversion rate. We identify the mechanism causing the friction and use that to inform the redesign. 
+
+4. Follow-up 2: "What exactly did you change in the product?" 
+
+One important area was making sure the acquisition journey set the right expectations before customers entered Neo's application. 
+
+ 
+
+In the earlier experience, a customer could encounter an HBC Mastercard offer, select Apply and then find themselves in a different issuer's application process. 
+
+ 
+
+That transition could be especially confusing for someone who previously held the HBC Mastercard and didn't realize they needed to apply for a new credit product. 
+
+ 
+
+So the redesigned journey would make the issuer relationship much clearer before the handoff. 
+
+ 
+
+We'd present the card proposition, important terms and the fact that a new application and credit decision were required. We'd also explain what customers should expect when continuing into Neo's experience. 
+
+ 
+
+One design choice I'd defend is keeping that explanation concise. 
+
+ 
+
+We considered whether to add more qualification questions on the HBC side, but that would introduce another step and could duplicate information Neo already needed to collect. 
+
+ 
+
+The goal wasn't to make the journey longer or shorter for its own sake. It was to remove uncertainty at the point where customers were deciding whether to proceed. 
+
+ 
+
+I would own the customer experience requirements, prioritization and acceptance criteria, while working with UX, HBC engineering and Neo on implementation and the partner handoff. 
+
+ 
+
+That's a meaningful product change because it addresses an identified customer problem rather than simply changing promotional messaging. 
+
+4. Follow-up 3: "Why not just ask Neo to simplify the application or offer a bigger incentive?" 
+
+Those were both reasonable alternatives, but I'd first ask whether they addressed the specific friction we'd identified. 
+
+ 
+
+A larger incentive might make the card more attractive and encourage additional Apply clicks, but it wouldn't necessarily help customers who were already interested and confused about the new application process. 
+
+ 
+
+Similarly, improving Neo's underlying form could have value, particularly if we found significant abandonment within specific form steps. 
+
+ 
+
+But those changes depended on a separate product organization and had to respect Neo's underwriting, identity and disclosure requirements. 
+
+ 
+
+If our research suggested that the unexpected transition and unclear application expectations were contributing to abandonment, I'd prioritize improvements to that part of the experience first. 
+
+ 
+
+Those were changes we could influence more directly while continuing to coordinate deeper application improvements with Neo. 
+
+ 
+
+There was also a trade-off in how much information we presented upfront. 
+
+ 
+
+We needed enough detail for informed decision-making without introducing another lengthy qualification process that simply repeated Neo's application. 
+
+ 
+
+So the decision was to focus on clarity and continuity rather than add incentives or more form fields. 
+
+ 
+
+I'd validate that approach against completed applications, not just clicks, and reconsider the next priority if the data showed that downstream form friction remained the dominant issue. 
+
+4. Follow-up 4: "How did you measure the conversion improvement when Neo owned the application?" 
+
+This was one of the more important analytics considerations because we had visibility into different parts of the customer journey. 
+
+ 
+
+Within HBC, we could measure offer impressions, page engagement, Apply selections and the handoff into the issuer application. 
+
+ 
+
+But once someone entered Neo's system, our visibility depended on the reporting and attribution arrangements available through the partnership. 
+
+ 
+
+So an Apply click wasn't necessarily a completed application. 
+
+ 
+
+I'd want a consistent acquisition measurement model that separated those events and connected the upstream experience to the most reliable downstream outcome data we could obtain. 
+
+ 
+
+For example, if supported by the integration and privacy arrangements, we could use campaign- or experience-variant identifiers to help Neo report how many submitted applications originated from each acquisition experience. 
+
+ 
+
+Then we could compare completed applications between eligible control and treatment cohorts, rather than simply conclude that an increase in referrals meant an improvement in acquisition. 
+
+ 
+
+In the illustrative test, the original experience produces 1,600 applications from 10,000 visitors, while the redesigned experience produces 1,840 from an equally sized comparison group. 
+
+ 
+
+That's an increase from 16% to 18.4% visitor-to-submission conversion, or a 15% relative lift. 
+
+ 
+
+The actual HBC redesign improved application completions by approximately 15%, but I'd be precise about the underlying metric definition and avoid overstating what individual-level attribution was available. 
+
+ 
+
+The principle is to optimize for the customer completing the application, not simply leaving our website. 
+
+4. Follow-up 5: "How did you balance conversion optimization with credit and compliance requirements?" 
+I think that's particularly important in financial products because making an experience easier isn't always the same thing as removing steps. 
+
+ 
+
+Some information needs to be communicated clearly so customers can make an informed credit decision. 
+
+ 
+
+And because Neo was the issuer, there were also responsibilities and requirements we needed to coordinate rather than change unilaterally. 
+
+ 
+
+I'd separate the mandatory parts of the journey from unnecessary friction. 
+
+ 
+
+For example, we shouldn't remove important card terms, eligibility information or required disclosures just because they're associated with abandonment. 
+
+ 
+
+But we can improve the order in which information appears, make the language easier to understand and ensure the transition to the issuer is clear. 
+
+ 
+
+I'd work with design, our partner team and the relevant compliance owners to confirm which elements were mandatory and where we had flexibility. 
+
+ 
+
+Then I'd evaluate the redesign on completed applications while monitoring complaints, customer confusion and any quality indicators available through the partnership. 
+
+ 
+
+For me, the goal wasn't to maximize conversion at any cost. 
+
+ 
+
+It was to make the customer journey easier and more trustworthy while preserving the controls and disclosures that make it a responsible financial product. 
+
+Deep dive 5 — Air Canada Aeroplan: Scaling credit-card acquisition across TD, CIBC and Amex 
+
+Question triggers 
+
+Tell me about managing multiple external partners. 
+
+How have you improved acquisition at scale? 
+
+Describe an experiment with different results by customer segment. 
+
+How do you balance partner objectives with customer needs? 
+
+Tell me about prioritizing different customer journeys. 
+
+ 
+
+-------------------------------------------------------- 
+
+ 
+
+REDUCED 
+ 
+ 
+
+At Air Canada, I owned digital credit-card acquisition across our Aeroplan partnerships with TD, CIBC and American Express. The challenge was that we had multiple cards with different fees, benefits and earning structures, and customers ultimately had to apply through the issuing banks. 
+
+ 
+
+So we were responsible for helping customers make a decision, but we didn't own the entire application journey. One thing we looked at was how people came into the acquisition experience. Some customers arrived through a specific card promotion and already knew what they wanted. Others were just exploring Aeroplan cards and trying to figure out which one made sense for them. And those are pretty different customer needs. 
+
+ 
+
+If someone already knows they want a particular card, the last thing you want to do is make them go through a bunch of comparison steps. But if they're still undecided, sending them straight to an issuer's application isn't necessarily helpful either. So we looked at how to make the cards easier to compare without creating friction for customers who were ready to apply. 
+
+ 
+
+One approach was a shared comparison experience, where customers could understand things like annual fees, earn rates and travel benefits more consistently, while still having direct application paths for specific cards. There was also a trade-off in balancing that experience across three different banking partners, because their products and requirements weren't identical. 
+
+ 
+
+What's interesting is how experimentation could change that decision. Say a comparison-first experience improves conversion among people browsing multiple cards, but actually hurts conversion among customers who already selected one. 
+
+ 
+
+I wouldn't roll that out universally just because the overall number looked better. I'd want to preserve the direct journey for high-intent customers and validate a different experience for people who needed help comparing. There was also a measurement challenge because we could track what happened within Aeroplan, but downstream applications depended on the issuers. So we had to be careful about distinguishing referrals from actual acquisitions. 
+
+ 
+
+Our broader digital acquisition work improved conversion by around 40%, and the overall program grew acquisitions by approximately 427% year over year, although that reflected multiple initiatives. 
+
+ 
+
+The big takeaway for me was that the best acquisition experience depends on what the customer is trying to accomplish. Sometimes that means fewer steps, and sometimes it means giving them better information before they decide. 
+
+5. Follow-up 1: "How did you determine that different customers needed different acquisition journeys?" 
+
+One important distinction in the Aeroplan acquisition experience was that customers arrived with very different levels of intent. 
+
+ 
+
+Someone entering through a specific TD, CIBC or Amex campaign might already know which card they wanted. 
+
+ 
+
+But someone browsing Aeroplan's broader credit-card experience could still be comparing products and deciding which was most relevant to them. 
+
+ 
+
+We'd investigate that through acquisition-channel data, customer behaviour and research. 
+
+ 
+
+For example, a hypothetical analysis might show a 20% issuer-handoff rate among visitors arriving with a specific-card intent, compared with 8% among customers browsing several offers. 
+
+ 
+
+I wouldn't interpret that difference as proof that the comparison experience was bad, because those groups weren't equivalent to begin with. 
+
+ 
+
+But it would suggest different customer needs. 
+
+ 
+
+We could then look at what exploratory customers do before leaving. 
+
+ 
+
+Are they revisiting annual fees? Comparing earning rates? Moving repeatedly between issuer pages? Do they struggle to understand which benefits justify a higher annual fee? 
+
+ 
+
+If research supports those behaviours, then we have a clear hypothesis: undecided customers need better decision support, while high-intent customers need a direct path to the application. 
+
+ 
+
+The decision is to optimize around customer intent rather than assume one acquisition flow works equally well for everyone. 
+
+5. Follow-up 2: "What specifically did you change in the acquisition experience, and how did you manage three issuers?" 
+
+The opportunity was to create a more coherent way for customers to understand the different Aeroplan credit cards without forcing each issuer into an identical experience. 
+
+ 
+
+In an illustrative redesign, we'd introduce a shared comparison framework with consistent information about annual fees, Aeroplan earning potential, travel benefits, welcome offers and relevant eligibility conditions. 
+
+ 
+
+That allows customers to compare products on a common basis before selecting an issuer. 
+
+ 
+
+But we'd still preserve direct application paths for customers who already know which card they want. 
+
+ 
+
+The technical and organizational challenge is that TD, CIBC and Amex have different products and commercial requirements. 
+
+ 
+
+So I'd work with engineering and the partner teams on a common product-information structure that supports issuer-specific attributes without requiring completely separate page implementations for every card. 
+
+ 
+
+We'd also need a clear process for reviewing changes to financial terms and promotional offers, because outdated product information could create a poor customer experience and compliance issues. 
+
+ 
+
+My role would be defining the customer journey, prioritization, experimentation and partner requirements, while engineering owned the detailed implementation and the issuers retained responsibility for their application systems. 
+
+ 
+
+The product decision was to standardize what helped customers make decisions while preserving the differences that mattered. 
+
+ 
+
+That created a more consistent acquisition experience without pretending the underlying banking products were interchangeable. 
+
+5. Follow-up 3: "Tell me about an experiment where the overall result hid something important." 
+
+One interesting experiment to think about is whether we should make card comparison more prominent for everyone. 
+
+ 
+
+The hypothesis sounds reasonable: if customers can compare products more easily, more of them should proceed to an application. 
+
+ 
+
+But suppose the initial A/B test produces different results by customer segment. 
+
+ 
+
+For visitors browsing multiple offers, the comparison-first journey increases qualified issuer handoffs from 11% to 13.2%. 
+
+ 
+
+But for customers who already entered through a specific-card offer, it reduces progression from 23% to 19%. 
+
+ 
+
+The overall result could still look positive if most visitors were exploratory, but that would hide the fact that we'd introduced unnecessary friction for a meaningful group. 
+
+ 
+
+I wouldn't immediately roll out the comparison-first journey to everyone. 
+
+ 
+
+I'd review the reliability of the segment-level results, whether those segments were identified before the experiment, and whether we had enough sample size to support the decision. 
+
+ 
+
+If the pattern held, the better product approach would be to preserve direct application routes for high-intent customers while making comparison tools prominent for undecided visitors. 
+
+ 
+
+We'd then validate that revised experience rather than assume the initial segment findings proved the optimal design. 
+
+ 
+
+The important learning is that a feature can improve an aggregate metric while making the experience worse for a specific customer need. 
+
+ 
+
+Good experimentation is about understanding those differences and changing the product accordingly. 
+
+5. Follow-up 4: "How did you measure success when each bank owned its application? Did your work really cause 427% acquisition growth?" 
+
+I'd separate the metrics we could directly observe in Aeroplan's acquisition experience from the downstream outcomes owned by the issuing banks. 
+
+ 
+
+Within Aeroplan, we could evaluate card-offer engagement, card selection and application handoffs. 
+
+ 
+
+But TD, CIBC and Amex owned their application and underwriting processes, so downstream measurement depended on the data and reporting available from each partner. 
+
+ 
+
+We needed to be careful about equating a higher number of referrals with more completed acquisitions. 
+
+ 
+
+Where supported, I'd use consistent campaign-level or experience-level attribution and partner reporting to connect our optimization work to actual acquisition outcomes. 
+
+ 
+
+For controlled tests, I'd compare eligible groups rather than simply look at before-and-after traffic. 
+
+ 
+
+Through the digital acquisition optimization work, conversion improved by approximately 40%. 
+
+ 
+
+But I wouldn't attribute the program's full 427% year-over-year acquisition growth to that redesign. 
+
+ 
+
+The larger result reflected multiple commercial and product factors, potentially including promotional activity, partner investment, channel expansion and market conditions. 
+
+ 
+
+What I think demonstrates product impact more directly is the conversion improvement associated with the digital experience, interpreted using the actual measurement definition. 
+
+ 
+
+The broader acquisition result is important business context, but we shouldn't confuse it with a causal estimate of one product initiative. 
+
+5. Follow-up 5: "What if one bank wanted more prominent placement, but customer data suggested another card was a better fit?" 
+
+I'd first understand the commercial commitments we had with the issuing partner, because there could be contractual requirements around merchandising or promotional placement. 
+
+ 
+
+But I'd also separate commercial visibility from the job we're trying to help customers accomplish. 
+
+ 
+
+If we're presenting a comparison experience, customers need to be able to understand the meaningful differences between the products. 
+
+ 
+
+A card with a larger promotional budget isn't automatically the best product for every customer. 
+
+ 
+
+So I'd work with our partnerships team to understand what was negotiable, then look at how we could meet commercial commitments while preserving an accurate and useful customer experience. 
+
+ 
+
+For example, a partner might receive clearly identified promotional visibility without controlling the logic of a customer-facing comparison. 
+
+ 
+
+I'd also bring data into the discussion. 
+
+ 
+
+Are customers finding the product relevant? Are they proceeding to applications? Do those referrals convert into completed acquisitions, or are we creating low-quality traffic? 
+
+ 
+
+I wouldn't turn the discussion into product versus commercial. 
+
+ 
+
+I'd make it a shared decision about long-term acquisition quality, customer trust and partnership value. 
+
+ 
+
+If the proposed placement materially undermined the experience, I'd make that trade-off explicit and recommend a different approach. 
+
+ 
+
+The goal is to create an acquisition journey that's commercially viable without misleading customers about the products they're choosing. 
+

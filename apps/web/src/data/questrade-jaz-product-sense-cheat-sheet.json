@@ -1,0 +1,550 @@
+{
+  "metadata": {
+    "source": "Questrade_Senior_PM_Master_Cheat_Sheet_Arial.docx",
+    "section": "1. Product Sense Cheat Sheet",
+    "version": "2026-11-11"
+  },
+  "title": "Product Sense Cheat Sheet",
+  "useFor": "Use for: Design X, improve Y, increase adoption, solve a customer problem, prioritize an MVP, evaluate an opportunity.",
+  "frameworkSteps": [
+    "Clarify",
+    "User",
+    "Problem",
+    "Solutions",
+    "Prioritize",
+    "Measure"
+  ],
+  "introNote": "Clarify \u2192 User \u2192 Problem \u2192 Solutions \u2192 Prioritize \u2192 Measure. Treat the items below as hypotheses to validate, not facts to assume.",
+  "interviewTip": "Interview tip: Select one segment to prioritize. Don\u2019t design for everyone.",
+  "customerSegments": [
+    "For banking: new applicants, newly activated accounts, dormant accounts, secondary-account users, primary-account users, customers with recurring deposits, customers with multiple bank relationships, families, and financially vulnerable customers.",
+    "For generic products: first-time versus experienced users, free versus paid, light versus power users, individual versus business, high versus low engagement, high versus low lifetime value, and recently acquired versus long-tenured customers."
+  ],
+  "sections": [
+    {
+      "id": "problems",
+      "title": "A. Common customer problems",
+      "table": {
+        "columns": [
+          "Problem category",
+          "Typical customer problem",
+          "Potential product intervention"
+        ],
+        "rows": [
+          [
+            "Awareness",
+            "Doesn\u2019t know the product or feature exists",
+            "Education, contextual discovery"
+          ],
+          [
+            "Discoverability",
+            "Can\u2019t find the relevant action",
+            "Navigation, entry points, search"
+          ],
+          [
+            "Onboarding friction",
+            "Too many steps before first value",
+            "Progressive onboarding, prefilling"
+          ],
+          [
+            "Unclear value",
+            "Doesn\u2019t understand why to switch",
+            "Value proposition, demonstrations"
+          ],
+          [
+            "Trust \u2605",
+            "Doesn\u2019t feel comfortable moving money",
+            "Transparency, safeguards, reassurance"
+          ],
+          [
+            "Switching costs \u2605",
+            "Changing payroll and bills feels difficult",
+            "Guided account switching, checklists"
+          ],
+          [
+            "Fragmentation \u2605",
+            "Financial activity is spread across accounts",
+            "Unified views, categorization"
+          ],
+          [
+            "Lack of clarity \u2605",
+            "Can\u2019t distinguish available and pending funds",
+            "Clear balance definitions, statuses"
+          ],
+          [
+            "Uncertainty \u2605",
+            "Doesn\u2019t know whether a payment succeeded",
+            "Status tracking and notifications"
+          ],
+          [
+            "Lack of control",
+            "Can\u2019t manage spending or recurring obligations",
+            "Alerts, controls, spending limits"
+          ],
+          [
+            "Unexpected costs",
+            "Fees or restrictions are surprising",
+            "Upfront disclosure, proactive warnings"
+          ],
+          [
+            "High cognitive load",
+            "Too much information to interpret",
+            "Summaries, hierarchy, progressive detail"
+          ],
+          [
+            "Poor personalization",
+            "Experiences don\u2019t reflect individual needs",
+            "Relevant recommendations, customization"
+          ],
+          [
+            "Habit formation",
+            "No compelling reason to return",
+            "Recurring value, timely insights"
+          ],
+          [
+            "Low motivation",
+            "Value is delayed or invisible",
+            "Milestones, progress, immediate utility"
+          ],
+          [
+            "Poor accessibility",
+            "Some customers cannot complete key tasks",
+            "Accessible interfaces and alternatives"
+          ],
+          [
+            "Collaboration gaps",
+            "Households can\u2019t coordinate financial activity",
+            "Permissions, shared insights"
+          ],
+          [
+            "Recovery friction",
+            "Errors are difficult to resolve",
+            "Clear recovery paths and support"
+          ],
+          [
+            "Privacy concerns",
+            "Doesn\u2019t trust how data is collected or used",
+            "Consent, control, data minimization"
+          ],
+          [
+            "Low confidence",
+            "Fear of making a costly mistake",
+            "Confirmation, previews, undo where feasible"
+          ],
+          [
+            "Unreliable performance",
+            "Slow or inconsistent experiences undermine trust",
+            "Reliability improvements, clear status handling"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "metrics",
+      "title": "B. Success metrics and guardrails",
+      "prose": [
+        "Learn which metrics belong to which objective. The primary metric should measure customer value, rather than merely activity."
+      ],
+      "tables": [
+        {
+          "id": "objectives",
+          "title": "Metrics by objective",
+          "columns": [
+            "Objective",
+            "Primary success metric",
+            "Leading / supporting",
+            "Guardrails"
+          ],
+          "rows": [
+            [
+              "Acquisition",
+              "Qualified new customers",
+              "Visit-to-signup conversion, CAC, referral rate",
+              "Fraudulent signups, acquisition cost, low-quality activation"
+            ],
+            [
+              "Onboarding",
+              "Eligible users reaching first value",
+              "Step conversion, completion time, verification completion",
+              "Abandonment, verification failures, support contacts"
+            ],
+            [
+              "Activation \u2605",
+              "% of new accounts completing a meaningful first action",
+              "First deposit, first payment, time to value",
+              "Fraud losses, failed first transactions"
+            ],
+            [
+              "Direct deposit \u2605",
+              "% of eligible accounts receiving recurring payroll deposits",
+              "Switching-flow completion, first deposit, second deposit",
+              "Incorrect instructions, failed deposits, complaints"
+            ],
+            [
+              "Primary banking \u2605",
+              "% of customers meeting a defined primary-usage threshold",
+              "Recurring inflows, spending activity, bill payments, retention",
+              "Account closures, complaints, incentive abuse"
+            ],
+            [
+              "Transaction activity \u2605",
+              "Completed transactions per active transactor",
+              "Active transactors, attempts per user, completion rate",
+              "Failed transactions, duplicates, fraud"
+            ],
+            [
+              "Money movement \u2605",
+              "Successfully completed payment rate",
+              "Initiation rate, processing time, completion time",
+              "Duplicate payments, losses, reconciliation exceptions"
+            ],
+            [
+              "Account understanding \u2605",
+              "% of customers correctly interpreting account state",
+              "Balance-detail engagement, task success, comprehension testing",
+              "Misunderstanding, support calls, inaccurate data"
+            ],
+            [
+              "Financial insights \u2605",
+              "% taking a valuable action following an insight",
+              "Insight views, relevance feedback, follow-through",
+              "Incorrect recommendations, privacy complaints"
+            ],
+            [
+              "Feature adoption",
+              "% of eligible customers using the feature meaningfully",
+              "Discovery, first use, repeat use",
+              "Cannibalization, errors, support volume"
+            ],
+            [
+              "Engagement",
+              "Meaningful actions per active user",
+              "WAU, MAU, session frequency",
+              "Notification fatigue, unproductive engagement"
+            ],
+            [
+              "Retention",
+              "Customer retention at a defined interval",
+              "Repeat activity, cohort retention",
+              "Complaints, dissatisfaction, excessive incentives"
+            ],
+            [
+              "Conversion",
+              "Completed desired actions / eligible attempts",
+              "Funnel progression, time per step",
+              "Fraud, poor-quality conversions"
+            ],
+            [
+              "Revenue",
+              "Incremental contribution margin or revenue",
+              "Monetization rate, customer value, volume",
+              "Cost to serve, churn, risk exposure"
+            ],
+            [
+              "Cost reduction",
+              "Cost per successful outcome",
+              "Automation, self-service resolution",
+              "Incorrect resolution, repeat contacts"
+            ],
+            [
+              "Customer support",
+              "Customer issue resolution rate",
+              "First-contact resolution, self-service success",
+              "Reopens, CSAT, unresolved financial harm"
+            ],
+            [
+              "Reliability",
+              "Successful critical journeys within SLO",
+              "Availability, error rate, p95 latency",
+              "Data integrity, unreconciled transactions"
+            ],
+            [
+              "Trust",
+              "Successful customer outcomes with low harm",
+              "Complaint rate, dispute rate, customer confidence",
+              "Fraud, unexpected fees, data exposure"
+            ]
+          ]
+        },
+        {
+          "id": "metric-types",
+          "title": "Metric types",
+          "columns": [
+            "Metric type",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "North Star / outcome",
+              "Evidence that customers receive enduring value."
+            ],
+            [
+              "Leading indicator",
+              "Early behavior that predicts the outcome."
+            ],
+            [
+              "Diagnostic metric",
+              "Explains where or why performance changes."
+            ],
+            [
+              "Guardrail",
+              "Detects harmful side effects or unacceptable risks."
+            ]
+          ]
+        },
+        {
+          "id": "guardrails",
+          "title": "Universal guardrail checklist",
+          "columns": [
+            "Dimension",
+            "Common guardrails"
+          ],
+          "rows": [
+            [
+              "Customer experience",
+              "CSAT, complaints, abandonment, task completion"
+            ],
+            [
+              "Trust",
+              "Misleading status incidents, unexpected charges, disputes"
+            ],
+            [
+              "Reliability \u2605",
+              "Availability, timeouts, error rates, p95/p99 latency"
+            ],
+            [
+              "Payment integrity \u2605",
+              "Duplicate payments, ledger mismatches, unreconciled items"
+            ],
+            [
+              "Financial risk \u2605",
+              "Fraud loss rate, suspicious transaction rate, losses per dollar moved"
+            ],
+            [
+              "Compliance \u2605",
+              "Policy exceptions, unauthorized processing, review backlog"
+            ],
+            [
+              "Security",
+              "Unauthorized access attempts, confirmed security incidents"
+            ],
+            [
+              "Privacy",
+              "Consent violations, data-access incidents, deletion failures"
+            ],
+            [
+              "Operational efficiency",
+              "Cost per transaction, manual review volume, contacts per 1,000 users"
+            ],
+            [
+              "Inclusion / accessibility",
+              "Completion and error-rate gaps across supported experiences"
+            ],
+            [
+              "Customer retention",
+              "Churn, dormancy, account closures"
+            ],
+            [
+              "Communications",
+              "Failed notifications, unsubscribe rate, alert fatigue"
+            ]
+          ]
+        }
+      ],
+      "callout": "For a banking dashboard, increasing time spent in the app could be undesirable if customers simply want to understand their finances quickly."
+    },
+    {
+      "id": "solutions",
+      "title": "C. Common product solutions",
+      "table": {
+        "columns": [
+          "Solution lever",
+          "Examples"
+        ],
+        "rows": [
+          [
+            "Simplification",
+            "Fewer steps, fewer required fields, simpler navigation"
+          ],
+          [
+            "Education",
+            "Explanations, previews, contextual guidance"
+          ],
+          [
+            "Automation",
+            "Prefill, recurring actions, smart defaults"
+          ],
+          [
+            "Transparency",
+            "Fees, processing times, status explanations"
+          ],
+          [
+            "Personalization",
+            "Segment-specific journeys, relevant recommendations"
+          ],
+          [
+            "Proactive assistance",
+            "Reminders, alerts, upcoming obligations"
+          ],
+          [
+            "Better discovery",
+            "Improved navigation, contextual placement"
+          ],
+          [
+            "Trust-building",
+            "Confirmation, receipts, clear safeguards"
+          ],
+          [
+            "Reduced switching friction",
+            "Guided migration, checklists, prebuilt instructions"
+          ],
+          [
+            "Self-service",
+            "Resolution tools, dispute flows, payment tracking"
+          ],
+          [
+            "Collaboration",
+            "Shared visibility, household permissions"
+          ],
+          [
+            "Integration",
+            "External account connectivity, payroll or partner integrations"
+          ],
+          [
+            "Incentives",
+            "Targeted rewards, bonuses, referral programs"
+          ],
+          [
+            "Intelligent assistance",
+            "Transaction classification, anomaly detection, AI explanations"
+          ],
+          [
+            "Reliability improvements",
+            "More dependable processing, status updates, error recovery"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "prioritize",
+      "title": "D. Prioritization",
+      "table": {
+        "columns": [
+          "Dimension",
+          "Question"
+        ],
+        "rows": [
+          [
+            "Customer impact",
+            "How much pain does it remove?"
+          ],
+          [
+            "Reach",
+            "How many customers experience the problem?"
+          ],
+          [
+            "Frequency",
+            "How often does the problem occur?"
+          ],
+          [
+            "Strategic fit",
+            "Does this support the business objective?"
+          ],
+          [
+            "Confidence",
+            "What evidence supports our hypothesis?"
+          ],
+          [
+            "Engineering complexity",
+            "How difficult is implementation and integration?"
+          ],
+          [
+            "Dependencies",
+            "Do we rely on another team, vendor or payment rail?"
+          ],
+          [
+            "Time to value",
+            "How quickly could customers benefit?"
+          ],
+          [
+            "Risk",
+            "Could this cause financial or regulatory harm?"
+          ],
+          [
+            "Reversibility",
+            "Can we roll back or adjust the decision?"
+          ],
+          [
+            "Learning potential",
+            "Can a smaller experiment validate the assumption?"
+          ]
+        ]
+      },
+      "footnotes": [
+        "Common prioritization tools: RICE, impact-versus-effort, opportunity scoring, cost of delay, and weighted scoring. Don\u2019t introduce a framework merely to sound structured; explain the decision it helps you make."
+      ]
+    },
+    {
+      "id": "experiments",
+      "title": "E. Common product experiments",
+      "table": {
+        "columns": [
+          "Hypothesis",
+          "Experiment",
+          "Success measure"
+        ],
+        "rows": [
+          [
+            "Success measure",
+            "Customers don\u2019t understand a feature\u2019s value",
+            "New explanation versus control"
+          ],
+          [
+            "Qualified activation",
+            "Onboarding is too long",
+            "Remove or defer nonessential fields"
+          ],
+          [
+            "Verified activation",
+            "Direct deposit switching is confusing",
+            "Guided switching checklist"
+          ],
+          [
+            "Recurring deposit setup and receipt",
+            "Customers distrust payment status",
+            "Detailed status tracking"
+          ],
+          [
+            "Comprehension, fewer status inquiries",
+            "Customers miss important obligations",
+            "Upcoming payment reminders"
+          ],
+          [
+            "Successful on-time payments",
+            "Customers struggle with transaction categories",
+            "Editable categorization"
+          ],
+          [
+            "Correctly categorized activity",
+            "Users don\u2019t discover financial insights",
+            "Contextual insight placement"
+          ],
+          [
+            "Useful actions taken",
+            "Inactive customers need a compelling use case",
+            "Targeted reactivation journey"
+          ],
+          [
+            "Sustained repeat activity",
+            "For experiments, remember: eligibility, randomization unit, primary metric, guardrails, sample size or power, test duration, and unintended effects.",
+            "High-priority for Jaz: Explain why you would choose a smaller, testable intervention instead of a large product build."
+          ]
+        ]
+      },
+      "footnotes": [
+        "For experiments, remember: eligibility, randomization unit, primary metric, guardrails, sample size or power, test duration, and unintended effects.",
+        "High-priority for Jaz: Explain why you would choose a smaller, testable intervention instead of a large product build."
+      ]
+    }
+  ]
+}

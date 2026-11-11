@@ -1,0 +1,413 @@
+4. Technical Cheat Sheet
+Use for: Explain an API, idempotency, synchronous versus asynchronous processing, reconciliation, technical risks, and how you would test a system.
+Define → Mechanism → Application → Risks / Trade-offs → Verification. Know each concept at four levels: meaning, when to use it, what may go wrong, and how to test it.
+A. Common technical mechanisms — APIs and integration
+Concept
+Mechanism / when to use
+Risk / trade-off
+REST API ★
+Request-response interface for resources or actions
+Coupling, timeouts, API version compatibility
+API gateway
+Central routing, authentication and traffic control
+Gateway becomes a critical dependency
+Synchronous processing ★
+Caller receives a result before proceeding
+Latency and dependency availability
+Asynchronous processing ★
+Work continues after the initial request
+More complex status tracking
+Webhook
+Provider calls your endpoint when an event occurs
+Missed, duplicate or out-of-order delivery
+Event bus
+Publishes events to multiple subscribers
+Event ordering and consistency
+Message queue
+Buffers work until consumers can process it
+Backlogs, duplicates, poison messages
+Pub/sub
+Distributes messages to interested consumers
+Consumer failures and delivery guarantees
+Idempotency ★
+Repeating a logical operation does not duplicate intended effect
+Key collisions, expiration, downstream duplication
+Retry with backoff ★
+Retry transient failures with increasing delays
+Retry storms, unsafe repeated mutations
+Circuit breaker
+Temporarily stop calls to unhealthy dependency
+Prematurely blocking recoverable requests
+Rate limiting
+Restrict request volume or frequency
+Legitimate customers may be throttled
+Caching
+Store reusable results for faster retrieval
+Stale data
+Pagination
+Retrieve datasets in manageable chunks
+Missing/repeated records during updates
+API versioning
+Manage interface evolution
+Client migration and maintenance cost
+Contract testing
+Verify consumers/providers agree on interface
+Contract passes despite incorrect business behavior
+Common architecture choices
+Choice
+Prefer when
+REST / request-response
+Immediate data retrieval or command acknowledgement
+Event-driven
+Multiple systems must react independently to a state change
+Queue
+Work can be processed asynchronously and needs buffering
+Batch processing
+Operations can tolerate scheduled execution
+Real-time processing
+Customer-facing freshness or decisions require it
+Cache
+Reads are frequent and controlled staleness is acceptable
+Feature flag
+Gradual rollout or rapid disablement is valuable
+External provider
+Mature integration offers better speed or economics than building
+Internal capability
+Control, differentiation or regulatory needs justify ownership
+B. Banking and payment mechanisms
+Concept
+What it means
+Key PM concern
+Ledger ★
+Authoritative financial record of postings
+Accuracy, auditability, consistent balances
+Double-entry accounting ★
+Financial events represented through balanced entries
+No unexplained creation or loss of value
+Available balance ★
+Funds currently available under account rules
+Holds and pending debits can affect it
+Posted / ledger balance ★
+Balance based on posted transactions
+Can differ from available balance
+Payment initiation ★
+Customer submits an instruction
+Not proof of completed transfer
+Authorization / validation ★
+Verifies permission and applicable requirements
+Does not necessarily mean final settlement
+Funds reservation / hold ★
+Funds are restricted for a transaction or control
+How balance and hold are represented
+Clearing
+Exchange or processing of payment instructions
+Timing, returns, intermediary dependencies
+Settlement ★
+Discharge of financial obligations between parties
+Confirmation/finality depend on rail
+Reconciliation ★
+Compare records from systems that should agree
+Missing, duplicated or mismatched entries
+Idempotency key ★
+Identifier recognizing retries of same logical request
+Preventing duplicate financial effects
+Payment reference / correlation ID ★
+Links records across transaction lifecycle
+Traceability across systems
+Returns / reversals ★
+Return funds or correct postings
+Timing, eligibility, accounting treatment
+KYC
+Customer identity and due-diligence processes
+Onboarding eligibility and verification
+AML controls
+Anti-money-laundering risk monitoring and controls
+Detection, holds, escalation, compliance
+Sanctions screening
+Screening against applicable restrictions
+Accurate screening and disposition
+Transaction velocity
+Transaction frequency or volume over a period
+Fraud controls and legitimate-user friction
+Risk-based authentication
+Strength adjusts to risk
+Security vs. completion friction
+Payment state machine ★
+Explicit allowed lifecycle transitions
+Invalid states, uncertain outcomes
+Core banking integration ★
+Interactions with account/financial-record systems
+Ownership, latency, consistency, exceptions
+Critical banking distinctions
+Distinction
+Why it matters
+Payment submitted ≠ payment settled
+Submission may only mean an instruction was accepted.
+API timeout ≠ transaction failure
+The downstream operation may have succeeded even if the response was lost.
+Ledger balance ≠ available balance
+Holds, reservations and account rules can affect spendable funds.
+Analytics data ≠ authoritative financial data
+Product events monitor behavior, but ledger/reconciliation records govern financial correctness.
+Successful retry ≠ safe retry
+Repeated requests must not trigger multiple financial operations.
+C. Data, security and reliability mechanisms
+Mechanism
+Purpose
+Common risk
+Authentication ★
+Establish who user is
+Account takeover
+Authorization ★
+Determine what user can do
+Privilege escalation
+MFA
+Additional authentication factor
+Friction and recovery failures
+OAuth 2.0
+Delegate scoped authorization
+Excessive scopes, token misuse
+OpenID Connect
+Identity layer built on OAuth 2.0
+Incorrect token validation
+Session management
+Maintain authenticated interactions
+Expired or compromised sessions
+Encryption in transit
+Protect data across connections
+Weak configuration or trust boundaries
+Encryption at rest
+Protect stored data
+Key management and access failures
+Tokenization
+Replace sensitive values with references
+Token-vault dependencies
+RBAC / ABAC
+Role/attribute-based access control
+Permissions drift
+Audit logging
+Preserve evidence of important events
+Missing, mutable or sensitive logs
+Data minimization
+Limit information collected/retained
+Privacy exposure
+Eventual consistency ★
+Different views converge over time
+Temporarily inconsistent customer states
+Strong consistency ★
+Reads reflect required committed changes
+Latency and availability costs
+Atomic transaction
+Changes commit together or not at all within transaction boundary
+Cross-system work may not be atomic
+Saga / compensation
+Coordinate distributed work with recovery actions
+Complex recovery; actions may not be undoable
+Transactional outbox
+Coordinate local data change and outgoing event
+Extra infrastructure and operations
+Dead-letter queue
+Quarantine unprocessed messages
+Backlogs and manual intervention
+Optimistic concurrency
+Prevent overwriting conflicting changes
+Retries and conflict handling
+Feature flags
+Control feature availability without redeploying
+Configuration complexity
+Canary release
+Expose change to small population first
+Rare failures take longer to detect
+Distributed tracing
+Follow requests across services
+Incomplete instrumentation
+SLO / SLI / SLA
+Define/evaluate reliability
+Poorly chosen indicators/commitments
+RTO / RPO
+Recovery-time and data-loss objectives
+Gaps in restoration and transaction integrity
+D. Common technical risks and how to address them
+Risk
+Approach
+Verification
+Duplicate processing ★
+Idempotency, deduplication, unique transaction IDs
+Submit identical requests; confirm one financial effect
+Uncertain outcome ★
+Status lookup, reconciliation, safe retry policy
+Timeout after downstream success
+Partial transaction ★
+Transaction boundaries, recovery, compensation
+Force failure between processing steps
+Stale state ★
+Freshness policy, versioning, authoritative reads
+Delay synchronization; inspect UI
+Race condition
+Concurrency control, atomic operations
+Simultaneous conflicting requests
+Lost events
+Durable messaging, replay, outbox
+Interrupt event publication
+Duplicate events
+Idempotent consumers
+Deliver same event multiple times
+Out-of-order events
+Version and transition validation
+Reverse-order status messages
+Provider outage
+Circuit breaker, fallback, degraded mode
+Simulate provider unavailability
+High latency
+Profiling, capacity management, safe caching
+Load test and p95/p99
+Overloaded service
+Backpressure, throttling, autoscaling
+Peak-load and stress test
+Unauthorized requests
+Server-side authorization, least privilege
+Negative permission tests
+Account takeover
+MFA, anomaly detection, step-up verification
+Security and attack simulations
+Sensitive-data exposure
+Encryption, access controls, minimization
+Security review, data-access audit
+Invalid account state
+State machine and eligibility checks
+Illegal-transition tests
+Incorrect financial postings ★
+Ledger controls and reconciliation
+Compare expected/actual entries
+Bad deployment
+Canary, flags, rollback
+Rehearse release and rollback
+Integration contract drift
+Versioning, contract tests
+Mock provider changes
+Misleading customer status ★
+Explicit business-state mapping
+Compare displayed vs. authoritative state
+Inaccurate analytics
+Schema validation, event counts
+Event-quality tests
+E. Common engineering trade-offs
+Synchronous vs. asynchronous
+Synchronous
+Asynchronous
+Simpler immediate result
+Better for long-running operations
+Caller waits
+Caller receives acknowledgment first
+Dependency latency affects customer
+Requires reliable state tracking
+Good for validation and simple queries
+Good for payment processing, notifications and batch work
+A payment experience may use synchronous validation and acknowledgment followed by asynchronous external processing.
+Strong vs. eventual consistency
+Strong consistency
+Eventual consistency
+Important where latest committed state must be observed
+Useful for derived views, analytics and notifications
+Often higher coordination cost
+Can temporarily show older information
+Appropriate for critical financial checks
+Requires freshness and conflict handling
+Build vs. buy
+Build
+Buy / integrate
+Greater architectural control
+Faster access to mature capability
+More direct customization
+Vendor and roadmap dependence
+Higher ownership and operational burden
+Integration, contract and resilience concerns
+Speed vs. correctness
+In financial products, a fast but misleading confirmation can be worse than a slower but truthful acknowledgment. Optimize perceived responsiveness separately from actual financial finality. Confirm receipt of an instruction without pretending it is settled.
+F. Verification and testing cheat sheet
+Test
+What it verifies
+Example
+Unit test
+Individual logic
+Balance validation
+API integration test
+Component communication
+Account service to core platform
+Contract test
+Interface compatibility
+Payment provider response schema
+End-to-end test ★
+Complete customer journey
+Initiate through confirmed transaction
+State transition test ★
+Valid lifecycle behavior
+Pending → completed / failed
+Idempotency test ★
+Duplicate prevention
+Repeated payment submission
+Timeout test ★
+Handling uncertain responses
+Lost confirmation after processing
+Reconciliation test ★
+Financial record consistency
+Internal vs. provider transaction
+Negative-path test ★
+Rejection and error behavior
+Restricted account or invalid recipient
+Security test
+Authentication and access protections
+Unauthorized account access
+Load test
+Expected throughput and latency
+Peak transaction load
+Stress test
+Beyond-normal capacity
+Sudden traffic surge
+Soak test
+Long-duration stability
+Sustained processing
+Fault-injection test
+Recovery from dependency failures
+Database or network failure
+Recovery / failover test
+Business continuity
+Restore service after outage
+Rollback test
+Safe release reversal
+Disable defective functionality
+Data migration test
+Correctness of moved records
+Account history migration
+Backfill test
+Recovery of missing historical data
+Replay delayed events
+Accessibility test
+Inclusive interaction
+Screen reader and keyboard flows
+UAT
+Business requirements satisfied
+Realistic banking workflows
+A/B test
+Product impact
+Revised deposit setup
+Canary monitoring
+Safety of progressive release
+Compare error rates by exposure
+Operational drill
+Manage exceptions
+Reconciliation backlog and escalation
+High-value banking failure-injection tests
+Scenarios 1–5
+Scenarios 6–10
+1. Customer taps Pay twice.
+6. Two payments start simultaneously against limited available funds.
+2. Customer closes the app after confirmation.
+7. Fraud rules place a transaction on hold.
+3. API times out, but payment succeeds downstream.
+8. A payment status event arrives late or out of order.
+4. External provider goes down mid-transaction.
+9. Reconciliation finds an unmatched payment.
+5. Ledger posting succeeds but a downstream event fails.
+10. A release must be rolled back while transactions are in flight.
+These scenarios expose whether you understand transaction integrity and distributed-system failure handling. Payment-integration documentation from Stripe and reliability guidance from Microsoft describe related lifecycle and architecture patterns.

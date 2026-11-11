@@ -1,0 +1,790 @@
+{
+  "metadata": {
+    "source": "Questrade_Senior_PM_Master_Cheat_Sheet_Arial.docx",
+    "sectionId": "system-design",
+    "version": "2026-11-11"
+  },
+  "id": "system-design",
+  "title": "2. System Design Cheat Sheet",
+  "useFor": "Use for: Design a reliable system, map an end-to-end experience, integrate a payment service, explain how an account feature should work.",
+  "frameworkNote": "Requirements → User/System Flow → Architecture → Failure States → Trade-offs. Think like a PM who understands architecture, not an engineer designing every database table.",
+  "preamble": null,
+  "sections": [
+    {
+      "id": "a-functional-requirements-what-must-the-system-do",
+      "title": "A. Functional requirements — what must the system do?",
+      "prose": [
+        "Five questions to ask for any banking feature",
+        "1.  Who is allowed to perform the action?",
+        "2.  What validations must pass?",
+        "3.  What changes in the system of record?",
+        "4.  What does the customer see at each stage?",
+        "5.  How is the action recovered or reconciled if something fails?"
+      ],
+      "table": {
+        "columns": [
+          "Category",
+          "Common requirements / questions"
+        ],
+        "rows": [
+          [
+            "Identity ★",
+            "Can the customer authenticate and establish identity?"
+          ],
+          [
+            "Authorization ★",
+            "Is the customer permitted to perform this action?"
+          ],
+          [
+            "Account eligibility ★",
+            "Is this account eligible for the feature or transaction?"
+          ],
+          [
+            "Account retrieval ★",
+            "Can customers view accounts, balances and ownership?"
+          ],
+          [
+            "Transaction history ★",
+            "Can they retrieve, filter, search and explain transactions?"
+          ],
+          [
+            "Money movement ★",
+            "Can customers initiate, confirm, track and cancel eligible payments?"
+          ],
+          [
+            "Validation ★",
+            "Are amount, currency, recipient, balance and limits valid?"
+          ],
+          [
+            "Transaction status ★",
+            "Can customers distinguish processing, held, completed and failed?"
+          ],
+          [
+            "Notifications",
+            "Are customers informed when meaningful events occur?"
+          ],
+          [
+            "Historical records",
+            "Can customers access prior transactions and statements?"
+          ],
+          [
+            "Auditability ★",
+            "Can authorized staff reconstruct what happened?"
+          ],
+          [
+            "Error recovery ★",
+            "Can customers retry, correct or resolve errors safely?"
+          ],
+          [
+            "Reversals / refunds ★",
+            "Can eligible transactions be reversed, returned or disputed?"
+          ],
+          [
+            "Permissions",
+            "Can shared or joint-account participants perform permitted actions?"
+          ],
+          [
+            "Consent",
+            "Can customers grant and revoke permissions?"
+          ],
+          [
+            "Configuration",
+            "Can limits and policies be changed safely?"
+          ],
+          [
+            "Customer support",
+            "Can support retrieve accurate status and escalation information?"
+          ],
+          [
+            "Data export",
+            "Can customers download or share permitted information?"
+          ],
+          [
+            "Administration",
+            "Can authorized operators review exceptions and intervene?"
+          ],
+          [
+            "Integration",
+            "Can the system exchange data with core platforms and third parties?"
+          ]
+        ]
+      },
+      "footnotes": null
+    },
+    {
+      "id": "b-non-functional-requirements-how-well-must-it-wor",
+      "title": "B. Non-functional requirements — how well must it work?",
+      "prose": [
+        "RTO = Recovery Time Objective (target recovery duration). RPO = Recovery Point Objective (maximum tolerable data-loss window). Recovery must preserve transaction integrity; restoring an older snapshot alone is insufficient."
+      ],
+      "table": {
+        "columns": [
+          "Requirement",
+          "What to consider"
+        ],
+        "rows": [
+          [
+            "Example measure",
+            "Availability ★"
+          ],
+          [
+            "How consistently is the service accessible?",
+            "Uptime / availability SLO"
+          ],
+          [
+            "Reliability ★",
+            "Can critical operations complete correctly?"
+          ],
+          [
+            "Successful processing rate",
+            "Latency ★"
+          ],
+          [
+            "How quickly does the system respond?",
+            "p50, p95, p99 response time"
+          ],
+          [
+            "Scalability",
+            "Can it support more customers and activity?"
+          ],
+          [
+            "Peak transactions per second",
+            "Consistency ★"
+          ],
+          [
+            "Do different components agree on state?",
+            "Stale or conflicting records"
+          ],
+          [
+            "Durability ★",
+            "Can committed records survive failures?"
+          ],
+          [
+            "Lost or corrupted records",
+            "Security ★"
+          ],
+          [
+            "Are data and actions protected?",
+            "Unauthorized access incidents"
+          ],
+          [
+            "Privacy",
+            "Is sensitive information handled appropriately?"
+          ],
+          [
+            "Consent and access compliance",
+            "Auditability ★"
+          ],
+          [
+            "Can actions and changes be traced?",
+            "Audit-log coverage"
+          ],
+          [
+            "Recoverability ★",
+            "Can the system restore service and reconcile state?"
+          ],
+          [
+            "RTO, RPO, recovery completeness",
+            "Resilience ★"
+          ],
+          [
+            "Does the system tolerate component failures?",
+            "Successful failover and degraded-mode behavior"
+          ],
+          [
+            "Observability",
+            "Can teams detect and explain problems?"
+          ],
+          [
+            "Trace coverage, alert detection time",
+            "Accessibility"
+          ],
+          [
+            "Can customers use all critical journeys?",
+            "Accessibility test compliance"
+          ],
+          [
+            "Interoperability",
+            "Does it integrate reliably with other systems?"
+          ],
+          [
+            "Contract / integration failure rate",
+            "Maintainability"
+          ],
+          [
+            "Can teams modify it safely?",
+            "Change failure rate, deployment recovery"
+          ],
+          [
+            "Cost efficiency",
+            "Does the solution scale economically?"
+          ],
+          [
+            "Cost per successful transaction",
+            "Configurability"
+          ],
+          [
+            "Can policies change without risky releases?",
+            "Time to enact validated configuration"
+          ],
+          [
+            "Data quality",
+            "Is information accurate, timely and complete?"
+          ]
+        ]
+      },
+      "footnotes": [
+        "Freshness, correctness, completeness"
+      ]
+    },
+    {
+      "id": "c-common-system-components",
+      "title": "C. Common system components",
+      "prose": [
+        "Generic banking architecture — illustrative. Not a representation of Questrade’s actual implementation.",
+        "Two critical distinctions: (1) The ledger or core financial system may be the authoritative source of postings, while the product-facing transaction feed is derived. (2) An analytics event showing a payment succeeded is not proof of a financial posting or external settlement."
+      ],
+      "table": {
+        "columns": [
+          "Component",
+          "Responsibility"
+        ],
+        "rows": [
+          [
+            "Questions to ask",
+            "Client app"
+          ],
+          [
+            "Displays information and collects actions",
+            "How does it handle errors and stale information?"
+          ],
+          [
+            "API gateway",
+            "Entry point for API requests"
+          ],
+          [
+            "Authentication, routing, limits?",
+            "Identity provider"
+          ],
+          [
+            "Authenticates users",
+            "MFA, sessions, device trust?"
+          ],
+          [
+            "Authorization service",
+            "Determines permitted actions"
+          ],
+          [
+            "Roles, ownership, account restrictions?",
+            "Account service ★"
+          ],
+          [
+            "Exposes account details and status",
+            "Which system owns the account state?"
+          ],
+          [
+            "Transaction service ★",
+            "Records and retrieves transaction history"
+          ],
+          [
+            "Where do pending items come from?",
+            "Payment orchestrator ★"
+          ],
+          [
+            "Coordinates payment lifecycle",
+            "Which system tracks state and retries?"
+          ],
+          [
+            "Core banking / ledger ★",
+            "Maintains authoritative postings and balances"
+          ],
+          [
+            "When are funds reserved or posted?",
+            "Risk / fraud engine ★"
+          ],
+          [
+            "Detects suspicious activity",
+            "When is a payment blocked or reviewed?"
+          ],
+          [
+            "Compliance service ★",
+            "Supports required screening and controls"
+          ],
+          [
+            "What holds or exceptions apply?",
+            "External payment connector ★"
+          ],
+          [
+            "Communicates with rails and providers",
+            "What confirmations and failure codes exist?"
+          ],
+          [
+            "Database",
+            "Persists application data"
+          ],
+          [
+            "Consistency, integrity, backups?",
+            "Event bus"
+          ],
+          [
+            "Distributes system events",
+            "Can consumers process duplicates?"
+          ],
+          [
+            "Message queue",
+            "Buffers work for asynchronous processing"
+          ],
+          [
+            "What happens to failed messages?",
+            "Notification service"
+          ],
+          [
+            "Delivers email, SMS or push",
+            "What if delivery fails?"
+          ],
+          [
+            "Reconciliation engine ★",
+            "Compares records across systems"
+          ],
+          [
+            "What detects missing or mismatched postings?",
+            "Audit log"
+          ],
+          [
+            "Records important events and changes",
+            "Can an incident be reconstructed?"
+          ],
+          [
+            "Analytics pipeline",
+            "Produces product and operational insights"
+          ],
+          [
+            "Is telemetry distinct from financial truth?",
+            "Cache"
+          ],
+          [
+            "Speeds up data retrieval",
+            "How are stale values handled?"
+          ],
+          [
+            "Feature flag service",
+            "Controls progressive releases"
+          ],
+          [
+            "Can we disable a failing feature?",
+            "Observability stack"
+          ],
+          [
+            "Collects logs, metrics and traces",
+            "Can requests be traced end-to-end?"
+          ],
+          [
+            "Operations tooling",
+            "Resolves exceptions and supports customers"
+          ]
+        ]
+      },
+      "footnotes": [
+        "Who owns manual recovery?"
+      ]
+    },
+    {
+      "id": "d-common-states",
+      "title": "D. Common states",
+      "prose": [
+        "Illustrative payment lifecycle only. Holds, failures and uncertain outcomes can occur at multiple points; payment-rail terminology must be defined for the actual workflow.",
+        "State-design checklist",
+        "Entry condition: What causes the state to begin?",
+        "Source of truth: Which component determines the state?",
+        "Allowed transitions: What state changes are permitted?",
+        "Customer representation: What should the customer see?",
+        "Financial effect: Are funds reserved, posted, settled or unchanged?",
+        "Exit condition: What evidence lets us advance?",
+        "Exception handling: Who resolves an invalid or stuck state?",
+        "Timeout: What happens if the expected response never arrives?",
+        "“Submitted” might mean the provider accepted the instruction, whereas “Completed” might require later confirmation. Neither should be called final recipient settlement unless that is actually established."
+      ],
+      "table": {
+        "columns": [
+          "Domain",
+          "Typical states"
+        ],
+        "rows": [
+          [
+            "Payment ★",
+            "Created → Validating → Authorized / Accepted → Processing → Completed"
+          ],
+          [
+            "Payment exceptions ★",
+            "On hold, rejected, failed, timed out, unknown, returned, reversed"
+          ],
+          [
+            "Account ★",
+            "Application started → Verification pending → Active → Restricted → Closed"
+          ],
+          [
+            "KYC / onboarding",
+            "Not started → Submitted → Under review → Approved / Rejected"
+          ],
+          [
+            "Direct deposit ★",
+            "Instructions supplied → Setup pending → First deposit received → Recurring deposit confirmed"
+          ],
+          [
+            "Card",
+            "Issued → Activated → Active → Frozen → Replaced / Closed"
+          ],
+          [
+            "Dispute",
+            "Submitted → Investigating → Decision → Resolved"
+          ],
+          [
+            "Refund",
+            "Requested → Approved → Processing → Posted / Failed"
+          ],
+          [
+            "Consent",
+            "Not granted → Active → Expired / Revoked"
+          ],
+          [
+            "Notification",
+            "Queued → Sent → Delivered / Failed"
+          ],
+          [
+            "Data synchronization",
+            "Scheduled → Processing → Synchronized / Failed / Stale"
+          ],
+          [
+            "Batch job",
+            "Pending → Running → Completed / Partially completed / Failed"
+          ]
+        ]
+      },
+      "footnotes": null
+    },
+    {
+      "id": "e-common-failure-scenarios",
+      "title": "E. Common failure scenarios",
+      "prose": null,
+      "table": {
+        "columns": [
+          "Failure",
+          "Typical cause"
+        ],
+        "rows": [
+          [
+            "Control / response",
+            "Duplicate payment ★"
+          ],
+          [
+            "Double-click, retry, repeated request",
+            "Idempotency, uniqueness constraints"
+          ],
+          [
+            "Network timeout ★",
+            "Response never arrives"
+          ],
+          [
+            "Query existing status before retrying",
+            "Unknown outcome ★"
+          ],
+          [
+            "Downstream processed but caller lost confirmation",
+            "Reconciliation, status inquiry, controlled retry"
+          ],
+          [
+            "Insufficient funds",
+            "Available balance below required amount"
+          ],
+          [
+            "Prevalidation, clear rejection",
+            "Stale balance ★"
+          ],
+          [
+            "Delayed synchronization or caching",
+            "Freshness rules, source-of-truth checks"
+          ],
+          [
+            "Incorrect account status",
+            "Unsynchronized restrictions"
+          ],
+          [
+            "Central eligibility and state rules",
+            "Payment rail outage ★"
+          ],
+          [
+            "External provider unavailable",
+            "Circuit breaker, pause, queue where safe"
+          ],
+          [
+            "Lost or duplicated event",
+            "Messaging delivery or consumer problem"
+          ],
+          [
+            "Durable messaging, deduplication, replay",
+            "Out-of-order event"
+          ],
+          [
+            "Delayed asynchronous delivery",
+            "Versioning, transition validation"
+          ],
+          [
+            "Partial processing ★",
+            "One system updates while another doesn’t"
+          ],
+          [
+            "Recovery workflow, reconciliation",
+            "Reconciliation mismatch ★"
+          ],
+          [
+            "Disagreement between transaction records",
+            "Exception queue and investigation"
+          ],
+          [
+            "Ledger posting error ★",
+            "Incorrect debit or credit"
+          ],
+          [
+            "Posting integrity checks, controlled correction",
+            "Fraud rule false positive"
+          ],
+          [
+            "Legitimate activity incorrectly blocked",
+            "Review, appeal, calibrated thresholds"
+          ],
+          [
+            "Unauthorized operation",
+            "Session, access or permission failure"
+          ],
+          [
+            "Strong authorization and audit",
+            "Regulation / policy change ★"
+          ],
+          [
+            "New eligibility or hold requirement",
+            "Policy configuration, legal validation"
+          ],
+          [
+            "Retry storm",
+            "Too many automatic retries"
+          ],
+          [
+            "Backoff, jitter, rate limits",
+            "Capacity overload"
+          ],
+          [
+            "Demand exceeds resources",
+            "Autoscaling, throttling, prioritization"
+          ],
+          [
+            "Notification failure",
+            "Delivery service unavailable"
+          ],
+          [
+            "Retry, in-app status, alternate channels",
+            "Data pipeline delay"
+          ],
+          [
+            "Batch or ingestion failure",
+            "Data freshness monitoring"
+          ],
+          [
+            "Incorrect transaction category",
+            "Poor classification logic"
+          ],
+          [
+            "Correction feedback, QA, model evaluation",
+            "Failed deployment"
+          ],
+          [
+            "Application or integration regression",
+            "Canary rollout, feature flag, rollback"
+          ],
+          [
+            "Third-party contract change",
+            "API schema or behavior changes"
+          ]
+        ]
+      },
+      "footnotes": [
+        "Contract tests, versioning"
+      ]
+    },
+    {
+      "id": "f-common-controls",
+      "title": "F. Common controls",
+      "prose": [
+        "Use reliability mechanisms selectively. Additional components can improve resilience but also introduce complexity and new failure modes."
+      ],
+      "table": {
+        "columns": [
+          "Control",
+          "Purpose"
+        ],
+        "rows": [
+          [
+            "Authentication / MFA",
+            "Verify customer identity"
+          ],
+          [
+            "Authorization / least privilege",
+            "Restrict actions to permitted users"
+          ],
+          [
+            "Eligibility checks",
+            "Enforce account and product rules"
+          ],
+          [
+            "Transaction limits",
+            "Bound exposure"
+          ],
+          [
+            "Velocity limits",
+            "Detect excessive transaction frequency"
+          ],
+          [
+            "Fraud detection",
+            "Identify potentially abusive patterns"
+          ],
+          [
+            "AML / sanctions controls",
+            "Support financial-crime compliance"
+          ],
+          [
+            "Idempotency ★",
+            "Prevent duplicate effects from retries"
+          ],
+          [
+            "Atomic posting / ledger controls ★",
+            "Preserve financial-record integrity"
+          ],
+          [
+            "Reconciliation ★",
+            "Detect inconsistencies between systems"
+          ],
+          [
+            "Retry with backoff",
+            "Recover safely from transient failure"
+          ],
+          [
+            "Circuit breaker",
+            "Stop overloading unhealthy dependencies"
+          ],
+          [
+            "Dead-letter queue",
+            "Isolate messages that cannot be processed"
+          ],
+          [
+            "Immutable audit trails",
+            "Support investigations and traceability"
+          ],
+          [
+            "Encryption",
+            "Protect data at rest and in transit"
+          ],
+          [
+            "Feature flags",
+            "Enable controlled rollout and disablement"
+          ],
+          [
+            "Rate limiting",
+            "Protect infrastructure and reduce abuse"
+          ],
+          [
+            "Timeouts",
+            "Prevent indefinite waiting"
+          ],
+          [
+            "Manual review",
+            "Resolve exceptions requiring human judgment"
+          ],
+          [
+            "Progressive rollout",
+            "Limit the impact of a defective release"
+          ],
+          [
+            "Monitoring and alerts",
+            "Detect deviations quickly"
+          ]
+        ]
+      },
+      "footnotes": null
+    },
+    {
+      "id": "g-common-system-design-trade-offs",
+      "title": "G. Common system-design trade-offs",
+      "prose": [
+        "“For an MVP, I’d prioritize correctness of transaction state, customer clarity, and operational recovery. I’d be willing to defer sophisticated functionality, but not duplicate prevention, reliable posting, or the ability to reconcile failures.”"
+      ],
+      "table": {
+        "columns": [
+          "Trade-off",
+          "When to favour one side"
+        ],
+        "rows": [
+          [
+            "Speed vs. security",
+            "Add stronger controls for high-risk, irreversible actions"
+          ],
+          [
+            "Real-time vs. batch",
+            "Real-time for customer-visible status; batch where latency tolerance permits"
+          ],
+          [
+            "Strong vs. eventual consistency ★",
+            "Stronger consistency for critical financial decisions; eventual consistency for derived views"
+          ],
+          [
+            "Synchronous vs. asynchronous ★",
+            "Synchronous for immediate decisions; asynchronous for long-running workflows"
+          ],
+          [
+            "Availability vs. data freshness",
+            "Show clearly labelled stale data rather than misrepresenting it as current"
+          ],
+          [
+            "Automation vs. manual review",
+            "Automate low-risk predictable cases; review ambiguous high-risk exceptions"
+          ],
+          [
+            "Build vs. buy",
+            "Buy mature undifferentiated capabilities where integration and control fit"
+          ],
+          [
+            "Monolith vs. microservices",
+            "Prefer simplicity until independent scaling or ownership warrants separation"
+          ],
+          [
+            "Rich features vs. reliability",
+            "Prioritize correctness for money movement"
+          ],
+          [
+            "Frictionless UX vs. fraud prevention",
+            "Use risk-based step-up controls"
+          ],
+          [
+            "Immediate feedback vs. final confirmation ★",
+            "Acknowledge initiation promptly without claiming completion prematurely"
+          ],
+          [
+            "Caching vs. accuracy ★",
+            "Use cautious cache policies for balances and critical states"
+          ],
+          [
+            "Fast delivery vs. technical debt",
+            "Accept reversible shortcuts, not financial integrity gaps"
+          ],
+          [
+            "Personalization vs. privacy",
+            "Use only data and consent appropriate to the purpose"
+          ],
+          [
+            "Complex architecture vs. maintainability",
+            "Choose the simplest design meeting measured requirements"
+          ]
+        ]
+      },
+      "footnotes": null
+    }
+  ]
+}
