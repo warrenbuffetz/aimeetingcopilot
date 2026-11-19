@@ -41,6 +41,12 @@ import {
   isBristolFocusedProfileName,
 } from "@/lib/bristol-focused/profile";
 import {
+  AMENA_FOCUSED_HREF,
+  AMENA_FOCUSED_PROFILE_ID,
+  AMENA_FOCUSED_PROFILE_NAME,
+  isAmenaFocusedProfileName,
+} from "@/lib/flexiti-amena/profile";
+import {
   JAZ_FOCUSED_HREF,
   JAZ_FOCUSED_PROFILE_ID,
   JAZ_FOCUSED_PROFILE_NAME,
@@ -268,6 +274,7 @@ export function BristolFocusedNavigator() {
           (data ?? []).filter(
             (profile) =>
               !isBristolFocusedProfileName(profile.name) &&
+              !isAmenaFocusedProfileName(profile.name) &&
               !(/questrade/i.test(profile.name) && /\bjaz\b/i.test(profile.name))
           )
         );
@@ -464,6 +471,7 @@ export function BristolFocusedNavigator() {
   function leaveProfile(profileId: string) {
     if (profileId === "all") router.push("/live");
     else if (profileId === JAZ_FOCUSED_PROFILE_ID) router.push(JAZ_FOCUSED_HREF);
+    else if (profileId === AMENA_FOCUSED_PROFILE_ID) router.push(AMENA_FOCUSED_HREF);
     else router.push(`/live?profile=${encodeURIComponent(profileId)}`);
   }
 
@@ -1205,6 +1213,7 @@ export function BristolFocusedNavigator() {
             <SelectContent>
               <SelectItem value={BRISTOL_FOCUSED_PROFILE_ID}>{BRISTOL_FOCUSED_PROFILE_NAME}</SelectItem>
               <SelectItem value={JAZ_FOCUSED_PROFILE_ID}>{JAZ_FOCUSED_PROFILE_NAME}</SelectItem>
+              <SelectItem value={AMENA_FOCUSED_PROFILE_ID}>{AMENA_FOCUSED_PROFILE_NAME}</SelectItem>
               <SelectItem value="all">No profile</SelectItem>
               {otherProfiles.map((profile) => (
                 <SelectItem key={profile.id} value={profile.id}>

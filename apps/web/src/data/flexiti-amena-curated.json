@@ -1,0 +1,386 @@
+{
+  "metadata": {
+    "title": "Flexiti / Amena — Curated Senior PM Interview Q&A",
+    "purpose": "Manual navigation for the Amena hiring-manager interview; primary answers with nested follow-ups",
+    "version": "2026-11-19",
+    "primaryQuestionCount": 14,
+    "followUpCount": 14,
+    "suggestedPinnedCount": 9,
+    "notes": [
+      "Answers are spoken blocks: continuous paragraphs within a thought; blank lines only between thought shifts.",
+      "Flexiti-specific product questions are preparation hypotheses based on public merchant experiences, not confirmed Amena questions.",
+      "Everyday Banking / Questrade process answers acknowledge the prior interview track without framing Flexiti as a consolation."
+    ]
+  },
+  "questions": [
+    {
+      "curatedKey": "A01",
+      "canonicalAnswerId": null,
+      "category": "Career & Motivation",
+      "title": "Tell me about yourself.",
+      "navigationLabel": "Tell me about yourself",
+      "priority": 1,
+      "answer": "Sure. I've spent the last nine-plus years across product management, growth, and commercial analytics, mostly focused on digital consumer experiences and financial products. I actually came into product through analytics and commercial strategy, so I've always been just as interested in the business outcome as the customer experience.\n\nI'm currently a Senior Product Manager at Arc'teryx, leading a zero-to-one membership platform focused on product care, repairs, and trade-ins. A big part of my role has been building the business case and aligning stakeholders across the organization, ultimately securing $5.2 million in CapEx funding. I also led the technology RFP, and we've since moved toward a more focused, web-first MVP, prioritizing the core identity, eligibility, and benefit fulfilment capabilities before expanding across more channels.\n\nBefore that, at RBC, I owned core web and mobile experiences for Avion Rewards. One of my biggest launches was enabling non-RBC customers to withdraw their cashback through Interac e-Transfer. The challenge was that our existing payout process relied on customers having an RBC bank account. So we had to integrate with the bank's enterprise payments infrastructure and work through things like eligibility, payment failures, risk controls, and reconciliation. We eventually reached about $1.2 million in annualized cashback payouts.\n\nAt HBC, I managed growth for a Mastercard portfolio of over 500,000 customers. One of the bigger challenges was that when we transitioned from Capital One to Neo Financial, the existing cardholder accounts weren't transferred, so customers had to reapply for the new card. That created an interesting acquisition and retention challenge. I worked with Neo to redesign the digital credit application, improving completions by 15%, while our broader initiatives increased active cardholders by four percentage points and spending per active cardholder by 5%.\n\nEarlier at Air Canada, I moved from commercial analytics and partnerships into product, leading credit-card acquisition across TD, CIBC, and American Express. And even earlier, two experiences shaped how I think about financial products and growth. At Jumbleberry, a performance-marketing startup, I learned how traffic quality and checkout conversion impact commercial performance. And at Korea Exchange Bank, I helped monitor a roughly $200 million loan portfolio, looking at borrowers' financial capacity, collateral, and repayment risk.\n\nSo when I look back, a lot of my experience has been at the intersection of financial services and commerce, from credit analysis and acquisition to payments and platform development. And that's what interests me about Flexiti. It's an opportunity to bring those experiences together, where improving the customer experience and helping merchants generate more sales also has to make sense from a lending and risk perspective.",
+      "followUps": [],
+      "aliases": ["Introduce yourself", "Walk me through your background", "Overview"],
+      "evidenceStatus": "grounded",
+      "accuracyNote": "",
+      "projectTags": ["Arc'teryx", "RBC", "HBC", "Aeroplan", "Flexiti"],
+      "suggestedPinned": true
+    },
+    {
+      "curatedKey": "A02",
+      "canonicalAnswerId": null,
+      "category": "Career & Motivation",
+      "title": "Why Flexiti? Why this role?",
+      "navigationLabel": "Why Flexiti / Why this role",
+      "priority": 1,
+      "answer": "What caught my attention about Flexiti is that it brings together a few areas I've really enjoyed working in: financial products, retail, and commercial growth.\n\nAt HBC, I saw firsthand how a credit product could be much more than another way for customers to pay. It could help drive acquisition, influence spending behaviour, and create longer-term value for both the retailer and the financial partner. And earlier in my career, working in performance marketing taught me how much traffic quality and checkout friction can influence conversion and ultimately the economics of a transaction.\n\nWhat makes Flexiti interesting is that those disciplines come together. You're helping merchants convert customers and grow sales, but you're also operating a lending business where credit risk, funding costs, and profitability matter.\n\nI actually spent some time exploring Flexiti's financing experiences at The Brick and Visions Electronics. What stood out was how different the customer journeys were, and it made me curious about how you balance the flexibility individual merchants need with a consistent, scalable financing platform underneath. Because you're trying to make checkout as seamless as possible, while still handling things like identity verification, credit decisions, and the handoff back to the merchant.\n\nI think that's what appeals to me about the role. It's an opportunity to work on products where improving the customer experience has a very direct relationship with merchant growth and the financial performance of the business.",
+      "followUps": [],
+      "aliases": ["Why Flexiti", "Why this role", "Why do you want to work here"],
+      "evidenceStatus": "grounded",
+      "accuracyNote": "",
+      "projectTags": ["Flexiti", "HBC"],
+      "suggestedPinned": true
+    },
+    {
+      "curatedKey": "A03",
+      "canonicalAnswerId": null,
+      "category": "Career & Motivation",
+      "title": "Why are you looking to leave Arc'teryx?",
+      "navigationLabel": "Why leave Arc'teryx",
+      "priority": 1,
+      "answer": "I've actually really enjoyed my time at Arc'teryx. I was originally approached about helping build a new membership platform from the ground up, which was a pretty unique opportunity.\n\nWhat attracted me wasn't necessarily loyalty as a category, but the chance to shape something from such an early stage, from building the business case and defining the product strategy to evaluating technology and working through the technical architecture.\n\nAnd it's been a valuable experience. I've helped secure $5.2 million in capital funding, led the technology RFP, and worked through some fairly significant decisions around MVP scope and integration dependencies.\n\nBut because it's been such a foundational initiative, a lot of my time has naturally been focused on getting the platform and operating model established.\n\nWhile I enjoy that side of product management, I've also realized how much I value the other half of the job: getting products into customers' hands, seeing how they actually perform, and continuously improving them based on customer behaviour and commercial results. That's something I really enjoyed at RBC and HBC, where I could see a more direct connection between the products we were building and outcomes like acquisition, activation, and spending.\n\nSo I've been pretty selective about what I'd consider next. Flexiti stood out because it brings me back to financial services and commerce, while giving me the opportunity to apply both the commercial product experience I developed earlier in my career and the strategic and technical experience I've built at Arc'teryx.",
+      "followUps": [],
+      "aliases": ["Why leave Arc'teryx", "Why now", "Why leave current role"],
+      "evidenceStatus": "grounded",
+      "accuracyNote": "",
+      "projectTags": ["Arc'teryx", "Flexiti"],
+      "suggestedPinned": true
+    },
+    {
+      "curatedKey": "A04",
+      "canonicalAnswerId": null,
+      "category": "Career & Motivation",
+      "title": "Why Flexiti after Everyday Banking?",
+      "navigationLabel": "Why Flexiti after Everyday Banking",
+      "priority": 1,
+      "answer": "Yeah, that's right. I originally connected with Questrade through the Everyday Banking opportunity.\n\nWhat's interesting is that I actually became aware of the Flexiti role while I was still going through that process. I was interested in learning more, but we agreed it made sense to focus on the existing interview process first and reconnect afterward. So Flexiti wasn't something I only started considering after Everyday Banking.\n\nAnd the more I've learned about the business, the more I see how closely it connects to my background, particularly my experience with credit products at HBC, financial partnerships at Air Canada, and conversion optimization at Jumbleberry.\n\nEveryday Banking and Flexiti are different product challenges, but what I particularly like about Flexiti is that it brings together the consumer, merchant, and lending sides of the business. That's a combination I find genuinely interesting, and I think there's a strong connection between the experience I bring and the problems this team is trying to solve.",
+      "followUps": [],
+      "aliases": ["Why Flexiti after Everyday Banking", "Everyday Banking vs Flexiti"],
+      "evidenceStatus": "grounded",
+      "accuracyNote": "",
+      "projectTags": ["Flexiti", "Questrade"],
+      "suggestedPinned": true
+    },
+    {
+      "curatedKey": "A05",
+      "canonicalAnswerId": null,
+      "category": "Career & Motivation",
+      "title": "So would you have preferred Everyday Banking?",
+      "navigationLabel": "Preferred Everyday Banking?",
+      "priority": 1,
+      "answer": "I was genuinely interested in Everyday Banking, and I wouldn't want to suggest otherwise. But at the time, I hadn't had the opportunity to learn much about Flexiti or the scope of this role.\n\nNow that I've spent more time understanding the business, I actually see a more direct connection to my experience in consumer credit, retail, and commercial growth. So I don't really view them as competing opportunities anymore. They're different product challenges, and I think Flexiti is a particularly strong fit for the experience I've built and the type of work I'd like to do next.",
+      "followUps": [],
+      "aliases": ["Would you have preferred Everyday Banking", "Consolation opportunity"],
+      "evidenceStatus": "grounded",
+      "accuracyNote": "",
+      "projectTags": ["Flexiti", "Questrade"],
+      "suggestedPinned": false
+    },
+    {
+      "curatedKey": "A06",
+      "canonicalAnswerId": null,
+      "category": "Experience Stories",
+      "title": "Tell me about a complex product you led that involved significant technical decisions and coordination across multiple teams.",
+      "navigationLabel": "Complex product — RBC cashback",
+      "priority": 1,
+      "answer": "A good example would be the cashback withdrawal capability we built at RBC for Avion Select. We were expanding Avion Rewards to non-RBC customers, and there was a pretty fundamental problem we needed to solve. Previously, customers with RBC deposit accounts could receive cashback directly into those accounts. But now we had people earning cashback who didn't necessarily bank with RBC, so we needed another way to get them their money. I owned the consumer product side, working with engineering, design, enterprise payments, Risk, AML and Financial Operations.\n\nOne of the first decisions we had to make was whether Avion needed its own payment integration or whether we could use RBC's existing enterprise payment infrastructure. Reusing what the bank already had made more sense because we could take advantage of established payment capabilities and controls instead of building another way to move money. But that still left us with a lot of work around how Avion would track withdrawals, handle exceptions, and reconcile those payments. Say a customer has $50 in cashback and wants to withdraw it. We need to make sure that $50 can't be withdrawn again while the payment is processing, but we also can't tell them it's completed just because the payment service accepted the request. And then there's the failure scenario. What if the payment service accepts the instruction, but our application times out before receiving the response? We can't just let the customer try again because we might end up paying them twice. So a lot of my work involved defining those transaction states and exception requirements with engineering, working with design on how we communicated the payment status, and making sure Financial Operations could trace and reconcile the withdrawals. We also worked through launch readiness and how we'd monitor payment completion and exceptions once it was live.\n\nThe capability eventually handled around 3,200 withdrawals per quarter, with roughly 99% completed within 24 hours, representing about $1.2 million in annualized payouts. It's a good example of something that looks fairly straightforward to the customer, but requires a lot of thought around architecture, financial accuracy, and what happens when something goes wrong.",
+      "followUps": [
+        {
+          "question": "How did you decide whether to build a new payment integration or reuse RBC's existing infrastructure?",
+          "answer": "The biggest consideration was whether we actually needed to own another payment capability. RBC already had established infrastructure for moving money through Interac, along with the controls and operational processes behind it. Building something separate would introduce more cost, complexity, and risk without necessarily creating a better customer experience. So we focused on integrating Avion with the existing capability and solving the things specific to our use case, like cashback eligibility, withdrawal tracking, and reconciliation."
+        },
+        {
+          "question": "What happens if the payment request times out? How do you prevent someone from getting paid twice?",
+          "answer": "The important distinction is that a timeout doesn't necessarily mean the payment failed. The payment service might have accepted the instruction even if our application never received the response. So you need a unique reference for that withdrawal, a way to prevent the cashback from being withdrawn again, and a process to check the actual payment status before retrying. I'd work with engineering to make sure those scenarios were handled safely rather than treating every timeout as a failed payment."
+        }
+      ],
+      "aliases": [
+        "Complex product",
+        "Architectural influence",
+        "External dependencies",
+        "End-to-end ownership",
+        "RBC Interac cashback"
+      ],
+      "evidenceStatus": "grounded",
+      "accuracyNote": "",
+      "projectTags": ["RBC"],
+      "suggestedPinned": true
+    },
+    {
+      "curatedKey": "A07",
+      "canonicalAnswerId": null,
+      "category": "Experience Stories",
+      "title": "Tell me about a difficult product prioritization decision you made when there were competing priorities or incomplete information.",
+      "navigationLabel": "Prioritization — Arc'teryx MVP",
+      "priority": 1,
+      "answer": "At Arc'teryx, one of the bigger initiatives I led was developing a new membership platform around our ReBIRD ecosystem. The idea was to build a deeper relationship with customers beyond just purchasing products. So things like product care, repairs, trade-in and resale would become part of the membership experience. The challenge was that those services already existed, but they were spread across different systems and business teams. And naturally, the original vision was pretty ambitious. We wanted membership to work across web, mobile and several different customer touchpoints. I was leading the product strategy, MVP and vendor evaluation, along with the business case.\n\nWhat became clear during technical discovery was that building the front-end experience wasn't necessarily the hard part. It was getting the underlying systems to recognize the same customer, understand what they qualified for, and actually deliver the benefits. For example, let's say a member earns a complimentary repair. Our membership platform might determine they're eligible, but Service Cloud is still responsible for managing the repair. So we needed to figure out which system owned that entitlement, how those systems communicated, and what happened if a repair was cancelled or the records didn't line up. We could try to launch a much broader experience across channels, but we'd be taking on a lot more dependencies. At the same time, I didn't want us to build something that was basically just membership enrollment without giving customers a meaningful reason to join. So I pushed for a more focused web-first MVP, with a smaller set of member experiences and the foundational capabilities we'd need to expand later.\n\nI also wanted us to measure more than membership sign-ups. Could someone join, complete an eligible activity, actually receive the benefit they earned, and come back to use the program? That's the journey we needed to prove before expanding across more channels. And while there was still uncertainty around vendor capabilities and integration effort, I was comfortable deferring the native app because that was an investment we could make later. The identity and eligibility integrations were things we'd need regardless of channel. That direction shaped our roadmap, vendor evaluation and investment case, and we ultimately secured around $5.2 million in capital funding for the program phase. The platform hadn't launched yet, so I wouldn't claim adoption results. But we'd taken a pretty ambitious concept and turned it into something more focused and executable without losing the actual value proposition.",
+      "followUps": [
+        {
+          "question": "How did you convince stakeholders to remove features they wanted from the MVP?",
+          "answer": "I tried to make it less about what we were removing and more about what we needed to prove. For example, launching a native app sounds compelling, but if our systems can't reliably identify a member or fulfil a benefit, the app doesn't really solve that problem. So I focused the discussion on the dependencies, cost, and customer value of each capability. That helped us distinguish what was essential for launch from what we could reasonably build afterward."
+        },
+        {
+          "question": "How would you know if the membership MVP was successful?",
+          "answer": "I'd look beyond registrations. I'd want to know what percentage of members complete an eligible activity, how many successfully receive the benefit they've earned, and whether they come back to engage again. I'd also monitor operational issues, like failed entitlements or benefits that require manual intervention. For me, the initial goal would be proving that the experience works end to end and creates enough value for customers to use it more than once."
+        }
+      ],
+      "aliases": [
+        "Difficult prioritization",
+        "MVP strategy",
+        "Executive alignment",
+        "Technical dependencies",
+        "Arc'teryx membership"
+      ],
+      "evidenceStatus": "grounded",
+      "accuracyNote": "Platform had not launched; do not claim adoption results.",
+      "projectTags": ["Arc'teryx"],
+      "suggestedPinned": true
+    },
+    {
+      "curatedKey": "A08",
+      "canonicalAnswerId": null,
+      "category": "Experience Stories",
+      "title": "Tell me about a product decision where you balanced growth with cost, and how it improved financial performance.",
+      "navigationLabel": "Growth vs cost — HBC activation",
+      "priority": 1,
+      "answer": "At HBC, I managed growth for our Mastercard portfolio, which had more than 500,000 cardholders. One challenge we kept coming back to was that getting someone approved for a credit card didn't necessarily mean they were going to use it regularly. We wanted to understand what was happening after acquisition, so we spent a lot of time looking at customer cohorts, particularly when people made their first purchase, how often they came back, and where engagement started dropping off. One thing we noticed was how important those first few weeks were. Customers who weren't using their cards early tended to have weaker engagement later on.\n\nThe obvious thing to do would be to give everyone more rewards points to encourage spending. But I was concerned we'd end up spending a lot of money rewarding people for purchases they were already going to make. So rather than putting more promotional budget behind the entire portfolio, we focused on understanding which newly approved customers weren't activating and where a targeted intervention might actually change their behaviour. We used lifecycle segmentation and experiments to measure incremental activation, rather than just counting how many people responded to an offer. And I wanted us looking beyond the first purchase, because if someone only transacted to collect points and never used the card again, we hadn't necessarily created much long-term value. So when evaluating an incentive, I wanted to understand not just whether it increased first purchases, but whether those customers continued spending and whether the additional value justified the promotional cost. That's where I'd make decisions about whether to scale an intervention, narrow the target audience, or test a different approach.\n\nAcross our activation initiatives, we improved 30-day activation by around six percentage points and 90-day activation by four points. At the broader portfolio level, we also improved the active cardholder rate by about four percentage points, increased spending per active cardholder by 5%, and our model indicated roughly a 10% improvement in customer lifetime value. Those were results across multiple initiatives, not one experiment, and the LTV improvement was modeled rather than realized revenue. What I enjoyed about that work was connecting customer behaviour to the actual economics of growing the product. A campaign can look successful on activation and still not be the best commercial decision if the incremental value doesn't justify the cost.",
+      "followUps": [
+        {
+          "question": "What specific changes did you make that improved activation?",
+          "answer": "We were looking at where newly approved customers were dropping out before developing a spending habit. The important shift was moving away from treating every new cardholder the same way and looking more closely at activation cohorts, particularly customers who hadn't made their first purchase. That informed how we approached targeted lifecycle engagement and promotional initiatives. Rather than just measuring responses to campaigns, we wanted to understand whether those interventions actually moved customers into active usage."
+        },
+        {
+          "question": "How did you know the incentives were actually creating incremental value rather than rewarding customers who would've spent anyway?",
+          "answer": "That's exactly why I'd want a control group rather than just looking at campaign response rates. I'd compare activation and subsequent spending between customers who received an offer and comparable customers who didn't. Then I'd look at the additional contribution from those purchases relative to the incentive cost. If the campaign improved first purchases but didn't lead to sustained usage, I'd question whether we should scale it or target a narrower segment."
+        }
+      ],
+      "aliases": [
+        "Balanced growth with cost",
+        "Product economics",
+        "Experimentation",
+        "Activation",
+        "HBC activation"
+      ],
+      "evidenceStatus": "grounded",
+      "accuracyNote": "LTV improvement was modeled; results across multiple initiatives.",
+      "projectTags": ["HBC"],
+      "suggestedPinned": true
+    },
+    {
+      "curatedKey": "A09",
+      "canonicalAnswerId": null,
+      "category": "Experience Stories",
+      "title": "Tell me about a time you improved a conversion funnel that depended on an external technology or financial partner.",
+      "navigationLabel": "Partner funnel — Neo redesign",
+      "priority": 1,
+      "answer": "Another example from HBC was redesigning the Mastercard application experience when we transitioned the program to Neo Financial. The interesting thing was that we weren't just trying to acquire new customers. Neo hadn't acquired the existing Capital One book, so we also had existing HBC Mastercard holders who were familiar with the old program but needed to apply for a new card. And we didn't control the entire journey. Customers discovered the card through HBC, but Neo owned the credit application and underwriting.\n\nOne of the first things I wanted to understand was where we were actually losing people. Was it that customers weren't interested in the card, or were they interested but struggling to complete the application? Those are very different problems. For existing cardholders, there was a potential expectation issue. Someone who had held an HBC Mastercard for years might assume they were simply getting a replacement card, when really they needed to complete a new credit application. What I wanted to avoid was trying to solve the problem by simply adding another promotion or pushing more traffic into the funnel. We had to understand whether people weren't interested in the product or whether they were getting stuck after deciding to apply. Since Neo owned the underwriting and application itself, I focused on the experience leading up to that handoff, where we had more control.\n\nWe worked with design on making the issuer relationship clearer, setting expectations around the new application, and making the transition into Neo feel more natural. We also didn't want to introduce another lengthy qualification step that would duplicate information Neo already needed to collect. And because the experience crossed two organizations, measurement mattered. More Apply clicks didn't necessarily mean more applications completed, so we needed visibility into downstream outcomes through the reporting available from Neo. The redesign ultimately improved application completions by around 15%, and Neo's platform supported credit decisions in under three minutes. What stuck with me was that the solution wasn't necessarily making the actual credit application shorter. It was reducing the uncertainty and friction customers experienced before they even got into it, while working within the parts of the journey we could influence.",
+      "followUps": [
+        {
+          "question": "How did you identify that the problem was the application experience rather than a lack of customer interest?",
+          "answer": "I'd separate the journey into discovery, Apply clicks, and completed applications. If customers weren't clicking Apply, that might point to the value proposition or how we're presenting the card. But if customers were showing intent and not completing the application, I'd investigate what happened during the handoff and application process. That's why downstream reporting from Neo mattered. Looking at clicks alone wouldn't tell us whether the journey was actually working."
+        },
+        {
+          "question": "What made this difficult when Neo owned the actual application?",
+          "answer": "We had to be realistic about the parts of the experience we could control. Neo owned underwriting and the credit application, while we owned the experience leading customers into that process. So rather than assuming we could redesign everything, we focused on making the application expectations clearer and reducing unnecessary friction before the handoff. The other important part was aligning on funnel definitions so we could identify problems across both organizations instead of optimizing our part in isolation."
+        }
+      ],
+      "aliases": [
+        "Conversion funnel partner",
+        "Growth versus friction",
+        "Partner management",
+        "Checkout product sense",
+        "Neo Financial"
+      ],
+      "evidenceStatus": "grounded",
+      "accuracyNote": "",
+      "projectTags": ["HBC"],
+      "suggestedPinned": true
+    },
+    {
+      "curatedKey": "A10",
+      "canonicalAnswerId": null,
+      "category": "Flexiti Product Sense",
+      "title": "If you owned Flexiti's product experience, what metrics would tell you the business is healthy?",
+      "navigationLabel": "Flexiti business health metrics",
+      "priority": 1,
+      "answer": "I'd probably look at it from three angles: customer conversion, merchant performance, and the economics of the lending portfolio. On the customer side, I'd want visibility into the full funnel, from someone being offered financing at checkout, to starting an application, submitting it, getting approved, and actually completing a purchase. I'd be particularly interested in the gap between approval and first purchase. If customers are getting approved but aren't transacting, I'd want to understand whether the credit limit is insufficient, the financing terms aren't what they expected, or something is breaking when they return to checkout.\n\nOn the merchant side, I'd look at financing penetration, completed financed sales, average order value, and repeat purchasing. But I'd also want to understand incrementality. Are we helping merchants generate sales they otherwise wouldn't have made, or are we just financing purchases that would've happened anyway? I'd also segment those metrics by merchant and channel, because the experience and economics could be quite different between a furniture retailer and an electronics retailer, or between in-store and online checkout.\n\nAnd then there's the lending side. I'd work closely with Finance and Risk to understand revenue relative to merchant and promotional economics, funding costs, servicing, and expected credit losses. I'd monitor early delinquency, charge-offs, and repayment performance by customer cohort. One thing I'd be conscious of is that you see the benefit of a financed purchase fairly quickly, but it can take months to understand the credit risk you're taking on. So if I had to pick an overarching business outcome, I'd lean toward risk-adjusted contribution from completed financed purchases, with conversion, merchant performance, and portfolio quality as supporting metrics. And because customers can reuse Flexiti financing across different retailers, I'd also pay attention to repeat usage. Ultimately, I want to know we're helping merchants sell more, customers are successfully using the product, and we're building a portfolio that makes financial sense.",
+      "followUps": [
+        {
+          "question": "If you could only track three metrics, which would you choose?",
+          "answer": "I'd choose completed financed purchase conversion, risk-adjusted contribution from financed purchases, and early delinquency by customer cohort. Conversion tells me whether the product is working for customers and merchants. Contribution tells me whether that activity is economically worthwhile. And delinquency gives me an early indication of whether we're taking on too much credit risk. I'd still need supporting metrics to diagnose issues, but those three give me a reasonable picture of growth, profitability, and portfolio quality."
+        }
+      ],
+      "aliases": [
+        "Business health metrics",
+        "Two-sided economics",
+        "KPI judgment",
+        "Lending fundamentals"
+      ],
+      "evidenceStatus": "hypothetical",
+      "accuracyNote": "Preparation hypothesis for Flexiti; not based on internal Flexiti data.",
+      "projectTags": ["Flexiti"],
+      "suggestedPinned": true
+    },
+    {
+      "curatedKey": "A11",
+      "canonicalAnswerId": null,
+      "category": "Flexiti Product Sense",
+      "title": "How would you improve the conversion rate of customers applying for Flexiti financing at checkout?",
+      "navigationLabel": "Checkout conversion",
+      "priority": 1,
+      "answer": "The first thing I'd want to understand is where we're actually losing customers, because I'd approach the problem differently depending on where the drop-off happens. I'd break the journey into financing presented, application started, application submitted, credit decision, and completed purchase. Then I'd look at conversion between each stage, segmented by merchant, online versus in-store, and new versus returning customers. I actually spent some time going through the financing experiences at The Brick and Visions Electronics. One thing that stood out was how many steps customers can go through after they've already decided they want to buy something. And that's an important point in the journey because financing should help close the sale, not introduce enough friction that someone abandons it.\n\nIf customers are dropping out during the application, I'd investigate unnecessary fields, unclear financing terms, identity verification friction, and technical errors. But if they're getting approved and still not completing the purchase, I'd look at different problems. Is the approved credit limit enough to cover the basket? Can the customer return to their original checkout session? Is the financing authorization being correctly passed back to the merchant's order system? I'd also want our analytics to distinguish a legitimate credit decline from a customer abandoning the experience or encountering a technical issue. Otherwise, we could end up optimizing the wrong part of the funnel. And because Flexiti works across different retailers, I'd want to understand whether the problem is happening within our application or at the integration point with a particular merchant.\n\nOnce we know where the largest avoidable drop-off is happening, I'd prioritize a focused improvement, test it with a merchant or customer segment, and measure whether it increases completed financed purchases per eligible checkout opportunity. I'd also keep credit losses, fraud, support contacts, and merchant performance as guardrails. I wouldn't automatically assume the answer is fewer application fields or more approvals. I'd want to know whether we're dealing with a UX issue, an integration problem, or an actual lending constraint first.",
+      "followUps": [
+        {
+          "question": "Let's say approvals are healthy, but 25% of approved customers don't complete their purchase. What would you do?",
+          "answer": "I'd first want to know whether those customers are choosing not to proceed or getting stuck technically. I'd look at approved credit limits relative to basket size, checkout abandonment, and whether we're seeing failed authorizations or problems returning customers to the merchant. If the issue is concentrated at the handoff, I'd investigate that integration before redesigning the application. I'd also segment by merchant because one poorly performing integration could be driving a disproportionate share of the problem."
+        }
+      ],
+      "aliases": [
+        "Improve conversion rate",
+        "Funnel diagnosis",
+        "Merchant integrations",
+        "Checkout financing"
+      ],
+      "evidenceStatus": "hypothetical",
+      "accuracyNote": "Brick and Visions references are public customer-journey observations.",
+      "projectTags": ["Flexiti"],
+      "suggestedPinned": false
+    },
+    {
+      "curatedKey": "A12",
+      "canonicalAnswerId": null,
+      "category": "Flexiti Product Sense",
+      "title": "How would you balance increasing financing approval rates with managing credit losses?",
+      "navigationLabel": "Approvals vs credit losses",
+      "priority": 1,
+      "answer": "I'd be careful about treating approval rate as a success metric on its own. Obviously, we want more customers to get approved and complete purchases, but those customers also need to be able to repay what they've borrowed. So I'd start by working with Credit Risk to understand why people are being declined and where those declines are concentrated. Are they genuinely outside our risk appetite? Or are there customers we can't confidently assess because of incomplete information, identity verification issues, or gaps in our current decisioning process? I'd also look at how approvals and losses vary by customer segment, merchant, purchase size, and credit characteristics.\n\nThere might be an opportunity to improve verification or introduce additional information that helps us make better decisions. Or perhaps there's a segment where a smaller initial credit limit could make sense. But I'd work through those hypotheses with Risk rather than treating underwriting as something Product should independently change. The other important part is measuring the outcome over time. We might increase approvals and see more purchases immediately, but we need to follow those customers through repayment. I'd monitor early delinquency, including 30- and 60-day past-due rates, and eventually charge-offs and contribution margin by approval cohort. I'd also look at fraud and first-payment performance for earlier warning signs. If we were testing changes, I'd want clear risk limits upfront and a way to adjust or stop the experiment if the portfolio started deteriorating.\n\nI haven't personally owned underwriting models, but my experience with the HBC Mastercard portfolio taught me that growth is only valuable if the customers you're bringing in create sustainable value over time. For Flexiti, I'd want Product and Risk working toward the same outcome: more profitable financed purchases, not simply a higher approval rate.",
+      "followUps": [
+        {
+          "question": "What if Risk wants to tighten approvals, but the commercial team wants to increase them?",
+          "answer": "I'd start by making sure we're looking at the same economics. If Risk is seeing rising delinquency in certain segments, I'd want to understand where that deterioration is happening rather than tightening approvals across the board. We might find opportunities to preserve growth in stronger segments while reducing exposure in riskier ones. I'd work toward a decision based on expected contribution after credit losses, not approval rate alone. That gives both teams a common outcome to optimize."
+        },
+        {
+          "question": "How would you test an approval-rate increase when the full credit losses won't show up for months?",
+          "answer": "I'd work with Risk to define a controlled test with clear exposure limits. We'd measure immediate outcomes like approval rate and completed purchases, but also monitor earlier risk indicators such as first-payment performance, fraud, and 30-day delinquency as the cohorts mature. I wouldn't assume early results tell us the full story. We'd need to follow the cohorts long enough to understand the credit impact before making a broader change."
+        }
+      ],
+      "aliases": [
+        "Approval rates versus credit losses",
+        "Risk-adjusted growth",
+        "Underwriting collaboration",
+        "Credit portfolio economics"
+      ],
+      "evidenceStatus": "hypothetical",
+      "accuracyNote": "Has not personally owned underwriting models; framed as collaboration with Risk.",
+      "projectTags": ["Flexiti", "HBC"],
+      "suggestedPinned": false
+    },
+    {
+      "curatedKey": "A13",
+      "canonicalAnswerId": null,
+      "category": "Leadership & Judgment",
+      "title": "How would you establish product standards and improve execution across multiple squads without direct authority?",
+      "navigationLabel": "Standards across squads",
+      "priority": 1,
+      "answer": "At Arc'teryx, I was managing a PM and BA within Membership, but most of our engineering dependencies sat with teams outside my reporting structure. So I couldn't rely on reporting lines to get things done. What I found useful was establishing some consistency around how we defined problems, evaluated trade-offs, and made dependencies visible. For example, when we were defining membership benefits, I wanted the team thinking beyond the experience itself. Which system owns the customer's entitlement? How does Service Cloud know they're eligible? What happens if that benefit can't be fulfilled? Those were questions I wanted us addressing during discovery rather than after engineering had already started. And with the PM I managed, my goal wasn't to make every decision for them. It was to help them develop that same level of judgment, so they could independently challenge requirements, work through trade-offs, and make stronger product decisions.\n\nIf I were doing that across several squads at Flexiti, I'd establish a few common expectations around product discovery and delivery. Every initiative should have a clear customer problem, an outcome metric, an understanding of which systems and teams are involved, and well-defined acceptance criteria. I'd also want consistency in how we instrument events and measure results, especially when several squads contribute to the same customer journey. For example, if one squad owns the credit application and another owns the merchant checkout integration, they should be working from the same definition of what a successful financed purchase actually means. But I wouldn't force everyone into identical ceremonies or documentation. The goal is to make decisions more consistent and surface dependencies earlier, not introduce process for its own sake. Ultimately, I want PMs who can make strong decisions independently, while making sure the experience works together across teams.",
+      "followUps": [
+        {
+          "question": "What would you do if another PM strongly disagreed with your recommendation?",
+          "answer": "I'd want to understand what assumption we're disagreeing on. Sometimes we're looking at different customer evidence, different risks, or different definitions of success. I'd try to get those differences out in the open and see whether there's data or a smaller experiment that could help us make the decision. But I also think there are times when someone needs to make the call. Once we've worked through the trade-offs, I wouldn't want the team stuck in endless debate."
+        }
+      ],
+      "aliases": [
+        "Product standards",
+        "Influencing without authority",
+        "Product leadership",
+        "Coaching",
+        "Execution consistency"
+      ],
+      "evidenceStatus": "grounded",
+      "accuracyNote": "",
+      "projectTags": ["Arc'teryx", "Flexiti"],
+      "suggestedPinned": false
+    },
+    {
+      "curatedKey": "A14",
+      "canonicalAnswerId": null,
+      "category": "Backup",
+      "title": "Tell me about your experience driving acquisition and growth through financial partnerships.",
+      "navigationLabel": "Backup — Air Canada partnerships",
+      "priority": 2,
+      "answer": "At Air Canada, I owned digital credit-card acquisition across our Aeroplan partnerships with TD, CIBC and American Express. The challenge was that we had multiple cards with different fees, benefits and earning structures, and customers ultimately had to apply through the issuing banks. So we were responsible for helping customers make a decision, but we didn't own the entire application journey.\n\nOne of the things we had to account for was that not everyone came into the Aeroplan card experience with the same intent. Some customers arrived through a specific card promotion and already knew what they wanted. Others were exploring Aeroplan cards and trying to figure out which one made sense for them. And those are pretty different customer needs. If someone already knows which card they want, the last thing we should do is make them go through a bunch of comparison steps. But if they're still undecided, sending them straight to an issuer application isn't necessarily helpful either. We needed an experience that made it easier to compare things like annual fees, earn rates, and travel benefits, while still allowing high-intent customers to go directly to the card they wanted.\n\nThere was also a measurement challenge because the application happened on the banking partner's platform. We could track what happened within Aeroplan, but a customer clicking through to TD or Amex wasn't necessarily a completed card acquisition. So we had to be careful about distinguishing referrals from actual acquisitions and working with our partners on downstream performance. Across our broader digital acquisition initiatives, we improved conversion by around 40%, while overall card acquisition grew roughly 427% year over year. That growth reflected multiple initiatives, not just one experience change. What I enjoyed about that work was understanding how customer intent, partner relationships, and the way we structured the journey could all influence commercial performance.",
+      "followUps": [
+        {
+          "question": "How did you measure acquisition performance if customers applied on the banks' websites?",
+          "answer": "We had to distinguish the part of the journey Aeroplan controlled from the downstream acquisition outcome. We could measure engagement with our card pages and referrals into each issuer's application, but those referrals weren't the same as approved or acquired cardholders. So we needed to use the performance reporting available through our banking partners to understand the broader funnel. That's an important distinction because you could improve click-through without actually improving completed acquisitions."
+        }
+      ],
+      "aliases": [
+        "Financial partnerships",
+        "Bank partnerships",
+        "Growth strategy",
+        "Customer segmentation",
+        "Acquisition measurement",
+        "Air Canada",
+        "Aeroplan"
+      ],
+      "evidenceStatus": "grounded",
+      "accuracyNote": "427% YoY reflected multiple initiatives, not one experience change.",
+      "projectTags": ["Aeroplan"],
+      "suggestedPinned": false
+    }
+  ],
+  "questionsForAmena": [
+    {
+      "topic": "Biggest product opportunity",
+      "tier": "primary",
+      "badge": "On the business",
+      "question": "When you look at Flexiti today, where do you see the biggest opportunity for Product to create value — growing merchant adoption, improving the cardholder experience, or strengthening the underlying financial platform?",
+      "note": "Listen for where Amena sees Product leverage: merchants, customers, or platform/risk.",
+      "followUps": [
+        {
+          "cue": "If she focuses on one area",
+          "question": "And where do you feel the team is furthest behind relative to that opportunity today?"
+        }
+      ]
+    },
+    {
+      "topic": "Role ownership",
+      "tier": "primary",
+      "badge": "On the role",
+      "question": "This role sounds like it has quite a broad mandate across multiple squads and product areas. What would you expect someone operating really successfully at this level to own independently versus bring to you?",
+      "note": "Clarify autonomy, escalation path, and what success looks like without needing constant alignment.",
+      "followUps": [
+        {
+          "cue": "If the answer is abstract",
+          "question": "Is there a recent decision a strong Senior PM made independently that you'd point to as a good example?"
+        }
+      ]
+    },
+    {
+      "topic": "Working relationship",
+      "tier": "primary",
+      "badge": "Management style",
+      "question": "You've led product organizations across some pretty complex financial businesses. When you're working with a strong Senior PM, what does a really effective working relationship look like to you?",
+      "note": "Listen for coaching style, decision rights, and communication cadence.",
+      "followUps": [
+        {
+          "cue": "If she doesn't mention feedback",
+          "question": "How do you typically give feedback or course-correct when something isn't landing?"
+        }
+      ]
+    }
+  ]
+}

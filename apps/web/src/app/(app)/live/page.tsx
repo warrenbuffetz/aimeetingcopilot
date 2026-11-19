@@ -14,6 +14,12 @@ import {
   BRISTOL_FOCUSED_PROFILE_ID,
   BRISTOL_FOCUSED_PROFILE_NAME,
 } from "@/lib/bristol-focused/profile";
+import {
+  AMENA_FOCUSED_HREF,
+  AMENA_FOCUSED_PROFILE_ID,
+  AMENA_FOCUSED_PROFILE_NAME,
+  isAmenaFocusedProfileName,
+} from "@/lib/flexiti-amena/profile";
 import { chooseClassicLiveProfile, isFocusedProfileName } from "@/lib/focused-live-routing";
 import { useLiveSession } from "@/hooks/use-live-session";
 import { useBrowserAudioCapture } from "@/hooks/use-browser-audio-capture";
@@ -166,6 +172,10 @@ export default function LiveInterviewPage() {
       const choice = chooseClassicLiveProfile(list, requested);
       if (choice.kind === "bristol") {
         router.replace(BRISTOL_FOCUSED_HREF);
+        return;
+      }
+      if (choice.kind === "amena") {
+        router.replace(AMENA_FOCUSED_HREF);
         return;
       }
       if (choice.kind === "jaz") {
@@ -599,6 +609,13 @@ export default function LiveInterviewPage() {
                   router.push(BRISTOL_FOCUSED_HREF);
                   return;
                 }
+                if (
+                  v === AMENA_FOCUSED_PROFILE_ID ||
+                  (v != null && isAmenaFocusedProfileName(profiles.find((profile) => profile.id === v)?.name))
+                ) {
+                  router.push(AMENA_FOCUSED_HREF);
+                  return;
+                }
                 if (v === JAZ_FOCUSED_PROFILE_ID || (v != null && isJazFocusedProfileName(profiles.find((profile) => profile.id === v)?.name))) {
                   router.push(JAZ_FOCUSED_HREF);
                   return;
@@ -613,6 +630,7 @@ export default function LiveInterviewPage() {
               <SelectContent>
                 <SelectItem value="all">No profile</SelectItem>
                 <SelectItem value={BRISTOL_FOCUSED_PROFILE_ID}>{BRISTOL_FOCUSED_PROFILE_NAME}</SelectItem>
+                <SelectItem value={AMENA_FOCUSED_PROFILE_ID}>{AMENA_FOCUSED_PROFILE_NAME}</SelectItem>
                 <SelectItem value={JAZ_FOCUSED_PROFILE_ID}>{JAZ_FOCUSED_PROFILE_NAME}</SelectItem>
                 {profiles.map((p) => (
                   <SelectItem key={p.id} value={p.id}>{p.name}</SelectItem>

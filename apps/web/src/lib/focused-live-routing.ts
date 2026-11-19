@@ -3,6 +3,10 @@ import {
   isBristolFocusedProfileName,
 } from "@/lib/bristol-focused/profile";
 import {
+  AMENA_FOCUSED_HREF,
+  isAmenaFocusedProfileName,
+} from "@/lib/flexiti-amena/profile";
+import {
   JAZ_FOCUSED_HREF,
   isJazFocusedProfileName,
 } from "@/lib/questrade-jaz/profile";
@@ -10,15 +14,21 @@ import {
 export type FocusedLiveProfileChoice =
   | { kind: "jaz" }
   | { kind: "bristol" }
+  | { kind: "amena" }
   | { kind: "profile"; id: string }
   | { kind: "none" };
 
 export function isFocusedProfileName(name: string | null | undefined): boolean {
-  return isJazFocusedProfileName(name) || isBristolFocusedProfileName(name);
+  return (
+    isJazFocusedProfileName(name) ||
+    isBristolFocusedProfileName(name) ||
+    isAmenaFocusedProfileName(name)
+  );
 }
 
 export function focusedProfileHrefForName(name: string | null | undefined): string | null {
   if (isBristolFocusedProfileName(name)) return BRISTOL_FOCUSED_HREF;
+  if (isAmenaFocusedProfileName(name)) return AMENA_FOCUSED_HREF;
   if (isJazFocusedProfileName(name)) return JAZ_FOCUSED_HREF;
   return null;
 }
@@ -31,12 +41,17 @@ export function chooseClassicLiveProfile(
   if (requestedId) {
     const match = profiles.find((p) => p.id === requestedId);
     if (match && isBristolFocusedProfileName(match.name)) return { kind: "bristol" };
+    if (match && isAmenaFocusedProfileName(match.name)) return { kind: "amena" };
     if (match && isJazFocusedProfileName(match.name)) return { kind: "jaz" };
     if (match) return { kind: "profile", id: match.id };
+    if (requestedId === "local:flexiti-amena") return { kind: "amena" };
+    if (requestedId === "local:questrade-jaz") return { kind: "jaz" };
+    if (requestedId === "local:opentable-bristol") return { kind: "bristol" };
   }
   const selectable = profiles.filter((p) => !isFocusedProfileName(p.name));
   if (selectable.length === 0) {
     if (profiles.some((p) => isBristolFocusedProfileName(p.name))) return { kind: "bristol" };
+    if (profiles.some((p) => isAmenaFocusedProfileName(p.name))) return { kind: "amena" };
     if (profiles.some((p) => isJazFocusedProfileName(p.name))) return { kind: "jaz" };
   }
   if (selectable.length === 1) return { kind: "profile", id: selectable[0]!.id };

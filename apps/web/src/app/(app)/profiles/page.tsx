@@ -5,6 +5,7 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { BRISTOL_FOCUSED_HREF, BRISTOL_FOCUSED_PROFILE_NAME } from "@/lib/bristol-focused/profile";
+import { AMENA_FOCUSED_HREF, AMENA_FOCUSED_PROFILE_NAME } from "@/lib/flexiti-amena/profile";
 import { JAZ_FOCUSED_HREF, JAZ_FOCUSED_PROFILE_NAME } from "@/lib/questrade-jaz/profile";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -104,6 +105,20 @@ export default function ProfilesPage() {
             Local navigator for the 30-minute Jaz Huang interview. Its 33 answers stay in this profile and are not written into the shared library.
           </p>
           <Link href={JAZ_FOCUSED_HREF} className={buttonVariants({ variant: "secondary" })}>
+            Open live navigator
+          </Link>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-base">{AMENA_FOCUSED_PROFILE_NAME}</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-3 text-sm text-muted-foreground">
+          <p>
+            Local navigator for the Flexiti Senior PM interview with Amena. Career, experience stories, product-sense answers, and nested follow-ups stay in this profile.
+          </p>
+          <Link href={AMENA_FOCUSED_HREF} className={buttonVariants({ variant: "secondary" })}>
             Open live navigator
           </Link>
         </CardContent>
