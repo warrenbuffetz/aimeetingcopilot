@@ -32,13 +32,22 @@ function followQuestion(query: string): string | null {
 describe("flexiti amena dataset", () => {
   it("matches the curated counts and keeps answers isolated", () => {
     expect(validateAmenaDataset()).toEqual([]);
-    expect(amenaQuestions).toHaveLength(14);
-    expect(amenaQuestions.reduce((sum, question) => sum + question.followUps.length, 0)).toBe(14);
-    expect(amenaPinnedQuestions).toHaveLength(9);
+    expect(amenaQuestions).toHaveLength(15);
+    expect(amenaQuestions.reduce((sum, question) => sum + question.followUps.length, 0)).toBe(15);
+    expect(amenaPinnedQuestions).toHaveLength(10);
     expect(amenaAskQuestions).toHaveLength(3);
     expect(amenaAskQuestions.every((item) => item.tier === "primary")).toBe(true);
-    expect(new Set(amenaQuestions.map((question) => question.id)).size).toBe(14);
+    expect(new Set(amenaQuestions.map((question) => question.id)).size).toBe(15);
     expect(amenaQuestions.every((question) => question.id.startsWith("amena-A"))).toBe(true);
+  });
+
+  it("nests the improve-first follow-up under Flexiti product observations", () => {
+    const observations = amenaQuestions.find((question) => question.curatedKey === "A15")!;
+    expect(observations.title).toMatch(/financing experiences/i);
+    expect(observations.followUps).toHaveLength(1);
+    expect(observations.followUps[0]?.question).toMatch(/improve first/i);
+    expect(observations.followUps[0]?.answer).toMatch(/The Brick/);
+    expect(observations.answer).toMatch(/Visions Electronics/);
   });
 
   it("nests timeout and double-pay follow-ups under the RBC story", () => {
@@ -89,6 +98,7 @@ describe("flexiti amena search and related", () => {
   it("surfaces Flexiti checkout conversion from product-sense keywords", () => {
     expect(topKey("checkout conversion financing")).toBe("A11");
     expect(topKey("business health metrics")).toBe("A10");
+    expect(topKey("Brick and Visions financing experiences")).toBe("A15");
   });
 
   it("can open the RBC timeout follow-up from a follow-up query", () => {

@@ -3,9 +3,9 @@
     "title": "Flexiti / Amena — Curated Senior PM Interview Q&A",
     "purpose": "Manual navigation for the Amena hiring-manager interview; primary answers with nested follow-ups",
     "version": "2026-11-19",
-    "primaryQuestionCount": 14,
-    "followUpCount": 14,
-    "suggestedPinnedCount": 9,
+    "primaryQuestionCount": 15,
+    "followUpCount": 15,
+    "suggestedPinnedCount": 10,
     "notes": [
       "Answers are spoken blocks: continuous paragraphs within a thought; blank lines only between thought shifts.",
       "Flexiti-specific product questions are preparation hypotheses based on public merchant experiences, not confirmed Amena questions.",
@@ -340,6 +340,33 @@
       "accuracyNote": "427% YoY reflected multiple initiatives, not one experience change.",
       "projectTags": ["Aeroplan"],
       "suggestedPinned": false
+    },
+    {
+      "curatedKey": "A15",
+      "canonicalAnswerId": null,
+      "category": "Flexiti Product Sense",
+      "title": "What did you notice when you looked at Flexiti's financing experiences?",
+      "navigationLabel": "Flexiti product observations",
+      "priority": 1,
+      "answer": "I actually spent some time going through Flexiti's financing experiences at both The Brick and Visions Electronics, and what I found interesting was how different the two journeys were.\n\nAt The Brick, customers are presented with quite a few options. You're choosing between FlexitiCard and Wave Card, then comparing different financing terms, interest rates, and administration fees. That gives customers flexibility, which is great, but I wondered whether we're introducing too much decision-making at checkout. As a customer, I'm probably less concerned about which credit product I'm using and more interested in what my monthly payment looks like and how much the financing will ultimately cost me.\n\nVisions had a simpler proposition, with a 12-month financing offer and a more integrated application experience. But the application itself was fairly involved, and when I reached an unsuccessful decision, there wasn't an obvious next step beyond closing the window.\n\nNow, I wouldn't assume those are necessarily the biggest conversion problems without seeing the data. I'd want to understand where customers are dropping off, whether it's during financing selection, application completion, credit approval, or actually completing the purchase after being approved. From there, I'd look at what we could simplify without compromising underwriting, regulatory requirements, or credit risk.\n\nAnd one thing I'd be curious about is how much of that end-to-end experience Flexiti directly controls versus the individual merchant partners. Because ultimately, I think the opportunity is about helping more qualified customers successfully complete their purchases while creating sustainable value for both the merchant and Flexiti.",
+      "followUps": [
+        {
+          "question": "What would you improve first?",
+          "answer": "If I had to start somewhere based purely on what I observed, I'd probably investigate the financing selection experience at The Brick. My hypothesis would be that presenting customers with multiple credit products and repayment plans before clearly communicating affordability could create unnecessary friction. I'd explore simplifying that comparison around estimated monthly payments, total financing costs, and eligibility, while keeping the full disclosures available.\n\nBut before prioritizing it, I'd want to validate the hypothesis through funnel analytics and perhaps some usability testing. I'd measure whether more customers who select financing ultimately complete a financed purchase, while monitoring application quality, credit losses, and customer complaints as guardrails."
+        }
+      ],
+      "aliases": [
+        "Initial thoughts on Flexiti product",
+        "What stood out about Flexiti",
+        "Brick and Visions",
+        "Flexiti product critique",
+        "Researched Flexiti financing",
+        "Product observation"
+      ],
+      "evidenceStatus": "hypothetical",
+      "accuracyNote": "Based on public customer-journey observations at The Brick and Visions; not internal Flexiti data.",
+      "projectTags": ["Flexiti"],
+      "suggestedPinned": true
     }
   ],
   "questionsForAmena": [

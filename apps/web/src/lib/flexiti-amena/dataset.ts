@@ -83,6 +83,7 @@ const SHORT_LABELS: Record<string, string> = {
   A12: "Approvals vs losses",
   A13: "Standards across squads",
   A14: "Backup — Air Canada",
+  A15: "Flexiti product observations",
 };
 
 export const AMENA_CATEGORIES: { id: string; label: string }[] = [
@@ -166,11 +167,11 @@ export function amenaCategoryLabel(category: string): string {
 export function validateAmenaDataset(): string[] {
   const issues: string[] = [];
   const questions = rawQuestions;
-  if (questions.length !== 14) issues.push(`expected 14 questions, found ${questions.length}`);
+  if (questions.length !== 15) issues.push(`expected 15 questions, found ${questions.length}`);
   const followCount = questions.reduce((sum, q) => sum + (q.followUps?.length ?? 0), 0);
-  if (followCount !== 14) issues.push(`expected 14 follow-ups, found ${followCount}`);
+  if (followCount !== 15) issues.push(`expected 15 follow-ups, found ${followCount}`);
   const pinned = questions.filter((q) => q.suggestedPinned).length;
-  if (pinned !== 9) issues.push(`expected 9 pins, found ${pinned}`);
+  if (pinned !== 10) issues.push(`expected 10 pins, found ${pinned}`);
   if (rawAsk.length !== 3) issues.push(`expected 3 questions for Amena, found ${rawAsk.length}`);
 
   const keys = new Set<string>();
@@ -189,7 +190,7 @@ export function validateAmenaDataset(): string[] {
       if (!follow.answer?.trim()) issues.push(`${key} follow-up ${index + 1} missing answer`);
     });
   }
-  for (let n = 1; n <= 14; n += 1) {
+  for (let n = 1; n <= 15; n += 1) {
     const key = `A${String(n).padStart(2, "0")}`;
     if (!keys.has(key)) issues.push(`missing ${key}`);
   }
