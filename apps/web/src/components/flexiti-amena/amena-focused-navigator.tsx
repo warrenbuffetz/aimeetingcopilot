@@ -686,7 +686,7 @@ export function AmenaFocusedNavigator() {
             <p className="text-xs font-medium tracking-wide text-violet-700 uppercase">Closing questions</p>
             <h1 className="mt-1 text-2xl font-semibold tracking-tight">Questions for Amena</h1>
             <p className="mt-2 text-sm text-muted-foreground">
-              Ask these in Amena's interview. This list has no scripted answer.
+              Ask these during the Amena interview. This list has no scripted answer.
             </p>
             {(
               [
