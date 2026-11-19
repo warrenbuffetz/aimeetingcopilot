@@ -74,16 +74,16 @@ const SHORT_LABELS: Record<string, string> = {
   A03: "Why leave Arc'teryx",
   A04: "After Everyday Banking",
   A05: "Preferred Everyday Banking?",
-  A06: "Complex product — RBC",
-  A07: "Prioritization — Arc'teryx",
-  A08: "Growth vs cost — HBC",
-  A09: "Partner funnel — Neo",
-  A10: "Flexiti health metrics",
+  A06: "Complex product (RBC)",
+  A07: "Prioritization (Arc'teryx)",
+  A08: "Growth vs cost (HBC)",
+  A09: "Partner funnel (Neo)",
+  A10: "Business health metrics",
   A11: "Checkout conversion",
   A12: "Approvals vs losses",
   A13: "Standards across squads",
-  A14: "Backup — Air Canada",
-  A15: "Flexiti product observations",
+  A14: "Backup (Air Canada)",
+  A15: "Product observations",
 };
 
 export const AMENA_CATEGORIES: { id: string; label: string }[] = [

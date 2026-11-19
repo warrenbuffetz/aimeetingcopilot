@@ -490,7 +490,7 @@ export function AmenaFocusedNavigator() {
   );
 
   function navListLabel(question: AmenaQuestion): string {
-    return question.title?.trim() || question.navigationLabel;
+    return question.shortLabel?.trim() || question.navigationLabel || question.title;
   }
 
   function navButton(question: AmenaQuestion, dense = false) {
